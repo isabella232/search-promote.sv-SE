@@ -7,7 +7,7 @@ title: Om affärsregler
 topic: Rules,Site search and merchandising
 uuid: f2186f54-7a39-4f46-bb29-5115d5a17f07
 translation-type: tm+mt
-source-git-commit: 2dd205d3034e8397d88007a1618a121f0b6087a8
+source-git-commit: fc1f0b15a15a9d0308494fc23c5b4258442c8aab
 
 ---
 
@@ -84,10 +84,10 @@ Följande steg förutsätter att du använder Visual Rule Builder.
 
    På [!DNL Business Rules] sidan använder du **[!UICONTROL Filter by tag]** funktionen för att filtrera efter regler som matchar en viss etikett. 1. Ange de utlösare och åtgärder som du vill använda på [!DNL Business Rule Builder] sidan.
 
-       **Utlösaralternativ**
-     
-     Utlösare är de villkor som måste uppfyllas för att en affärsregel ska kunna köras. När en affärsregel har flera utlösare kan du konfigurera hur utlösare ska svara med någon av följande tre metoder:
-   
+   **Utlösaralternativ**
+
+   Utlösare är de villkor som måste uppfyllas för att en affärsregel ska kunna köras. När en affärsregel har flera utlösare kan du konfigurera hur utlösare ska svara med någon av följande tre metoder:
+
    * Ett svar där alla utlösare måste vara true (standardinställningen) som i följande exempel:
 
       `if a AND b AND c then ...`
@@ -143,7 +143,7 @@ Följande steg förutsätter att du använder Visual Rule Builder.
 
    När en affärsregels utlösare uppfylls utförs de åtgärder som är kopplade till regeln. Med Visual Rule Builder kan du skapa följande åtgärder, men du kan använda Advanced Rule Builder för att skapa ytterligare typer av åtgärder.
 
-   Funktionerna Ta bort fasettobjekt, Visa ansiktsobjekt, Visa fasett, Ta bort fasett och Skjut penseldrag i följande tabell kräver en fasett. Gränssnittet för att välja en aspekt beror på hur ditt konto är konfigurerat. Ett vanligt konto använder till exempel en nedrullningsbar lista för att välja ansikten. Om ditt konto har skårade ansikten visas en textruta för automatisk komplettering där du kan ange namnet på alla ansikten. Komplettera automatiskt föreslår ansikten i en nedrullningsbar lista när du skriver namnet på ansiktet. Förslagen innehåller definierade aspekter. Om ditt konto har en kortplatskarta visas även kortslutna facets.
+   Funktionerna Ta bort fasettobjekt, Visa ansiktsobjekt, Visa fasett, Ta bort fasett och Skjut penseldrag i följande tabell kräver en faktor. Gränssnittet för att välja en aspekt beror på hur ditt konto är konfigurerat. Ett vanligt konto använder till exempel en nedrullningsbar lista för att välja ansikten. Om ditt konto har skårade ansikten visas en textruta för automatisk komplettering där du kan ange namnet på alla ansikten. Komplettera automatiskt föreslår ansikten i en nedrullningsbar lista när du skriver namnet på ansiktet. Förslagen innehåller definierade aspekter. Om ditt konto har en kortplatskarta visas även kortslutna facets.
 
    <table> 
     <thead> 
