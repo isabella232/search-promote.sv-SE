@@ -7,7 +7,7 @@ title: Söka&amp;Promote 8.17.0 Versionsinformation (10/30/2014)
 topic: Release Notes,Site search and merchandising
 uuid: ea1725df-778c-4875-a269-f33d0c367126
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -32,7 +32,7 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
    Se [Om ord och språk](../c-about-linguistics-menu/c-about-words-and-language.md#concept_CEB4B9576F3C4E2EB87B352EEC738D79) och [Komplettera](../c-about-auto-complete.md#concept_093A9CD754864BA79B456FE4BEB64578)automatiskt.
 
 * Processövervakaren startar nu om cacheprocesser.
-* Implementerade en åtgärd av typen &quot;Reveal Facet Item&quot; i affärsreglerna.
+* Implementerade en åtgärd av typen &quot;Reveal Facet Item&quot; i [!DNL Business Rules].
 * På [!DNL Adjust Ranking Weights] sidan kan du nu justera **[!UICONTROL Rule & Relevancy Balance]** inställningen i steg om 1 %.
 
    Se [Justera den vikt som är kopplad till rankningsreglerna](../c-about-rules-menu/c-about-ranking-rules.md#task_3CB6FC92A66F4D99874A42D55825DB64).
