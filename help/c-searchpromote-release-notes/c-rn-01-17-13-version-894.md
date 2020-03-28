@@ -7,7 +7,7 @@ title: Sökning&stämpel;amp;Promote 8.9.4 Versionsinformation (01/17/2013)
 topic: Release Notes,Site search and merchandising
 uuid: a9d550f6-0a23-4c71-b123-c31b997e7384
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -39,19 +39,19 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
    Se [Visa termrapporten eller Null Search Terms Report...](../c-about-reports-menu/c-about-reports-menu.md#task_53B7ED1582DD4B0E8376546A7AFC789A).
 
-* Öppna Rapporter > Null-sökvillkorsrapport, markera en tidsrymd och visa sedan rapporten. Klicka på ett ord i rapporten för att öppna sökningen och klicka sedan på Visa rapport igen. Antalet sökningar för nyckelordet du klickade på ökade två gånger. Den här är nu lagad.
+* Öppna **[!UICONTROL Reports > Null Search Terms Report]**, välj en tidsrymd och visa sedan rapporten. Klicka på ett ord i rapporten för att öppna sökningen och klicka sedan på Visa rapport igen. Antalet sökningar för nyckelordet du klickade på ökade två gånger. Den här är nu lagad.
 
    Se [Visa termrapporten eller Null Search Terms Report...](../c-about-reports-menu/c-about-reports-menu.md#task_53B7ED1582DD4B0E8376546A7AFC789A).
 
-* En prestandaoptimering gjordes när du publicerade affärsregler.
+* En prestandaoptimering gjordes när ni publicerade affärsreglerna.
 
    Se [Affärsregler](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
-* Möjligheten att ta bort i vägbeskrivningar fungerade inte hela tiden.
+* Möjligheten att ta bort i [!DNL Breadcrumbs] fungerade inte hela tiden.
 
    Se [Om vägbeskrivningar](../c-about-design-menu/c-about-breadcrumbs.md#concept_FB8A943C594A4A1593B118141DA61F03).
 
-* Om du inte använde Återskapa tilläts inte funktionen Re-rank att ändrade Ranking-regler skulle börja gälla i sökresultaten.
+* Om du inte använde återskapa kunde inte ändrade rankningsregler användas i sökresultaten.
 
    Se [Om rankningsregler](../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397).
 
