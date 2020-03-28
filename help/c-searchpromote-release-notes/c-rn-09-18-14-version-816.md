@@ -7,7 +7,7 @@ title: Sökning&stämpel;amp;Promote 8.16.0 Versionsinformation (9/18/2014)
 topic: Release Notes,Site search and merchandising
 uuid: 0a59858b-213b-40d6-aea1-d085c4d6d2fa
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -50,5 +50,5 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 * Inställningen Indexanslutning **[!UICONTROL Strip HTML]** visades alltid som markerad.
 * Inkonsekventa sökresultat upplevdes av **[!UICONTROL Common Phrases]** funktionen.
 * Visning av attributnamn trunkerades i sammanfattningar av regellistan.
-* När en enskild affärsregel publicerades tänjdes alla affärsregler live.
+* Att publicera en regel för enskilda företag innebar att alla affärsregler blev verklighet.
 
