@@ -7,7 +7,7 @@ title: Sök&stämpel;amp;Promote 15.3.1 Versionsinformation (03/24/2015)
 topic: Release Notes,Site search and merchandising
 uuid: f02da5a4-2207-4603-aa05-5cff7be16dd5
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -36,7 +36,7 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 * Tomma kärnsökresultat för inbäddat sökläge, för en sökning som innehåller japanska tecken.
 * Tikakonverteringen av Word.docx-filer fyller nu i `title` attributet.
 * Felaktiga dubblettbanderollmeddelanden i **[!UICONTROL Banner]** hanteraren har korrigerats.
-* Dynamic Media Classic-banners är nu protokollagnostiska.
+* [!DNL Dynamic Media Classic] banners är nu protokollagnostiska.
 * Fältattributet var ibland dolt när användardefinierade fält redigerades i användargränssnittet för metadata, även när det **[!UICONTROL Table Name]** **[!UICONTROL Dynamic Facets]** aktiverades för kontot.
 * **[!UICONTROL Recent Searches]** inte längre multiplicera icke-ASCII-tecken.
 * MDI-fält kan fyllas i utan att använda skriptbaserad filtrering.
