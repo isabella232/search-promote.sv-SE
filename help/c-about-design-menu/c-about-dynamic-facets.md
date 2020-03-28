@@ -8,7 +8,7 @@ title: Om dynamiska ansikten
 topic: Design,Site search and merchandising
 uuid: 1ea91c22-dcc2-4173-aa50-ce618ad0a99c
 translation-type: tm+mt
-source-git-commit: 4270ea66ba645ad0f71c9c8b5c2a1fcc6eb02ad2
+source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 ---
 
@@ -31,7 +31,7 @@ När Dynamic Faceting används finns det dock ingen gräns för hur många fakto
 
 Ansikten som är svagt populerade på webbplatsen och bara visas för en delmängd av sökningarna är bra för att göra dynamiska. En fasett med namnet &quot;fotsbredd&quot; kan till exempel bara fyllas i när du söker efter skor eller stövlar. En annan aspekt med namnet &quot;Ansiktsformat&quot;, med möjliga värden &quot;Roman&quot; och &quot;Arabic&quot;, kan bara visas när du söker efter färgrutor eller klockor.
 
-Om ditt konto har ett stort antal sådana aspekter förbättras sökprestandan så att du kan använda dynamiska funktioner i stället för att alltid välja hela uppsättningen möjliga aspekter för varje sökning. Allmänna aspekter som&quot;SKU&quot; eller&quot;varumärke&quot;, som normalt passar för att visas med resultaten från varje sökning, passar vanligtvis inte som dynamiska aspekter.
+Om ditt konto har ett stort antal sådana aspekter förbättras sökprestandan så att du kan använda dynamiska funktioner i stället för att alltid välja hela uppsättningen möjliga aspekter för varje sökning. Allmänna aspekter som&quot;SKU&quot; eller&quot;varumärke&quot;, som normalt passar för att visas med resultaten från varje sökning, är vanligtvis inte lämpliga som dynamiska aspekter.
 
 ## Relation mellan aspekter och metataggsfält {#section_2869E5FCDA8B431A87BC6E5573F2B0A0}
 
@@ -169,7 +169,7 @@ Se även
 
    Se till att du anger `__dynamic_facets` för `gsname` i `guided-facet-rail` -taggen. Den här taggen är en fördefinierad facet rail som är reserverad för utdata av alla dynamiska aspekter som returneras för en viss sökning.
 
-   Du kan även redigera den här speciella aspektspåret genom att välja Regler > Affärsregler och använda den avancerade regelbyggaren som visas nedan.
+   Du kan också redigera den här speciella aspektlinjen med hjälp av **[!UICONTROL Rules > Business Rules]** och med hjälp av de **[!UICONTROL Advanced Rule Builder]** som visas nedan.
 
    ![](assets/dynamicfacetrail_businessrule.png)
 
