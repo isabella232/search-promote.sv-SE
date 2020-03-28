@@ -7,7 +7,7 @@ title: Om Simulator
 topic: Simulator,Site search and merchandising
 uuid: 7ec8f5b9-3ab3-4b9a-bf8a-65d0ca1dfddb
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: 91ddead9f73b73ea1a20e26582998966f801d6ff
 
 ---
 
@@ -52,28 +52,28 @@ Se [Lägga till en ny affärsregel](c-about-rules-menu/c-about-business-rules.md
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>Simulera mellanlagrad/simulera live </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Simulera mellanlagrad/simulera live</span> </p> </td> 
       <td colname="col2"> <p>Växla mellan att simulera den aktiva miljön eller scenmiljön. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Visa/dölj bearbetningsregler </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Visa/dölj bearbetningsregler</span> </p> </td> 
       <td colname="col2"> <p>Visa eller dölj alla bearbetningsregler som utlöstes i stället för bara affärsreglerna. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Ändra simuleringsdatum </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Ändra simuleringsdatum</span> </p> </td> 
       <td colname="col2"> <p>Simulera sökresultat för ett visst datum. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Simulera på dator </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Simulera på dator</span> </p> </td> 
       <td colname="col2"> <p>Simulera sökresultat som om du använde en dator. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Simulera på mobiler </p> </td> 
+      <td colname="col1"> <p><span class="uicontrol">Simulera på mobiler</span> </p> </td> 
       <td colname="col2"> <p>Simulera sökresultat som om du använde en mobiltelefon eller surfplatta. </p> <p>När du väljer det här alternativet kan du välja bland följande associerade alternativ: </p> 
         <ul id="ul_2A9901418212486A8EE67A78CB99CBE4"> 
-        <li id="li_B210E954DF0D44C397718112C72C2103"> <b>Enhet</b> <p>Simulera sökresultaten på en mobiltelefon eller surfplatta. </p> </li> 
-        <li id="li_90B64EAA0B57446A90CE22172E703594"> <b>Upplösning</b> <p>Beroende på vilken enhet du valt kan du välja den associerade upplösningen. </p> </li> 
-        <li id="li_042AF9FA3FA846EDB48F7296DB361515"> <b>Vågrät vy</b> <p>Visa hur de simulerade sökresultaten visas vågrätt på den valda enheten. </p> </li> 
+        <li id="li_B210E954DF0D44C397718112C72C2103"> <b><span class="uicontrol">Enhet</span></b> <p>Simulera sökresultaten på en mobiltelefon eller surfplatta. </p> </li> 
+        <li id="li_90B64EAA0B57446A90CE22172E703594"> <b><span class="uicontrol">Upplösning</span></b> <p>Beroende på vilken enhet du valt kan du välja den associerade upplösningen. </p> </li> 
+        <li id="li_042AF9FA3FA846EDB48F7296DB361515"> <b><span class="uicontrol">Vågrät vy</span></b> <p>Visa hur de simulerade sökresultaten visas vågrätt på den valda enheten. </p> </li> 
         </ul> </td> 
       </tr> 
     </tbody> 
