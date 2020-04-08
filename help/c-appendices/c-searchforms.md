@@ -7,14 +7,12 @@ title: Sök i formulär
 topic: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: 55f48748f8c0a2f739dfbe30e8d42b73c8106b81
 
 ---
 
 
 # Sök i formulär{#search-forms}
-
-## Sök i formulär {#concept_915FFF20FF644830B7B3C6E00F416BCB}
 
 ## Använda samlingar i sökformulär {#reference_5A079AEEEFB84457892EF0870D0605C3}
 
@@ -133,22 +131,22 @@ Så här konfigurerar du ramuppsättningar:
   <tr> 
    <td colname="col1"> <p>1 </p> </td> 
    <td colname="col02"> <p>Lägg till formuläret i önskad ram på webbsidan. </p> </td> 
-   <td colname="col2"> <p> <a href="../c-appendices/c-searchforms.md#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> Lägger till sökformulärkoden i en ram i ... </a> </p> </td> 
+   <td colname="col2"> <p> <a href="#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> Lägger till sökformulärkoden i en ram i ... </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col02"> <p>Ange målramen för sökresultatsidan. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> Ange målramen för sökresultatsidan </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> Ange målramen för sökresultatsidan </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
    <td colname="col02"> <p>Ange målet för länkar som skapats från sökresultatsidan. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_523248C5AC424D878321C21A23A5CD66" type="section" format="dita"> Anger målet för länkar som skapats från sökresultaten.. </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_523248C5AC424D878321C21A23A5CD66" type="section" format="dita"> Anger målet för länkar som skapats från sökresultaten.. </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
    <td colname="col02"> <p>Redigera sidorna i navigeringsramen för att förhindra att de indexeras. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_C62E5F0EE1294D5EBD97E123E54433FC" type="section" format="dita"> Redigerar sidor i navigeringsramen för att förhindra att de.. </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_C62E5F0EE1294D5EBD97E123E54433FC" type="section" format="dita"> Redigerar sidor i navigeringsramen för att förhindra att de.. </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>5 </p> </td> 
