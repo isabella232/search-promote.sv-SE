@@ -7,7 +7,7 @@ title: Sök i formulär
 topic: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
-source-git-commit: 55f48748f8c0a2f739dfbe30e8d42b73c8106b81
+source-git-commit: 4542702e1d2ba04c70d9f6b24bfa32e1f1c6acb5
 
 ---
 
@@ -151,7 +151,7 @@ Så här konfigurerar du ramuppsättningar:
   <tr> 
    <td colname="col1"> <p>5 </p> </td> 
    <td colname="col02"> <p>Testa sökformuläret. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="../c-appendices/c-searchforms.md#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Testa sökformuläret </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Testa sökformuläret </a> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -286,7 +286,7 @@ Med hjälp av följande exempelformulär för avancerad sökning visar resten av
 
 Du kan visa hela HTML-koden för det avancerade sökformuläret i exemplet ovan.
 
-Se [Avancerad HTML-kod](../c-appendices/c-searchforms.md#reference_9AAD4A46B68D4D48865508982CB86DB9)för sökformulär.
+Se [Avancerad HTML-kod](#reference_9AAD4A46B68D4D48865508982CB86DB9)för sökformulär.
 
 Se [Konfigurera Komplettera CSS](../c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)automatiskt.
 
@@ -435,7 +435,7 @@ Se [Kopiera HTML-koden för sökformuläret till ...](../c-about-auto-complete.m
 
 Den HTML-formulärkod som används för att skapa det avancerade sökformuläret som visas högst upp i det avancerade exempelsökformulärämnet.
 
-Se [Exempel på avancerat sökformulär](../c-appendices/c-searchforms.md#reference_82E1051918744EBA88A01E9E6AE42C4A).
+Se [Exempel på avancerat sökformulär](#reference_82E1051918744EBA88A01E9E6AE42C4A).
 
 Om du använder den här koden måste du komma ihåg att ersätta `sp_a` värdet för `sp99999999` med ditt faktiska kontonummer.
 
