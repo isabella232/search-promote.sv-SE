@@ -8,7 +8,10 @@ title: Om menyn Metadata
 topic: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 translation-type: tm+mt
-source-git-commit: cf2707d124bd3f3a864610bcf41dda5e5670fc90
+source-git-commit: e080a61e24a3809beff7c212ff3d088b2a8ad3b6
+workflow-type: tm+mt
+source-wordcount: '8064'
+ht-degree: 0%
 
 ---
 
@@ -117,7 +120,7 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       <tr> 
       <td colname="col1"> <p> Dynamisk Fasett </p> </td> 
       <td colname="col2"> <p> 
-        <!--NEW 2/2/2014--> <p>Obs!  Den här funktionen är inte aktiverad som standard. Kontakta teknisk support för att aktivera den för användning. När den har aktiverats visas den i användargränssnittet. </p> </p> <p>Anger att den identifierade aspekten ska vara dynamisk. </p> <p>Ansikten byggs ovanpå metataggsfält. Ett metataggsfält är ett lågnivålager för grundsökning i Adobe Search&amp;Promote. Ansikten är å andra sidan en del av GS (Guided Search)-presentationsskiktet på hög nivå i Adobe Search&amp;Promote. Ansikten över egna metataggsfält är att metataggsfält inte kan någonting om ansikten. </p> <p>Se <a href="../c-about-design-menu/c-about-dynamic-facets.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> Om dynamiska ansikten </a>. </p> </td> 
+        <!--NEW 2/2/2014--> <p>Obs!  Den här funktionen är inte aktiverad som standard. Kontakta teknisk support för att aktivera den för användning. När den har aktiverats visas den i användargränssnittet. </p> </p> <p>Anger att den identifierade aspekten ska vara dynamisk. </p> <p>Ansikten byggs ovanpå metataggsfält. Ett metataggsfält är ett lågnivålager för grundsökning i Adobe Search&amp;Promote. Ansikten är å andra sidan en del av GS-presentationsskiktet (Guided Search) - Adobe Search&amp;Promote högnivåskikt. Ansikten över egna metataggsfält är att metataggsfält inte kan någonting om ansikten. </p> <p>Se <a href="../c-about-design-menu/c-about-dynamic-facets.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> Om dynamiska ansikten </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Tillåt borttagning </p> </td> 
@@ -155,7 +158,7 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       </tr> 
       <tr> 
       <td colname="col1"> <p>Språk </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> Rankning </span>, <span class="uicontrol"> Nummer </span>eller <span class="uicontrol"> Datum </span> har valts. </p> <p>Styr de språk- och språkkonventioner som tillämpas när värden för datum, nummer och rangordning för det här fältet indexeras. </p> <p>Du kan välja att använda kontospråket (Språk &gt; Ord och språk). Du kan också använda det språk som är associerat med dokumentet som innehåller varje tal- eller datumvärde, eller ett visst språk. </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> Rankning </span>, <span class="uicontrol"> Nummer </span>eller <span class="uicontrol"> Datum </span> har valts. </p> <p>Styr de språk- och språkkonventioner som används vid indexering av datum-, nummer- och rangvärden för det här fältet. </p> <p>Du kan välja att använda kontospråket (Språk &gt; Ord och språk). Du kan också använda det språk som är associerat med dokumentet som innehåller varje tal- eller datumvärde, eller ett visst språk. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Datumformat </p> </td> 
@@ -614,7 +617,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       <td colname="col2"> <p>Källan till dina data. Den typ av datakälla du väljer påverkar de alternativ som är tillgängliga på <span class="wintitle"> sidan Lägg till attributinläsare </span> . Du kan välja mellan följande: </p> <p> 
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
       <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Text </span> <p>Enkla platta textfiler, kommaavgränsade, tabbavgränsade eller andra konsekvent avgränsade format. Varje radavgränsad textrad motsvarar ett enskilt dokument och tolkas med den angivna avgränsaren. </p> <p>Du kan mappa varje värde, eller kolumn, till ett metadatafält, som kolumnnumret refererar till, med början vid 1 (ett). </p> </li> 
-      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Hämtar ett XML-huvuddokument som innehåller flera "rader" med information. </p> </li> 
+      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Hämtar ett primärt XML-dokument som innehåller flera "rader" med information. </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -694,7 +697,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       </tr> 
       <tr> 
       <td colname="col1"> <p>Filsökväg </p> </td> 
-      <td colname="col2"> <p>Anger sökvägen till XML-huvuddokumentet som innehåller flera"rader" med information. </p> <p>Sökvägen är relativ till värdadressens rot. </p> </td> 
+      <td colname="col2"> <p>Anger sökvägen till det primära XML-dokumentet som innehåller flera "rader" med information. </p> <p>Sökvägen är relativ till värdadressens rot. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Protokoll </p> </td> 
