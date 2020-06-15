@@ -8,7 +8,10 @@ title: Om Crawling-menyn
 topic: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
 translation-type: tm+mt
-source-git-commit: 77a4e88c7bf47b637030e3935a39dfdf4f175e80
+source-git-commit: e080a61e24a3809beff7c212ff3d088b2a8ad3b6
+workflow-type: tm+mt
+source-wordcount: '11115'
+ht-degree: 0%
 
 ---
 
@@ -1060,7 +1063,7 @@ Anta att du har följande regel för omskrivning:
 RewriteRule (^http.*[.]xml$) index:Adobe?key=$1
 ```
 
-Den här regeln översätter alla URL:er som slutar med `.xml` till en Index Connector-länk. Crawlningen känner igen och skriver om `index:` URL-schemat. Hämtningsprocessen dirigeras om via Index Connector Apache-servern på huvudservern. Varje nedladdat dokument granskas med samma mönster för reguljära uttryck som används med Feeds. I det här fallet sparas dock inte det tillverkade HTML-dokumentet i cachen. I stället skickas den direkt till crawlern för indexbearbetning.
+Den här regeln översätter alla URL:er som slutar med `.xml` till en Index Connector-länk. Crawlningen känner igen och skriver om `index:` URL-schemat. Hämtningsprocessen dirigeras om via Index Connector Apache-servern på den primära servern. Varje nedladdat dokument granskas med samma mönster för reguljära uttryck som används med Feeds. I det här fallet sparas dock inte det tillverkade HTML-dokumentet i cachen. I stället skickas den direkt till crawlern för indexbearbetning.
 
 ## Konfigurera flera Index Connectors {#section_C2B14C0F06354A57AEF6238FF3814E5D}
 
@@ -1108,7 +1111,7 @@ När du lägger till en Index Connector kan du använda funktionen **[!UICONTROL
   </tr> 
   <tr> 
    <td colname="col1"> <p>XML </p> </td> 
-   <td colname="col2"> <p>Hämtar URL:en för ett representativt enskilt dokument, inte huvudlänkslistan. Det här dokumentet tolkas på samma sätt som i Feeds, och resultatet visas. </p> <p>Innan du klickar på <span class="uicontrol"> Lägg till </span> för att spara konfigurationen måste du ändra tillbaka URL:en till malllänkens listdokument. </p> </td> 
+   <td colname="col2"> <p>Hämtar URL:en för ett representativt enskilt dokument, inte den primära länklistan. Det här dokumentet tolkas på samma sätt som i Feeds, och resultatet visas. </p> <p>Innan du klickar på <span class="uicontrol"> Lägg till </span> för att spara konfigurationen måste du ändra tillbaka URL-adressen till det primära länklistdokumentet. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1152,8 +1155,8 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       <td colname="col2"> <p>Källan till dina data. Den typ av datakälla du väljer påverkar de alternativ som är tillgängliga på <span class="wintitle"> sidan Lägg till </span> indexkoppling. Du kan välja mellan följande: </p> <p> 
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
       <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Text </span> <p>Enkla platta textfiler, kommaavgränsade, tabbavgränsade eller andra konsekvent avgränsade format. Varje radavgränsad textrad motsvarar ett enskilt dokument och tolkas med den angivna avgränsaren. </p> <p>Du kan mappa varje värde, eller kolumn, till ett metadatafält, som kolumnnumret refererar till, med början vid 1 (ett). </p> </li> 
-      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Hämtar ett XML-huvuddokument som innehåller flera "rader" med information. </p> </li> 
-      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>Hämtar ett XML-huvuddokument som innehåller länkar ( 
+      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Hämtar ett primärt XML-dokument som innehåller flera "rader" med information. </p> </li> 
+      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>Hämtar ett primärt XML-dokument som innehåller länkar ( 
       <userinput>
         &lt;a&gt; 
       </userinput>) till enskilda XML-dokument. </p> </li> 
@@ -1229,7 +1232,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       <li id="li_A42CB9DFFF8C45A7BAC2D471FE96CEBE"> <span class="uicontrol"> Kolumn </span> <p> Anger ett kolumnnummer med den första kolumnen som 1 (ett). Om du vill lägga till nya mappningsrader för varje kolumn klickar du på <span class="wintitle"> + </span>under Åtgärd <span class="uicontrol"> </span>. </p> <p>Du behöver inte referera till varje kolumn i datakällan. I stället kan du välja att hoppa över värden. </p> </li> 
       <li id="li_26E8C9554A5D4BC5A5073D6385E3626F"> <span class="uicontrol"> Fält </span> <p>Definierar det name-attributvärde som används för varje genererad &lt;meta&gt;-tagg. </p> </li> 
       <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadata? </span> <p>Gör <span class="uicontrol"> fält </span> till en nedrullningsbar lista där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Fältvärdet <span class="uicontrol"> kan </span> vara ett odefinierat metadatafält, om så önskas. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtrera skript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Filtrera skript </a>. </p> <p>När Index Connector bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle"> fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributet <span class="wintitle"> Allow Lists </span> angivet. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
-      <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Primärnyckel? </span> <p>Endast en kartdefinition identifieras som primärnyckel. Det här fältet blir den unika referens som visas när dokumentet läggs till i indexet. Det här värdet används i dokumentets URL i indexet. </p> <p>Värdena för <span class="uicontrol"> </span> primärnyckel måste vara unika för alla dokument som representeras av konfigurationen för indexkoppling. Eventuella dubbletter som påträffas ignoreras. Om källdokumenten inte innehåller ett enda unikt värde som ska användas som <span class="uicontrol"> primärnyckel, </span>men två eller flera fält tillsammans <i>kan</i> utgöra en unik identifierare, kan du definiera <span class="uicontrol"> primärnyckeln </span> genom att kombinera flera <span class="uicontrol"> kolumnvärden </span> med ett lodrätt streck ("|") som avgränsar värdena. </p> </li> 
+      <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Primärnyckel? </span> <p>Endast en kartdefinition identifieras som primärnyckel. Det här fältet blir den unika referens som visas när dokumentet läggs till i indexet. Det här värdet används i dokumentets URL i indexet. </p> <p>Värdena för <span class="uicontrol"> primärnyckel måste vara unika </span> för alla dokument som representeras av konfigurationen för indexkoppling. Eventuella dubbletter som påträffas ignoreras. Om källdokumenten inte innehåller ett enda unikt värde som ska användas som <span class="uicontrol"> primärnyckel, </span>men två eller flera fält tillsammans <i>kan</i> utgöra en unik identifierare, kan du definiera <span class="uicontrol"> primärnyckeln </span> genom att kombinera flera <span class="uicontrol"> kolumnvärden </span> med ett lodrätt streck ("|") som avgränsar värdena. </p> </li> 
       <li id="li_80DB205525094CE1AA6762BFC7892D96"> <span class="uicontrol"> Ta bort HTML? </span> <p>När det här alternativet är markerat tas alla HTML-taggar som finns i fältets data bort. </p> </li> 
       <li id="li_359D2902859B4C5BADB0BA26F0BA4DC0"> <span class="uicontrol"> Åtgärd </span> <p>Gör att du kan lägga till rader på kartan eller ta bort rader från kartan. Radernas ordning är inte viktig. </p> </li> 
       </ul> </p> </td> 
@@ -1248,7 +1251,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       </tr> 
       <tr> 
       <td colname="col1"> <p>Filsökväg </p> </td> 
-      <td colname="col2"> <p>Anger sökvägen till XML-huvuddokumentet som innehåller flera"rader" med information. </p> <p>Sökvägen är relativ till värdadressens rot. </p> </td> 
+      <td colname="col2"> <p>Anger sökvägen till det primära XML-dokumentet som innehåller flera "rader" med information. </p> <p>Sökvägen är relativ till värdadressens rot. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Inkrementell filsökväg </p> </td> 
@@ -1348,7 +1351,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       </tr> 
       <tr> 
       <td colname="col1"> <p>Filsökväg </p> </td> 
-      <td colname="col2"> <p>Anger sökvägen till XML-huvuddokumentet som innehåller länkar ( 
+      <td colname="col2"> <p>Anger sökvägen till det primära XML-dokumentet som innehåller länkar ( 
       <userinput>
         &lt;a&gt; 
       </userinput>) till enskilda XML-dokument. </p> <p>Sökvägen är relativ till värdadressens rot. </p> </td> 
@@ -1384,7 +1387,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       </ul> </p> <p>XPath är en relativt komplicerad notation. Mer information finns på följande plats: </p> <p>Se <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_84999D07E0AE4265BC7928BBB49957B9"> <span class="uicontrol"> Fält </span> <p>Definierar det name-attributvärde som används för varje genererad &lt;meta&gt;-tagg. </p> </li> 
       <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadata? </span> <p>Gör <span class="uicontrol"> fält </span> till en nedrullningsbar lista där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Fältvärdet <span class="uicontrol"> kan </span> vara ett odefinierat metadatafält, om så önskas. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtrera skript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Filtrera skript </a>. </p> <p>När Index Connector bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle"> fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributet <span class="wintitle"> Allow Lists </span> angivet. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
-      <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Primärnyckel? </span> <p>Endast en kartdefinition identifieras som primärnyckel. Det här fältet blir den unika referens som visas när dokumentet läggs till i indexet. Det här värdet används i dokumentets URL i indexet. </p> <p>Värdena för <span class="uicontrol"> </span> primärnyckel måste vara unika för alla dokument som representeras av konfigurationen för indexkoppling. Eventuella dubbletter som påträffas ignoreras. Om källdokumenten inte innehåller ett enda unikt värde som ska användas som <span class="uicontrol"> primärnyckel, </span>men två eller flera fält tillsammans <i>kan</i> utgöra en unik identifierare, kan du definiera <span class="uicontrol"> primärnyckeln </span> genom att kombinera flera <span class="uicontrol"> taggdefinitioner </span> med ett lodrätt streck ("|") som avgränsar värdena. </p> </li> 
+      <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Primärnyckel? </span> <p>Endast en kartdefinition identifieras som primärnyckel. Det här fältet blir den unika referens som visas när dokumentet läggs till i indexet. Det här värdet används i dokumentets URL i indexet. </p> <p>Värdena för <span class="uicontrol"> primärnyckel måste vara unika </span> för alla dokument som representeras av konfigurationen för indexkoppling. Eventuella dubbletter som påträffas ignoreras. Om källdokumenten inte innehåller ett enda unikt värde som ska användas som <span class="uicontrol"> primärnyckel, </span>men två eller flera fält tillsammans <i>kan</i> utgöra en unik identifierare, kan du definiera <span class="uicontrol"> primärnyckeln </span> genom att kombinera flera <span class="uicontrol"> taggdefinitioner </span> med ett lodrätt streck ("|") som avgränsar värdena. </p> </li> 
       <li id="li_9F435EFB3EC74B409EC82A851824610G"> <span class="uicontrol"> Ta bort HTML? </span> <p>När det här alternativet är markerat tas alla HTML-taggar som hittas i fältets data bort. </p> </li> 
       <li id="li_6302D18971AD439FBECE27742649C56B"> <span class="uicontrol"> Åtgärd </span> <p>Gör att du kan lägga till rader på kartan eller ta bort rader från kartan. Radernas ordning är inte viktig. </p> </li> 
       </ul> </p> </td> 
