@@ -7,7 +7,10 @@ title: Reguljära uttryck
 topic: Appendices,Site search and merchandising
 uuid: 369b54f6-372a-41de-bb5d-3ae0bd640199
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: 7b883870bb16284d8070a21547cdb62cc79d7632
+workflow-type: tm+mt
+source-wordcount: '1058'
+ht-degree: 0%
 
 ---
 
@@ -115,7 +118,7 @@ Se även [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](..
 
       Den `^` här speciella betydelsen finns bara om den förekommer först i strängen. Du kan använda `-` (minustecken) för att ange ett intervall med efterföljande tecken, inklusive extra koduppsättningstecken. Till exempel motsvarar [0-9] [0123456789].
 
-      Tecken som anger intervallet måste komma från samma koduppsättning. När tecknen kommer från olika koduppsättningar matchas ett av tecknen som anger intervallet. Den `-` här speciella betydelsen försvinner om den inträffar först (efter en inledande `^`, om det finns någon) eller sist i strängen. En sådan sträng avslutas inte med `]` (höger hakparentes) när den är det första tecknet i strängen, efter en inledande `^`, om det finns någon. Exempel: []a-f] matchar antingen en `]` (höger hakparentes) eller en av ASCII-bokstäverna a till och med f. De fyra tecknen som anges som specialtecken ovan står för sig själva inom en sådan teckensträng.
+      Tecken som anger intervallet måste komma från samma koduppsättning. När tecknen kommer från olika koduppsättningar matchas ett av tecknen som anger intervallet. Den `-` här speciella betydelsen försvinner om den inträffar först (efter en inledande `^`, om det finns någon) eller sist i strängen. En sådan sträng avslutas inte med `]` (höger hakparentes) när den är det första tecknet i strängen, efter en inledande `^`, om det finns någon. Matchar t.ex. `[]a-f]` antingen en `]` (höger hakparentes) eller en av ASCII-bokstäverna a till och med f. De fyra tecknen som anges som specialtecken ovan står för sig själva inom en sådan teckensträng.
 
 **Regler för att skapa reguljära uttryck från reguljära uttryck med ett tecken**
 
