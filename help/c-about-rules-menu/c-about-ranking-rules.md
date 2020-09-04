@@ -1,6 +1,6 @@
 ---
-description: Du kan använda Rankningsregler för att styra den relativa placeringen eller rankningen av en kunds sökresultat baserat på innehållet i metataggar och relaterade Adobe Analytics-mått.
-seo-description: Du kan använda Rankningsregler för att styra den relativa placeringen eller rankningen av en kunds sökresultat baserat på innehållet i metataggar och relaterade Adobe Analytics-mått.
+description: Du kan använda Rankningsregler för att styra den relativa placeringen eller rankningen av en kunds sökresultat baserat på metataggens innehåll och relaterade Adobe Analytics-mått.
+seo-description: Du kan använda Rankningsregler för att styra den relativa placeringen eller rankningen av en kunds sökresultat baserat på metataggens innehåll och relaterade Adobe Analytics-mått.
 seo-title: Om rankningsregler
 solution: Target
 subtopic: Ranking Rules
@@ -8,20 +8,23 @@ title: Om rankningsregler
 topic: Rules,Site search and merchandising
 uuid: 21962f9a-1d9c-442f-a6c4-5f452436c640
 translation-type: tm+mt
-source-git-commit: f4f69e6bdb37fb39045f8f25cffa4bf616834e54
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '4647'
+ht-degree: 0%
 
 ---
 
 
 # Om rankningsregler{#about-ranking-rules}
 
-Du kan använda Rankningsregler för att styra den relativa placeringen eller rankningen av en kunds sökresultat baserat på innehållet i metataggar och relaterade Adobe Analytics-mått.
+Du kan använda Rankningsregler för att styra den relativa placeringen eller rankningen av en kunds sökresultat baserat på metataggens innehåll och relaterade Adobe Analytics-mått.
 
 ## Använda rankningsregler {#concept_F555C076759B4E81B925441CFE707397}
 
 Du definierar rankningsregler som påverkar den relativa placeringen av dokumenten i sökresultaten, baserat på innehållet i varje dokument. Du kan basera rankningsregler antingen på metataggens innehåll, Adobe Analytics-statistik (om ditt konto är konfigurerat att fungera med Adobe Analytics) eller Adobe Analytics HBX-statistik (om ditt konto är konfigurerat att fungera med Adobe Analytics HBX).
 
-Du kan ställa in webbsidor som innehåller metataggar med önskade egenskaper, till exempel ett visst varumärke eller pris, eller webbsidor som har önskvärda nyckeltal för Adobe Analytics, till exempel unika visningsprogram, så att de får en högre rankning än webbsidor som inte har det. De&quot;önskade&quot; egenskaperna uppdateras enkelt genom att rankningsreglerna läggs till eller redigeras och webbplatsen indexeras om.
+Du kan ställa in webbsidor som innehåller metataggar med önskade egenskaper, t.ex. ett visst varumärke eller pris, eller webbsidor som har önskvärda nyckeltal för Adobe Analytics, t.ex. unika visningsprogram, så att de får en högre rankning än webbsidor som inte har det. De&quot;önskade&quot; egenskaperna uppdateras enkelt genom att rankningsreglerna läggs till eller redigeras och webbplatsen indexeras om.
 
 Om du har definierat fler än en metatagg av typen rankning kan du skapa separata samlingar med regler som du kan använda när du beräknar de olika rankningsfälten. Du kan lägga till en rankningsregelgrupp som du sedan kan tilldela till ett av dina definierade Rankningsfält. Regelgrupper innehåller vanligtvis en eller flera regeldefinitioner, men kan även referera till andra regelgrupper, så att du kan skapa en eller flera grupper med vanliga regler som delas vid beräkningen av flera rankningar.
 
@@ -59,24 +62,22 @@ Innan du kan använda rankningsregler måste du slutföra flera steg i kontokonf
       <ol id="ol_28ABB980143948DFA79AC4360AAB7556"> 
       <li id="li_544075CFA0964C6F8FAF7941AAA9ECCC"> På produktmenyn klickar du på <span class="uicontrol"> Inställningar </span> &gt; <span class="uicontrol"> Metadata </span> &gt; <span class="uicontrol"> Definitioner </span>. </li> 
       <li id="li_F237F13B89E8425080C15D3BD697652C"> På sidan Definitioner klickar du på <span class="uicontrol"> Lägg till nytt fält </span>. </li> 
-      <li id="li_2A839874D71D45FEA661B3D3B8BE2A86"> På sidan Lägg till fält skriver du i <span class="uicontrol"> textfältet </span> Fältnamn 
-      <userinput>
-        rankning 
-      </userinput>; i <span class="uicontrol"> textfältet </span> Meta Tag Name (Namn på metatagg) skriver du 
-      <userinput>
-        rankning 
-      </userinput>; i <span class="uicontrol"> listrutan </span> Datatyp väljer du <span class="uicontrol"> Rankning </span>. Lämna alla andra fältalternativ som de är. <p>Se frågeparametern <span class="codeph"> sp_sr </span> i CGI-parametrar för <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> backend-sökning </a>. </p> </li> 
+      <li id="li_2A839874D71D45FEA661B3D3B8BE2A86"> På sidan Lägg till fält skriver du <span class="uicontrol"> i </span> <code>
+        rank 
+      </code>textfältet Fältnamn. I <span class="uicontrol"> textfältet för </span> metataggen skriver du <code>
+        rank 
+      </code>; i <span class="uicontrol"> listrutan </span> Datatyp väljer du <span class="uicontrol"> Rankning </span>. Lämna alla andra fältalternativ som de är. <p>Se frågeparametern <span class="codeph"> sp_sr </span> i CGI-parametrar för <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> backend-sökning </a>. </p> </li> 
       <li id="li_8E91AF4BE51A4A41ABBF9680DDE0B7CE">Klicka på <span class="uicontrol"> Lägg till </span>. </li> 
       </ol> </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Skapa rangordningsregler som bygger på Adobe Analytics-statistik </p> </td> 
+      <td colname="col1"> <p>Skapa rangordningsregler som baseras på Adobe Analytics-statistik </p> </td> 
       <td colname="col2"> <p> 
       <ol id="ol_BE57CBC303D941778B10D855ADC93C68"> 
-      <li id="li_8DF5D8F924B24ECBBD2D93C76C69D00C"> Se till att du har konfigurerat Adobe Analytics-autentisering inifrån webbplatssökningar/-marknadsföring. <p>Se <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_8AA93F6273B747F9B4DE9E8DFBCBDC42" type="task" format="dita" scope="local"> Konfigurera autentisering av Adobe Analytics-mått </a>. </p> </li> 
+      <li id="li_8DF5D8F924B24ECBBD2D93C76C69D00C"> Se till att du har konfigurerat Adobe Analytics-autentisering inifrån webbplatssökning/försäljning. <p>Se <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_8AA93F6273B747F9B4DE9E8DFBCBDC42" type="task" format="dita" scope="local"> Konfigurera autentisering av Adobe Analytics-mått </a>. </p> </li> 
       <li id="li_CF7DD073FC5A432DADBD282AA8BB9920"> Välj och lägg till en tillgänglig rapportserie. <p>Se Lägga till en Adobe Analytics Report Suite <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_6DE17305EA7146DA8C30FF8FDF68A3C0" type="task" format="dita" scope="local"> </a>. </p> </li> 
-      <li id="li_9A63448577D04E028DF211D8715F943A"> Konfigurera listan med Adobe Analytics-mått som du vill ska vara tillgängliga för att skapa nya rankningsregler. <p>Se <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Redigera Adobe Analytics-statistik i en Report Suite </a>. </p> </li> 
-      <li id="li_1ACA3611D9B44AC394604CD89209C966"> Läs in de inledande Adobe Analytics-mätvärdena för era webbplatssidor. <p>Se <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_2F3C55189B0A4049AB2113F2291CC181" type="task" format="dita" scope="local"> Läsa in Adobe Analytics-data </a>. </p> </li> 
+      <li id="li_9A63448577D04E028DF211D8715F943A"> Konfigurera listan med Adobe Analytics-mått som du vill ska vara tillgängliga för att skapa nya rankningsregler. <p>Se <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Redigera Adobe Analytics-mått i en rapportsserie </a>. </p> </li> 
+      <li id="li_1ACA3611D9B44AC394604CD89209C966"> Läs in de ursprungliga Adobe Analytics-mätvärdena för webbplatserna. <p>Se <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_2F3C55189B0A4049AB2113F2291CC181" type="task" format="dita" scope="local"> Läsa in Adobe Analytics-data </a>. </p> </li> 
       </ol> </p> </td> 
       </tr> 
     </tbody> 
@@ -103,7 +104,7 @@ Du kan rangordna ett HTML-dokument efter dess ålder med en exponentiell minskni
 
 `RANK = e^(K * T)`
 
-Variabler `H` och `T` är indata till den här funktionen: är `H` önskad halveringstid och `T` dokumentets ålder, uttryckt i sekunder. `K` är den beräknade halveringstiden och `RANK` är den exponentiella minskningen av det angivna åldersvärdet. Det resulterande värdet är från 0 till 1. Ett senare dokument har ett rangvärde som ligger närmare 1 jämfört med ett äldre dokument. Teoretiskt sett bör dokument aldrig nå värdet 0, men om du avrundar fel kan resultatet bli 0.
+Variabler `H` och `T` är indata till den här funktionen: `H` är önskad halveringstid och `T` dokumentets ålder, uttryckt i sekunder. `K` är den beräknade halveringstiden och `RANK` är den exponentiella minskningen av det angivna åldersvärdet. Det resulterande värdet är från 0 till 1. Ett senare dokument har ett rangvärde som ligger närmare 1 jämfört med ett äldre dokument. Teoretiskt sett bör dokument aldrig nå värdet 0, men om du avrundar fel kan resultatet bli 0.
 
 ## Krav för att använda åldersklassificering {#section_D716507D589442C6B7848892BD28F966}
 
@@ -137,7 +138,7 @@ Se alternativtabellen när du [lägger till en rankningsregel](../c-about-rules-
 
 I avsnittet Värden/rankningar på sidan Lägg till rankningsregel eller sidan Redigera rankningsregel kan du bara använda `search_get_age_rank` med anpassade regler. Se därför till att du väljer **Egen** i listrutan Värden/Rankningar. När regeln använder funktionen för ålderrangordning tillåts inga mellanslag i värdedelen av regeln. Kontrollera att det inte finns några mellanslag i funktionsargumenten eller mellan dem. Och det finns inga mellanslag mellan matematiska eller villkorliga operatorer.
 
-Följande är ett exempel på en värde-/rankningsregel, en regel som är kopplad till ett textfält:
+Följande är ett exempel på en värde-/rankningsregel - en regel som är kopplad till ett textfält:
 
 `regexp .* search_get_age_rank({other_field}#365#0.20)`
 
@@ -200,12 +201,12 @@ Se [Konfigurera rankning](../c-about-rules-menu/c-about-ranking-rules.md#task_4C
 1. (Valfritt) Om du har skapat en regelgrupp och lagt till regler i gruppen, på [!DNL Define Ranking Rules] sidan, i **[!UICONTROL Select Rule Group]** listrutan, väljer du en regelgrupp som innehåller de regler du vill redigera.
 
    Se [Lägga till en rankningsregelgrupp](../c-about-rules-menu/c-about-ranking-rules.md#task_B65081B3CC9E4330A7FEE77B7BCD36C8).
-1. På [!DNL Define Ranking Rules] sidan klickar du på **[!UICONTROL Add Rule]** för att lägga till en ny rankningsregel eller för att lägga till en referens till en regeluppsättning.
+1. På [!DNL Define Ranking Rules] sidan klickar du **[!UICONTROL Add Rule]** för att lägga till en ny rankningsregel eller för att lägga till en referens till en regeluppsättning.
 1. Ange önskade alternativ på [!DNL Add Ranking Rule] sidan. Fält som är markerade med en asterisk (*) är obligatoriska.
 
-   Den datakälltyp du väljer påverkar de alternativ som är tillgängliga i [!DNL Data Source Name] listrutan. Om du till exempel har valt **[!UICONTROL Meta Tag]** som datakälltyp refererar namnet på datakällan till namnet på en meta-tagg på webbplatsens sidor. Om du väljer **[!UICONTROL Adobe Analytics Metric (Number)]** det här alternativet refererar namnet på datakällan till ett av de mätnamn för Adobe Analytics som du har valt i en rapportsvit, enligt vad som finns på **[!UICONTROL Edit Adobe Analytics Metrics]** sidan för webbplatssökning/försäljning.
+   Den datakälltyp du väljer påverkar de alternativ som är tillgängliga i [!DNL Data Source Name] listrutan. Om du till exempel har valt **[!UICONTROL Meta Tag]** som datakälltyp refererar namnet på datakällan till namnet på en meta-tagg på webbplatsens sidor. Om du väljer **[!UICONTROL Adobe Analytics Metric (Number)]** det här alternativet refererar namnet på datakällan till ett av de mätnamn för Adobe Analytics som du har valt i en rapportsvit som finns på **[!UICONTROL Edit Adobe Analytics Metrics]** sidan i webbplatssökningar/-marknadsföring.
 
-   Se [Redigera Adobe Analytics-statistik i en Report Suite](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664).
+   Se [Redigera Adobe Analytics-mått i en Report Suite](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664).
 
    <table> 
     <thead> 
@@ -225,7 +226,7 @@ Se [Konfigurera rankning](../c-about-rules-menu/c-about-ranking-rules.md#task_4C
       </tr> 
       <tr> 
       <td colname="col1"> <p>Namn på datakälla </p> </td> 
-      <td colname="col2"> <p>Om du väljer <span class="uicontrol"> Meta-tagg </span> som datakälltyp är det här namnet på en meta-tagg som finns på webbplatsens sidor. Namnen i listrutan kommer från listan med definierade metadatavärden som konfigurerats i Inställningar &gt; Metadata &gt; Definitioner. </p> <p>Se <a scope="local" href="../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5" type="task" format="dita"> Lägga till ett nytt fält för metataggar </a>. </p> <p>Om du väljer Adobe Analytics-mått (Number) som datakälltyp är det namnet på en Adobe Analytics-mätning. Namnen i listrutan kommer från listan med definierade tillgängliga Adobe Analytics-mått som konfigurerades i Inställningar &gt; Adobe Analytics &gt; Metrics &gt; Edit. </p> <p>Se <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Redigera Adobe Analytics-statistik i en Report Suite </a>. </p> <p>Om det valda Adobe Analytics-metriska namnet inte redan är definierat i <span class="uicontrol"> Inställningar </span> &gt; <span class="uicontrol"> Metadata </span> &gt; <span class="uicontrol"> Definitioner </span>visas ett textfält och en Lägg till-knapp. Ange namnet på metadatafältnamnet (metadatafältnamnet får inte vara längre än 20 tecken) och klicka sedan på <span class="uicontrol"> Lägg till </span>. </p> <p>När sidor påträffas med flera Adobe Analytics-nycklar, på samma sätt som en produktsida som visar flera produkter, anger Composite Scheme hur du hanterar de flera Adobe Analytics-mätvärden som är kopplade till den sidan. Välj något av följande: </p> <p> 
+      <td colname="col2"> <p>Om du väljer <span class="uicontrol"> Meta-tagg </span> som datakälltyp är det här namnet på en meta-tagg som finns på webbplatsens sidor. Namnen i listrutan kommer från listan med definierade metadatavärden som konfigurerats i Inställningar &gt; Metadata &gt; Definitioner. </p> <p>Se <a scope="local" href="../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5" type="task" format="dita"> Lägga till ett nytt fält för metataggar </a>. </p> <p>Om du väljer Adobe Analytics-mått (Number) som datakälltyp är det här namnet på ett Adobe Analytics-mått. Namnen i listrutan kommer från listan med definierade tillgängliga Adobe Analytics-mått som konfigurerades i Inställningar &gt; Adobe Analytics &gt; Metrisk &gt; Redigera. </p> <p>Se <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Redigera Adobe Analytics-mått i en rapportsserie </a>. </p> <p>Om det Adobe Analytics-måttnamn du har valt inte redan är definierat i <span class="uicontrol"> Inställningar </span> &gt; <span class="uicontrol"> Metadata </span> &gt; <span class="uicontrol"> Definitioner </span>visas ett textfält och en Lägg till-knapp. Ange namnet på metadatafältnamnet (metadatafältnamnet får inte vara längre än 20 tecken) och klicka sedan på <span class="uicontrol"> Lägg till </span>. </p> <p>När sidor påträffas med flera Adobe Analytics-nycklar, som med en produktsida som visar flera produkter, anger Composite Scheme hur de olika Adobe Analytics-mätvärden som är kopplade till den sidan ska hanteras. Välj något av följande: </p> <p> 
       <ul id="ul_D6E51748BB3949048A37C1895F2C0A58"> 
       <li id="li_04F00F382A264C96A519B0D975E25E94"> <span class="uicontrol"> Summa </span> <p>Returnerar summan av måttvärdena. </p> </li> 
       <li id="li_FA44219B663F4CC197BD3A094EB84396"> <span class="uicontrol"> Genomsnittlig </span> <p>Returnerar medelvärdet av värdena (summan dividerat med antalet värden). </p> </li> 
@@ -236,19 +237,18 @@ Se [Konfigurera rankning](../c-about-rules-menu/c-about-ranking-rules.md#task_4C
       </tr> 
       <tr> 
       <td colname="col1"> <p>Vikter/villkor </p> </td> 
-      <td colname="col2"> <p>Innehåller antingen ett enkelt viktnummer för en regel eller en kombinerad lista med viktnummer för regler och testvillkor. </p> <p>Ett styckeviktsnummer är ett värde mellan 1 och 10 som anger hur viktig den här rangordningsregeln är i förhållande till de andra rangordningsreglerna när den totala rangordningen för ett dokument ska fastställas. En högre linjetjocklek anger högre prioritet. Värdet noll (0) ignorerar regeln. </p> <p>Välj <span class="uicontrol"> Egen </span> i listrutan om du vill anpassa linjetjockleken för olika sidor genom att definiera en lista med villkorspar för regelvikt/testvillkor. Testvillkoren är fragment av Perl som används för att testa datakällvärden, eller globala variabler som definieras i ditt anpassade filterskript (till exempel pris, märke, årstid eller sidvyer som i följande exempel). Om ett testvillkor utvärderas till "true" används det tillhörande regelviktsvärdet. Om ett testvillkor utvärderas till "false" utvärderas nästa villkor i listan. <code> 0&nbsp;({price}&nbsp;&gt;&nbsp;50.00)&nbsp;&amp;&amp;&nbsp;({brand}=~/Kuhl/)5&nbsp;{season}&nbsp;=~&nbsp;/Fall/10&nbsp;{pageviews}&nbsp;&gt;&nbsp;1000005 </code>I exemplet med anpassad vikt/villkor ovan används regelvikten 0 om det första testvillkoret utvärderas till "true". Det vill säga att priset innehåller ett värde som är större än 50 och varumärket innehåller "Kuhl"). Om det första testvillkoret utvärderas till "false" utvärderas nästa villkor. Om inget av de föregående villkoren uppfylls tilldelas regelvikten 5. </p> <p>Du bör alltid ange en linjetjocklek utan villkor i slutet av listan. Om du inte gör det får regeln vikten 0 om inget av villkorstesterna utvärderas som "true". </p> </td> 
+      <td colname="col2"> <p>Innehåller antingen ett enkelt viktnummer för en regel eller en kombinerad lista med viktnummer för regler och testvillkor. </p> <p>Ett styckeviktsnummer är ett värde mellan 1 och 10 som anger hur viktig den här rangordningsregeln är i förhållande till de andra rangordningsreglerna när den totala rangordningen för ett dokument ska fastställas. En högre linjetjocklek anger högre prioritet. Värdet noll (0) ignorerar regeln. </p> <p>Välj <span class="uicontrol"> Egen </span> i listrutan om du vill anpassa linjetjockleken för olika sidor genom att definiera en lista med villkorspar för regelvikt/testvillkor. Testvillkoren är fragment av Perl som används för att testa datakällvärden, eller globala variabler som definieras i det anpassade filterskriptet (till exempel pris, märke, årstid eller sidvyer som i följande exempel). Om ett testvillkor utvärderas till "true" används det tillhörande regelviktsvärdet. Om ett testvillkor utvärderas till "false" utvärderas nästa villkor i listan. <code> 0&nbsp;({price}&nbsp;&gt;&nbsp;50.00)&nbsp;&amp;&amp;&nbsp;({brand}=~/Kuhl/)5&nbsp;{season}&nbsp;=~&nbsp;/Fall/10&nbsp;{pageviews}&nbsp;&gt;&nbsp;1000005 </code>I exemplet med anpassad vikt/villkor ovan används regelvikten 0 om det första testvillkoret utvärderas till "true". Det vill säga att priset innehåller ett värde som är större än 50 och varumärket innehåller "Kuhl"). Om det första testvillkoret utvärderas till "false" utvärderas nästa villkor. Om inget av de föregående villkoren uppfylls tilldelas regelvikten 5. </p> <p>Du bör alltid ange en linjetjocklek utan villkor i slutet av listan. Om du inte gör det får regeln vikten 0 om inget av villkorstesterna utvärderas som "true". </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Värden/omfång </p> </td> 
-      <td colname="col2"> <p>Består av någon av de inbyggda rankningsfunktionerna eller av eventuellt innehåll i datakällan tillsammans med önskade rankningar. </p> <p>Om du väljer <span class="uicontrol"> Adobe Analytics-mått (Number) </span> som datakälltyp visas en listruta med följande alternativ: 
+      <td colname="col2"> <p>Består av någon av de inbyggda rankningsfunktionerna eller av eventuellt innehåll i datakällan tillsammans med önskade rankningar. </p> <p>Om du väljer <span class="uicontrol"> Adobe Analytics-mått (tal) </span> som datakälltyp visas en listruta med följande alternativ: 
       <ul id="ul_104906B6AA8547BAB6979AA37C4FAB90"> 
-      <li id="li_7656A2855A054DB8B64E90FE501517AA"> <span class="uicontrol"> Automatisk rangordning efter ordning (standard) </span> <p>Beräknar en rangordning som baseras på dokumentets relativa position, enligt Adobe Analytics-måttet. Ju närmare dokumentets placering är det översta dokumentet, desto högre rankning. </p> </li> 
-      <li id="li_1A7D60EA6965434AA6D39B215C158306"> <span class="uicontrol"> Automatisk rangordning efter värde </span> <p>Beräknar en rangordning baserat på dokumentets relativa värde, enligt Adobe Analytics-måtten. Ju närmare dokumentets värde till det högst rankade dokumentets värde, desto högre rankning. </p> </li> 
+      <li id="li_7656A2855A054DB8B64E90FE501517AA"> <span class="uicontrol"> Automatisk rangordning efter ordning (standard) </span> <p>Beräknar en rangordning som baseras på dokumentets relativa position enligt dess Adobe Analytics-mått. Ju närmare dokumentets placering är det översta dokumentet, desto högre rankning. </p> </li> 
+      <li id="li_1A7D60EA6965434AA6D39B215C158306"> <span class="uicontrol"> Automatisk rangordning efter värde </span> <p>Beräknar en rangordning baserat på dokumentets relativa värde, enligt dess Adobe Analytics-mått. Ju närmare dokumentets värde till det högst rankade dokumentets värde, desto högre rankning. </p> </li> 
       <li id="li_457DE44D6ADA40619DC77220BF12318E"> <span class="uicontrol"> Egen </span> <p>Anger anpassade inställningar. En datakälla med namnet"varumärke" kan till exempel innehålla varumärkesnamnet för en viss produkt. Du kan ange den relativa vikten av varje varumärke genom att ange den tillsammans med dess rankning. </p> </li> 
-      </ul> </p> <p>De rangordningsvärden som returneras från beräkningarna av Automatisk rangordning ligger i intervallet 0,0 (lägsta) till 1,0 (högsta). De justeras inte enligt de intervall som är definierade för fältet Rankning under Inställningar &gt; Metadata &gt; Definitioner. </p> <p>Om märkesdatakällan för ett visst sökresultat exakt matchar"DKNY" i följande exempel är rangordningen för det resultatet 0,5. Om varumärket är"Levis" är den tillämpade rankningen 0,1. Innehållet i datakällan måste matcha det angivna värdet. Med andra ord, om datakällans innehåll är "Levis Corp." kommer det inte att matcha värdet "Levis". Skiftläget ignoreras, så"DKNY" matchar"dkny" och"Dkny". <code> DKNY&nbsp;0.5 Levis&nbsp;0.1 Lee&nbsp;0.2 </code> </p> <p>Ett mer avancerat alternativ är att ange värden som reguljära uttryck. Anta till exempel att vissa av webbplatsens sidor innehåller varumärket"Levis" och andra webbplatssidor innehåller varumärket"Levis jeans". Du kan använda ett reguljärt uttryck som anges med nyckelordet 
-      <userinput>
+      </ul> </p> <p>De rangordningsvärden som returneras från beräkningarna av Automatisk rangordning ligger i intervallet 0,0 (lägsta) till 1,0 (högsta). De justeras inte enligt de intervall som är definierade för fältet Rankning under Inställningar &gt; Metadata &gt; Definitioner. </p> <p>Om märkesdatakällan för ett visst sökresultat exakt matchar"DKNY" i följande exempel är rangordningen för det resultatet 0,5. Om varumärket är"Levis" är den tillämpade rankningen 0,1. Innehållet i datakällan måste matcha det angivna värdet. Med andra ord, om datakällans innehåll är "Levis Corp." kommer det inte att matcha värdet "Levis". Skiftläget ignoreras, så"DKNY" matchar"dkny" och"Dkny". <code> DKNY&nbsp;0.5 Levis&nbsp;0.1 Lee&nbsp;0.2 </code> </p> <p>Ett mer avancerat alternativ är att ange värden som reguljära uttryck. Anta till exempel att vissa av webbplatsens sidor innehåller varumärket"Levis" och andra webbplatssidor innehåller varumärket"Levis jeans". Du kan använda ett reguljärt uttryck som anges med nyckelordet <code>
         regexp 
-      </userinput>. </p> <p>Se <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck </a>. </p> <p>I följande exempel tilldelas ett sökresultatdokument som innehåller varumärkesinnehållet"Levis jeans" rangordningen 0.1. Liksom med standardjämförelse ignoreras case för reguljära uttryck. <code> DKNY&nbsp;0.5 regexp&nbsp;Levis.*&nbsp;0.1 Lee&nbsp;0.2 </code> </p> </td> 
+      </code>. </p> <p>Se <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck </a>. </p> <p>I följande exempel tilldelas ett sökresultatdokument som innehåller varumärkesinnehållet"Levis jeans" rangordningen 0.1. Liksom med standardjämförelse ignoreras case för reguljära uttryck. <code> DKNY&nbsp;0.5 regexp&nbsp;Levis.*&nbsp;0.1 Lee&nbsp;0.2 </code> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Standardrangordning </p> </td> 
@@ -266,6 +266,7 @@ Se [Konfigurera rankning](../c-about-rules-menu/c-about-ranking-rules.md#task_4C
    * `-1.0` är &quot;Minimirankning (visa lägre i sökresultaten).&quot;
    * `0.0` är &quot;Neutral rankning (ändra inte sökresultatordningen)&quot;.
    * `1.0` är &quot;Maximal rankning (visa högre i sökresultaten).&quot;
+
    Definierade rankningar ska ligga inom samma intervall för alla regler. Rankningsintervallen måste också matcha de intervall som är definierade för Rankningsfältet under **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]**.
 
    Se [Lägga till ett nytt fält](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)för metataggar.
@@ -385,7 +386,7 @@ Se [Granska rankningsregelgrupper](../c-about-rules-menu/c-about-ranking-rules.m
 
    Se tabellen med alternativ i [Lägga till ett nytt fält](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)för metataggar.
 1. Klicka på **[!UICONTROL Add]**.
-1. Återskapa indexet för den mellanlagrade webbplatsen för att förhandsgranska resultatet av regeltillägget.
+1. Bygg om det mellanlagrade webbplatsindexet för att förhandsgranska resultatet av regeltillägget.
 
    Se [Köra ett fullständigt index för en publicerad eller mellanlagrad webbplats..](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
@@ -421,7 +422,7 @@ Se [Lägga till en rankningsregelgrupp](../c-about-rules-menu/c-about-ranking-ru
 
    Se tabellen med alternativ i [Lägga till ett nytt fält](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)för metataggar.
 1. Klicka på **[!UICONTROL Save Changes]**.
-1. Återskapa indexet för den mellanlagrade webbplatsen för att förhandsgranska resultatet av regeltillägget.
+1. Bygg om det mellanlagrade webbplatsindexet för att förhandsgranska resultatet av regeltillägget.
 
    Se [Köra ett fullständigt index för en publicerad eller mellanlagrad webbplats..](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
@@ -456,7 +457,7 @@ Se [Lägga till en rankningsregelgrupp](../c-about-rules-menu/c-about-ranking-ru
 1. På [!DNL Define Ranking Rules] sidan väljer du en grupp som du vill ta bort i **[!UICONTROL Select Rule Group]** listrutan.
 1. To the right of the **[!UICONTROL Select Rule Group]** drop-down list, click **[!UICONTROL Delete]**.
 1. På [!DNL Delete Ranking Rule Group] sidan klickar du på **[!UICONTROL Delete]**.
-1. Återskapa indexet för den mellanlagrade webbplatsen för att förhandsgranska resultatet av regeltillägget.
+1. Bygg om det mellanlagrade webbplatsindexet för att förhandsgranska resultatet av regeltillägget.
 
    Se [Köra ett fullständigt index för en publicerad eller mellanlagrad webbplats..](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
@@ -543,7 +544,7 @@ Om du har definierat mer än en regel i en regelgrupp, avgör varje regel viktv�
 
    I cirkeldiagrammet visas dina ändringar grafiskt.
 1. Klicka på **[!UICONTROL Save Changes]**.
-1. Återskapa indexet för den mellanlagrade webbplatsen för att förhandsgranska resultatet av regeltillägget.
+1. Bygg om det mellanlagrade webbplatsindexet för att förhandsgranska resultatet av regeltillägget.
 
    Se [Köra ett fullständigt index för en publicerad eller mellanlagrad webbplats..](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
