@@ -8,7 +8,10 @@ title: Om inkrementellt index
 topic: Index,Site search and merchandising
 uuid: b1ee9b08-dcbe-4ffe-b0b4-d379daaac9b5
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '1377'
+ht-degree: 0%
 
 ---
 
@@ -47,124 +50,112 @@ Du kan konfigurera vilka webbsidor som ska ingå i det inkrementella indexet gen
       <tr> 
       <td colname="col1"> <p>Lägg till eller uppdatera URL:er </p> </td> 
       <td colname="col2"> <p>Ange URL:er. </p> <p>Sökroboten indexerar bara de angivna dokument som har ändrats sedan du indexerade senast. </p> <p>Sökroboten följer dessutom länkar som finns i de angivna dokumenten och indexerar endast de dokument som har ändrats. </p> <p>Det här fältet får endast innehålla dokument-URL:er och inte masker som i följande exempel: </p> <p> 
-        <userinput>
+        <code>
           https://www.mydomain.com/products/new.html 
-        </userinput> </p> <p>Du kan använda följande nyckelord med URL:en: </p> <p> 
+        </code> </p> <p>Du kan använda följande nyckelord med URL:en: </p> <p> 
         <ul id="ul_62D1082ACBD547D092B10D72C56A3A1E"> 
           <li id="li_32C2B21DE75C4459908384CC44822F7D"> 
-          <userinput>
+          <code>
             noindex 
-          </userinput> <p>Om du inte vill indexera texten på sidan som matchar en angiven URL, men vill följa sidans länkar, lägger du till 
-            <userinput>
+          </code> <p>Om du inte vill indexera texten på sidan som matchar en angiven URL-adress, men vill följa sidans länkar, lägger du till <code>
               noindex 
-            </userinput> efter URL:en enligt följande exempel: </p> <p> 
-            <userinput>
+            </code> efter URL-adressen enligt följande exempel: </p> <p> 
+            <code>
               https://www.mydomain.com/products/new.html noindex 
-            </userinput> </p> <p>Se till att separera 
-            <userinput>
+            </code> </p> <p>Se till att du skiljer <code>
               noindex 
-            </userinput> från URL:en med blanksteg, ett komma är inte en giltig avgränsare. </p> </li> 
+            </code> från URL:en med ett blanksteg. ett komma är inte en giltig avgränsare. </p> </li> 
           <li id="li_33AB62B669084BF7B976F4308715E435"> 
-          <userinput>
+          <code>
             nofollow 
-          </userinput> <p>Om du vill indexera texten på sidan som matchar den angivna URL-adressen, men inte vill följa sidans länkar, lägger du till 
-            <userinput>
+          </code> <p>Om du vill indexera texten på sidan som matchar den angivna URL:en, men inte vill följa sidans länkar, lägger du till <code>
               nofollow 
-            </userinput> efter URL:en enligt följande exempel: </p> <p> 
-            <userinput>
+            </code> efter URL:en enligt följande exempel: </p> <p> 
+            <code>
               https://www.mydomain.com/products/new.html nofollow 
-            </userinput> </p> <p> Se till att separera 
-            <userinput>
+            </code> </p> <p> Se till att du skiljer <code>
               nofollow 
-            </userinput> från URL:en med blanksteg, ett komma är inte en giltig avgränsare. </p> </li> 
+            </code> från URL:en med ett blanksteg. ett komma är inte en giltig avgränsare. </p> </li> 
         </ul> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Söka efter och uppdatera URL-masker </p> </td> 
       <td colname="col2"> <p>Ange enkla URL-masker - fullständig sökväg, partiell sökväg eller sökvägar som använder jokertecken eller reguljära uttryck. </p> <p>Sökroboten hittar alla matchande dokument och indexerar bara de dokument som har ändrats sedan du indexerade senast. </p> <p>Sökroboten följer dessutom länkar som finns i de matchande dokumenten och indexerar bara de sidor som har ändrats. Exempel: </p> <p> 
-      <userinput>
+      <code>
         https://www.mydomain.com/products/household/*.html 
-      </userinput> </p> <p>Du kan också använda reguljära uttryck som i följande exempel: </p> <p> 
-      <userinput>
-        regexp ^https://www\.mydomain\.com/products/house/.*\.html$ 
-      </userinput> </p> <p>Se <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck</a>. </p> <p>Du kan också använda nyckelorden 
-      <userinput>
+      </code> </p> <p>Du kan också använda reguljära uttryck som i följande exempel: </p> <p> 
+      <code>
+        regexp ^https://www\.mydomain\.com/products/household/.*\.html$ 
+      </code> </p> <p>Se <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck</a>. </p> <p>Du kan också använda nyckelorden <code>
         nofollow 
-      </userinput> och 
-      <userinput>
+      </code> och <code>
         noindex 
-      </userinput> enligt beskrivningen i <span class="uicontrol"> Lägg till eller uppdatera URL:er </span> ovan. </p> </td> 
+      </code> enligt beskrivningen i <span class="uicontrol"> Lägg till eller uppdatera URL:er </span> ovan. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Inkludera och exkludera URL-masker </p> </td> 
       <td colname="col2"> <p>Ange enkla inkluderings- eller exkluderingsmasker för webbadresser - fullständig sökväg, partiell sökväg eller sökvägar som använder jokertecken eller reguljära uttryck. </p> <p>Sökroboten hittar och indexerar ("include") eller ignorerar ("exclude") dokument baserat på den typ av mask som har angetts. </p> <p> När du indexerar en plats följs anvisningarna i utseendeordningen. Följande lista över masker: </p> <p> 
-      <userinput>
+      <code>
         include https://www.mydomain.com/products/household/lightbulbs*.html 
-      </userinput> </p> <p> 
-      <userinput>
+      </code> </p> <p> 
+      <code>
         exclude https://www.mydomain.com/products/ 
-      </userinput> </p> <p>indexerar sidorna 
-      <userinput>
+      </code> </p> <p>indexerar sidorna <code>
         lightbulbs1.html 
-      </userinput> och 
-      <userinput>
+      </code> och <code>
         lightbulbs2.html 
-      </userinput>. Den indexerar dock inte några andra sidor som finns listade under produktkatalogen. </p> <p>En URL-mask som visas först har alltid företräde framför en som visas senare i listan. Om sökroboten dessutom stöter på ett dokument som matchar både en inkluderingsmask och en exkluderingsmask, har den mask som listas först företräde. </p> <p>Du kan också använda nyckelorden 
-      <userinput>
+      </code>. Den indexerar dock inte några andra sidor som finns listade under produktkatalogen. </p> <p>En URL-mask som visas först har alltid företräde framför en som visas senare i listan. Om sökroboten dessutom stöter på ett dokument som matchar både en inkluderingsmask och en exkluderingsmask, har den mask som listas först företräde. </p> <p>Du kan också använda nyckelorden <code>
         nofollow 
-      </userinput> och 
-      <userinput>
+      </code> och <code>
         noindex 
-      </userinput> enligt beskrivningen i <span class="uicontrol"> Lägg till eller uppdatera URL:er </span> ovan. </p> <p>Se <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Om URL-masker</a>. </p> </td> 
+      </code> enligt beskrivningen i <span class="uicontrol"> Lägg till eller uppdatera URL:er </span> ovan. </p> <p>Se <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Om URL-masker</a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Inkludera och exkludera datummasker </p> </td> 
       <td colname="col2"> <p>Ange enkla datummasker för inkludera eller exkludera - fullständig sökväg, partiell sökväg eller sökvägar som använder jokertecken eller reguljära uttryck. </p> <p>Sökroboten hittar och indexerar ("include") eller ignorerar ("exclude") dokument baserat på både URL och dokumentdatum. </p> <p>Du kan använda följande typer av datummasker: </p> <p> 
       <ul id="ul_8958ED54C8EF405AA259236595ED3ABA"> 
       <li id="li_0A7841767E004F088CA6FA42E99B9F32"> 
-      <userinput>
+      <code>
         include-days NNN 
-      </userinput> <p>Sökroboten indexerar alla dokument som matchar den angivna URL-masken och är NNN days eller mer gamla. </p> <p>Du kan följa URL-masken med ett eller flera av följande nyckelord: 
+      </code> <p>Sökroboten indexerar alla dokument som matchar den angivna URL-masken och är NNN days eller mer gamla. </p> <p>Du kan följa URL-masken med ett eller flera av följande nyckelord: 
         <ul id="ul_22A38D5F38B344ABB02B16EB1865813B"> 
         <li id="li_B89CC37DC2A1428185E86FFCB9DDB193">nofollow </li> 
         <li id="li_C2579B3A338D4AF987C3F518806734B0">noindex </li> 
         <li id="li_0527BF7103F34B83AC3E684069B899F7">serverdatum </li> 
         </ul> </p> <p>Följande mask innehåller till exempel alla dokument i mappen /archive/support som är 0 dagar eller äldre: </p> <p> 
-        <userinput>
+        <code>
           include-days 0 https://www.mydomain.com/archive/support/ 
-        </userinput> </p> </li> 
+        </code> </p> </li> 
       <li id="li_7663ABED40DD4E159F746E4F92BB6407"> 
-      <userinput>
-        include-date YYY-MM-DD 
-      </userinput> <p>Sökroboten indexerar alla dokument som matchar den angivna URL-masken och som är lika gamla eller äldre än datumformatet ÅÅÅ-MM-DD. </p> <p>Du kan följa URL-masken med ett eller flera av följande nyckelord: </p> <p> 
+      <code>
+        include-date YYYY-MM-DD 
+      </code> <p>Sökroboten indexerar alla dokument som matchar den angivna URL-masken och som är lika gamla eller äldre än datumformatet ÅÅÅ-MM-DD. </p> <p>Du kan följa URL-masken med ett eller flera av följande nyckelord: </p> <p> 
         <ul id="ul_57BF37A413BB4A4D962863DACE56F395"> 
         <li id="li_88CAB9AB583B4754A5C53478BD1108FF">nofollow </li> 
         <li id="li_999E1CD34FDE4A1B9C332B4AA8C2887D">noindex </li> 
         <li id="li_05646FACF3524D2A9E201A23770E357F"> serverdatum </li> 
         </ul> </p> <p>Följande maskexempel innehåller alla dokument i mappen /archive/ som är daterad den 25 juli 2011 eller tidigare: </p> <p> 
-        <userinput>
+        <code>
           include-date 2011-07-25 https://www.mydomain.com/archive/ 
-        </userinput> </p> </li> 
+        </code> </p> </li> 
       <li id="li_172692DEDA8744B3AA492701D24C2D80"> 
-      <userinput>
+      <code>
         exclude-days NNN 
-      </userinput> <p>Inaktivera indexering av alla dokument som matchar den angivna URL-masken och som är NNN days eller mer gamla. </p> <p>Du kan också följa URL-masken med nyckelordet . 
-        <userinput>
-          serverdatum 
-        </userinput>. </p> <p>I följande maskexempel utesluts alla PDF-filer som är 90 dagar gamla eller äldre från indexet: </p> <p> 
-        <userinput>
+      </code> <p>Inaktivera indexering av alla dokument som matchar den angivna URL-masken och som är NNN days eller mer gamla. </p> <p>Du kan också följa URL-masken med nyckelordet <code>
+          server-date 
+        </code>. </p> <p>I följande maskexempel utesluts alla PDF-filer som är 90 dagar gamla eller äldre från indexet: </p> <p> 
+        <code>
           exclude-days 90 *.pdf 
-        </userinput> </p> </li> 
+        </code> </p> </li> 
       <li id="li_26078517744D4AECBE1351008926CBAE"> 
-      <userinput>
-        exclude-date YYY-MM-DD 
-      </userinput> <p>Inaktivera indexering av alla dokument som matchar den angivna URL-masken och som är lika gamla eller äldre än datumet YYY-MM-DD. </p> <p>Du kan också följa URL-masken med nyckelordet . 
-        <userinput>
-          serverdatum 
-        </userinput>. </p> <p>I följande maskexempel utesluts alla dokument i mappen /archive/ som är daterad den 23 april 2004 eller tidigare: </p> <p> 
-        <userinput>
+      <code>
+        exclude-date YYYY-MM-DD 
+      </code> <p>Inaktivera indexering av alla dokument som matchar den angivna URL-masken och som är lika gamla eller äldre än datumet YYY-MM-DD. </p> <p>Du kan också följa URL-masken med nyckelordet <code>
+          server-date 
+        </code>. </p> <p>I följande maskexempel utesluts alla dokument i mappen /archive/ som är daterad den 23 april 2004 eller tidigare: </p> <p> 
+        <code>
           exclude-date 2004-04-23 https://www.mydomain.com/archive/ 
-        </userinput> </p> </li> 
+        </code> </p> </li> 
       </ul> </p> <p>Se <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_F4F1F58A646F4A86B8650EC46FDCEF66" type="concept" format="dita" scope="local"> Om datummasker</a>. </p> </td> 
       </tr> 
       <tr> 
@@ -174,12 +165,12 @@ Du kan konfigurera vilka webbsidor som ska ingå i det inkrementella indexet gen
       <tr> 
       <td colname="col1"> <p>Söka efter och ta bort URL-masker </p> </td> 
       <td colname="col2"> <p>Ange enkla URL-masker - fullständig sökväg, partiell sökväg eller sådana som använder jokertecken eller reguljära uttryck. </p> <p>Om den angivna URL-masken matchar sidor i sökindexet tar sökroboten bort sidorna innan den lägger till eller uppdaterar andra sidor. Exempel: </p> <p> 
-      <userinput>
+      <code>
         https://www.mydomain.com/products/1998/household/* 
-      </userinput> </p> <p>Du kan också använda reguljära uttryck som i följande exempel: </p> <p> 
-      <userinput>
+      </code> </p> <p>Du kan också använda reguljära uttryck som i följande exempel: </p> <p> 
+      <code>
         regexp ^https://www\.mydomain\.com/products/199[567]/.*$ 
-      </userinput> </p> <p>Se <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck</a>. </p> </td> 
+      </code> </p> <p>Se <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck</a>. </p> </td> 
       </tr> 
     </tbody> 
     </table>
