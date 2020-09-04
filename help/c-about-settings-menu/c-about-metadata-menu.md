@@ -8,9 +8,9 @@ title: Om menyn Metadata
 topic: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 translation-type: tm+mt
-source-git-commit: e080a61e24a3809beff7c212ff3d088b2a8ad3b6
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
 workflow-type: tm+mt
-source-wordcount: '8064'
+source-wordcount: '8039'
 ht-degree: 0%
 
 ---
@@ -68,10 +68,9 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       </tr> 
       <tr> 
       <td colname="col1"> <p>Metataggens namn </p> </td> 
-      <td colname="col2"> <p>Bestämmer innehållet som är associerat med det definierade fältet. </p> <p>Namnlistan kan innehålla upp till 255 tecken. Namnet kan dessutom innehålla alla tecken som tillåts i namnattributet för en HTML-meta-tagg. </p> <p>Du kan ange flera metataggar i en enda fältdefinition. </p> <p>Flera värden måste vara kommaavgränsade, och metataggens namn längst till vänster som finns på en viss webbsida har företräde. </p> <p>Anta till exempel att du har definierat ett fält med namnet "auth". Fältnamnet har de associerade metataggarna "author, dc.author". I det här fallet indexeras och söks innehållet från meta-taggen "author" över innehållet i "dc.author" om båda meta-taggarna visas på en webbsida. </p> <p>Användardefinierade fält måste ha minst ett metataggnamn i definitionen. Fördefinierade fält behöver inte ha någon associerad metatagg. Om en eller flera metataggar anges åsidosätter emellertid innehållet i metataggen den aktuella datakällan för varje tagg. </p> <p>Om metataggen "dc.title" är associerad med det fördefinierade "title"-fältet, indexeras innehållet från metataggen "dc.title" över det i 
-      <userinput>
+      <td colname="col2"> <p>Bestämmer innehållet som är associerat med det definierade fältet. </p> <p>Namnlistan kan innehålla upp till 255 tecken. Namnet kan dessutom innehålla alla tecken som tillåts i namnattributet för en HTML-meta-tagg. </p> <p>Du kan ange flera metataggar i en enda fältdefinition. </p> <p>Flera värden måste vara kommaavgränsade, och metataggens namn längst till vänster som finns på en viss webbsida har företräde. </p> <p>Anta till exempel att du har definierat ett fält med namnet "auth". Fältnamnet har de associerade metataggarna "author, dc.author". I det här fallet indexeras och söks innehållet från meta-taggen "author" över innehållet i "dc.author" om båda meta-taggarna visas på en webbsida. </p> <p>Användardefinierade fält måste ha minst ett metataggnamn i definitionen. Fördefinierade fält behöver inte ha någon associerad metatagg. Om en eller flera metataggar anges åsidosätter emellertid innehållet i metataggen den aktuella datakällan för varje tagg. </p> <p>Om metataggen "dc.title" till exempel är associerad med det fördefinierade "title"-fältet, indexeras innehållet från metataggen "dc.title" över taggen för <code>
         &lt;title&gt; 
-      </userinput> -tagg för ett visst dokument. </p> <p>Exempel: </p> <p> 
+      </code> ett visst dokument. </p> <p>Exempel: </p> <p> 
       <ul id="ul_0132E15FC19E4C0CA13CD5A12EA3BBEC"> 
       <li id="li_ECD3B194FECB4C2090CAEC8449320D3F"> dc.date </li> 
       <li id="li_09C76BC7AC7348859D01989697212E31"> description </li> 
@@ -96,38 +95,31 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       </ul> </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>Tillåt listor </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> Text </span>eller <span class="uicontrol"> Number </span> har valts. </p> <p>Indexera avgränsade värden separat i metadatainnehållet i det här fältet. </p> <p>Innehållet"Röd, Gul, Grön, Blå" behandlas som fyra separata värden i stället för ett när"Tillåt listor" är markerat. Den här behandlingen är mest användbar vid sökning efter intervall (med 
-      <userinput>
+      <td colname="col1"> <p>tillåtelselista </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> Text </span>eller <span class="uicontrol"> Number </span> har valts. </p> <p>Indexera avgränsade värden separat i metadatainnehållet i det här fältet. </p> <p>Innehållet"Röd, Gul, Grön, Blå" behandlas som fyra separata värden i stället för ett när"Tillåtelselista" är markerat. Den här behandlingen är mest användbar vid intervallsökning (med <code>
         sp_q_min 
-      </userinput>, 
-      <userinput>
+      </code>, <code>
         sp_q_max 
-      </userinput>, eller 
-      <userinput>
+      </code>eller <code>
         sp_q_exact 
-      </userinput>) och med 
-      <userinput>
+      </code>) och med <code>
         &lt;search-field-value-list&gt; 
-      </userinput>, 
-      <userinput>
+      </code>, <code>
         &lt;search-field-values&gt; 
-      </userinput>och 
-      <userinput>
+      </code>och <code>
         &lt;search-display-field-values&gt; 
-      </userinput>. </p> <p>Inte tillgängligt om Version-datatypen har valts. </p> </td> 
+      </code>. </p> <p>Inte tillgängligt om Version-datatypen har valts. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> Dynamisk Fasett </p> </td> 
       <td colname="col2"> <p> 
-        <!--NEW 2/2/2014--> <p>Obs!  Den här funktionen är inte aktiverad som standard. Kontakta teknisk support för att aktivera den för användning. När den har aktiverats visas den i användargränssnittet. </p> </p> <p>Anger att den identifierade aspekten ska vara dynamisk. </p> <p>Ansikten byggs ovanpå metataggsfält. Ett metataggsfält är ett lågnivålager för grundsökning i Adobe Search&amp;Promote. Ansikten är å andra sidan en del av GS-presentationsskiktet (Guided Search) - Adobe Search&amp;Promote högnivåskikt. Ansikten över egna metataggsfält är att metataggsfält inte kan någonting om ansikten. </p> <p>Se <a href="../c-about-design-menu/c-about-dynamic-facets.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> Om dynamiska ansikten </a>. </p> </td> 
+        <!--NEW 2/2/2014--> <p>Obs!  Den här funktionen är inte aktiverad som standard. Kontakta teknisk support för att aktivera den för användning. När den har aktiverats visas den i användargränssnittet. </p> </p> <p>Anger att den identifierade aspekten ska vara dynamisk. </p> <p>Ansikten byggs ovanpå metataggsfält. Ett metataggsfält är ett lågnivålager för grundsökning i Adobe Search &amp; Promote. Ansikten är å andra sidan en del av GS-presentationsskiktet (Guided Search) på hög nivå i Adobe Search &amp; Promote. Ansikten över egna metataggsfält är att metataggsfält inte kan någonting om ansikten. </p> <p>Se <a href="../c-about-design-menu/c-about-dynamic-facets.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> Om dynamiska ansikten </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Tillåt borttagning </p> </td> 
-      <td colname="col2"> <p>Markera det här alternativet om du vill aktivera borttagning av dubbletter för det här fältet. Det innebär att det här fältet kan anges vid sökningen via 
-        <userinput>
+      <td colname="col2"> <p>Markera det här alternativet om du vill aktivera borttagning av dubbletter för det här fältet. Det innebär att det här fältet kan anges vid sökningen med hjälp av CGI-parametern <code>
           sp_dedupe_field 
-        </userinput> Sök efter CGI-parameter. </p> <p>Se <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Sök efter CGI-parametrar </a>. </p> </td> 
+        </code> Search. </p> <p>Se <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Sök efter CGI-parametrar </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Tabellnamn </p> </td> 
@@ -135,7 +127,7 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       </tr> 
       <tr> 
       <td colname="col1"> <p>Listavgränsare </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Tillåt listor </span> har valts. </p> <p>Anger vilka tecken som skiljer enskilda listvärden åt. Du kan ange flera tecken, där vart och ett behandlas som en värdeavgränsare. </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Tillåtelselista </span> har valts. </p> <p>Anger vilka tecken som skiljer enskilda listvärden åt. Du kan ange flera tecken, där vart och ett behandlas som en värdeavgränsare. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Sök som standard </p> </td> 
@@ -151,10 +143,9 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       </tr> 
       <tr> 
       <td colname="col1"> <p>Sortering </p> </td> 
-      <td colname="col2"> <p>Anger när resultaten sorteras efter det namngivna fältet med hjälp av 
-        <userinput>
+      <td colname="col2"> <p>Anger när resultaten sorteras efter det namngivna fältet med hjälp av CGI-parametern <code>
           sp_s 
-        </userinput> Sök efter CGI-parameter. </p> <p>Se <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Sök efter CGI-parametrar </a>. </p> </td> 
+        </code> Search. </p> <p>Se <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Sök efter CGI-parametrar </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Språk </p> </td> 
@@ -186,16 +177,13 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       </tr> 
       <tr> 
       <td colname="col1"> <p>Standardenheter </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> Location </span> har valts som datatyp. </p> <p>Kontrollerar behandlingen av avståndsvärden för närhetssökningar. </p> <p>Om du anger standardenheterna till <span class="uicontrol"> Miles </span>används eventuella kriterier för närhetssökning för minsta/största avstånd som används i det här fältet (via 
-      <userinput>
+      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> Location </span> har valts som datatyp. </p> <p>Kontrollerar behandlingen av avståndsvärden för närhetssökningar. </p> <p>Om du anger standardenheterna till <span class="uicontrol"> Miles </span>behandlas alla kriterier för minsta/största avstånd för närhetssökning som tillämpas på det här fältet (via parametrarna <code>
         sp_q_min[_#] 
-      </userinput> eller 
-      <userinput>
+      </code> eller <code>
         sp_q_max[_#] 
-      </userinput> CGI-parametrar för sökning behandlas som engelska mil, annars som kilometer. </p> <p>Det här alternativet styr även de standardavståndsenheter som används på utdata för 
-      <userinput>
-        &lt;search-display-Field&gt; 
-      </userinput> sökresultatmallstagg när den används i ett närliggande sökutdatafält. </p> <p>Se <a href="../c-appendices/r-about-proximity-search.md#reference_45AC6BB50609431ABD31DA46EE65360D" type="reference" format="dita" scope="local"> Om närhetssökning </a>. </p> </td> 
+      </code> Sök CGI) som engelska mil, annars som kilometer. </p> <p>Det här alternativet styr också de standardavståndsenheter som används för utdata från malltaggen för sökresultat när de används i ett utdatafält för närliggande sökning. <code>
+        &lt;Search-Display-Field&gt; 
+      </code> </p> <p>Se <a href="../c-appendices/r-about-proximity-search.md#reference_45AC6BB50609431ABD31DA46EE65360D" type="reference" format="dita" scope="local"> Om närhetssökning </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Vill du skapa intervallbeskrivning? </p> </td> 
@@ -307,7 +295,7 @@ Innan effekterna av dina metataggsändringar är synliga för kunderna måste du
 1. På [!DNL Pinned Keyword Results Manager] sidan klickar du i tabellen **[!UICONTROL Edit]** på raden för det nyckelord som du vill ändra.
 1. Ange önskade alternativ på [!DNL Edit Field] sidan.
 
-   Om du väljer att göra ändringar i ett fördefinierat metataggsfält måste du vara medveten om att alla fält inte kan redigeras.
+   Om du väljer att göra ändringar i ett fördefinierat metataggsfält ska du vara medveten om att alla fält inte kan redigeras.
 
    Se tabellen med alternativ under [Lägga till ett nytt fält](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)för metataggar.
 1. Klicka på **[!UICONTROL Save Changes]**.
@@ -480,7 +468,7 @@ Använd [!DNL Attribute Loader] för att definiera ytterligare indatakällor fö
 
 >[!NOTE]
 >
->Om du vill använda Attribute Loader måste det vara aktiverat på ditt konto av din Adobe-kontorepresentant eller av Adobes support.
+>Om du vill använda attributinläsaren måste den vara aktiverad på ditt konto av din Adobe-kontorepresentant eller Adobe Support.
 
 Du kan använda en indatakälla för dataflöden för att komma åt innehåll som lagras i ett annat format än det som normalt identifieras på en webbplats. Du gör detta med en av de tillgängliga crawlningsmetoderna. Data från dessa källor kan sedan injiceras i data från crawlat innehåll.
 
@@ -572,7 +560,7 @@ När du lägger till en attributinläsare kan du använda funktionen **[!UICONTR
 
 >[!NOTE]
 >
->Funktionen Setup Maps fungerar kanske inte för stora XML-datauppsättningar eftersom filparsern försöker läsa hela filen i minnet. Det kan leda till att minnet tar slut. Men när samma dokument bearbetas vid indexeringen läses det inte in i minnet. I stället bearbetas stora dokument &quot;i farten&quot; och läses inte helt in i minnet först.
+>Funktionen Setup Maps fungerar kanske inte för stora XML-datauppsättningar eftersom filparsern försöker läsa hela filen i minnet. Det kan leda till att minnet tar slut. Men när samma dokument bearbetas vid indexeringen läses det inte in i minnet. I stället bearbetas stora dokument &quot;i farten&quot; och läses inte in helt i minnet först.
 
 ## Om hur du använder Förhandsgranska när du lägger till en attributinläsare {#section_E9CAB000A94C4D9189786C1EDB1CDB46}
 
@@ -590,7 +578,7 @@ Varje konfiguration för Loader-attribut definierar en datakälla och mappningar
 
 >[!NOTE]
 >
->Om du vill använda Attribute Loader måste det vara aktiverat på ditt konto av din Adobe-kontorepresentant eller av Adobes support.
+>Om du vill använda attributinläsaren måste den vara aktiverad på ditt konto av din Adobe-kontorepresentant eller Adobe Support.
 
 Innan effekterna av den nya och aktiverade definitionen är synliga för kunderna ska du återskapa platsindexet.
 
@@ -598,7 +586,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
 
 1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
 1. På [!DNL Stage Attribute Loader Definitions] sidan klickar du på **[!UICONTROL Add New Attribute Loader]**.
-1. Ange de konfigurationsalternativ som du vill använda på [!DNL Attribute Loader Add] sidan. Vilka alternativ som är tillgängliga beror på vilken **[!UICONTROL Type]** du har valt.
+1. Ange de konfigurationsalternativ som du vill ha på [!DNL Attribute Loader Add] sidan. Vilka alternativ som är tillgängliga beror på vilken **[!UICONTROL Type]** du har valt.
 
    <table> 
     <thead> 
@@ -712,7 +700,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       </tr> 
       <tr> 
       <td colname="col1"> <p>ItemTagg </p> </td> 
-      <td colname="col2"> <p>Identifierar XML-elementet som du kan använda för att identifiera enskilda XML-rader i datakällfilen som du har angett. </p> <p>I följande Feed-fragment av ett Adobe XML-dokument är ItemTag-värdet <span class="codeph"> post </span>: </p> <p> <code class="syntax xml"> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
+      <td colname="col2"> <p>Identifierar XML-elementet som du kan använda för att identifiera enskilda XML-rader i datakällfilen som du har angett. </p> <p>I följande feed-fragment i ett XML-dokument i Adobe är itemTag-värdet <span class="codeph"> post </span>: </p> <p> <code class="syntax xml"> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
         &lt;!DOCTYPE&nbsp;gsafeed&nbsp;PUBLIC&nbsp;"-//Google//DTD&nbsp;GSA&nbsp;Feeds//EN"&nbsp;""&gt; 
         &lt;gsafeed&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt; 
@@ -763,7 +751,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       <td colname="col1"> <p>Karta </p> </td> 
       <td colname="col2"> <p>Gör att du kan ange mappningar av XML-element-till-metadata med XPath-uttryck. </p> <p> 
       <ul id="ul_604108C0277C4892AE8A40CA39889ABD"> 
-      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Tagg </span> <p>Anger en XPath-representation av tolkade XML-data. I exemplet med Adobe XML-dokumentet ovan, under alternativet Item-tag, kan det mappas med följande syntax: </p> <p> <code class="syntax xml"> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Tagg </span> <p>Anger en XPath-representation av tolkade XML-data. Med exempeldokumentet Adobe XML ovan, under alternativet Item-tag, kan det mappas med följande syntax: </p> <p> <code class="syntax xml"> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
         /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>Syntaxen ovan innebär följande: </p> <p> 
@@ -774,7 +762,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
         <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>Innehållsattributet <span class="codeph"> för </span> alla <span class="codeph"> metaelement </span> som finns i ett <span class="codeph"> metadataelement, som finns i </span> postelementet <span class="codeph"> , vars name-attribut är </span> <span class="codeph"> </span><span class="codeph"> </span>description, mappas till metadatafältet¥. </p> </li> 
         </ul> </p> <p>XPath är en relativt komplicerad notation. Mer information finns på följande plats: </p> <p>Se <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Fält </span> <p>Definierar det name-attributvärde som används för varje genererad <span class="codeph"> &lt;meta&gt;- </span> tagg. </p> </li> 
-      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadata? </span> <p>Gör <span class="uicontrol"> fält </span> till en nedrullningsbar lista där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Fältvärdet <span class="uicontrol"> kan </span> vara ett odefinierat metadatafält, om så önskas. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtrera skript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Filtrera skript </a>. </p> <p>När Loader-attribut bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle"> fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributet <span class="wintitle"> Allow Lists </span> angivet. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
+      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadata? </span> <p>Gör <span class="uicontrol"> fält </span> till en nedrullningsbar lista där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Fältvärdet <span class="uicontrol"> kan </span> vara ett odefinierat metadatafält, om så önskas. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtrera skript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Filtrera skript </a>. </p> <p>När Loader-attribut bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle"> fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributet <span class="wintitle"> Tillåtelselista </span> inställt. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Primärnyckel? </span> <p>Endast ett fält identifieras som primärnyckel. Det här fältet används som "sekundärnyckel" för att matcha attributets inläsardata med motsvarande dokument i indexet. </p> </li> 
       <li id="li_80D6AF130FCE40AC972FE4B605B86BF6"> <span class="uicontrol"> Ta bort HTML? </span> <p>När det här alternativet är markerat tas alla HTML-taggar som finns i fältets data bort. </p> </li> 
       <li id="li_D40E2F9AD8AD49FC9AC4B8C75BA31E28"> <span class="uicontrol"> Åtgärd </span> <p>Gör att du kan lägga till rader på kartan eller ta bort rader från kartan. Radernas ordning är inte viktig. </p> </li> 
@@ -806,7 +794,7 @@ Du kan redigera en befintlig attributinläsare som du har definierat.
 
 >[!NOTE]
 >
->Om du vill använda Attribute Loader måste det vara aktiverat på ditt konto av din Adobe-kontorepresentant eller av Adobes support.
+>Om du vill använda attributinläsaren måste den vara aktiverad på ditt konto av din Adobe-kontorepresentant eller Adobe Support.
 
 Du kan inte ändra alla alternativ för attributinläsare, till exempel namnet på attributinläsaren eller typen i [!DNL Type] listrutan.
 
@@ -839,7 +827,7 @@ Du kan kopiera en befintlig attributinläsardefinition som du vill använda som 
 
 >[!NOTE]
 >
->Om du vill använda Attribute Loader måste det vara aktiverat på ditt konto av din Adobe-kontorepresentant eller av Adobes support.
+>Om du vill använda attributinläsaren måste den vara aktiverad på ditt konto av din Adobe-kontorepresentant eller Adobe Support.
 
 När du kopierar en attributinläsardefinition är den kopierade definitionen inaktiverad som standard. Om du vill aktivera eller aktivera definitionen måste du redigera den från [!DNL Attribute Loader Edit] sidan och markera **[!UICONTROL Enable]**.
 
@@ -871,7 +859,7 @@ Du kan ändra namnet på en befintlig Loader-definition för attribut.
 
 >[!NOTE]
 >
->Om du vill använda Attribute Loader måste det vara aktiverat på ditt konto av din Adobe-kontorepresentant eller av Adobes support.
+>Om du vill använda attributinläsaren måste den vara aktiverad på ditt konto av din Adobe-kontorepresentant eller Adobe Support.
 
 **Byta namn på en Loader-definition för attribut**
 
@@ -968,7 +956,7 @@ När en attributinläsardefinition har lagts till på [!DNL Attribute Loader Def
 
 >[!NOTE]
 >
->Om du vill använda Attribute Loader måste det vara aktiverat på ditt konto av din Adobe-kontorepresentant eller av Adobes support.
+>Om du vill använda attributinläsaren måste den vara aktiverad på ditt konto av din Adobe-kontorepresentant eller Adobe Support.
 
 **Så här visar du inställningarna för en Loader-definition för attribut**
 
@@ -994,7 +982,7 @@ Du kan ta bort en befintlig attributinläsardefinition som du inte längre behö
 
 >[!NOTE]
 >
->Om du vill använda Attribute Loader måste det vara aktiverat på ditt konto av din Adobe-kontorepresentant eller av Adobes support.
+>Om du vill använda attributinläsaren måste den vara aktiverad på ditt konto av din Adobe-kontorepresentant eller Adobe Support.
 
 **Ta bort en Loader-definition för attribut**
 
