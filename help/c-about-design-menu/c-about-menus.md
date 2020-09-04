@@ -8,7 +8,10 @@ title: Om menyer
 topic: Design,Site search and merchandising
 uuid: 011050cd-21b6-4150-9503-18fa3f771626
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '763'
+ht-degree: 1%
 
 ---
 
@@ -70,12 +73,12 @@ t_adding_a_new_menu.xml
       <li id="li_D81876660A8B48AFB70D3317063FBF6F"> <span class="uicontrol"> Sortera </span> <p>Sorterar sökningen efter någon av dina definierade metadatatyper. </p> <p>Du kan till exempel definiera en sorteringsmeny med följande metadatatyper: tre faktorer av betydelse, ett anpassat metadatafält, t.ex. en tillgänglighetskod, och priset. De tre objekten kan ha etiketterna Sortera efter relevans, Sortera efter tillgänglighet respektive Sortera efter pris. När du inkluderar detta i presentationsmallen kan kunden använda den här kontrollen för att sortera sina sökresultat. </p> </li> 
       <li id="li_63AE06B544B64DCAA8C55031B3DFFFF7"> <span class="uicontrol"> Antal </span> <p>Definierar antalet sökresultat som ska visas. Den här menytypen mappar till cgi-parametern <span class="varname"> sp_c </span>. </p> <p>Se CGI-parametrar för <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" format="dita" scope="local"> backend-sökning </a>. </p> </li> 
       <li id="li_EEC810D420FF41498ECE49EBAAB33BE5"> <span class="uicontrol"> Navigering </span> <p>Anger en uppsättning statiska URL:er som är associerade med menyalternativ. Vanligtvis används en navigeringsmeny för att skapa ett navigeringsfält på den översta nivån på sökresultatsidan. </p> <p>Du kan till exempel skapa en meny som innehåller kvinnor, män, pojkar och flickor där menyalternativen skulle vara något som följer: 
-      <userinput>
-        /?q1=kvinna;x1=kön 
-      </userinput>, 
-      <userinput>
-        /?q1=meningar;x1=kön 
-      </userinput> </p> </li> 
+      <code>
+        /?q1=womens;x1=gender 
+      </code>, 
+      <code>
+        /?q1=mens;x1=gender 
+      </code> </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
