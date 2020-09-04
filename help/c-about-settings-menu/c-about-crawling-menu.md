@@ -8,9 +8,9 @@ title: Om Crawling-menyn
 topic: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
 translation-type: tm+mt
-source-git-commit: e080a61e24a3809beff7c212ff3d088b2a8ad3b6
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
 workflow-type: tm+mt
-source-wordcount: '11115'
+source-wordcount: '11033'
 ht-degree: 0%
 
 ---
@@ -52,45 +52,37 @@ Du kvalificerar varje startpunkt med ett eller flera av följande blankstegsavgr
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> Om du inte vill indexera texten på startpunktssidan, men vill följa sidans länkar, lägger du till 
-     <userinput>
+   <td colname="col2"> <p> Om du inte vill indexera texten på startpunktssidan, men vill följa sidans länkar, lägger du till <code>
        noindex 
-     </userinput> efter startpunkten. </p> <p>Avgränsa nyckelordet från startpunkten med ett blanksteg som i följande exempel: </p> <p> <code> https://www.my-additional-domain.com/more_pages/main.html&amp;nbsp;noindex </code> </p> <p>Det här nyckelordet motsvarar en meta-tagg för robotar med 
-     <userinput>
+     </code> efter startpunkten. </p> <p>Avgränsa nyckelordet från startpunkten med ett blanksteg som i följande exempel: </p> <p> <code> https://www.my-additional-domain.com/more_pages/main.html&amp;nbsp;noindex </code> </p> <p>Det här nyckelordet motsvarar en meta-tagg för robotar med <code>
        content="noindex" 
-     </userinput>) mellan 
-     <userinput>
+     </code>) mellan <code>
        &lt;head&gt; 
-     </userinput>... 
-     <userinput>
+     </code>... 
+     <code>
        &lt;/head&gt; 
-     </userinput> -taggar för startpunktssidan. </p> </td> 
+     </code> -taggar för startpunktssidan. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofollow </p> </td> 
-   <td colname="col2"> <p> Om du vill indexera texten på startpunktssidan men inte vill följa någon av sidans länkar, lägger du till 
-     <userinput>
+   <td colname="col2"> <p> Om du vill indexera texten på startpunktssidan men inte vill följa någon av sidans länkar, lägger du till <code>
        nofollow 
-     </userinput> efter startpunkten. </p> <p>Avgränsa nyckelordet från startpunkten med ett blanksteg som i följande exempel: </p> <p> <code> https://www.domain.com/not_linked/directory_listing&amp;nbsp;nofollow </code> </p> <p>Det här nyckelordet motsvarar en meta-tagg för robotar med 
-     <userinput>
+     </code> efter startpunkten. </p> <p>Avgränsa nyckelordet från startpunkten med ett blanksteg som i följande exempel: </p> <p> <code> https://www.domain.com/not_linked/directory_listing&amp;nbsp;nofollow </code> </p> <p>Det här nyckelordet motsvarar en meta-tagg för robotar <code>
        content="nofollow" 
-     </userinput> mellan 
-     <userinput>
+     </code> mellan <code>
        &lt;head&gt; 
-     </userinput>... 
-     <userinput>
+     </code>... 
+     <code>
        &lt;/head&gt; 
-     </userinput> -taggen för en startpunktssida. </p> </td> 
+     </code> -taggen för en startpunktssida. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>formulär </p> </td> 
-   <td colname="col2"> <p> När startpunkten är en inloggningssida 
-     <userinput>
-       formulär 
-     </userinput> används vanligtvis så att sökroboten kan skicka inloggningsformuläret och få lämpliga cookies innan webbplatsen crawlas. När nyckelordet "form" används indexeras inte startpunktssidan och sökroboten markerar inte startpunktssidan som crawlad. Använd 
-     <userinput>
+   <td colname="col2"> <p> När startpunkten är en inloggningssida, används det oftast så att sökroboten kan skicka inloggningsformuläret och få lämpliga cookies innan webbplatsen crawlas. <code>
+       form 
+     </code> När nyckelordet "form" används indexeras inte startpunktssidan och sökroboten markerar inte startpunktssidan som crawlad. Använd <code>
        nofollow 
-     </userinput> om du inte vill att sökroboten ska följa sidans länkar. </p> </td> 
+     </code> det här alternativet om du inte vill att sökroboten ska följa sidans länkar. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -251,54 +243,42 @@ Ett komma är inte giltigt som avgränsare mellan masken och nyckelordet. Du kan
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> Om du inte vill indexera texten på sidorna som matchar URL-masken, men vill följa de matchade sidlänkarna, lägger du till 
-     <userinput>
+   <td colname="col2"> <p> Om du inte vill indexera texten på sidorna som matchar URL-masken, men vill följa de matchade sidlänkarna, lägger du till <code>
        noindex 
-     </userinput> efter den inkluderade URL-masken. Se till att du skiljer nyckelordet från masken med ett blanksteg som i följande exempel: </p> <p> <code> include&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>Exemplet ovan anger att sökroboten följer alla länkar från filer med 
-     <userinput>
+     </code> efter inkluderingswebbmasken. Se till att du skiljer nyckelordet från masken med ett blanksteg som i följande exempel: </p> <p> <code> include&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>Exemplet ovan anger att sökroboten följer alla länkar från filer med <code>
        .swf 
-     </userinput> men inaktiverar indexering av all text i dessa filer. </p> <p>The 
-     <userinput>
+     </code> filtillägget, men inaktiverar indexering av all text i dessa filer. </p> <p>Nyckelordet motsvarar en meta-tagg för robot <code>
        noindex 
-     </userinput> nyckelordet motsvarar en meta-tagg för robot med 
-     <userinput>
+     </code> mellan <code>
        content="noindex" 
-     </userinput> mellan 
-     <userinput>
-       &lt;head&gt;..&lt;/head&gt; 
-     </userinput> taggar för matchande sidor. </p> </td> 
+     </code> <code>
+       &lt;head&gt;...&lt;/head&gt; 
+     </code> taggarna för matchade sidor. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofollow </p> </td> 
-   <td colname="col2"> <p> Om du vill indexera texten på sidorna som matchar URL-masken, men inte vill följa länkarna för den matchade sidan, lägger du till 
-     <userinput>
+   <td colname="col2"> <p> Om du vill indexera texten på sidorna som matchar URL-masken, men inte vill följa den matchade sidans länkar, lägger du till <code>
        nofollow 
-     </userinput> efter den inkluderade URL-masken. Se till att du skiljer nyckelordet från masken med ett blanksteg som i följande exempel: </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>The 
-     <userinput>
+     </code> efter inkluderingswebbmasken. Se till att du skiljer nyckelordet från masken med ett blanksteg som i följande exempel: </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>Nyckelordet motsvarar en meta-tagg för robot <code>
        nofollow 
-     </userinput> nyckelordet motsvarar en meta-tagg för robot med 
-     <userinput>
+     </code> mellan <code>
        content="nofollow" 
-     </userinput> mellan 
-     <userinput>
-       &lt;head&gt;..&lt;/head&gt; 
-     </userinput> taggar för matchande sidor. </p> </td> 
+     </code> <code>
+       &lt;head&gt;...&lt;/head&gt; 
+     </code> taggarna för matchade sidor. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>regexp </p> </td> 
-   <td colname="col2"> <p>Används för både att inkludera och exkludera masker. </p> <p>En URL-mask föregås av 
-     <userinput>
+   <td colname="col2"> <p>Används för både att inkludera och exkludera masker. </p> <p>Alla URL-masker som föregås av <code>
        regexp 
-     </userinput> behandlas som ett reguljärt uttryck. Om sökroboten stöter på dokument som matchar en URL-mask för ett exkluderat uttryck, indexeras inte dessa dokument. Om sökroboten påträffar dokument som matchar en URL-mask för ett reguljärt uttryck, indexeras dessa dokument. Anta att du har följande URL-mask: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*/products/.*\.html$ </code> </p> <p>Sökroboten exkluderar matchande filer som 
-     <userinput>
+     </code> behandlas som ett reguljärt uttryck. Om sökroboten stöter på dokument som matchar en URL-mask för ett exkluderat uttryck, indexeras inte dessa dokument. Om sökroboten påträffar dokument som matchar en URL-mask för ett reguljärt uttryck, indexeras dessa dokument. Anta att du har följande URL-mask: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*/products/.*\.html$ </code> </p> <p>Sökroboten exkluderar matchande filer som 
+     <code>
        https://www.mydomain.com/products/page1.html 
-     </userinput> </p> <p>Om du hade följande URL-mask för reguljära uttryck: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*\?..*$ </code> </p> <p>Sökroboten innehåller ingen URL som innehåller en CGI-parameter som 
-     <userinput>
+     </code> </p> <p>Om du hade följande URL-mask för reguljära uttryck: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*\?..*$ </code> </p> <p>Sökroboten innehåller ingen URL som innehåller en CGI-parameter som <code>
        https://www.mydomain.com/cgi/prog/?arg1=val1&amp;arg2=val2 
-     </userinput>. </p> <p>Om du hade följande URL-mask för reguljära uttryck: </p> <p> <code> include&amp;nbsp;regexp&amp;nbsp;^.*\.swf$&amp;nbsp;noindex </code> </p> <p>Sökroboten följer alla länkar från filer med tillägget".swf". The 
-     <userinput>
+     </code>. </p> <p>Om du hade följande URL-mask för reguljära uttryck: </p> <p> <code> include&amp;nbsp;regexp&amp;nbsp;^.*\.swf$&amp;nbsp;noindex </code> </p> <p>Sökroboten följer alla länkar från filer med tillägget".swf". Nyckelordet <code>
        noindex 
-     </userinput> anger också att texten i matchande filer inte indexeras. </p> <p>Se <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck </a>. </p> </td> 
+     </code> anger också att texten i matchade filer inte indexeras. </p> <p>Se <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -473,49 +453,39 @@ Ett komma är inte giltigt som avgränsare mellan masken och nyckelordet. Du kan
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> Om du inte vill indexera texten på sidorna som är daterade på eller före det datum som anges av inkluderingsmasken lägger du till 
-     <userinput>
+   <td colname="col2"> <p> Om du inte vill indexera texten på sidorna som är daterade på eller före det datum som anges av inkluderingsmasken lägger du till <code>
        noindex 
-     </userinput> efter inkluderingsdatummasken enligt följande: </p> <p> <code> include-days&amp;nbsp;10&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>Se till att du skiljer nyckelordet från masken med ett mellanslag. </p> <p>Exemplet ovan anger att sökroboten följer alla länkar från filer med tillägget".swf" som är 10 dagar eller äldre. Den inaktiverar emellertid indexering av all text i dessa filer. </p> <p>Du kan kontrollera att texten för äldre filer inte är indexerad, men ändå följa alla länkar från dessa filer. I sådana fall ska du använda en inkluderingsdatummask med nyckelordet "noindex" i stället för en exkluderingsdatummask. </p> </td> 
+     </code> efter inkluderingsdatummasken enligt följande: </p> <p> <code> include-days&amp;nbsp;10&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>Se till att du skiljer nyckelordet från masken med ett mellanslag. </p> <p>Exemplet ovan anger att sökroboten följer alla länkar från filer med tillägget".swf" som är 10 dagar eller äldre. Den inaktiverar emellertid indexering av all text i dessa filer. </p> <p>Du kan kontrollera att texten för äldre filer inte är indexerad, men ändå följa alla länkar från dessa filer. I sådana fall ska du använda en inkluderingsdatummask med nyckelordet "noindex" i stället för en exkluderingsdatummask. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofollow </p> </td> 
-   <td colname="col2"> <p> Om du vill indexera texten på sidorna som är daterade på eller före det datum som anges av inkluderingsmasken, men inte vill följa den matchade sidans länkar, lägger du till 
-     <userinput>
+   <td colname="col2"> <p> Om du vill indexera texten på sidorna som är daterade på eller före det datum som anges av inkluderingsmasken, men inte vill följa den matchade sidans länkar, lägger du till <code>
        nofollow 
-     </userinput> efter inkluderingsdatummasken enligt följande: </p> <p> <code> include-days&amp;nbsp;8&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>Se till att du skiljer nyckelordet från masken med ett mellanslag. </p> <p>The 
-     <userinput>
+     </code> efter inkluderingsdatummasken enligt följande: </p> <p> <code> include-days&amp;nbsp;8&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>Se till att du skiljer nyckelordet från masken med ett mellanslag. </p> <p>Nyckelordet motsvarar en meta-tagg för robot <code>
        nofollow 
-     </userinput> nyckelordet motsvarar en meta-tagg för robot med 
-     <userinput>
+     </code> mellan <code>
        content="nofollow" 
-     </userinput> mellan 
-     <userinput>
-       &lt;head&gt;..&lt;/head&gt; 
-     </userinput> -tagg för matchande sidor. </p> </td> 
+     </code> <code>
+       &lt;head&gt;...&lt;/head&gt; 
+     </code> taggen med matchade sidor. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>serverdatum </p> </td> 
-   <td colname="col2"> <p>Används för både att inkludera och exkludera masker. </p> <p>Sökroboten hämtar och tolkar vanligtvis alla filer innan datummaskerna kontrolleras. Detta beteende beror på att vissa filtyper kan ange ett datum inuti själva filen. Ett HTML-dokument kan till exempel innehålla metataggar som anger datumet för filen. </p> <p>Om du ska utesluta många filer baserat på deras datum och du inte vill göra en onödig belastning på dina servrar, kan du använda 
-     <userinput>
-       serverdatum 
-     </userinput> efter URL:en i datummasken. </p> <p>Det här nyckelordet instruerar sökroboten att lita på datumet för filen som returneras av servern i stället för att analysera varje fil. I följande mask för exkluderingsdatum ignoreras sidor som matchar URL:en om dokumenten är 90 dagar eller äldre, enligt det datum som servern returnerar i HTTP-rubrikerna: </p> <p> <code> exclude-days&amp;nbsp;90&amp;nbsp;https://www.mydomain.com/docs/archive&amp;nbsp;server-date </code> </p> <p> Om datumet som returneras av servern är 90 dagar eller längre, 
-     <userinput>
-       serverdatum 
-     </userinput> anger att de undantagna dokumenten inte ska hämtas från servern. Resultatet innebär snabbare indexeringstid för dina dokument och minskad belastning på servrarna. If 
-     <userinput>
-       serverdatum 
-     </userinput> om inget anges ignorerar sökroboten datumet som returneras av servern i HTTP-rubrikerna. I stället hämtas och kontrolleras varje fil för att se om datumet har angetts. Om inget datum anges i filen använder sökroboten det datum som returneras av servern. </p> <p>Du ska inte använda 
-     <userinput>
-       serverdatum 
-     </userinput> om filerna innehåller kommandon som åsidosätter serverdatumet. </p> </td> 
+   <td colname="col2"> <p>Används för både att inkludera och exkludera masker. </p> <p>Sökroboten hämtar och tolkar vanligtvis alla filer innan datummaskerna kontrolleras. Detta beteende beror på att vissa filtyper kan ange ett datum inuti själva filen. Ett HTML-dokument kan till exempel innehålla metataggar som anger datumet för filen. </p> <p>Om du ska utesluta många filer baserat på deras datum och du inte vill göra en onödig belastning på servrarna, kan du använda <code>
+       server-date 
+     </code> efter URL:en i datummasken. </p> <p>Det här nyckelordet instruerar sökroboten att lita på datumet för filen som returneras av servern i stället för att analysera varje fil. I följande mask för exkluderingsdatum ignoreras sidor som matchar URL:en om dokumenten är 90 dagar eller äldre, enligt det datum som servern returnerar i HTTP-rubrikerna: </p> <p> <code> exclude-days&amp;nbsp;90&amp;nbsp;https://www.mydomain.com/docs/archive&amp;nbsp;server-date </code> </p> <p> Om det datum som servern returnerar är 90 dagar eller längre <code>
+       server-date 
+     </code> anges att de undantagna dokumenten inte ska hämtas från servern. Resultatet innebär snabbare indexeringstid för dina dokument och minskad belastning på servrarna. Om <code>
+       server-date 
+     </code> inte anges ignorerar sökroboten datumet som returneras av servern i HTTP-rubrikerna. I stället hämtas och kontrolleras varje fil för att se om datumet har angetts. Om inget datum anges i filen använder sökroboten det datum som returneras av servern. </p> <p>Du bör inte använda <code>
+       server-date 
+     </code> om filerna innehåller kommandon som åsidosätter serverdatumet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>regexp </p> </td> 
-   <td colname="col2"> <p> Använd för både inkludera och exkludera masker. </p> <p>Alla datummasker som föregås av 
-     <userinput>
+   <td colname="col2"> <p> Använd för både inkludera och exkludera masker. </p> <p>Alla datummasker som föregås av <code>
        regexp 
-     </userinput> behandlas som ett reguljärt uttryck. </p> <p>Om sökroboten hittar filer som matchar en exkluderad datummask för reguljära uttryck indexeras inte dessa filer. </p> <p>Om sökroboten hittar filer som matchar en datummask för ett reguljärt uttryck indexeras dessa dokument. </p> <p>Anta att du har följande datummask: </p> <p> <code> exclude-days&amp;nbsp;180&amp;nbsp;regexp&amp;nbsp;.*archive.* </code> </p> <p>Masken instruerar sökroboten att utesluta matchande filer som är 180 dagar eller äldre. Det vill säga filer som innehåller ordet"arkiv" i sin URL. </p> <p>Se <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck </a>. </p> </td> 
+     </code> behandlas som ett reguljärt uttryck. </p> <p>Om sökroboten hittar filer som matchar en exkluderad datummask för reguljära uttryck indexeras inte dessa filer. </p> <p>Om sökroboten hittar filer som matchar en datummask för ett reguljärt uttryck indexeras dessa dokument. </p> <p>Anta att du har följande datummask: </p> <p> <code> exclude-days&amp;nbsp;180&amp;nbsp;regexp&amp;nbsp;.*archive.* </code> </p> <p>Masken instruerar sökroboten att utesluta matchande filer som är 180 dagar eller äldre. Det vill säga filer som innehåller ordet"arkiv" i sin URL. </p> <p>Se <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -639,7 +609,7 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
 
 Du kan använda [!DNL Content Types] för att välja vilka typer av filer som du vill crawla och indexera för det här kontot.
 
-Innehållstyper som du kan välja för att crawla och indexera är PDF-dokument, textdokument, Adobe Flash-filmer, filer från Microsoft Office-program som Word, Excel och PowerPoint samt text i MP3-filer. Texten som finns i de valda innehållstyperna söks igenom tillsammans med all annan text på webbplatsen.
+Innehållstyper som du kan använda för att crawla och indexera är PDF-dokument, textdokument, Adobe Flash-filmer, filer från Microsoft Office-program som Word, Excel och PowerPoint samt text i MP3-filer. Texten som finns i de valda innehållstyperna söks igenom tillsammans med all annan text på webbplatsen.
 
 Innan effekterna av inställningarna för innehållstyper visas för kunderna måste du återskapa platsindexet.
 
@@ -682,7 +652,7 @@ Om du bara vill förhindra indexering av vissa MP3-filer på webbplatsen kan du 
 
 Du kan använda [!DNL Content Types] för att välja vilka typer av filer som du vill crawla och indexera för det här kontot.
 
-Innehållstyper som du kan välja för att crawla och indexera är PDF-dokument, textdokument, Adobe Flash-filmer, filer från Microsoft Office-program som Word, Excel och PowerPoint samt text i MP3-filer. Texten som finns i de valda innehållstyperna söks igenom tillsammans med all annan text på webbplatsen.
+Innehållstyper som du kan använda för att crawla och indexera är PDF-dokument, textdokument, Adobe Flash-filmer, filer från Microsoft Office-program som Word, Excel och PowerPoint samt text i MP3-filer. Texten som finns i de valda innehållstyperna söks igenom tillsammans med all annan text på webbplatsen.
 
 Innan effekterna av inställningarna för innehållstyper visas för kunderna måste du återskapa platsindexet.
 
@@ -782,61 +752,49 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
       </tr> 
       <tr> 
       <td colname="col1"> <p>URL-mask för sida </p> </td> 
-      <td colname="col2"> <p>Identifiera den eller de webbsidor som innehåller formuläret. Om du vill identifiera ett formulär som visas på en sida anger du sidans URL-adress som i följande exempel: </p> <p> <code> https://www.mydomain.com/login.html </code> </p> <p>Om du vill identifiera formulär som visas på flera sidor anger du en URL-mask som använder jokertecken för att beskriva sidorna. Om du vill identifiera formulär som har påträffats på en ASP-sida under <code> https://www.mydomain.com/register/ </code>kan du till exempel ange följande: </p> <p> <code> https://www.mydomain.com/register/*.asp&amp;nbsp; </code> </p> <p>Du kan också använda ett reguljärt uttryck för att identifiera flera sidor. Ange bara 
-      <userinput>
+      <td colname="col2"> <p>Identifiera den eller de webbsidor som innehåller formuläret. Om du vill identifiera ett formulär som visas på en sida anger du sidans URL-adress som i följande exempel: </p> <p> <code> https://www.mydomain.com/login.html </code> </p> <p>Om du vill identifiera formulär som visas på flera sidor anger du en URL-mask som använder jokertecken för att beskriva sidorna. Om du vill identifiera formulär som har påträffats på en ASP-sida under <code> https://www.mydomain.com/register/ </code>kan du till exempel ange följande: </p> <p> <code> https://www.mydomain.com/register/*.asp&amp;nbsp; </code> </p> <p>Du kan också använda ett reguljärt uttryck för att identifiera flera sidor. Ange bara <code>
         regexp 
-      </userinput> nyckelord före URL-masken som i följande exempel: </p> <p> <code> regexp&amp;nbsp;^https://www\.mydomain\.com/.*/login\.html$ </code> </p> </td> 
+      </code> nyckelordet före URL-masken som i följande exempel: </p> <p> <code> regexp&amp;nbsp;^https://www\.mydomain\.com/.*/login\.html$ </code> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Åtgärds-URL-mask </p> </td> 
-      <td colname="col2"> <p>Identifierar åtgärdsattributet för 
-      <userinput>
-        &lt;formulär&gt; 
-      </userinput> -tagg. </p> <p>Precis som sidans URL-mask kan URL-masken för åtgärden ha formen av en enda URL, en URL med jokertecken eller ett reguljärt uttryck. </p> <p>URL-masken kan vara något av följande: 
+      <td colname="col2"> <p>Identifierar <code>
+        &lt;form&gt; 
+      </code> taggens åtgärdsattribut. </p> <p>Precis som sidans URL-mask kan URL-masken för åtgärden ha formen av en enda URL, en URL med jokertecken eller ett reguljärt uttryck. </p> <p>URL-masken kan vara något av följande: 
       <ul id="ul_EDFE7688D3DD4C0BBACCE5D4648D8E44"> 
       <li id="li_77550A448D954EF29FF33EE5E8B5E0F5"> En fullständig sökväg som i följande: <code> https://www.mydomain.com/products.html </code> </li> 
       <li id="li_F84E25553BBA41419BE153DC0709E011"> En del sökväg som i följande: <code> https://www.mydomain.com/products </code> </li> 
       <li id="li_8DADA1C8604740FCACBA30B4AAADB2A1"> En URL som använder jokertecken som i följande exempel: <code> https://www.mydomain.com/*.html </code> </li> 
       <li id="li_1EF637B450654B509AA4B618F7FD3C2B"> Ett reguljärt uttryck som i följande: <code> regexp&amp;nbsp^https://www\.mydomain\.com/.*/login\.html$ </code> </li> 
-      </ul> </p> <p>Om du inte vill indexera texten på sidor som identifieras av en URL-mask eller en URL-mask för en åtgärd, eller om du inte vill att länkarna ska följas på dessa sidor, kan du använda kommandot 
-      <userinput>
+      </ul> </p> <p>Om du inte vill indexera texten på sidor som identifieras av en URL-mask eller en URL-mask för åtgärd, eller om du inte vill att länkarna ska följas på dessa sidor, kan du använda nyckelorden <code>
         noindex 
-      </userinput> och 
-      <userinput>
+      </code> och <code>
         nofollow 
-      </userinput> nyckelord. Du kan lägga till dessa nyckelord i masker med hjälp av URL-masker eller ingångspunkter. </p> <p>Se <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573" type="concept" format="dita" scope="local"> Om URL-adresser </a>. </p> <p>Se <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Om URL-masker </a>. </p> </td> 
+      </code> . Du kan lägga till dessa nyckelord i masker med hjälp av URL-masker eller ingångspunkter. </p> <p>Se <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573" type="concept" format="dita" scope="local"> Om URL-adresser </a>. </p> <p>Se <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Om URL-masker </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Formulärnamnsmask </p> </td> 
-      <td colname="col2"> <p>Identifierar formulär om 
-      <userinput>
-        &lt;formulär&gt; 
-      </userinput> -taggar på dina webbsidor innehåller ett namnattribut. </p> <p>Du kan använda ett enkelt namn ( 
-      <userinput>
+      <td colname="col2"> <p>Identifierar formulär om <code>
+        &lt;form&gt; 
+      </code> -taggarna på dina webbsidor innehåller ett namnattribut. </p> <p>Du kan använda ett enkelt namn ( <code>
         login_form 
-      </userinput>), ett namn med jokertecken ( 
-      <userinput>
+      </code>), ett namn med jokertecken ( <code>
         form* 
-      </userinput>), eller ett reguljärt uttryck ( 
-      <userinput>
-        regexp ^.*auktorisera.*$ 
-      </userinput>). </p> <p>Du kan vanligtvis lämna fältet tomt eftersom formulär vanligtvis inte har något namnattribut. </p> </td> 
+      </code>) eller ett reguljärt uttryck ( <code>
+        regexp ^.*authorize.*$ 
+      </code>). </p> <p>Du kan vanligtvis lämna fältet tomt eftersom formulär vanligtvis inte har något namnattribut. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Form ID Mask </p> </td> 
-      <td colname="col2"> <p>Identifierar formulär om 
-      <userinput>
-        &lt;formulär&gt; 
-      </userinput> -taggar på dina webbsidor innehåller ett id-attribut. </p> <p>Du kan använda ett enkelt namn ( 
-      <userinput>
+      <td colname="col2"> <p>Identifierar formulär om <code>
+        &lt;form&gt; 
+      </code> -taggarna på dina webbsidor innehåller ett id-attribut. </p> <p>Du kan använda ett enkelt namn ( <code>
         login_form 
-      </userinput>), ett namn med jokertecken ( 
-      <userinput>
+      </code>), ett namn med jokertecken ( <code>
         form* 
-      </userinput>), eller ett reguljärt uttryck ( 
-      <userinput>
-        regexp ^.*auktorisera.*$ 
-      </userinput>). </p> <p>Du kan vanligtvis lämna fältet tomt eftersom formulär vanligtvis inte har något namnattribut. </p> </td> 
+      </code>) eller ett reguljärt uttryck ( <code>
+        regexp ^.*authorize.*$ 
+      </code>). </p> <p>Du kan vanligtvis lämna fältet tomt eftersom formulär vanligtvis inte har något namnattribut. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Parametrar </p> </td> 
@@ -852,52 +810,43 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
       </tr> 
       <tr> 
       <td colname="col1"> <p>Åsidosättningsmetod </p> </td> 
-      <td colname="col2"> <p>Ange när målet för formuläröverföringen skiljer sig från det som används i formulärets åtgärdsattribut och när den inskickande JavaScript-koden har ändrat metoden. </p> <p>Standardvärdena för alla formulärparametrar ( 
-      <userinput>
+      <td colname="col2"> <p>Ange när målet för formuläröverföringen skiljer sig från det som används i formulärets åtgärdsattribut och när den inskickande JavaScript-koden har ändrat metoden. </p> <p>Standardvärdena för alla formulärparametrar ( <code>
         &lt;input&gt; 
-      </userinput> -taggar, inklusive dolda fält), standardvärdet 
-      <userinput>
-        &lt;alternativ&gt; 
-      </userinput> från en 
-      <userinput>
-        &lt;välj&gt; 
-      </userinput> och standardtexten mellan 
-      <userinput>
-        &lt;textområde&gt;..&lt;/textarea&gt; 
-      </userinput> -taggar) läses från webbsidan. Alla parametrar som visas i <span class="wintitle"> avsnittet Formuläröverföring </span> , i fältet <span class="uicontrol"> Parametrar, </span> ersätts med standardvärdena för formuläret. </p> </td> 
+      </code> -taggar, inklusive dolda fält), standardvärdet <code>
+        &lt;option&gt; 
+      </code> för en <code>
+        &lt;select&gt; 
+      </code> -tagg och standardtexten mellan <code>
+        &lt;textarea&gt;...&lt;/textarea&gt; 
+      </code> -taggar) läses från webbsidan. Alla parametrar som visas i <span class="wintitle"> avsnittet Formuläröverföring </span> , i fältet <span class="uicontrol"> Parametrar, </span> ersätts med standardvärdena för formuläret. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Parametrar </p> </td> 
-      <td colname="col2"> <p>Du kan lägga till prefix i parametrar för formulärinskickning med 
-      <userinput>
+      <td colname="col2"> <p>Du kan lägga till nyckelordet till prefix för parametrar för att skicka formulär <code>
         not 
-      </userinput> nyckelord. </p> <p>När du prefix en parameter med 
-      <userinput>
+      </code> . </p> <p>När du lägger till ett prefix till en parameter <code>
         not 
-      </userinput>, skickas den inte in som en del av den inlämnade ansökan. Det här beteendet är användbart för kryssrutor som ska skickas avmarkerade. </p> <p>Anta att du vill skicka följande parametrar: </p> <p> 
+      </code>skickas den inte som en del av formuläröverföringen. Det här beteendet är användbart för kryssrutor som ska skickas avmarkerade. </p> <p>Anta att du vill skicka följande parametrar: </p> <p> 
       <ul id="ul_962D12BACF464FF189DB12BFAFCC93A6"> 
       <li id="li_830C6C3EC8D2448388A453BB8EDE5940"> E-postparametern med värdet 
-      <userinput>
+      <code>
         nobody@mydomain.com 
-      </userinput> </li> 
+      </code> </li> 
       <li id="li_905497E3FACE472DBDD49392D5B45E01"> Parametern password med värdet 
-      <userinput>
+      <code>
         tryme 
-      </userinput> </li> 
+      </code> </li> 
       <li id="li_AAA411708ADC464793EADF0D821E282E"> Parametern mycheckbox har avmarkerats. </li> 
-      <li id="li_0D3DDE641E2B4BEF9F570C03FDB40ED2"> <p>Alla andra 
-      <userinput>
-        &lt;formulär&gt; 
-      </userinput> parametrar som standardvärden </p> </li> 
+      <li id="li_0D3DDE641E2B4BEF9F570C03FDB40ED2"> <p>Alla andra <code>
+        &lt;form&gt; 
+      </code> parametrar som standardvärden </p> </li> 
       </ul> </p> <p>Din formulärinlämningsparameter ser ut så här: </p> <p> <code> email=nobody@mydomain.com 
         password=tryme 
-        not&nbsp;mycheckbox </code> </p> <p>Metodattributet för 
-      <userinput>
-        &lt;formulär&gt; 
-      </userinput> -taggen på webbsidan används för att avgöra om data skickas till servern med metoden GET eller POST. </p> <p>Om 
-      <userinput>
-        &lt;formulär&gt; 
-      </userinput> -taggen innehåller inget metodattribut. Formuläret skickas med metoden GET. </p> </td> 
+        not&nbsp;mycheckbox </code> </p> <p>Metodattributet för <code>
+        &lt;form&gt; 
+      </code> -taggen på webbsidan används för att avgöra om data skickas till servern med hjälp av metoden GET eller POST. </p> <p>Om taggen inte innehåller något metodattribut skickas formuläret med metoden GET. <code>
+        &lt;form&gt; 
+      </code> </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -1044,7 +993,7 @@ Eftersom dokumenten för XML-crawlningar redan är separerade till enskilda file
 <a href="index:<ic_config_name>?url="{url}">
 ```
 
-Om Adobe-installationen till exempel returnerade följande länkar:
+Om Adobe-inställningarna till exempel returnerade följande länkar:
 
 ```
 <a href="https://www.adobe.com/somepath/doc1.xml">doc 1</a> 
@@ -1116,7 +1065,7 @@ När du lägger till en Index Connector kan du använda funktionen **[!UICONTROL
  </tbody> 
 </table>
 
-**Viktigt**: Funktionen Setup Maps fungerar kanske inte för stora XML-datauppsättningar eftersom filparsern försöker läsa hela filen i minnet. Det kan leda till att minnet tar slut. Men när samma dokument bearbetas vid indexeringen läses det inte in i minnet. I stället bearbetas stora dokument &quot;i farten&quot; och läses inte helt in i minnet först.
+**Viktigt**: Funktionen Setup Maps fungerar kanske inte för stora XML-datauppsättningar eftersom filparsern försöker läsa hela filen i minnet. Det kan leda till att minnet tar slut. Men när samma dokument bearbetas vid indexeringen läses det inte in i minnet. I stället bearbetas stora dokument &quot;i farten&quot; och läses inte in helt i minnet först.
 
 **Användning av Förhandsgranska när du lägger till en indexkoppling**
 
@@ -1156,10 +1105,9 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
       <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Text </span> <p>Enkla platta textfiler, kommaavgränsade, tabbavgränsade eller andra konsekvent avgränsade format. Varje radavgränsad textrad motsvarar ett enskilt dokument och tolkas med den angivna avgränsaren. </p> <p>Du kan mappa varje värde, eller kolumn, till ett metadatafält, som kolumnnumret refererar till, med början vid 1 (ett). </p> </li> 
       <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Hämtar ett primärt XML-dokument som innehåller flera "rader" med information. </p> </li> 
-      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>Hämtar ett primärt XML-dokument som innehåller länkar ( 
-      <userinput>
+      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>Hämtar ett primärt XML-dokument som innehåller länkar ( <code>
         &lt;a&gt; 
-      </userinput>) till enskilda XML-dokument. </p> </li> 
+      </code>) till enskilda XML-dokument. </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -1231,7 +1179,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       <ul id="ul_981AE2C6D30443BDBFC6575D413732A2"> 
       <li id="li_A42CB9DFFF8C45A7BAC2D471FE96CEBE"> <span class="uicontrol"> Kolumn </span> <p> Anger ett kolumnnummer med den första kolumnen som 1 (ett). Om du vill lägga till nya mappningsrader för varje kolumn klickar du på <span class="wintitle"> + </span>under Åtgärd <span class="uicontrol"> </span>. </p> <p>Du behöver inte referera till varje kolumn i datakällan. I stället kan du välja att hoppa över värden. </p> </li> 
       <li id="li_26E8C9554A5D4BC5A5073D6385E3626F"> <span class="uicontrol"> Fält </span> <p>Definierar det name-attributvärde som används för varje genererad &lt;meta&gt;-tagg. </p> </li> 
-      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadata? </span> <p>Gör <span class="uicontrol"> fält </span> till en nedrullningsbar lista där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Fältvärdet <span class="uicontrol"> kan </span> vara ett odefinierat metadatafält, om så önskas. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtrera skript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Filtrera skript </a>. </p> <p>När Index Connector bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle"> fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributet <span class="wintitle"> Allow Lists </span> angivet. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
+      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadata? </span> <p>Gör <span class="uicontrol"> fält </span> till en nedrullningsbar lista där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Fältvärdet <span class="uicontrol"> kan </span> vara ett odefinierat metadatafält, om så önskas. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtrera skript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Filtrera skript </a>. </p> <p>När Index Connector bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle"> fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributet <span class="wintitle"> Tillåtelselista </span> inställt. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
       <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Primärnyckel? </span> <p>Endast en kartdefinition identifieras som primärnyckel. Det här fältet blir den unika referens som visas när dokumentet läggs till i indexet. Det här värdet används i dokumentets URL i indexet. </p> <p>Värdena för <span class="uicontrol"> primärnyckel måste vara unika </span> för alla dokument som representeras av konfigurationen för indexkoppling. Eventuella dubbletter som påträffas ignoreras. Om källdokumenten inte innehåller ett enda unikt värde som ska användas som <span class="uicontrol"> primärnyckel, </span>men två eller flera fält tillsammans <i>kan</i> utgöra en unik identifierare, kan du definiera <span class="uicontrol"> primärnyckeln </span> genom att kombinera flera <span class="uicontrol"> kolumnvärden </span> med ett lodrätt streck ("|") som avgränsar värdena. </p> </li> 
       <li id="li_80DB205525094CE1AA6762BFC7892D96"> <span class="uicontrol"> Ta bort HTML? </span> <p>När det här alternativet är markerat tas alla HTML-taggar som finns i fältets data bort. </p> </li> 
       <li id="li_359D2902859B4C5BADB0BA26F0BA4DC0"> <span class="uicontrol"> Åtgärd </span> <p>Gör att du kan lägga till rader på kartan eller ta bort rader från kartan. Radernas ordning är inte viktig. </p> </li> 
@@ -1278,7 +1226,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       </tr> 
       <tr> 
       <td colname="col1"> <p>ItemTagg </p> </td> 
-      <td colname="col2"> <p>Identifierar XML-elementet som du kan använda för att identifiera enskilda XML-rader i datakällfilen som du har angett. </p> <p>I följande Feed-fragment av ett Adobe XML-dokument är ItemTag-värdet <span class="codeph"> post </span>: </p> <p> <code> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
+      <td colname="col2"> <p>Identifierar XML-elementet som du kan använda för att identifiera enskilda XML-rader i datakällfilen som du har angett. </p> <p>I följande feed-fragment i ett XML-dokument i Adobe är itemTag-värdet <span class="codeph"> post </span>: </p> <p> <code> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
         &lt;!DOCTYPE&nbsp;gsafeed&nbsp;PUBLIC&nbsp;"-//Google//DTD&nbsp;GSA&nbsp;Feeds//EN"&nbsp;""&gt; &lt;gsafeed&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;datasource&gt;marketplace&lt;/datasource&gt; 
@@ -1319,7 +1267,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       <td colname="col1"> <p>Karta </p> </td> 
       <td colname="col2"> <p>Gör att du kan ange mappningar av XML-element-till-metadata med XPath-uttryck. </p> <p> 
       <ul id="ul_604108C0277C4892AE8A40CA39889ABD"> 
-      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Tagg </span> <p>Anger en XPath-representation av tolkade XML-data. I exemplet med Adobe XML-dokumentet ovan, under alternativet Item-tag, kan det mappas med följande syntax: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Tagg </span> <p>Anger en XPath-representation av tolkade XML-data. Med exempeldokumentet Adobe XML ovan, under alternativet Item-tag, kan det mappas med följande syntax: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
       /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
       /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
       /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>Syntaxen ovan innebär följande: </p> <p> 
@@ -1330,7 +1278,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>Innehållsattributet <span class="codeph"> för </span> alla <span class="codeph"> metaelement </span> som finns i ett <span class="codeph"> metadataelement, som finns i </span> postelementet <span class="codeph"> , vars name-attribut är </span> <span class="codeph"> </span><span class="codeph"> </span>description, mappas till metadatafältet¥. </p> </li> 
       </ul> </p> <p>XPath är en relativt komplicerad notation. Mer information finns på följande plats: </p> <p>Se <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Fält </span> <p>Definierar det name-attributvärde som används för varje genererad <span class="codeph"> &lt;meta&gt;- </span> tagg. </p> </li> 
-      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadata? </span> <p>Gör <span class="uicontrol"> fält </span> till en nedrullningsbar lista där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Fältvärdet <span class="uicontrol"> kan </span> vara ett odefinierat metadatafält, om så önskas. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtrera skript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Filtrera skript </a>. </p> <p>När Index Connector bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle"> fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributet <span class="wintitle"> Allow Lists </span> angivet. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
+      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadata? </span> <p>Gör <span class="uicontrol"> fält </span> till en nedrullningsbar lista där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Fältvärdet <span class="uicontrol"> kan </span> vara ett odefinierat metadatafält, om så önskas. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtrera skript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Filtrera skript </a>. </p> <p>När Index Connector bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle"> fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributet <span class="wintitle"> Tillåtelselista </span> inställt. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Primärnyckel? </span> <p>Endast en kartdefinition identifieras som primärnyckel. Det här fältet blir den unika referens som visas när dokumentet läggs till i indexet. Det här värdet används i dokumentets URL i indexet. </p> <p>Värdena för <span class="uicontrol"> primärnyckel måste vara unika </span> för alla dokument som representeras av konfigurationen för indexkoppling. Eventuella dubbletter som påträffas ignoreras. Om källdokumenten inte innehåller ett enda unikt värde som ska användas som <span class="uicontrol"> primärnyckel, </span>men två eller flera fält tillsammans <i>kan</i> utgöra en unik identifierare, kan du definiera <span class="uicontrol"> primärnyckeln </span> genom att kombinera flera <span class="uicontrol"> taggdefinitioner </span> med ett lodrätt streck ("|") som avgränsar värdena. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC81F"> <span class="uicontrol"> Ta bort HTML? </span> <p>När det här alternativet är markerat tas alla HTML-taggar som hittas i fältets data bort. </p> </li> 
       <li id="li_5E829D1D0DBD4BB7AAB5DB983053D248"> <span class="uicontrol"> Används för att ta bort? </span> <p>Används endast vid inkrementella indexåtgärder. Poster som matchar detta XPath-mönster identifierar objekt som ska tas bort. Värdet <span class="uicontrol"> Primärnyckel </span> för varje sådan post används för att konstruera"delete"-begäranden, precis som med Ta bort filsökväg. </p> <p> <b>Obs</b>: Den här funktionen är inte aktiverad som standard. Kontakta teknisk support för att aktivera funktionen. </p> </li> 
@@ -1351,10 +1299,9 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       </tr> 
       <tr> 
       <td colname="col1"> <p>Filsökväg </p> </td> 
-      <td colname="col2"> <p>Anger sökvägen till det primära XML-dokumentet som innehåller länkar ( 
-      <userinput>
+      <td colname="col2"> <p>Anger sökvägen till det primära XML-dokumentet som innehåller länkar ( <code>
         &lt;a&gt; 
-      </userinput>) till enskilda XML-dokument. </p> <p>Sökvägen är relativ till värdadressens rot. </p> </td> 
+      </code>) till enskilda XML-dokument. </p> <p>Sökvägen är relativ till värdadressens rot. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Protokoll </p> </td> 
@@ -1375,7 +1322,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       <td colname="col1"> <p>Karta </p> </td> 
       <td colname="col2"> <p>Här kan du ange mappningar kolumn-till-metadata med kolumnnummer. </p> <p> 
       <ul id="ul_06F50CBA0AA64C7CB1AFAE076E629A64"> 
-      <li id="li_0FA2502869BA40DC93D790B79E15A9D2"> <span class="uicontrol"> Tagg </span> <p>Anger en XPath-representation av tolkade XML-data. Med exempeldokumentet för Adobe XML ovan, under alternativet Item-tag, kan du mappa det med följande syntax: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0FA2502869BA40DC93D790B79E15A9D2"> <span class="uicontrol"> Tagg </span> <p>Anger en XPath-representation av tolkade XML-data. Med exempeldokumentet Adobe XML ovan, under alternativet Item-tag, kan du mappa det med följande syntax: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
         /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>Syntaxen ovan innebär följande: </p> <p> 
@@ -1386,7 +1333,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       <li id="li_7FA6A53DFD3D42A98B7BA17CC29DDB81"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>Innehållsattributet <span class="codeph"> för </span> alla <span class="codeph"> metaelement </span> som finns i ett <span class="codeph"> metadataelement, som finns i </span> postelementet <span class="codeph"> , vars name-attribut är </span> <span class="codeph"> </span><span class="codeph"> </span>description, mappas till metadatafältet¥. </p> </li> 
       </ul> </p> <p>XPath är en relativt komplicerad notation. Mer information finns på följande plats: </p> <p>Se <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_84999D07E0AE4265BC7928BBB49957B9"> <span class="uicontrol"> Fält </span> <p>Definierar det name-attributvärde som används för varje genererad &lt;meta&gt;-tagg. </p> </li> 
-      <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadata? </span> <p>Gör <span class="uicontrol"> fält </span> till en nedrullningsbar lista där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Fältvärdet <span class="uicontrol"> kan </span> vara ett odefinierat metadatafält, om så önskas. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtrera skript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Filtrera skript </a>. </p> <p>När Index Connector bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle"> fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributet <span class="wintitle"> Allow Lists </span> angivet. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
+      <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadata? </span> <p>Gör <span class="uicontrol"> fält </span> till en nedrullningsbar lista där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Fältvärdet <span class="uicontrol"> kan </span> vara ett odefinierat metadatafält, om så önskas. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtrera skript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Filtrera skript </a>. </p> <p>När Index Connector bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle"> fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributet <span class="wintitle"> Tillåtelselista </span> inställt. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
       <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Primärnyckel? </span> <p>Endast en kartdefinition identifieras som primärnyckel. Det här fältet blir den unika referens som visas när dokumentet läggs till i indexet. Det här värdet används i dokumentets URL i indexet. </p> <p>Värdena för <span class="uicontrol"> primärnyckel måste vara unika </span> för alla dokument som representeras av konfigurationen för indexkoppling. Eventuella dubbletter som påträffas ignoreras. Om källdokumenten inte innehåller ett enda unikt värde som ska användas som <span class="uicontrol"> primärnyckel, </span>men två eller flera fält tillsammans <i>kan</i> utgöra en unik identifierare, kan du definiera <span class="uicontrol"> primärnyckeln </span> genom att kombinera flera <span class="uicontrol"> taggdefinitioner </span> med ett lodrätt streck ("|") som avgränsar värdena. </p> </li> 
       <li id="li_9F435EFB3EC74B409EC82A851824610G"> <span class="uicontrol"> Ta bort HTML? </span> <p>När det här alternativet är markerat tas alla HTML-taggar som hittas i fältets data bort. </p> </li> 
       <li id="li_6302D18971AD439FBECE27742649C56B"> <span class="uicontrol"> Åtgärd </span> <p>Gör att du kan lägga till rader på kartan eller ta bort rader från kartan. Radernas ordning är inte viktig. </p> </li> 
