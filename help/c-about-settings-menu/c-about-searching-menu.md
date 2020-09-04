@@ -8,7 +8,10 @@ title: Om menyn Söka
 topic: Settings,Site search and merchandising
 uuid: 072111fc-a32b-4acb-8337-cb21bcdb5542
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '11182'
+ht-degree: 0%
 
 ---
 
@@ -56,82 +59,78 @@ Om du vill få mer specifika sökresultat kan du använda följande söktips.
   <tr> 
    <td colname="col1"> <p>Använd flera ord </p> </td> 
    <td colname="col2"> <p>Exempel: 
-     <userinput>
-       vår kostnadsfria produkt 
-     </userinput> </p> <p>Frågor med flera ord ger mer raffinerade resultat än frågor med enstaka ord. </p> <p>Exempel: 
-     <userinput>
-       vår kostnadsfria produkt 
-     </userinput> ger mer relevanta resultat än bara 
-     <userinput>
-       produkt 
-     </userinput>. </p> <p>Kom ihåg att relevanta resultat returneras även om de inte innehåller alla frågetermer. </p> </td> 
+     <code>
+       our free product 
+     </code> </p> <p>Frågor med flera ord ger mer raffinerade resultat än frågor med enstaka ord. </p> <p>Returnerar till exempel mer relevanta resultat än bara <code>
+       our free product 
+     </code> <code>
+       product 
+     </code>. </p> <p>Kom ihåg att relevanta resultat returneras även om de inte innehåller alla frågetermer. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Använd liknande ord </p> </td> 
    <td colname="col2"> <p>Exempel: 
-     <userinput>
-       säker och säker sekretesskydd 
-     </userinput> </p> <p>Ju mer liknande ord du kan använda i en sökfråga, desto mer relevant är sökresultaten. </p> </td> 
+     <code>
+       safe secure privacy security 
+     </code> </p> <p>Ju mer liknande ord du kan använda i en sökfråga, desto mer relevant är sökresultaten. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Använd lämplig versal </p> </td> 
    <td colname="col2"> <p>Exempel: 
-     <userinput>
-       Referens för sökmall 
-     </userinput> </p> <p>Använd versaler för rätt substantiv. Om du använder ett ord med gemener matchar sökmotorn alla bokstäver i ordet. </p> <p>Om du till exempel skriver 
-     <userinput>
-       sök 
-     </userinput>, returnerar sökmotorn alla dokument som innehåller orden "sökning", "sökning" och "SÖKNING". Om du skriver 
-     <userinput>
-       Sök 
-     </userinput>returnerar sökmotorn dokument som bara innehåller det versala ordet. </p> </td> 
+     <code>
+       Search Template Reference 
+     </code> </p> <p>Använd versaler för rätt substantiv. Om du använder ett ord med gemener matchar sökmotorn alla bokstäver i ordet. </p> <p>Om du t.ex. skriver <code>
+       search 
+     </code>returnerar sökmotorn alla dokument som innehåller orden "sök", "Sök" och "SEARCH". Om du skriver <code>
+       Search 
+     </code>returnerar sökmotorn dokument som bara innehåller det versala ordet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Använd citattecken </p> </td> 
    <td colname="col2"> <p>Exempel: 
-     <userinput>
-       "vårt löfte till dig" 
-     </userinput> </p> <p>Använd citattecken för att hitta ord som måste finnas intill varandra, t.ex."vårt löfte till dig". Utan de omgivande citattecknen innehåller sökresultaten orden"vår","pant","till" och"du", men inte nödvändigtvis i den ordningen. I stället kan orden visas var som helst, och i vilken ordning som helst, i dokumentet. </p> <p> Om du använder det avancerade sökformuläret med alternativknappar för <span class="uicontrol"> alla </span>, <span class="uicontrol"> alla </span>och <span class="uicontrol"> fraser </span>kan du bara använda citattecken när <span class="uicontrol"> något </span> är markerat. Citattecken ignoreras om <span class="uicontrol"> alla </span> eller <span class="uicontrol"> fraser </span> är markerade. </p> </td> 
+     <code>
+       "our pledge to you" 
+     </code> </p> <p>Använd citattecken för att hitta ord som måste finnas intill varandra, t.ex."vårt löfte till dig". Utan de omgivande citattecknen innehåller sökresultaten orden"vår","pant","till" och"du", men inte nödvändigtvis i den ordningen. I stället kan orden visas var som helst, och i vilken ordning som helst, i dokumentet. </p> <p> Om du använder det avancerade sökformuläret med alternativknappar för <span class="uicontrol"> alla </span>, <span class="uicontrol"> alla </span>och <span class="uicontrol"> fraser </span>kan du bara använda citattecken när <span class="uicontrol"> något </span> är markerat. Citattecken ignoreras om <span class="uicontrol"> alla </span> eller <span class="uicontrol"> fraser </span> är markerade. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Använd + (plus) eller - (minus) </p> </td> 
    <td colname="col2"> <p>Exempel: 
-     <userinput>
-       +"mallspråk" 
-     </userinput> </p> <p>Använd + för att ange att ett sökord eller en fras måste visas i sökresultatet. </p> <p>Använd - om du vill ange att ett sökord eller en fras inte får ingå i sökresultaten. </p> <p>Du måste innehålla en fras inom citattecken. Lämna inga mellanslag mellan plus- eller minustecknet och söktermen, som i exemplet ovan. </p> <p> Om du använder det avancerade sökformuläret med alternativknappar för <span class="uicontrol"> alla </span>, <span class="uicontrol"> alla </span>och <span class="uicontrol"> fraser </span>kan du bara använda citattecken när <span class="uicontrol"> något </span> är markerat. Inställningarna plus och minus ignoreras om <span class="uicontrol"> alla </span> eller <span class="uicontrol"> fras </span> är markerade. </p> </td> 
+     <code>
+       +"template language" 
+     </code> </p> <p>Använd + för att ange att ett sökord eller en fras måste visas i sökresultatet. </p> <p>Använd - om du vill ange att ett sökord eller en fras inte får ingå i sökresultaten. </p> <p>Du måste innehålla en fras inom citattecken. Lämna inga mellanslag mellan plus- eller minustecknet och söktermen, som i exemplet ovan. </p> <p> Om du använder det avancerade sökformuläret med alternativknappar för <span class="uicontrol"> alla </span>, <span class="uicontrol"> alla </span>och <span class="uicontrol"> fraser </span>kan du bara använda citattecken när <span class="uicontrol"> något </span> är markerat. Inställningarna plus och minus ignoreras om <span class="uicontrol"> alla </span> eller <span class="uicontrol"> fras </span> är markerade. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Använd fältsökningar </p> </td> 
    <td colname="col2"> <p>Exempel: </p> <p> 
      <ul id="ul_F7CFF7652894402E8D19D6BA49792530"> 
       <li id="li_27492EF933C5437CB2C499746EC8CF39"> 
-       <userinput>
-         titel:om 
-       </userinput> </li> 
+       <code>
+         title:about 
+       </code> </li> 
       <li id="li_BD21505122104FD0B16A4DAD777811DA"> 
-       <userinput>
-         desc:"Vårt team" 
-       </userinput> </li> 
+       <code>
+         desc:"Our Team" 
+       </code> </li> 
       <li id="li_8264630F8B3D46BF872EFEB1D69DB6BE"> 
-       <userinput>
-         nycklar:inloggning 
-       </userinput> </li> 
+       <code>
+         keys:login 
+       </code> </li> 
       <li id="li_EBB81CBFC6DA45E99A524890DCD56E9F"> 
-       <userinput>
-         brödtext:säkerhet 
-       </userinput> </li> 
+       <code>
+         body:security 
+       </code> </li> 
       <li id="li_6A852E35D6984A2C94144AB6C6D2DFA0"> 
-       <userinput>
+       <code>
          alt:"join now" 
-       </userinput> </li> 
+       </code> </li> 
       <li id="li_F4C5699360484D12ACD62BBFB84A7904"> 
-       <userinput>
+       <code>
          url:help 
-       </userinput> </li> 
+       </code> </li> 
       <li id="li_B2DBBA2239E74D98868D92B3EDEF5B51"> 
-       <userinput>
+       <code>
          target:Adobe 
-       </userinput> </li> 
+       </code> </li> 
      </ul> </p> <p>Med fältsökningar kan du skapa specifika sökningar efter ord som visas i en viss del av ett dokument. </p> <p>Du kan utföra en fältsökning på brödtext (body:), rubriktext (title:), alt-text (alt:), meta description (desc:), meta-nyckelord (keys:), URL (url:) eller meta-målnyckelord (target:). Använd gemener som fältnamn och omedelbart följt av kolon. Det finns inga mellanslag mellan kolon och söktermen. </p> <p>Fältsökningarna följs endast av ett ord eller en fras. Fraser måste finnas inom citattecken. </p> <p>Om du använder det avancerade sökformuläret med en listruta för fältnamnet, kan du bara ange fältnamn före ett ord eller en fras när <span class="uicontrol"> något </span> är markerat. Specifika fältnamn ignoreras om något annat avancerat sökformulärfält har valts i listrutan. </p> </td> 
   </tr> 
   <tr> 
@@ -139,27 +138,24 @@ Om du vill få mer specifika sökresultat kan du använda följande söktips.
    <td colname="col2"> <p>Exempel: </p> <p> 
      <ul id="ul_D8E3867EB15641B0A6E55AD546CCB4DD"> 
       <li id="li_CB8B8FC15EB14B13BB33BB69F5206303"> 
-       <userinput>
+       <code>
          wh* 
-       </userinput> </li> 
+       </code> </li> 
       <li id="li_5350A934648C4C81BD6C0875061B426B"> 
-       <userinput>
+       <code>
          "wh* are" 
-       </userinput> </li> 
+       </code> </li> 
       <li id="li_7965A2F7186F40039D2F0736299D11B1"> 
-       <userinput>
+       <code>
          415-*-* 
-       </userinput> </li> 
-     </ul> </p> <p>Sökningar med jokertecken utökar antalet träffar för en viss begäran. Tecknet * används som jokertecken. </p> <p>Om du till exempel söker efter 
-     <userinput>
+       </code> </li> 
+     </ul> </p> <p>Sökningar med jokertecken utökar antalet träffar för en viss begäran. Tecknet * används som jokertecken. </p> <p>Om du till exempel söker efter <code>
        wh* 
-     </userinput> söker efter orden "what", "why", "when", "whether" och alla andra ord som börjar med "wh". Om du söker efter *henne* hittas orden"här","om","tillsammans","samla" och alla andra ord som innehåller"henne" var som helst i ordet. </p> <p>Du kan kombinera jokertecken med modifierarna + och -, citattecken för fraser samt fältsökningsspecificerare. </p> <p>Sökningen 
-     <userinput>
+     </code> hittas orden "what", "why", "when", "whether" och alla andra ord som börjar med "wh". Om du söker efter *henne* hittas orden"här","om","tillsammans","samla" och alla andra ord som innehåller"henne" var som helst i ordet. </p> <p>Du kan kombinera jokertecken med modifierarna + och -, citattecken för fraser samt fältsökningsspecificerare. </p> <p>Sökningen <code>
        +wh* -se*ch 
-     </userinput> söker efter alla sidor som har ett ord som börjar med "wh" och som inte innehåller ett ord som börjar med "se" och slutar med "ch". </p> <p>Sökningen 
-     <userinput>
+     </code> söker efter alla sidor som har ett ord som börjar med "wh" och som inte innehåller ett ord som börjar med "se" och slutar med "ch". </p> <p>I sökningen <code>
        "wh* are" 
-     </userinput> söker efter fraserna "var är", "vad är", "varför är" och så vidare. </p> </td> 
+     </code> hittas fraserna "var är", "vad är", "varför är" och så vidare. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -212,7 +208,7 @@ Se [Mallar](../c-about-design-menu/c-about-templates.md#concept_06EB481B14864E18
       </tr> 
       <tr> 
       <td colname="col1"> <p>Konto </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Sök&amp;Befordra </span> som källa. </p> <p>Gör att du kan välja det konto för sökning/försäljning av webbplatser som du vill söka efter. Vanligtvis söker en sökning i det konto som du använder just nu. Presentationsmallen kan dock använda en backend-sökning för alla dina andra konton. </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Search &amp; Promote </span> som källa. </p> <p>Gör att du kan välja det konto för sökning/försäljning av webbplatser som du vill söka efter. Vanligtvis söker en sökning i det konto som du använder just nu. Presentationsmallen kan dock använda en backend-sökning för alla dina andra konton. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Servernamn/IP </p> </td> 
@@ -240,7 +236,7 @@ Se [Mallar](../c-about-design-menu/c-about-templates.md#concept_06EB481B14864E18
       </tr> 
       <tr> 
       <td colname="col1"> <p>Typ av sökning </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Sök&amp;Befordra </span> som källa. </p> <p>Här kan du välja mellan följande tre typer av sökning. </p> <p> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Search &amp; Promote </span> som källa. </p> <p>Här kan du välja mellan följande tre typer av sökning. </p> <p> 
         <ul id="ul_2F6FA9EFD8DB49EEAB866C3D070E2644"> 
           <li id="li_ECFEBEDD86FF4DE2BB768423B3B91B5E"> <span class="uicontrol"> alla </span> <p>Söker efter dokument som innehåller alla ord i frågesträngen. </p> <p>Användning av"+" och"-" innan sökord inaktiveras och dessa tecken ignoreras. </p> </li> 
           <li id="li_62EB215BDDE74DF0BF76B3BD5B96776F"> <span class="uicontrol"> alla </span> <p>Du kan använda "+"- och "-"-ordprefix. </p> </li> 
@@ -249,19 +245,19 @@ Se [Mallar](../c-about-design-menu/c-about-templates.md#concept_06EB481B14864E18
       </tr> 
       <tr> 
       <td colname="col1"> <p>Samling </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Sök&amp;Befordra </span> som källa. </p> <p>Identifierar den samling i indexet som du vill söka i. </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Search &amp; Promote </span> som källa. </p> <p>Identifierar den samling i indexet som du vill söka i. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Befordra sökning </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Sök&amp;Befordra </span> som källa. </p> <p>Gör att du kan använda ett slumpmässigt urval från sökresultaten, beroende på <span class="uicontrol"> antalet resultat </span> som du har angett. </p> <p>Säljmarknadsföring är ett äldre koncept. Därför rekommenderar vi att du använder det nya banderollhanteringssystemet inom webbplatssökning/försäljning. </p> <p>Se <a href="../c-about-design-menu/c-about-banners.md#concept_5BBE01FEC6134393B43CC917C8CC64DA" type="concept" format="dita" scope="local"> Om banners </a>. </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Search &amp; Promote </span> som källa. </p> <p>Gör att du kan använda ett slumpmässigt urval från sökresultaten, beroende på <span class="uicontrol"> antalet resultat </span> som du har angett. </p> <p>Säljmarknadsföring är ett äldre koncept. Därför rekommenderar vi att du använder det nya banderollhanteringssystemet inom webbplatssökning/försäljning. </p> <p>Se <a href="../c-about-design-menu/c-about-banners.md#concept_5BBE01FEC6134393B43CC917C8CC64DA" type="concept" format="dita" scope="local"> Om banners </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Använd parametrar för faset </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Sök&amp;Befordra </span> som källa och du har valt <span class="uicontrol"> Befordra sökning </span>. </p> <p>Anger att en kampanjsökning använder de valda ansiktena för att begränsa kampanjerna. De flesta kampanjsökkonton använder inte det här alternativet. </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Search &amp; Promote </span> som källa och du har valt <span class="uicontrol"> Befordra sökning </span>. </p> <p>Anger att en kampanjsökning använder de valda ansiktena för att begränsa kampanjerna. De flesta kampanjsökkonton använder inte det här alternativet. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ange standarderbjudande om ingen matchande kampanj </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Sök&amp;Befordra </span> som källa och du har valt <span class="uicontrol"> Befordra sökning </span>. </p> <p>Anger att en annan sökning efter en befordran utförs om den inledande sökningen efter en befordran inte hittar något. Den andra sökningen efter en befordran släpper nyckelordet. I stället söker programmet efter en befordran där metadatafältet"is_default" är inställt på"yes". </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Search &amp; Promote </span> som källa och du har valt <span class="uicontrol"> Befordra sökning </span>. </p> <p>Anger att en annan sökning efter en befordran utförs om den inledande sökningen efter en befordran inte hittar något. Den andra sökningen efter en befordran släpper nyckelordet. I stället söker programmet efter en befordran där metadatafältet"is_default" är inställt på"yes". </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Markera sökning </p> </td> 
@@ -323,7 +319,7 @@ Se [Mallar](../c-about-design-menu/c-about-templates.md#concept_06EB481B14864E18
    
    -->
 
-   Observera att de bearbetningsregler som väljer din presentationsmall kan åsidosätta några av dessa alternativ.
+   Observera att de bearbetningsregler som väljer presentationsmall kan åsidosätta några av dessa alternativ.
 
    Se [Lägga till en ny sökdefinition](../c-about-settings-menu/c-about-searching-menu.md#task_98D3A168AB5D4F30A1ADB6E0D48AB648) eller [Redigera en sökdefinition](../c-about-settings-menu/c-about-searching-menu.md#task_AF1FFB1AEF874C13AB359C28F74BF461).
 
@@ -345,7 +341,7 @@ Se [Mallar](../c-about-design-menu/c-about-templates.md#concept_06EB481B14864E18
       </tr> 
       <tr> 
       <td colname="col1"> <p>Konto </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Sök&amp;Befordra </span> som källa. </p> <p>Gör att du kan välja det konto för sökning/försäljning av webbplatser som du vill söka efter. Vanligtvis söker en sökning i det konto som du använder just nu. Presentationsmallen kan dock använda en backend-sökning för alla dina andra konton. </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Search &amp; Promote </span> som källa. </p> <p>Gör att du kan välja det konto för sökning/försäljning av webbplatser som du vill söka efter. Vanligtvis söker en sökning i det konto som du använder just nu. Presentationsmallen kan dock använda en backend-sökning för alla dina andra konton. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Servernamn/IP </p> </td> 
@@ -373,7 +369,7 @@ Se [Mallar](../c-about-design-menu/c-about-templates.md#concept_06EB481B14864E18
       </tr> 
       <tr> 
       <td colname="col1"> <p>Typ av sökning </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Sök&amp;Befordra </span> som källa. </p> <p>Här kan du välja mellan följande tre typer av sökning. </p> <p> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Search &amp; Promote </span> som källa. </p> <p>Här kan du välja mellan följande tre typer av sökning. </p> <p> 
         <ul id="ul_E1D8B3DE9DB24DE4813D53F6298A03A6"> 
           <li id="li_C3DD7AA7699B477A9EE0731CFC012630"> <span class="uicontrol"> alla </span> <p>Söker efter dokument som innehåller alla ord i frågesträngen. </p> <p>Användning av"+" och"-" innan sökord inaktiveras och dessa tecken ignoreras. </p> </li> 
           <li id="li_4C66B9EFEFA042908A4D3730F9F54EB0"> <span class="uicontrol"> alla </span> <p>Du kan använda "+"- och "-"-ordprefix. </p> </li> 
@@ -382,19 +378,19 @@ Se [Mallar](../c-about-design-menu/c-about-templates.md#concept_06EB481B14864E18
       </tr> 
       <tr> 
       <td colname="col1"> <p>Samling </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Sök&amp;Befordra </span> som källa. </p> <p>Identifierar den samling i indexet som du vill söka i. </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Search &amp; Promote </span> som källa. </p> <p>Identifierar den samling i indexet som du vill söka i. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Befordra sökning </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Sök&amp;Befordra </span> som källa. </p> <p>Gör att du kan använda ett slumpmässigt urval från sökresultaten, beroende på <span class="uicontrol"> antalet resultat </span> som du har angett. </p> <p>Säljmarknadsföring är ett äldre koncept. Därför rekommenderar vi att du använder det nya banderollhanteringssystemet inom webbplatssökning/försäljning. </p> <p>Se <a href="../c-about-design-menu/c-about-banners.md#concept_5BBE01FEC6134393B43CC917C8CC64DA" type="concept" format="dita" scope="local"> Om banners </a>. </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Search &amp; Promote </span> som källa. </p> <p>Gör att du kan använda ett slumpmässigt urval från sökresultaten, beroende på <span class="uicontrol"> antalet resultat </span> som du har angett. </p> <p>Säljmarknadsföring är ett äldre koncept. Därför rekommenderar vi att du använder det nya banderollhanteringssystemet inom webbplatssökning/försäljning. </p> <p>Se <a href="../c-about-design-menu/c-about-banners.md#concept_5BBE01FEC6134393B43CC917C8CC64DA" type="concept" format="dita" scope="local"> Om banners </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Använd parametrar för faset </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Sök&amp;Befordra </span> som källa och du har valt <span class="uicontrol"> Befordra sökning </span>. </p> <p>Anger att en kampanjsökning använder de valda ansiktena för att begränsa kampanjerna. De flesta kampanjsökkonton använder inte det här alternativet. </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Search &amp; Promote </span> som källa och du har valt <span class="uicontrol"> Befordra sökning </span>. </p> <p>Anger att en kampanjsökning använder de valda ansiktena för att begränsa kampanjerna. De flesta kampanjsökkonton använder inte det här alternativet. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ange standarderbjudande om ingen matchande kampanj </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du väljer <span class="uicontrol"> Sök&amp;Befordra </span> som källa och du har valt <span class="uicontrol"> Befordra sökning </span>. </p> <p>Anger att en annan sökning efter en befordran utförs om den inledande sökningen efter en befordran inte hittar något. Den andra sökningen efter en befordran släpper nyckelordet. I stället söker programmet efter en befordran där metadatafältet"is_default" är inställt på"yes". </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Search &amp; Promote </span> som källa och du har valt <span class="uicontrol"> Befordra sökning </span>. </p> <p>Anger att en annan sökning efter en befordran utförs om den inledande sökningen efter en befordran inte hittar något. Den andra sökningen efter en befordran släpper nyckelordet. I stället söker programmet efter en befordran där metadatafältet"is_default" är inställt på"yes". </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Markera sökning </p> </td> 
@@ -986,7 +982,7 @@ När webbplatsen har crawlats och indexerats kan du generera automatiska flöden
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Adobe Recommendations </p> </td> 
-   <td colname="col2"> <p>Rekommendationsfeeds ger funktioner för datasyndikering med Adobe Recommendations. </p> </td> 
+   <td colname="col2"> <p>Recommendations feeds erbjuder datasyndikeringsfunktioner med Adobe Recommendations. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Allmän feed </p> </td> 
@@ -1009,7 +1005,7 @@ När webbplatsen har crawlats och indexerats kan du generera automatiska flöden
   </tr> 
   <tr> 
    <td colname="col1"> <p>Google Sitemaps </p> </td> 
-   <td colname="col2"> <p>Med Google Sitemaps kan du påverka hur Google crawlar din webbplats. En syndikerad datafeed, en platskarta i det här fallet, skickas regelbundet till Google Sitemaps. Platskartan innehåller URL:er som kan nås via Internet och specifik information, som senaste ändringsdatum eller sidprioritet, kan kopplas till varje URL. Om du förser Google med sådan information kan det göra att en viss sida kraschar och indexeras. I vissa fall används en platskarta för att annonsera en lista över länkar som inte kan nås av crawlern under normala förhållanden. </p> <p>Om du är intresserad av att skapa en Google Sitemap med vår feed-funktion kontaktar du din kundrepresentant. Google har gjort sin Google Sitemap-tjänst tillgänglig för allmänheten och de tillhandahåller dokumentation på sin Google Webmaster Tools-sida. </p> <p> <b>Krav för att skapa en Google Sitemap-feed</b> </p> <p>Om du vill skapa en Google Sitemap-feed måste du kontrollera att du har ett Google Webmaster Tools-konto med Google Sitemap som redan har konfigurerats. Se dokumentationen för Google Webmaster Tools för att konfigurera Google SiteMap. </p> <p>Du måste också bestämma hur platskartefilerna ska levereras. I allmänhet kommer platskartefilerna från din domän och, särskilt, från roten på din webbplats. Den enkla modellen är att få filerna levererade via FTP till dina servrar. Den andra lösningen är att dirigera om begäran om webbplatskartor till webbplatsens söknings-/säljnätverk. Kontakta din konsultrepresentant för att samordna och konfigurera leveransen av webbplatskartor. </p> </td> 
+   <td colname="col2"> <p>Med Google Sitemaps kan du påverka hur Google crawlar din webbplats. En syndikerad datafeed, en platskarta i det här fallet, skickas regelbundet till Google Sitemaps. Platskartan innehåller URL:er som kan nås via Internet och specifik information, som senaste ändringsdatum eller sidprioritet, kan kopplas till varje URL. Om du förser Google med sådan information kan det göra att en viss sida kraschar och indexeras. I vissa fall används en platskarta för att annonsera en lista över länkar som inte kan nås av crawlern under normala förhållanden. </p> <p>Om du är intresserad av att skapa en Google Sitemap med vår feed-funktion kontaktar du din kundrepresentant. Google har gjort sin Google Sitemap-tjänst tillgänglig för allmänheten och de tillhandahåller dokumentation på sin Google Webmaster Tools-sida. </p> <p> <b>Krav för att skapa en Google Sitemap-feed</b> </p> <p>Om du vill skapa en Google Sitemap-feed måste du kontrollera att du har ett Google Webmaster Tools-konto med Google Sitemap som redan har konfigurerats. Se dokumentationen för Google Webmaster Tools för att konfigurera Google SiteMap. </p> <p>Du måste också bestämma hur platskartefilerna ska levereras. I allmänhet kommer platskartefilerna från din domän och, närmare bestämt, roten på din webbplats. Den enkla modellen är att få filerna levererade via FTP till dina servrar. Den andra lösningen är att dirigera om begäran om webbplatskartor till webbplatsens söknings-/säljnätverk. Kontakta din konsultrepresentant för att samordna och konfigurera leveransen av webbplatskartor. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1229,10 +1225,9 @@ t_creating_a_feed.xml
           <!--If <uicontrol>Manual Upload</uicontrol> is dimmed (inactive), the account is currently processing this feed or another feed. An account only works with one feed at a time. --> </p> </li> 
         <li id="li_2D9ECAFB8E8544D39B486F7BC3DCE589"> <span class="uicontrol"> Överföringsmetod </span> <p>De flesta flöden har två sätt att distribuera filerna: FTP och nätverket för värdbaserat innehåll. </p> <p>Den rekommenderade överföringsmetoden för att skicka datafeeden är <span class="uicontrol"> FTP </span>. Google Merchant Center är värd för en FTP-server för detta. Se hjälpen för Google Merchant Center om hur du skapar ett separat Google FTP-konto för detta Google Product Search-flöde. </p> 
           <ul id="ul_BC0D8B541068407883CAC948496DBD0A"> 
-          <li id="li_DB28CA23C94A4AF09E1A0EB06DF8F40C"> <span class="uicontrol"> FTP </span> <p>Webbplatssöknings-/försäljningsservrar använder passiv FTP. </p> <p>FTP är det enda sättet att skicka en fil till en annan server. </p> <p> <span class="uicontrol"> FTP-server </span> - Anger namnet på FTP-servern. I det här fallet är det 
-            <userinput>
+          <li id="li_DB28CA23C94A4AF09E1A0EB06DF8F40C"> <span class="uicontrol"> FTP </span> <p>Webbplatssöknings-/försäljningsservrar använder passiv FTP. </p> <p>FTP är det enda sättet att skicka en fil till en annan server. </p> <p> <span class="uicontrol"> FTP-server </span> - Anger namnet på FTP-servern. I det här fallet är det <code>
               uploads.google.com 
-            </userinput>. Inkludera inte protokollet eller föregående "ftp://". </p> <p> <span class="uicontrol"> FTP-användarnamn </span> - Anger namnet på FTP-kontot. </p> <p> <span class="uicontrol"> FTP-lösenord </span> - Anger lösenordet för FTP-kontot. </p> <p> <span class="uicontrol"> FTP-filnamn </span> - Anger namnet på filen som ska överföras. Det här namnet är en mall om feeden genererar flera filer, vanligtvis med ett nummer i slutet av namnet men före filnamnstillägget. Till exempel: basename.xml, basename1.xml, basename2.xml, ... , basename-Nth.xml </p> <p> <span class="uicontrol"> FTP-katalog </span> - Om en viss katalogsökväg krävs anger du den här. Ta inte med filnamnet i sökvägen. </p> </li> 
+            </code>. Inkludera inte protokollet eller föregående "ftp://". </p> <p> <span class="uicontrol"> FTP-användarnamn </span> - Anger namnet på FTP-kontot. </p> <p> <span class="uicontrol"> FTP-lösenord </span> - Anger lösenordet för FTP-kontot. </p> <p> <span class="uicontrol"> FTP-filnamn </span> - Anger namnet på filen som ska överföras. Det här namnet är en mall om feeden genererar flera filer, vanligtvis med ett nummer i slutet av namnet men före filnamnstillägget. Till exempel: basename.xml, basename1.xml, basename2.xml, ... , basename-Nth.xml </p> <p> <span class="uicontrol"> FTP-katalog </span> - Om en viss katalogsökväg krävs anger du den här. Ta inte med filnamnet i sökvägen. </p> </li> 
           <li id="li_5990927146434DAF89273F4636D21437"> <span class="uicontrol"> Nätverk av värdbaserat innehåll </span> <p>Innehållsnätverket är ett sätt att hantera filer från webbservrar för webbplatssökning/försäljning. Mottagaren av feeden hämtar den från webbservrarna med en HTTP-begäran. </p> <p> 
             <!--After the base filename is entered and the feed is successfully saved, the URL of the Content Network file is displayed on the Verification panel of the wizard. The URL becomes active after the feed is successfully processed. The vendor can get the feed data from this URL. Multiple files use the same URL path. However, be sure that you replace or change the filename according to the enumeration scheme. --> </p> </li> 
           </ul> </li> 
