@@ -8,7 +8,10 @@ title: Om skriptindex
 topic: Index,Site search and merchandising
 uuid: 51e726ad-414b-4cbd-8a68-fefc3cf9b565
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '1761'
+ht-degree: 0%
 
 ---
 
@@ -68,89 +71,77 @@ En inledande nolla krävs för alla ordningstal som är lägre än den 10:e när
    <td colname="col2"> <p>Varje textblock kan innehålla så många åtgärdskommandon du vill. Följande åtgärdskommandoalternativ motsvarar dem för stegvis standardindexering: </p> <p> 
      <ul id="ul_8E1435350A0F416BB8F7826CD3886E74"> 
       <li id="li_22181666628C48A28A6A0BA1F7CA8E77"> 
-       <userinput>
+       <code>
          add 
-       </userinput> <p>Använd med URL. Sökroboten indexerar bara de angivna URL:er som har ändrats sedan den senaste indexeringsåtgärden. Sökroboten följer dessutom länkar som finns i angivna dokument och indexerar endast de dokument som har ändrats. </p> <p>Du kan följa URL:en med 
-        <userinput>
+       </code> <p>Använd med URL. Sökroboten indexerar bara de angivna URL:er som har ändrats sedan den senaste indexeringsåtgärden. Sökroboten följer dessutom länkar som finns i angivna dokument och indexerar endast de dokument som har ändrats. </p> <p>Du kan följa URL:en med <code>
           nofollow 
-        </userinput> eller 
-        <userinput>
+        </code> eller <code>
           noindex 
-        </userinput> nyckelord som i följande exempel: </p> <p> <code> add&amp;nbsp;https://www.mydomain.com/&amp;nbsp;noindex </code> </p> </li> 
+        </code> nyckelord som i följande exempel: </p> <p> <code> add&amp;nbsp;https://www.mydomain.com/&amp;nbsp;noindex </code> </p> </li> 
       <li id="li_8E47BF07DB24417083883F5BF40D6B9E"> 
-       <userinput>
-         uppdatera 
-       </userinput> <p>Använd med URL-mask. Sökroboten hittar och uppdaterar alla dokument som matchar den angivna URL-masken. </p> <p>Du kan följa URL:en med 
-        <userinput>
+       <code>
+         update 
+       </code> <p>Använd med URL-mask. Sökroboten hittar och uppdaterar alla dokument som matchar den angivna URL-masken. </p> <p>Du kan följa URL:en med <code>
           nofollow 
-        </userinput> eller 
-        <userinput>
+        </code> eller <code>
           noindex 
-        </userinput> nyckelord som i följande exempel: </p> <p> <code> update&amp;nbsp;https://www.mydomain.com/products/ </code> </p> </li> 
+        </code> nyckelord som i följande exempel: </p> <p> <code> update&amp;nbsp;https://www.mydomain.com/products/ </code> </p> </li> 
       <li id="li_B3EC8B1670D54F66A1D8411A694EF7E4"> 
-       <userinput>
+       <code>
          include 
-       </userinput> eller 
-       <userinput>
+       </code> eller 
+       <code>
          exclude 
-       </userinput> <p>Använd med URL-mask. Sökroboten hittar och indexerar ("include") eller ignorerar ("exclude") dokument baserat på den angivna masktypen. </p> <p>Exempel: </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/products/household/lightbulbs*.html </code> </p> <p>eller </p> <p> <code> exclude&amp;nbsp;https://www.mydomain.com/archive/ </code> </p> </li> 
+       </code> <p>Använd med URL-mask. Sökroboten hittar och indexerar ("include") eller ignorerar ("exclude") dokument baserat på den angivna masktypen. </p> <p>Exempel: </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/products/household/lightbulbs*.html </code> </p> <p>eller </p> <p> <code> exclude&amp;nbsp;https://www.mydomain.com/archive/ </code> </p> </li> 
       <li id="li_050B54B735F0475E93806455FA6DC6A5"> 
-       <userinput>
+       <code>
          include-date 
-       </userinput> eller 
-       <userinput>
-         exkluderingsdatum 
-       </userinput> <p>Använd med URL-mask. Sökroboten hittar och indexerar ("include") eller ignorerar ("exclude") dokument baserat på både URL-adressen och dokumentdatumet. Följande typer av masker är tillgängliga: </p> <p> 
+       </code> eller 
+       <code>
+         exclude-date 
+       </code> <p>Använd med URL-mask. Sökroboten hittar och indexerar ("include") eller ignorerar ("exclude") dokument baserat på både URL:en och dokumentdatumet. Följande typer av masker är tillgängliga: </p> <p> 
         <ul id="ul_23A15CB492214B86BE84D8E6EA1820AE"> 
          <li id="li_0C7051AC3B5A4C57A3E477F7B6246611"> 
-          <userinput>
+          <code>
             include-days NNN 
-          </userinput> <p>Sökroboten indexerar alla dokument som matchar den angivna URL-masken och är NNN days eller mer gamla. </p> <p>Du kan följa URL-masken med nyckelorden 
-           <userinput>
+          </code> <p>Sökroboten indexerar alla dokument som matchar den angivna URL-masken och är NNN days eller mer gamla. </p> <p>Du kan följa URL-masken med nyckelorden <code>
              nofollow 
-           </userinput>, 
-           <userinput>
+           </code>, <code>
              noindex 
-           </userinput>och/eller 
-           <userinput>
-             serverdatum 
-           </userinput>. </p> </li> 
+           </code>och/eller <code>
+             server-date 
+           </code>. </p> </li> 
          <li id="li_983A10E2ED5D434EA9031F32143F4EF4"> 
-          <userinput>
-            include-date YYY-MM-DD 
-          </userinput> <p> Sökroboten indexerar alla dokument som matchar den angivna URL-masken och som är lika gamla eller äldre än datumet YYY-MM-DD, där "YYY" är det fyrsiffriga året, "MM" är den en- eller tvåsiffriga månaden (1-12) och "DD" är den en- eller tvåsiffriga dagen (1-31). </p> <p>Du kan följa URL-masken med nyckelorden 
-           <userinput>
+          <code>
+            include-date YYYY-MM-DD 
+          </code> <p> Sökroboten indexerar alla dokument som matchar den angivna URL-masken och som är lika gamla eller äldre än datumet YYY-MM-DD, där "YYY" är det fyrsiffriga året, "MM" är den en- eller tvåsiffriga månaden (1-12) och "DD" är den en- eller tvåsiffriga dagen (1-31). </p> <p>Du kan följa URL-masken med nyckelorden <code>
              nofollow 
-           </userinput>, 
-           <userinput>
+           </code>, <code>
              noindex 
-           </userinput>och/eller 
-           <userinput>
-             serverdatum 
-           </userinput>. </p> </li> 
+           </code>och/eller <code>
+             server-date 
+           </code>. </p> </li> 
          <li id="li_733CE1B748024CECA7FBE00D7BC7B88A"> 
-          <userinput>
+          <code>
             exclude-days NNN 
-          </userinput> <p> Inaktiverar indexering av alla dokument som matchar den angivna URL-masken och som är NNN days eller mer gamla. </p> <p>Du kan följa URL-masken med nyckelordet 
-           <userinput>
-             serverdatum 
-           </userinput>. </p> </li> 
+          </code> <p> Inaktiverar indexering av alla dokument som matchar den angivna URL-masken och som är NNN days eller mer gamla. </p> <p>Du kan följa URL-masken med nyckelordet <code>
+             server-date 
+           </code>. </p> </li> 
          <li id="li_90056A0B96CC4DA3854711860A15CE89"> 
-          <userinput>
-            exclude-date YYY-MM-DD 
-          </userinput> <p>Inaktiverar indexering av alla dokument som matchar den angivna URL-masken och som är lika gamla eller äldre än datumet YYY-MM-DD. </p> <p>Du kan följa URL-masken med nyckelordet 
-           <userinput>
-             serverdatum 
-           </userinput>. </p> </li> 
+          <code>
+            exclude-date YYYY-MM-DD 
+          </code> <p>Inaktiverar indexering av alla dokument som matchar den angivna URL-masken och som är lika gamla eller äldre än datumet YYY-MM-DD. </p> <p>Du kan följa URL-masken med nyckelordet <code>
+             server-date 
+           </code>. </p> </li> 
         </ul> </p> </li> 
       <li id="li_AA78F22B60FE4535BE73BA87A8992C08"> 
-       <userinput>
+       <code>
          delete 
-       </userinput> <p>Ange URL:er. Sökroboten tar bort dokument från indexet som identifieras av URL:en. </p> </li> 
+       </code> <p>Ange URL:er. Sökroboten tar bort dokument från indexet som identifieras av URL:en. </p> </li> 
       <li id="li_9C63061568AA4D57A4FEBCF6DB9194EC"> 
-       <userinput>
-         ta bort emask 
-       </userinput> <p>Sökroboten tar bort dokument från indexet som matchar den angivna URL-masken. </p> </li> 
+       <code>
+         deletemask 
+       </code> <p>Sökroboten tar bort dokument från indexet som matchar den angivna URL-masken. </p> </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
