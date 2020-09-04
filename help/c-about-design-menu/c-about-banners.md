@@ -7,7 +7,10 @@ title: Om Banners
 topic: Design,Site search and merchandising
 uuid: 653b567d-5cf3-41a0-a260-a6912d0fd20d
 translation-type: tm+mt
-source-git-commit: 7f1b5d94e8002992d62ec1e3dce11f9c5605fde8
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '4810'
+ht-degree: 0%
 
 ---
 
@@ -26,17 +29,17 @@ c_about_banners.xml
 
 Det finns två metoder som du kan använda för att lägga till banners på din webbplats.
 
-Den första metoden är att lägga till banners via Target, Search&amp;Promote. Banderollerna är HTML-kodfragment som visas när en kund söker på webbplatsen. Din banderoll kan innehålla text eller en bild i GIF-, JPEG- eller PNG-format, eller en kombination av båda. Du kan välja mellan förinställda storlekar eller definiera egna mått så att de passar sidan. Den HTML-kod som du använder för att visa banderollen kan också ange exempelvis vilken stil som ska användas och kantlinjen. Den här metoden för att lägga till en banderoll erbjuder grundläggande funktioner och kräver ingen ytterligare programvara.
+Den första metoden är att lägga till banners via Target, Search &amp; Promote. Banderollerna är HTML-kodfragment som visas när en kund söker på webbplatsen. Din banderoll kan innehålla text eller en bild i GIF-, JPEG- eller PNG-format, eller en kombination av båda. Du kan välja mellan förinställda storlekar eller definiera egna mått så att de passar sidan. Den HTML-kod som du använder för att visa banderollen kan också ange exempelvis vilken stil som ska användas och kantlinjen. Den här metoden för att lägga till en banderoll erbjuder grundläggande funktioner och kräver ingen ytterligare programvara.
 
-Den andra metoden är att använda Adobe Dynamic Media Classic, en dynamisk mediahanterings- och publiceringstjänst. Med ett giltigt Adobe Dynamic Media Classic-konto kan du hantera och leverera banderollinnehåll direkt till Target, Search&amp;Promote, med hjälp av Dynamic Media Classic. Vid sökning/försäljning av webbplatser konfigurerar du åtkomst till ditt konto för Dynamic Media Classic. Sedan öppnar du den dynamiska medieläsaren och väljer en dynamisk medieresurs som du vill använda som banner.
+Den andra metoden är att använda Adobe Dynamic Media Classic, en dynamisk mediahanterings- och publiceringstjänst. Med ett giltigt Adobe Dynamic Media Classic-konto kan du hantera och leverera banderollinnehåll direkt till Target, Search &amp; Promote, med hjälp av Dynamic Media Classic. Vid sökning/försäljning av webbplatser konfigurerar du åtkomst till ditt konto för Dynamic Media Classic. Sedan öppnar du den dynamiska medieläsaren och väljer en dynamisk medieresurs som du vill använda som banner.
 
 >[!NOTE]
 >
->Innan du kan använda dynamiska medieresurser som banners i webbplatssökningar/-marknadsföring överförs resurserna först och förbereds för publicering i Scene7 Publishing System. Du kan överföra resurser från webbplatssökningar och -försäljningar och få dem automatiskt förberedda för publicering via Scene7 Publishing System. Du kan också överföra och publicera resurser direkt från Scene7 Publishing System.
+>Innan du kan använda dynamiska medieresurser som banners i webbplatssökningar/-marknadsföring överförs resurserna först och förbereds för publicering i Scene7 Publishing System. Du kan överföra resurser från webbplatssökningar och -försäljningar och få dem automatiskt förberedda för publicering via Scene7 Publishing System. Eller så kan du överföra och publicera material direkt från Scene7 Publishing System.
 
 ## Integrering av banners med Adobe Scene7 Publishing System {#section_D4D7ADEA6A6348E68EDA138E184FE579}
 
-Du kan använda resurstyperna Dynamic Media Classic som banners i webbplatssökningar/-marknadsföring, inklusive bilder, dynamiska banners och mallar, till exempel bildmallar eller Flash-mallar.
+Du kan använda resurstyperna Dynamic Media Classic som banners i webbplatssökningar/-marknadsföring, inklusive bilder, dynamiska banners och mallar, till exempel bildmallar och mallar i Flash.
 
 Mallar skapas och adresseras dynamiskt lageruppbyggda bildfiler som lageruppbyggda filer i bildredigeringsprogram som Adobe Photoshop®. Till skillnad från en statisk bildfil kan en mall innehålla parametrar. Med hjälp av parametrar kan du anpassa egenskaper för variabla bilder och bildinnehåll.
 
@@ -58,7 +61,7 @@ Se [Mallgrunder](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-
 
 Du måste överföra och publicera resurser i Dynamic Media Classic innan du kan använda dem för banners i webbplatssökningar/-marknadsföring. Den här förutsättningen innehåller även resurser som används av en bildmall eller en Flash-mall. Använd ditt Dynamic Media Classic-konto för att överföra och publicera digitala resurser. Du kan också använda webbplatssökning/försäljning för att överföra en digital resurs och sedan låta Dynamic Media Classic automatiskt publicera den åt dig baserat på dina överföringsinställningar. Om du försöker välja en resurs som ännu inte har överförts och publicerats visas ett meddelande i användargränssnittet och du kan välja att överföra den innan du fortsätter.
 
-Du kan lära dig mer om att överföra och publicera digitala resurser med hjälp av Scene7 Publishing System.
+Du kan läsa mer om hur du överför och publicerar digitala resurser med Scene7 Publishing System.
 
 Se [Överför och publicera resurser](https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html) i användarhandboken för Dynamic Media Classic (Scene7).
 
@@ -112,15 +115,13 @@ Se [Konfigurera åtkomst till ditt Adobe Dynamic Media Classic-konto](../c-about
       </tr> 
       <tr> 
       <td colname="col1"> <p>Banderoll-HTML </p> </td> 
-      <td colname="col2"> <p> Gör att du kan klistra in HTML-koden som är kopplad till banderollen. </p> <p>Valfri HTML-kod tillåts, inklusive CSS-kod som omges av 
-        <userinput>
+      <td colname="col2"> <p> Gör att du kan klistra in HTML-koden som är kopplad till banderollen. </p> <p>All HTML-kod accepteras, inklusive CSS-kod som omges av <code>
           &lt;style&gt; 
-        </userinput> -taggar eller JavaScript-kod som omges av 
-        <userinput>
-          &lt;skript&gt; 
-        </userinput> -taggar. Följande kodblock gäller till exempel för en textbanderoll av typen Vågrät överkant: I <code> &lt;div&nbsp;style="width:&nbsp;684px;&nbsp;background-image:&nbsp;url('https://www.brough.com/blackb.gif');&nbsp; 
+        </code> -taggar eller JavaScript-kod som omges av <code>
+          &lt;script&gt; 
+        </code> -taggar. Följande kodblock gäller till exempel för en textbanderoll av typen Vågrät överkant: <code> &lt;div&nbsp;style="width:&nbsp;684px;&nbsp;background-image:&nbsp;url('https://www.brough.com/blackb.gif');&nbsp; 
           padding-top:&nbsp;10px;&nbsp;padding-bottom:&nbsp;10px;&nbsp;color:&nbsp;white;&nbsp;font-family:&nbsp;verdana;&nbsp; 
-          text-align:&nbsp;center;&nbsp;font-size:&nbsp;20px;"&gt;&nbsp;Sound&nbsp;Study&nbsp;ships&nbsp;free!&nbsp;&lt;/div&gt; </code>följande exempel gäller kodblocket för en fullständig välkomstbild: <code> &lt;img&amp;nbsp;src='https://geometrixx.com/images/GEOAds/geometrixx-beauty-home-01.jpg'&amp;nbsp;border="0"&amp;nbsp;/&gt; </code> </p> </td> 
+          text-align:&nbsp;center;&nbsp;font-size:&nbsp;20px;"&gt;&nbsp;Sound&nbsp;Study&nbsp;ships&nbsp;free!&nbsp;&lt;/div&gt; </code>I följande exempel gäller kodblocket för en fullständig välkomstbild: <code> &lt;img&amp;nbsp;src='https://geometrixx.com/images/GEOAds/geometrixx-beauty-home-01.jpg'&amp;nbsp;border="0"&amp;nbsp;/&gt; </code> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Typ </p> </td> 
@@ -164,7 +165,7 @@ t_editing_a_banner.xml
 
  -->
 
-Om du har lagt till en banderoll med hjälp av webbplatssökningar och -marknadsföring kan du även redigera banderollen med Adobe Dynamic Media Classic.
+Om du har lagt till en banderoll med hjälp av webbplatssökning/marknadsföring kan du även redigera banderollen med Adobe Dynamic Media Classic.
 
 Se även [Redigera en banderoll med Adobe Dynamic Media Classic](../c-about-design-menu/c-about-banners.md#task_C3E782477FBF428ABEA220751781ACA9).
 
@@ -254,7 +255,7 @@ Se [Konfigurera åtkomst till ditt Adobe Dynamic Media Classic-konto](../c-about
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_upload.png"> </p> </td> 
-      <td colname="col2"> <p>Öppnar <span class="wintitle"> dialogrutan </span> Överför där du kan överföra en vald digital resurs från skrivbordet eller från en extern server så att du kan använda den som en banderoll. </p> <p>När du har överfört resursen schemaläggs ett publiceringsjobb automatiskt åt dig i Scene7 Publishing System. </p> <p>Se tabellen med alternativ i Lägga till en banderoll med Adobe Dynamic Media Classic <a href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita" scope="local"> </a>. </p> <p>Du kan lära dig mer om att överföra och publicera digitala resurser med hjälp av Scene7 Publishing System. </p> <p>Se <a href="https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html" scope="external" format="html"> Överför och publicera resurser </a> i användarhandboken för Scene7 Publishing System. </p> </td> 
+      <td colname="col2"> <p>Öppnar <span class="wintitle"> dialogrutan </span> Överför där du kan överföra en vald digital resurs från skrivbordet eller från en extern server så att du kan använda den som en banderoll. </p> <p>När du har överfört resursen schemaläggs ett publiceringsjobb automatiskt åt dig i Scene7 Publishing System. </p> <p>Se tabellen med alternativ i Lägga till en banderoll med Adobe Dynamic Media Classic <a href="../c-about-design-menu/c-about-banners.md#task_AD1E0C00A9E04B1FA819EB93288786B3" type="reference" format="dita" scope="local"> </a>. </p> <p>Du kan läsa mer om hur du överför och publicerar digitala resurser med Scene7 Publishing System. </p> <p>Se <a href="https://help.adobe.com/en_US/scene7/using/WS3673AD39-098B-4f08-8A24-CA51261B7366.html" scope="external" format="html"> Överför och publicera resurser </a> i användarhandboken för Scene7 Publishing System. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_searchfield.png"> </p> </td> 
@@ -266,7 +267,7 @@ Se [Konfigurera åtkomst till ditt Adobe Dynamic Media Classic-konto](../c-about
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_Kindfilter.png"> </p> </td> 
-      <td colname="col2"> <p>Förfina listan med visade digitala resurser så att endast de visas med en viss typ, som Flash, Bild, Mall eller Någon. </p> <p>Klicka <img src="assets/s7_deletefilter.png"> för att ta bort filtret från sökningen. </p> </td> 
+      <td colname="col2"> <p>Förfina listan med visade digitala resurser så att endast de visas med en viss typ, till exempel Flash, Bild, Mall eller Någon. </p> <p>Klicka <img src="assets/s7_deletefilter.png"> för att ta bort filtret från sökningen. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_datefilter.png"> </p> </td> 
@@ -358,7 +359,7 @@ Se [Konfigurera åtkomst till ditt Adobe Dynamic Media Classic-konto](../c-about
     <tbody> 
       <tr> 
       <td colname="col1"> <p> <img placement="inline" id="image_EBB8159690C74D4692B5DF945B045E0B" src="assets/icon_edit_16.gif" /> </p> </td> 
-      <td colname="col2"> <p>Här kan du redigera URL-länkfältet som används i Flash-mallen. </p> </td> 
+      <td colname="col2"> <p>Här kan du redigera URL-länkfältet som används i mallen Flash. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -367,7 +368,7 @@ Se [Konfigurera åtkomst till ditt Adobe Dynamic Media Classic-konto](../c-about
 
    Alternativen för Ersätt text visas bara om du väljer en Flash-mall för banderollen med redigerbara textlager.
 
-   Alla ändringar du gör i texten i Flash-mallen återspeglas i förhandsgranskningsfönstret.
+   Alla ändringar du gör i Flash-mallen visas i förhandsgranskningsfönstret.
 
    >[!NOTE]
    >
@@ -391,7 +392,7 @@ Se [Konfigurera åtkomst till ditt Adobe Dynamic Media Classic-konto](../c-about
       </tr> 
       <tr> 
       <td colname="col1"> <p>Sök </p> </td> 
-      <td colname="col2"> <p>Här kan du ange en sökterm för icke-länkad text i lagren i Flash-mallen. </p> </td> 
+      <td colname="col2"> <p>Här kan du ange en sökterm för icke-länkad text i lagren i mallen Flash. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ersätt </p> </td> 
@@ -414,7 +415,7 @@ Se [Konfigurera åtkomst till ditt Adobe Dynamic Media Classic-konto](../c-about
 
    **Växla alternativ för lagervisning**
 
-   Alternativet Växla lagersynlighet gäller bara om du väljer en Flash-mall för banderollen.
+   Alternativet Växla lagervisning gäller bara om du väljer en Flash-mall för banderollen.
 
    <table> 
     <thead> 
@@ -426,7 +427,7 @@ Se [Konfigurera åtkomst till ditt Adobe Dynamic Media Classic-konto](../c-about
     <tbody> 
       <tr> 
       <td colname="col1"> <p> <img src="assets/s7_togglelayervisibility.png"> </p> </td> 
-      <td colname="col2"> <p>Gör att du kan aktivera eller inaktivera synligheten för de olika lager som Flash-mallfilen består av. </p> <p>Varje gång du aktiverar eller inaktiverar synligheten för ett lager uppdateras förhandsvisningsfönstret så att visningen uppdateras. </p> </td> 
+      <td colname="col2"> <p>Gör att du kan aktivera eller inaktivera synligheten för de olika lager som utgör mallfilen för Flash. </p> <p>Varje gång du aktiverar eller inaktiverar synligheten för ett lager uppdateras förhandsvisningsfönstret så att visningen uppdateras. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -435,7 +436,7 @@ Se [Konfigurera åtkomst till ditt Adobe Dynamic Media Classic-konto](../c-about
 
    >[!NOTE]
    >
-   >Om du vill använda överföringsfunktionen i Scene7 Resurs Viewer måste du kontrollera att det Scene7-konto du använder redan har rollen SPS Company Admin.
+   >Om du vill använda överföringsfunktionen i Scene7 resursvisningsprogram måste du kontrollera att det Scene7-konto du använder redan har rollen SPS-företagsadministratör angiven.
 
    Se [Administrationsinställningar](https://help.adobe.com/en_US/scene7/using/WS662101DF-D697-47a7-A7D8-B52FD8E94438.html) i användarhandboken för Scene7 Publishing System.
 
@@ -466,11 +467,11 @@ Se [Konfigurera åtkomst till ditt Adobe Dynamic Media Classic-konto](../c-about
 
    **Avancerade alternativ**
 
-   När du överför PostScript- (EPS) eller Illustrator-bildfiler (AI) kan du formatera dem på olika sätt. Du kan rastrera filerna, konvertera dem till FXG för mallpublicering, behålla den genomskinliga bakgrunden, välja en upplösning och välja en färgrymd.
+   När du överför bildfiler från PostScript (EPS) eller Illustrator (AI) kan du formatera dem på olika sätt. Du kan rastrera filerna, konvertera dem till FXG för mallpublicering, behålla den genomskinliga bakgrunden, välja en upplösning och välja en färgrymd.
 
-   PSD (Photoshop-dokumentfiler) används oftast i Dynamic Media Classic för att skapa mallar. När du överför en PSD-fil kan du skapa en dynamisk Media Classic-mall automatiskt från filen (välj **[!UICONTROL Create Template]** alternativet).
+   PSD (Photoshop Document files) används oftast i Dynamic Media Classic för att skapa mallar. När du överför en PSD-fil kan du skapa en dynamisk Media Classic-mall automatiskt från filen (välj **[!UICONTROL Create Template]** alternativet).
 
-   Scene7 Publishing System skapar flera bilder från en PSD-fil med lager om du använder filen för att skapa en mall; skapas en bild för varje lager.
+   Scene7 Publishing System skapar flera bilder från en PSD-fil med lager om du använder filen för att skapa en mall. skapas en bild för varje lager.
 
    <table> 
     <thead> 
@@ -544,11 +545,11 @@ Se [Konfigurera åtkomst till ditt Adobe Dynamic Media Classic-konto](../c-about
       <tr> 
       <td colname="col1"> <p>Photoshop-alternativ </p> </td> 
       <td colname="col02"> <p> Namnge lager </p> </td> 
-      <td colname="col2"> <p>Lager i PSD-filen överförs som separata bilder. Du kan välja bland följande alternativ för att bestämma hur du vill namnge dessa bilder i Scene7 Publishing System: </p> 
+      <td colname="col2"> <p>Lager i PSD-filen överförs som separata bilder. Du kan välja bland följande alternativ för att bestämma hur du vill namnge bilderna i Scene7 Publishing System: </p> 
         <ul id="ul_C2A25177A07740CA90B32C638304D39F"> 
-        <li id="li_477D5BFF7238454BBF0E04B22DE378F7"> <span class="uicontrol"> Använd lagernamn från PSD-fil </span> <p>Namnger bilderna efter deras lagernamn i PSD-filen. Ett lager med namnet <span class="codeph"> Price Tag </span> i den ursprungliga PSD-filen blir till exempel en bild med namnet <span class="codeph"> Price Tag </span>. Om lagernamnen i PSD-filen är standardlagernamn för Photoshop (Bakgrund, Lager 1, Lager 2 och så vidare) får bilderna namn efter sina lagernummer i PSD-filen, inte efter deras standardlagernamn. </p> </li> 
-        <li id="li_EB4173B884FC41328CFBDE27DA6D43AA"> <span class="uicontrol"> Använd PSD-filnamn och lägg till nummer </span> <p>Namnger bilderna efter deras lagernummer i PSD-filen och ignorerar de ursprungliga lagernamnen. Bilder namnges med Photoshops filnamn och ett nummer på lagret som läggs till. Det andra lagret i en fil med namnet <span class="codeph"> Spring Ad.psd </span> får till exempel namnet <span class="codeph"> Spring Ad_2 </span> även om det har ett icke-standardnamn i Photoshop. </p> </li> 
-        <li id="li_10B2D2DE2FD24BD08DB56D1D95ABA53D"> <span class="uicontrol"> Använd PSD-filnamn och lagernamn eller -nummer </span> <p>Namnger bilderna efter PSD-filen följt av lagernamnet eller lagernumret. Lagernumret används om lagernamnen i PSD-filen är standardlagernamn i Photoshop. Ett lager med namnet <span class="codeph"> Price Tag </span> i en PSD-fil med namnet <span class="codeph"> SpringAd </span> får till exempel namnet <span class="codeph"> Spring Ad_Price Tag </span>. Ett lager med standardnamnet <span class="codeph"> Lager2 </span> heter <span class="codeph"> Spring Ad_2 </span>. </p> </li> 
+        <li id="li_477D5BFF7238454BBF0E04B22DE378F7"> <span class="uicontrol"> Använd lagernamn från PSD-fil </span> <p>Namnger bilderna efter deras lagernamn i PSD-filen. Ett lager med namnet <span class="codeph"> Price Tag </span> i den ursprungliga PSD-filen blir till exempel en bild med namnet <span class="codeph"> Price Tag </span>. Om lagernamnen i PSD-filen däremot är Photoshop standardlagernamn (Bakgrund, Lager 1, Lager 2 och så vidare) får bilderna namn efter sina lagernummer i PSD-filen, inte efter deras standardlagernamn. </p> </li> 
+        <li id="li_EB4173B884FC41328CFBDE27DA6D43AA"> <span class="uicontrol"> Använd PSD-filnamn och lägg till nummer </span> <p>Namnger bilderna efter deras lagernummer i PSD-filen och ignorerar de ursprungliga lagernamnen. Bilderna får samma namn som Photoshop-filnamnet och ett nummer i det tillagda lagret. Det andra lagret i en fil med namnet <span class="codeph"> Spring Ad.psd </span> får till exempel namnet <span class="codeph"> Spring Ad_2 </span> även om det har ett icke-standardnamn i Photoshop. </p> </li> 
+        <li id="li_10B2D2DE2FD24BD08DB56D1D95ABA53D"> <span class="uicontrol"> Använd PSD-filnamn och lagernamn eller -nummer </span> <p>Namnger bilderna efter PSD-filen följt av lagernamnet eller lagernumret. Lagernumret används om lagernamnen i PSD-filen är Photoshop standardlagernamn. Ett lager med namnet <span class="codeph"> Price Tag </span> i en PSD-fil med namnet <span class="codeph"> SpringAd </span> får till exempel namnet <span class="codeph"> Spring Ad_Price Tag </span>. Ett lager med standardnamnet <span class="codeph"> Lager2 </span> heter <span class="codeph"> Spring Ad_2 </span>. </p> </li> 
         <li id="li_5E57AC0719D4484B9C9BD14DB42B4455"> <span class="uicontrol"> Skapa mapp baserat på PSD-filnamnet </span> <p>Skapar en mapp för lagerbilderna med PSD-filens namn. </p> </li> 
         </ul> </td> 
       </tr> 
