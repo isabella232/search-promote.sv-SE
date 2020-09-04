@@ -7,7 +7,10 @@ title: Mallar
 topic: Appendices,Site search and merchandising
 uuid: 78299032-dc23-4dfe-b68f-cd57b2b6d7d8
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: ca4156f80d7dbb85d2d56b6caf7c0f560299d86e
+workflow-type: tm+mt
+source-wordcount: '15139'
+ht-degree: 1%
 
 ---
 
@@ -429,7 +432,8 @@ Se [Om dynamiska ansikten](../c-about-design-menu/c-about-dynamic-facets.md#conc
   </tr> 
   <tr> 
    <td colname="col01"> <p>16 </p> </td> 
-   <td colname="col1"> <p> <varname></varname> </p> </td> 
+   <td colname="col1"> <p> <code> &lt;guided-if-facet-long [gsname="facetname"]&gt; 
+      &lt;guided-else-facet-long&gt;&lt;/guided-if-facet-long&gt; </code> </p> </td> 
    <td colname="col2"> <p>Den här villkorstaggen är sann när antalet fasettvärden överstiger det längdtröskelvärde som definieras i konfigurationen. Använd den för att visa en fasett som ett annat element i användargränssnittet (till exempel en trunkerad lista eller en rullningsruta) när listan är för lång. </p> <p> <code class="syntax html"> &lt;guided-facet&nbsp;gsname="category"&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;guided-if-facet-long&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class="long_facet"&gt; 
@@ -466,7 +470,8 @@ Se [Om dynamiska ansikten](../c-about-design-menu/c-about-dynamic-facets.md#conc
   </tr> 
   <tr> 
    <td colname="col01"> <p>18 </p> </td> 
-   <td colname="col1"> <p> <varname></varname> </p> </td> 
+   <td colname="col1"> <p> <code> &lt;guided-if-facet-single [gsname="facetname"]&gt; 
+      &lt;guided-else-facet-single&gt;&lt;/guided-if-facet-single&gt; </code> </p> </td> 
    <td colname="col2"> <p>Den här villkorstaggen är true när det bara finns ett facet-värde. Den kan användas för att ändra visningen av ansiktet när det inte går att förfina resultatet. </p> <p> <code class="syntax html"> &lt;guided-facet&nbsp;gsname="category"&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;guided-if-facet-single&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facet&nbsp;is&nbsp;not&nbsp;refinable. 
@@ -481,7 +486,8 @@ Se [Om dynamiska ansikten](../c-about-design-menu/c-about-dynamic-facets.md#conc
   </tr> 
   <tr> 
    <td colname="col01"> <p>19 </p> </td> 
-   <td colname="col1"> <p> <varname></varname> </p> </td> 
+   <td colname="col1"> <p> <code> &lt;guided-if-facet-has-values [gsname="facetname"]&gt; 
+      &lt;guided-else-facet-has-values&gt;&lt;/guided-if-facet-has-values&gt; </code> </p> </td> 
    <td colname="col2"> <p>Med det här villkoret kan du kontrollera om den angivna aspekten har några värden alls. Du kan använda den för att visa en annan aspekt i stället för en tom. </p> </td> 
   </tr> 
   <tr> 
@@ -568,7 +574,8 @@ Se [Om dynamiska ansikten](../c-about-design-menu/c-about-dynamic-facets.md#conc
   </tr> 
   <tr> 
    <td colname="col01"> <p>32 </p> </td> 
-   <td colname="col1"> <p> <varname></varname> </p> </td> 
+   <td colname="col1"> <p> <code> &lt;guided-if-facet-value-matches facetname="facetname" value="value"&gt;&lt;guided-else-facet-value-matches&gt; 
+      &lt;/guided-if-facet-value-matches&gt; </code> </p> </td> 
    <td colname="col2"> <p>Visa HTML när den angivna aspekten har det valda värdet eller det enskilda värdet "value". Den här uppsättningen taggar används ofta för att visa en aspekt baserat på det värde som valts i en annan aspekt. </p> </td> 
   </tr> 
   <tr> 
@@ -578,7 +585,7 @@ Se [Om dynamiska ansikten](../c-about-design-menu/c-about-dynamic-facets.md#conc
   </tr> 
   <tr> 
    <td colname="col01"> <p>34 </p> </td> 
-   <td colname="col1"> <p> <varname></varname>
+   <td colname="col1"> <p> 
 
     &amp;lt;/guided-if-facet[-not]-visible&amp;gt; &lt;/code> &lt;/p> &lt;/td>
 <td colname="col2"> <p>Innehållet som den här taggen figursätter döljs eller visas baserat på ansiktets synlighetstillstånd. Om en affärsregel döljer eller visar aspekten direkt, döljs eller visas allt innehåll i aspekten. Dessa taggar behöver inte figursättas runt ansiktet. </p> <p> Ett vanligt användningsområde för den här taggen är att dölja visningsnamnet när namnet är utanför ansiktet. Om du placerar den här taggen runt visningsnamnet försvinner namnet när ansiktet är dolt. </p> <p>Den här taggen ersätter zonen och har många av samma prestandafördelar som att använda zoner. </p> </td> 
@@ -892,7 +899,7 @@ Se [Konfigurera senaste sökningar](../c-about-design-menu/t-configuring-recent-
    <td colname="col01"> <p>2 </p> </td> 
    <td colname="col1"> <p> <code> &lt;guided-recent-searches-link [attr="value"]+&gt; 
       &lt;/guided-recent-searches-link&gt; </code> </p> </td> 
-   <td colname="col2"> <p>Gör att du kan skapa en länk till en sökning du nyligen har gjort. Det har stöd för att skicka HTML-attribut direkt till ankartaggen. </p> </td> 
+   <td colname="col2"> <p>Gör att du kan skapa en länk till en nyligen utförd sökning. Det har stöd för att skicka HTML-attribut direkt till ankartaggen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>3 </p> </td> 
@@ -1366,7 +1373,7 @@ Följande taggar är tillgängliga så att du kan göra mer avancerade saker med
   <tr> 
    <td colname="col01"> <p>26 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-if-tnt-business-rules&gt; &lt;guided-else-tnt-business-rules&gt; &lt;/guided-if-tnt-business-rules&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Här kan du se om du har några affärsregler som refererar till en <span class="keyword"> Adobe Target- </span> kampanj. Det används vanligtvis som en del av integreringen med <span class="keyword"> Adobe Target </span> för att förhindra att Target- <span class="keyword"> servrarna stöter på </span> när det inte är nödvändigt. </p> </td> 
+   <td colname="col2"> <p>Här kan du se om du har några affärsregler som refererar till en <span class="keyword"> Adobe Target- </span> kampanj. Det används normalt som en del av integreringen med <span class="keyword"> Adobe Target </span> för att förhindra att Target- <span class="keyword"> servrarna stöter på </span> . </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>27 </p> </td> 
@@ -1638,7 +1645,7 @@ Se [Om resultatlooptaggar](../c-appendices/c-templates.md#section_D4DC7B45601446
   <tr> 
    <td colname="col01"> <p>12 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-display-field-values name="field-name"&gt; ...&lt;search-display-field-values&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Den här taggen skapar en slinga för att räkna upp metadatafältvärden (url, title, desc, keys, target, body, alt, date, charset och language eller fält som definieras under <span class="uicontrol"> Alternativ </span> &gt; <span class="uicontrol"> Metadata </span> &gt; <span class="uicontrol"> Definitions </span>) för det aktuella resultatet. Kapsla inte den här taggen inuti en annan <span class="codeph"> &lt;search-display-field-values&gt;- </span> tagg. Attributet <span class="codeph"> name </span> anger namnet på fältet som innehåller de värden som ska räknas upp. Den här taggen är mest användbar för fält där <span class="uicontrol"> attributet Tillåt listor är markerat (under </span> Alternativ <span class="uicontrol"> &gt; </span> Metadata <span class="uicontrol"> &gt; </span> Definitioner <span class="uicontrol"> </span>). </p> </td> 
+   <td colname="col2"> <p>Den här taggen skapar en slinga för att räkna upp metadatafältvärden (url, title, desc, keys, target, body, alt, date, charset och language eller fält som definieras under <span class="uicontrol"> Alternativ </span> &gt; <span class="uicontrol"> Metadata </span> &gt; <span class="uicontrol"> Definitions </span>) för det aktuella resultatet. Kapsla inte den här taggen inuti en annan <span class="codeph"> &lt;search-display-field-values&gt;- </span> tagg. Attributet <span class="codeph"> name </span> anger namnet på fältet som innehåller de värden som ska räknas upp. Den här taggen är mest användbar för fält där attributet <span class="uicontrol"> Tillåtelselista </span> är markerat (under <span class="uicontrol"> Alternativ </span> &gt; <span class="uicontrol"> Metadata </span> &gt; <span class="uicontrol"> Definitioner </span>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>13 </p> </td> 
@@ -1663,7 +1670,7 @@ Se [Om resultatlooptaggar](../c-appendices/c-templates.md#section_D4DC7B45601446
   <tr> 
    <td colname="col01"> <p>17 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-dynamic-facet-field-name&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Matar ut namnet på det aktuella dynamiska facet-fältet för den här upprepningen. </p> </td> 
+   <td colname="col2"> <p>Anger namnet på det aktuella dynamiska facet-fältet för den här upprepningen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>18 </p> </td> 
@@ -1758,7 +1765,7 @@ Se [Om resultatlooptaggar](../c-appendices/c-templates.md#section_D4DC7B45601446
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-smart-link target="frame-name" hbx-enable="yes/no" hbx-line-name="field-name" hbx-line-none="text" hbx-line-length="XX"&gt; ... &lt;/search-smart-link&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Det här taggparet liknar <span class="codeph"> &lt;search-link&gt; ... &lt;/search-link&gt;- </span> taggar. När du klickar på de skapade ankarlänkarna visas resultatsidan, men sidan rullas till närmaste ankartagg före resultatet. För PDF-länkar visar Acrobat-visningsprogrammet sidan som innehåller resultatet. Ett valfritt målattribut anger det namngivna fönster i vilket webbläsare som stöder bildrutor ska visa resultatsidan. </p> <p>Ställ in attributet hbx-enable på"yes" för att dra nytta av de analyser som är tillgängliga via HBX. Ange hbx-line-child-name till namnet på ett metadatafält som du vill spåra. Om du till exempel vill spåra sökresultat efter SKU-nummer anger du hbx-line-child-name till namnet på fältet Meta-data som innehåller SKU-information. </p> <p>Datumtypsfält stöds för närvarande inte. Värdet för hbx-line-child-name läggs till i länk-ID:t i det genererade ankaret. Värdet för attributet hbx-line-none läggs till i länk-ID:t när det namngivna metadatafältet är tomt. Värdet för hbx-line-length begränsar antalet tecken som hämtas och visas från meta-taggen. Standardantalet tecken är 12. </p> </td> 
+   <td colname="col2"> <p>Det här taggparet liknar <span class="codeph"> &lt;search-link&gt; ... &lt;/search-link&gt;- </span> taggar. När du klickar på de skapade ankarlänkarna visas resultatsidan, men sidan rullas till närmaste ankartagg före resultatet. För PDF-länkar visar Acrobat-visningsprogrammet den sida som innehåller resultatet. Ett valfritt målattribut anger det namngivna fönster i vilket webbläsare som stöder bildrutor ska visa resultatsidan. </p> <p>Ställ in attributet hbx-enable på"yes" för att dra nytta av de analyser som är tillgängliga via HBX. Ange hbx-line-child-name till namnet på ett metadatafält som du vill spåra. Om du till exempel vill spåra sökresultat efter SKU-nummer anger du hbx-line-child-name till namnet på fältet Meta-data som innehåller SKU-information. </p> <p>Datumtypsfält stöds för närvarande inte. Värdet för hbx-line-child-name läggs till i länk-ID:t i det genererade ankaret. Värdet för attributet hbx-line-none läggs till i länk-ID:t när det namngivna metadatafältet är tomt. Värdet för hbx-line-length begränsar antalet tecken som hämtas och visas från meta-taggen. Standardantalet tecken är 12. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>3 </p> </td> 
@@ -1770,7 +1777,7 @@ Se [Om resultatlooptaggar](../c-appendices/c-templates.md#section_D4DC7B45601446
 
 ## Slinga villkorstaggar för position {#section_E0C29DDA09E043C9A396F36334F05EBB}
 
-Följande taggar inkluderar texten mellan dem. De kan bara finnas inuti slingorna: &lt; `search-results>` och `<search-field-values>`. De används för att testa det aktuella resultatets position i resultatmängden.
+Följande taggar inkluderar texten mellan dem. De får bara finnas inuti slingorna: &lt; `search-results>` och `<search-field-values>`. De används för att testa det aktuella resultatets position i resultatmängden.
 
 Se [Om resultatlooptaggar](../c-appendices/c-templates.md#section_D4DC7B4560144663972E8DBC3369C629).
 
@@ -1932,7 +1939,7 @@ Följande avancerade taggar genererar fältvärden och relaterade data från hel
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-field-value-list-count name="field-name" value="field-value" results="yes/no"&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Den här taggen visar räkningsinformation för en viss sökfält-värde-lista. Det finns tre olika användningsområden för den här taggen. Om endast attributet "name" anges returnerar taggen antalet unika värden för det namngivna fältet i hela resultatuppsättningen. Om attributen "name" och "value" båda anges returnerar taggen antingen det totala antalet för det givna värdet i hela resultatmängden (for results="no") eller det totala antalet resultat som innehåller det givna värdet i hela resultatmängden (for results="yes"). Standardvärdet för "results" är "no". Obs! För fält som inte är av listtyp är results="yes" och results="no" likvärdiga. Värdet för "results" ignoreras om attributet "value" inte anges. Den här taggen ger bara utdata för fält som anges av CGI-parametrarna för <span class="codeph"> sp-sfvl-field </span> i sökfrågan. </p> </td> 
+   <td colname="col2"> <p>Den här taggen visar räkningsinformation för en viss sökfält-värde-lista. Det finns tre olika användningsområden för den här taggen. Om endast attributet "name" anges returnerar taggen antalet unika värden för det namngivna fältet i hela resultatuppsättningen. Om attributen "name" och "value" båda anges returnerar taggen antingen det totala antalet för det givna värdet i hela resultatmängden (for results="no") eller det totala antalet resultat som innehåller det givna värdet i hela resultatmängden (for results="yes"). Standardvärdet för "results" är "no". Obs! För fält som inte är av listtyp är results="yes" och results="no" likvärdiga. Värdet för "results" ignoreras om attributet "value" inte anges. Den här taggen ger bara utdata för fält som anges av CGI-parametrarna <span class="codeph"> sp-sfvl-field </span> i sökfrågan. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>3 </p> </td> 
@@ -1968,7 +1975,7 @@ Följande avancerade taggar räknar upp och returnerar fältvärden och relatera
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-field-value date-format="date-format-string" encoding="html/javascript/json/perl/url/none" gmt="yes/no" language="0/language-id"&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Den här taggen matar ut fältvärdet för den aktuella loopitationen &lt;search-field-values&gt;. Den här taggen är bara giltig inuti en <span class="codeph"> &lt;search-field-values&gt;- </span> slinga. Attributen "date-format", "gmt" och "language" är bara relevanta om innehållstypen för fältnamnet som anges i den omslutande &lt;search-field-values&gt;-taggen är "date". Attributet "date-format" har en datumformatsträng i UNIX-format, t.ex. "%A, %B %d, %Y" (för "Måndag, 25 juli 2020"). </p> <p>Se <a href="../c-appendices/c-templates.md#section_4BBDBBEF2B96414497617CD4B52D96E4" type="section" format="dita" scope="local"> Datumformatsträngar</a>. </p> <p>Det valfria attributet "encoding" kontrollerar om utdatasträngstecknen är HTML-kodade, JavaScript-kodade, Perl-kodade, URL-kodade eller inte kodade, för utdata på resultatsidan. Standardvärdet för "encoding" är "none". Normalt behöver du inte ange kodningsattributet. "gmt" är som standard "yes" och kontrollerar om tidsdelen i datumsträngen ska skrivas ut i GMT ("yes") eller kontots tidszon ("no"). Attributet"language" styr språk- och språkkonventionerna för utdatadatumsträngen. "0" (standard) betyder "Använd kontospråk". Alla andra"language"-värden tolkas som en specifik språkidentifierare, till exempel betyder"en_US" "English (USA)". </p> <p>Se <a href="../c-appendices/c-templates.md#section_0490DECC00E34691ADE5A9ED90A6D911" type="section" format="dita" scope="local"> Språkidentifierare</a>. </p> </td> 
+   <td colname="col2"> <p>Den här taggen matar ut fältvärdet för den aktuella upprepningen av &lt;search-field-values&gt;-loop. Den här taggen är bara giltig inuti en <span class="codeph"> &lt;search-field-values&gt;- </span> slinga. Attributen "date-format", "gmt" och "language" är bara relevanta om innehållstypen för fältnamnet som anges i den omslutande &lt;search-field-values&gt;-taggen är "date". Attributet "date-format" har en datumformatsträng i UNIX-format, t.ex. "%A, %B %d, %Y" (för "Måndag, 25 juli 2020"). </p> <p>Se <a href="../c-appendices/c-templates.md#section_4BBDBBEF2B96414497617CD4B52D96E4" type="section" format="dita" scope="local"> Datumformatsträngar</a>. </p> <p>Det valfria attributet "encoding" kontrollerar om utdatasträngstecknen är HTML-kodade, JavaScript-kodade, Perl-kodade, URL-kodade eller inte kodade, för utdata på resultatsidan. Standardvärdet för "encoding" är "none". Normalt behöver du inte ange kodningsattributet. "gmt" är som standard "yes" och kontrollerar om tidsdelen i datumsträngen ska skrivas ut i GMT ("yes") eller kontots tidszon ("no"). Attributet"language" styr språk- och språkkonventionerna för utdatadatumsträngen. "0" (standard) betyder "Använd kontospråk". Alla andra"language"-värden tolkas som en specifik språkidentifierare, till exempel betyder"en_US" "English (USA)". </p> <p>Se <a href="../c-appendices/c-templates.md#section_0490DECC00E34691ADE5A9ED90A6D911" type="section" format="dita" scope="local"> Språkidentifierare</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>3 </p> </td> 
@@ -2079,7 +2086,7 @@ Med följande taggar skapas en sträng i HTML-koden vid den tidpunkten i mallen.
   <tr> 
    <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-cdata&gt; ... &lt;/search-cdata&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Sökning-cdata-taggarna ersätts med sina XML-motsvarigheter: <span class="codeph"> &lt;search-cdata&gt; </span> ersätts med <span class="codeph"> &lt;![CDATA[" och taggen &lt;/search-data&gt; </span> ersätts med " <span class="codeph"> ]]&gt; </span>". En XML-tolk tolkar inte någon information mellan taggen open och close. </p> </td> 
+   <td colname="col2"> <p>Sökning-cdata-taggarna ersätts med sina XML-motsvarigheter: <span class="codeph"> &lt;search-data&gt; </span> ersätts med <span class="codeph"> &lt;![CDATA[" och taggen &lt;/search-data&gt; </span> ersätts med " <span class="codeph"> ]]&gt; </span>". En XML-tolk tolkar inte någon information mellan taggen open och close. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>4 </p> </td> 
@@ -2289,7 +2296,7 @@ Taggar som gör att du kan styra standardläget för val av kryssrutor, alternat
   <tr> 
    <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-input&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Används i en mall i stället för en <span class="codeph"> &lt;input&gt;- </span> tagg. När taggen skrivs till webbläsaren ersätter indata från ordet <span class="codeph"> </span> sökningar <span class="codeph"> </span> och all annan information i taggen skrivs som utdata. Om dessutom det <span class="codeph"> namn som </span> anges i taggen listas som en CGI-parameter och om det <span class="codeph"> värde som </span> anges i taggen är värdet för den CGI-parametern läggs det ord som <span class="codeph"> markeras </span> till i slutet av taggen. På så sätt kan du automatiskt göra standardläget för alternativknappen eller kryssrutan i sökresultatet till samma som för den aktuella frågan. </p> <p>HTML-koden för en kryssruta kan till exempel se ut så här: </p> <p> <span class="codeph"> &lt;input type=checkbox name="sp_w" value="exact"&gt;Ingen ljudmatchning </span> </p> <p>Motsvarande mallkod för kryssrutan är följande: </p> <p> <span class="codeph"> &lt;search-input type=checkbox name="sp_w" value="exact"&gt;Ingen ljudmatchning </span> </p> <p>Om CGI-parametersträngen för frågan innehåller <span class="codeph"> sp_w=exact </span>ser taggen som skrivs till webbläsaren med sökresultaten ut så här (ordet <span class="codeph"> checked </span> infogas i slutet av taggen): </p> <p> <span class="codeph"> &lt;input type=checkbox name="sp_w" value="exact" checked&gt;Ingen ljudmatchning </span> </p> <p>Om CGI-parametersträngen för frågan inte innehåller <span class="codeph"> sp_w=exact </span>ser taggen som skrivs till webbläsaren med sökresultaten ut så här (det markerade ordet <span class="codeph"> </span> finns inte med i taggen): </p> <p> <span class="codeph"> &lt;input type=checkbox name="sp_w" value="exact"&gt;Ingen ljudmatchning </span> </p> <p>Taggen <span class="codeph"> &lt;search-input&gt; </span> är användbar när du vill placera kryssrutor och alternativknappar i sökmallen. Om du har kryssrutor eller alternativknappar som du vill lägga till i <span class="codeph"> &lt;form&gt; </span> i sökmallen använder du <span class="codeph"> &lt;search-input...&gt; </span> istället för <span class="codeph"> &lt;input..&gt; </span>. </p> </td> 
+   <td colname="col2"> <p>Används i en mall i stället för en <span class="codeph"> &lt;input&gt;- </span> tagg. När taggen skrivs till webbläsaren ersätter indata från ordet <span class="codeph"> </span> sökningar <span class="codeph"> </span> och all annan information i taggen skrivs som utdata. Om dessutom det <span class="codeph"> namn som </span> anges i taggen listas som en CGI-parameter och om det <span class="codeph"> värde som </span> anges i taggen är värdet för den CGI-parametern läggs det ord som <span class="codeph"> markeras </span> till i slutet av taggen. På så sätt kan du automatiskt göra standardläget för alternativknappen eller kryssrutan i sökresultatet till samma som för den aktuella frågan. </p> <p>HTML-koden för en kryssruta kan till exempel se ut så här: </p> <p> <span class="codeph"> &lt;input type=checkbox name="sp_w" value="exact"&gt;Ingen ljudmatchning </span> </p> <p>Motsvarande mallkod för kryssrutan är följande: </p> <p> <span class="codeph"> &lt;search-input type=checkbox name="sp_w" value="exact"&gt;Ingen ljudmatchning </span> </p> <p>Om CGI-parametersträngen för frågan innehåller <span class="codeph"> sp_w=exact </span>ser taggen som skrivs till webbläsaren med sökresultaten ut så här (ordet <span class="codeph"> checked </span> infogas i slutet av taggen): </p> <p> <span class="codeph"> &lt;input type=checkbox name="sp_w" value="exact" checked&gt;Ingen ljudmatchning </span> </p> <p>Om CGI-parametersträngen för frågan inte innehåller <span class="codeph"> sp_w=exact </span>ser taggen som skrivits till webbläsaren med sökresultaten ut så här (ordet <span class="codeph"> checked </span> finns inte med i taggen): </p> <p> <span class="codeph"> &lt;input type=checkbox name="sp_w" value="exact"&gt;Ingen ljudmatchning </span> </p> <p>Taggen <span class="codeph"> &lt;search-input&gt; </span> är användbar när du vill placera kryssrutor och alternativknappar i sökmallen. Om du har kryssrutor eller alternativknappar som du vill lägga till i <span class="codeph"> &lt;form&gt; </span> i sökmallen använder du <span class="codeph"> &lt;search-input...&gt; </span> istället för <span class="codeph"> &lt;input..&gt; </span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>2 </p> </td> 
@@ -2312,7 +2319,7 @@ Taggar som gör att du kan styra standardläget för val av kryssrutor, alternat
       &lt;search-option&nbsp;value="alt"&gt;Alternate&nbsp;text&lt;/search-option&gt; 
       &lt;search-option&nbsp;value="url"&gt;URL&lt;/search-option&gt; 
       &lt;search-option&nbsp;value="target"&gt;Target&lt;/search-option&gt; 
-      &lt;/search-select&gt; </code> </p> <p>Om du har listrutor som du vill lägga till i <span class="codeph"> &lt;form&gt; </span> i sökmallen använder du <span class="codeph"> &lt;search-select...&gt; </span> istället för <span class="codeph"> &lt;select..&gt; </span>, <span class="codeph"> &lt;/search-select&gt; </span> istället för <span class="codeph"> &lt;/select&gt; </span><span class="codeph"> </span> <span class="codeph"> </span><span class="codeph"> </span> <span class="codeph"> </span>¥ &lt;search-option..&gt;¥ i stället för &lt;option..&gt; ALLT, och¥ &lt;/search-option&gt; i stället för &lt;/. option&gt;¥. </p> </td> 
+      &lt;/search-select&gt; </code> </p> <p>Om du har listrutor som du vill lägga till i <span class="codeph"> &lt;form&gt; </span> i sökmallen använder du <span class="codeph"> &lt;search-select...&gt; </span> istället för <span class="codeph"> &lt;select..&gt; </span>, <span class="codeph"> &lt;/search-select&gt; </span> istället för <span class="codeph"> &lt;/select&gt; </span><span class="codeph"> </span> <span class="codeph"> </span><span class="codeph"> </span> <span class="codeph"> </span>¥ &lt;search-option..&gt;¥ i stället för &lt;option..&gt; ALLT, och &lt;/search-option&gt;¥ i stället för &lt;/. option&gt;¥. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col01"> <p>3 </p> </td> 
@@ -2587,7 +2594,7 @@ Följande tabell innehåller språkidentifierare för varje språk som stöds. D
   </tr> 
   <tr> 
    <td colname="col1"> <p>Slovakiska (Slovakien) </p> </td> 
-   <td colname="col2"> <p> sk_SK </p> </td> 
+   <td colname="col2"> <p> _SK </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Slovakiska (Slovenien) </p> </td> 
@@ -2599,7 +2606,7 @@ Följande tabell innehåller språkidentifierare för varje språk som stöds. D
   </tr> 
   <tr> 
    <td colname="col1"> <p>Spanska (Spanien) </p> </td> 
-   <td colname="col2"> <p> es_ES </p> </td> 
+   <td colname="col2"> <p> sk_es </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Svenska (Sverige) </p> </td> 
