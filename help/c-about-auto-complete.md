@@ -8,7 +8,10 @@ title: Om Komplettera automatiskt
 topic: Design,Site search and merchandising
 uuid: 3dfdd14d-2044-4f01-a5bc-fcb2eb0d5068
 translation-type: tm+mt
-source-git-commit: 439100ab96f4b597c55b1c1ae38a5778c208e896
+source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+workflow-type: tm+mt
+source-wordcount: '1530'
+ht-degree: 0%
 
 ---
 
@@ -159,20 +162,15 @@ Se [Konfigurera Komplettera CSS](c-about-auto-complete.md#task_EECE35DEB6C94F4A8
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ta bort dessa ord och fraser </p> </td> 
-      <td colname="col2"> <p> Poster i det här området visas inte i ordlistan som fylls i automatiskt. </p> <p> Klicka på <span class="uicontrol"> Redigera </span> för att visa listan eller för att lägga till ord och fraser i listan. När du är klar klickar du på <span class="uicontrol"> Spara ändringar </span>. </p> <p> Reguljära uttryck tillåts i den här listan. Om du vill ange ett reguljärt uttryck i den här listan börjar du på raden med 
-        <userinput>
-          regexp 
-        </userinput> följt av ett enda mellanslag, följt av det reguljära uttrycket. Alla rader i ordlistan som matchar det reguljära uttrycket tas bort. </p> <p> <b>Viktigt</b>: Du bör bara använda reguljära uttryck om du tidigare har arbetat med dem i andra program. </p> <p>Se <a href="c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck </a>. </p> </td> 
+      <td colname="col2"> <p> Poster i det här området visas inte i ordlistan som fylls i automatiskt. </p> <p> Klicka på <span class="uicontrol"> Redigera </span> för att visa listan eller för att lägga till ord och fraser i listan. När du är klar klickar du på <span class="uicontrol"> Spara ändringar </span>. </p> <p> Reguljära uttryck tillåts i den här listan. Om du vill ange ett reguljärt uttryck i den här listan börjar du raden med <code>regexp</code> följt av ett blanksteg följt av det reguljära uttrycket. Alla rader i ordlistan som matchar det reguljära uttrycket tas bort. </p> <p> <b>Viktigt</b>: Du bör bara använda reguljära uttryck om du tidigare har arbetat med dem i andra program. </p> <p>Se <a href="c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ignorera skiftläge </p> </td> 
-      <td colname="col2"> <p>Dubblettposter i ordlistan som fylls i automatiskt och som endast skiljer sig åt i alfabetisk ordning tas bort. alla ordlisteposter skrivs med gemener. </p> <p>Om du vill att förslagen Komplettera automatiskt ska visas med"inledande versal" eller"versaler" lägger du till 
-        <userinput>
-          text-transform : versal, 
-        </userinput> eller 
-        <userinput>
-          text-transform : versaler, 
-        </userinput> CSS-textegenskaper till CSS-innehållet Komplettera automatiskt, under "/*-format för resultatobjektet */". </p> <p>Se <a href="c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96" type="task" format="dita" scope="local"> Konfigurera CSS för Komplettera automatiskt </a>. </p> </td> 
+      <td colname="col2"> <p>Dubblettposter i ordlistan som fylls i automatiskt och som endast skiljer sig åt i alfabetisk ordning tas bort. alla ordlisteposter skrivs med gemener. </p> <p>Om du vill att förslagen Komplettera automatiskt ska visas med"inledande versal" eller"versaler" lägger du till <code>
+          text-transform : capitalize; 
+        </code> - eller <code>
+          text-transform : uppercase; 
+        </code> CSS-textegenskaperna i CSS-innehållet Komplettera automatiskt, under"/*-format för resultatobjektet */". </p> <p>Se <a href="c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96" type="task" format="dita" scope="local"> Konfigurera CSS för Komplettera automatiskt </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Uppdatera vid omindexering </p> </td> 
