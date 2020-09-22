@@ -1,19 +1,19 @@
 ---
 cloud: experience-cloud
-product: Search&amp;Promote
+product: Adobe Search&amp;Promote
 audience: end-user
-user-guide-title: Sö&k;amp;Höj upp stödlinje
-breadcrumb-title: Search&amp;Promote Guide
+user-guide-title: Adobe Search&amp;Promote Guide
+breadcrumb-title: Adobe Search&amp;Promote Guide
 translation-type: tm+mt
-source-git-commit: 8a42d1ee5260adbb88e483a38b107bd76b89a452
+source-git-commit: e211b8d01a8dea5b4232f3daeb430cb7ffe7ea76
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
 
 
-# Sök- och höjdguide {#using}
+# Adobe Search and Promote Guide {#using}
 
 + [Översikt över Search &amp; Promote Dokumentation](sp-home.md)
 + Versionsinformation {#release-notes}
