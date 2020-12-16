@@ -8,11 +8,14 @@ topic: Release Notes,Site search and merchandising
 uuid: d2d3b02a-57a6-4dcd-9808-b0bf890ba4d3
 translation-type: tm+mt
 source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
+workflow-type: tm+mt
+source-wordcount: '118'
+ht-degree: 0%
 
 ---
 
 
-# Search&amp;Promote 8.8.1 versionsinformation (05/31/2012){#search-promote-release-notes}
+# Versionsinformation om Search &amp; Promote 8.8.1 (05/31/2012){#search-promote-release-notes}
 
 **Korrigeringar och förbättringar**
 
