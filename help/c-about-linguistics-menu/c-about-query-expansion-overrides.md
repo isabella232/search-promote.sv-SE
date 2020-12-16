@@ -8,6 +8,9 @@ topic: Linguistics,Site search and merchandising
 uuid: dfe18004-b8fd-4889-b01c-72a3b0c82b9c
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 0%
 
 ---
 
@@ -16,17 +19,17 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
 Du kan åsidosätta utökningen av sökfrågeresultat.
 
-## Använda åsidosättningar av frågetillägg {#concept_6895B469B0E044299E93361BFA06B554}
+## Använda frågeexpansion åsidosätter {#concept_6895B469B0E044299E93361BFA06B554}
 
-När du konfigurerar åsidosättning av frågeexpansion skapar du en uppsättning regler. Varje regel säger i princip&quot;Utvidga inte `<this>` till `<that>` vid sökningen&quot; där `<this>` är ett enkelt textord eller en fras och `<that>` är ett textord eller en fras eller en klassificering.
+När du konfigurerar åsidosättning av frågeexpansion skapar du en uppsättning regler. Varje regel säger i princip&quot;Utöka inte `<this>` till `<that>` vid sökningen&quot; där `<this>` är ett enkelt textord eller en enkel fras och `<that>` är ett textord eller en fras eller en klassificering.
 
 >[!NOTE]
 >
->Den här funktionen är som standard inte aktiverad i Sök&amp;Promote. Kontakta teknisk support för att aktivera funktionen. När funktionen Åsidosätta frågeexpansion är aktiverad måste du aktivera den i användargränssnittet.
+>Den här funktionen är inte aktiverad i Search &amp; Promote som standard. Kontakta teknisk support för att aktivera funktionen. När funktionen Åsidosätta frågeexpansion är aktiverad måste du aktivera den i användargränssnittet.
 
 **Så här fungerar Åsidosättning av frågeutökning**
 
-När ett text- och termvärde anges på sidan Lägg till åsidosätts av frågetillägget, fungerar koden på den specifika parningen. När en klassificeringstyp anges som en term, t.ex. ordlistor eller alternativa ordformer, konverteras inte värdet Expandera till något formulär som skapas av den angivna klassificeringen.
+När ett text- och termvärde anges på sidan Lägg till åsidosätts av frågetillägget, fungerar koden på den specifika parningen. När en klassificeringstyp anges som en term, t.ex. ordlistor eller alternativa ord-Forms, konverteras inte värdet Expandera till något formulär som skapas av den angivna klassificeringen.
 
 Anta till exempel att du har följande definition:
 
@@ -36,7 +39,7 @@ Anta till exempel att du har följande definition:
 
 `Term = "dogs"`
 
-En sökfråga efter &quot;hund&quot;, som utökas till att inkludera &quot;hund&quot; och &quot;hund&quot; med hjälp av alternativa ordformer, inkluderar inte &quot;hund&quot;.
+En sökfråga efter &quot;hund&quot;, som utökas till att inkludera &quot;hund&quot; och &quot;hund&quot; via Alternate Word Forms, inkluderar inte &quot;hund&quot;.
 
 Om definitionen var följande:
 
@@ -44,7 +47,7 @@ Om definitionen var följande:
 
 `Type = Alternate Word Forms`
 
-Frågan innehåller inte &quot;hund&quot; eller &quot;hund&quot; (tillgängliga alternativa ordformer för &quot;hund&quot;).
+Frågan innehåller inte &quot;hund&quot; eller &quot;hund&quot; (det tillgängliga alternativa Word Forms för &quot;hund&quot;).
 
 Du kan ange flera termer, flera klassificeringar eller båda. Om du väljer Alla som Typ komprimeras alla listor med flera termer till endast en enda Alla-post.
 
@@ -54,9 +57,9 @@ Texttermer valideras för att ta bort meningslösa referenser. Det innebär att 
 
 Om du lägger till en ny regel med värdet Utvidga inte som replikerar en tidigare definition, läggs den nya definitionens villkor till i originalet.
 
-## Konfigurera åsidosättningar av frågetillägg {#task_A087354A509D4997BA275186C224160E}
+## Konfigurerar åsidosättningar av frågeexpansion {#task_A087354A509D4997BA275186C224160E}
 
-Definiera och lägga till åsidosättning av frågeexpansion i Search&amp;Promote.
+Definiera och lägga till åsidosättning av frågeexpansion i Search &amp; Promote.
 
 <!-- 
 
@@ -65,16 +68,16 @@ t_configuring_query_expansion_overrides.xml
  -->
 
 >[!NOTE]
-Den här funktionen är som standard inte aktiverad i Sök&amp;Promote. Kontakta teknisk support för att aktivera funktionen. När funktionen Åsidosätta frågeexpansion är aktiverad måste du aktivera den i användargränssnittet. De första stegen nedan visar hur du gör det.
+Den här funktionen är inte aktiverad i Search &amp; Promote som standard. Kontakta teknisk support för att aktivera funktionen. När funktionen Åsidosätta frågeexpansion är aktiverad måste du aktivera den i användargränssnittet. De första stegen nedan visar hur du gör det.
 
 **Så här konfigurerar du åsidosättningar av frågetillägg**
 
-1. I Sök&amp;Befordra klickar du på **Inställningar** > **Användare** > **Visa roller**.
-1. På sidan Visa roller i kolumnen Åtgärder i tabellen klickar du på **Redigera** till höger om den roll som du vill ge åtkomst till Åsidosättningar av frågeexpansion på menyn Språk.
+1. Klicka på **Inställningar** > **Användare** > **Visa roller** i Search &amp; Promote.
+1. På sidan Visa roller i kolumnen Åtgärder i tabellen klickar du på **Redigera** till höger om rollen som du vill ge åtkomst till Åsidosättningar av frågeexpansion på menyn Språk.
 1. Expandera språkträdet på sidan Redigera roll.
-1. Markera Åsidosättningar av **frågetillägg** och klicka sedan på **Spara ändringar**.
+1. Markera **Åsidosättningar av frågetillägg** och klicka sedan på **Spara ändringar**.
 1. Klicka på **Linguistics** > **Query Expansion Overrides**.
-1. Klicka på **Lägg till åsidosättning** av frågetillägg.
+1. Klicka på **Lägg till åsidosättning av frågeexpansion**.
 1. Ange önskade alternativ på sidan Lägg till i frågeexpansion.
 
    <!-- 
@@ -97,7 +100,7 @@ Den här funktionen är som standard inte aktiverad i Sök&amp;Promote. Kontakta
       </tr> 
       <tr> 
       <td colname="col1"> <p>Typ </p> </td> 
-      <td colname="col2"> <p>Välj <b>Text</b> om du vill ange ett specifikt ord eller en fras som ska paras. Du kan också välja en klassificering för att ange att ordet eller frasen Expandera inte inte konverteras med den valda klassificeringen. </p> </td> 
+      <td colname="col2"> <p>Välj <b>Text</b> om du vill ange ett specifikt ord eller en fraspar. Du kan också välja en klassificering för att ange att ordet eller frasen Expandera inte inte konverteras med den valda klassificeringen. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Villkor </p> </td> 
@@ -105,7 +108,7 @@ Den här funktionen är som standard inte aktiverad i Sök&amp;Promote. Kontakta
       </tr> 
       <tr> 
       <td colname="col1"> <p>Åtgärd </p> </td> 
-      <td colname="col2"> <p> Klicka <b>+</b> eller <b>-</b> för att lägga till eller ta bort termer i definitionen. </p> </td> 
+      <td colname="col2"> <p> Klicka på <b>+</b> eller <b>-</b> för att lägga till respektive ta bort termer i definitionen. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -113,7 +116,7 @@ Den här funktionen är som standard inte aktiverad i Sök&amp;Promote. Kontakta
 1. När du är klar klickar du på **Lägg till**.
 
    På sidan Frågetillägg åsidosätter definitioner kan du redigera eller ta bort definitioner som du har lagt till.
-1. Om du vill förhandsgranska resultatet av dina tillägg klickar du på **generera om det mellanlagrade platsindexet** i den blå rutan för att snabbt återskapa det mellanlagrade webbplatsindexet.
+1. Om du vill förhandsgranska resultatet av dina tillägg klickar du på **återskapa indexet för den mellanlagrade platsen** i den blå rutan för att snabbt återskapa indexet för den mellanlagrade webbplatsen.
 1. (Valfritt) Gör något av följande:
 
    * Klicka på **Live**.
