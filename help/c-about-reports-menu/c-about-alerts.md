@@ -8,6 +8,9 @@ topic: Reports,Site search and merchandising
 uuid: 94524563-f9a6-40cf-89f3-e80b1d0113c7
 translation-type: tm+mt
 source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
 
 På sidan Varningar finns en central plats där du kan visa och hantera alla varningar som har att göra med ditt konto.
 
-## Använda aviseringar {#concept_B731210A050A4AB1A7F4C809AA8B5355}
+## Använda varningar {#concept_B731210A050A4AB1A7F4C809AA8B5355}
 
 En mängd olika varningar genereras och skickas till en eller flera e-postadresser. Filtren och andra kontroller på sidan Varningar kan hjälpa dig att hantera flera varningar samtidigt.
 
@@ -37,16 +40,16 @@ På sidan Varningar finns en central plats där du kan visa och hantera alla var
 **Visa aviseringar**
 
 1. Klicka på **[!UICONTROL Reports]** > **[!UICONTROL Alerts]** på produktmenyn.
-1. Markera eller avmarkera de aviseringar som du vill visa eller dölja på sidan Varningar i **[!UICONTROL Filter By: Level]** området.
+1. Markera eller avmarkera de aviseringar du vill visa eller dölja i området **[!UICONTROL Filter By: Level]** på sidan Varningar.
 1. Visa en varning genom att klicka på den i tabellen.
 1. (Valfritt) Gör något av följande:
 
-   * Om du vill filtrera aviseringar efter datum anger du ett datum i formatet MM/DD/ÅÅÅÅ i textfältet, [!DNL Start Date] [!DNL End Date] textfältet eller båda.
+   * Om du vill filtrera aviseringar efter datum anger du ett datum i formatet MM/DD/ÅÅÅÅ i textfältet [!DNL Start Date], textfältet [!DNL End Date] eller båda.
 
-   * I [!DNL Sent To] textfältet, [!DNL Subject] textfältet eller båda, anger du ord eller fraser för att hitta varningar som matchar den angivna texten.
+   * I textfältet [!DNL Sent To], textfältet [!DNL Subject] eller båda, anger du ord eller fraser för att hitta varningar som matchar texten du angav.
 
-   * Om du vill ta bort en eller flera aviseringar markerar du de aviseringar du vill ta bort i den vänstra kolumnen och klickar sedan på **Ta bort markerade aviseringar**.
+   * Om du vill ta bort en eller flera aviseringar kontrollerar du i den vänstra kolumnen de aviseringar som du vill ta bort och klickar sedan på **Ta bort markerade aviseringar**.
    * Om du vill markera alla varningsmeddelanden som visas markerar du kryssrutan längst upp i den vänstra kolumnen.
 
-      Om du vill välja alla matchande aviseringar i stället för en enda sida av dem, markerar du **[!UICONTROL All Alerts]** och markerar sedan kryssrutan överst i kolumnen i listrutan till höger.
+      Om du vill välja alla matchande aviseringar i stället för en enda sida av dem väljer du **[!UICONTROL All Alerts]** i listrutan till höger och markerar sedan kryssrutan överst i kolumnen.
 
