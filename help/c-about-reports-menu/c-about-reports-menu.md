@@ -8,11 +8,14 @@ topic: Reports,Site search and merchandising
 uuid: 3ea856d7-dc07-455f-8dc7-c7f7f56355d7
 translation-type: tm+mt
 source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
+workflow-type: tm+mt
+source-wordcount: '1257'
+ht-degree: 0%
 
 ---
 
 
-# Om menyn Rapporter{#about-the-reports-menu}
+# Om rapportmenyn{#about-the-reports-menu}
 
 Använd menyn Rapporter för att visa eller återställa rapporter om kundernas sökfrågor.
 
@@ -45,7 +48,7 @@ Tabellen i rapporten innehåller följande information:
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ord </p> </td> 
-   <td colname="col2"> <p>Antalet sökningar där besökare sökte efter ett enstaka ord eller en hel fras. </p> <p>Innehåller den fras eller det ord som anges av varje kund. Varje fras eller ord är länkat så att du enkelt kan kontrollera det verkliga sökresultatet. Den här kolumnen kan även innehålla en tom fråga, vilket anger att en kund klickade på <span class="uicontrol"> Sök</span> utan att skriva in några söktermer. </p> </td> 
+   <td colname="col2"> <p>Antalet sökningar där besökare sökte efter ett enstaka ord eller en hel fras. </p> <p>Innehåller den fras eller det ord som anges av varje kund. Varje fras eller ord är länkat så att du enkelt kan kontrollera det verkliga sökresultatet. Den här kolumnen kan även innehålla en tom fråga, vilket anger att en kund klickade på <span class="uicontrol"> Sök</span> utan att skriva några söktermer. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Antal resultat </p> </td> 
@@ -64,22 +67,22 @@ Tabellen i rapporten innehåller följande information:
 
 1. På rapportsidan väljer du i listrutan en rapport över de översta fraserna eller de översta orden.
 1. Klicka på **[!UICONTROL View Report]**.
-1. (Valfritt) Öppna [!DNL Words] sidan genom att klicka på ett ord under [!DNL Live Simulator for Today] kolumnen i tabellen.
+1. (Valfritt) I tabellen, under kolumnen [!DNL Words], klickar du på ett ord för att öppna sidan [!DNL Live Simulator for Today].
 
-   Se [Om simulator](../c-about-simulator.md#concept_020AA6751E32421A96A3455508364C7E) där du kan visa och testa söktermer.
-1. (Valfritt) Klicka **[!UICONTROL Reset Terms Report]** för att rensa all termrapportinformation för det inloggade kontot.
+   Se [Om simulatorn](../c-about-simulator.md#concept_020AA6751E32421A96A3455508364C7E) där du kan visa och testa söktermer.
+1. (Valfritt) Klicka på **[!UICONTROL Reset Terms Report]** för att rensa all termrapportinformation för det inloggade kontot.
 
    Alla söktermer som anges av dina kunder tas bort permanent.
 
-## Konfigurera Adobe Analytics-rapportsviter {#task_4A80D97030684C65AC2978B2524DE7F5}
+## Konfigurera Adobe Analytics Report Suites {#task_4A80D97030684C65AC2978B2524DE7F5}
 
-Om du vill använda Adobe Analytics Report Suite-data i en webbplatssökning/försäljning skapar du kopior av Adobe Analytics-data i ditt konto.
+Om du vill använda Adobe Analytics Report Suite-data i en webbplatssökning/försäljning skapar du kopior av Adobe Analytics-data på ditt konto.
 
-Se [Om Adobe Analytics-rapportsviter](../c-about-settings-menu/c-about-adobe-analytics-menu.md#concept_1A51AEC5D40E459B813E7891D64B1BAE).
+Se [Om Adobe Analytics Report Suites](../c-about-settings-menu/c-about-adobe-analytics-menu.md#concept_1A51AEC5D40E459B813E7891D64B1BAE).
 
 Se [Läsa in Adobe Analytics-data](../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_2F3C55189B0A4049AB2113F2291CC181).
 
-På sidan [!DNL Staged Adobe Analytics Terms Report] och [!DNL Staged Adobe Analytics Report Suites] sidan visas följande information i en tabell:
+Sidan [!DNL Staged Adobe Analytics Terms Report] och sidan [!DNL Staged Adobe Analytics Report Suites] visar följande information i en tabell:
 
 <table> 
  <thead> 
@@ -91,15 +94,15 @@ På sidan [!DNL Staged Adobe Analytics Terms Report] och [!DNL Staged Adobe Anal
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Report Suite </p> </td> 
-   <td colname="col2"> <p>Identifierar namnet på Adobe Analytics Report Suite. </p> <p>Se Lägga till en Adobe Analytics Report Suite <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_6DE17305EA7146DA8C30FF8FDF68A3C0" type="task" format="dita" scope="local"></a>. </p> <p>Se <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Redigera Adobe Analytics-statistik i en Report Suite</a>. </p> </td> 
+   <td colname="col2"> <p>Identifierar namnet på Adobe Analytics Report Suite. </p> <p>Se <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_6DE17305EA7146DA8C30FF8FDF68A3C0" type="task" format="dita" scope="local"> Lägga till en Adobe Analytics Report Suite</a>. </p> <p>Se <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Redigera Adobe Analytics-statistik för en Report Suite</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Typ av rapportering (Adobe Analytics-element) </p> </td> 
-   <td colname="col2"> <p>Adobe Analytics-elementet, klassificeringsvärdet eller båda, som används i Report Suite-begäran. </p> <p>Se <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Redigera Adobe Analytics-statistik i en Report Suite</a>. </p> </td> 
+   <td colname="col2"> <p>The Adobe Analytics Element, the Classification value, or both, that is used in the Report Suite request. </p> <p>Se <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Redigera Adobe Analytics-statistik för en Report Suite</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Korsreferensfält </p> </td> 
-   <td colname="col2"> <p>Det valfria metadatafältet, vars värden används som söknycklar i Report Suite. </p> <p>Se <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Redigera Adobe Analytics-statistik i en Report Suite</a>. </p> </td> 
+   <td colname="col2"> <p>Det valfria metadatafältet, vars värden används som söknycklar i Report Suite. </p> <p>Se <a href="../c-about-settings-menu/c-about-adobe-analytics-menu.md#task_360904CCBBB140238ADA036C3CC07664" type="task" format="dita" scope="local"> Redigera Adobe Analytics-statistik för en Report Suite</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Åtgärder </p> </td> 
@@ -108,7 +111,7 @@ På sidan [!DNL Staged Adobe Analytics Terms Report] och [!DNL Staged Adobe Anal
  </tbody> 
 </table>
 
-**Ställa in rapportsviter för Adobe Analytics**
+**Så här konfigurerar du Adobe Analytics Report Suites**
 
 1. Gör något av följande på produktmenyn:
 
@@ -120,7 +123,7 @@ På sidan [!DNL Staged Adobe Analytics Terms Report] och [!DNL Staged Adobe Anal
 
 ## Visa rapporten för sökbegäran eller rapporten för innehållsförfrågningar {#task_4C6EFB4D51474FC1BDE4326D1A726ECC}
 
-Du kan visa [!DNL Search Requests Report] för att se antalet sökningar under en viss tidsperiod. Du kan också visa [!DNL Content Requests Report] för att se antalet innehållsförfrågningar under en viss tidsperiod.
+Du kan visa [!DNL Search Requests Report] för att se antalet sökbegäranden under en viss tidsperiod. Du kan också visa [!DNL Content Requests Report] för att se antalet innehållsförfrågningar under en angiven tidsperiod.
 
 >[!NOTE]
 >
@@ -134,8 +137,8 @@ Du kan visa [!DNL Search Requests Report] för att se antalet sökningar under e
 
    + Klicka på **[!UICONTROL Reports]** > **[!UICONTROL Content Requests]**.
 
-1. I listrutan på rapportsidan väljer du hur lång tid som ska ingå i rapporten. **[!UICONTROL Period]**
-1. Välj något av följande alternativ i listrutan baserat på den valda rapporten: **[!UICONTROL Chart Type]**
+1. På rapportsidan väljer du i listrutan **[!UICONTROL Period]** hur lång tid som ska ingå i rapporten.
+1. Välj något av följande alternativ baserat på den valda rapporten i listrutan **[!UICONTROL Chart Type]**:
 
    | Alternativ | Beskrivning |
    |--- |--- |
@@ -143,7 +146,7 @@ Du kan visa [!DNL Search Requests Report] för att se antalet sökningar under e
    | Antal sökningar per månad eller Antal innehållsbegäranden per månad | Visar antalet begäranden per månad. |
    | Bandbredd för förfrågan om daglig sökning eller bandbredd för begäran om dagligt innehåll | Visar den mängd bandbredd som krävs för att behandla dagliga sökningar eller begäranden om dagligt innehåll. |
 
-1. Välj hur du vill att de data som ska visas i rapporten ska visas i den **[!UICONTROL Chart Style]** nedrullningsbara listan.
+1. I listrutan **[!UICONTROL Chart Style]** väljer du hur du vill att data ska visas i rapporten.
 
 ## Visa storleksrapporten för sökindex {#task_90CF717A53D341F49E8DE17505321950}
 
@@ -156,10 +159,10 @@ Rapporten Sökindexstorlek visar storleken på sökindexet under en angiven peri
 **Visa rapporten Sökindexstorlek**
 
 1. Klicka på **[!UICONTROL Reports]** > **[!UICONTROL Index Size]** på produktmenyn.
-1. I listrutan på rapportsidan väljer du hur lång tid som ska ingå i rapporten. **[!UICONTROL Period]**
-1. Välj hur du vill att de data som ska visas i rapporten ska visas i den **[!UICONTROL Chart Style]** nedrullningsbara listan.
+1. På rapportsidan väljer du i listrutan **[!UICONTROL Period]** hur lång tid som ska ingå i rapporten.
+1. I listrutan **[!UICONTROL Chart Style]** väljer du hur du vill att data ska visas i rapporten.
 
-## Visa prestandarapporten för crawlning eller prestandarapporten för den lagrade crawlningen {#task_60ED9FD9769C48B1B5EEE7099B1D1899}
+## Visa prestandarapporten för crawlning eller prestandarapporten för den mellanlagrade crawlningen {#task_60ED9FD9769C48B1B5EEE7099B1D1899}
 
 Prestandan för indexcrawlningen loggas genom att olika mätvärden registreras under crawlningens förlopp. Du kan välja en crawlningspunkt, mätvärde, diagramformat och crawlningstyp när du visar en rapport över crawlningsprestanda, dvs. live eller staged.
 
@@ -169,13 +172,13 @@ Prestandan för indexcrawlningen loggas genom att olika mätvärden registreras 
 
    + Klicka på **[!UICONTROL Reports]** > **[!UICONTROL Crawl Performance]**.
 
-      I listrutan på rapportsidan väljer du hur lång tid som ska ingå i rapporten. **[!UICONTROL Crawl Ending]**
+      På rapportsidan väljer du i listrutan **[!UICONTROL Crawl Ending]** hur lång tid som ska ingå i rapporten.
 
    + Klicka på **[!UICONTROL Reports]** > **[!UICONTROL Staged Crawl Performance]**.
 
-      I listrutan på rapportsidan väljer du hur lång tid som ska ingå i rapporten. **[!UICONTROL Staged Crawl Ending]**
+      På rapportsidan väljer du i listrutan **[!UICONTROL Staged Crawl Ending]** hur lång tid som ska ingå i rapporten.
 
-1. Välj något av följande mått i **[!UICONTROL Metric]** listrutan:
+1. Välj något av följande mått i listrutan **[!UICONTROL Metric]**:
 
    | Alternativ | Beskrivning |
    |--- |--- |
@@ -193,8 +196,8 @@ Prestandan för indexcrawlningen loggas genom att olika mätvärden registreras 
    | hämtningsprocess ms | Total nedladdningstid (inklusive hämtning och filter), per sida. |
    | indexprocess ms | Total tid för indexeringsprocessen, per sida. |
 
-1. Välj hur du vill att de data som ska visas i rapporten ska visas i den **[!UICONTROL Chart Style]** nedrullningsbara listan. Du kan välja **[!UICONTROL Bars]** eller **[!UICONTROL Area]**.
-1. I den **[!UICONTROL Chart Type]** nedrullningsbara listan väljer du den indexnivå som du vill rapportera om. Du kan välja **[!UICONTROL Full]**, **[!UICONTROL Incremental]** eller **[!UICONTROL Full & Incremental]**.
+1. I listrutan **[!UICONTROL Chart Style]** väljer du hur du vill att data ska visas i rapporten. Du kan välja **[!UICONTROL Bars]** eller **[!UICONTROL Area]**.
+1. I listrutan **[!UICONTROL Chart Type]** väljer du den indexnivå som du vill rapportera om. Du kan välja **[!UICONTROL Full]**, **[!UICONTROL Incremental]** eller **[!UICONTROL Full & Incremental]**.
 
 ## Visa ändringsloggen {#task_166F1156719F4B3D834BEA8E249C8057}
 
@@ -205,4 +208,4 @@ Endast ändringar som visas under [!DNL History] visas. Ändringarna listas i om
 Se [Om Förproduktion](../c-about-staging.md#concept_08B8F3CA1F4241108F14BA7FC7806CA7).
 
 1. Klicka på **[!UICONTROL Reports]** > **[!UICONTROL Change Log]** på produktmenyn.
-1. Använd navigerings- och visningsalternativen längst upp och längst ned på sidan för att visa logginformationen på [!DNL Change Log] sidan.
+1. På sidan [!DNL Change Log] använder du navigerings- och visningsalternativen längst upp och längst ned på sidan för att visa logginformationen.
