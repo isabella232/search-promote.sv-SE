@@ -9,6 +9,9 @@ topic: Design,Site search and merchandising
 uuid: 28bc4d4d-a84c-4a77-befb-b0fb3bbdb966
 translation-type: tm+mt
 source-git-commit: 52c8d7985e7cb0aa35be1deabeb7cb92a55f07c2
+workflow-type: tm+mt
+source-wordcount: '3855'
+ht-degree: 0%
 
 ---
 
@@ -23,13 +26,13 @@ Anta till exempel att en besökare på en webbplats som säljer verktyg gör en 
 
 Du kan basera en aspekt på en befintlig metadatadefinition. Om en faktor definieras som en datumtyp i metadata visas den som en datumintervallfaktor.
 
-Tabellen på [!DNL Staged Facets] sidan innehåller en allmän översikt över inställningarna som utgör varje tillagd aspekt. Du kan lägga till nya ansikten och redigera eller ta bort befintliga facets. Du kan återställa alla ändringar som du gör i ansiktet genom att använda **[!UICONTROL History]** nära sidans övre högra hörn.
+Tabellen på sidan [!DNL Staged Facets] innehåller en allmän översikt över inställningarna som utgör varje tillagd aspekt. Du kan lägga till nya ansikten och redigera eller ta bort befintliga facets. Du kan återställa alla ändringar som du gör i ansiktet genom att använda **[!UICONTROL History]** nära sidans övre högra hörn.
 
 Fasettinställningarna mellanlagras som standard så att du kan testa ändringarna innan du publicerar dem.
 
 Se [Om Förproduktion](../c-about-staging.md#concept_08B8F3CA1F4241108F14BA7FC7806CA7).
 
-Du kan använda **[!UICONTROL View Live Settings]** för att jämföra dina mellanlagerinställningar med den aktuella direktinställningen. Används **[!UICONTROL View Staged Settings]** för att återgå till mellanlagringsområdet. För ett objekt som mellanlagras är den aktiva versionen av inställningarna skrivskyddad. Därför kan du ändra den genom att göra de mellanlagrade inställningarna tillgängliga. När du är nöjd med ändringarna som du har gjort i den mellanlagrade aspekten klickar du för **[!UICONTROL Push Live]** att göra dem tillgängliga.
+Du kan använda **[!UICONTROL View Live Settings]** för att jämföra dina mellanlagrade inställningar med den aktuella direktinställningen. Använd **[!UICONTROL View Staged Settings]** för att gå tillbaka till mellanlagringsområdet. För ett objekt som mellanlagras är den aktiva versionen av inställningarna skrivskyddad. Därför kan du ändra den genom att göra de mellanlagrade inställningarna tillgängliga. När du är nöjd med ändringarna som du har gjort i den mellanlagrade aspekten klickar du på **[!UICONTROL Push Live]** för att göra dem tillgängliga.
 
 ## Datumintervallfaser {#section_FEFFF6B5B6534456913189FEF559BA58}
 
@@ -43,16 +46,16 @@ mm/dd/yyyy
 
 Fyrsiffriga år krävs. Det måste finnas minst ett av startdatumen eller slutdatumen, men båda är inte obligatoriska. &quot;12/1/2007BTW1/4/2009&quot; betyder till exempel alla datum mellan 1 december 2007 och 4 januari 2009. &quot;1-1-2005BTW&quot; innebär dock alla datum sedan 1 januari 2005.
 
-Du kan använda taggen för presentationsmallen `<guided-facet-value/>` för att få ett datumintervallvärde, som en normal faktor. För närvarande krävs JavaScript för att användare ska kunna ange datumintervall att söka efter. Du kan t.ex. hämta indata från två inmatningsfält för start- och slutdatum. Sedan kan du validera indata och lägga till den nya fasettens värde (byggt från de två inmatningsfälten) och ansiktsnamnet till den befintliga URL:en.
+Du kan använda presentationsmalltaggen `<guided-facet-value/>` för att få ett datumintervallvärde, som en normal faktor. För närvarande krävs JavaScript för att användare ska kunna ange datumintervall att söka efter. Du kan t.ex. hämta indata från två inmatningsfält för start- och slutdatum. Sedan kan du validera indata och lägga till den nya fasettens värde (byggt från de två inmatningsfälten) och ansiktsnamnet till den befintliga URL:en.
 
-Se [Presentationsmalltaggar](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64).
+Se [Taggar för presentationsmall](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64).
 
 Följande kodexempel är ett exempel på hur du kan visa ett datumintervall på en sida. Det visar det befintliga datumintervallet om det är markerat. I annat fall visas ett enkelt indataformulär. När formuläret skickas utför det en enkel validering. Sedan skickas webbläsaren till en ny URL som innehåller två nya parametrar:
 
 * `q#` - Representerar det valda datumintervallet som sammanfogats från de två inmatningsfälten.
 * `x#` - Namnger ansiktet. I det här exemplet heter datumintervallsaspekten&quot;modified&quot;.
 
-Delarna `replace(/%2F/ig, '~2F')` i koden behövs eftersom Apache inte tillåter `%2F` i URL-sökvägar av säkerhetsskäl, och när SEO-URL:er används finns frågan i URL-sökvägen. Därför `/` kodas som `~2F` istället för `%2F`, som det normalt skulle vara i en URL.
+Delarna `replace(/%2F/ig, '~2F')` i koden behövs eftersom Apache inte tillåter `%2F` i URL-sökvägar av säkerhetsskäl, och när SEO-URL:er används finns frågan i URL-sökvägen. Därför är `/` kodat som `~2F` i stället för `%2F`, som det vanligtvis skulle vara i en URL.
 
 ```
 <div class="date_range"> 
@@ -100,7 +103,7 @@ Delarna `replace(/%2F/ig, '~2F')` i koden behövs eftersom Apache inte tillåter
 </div>
 ```
 
-## Om kapslade ansikten {#section_6BC77F38DE9F43D5B6911F8CECB15DFC}
+## Om kapslade aspekter {#section_6BC77F38DE9F43D5B6911F8CECB15DFC}
 
 Kapslade ytor är ytor som visar flera nivåer av kategorier som i följande exempel:
 
@@ -146,7 +149,7 @@ Följande är beteenden för olika typer av kapslade aspekter:
 
 Se även [Om Facet Rail](../c-about-design-menu/c-about-facet-rails.md#concept_1FDC8BCDFFC84A0889DA670F63D5F6DB).
 
-## Lägga till en ny aspekt {#task_FC07BFFA62CA4B718D6CBF4F2855C89B}
+## Lägger till en ny aspekt {#task_FC07BFFA62CA4B718D6CBF4F2855C89B}
 
 Du kan lägga till ansikten för att anpassa presentationslagret och ge dina kunder en guidad sökning där de kan fördjupa sig i sökresultaten.
 
@@ -156,7 +159,7 @@ t_adding_a_new_facet.xml
 
  -->
 
-Faktablad på [!DNL Facets] sidan visar ett utdrag av inställningarna som utgör en enda aspekt. Du kan lägga till nya ansikten och redigera eller ta bort befintliga facets. Alla ändringar du gör i ansiktet kan återställas med hjälp av funktionen Historik.
+Faktablad på sidan [!DNL Facets] visar ett utdrag av inställningarna som utgör en enskild aspekt. Du kan lägga till nya ansikten och redigera eller ta bort befintliga facets. Alla ändringar du gör i ansiktet kan återställas med hjälp av funktionen Historik.
 
 >[!NOTE]
 >
@@ -170,13 +173,13 @@ Se även [Om Facet Rail](../c-about-design-menu/c-about-facet-rails.md#concept_1
 
    * Har vissa metataggsfält redan definierats.
 
-      Se [Lägga till ett nytt fält](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)för metataggar.
+      Se [Lägga till ett nytt metataggsfält](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
    * Lägg in metadata i indexet.
-Se [Lägga till fältinmatningsdefinitioner](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
+Se [Lägga till fältinjektionsdefinitioner](../c-about-settings-menu/c-about-metadata-menu.md#task_E86566FA1FF74CF68115C0ADA05172AE).
 
-1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Facets.]**
-1. På [!DNL Facets] sidan klickar du på **[!UICONTROL Add New Facet]**.
-1. Ange önskade alternativ på [!DNL Add Facet] sidan.
+1. På produktmenyn klickar du på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Facets.]**
+1. Klicka på **[!UICONTROL Add New Facet]** på sidan [!DNL Facets].
+1. Ange önskade alternativ på sidan [!DNL Add Facet].
 
    De här inställningarna påverkar både beteendet och standardpresentationen för en aspekt. Du kan åsidosätta vissa av de här inställningarna med hjälp av presentationsmallens inställningar.
 
@@ -200,38 +203,38 @@ Se [Lägga till fältinmatningsdefinitioner](../c-about-settings-menu/c-about-me
     <tbody> 
       <tr> 
       <td colname="col1"> <p>Fasettnamn </p> </td> 
-      <td colname="col2"> <p>Identifierar namnet på en viss aspekt. </p> <p> <p>Obs!  Du kan bara ha en fasett baserad på befintliga användardefinierade metadata. Om det inte finns några tillgängliga ansikten i listrutan måste du först definiera några metadata. </p> </p> <p>Se <a href="../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5" type="task" format="dita" scope="local"> Lägga till ett nytt fält för metataggar </a>. </p> <p>Om du vill skapa en fasett baserat på en fälttabell använder du det anpassade ansiktsnamnet och anger fälttabellens namn. </p> </td> 
+      <td colname="col2"> <p>Identifierar namnet på en viss aspekt. </p> <p> <p>Obs!  Du kan bara ha en fasett baserad på befintliga användardefinierade metadata. Om det inte finns några tillgängliga ansikten i listrutan måste du först definiera några metadata. </p> </p> <p>Se <a href="../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5" type="task" format="dita" scope="local"> Lägga till ett nytt metataggsfält </a>. </p> <p>Om du vill skapa en fasett baserat på en fälttabell använder du det anpassade ansiktsnamnet och anger fälttabellens namn. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Visningsetikett </p> </td> 
-      <td colname="col2"> <p>Ställer in etiketten för en aspekt som sedan kan användas i ett vägbeskrivande dokument i stället för ett metadatafältnamn (med taggen <span class="codeph"> &lt;guided-traccrumb-label&gt; </span> ) eller ett fristående värde (med taggen <span class="codeph"> &lt;guided-facet-display-name&gt; </span> ). </p> </td> 
+      <td colname="col2"> <p>Ställer in etiketten för en aspekt som sedan kan användas i ett vägbeskrivande dokument i stället för ett metadatafältnamn (med taggen <span class="codeph"> &lt;guided-facet-label&gt; </span>) eller ett fristående värde (med taggen <span class="codeph"> &lt;guided-facet-display-name&gt; </span>). </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Beteende </p> </td> 
       <td colname="col2"> <p>Anger en av tre fasetbeteenden. </p> <p> 
       <ul id="ul_67C19E1C16224B9990F04A0D05BD3D05"> 
-      <li id="li_6B232C11A61840B68CA59E1F593405A0"> <span class="uicontrol"> Normal </span> <p>När en kund klickar på en aspekt vars beteende är inställt på <span class="uicontrol"> Normal </span>fördjupas sökresultatet för objektet. Därifrån kan kunden förfina och begränsa antalet sökresultat ytterligare. </p> </li> 
-      <li id="li_7D7C43A7F7AB4B84A9B0FEF34627605A"> <span class="uicontrol"> Kategori </span> <p>Kategorifaktorer fungerar som navigeringselement. Dessa faktorer är högnivåfaktorer som kunderna vanligen går igenom innan de avslöjar ansikten med attributalternativ. Kategorifasetterna är inte smala när andra aspekter är markerade och fortfarande öppna. Om du klickar på ett annat värde i en kategoriaspekt avmarkeras alla andra aspekter på sidan förutom den kategorifasettens överordnade. </p> </li> 
-      <li id="li_01255993D71F40DBA8870AA3FEA7D304"> <span class="uicontrol"> Flera val för kategori </span> <p>-faktorer är kategorifaktorer som stöder markering av flera objekt från den faktor där objekten är"ORed" tillsammans. </p> </li> 
+      <li id="li_6B232C11A61840B68CA59E1F593405A0"> <span class="uicontrol"> Normal  </span> <p>När en kund klickar på en fasett vars beteende är inställt på <span class="uicontrol"> Normal </span>, fördjupas sökresultaten för det objektet. Därifrån kan kunden förfina och begränsa antalet sökresultat ytterligare. </p> </li> 
+      <li id="li_7D7C43A7F7AB4B84A9B0FEF34627605A"> <span class="uicontrol"> Kategori  </span> <p>Kategorifaktorer fungerar som navigeringselement. Dessa faktorer är högnivåfaktorer som kunderna vanligen går igenom innan de avslöjar ansikten med attributalternativ. Kategorifasetterna är inte smala när andra aspekter är markerade och fortfarande öppna. Om du klickar på ett annat värde i en kategoriaspekt avmarkeras alla andra aspekter på sidan förutom den kategorifasettens överordnade. </p> </li> 
+      <li id="li_01255993D71F40DBA8870AA3FEA7D304"> <span class="uicontrol"> Flera val för kategori  </span> <p>-faktorer är kategorifaktorer som stöder markering av flera objekt från den faktor där objekten är"ORed" tillsammans. </p> </li> 
       </ul> 
       <ul id="ul_683F6D3FC8524E65AF303453ADDB6001"> 
-        <li id="li_81F504D1D1294666BBBC5EA43B34B712"> <span class="uicontrol"> Fäst </span> <p>När en kund klickar på en fasett vars beteende är inställt på <span class="uicontrol"> Sticky </span>förblir den fasett som har det valda alternativet öppen under detaljgranskningen. Det här alternativet är användbart när du vill låta en kund ändra ett tidigare val. </p> </li> 
+        <li id="li_81F504D1D1294666BBBC5EA43B34B712"> <span class="uicontrol"> Fäst  </span> <p>När en kund klickar på en fasett vars beteende är inställt på <span class="uicontrol"> Sticky </span>, är ansiktet med det valda alternativet öppet under detaljgranskningen. Det här alternativet är användbart när du vill låta en kund ändra ett tidigare val. </p> </li> 
       </ul> 
       <ul id="ul_8E871D63B09445268C600C8ABC20F6A4"> 
-        <li id="li_F88AC5528B0C4751BC4CFE7FA9525857"> <span class="uicontrol"> Flera val </span> <p>Tillåter markering av flera objekt från en fasett, där objekten i ansiktet är"ORed" tillsammans. Det här alternativet är användbart för en fasett som kan visa ett mindre attribut, t.ex. färger, och du vill att kunden ska kunna skapa en fråga som låter dem"visa skor i min storlek som är röda eller svarta". </p> </li> 
+        <li id="li_F88AC5528B0C4751BC4CFE7FA9525857"> <span class="uicontrol"> Flera val  </span> <p>Tillåter markering av flera objekt från en fasett, där objekten i ansiktet är"ORed" tillsammans. Det här alternativet är användbart för en fasett som kan visa ett mindre attribut, t.ex. färger, och du vill att kunden ska kunna skapa en fråga där de kan"visa skor i min storlek som är röda eller svarta". </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Visa alltid </p> </td> 
-      <td colname="col2"> <p>För en normal eller klibbig aspekt ser man till att ansiktet alltid är synligt för kunden. </p> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Normal </span>, <span class="uicontrol"> Kategori </span>eller <span class="uicontrol"> Fäst </span> i <span class="uicontrol"> listrutan </span> Beteende. </p> </td> 
+      <td colname="col2"> <p>För en normal eller klibbig aspekt ser man till att ansiktet alltid är synligt för kunden. </p> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Normal </span>, <span class="uicontrol"> Kategori </span> eller <span class="uicontrol"> Sticky </span> i listrutan <span class="uicontrol"> Beteende </span>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Fasets föräldrar </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Kategori </span> eller <span class="uicontrol"> Flerval av kategori </span> i <span class="uicontrol"> listrutan </span> Beteende. </p> <p>Anger vad kategorifaktets överordnade är. De markerade objekten i kategorierna överordnade aspekter används för att begränsa de alternativ som är tillgängliga i den aktuella kategoriaspekten. Överordnade aspekter avmarkeras inte när en kund interagerar med kategoriaspekten. Du kan ange flera kommaavgränsade överordnade. </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Kategori </span> eller <span class="uicontrol"> Kategori flerval </span> i listrutan <span class="uicontrol"> Beteende </span>. </p> <p>Anger vad kategorifaktets överordnade är. De markerade objekten i kategorierna överordnade aspekter används för att begränsa de alternativ som är tillgängliga i den aktuella kategoriaspekten. Överordnade aspekter avmarkeras inte när en kund interagerar med kategoriaspekten. Du kan ange flera kommaavgränsade överordnade. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Fästigt djup </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Fäst </span> i <span class="uicontrol"> listrutan </span> Beteende. </p> <p>Anger antalet alternativ som ska förbli öppna under detaljnivån. </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Sticky </span> i listrutan <span class="uicontrol"> Behavior </span>. </p> <p>Anger antalet alternativ som ska förbli öppna under detaljnivån. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Tröskelvärde för längd </p> </td> 
@@ -257,15 +260,15 @@ Se [Lägga till fältinmatningsdefinitioner](../c-about-settings-menu/c-about-me
       <td colname="col1"> <p>Sortera </p> </td> 
       <td colname="col2"> <p>Anger hur du vill att ansikten ska sorteras på webbplatsen. Du kan sortera ansiktena efter följande. Om du vill kan du kombinera upp till fem sorteringar. </p> 
       <ul id="ul_12987F4DC7B34C63ABC906B59688A174"> 
-      <li id="li_3206C96013DF431D90119F594D93D85D"> <span class="uicontrol"> alpha </span> <p>Sorterar värdena i bokstavsordning (0-9, A-Z), inklusive skiljetecken. </p> </li> 
-      <li id="li_304E4A518FBE48D18D9E9EA7339A3481"> <span class="uicontrol"> alpha (endast alfanumerisk) </span> <p>Sorterar värdena i alfabetisk ordning (0-9, A-Z) och ignorerar skiljetecken. </p> </li> 
-      <li id="li_CADB888CC514455F9CA379C8EEE490AA"> <span class="uicontrol"> alfa (ej skiftlägeskänsligt) </span> <p>Sorterar värdena i alfabetisk ordning (0-9, A-Z), och ignorerar skiftläget för alfabetiska tecken samt inklusive skiljetecken. </p> </li> 
-      <li id="li_F61122E79AB5413792DA31F8AB1414BD"> <span class="uicontrol"> alfa (ej skiftlägeskänsligt, endast alfanumeriskt) </span> <p>Sorterar värdena i bokstavsordning (0-9, A-Z), ignorerar skiftläget för alfabetiska tecken och ignorerar skiljetecken. </p> </li> 
-      <li id="li_F50CC298ABF046D0A39D5AE5B1261823"> <span class="uicontrol"> antal </span> <p>Sorterar efter antal resultat som matchar varje facet-värde från störst till minst. </p> </li> 
-      <li id="li_32B6AF39E9534762B39B15181DC5AD01"> <span class="uicontrol"> numeric </span> <p>Sorterar värdena numeriskt. När du sorterar tal är det här alternativet överlägset en alfasortering eftersom 10 visas före 2 om du använder en alfabortering. </p> </li> 
-      <li id="li_CF8E76A7B1184E0C8DCC11B53E31A1DC"> <span class="uicontrol"> dela </span> <p>Delar upp listan i två separata listor efter tröskelvärde för antal. Fasettvärden som ligger över tröskelvärdet flyttas högst upp. Fasettvärden med antal under tröskelvärdet flyttas längst ned. Du måste ange ett delningströskelvärde om du vill att värden för ett visst intervall alltid ska vara längst upp. </p> </li> 
-      <li id="li_4AB8276577384B1099CBA895898205AD"> <span class="uicontrol"> break </span> <p>Tvingar fram vissa värden längst upp eller längst ned i listan. Du kanske alltid vill att termen "Annat" ska visas längst ned i listan. Värden för överkant eller underkant krävs när du använder en radbrytning för att identifiera explicita värden som ska vara högst upp eller längst ned i sorteringen. </p> </li> 
-      <li id="li_227E96CFED2044FCA2F10B6913B03CFB"> <span class="uicontrol"> beställd </span> <p>Fasettvärdena ska alltid vara i fast ordning (en lista med avgränsningsavgränsade värden som definieras i <span class="uicontrol"> alternativet </span> Ordning som beskrivs nedan). </p> </li> 
+      <li id="li_3206C96013DF431D90119F594D93D85D"> <span class="uicontrol"> alpha  </span> <p>Sorterar värdena i bokstavsordning (0-9, A-Z), inklusive skiljetecken. </p> </li> 
+      <li id="li_304E4A518FBE48D18D9E9EA7339A3481"> <span class="uicontrol"> alpha (endast alfanumerisk)  </span> <p>Sorterar värdena i alfabetisk ordning (0-9, A-Z) och ignorerar skiljetecken. </p> </li> 
+      <li id="li_CADB888CC514455F9CA379C8EEE490AA"> <span class="uicontrol"> alfa (ej skiftlägeskänsligt)  </span> <p>Sorterar värdena i alfabetisk ordning (0-9, A-Z), och ignorerar skiftläget för alfabetiska tecken samt inklusive skiljetecken. </p> </li> 
+      <li id="li_F61122E79AB5413792DA31F8AB1414BD"> <span class="uicontrol"> alfa (ej skiftlägeskänsligt, endast alfanumeriskt)  </span> <p>Sorterar värdena i bokstavsordning (0-9, A-Z), ignorerar skiftläget för alfabetiska tecken och ignorerar skiljetecken. </p> </li> 
+      <li id="li_F50CC298ABF046D0A39D5AE5B1261823"> <span class="uicontrol"> antal  </span> <p>Sorterar efter antal resultat som matchar varje facet-värde från störst till minst. </p> </li> 
+      <li id="li_32B6AF39E9534762B39B15181DC5AD01"> <span class="uicontrol"> numeric  </span> <p>Sorterar värdena numeriskt. När du sorterar tal är det här alternativet överlägset en alfasortering eftersom 10 visas före 2 om du använder en alfabortering. </p> </li> 
+      <li id="li_CF8E76A7B1184E0C8DCC11B53E31A1DC"> <span class="uicontrol"> dela  </span> <p>Delar upp listan i två separata listor efter tröskelvärde för antal. Fasettvärden som ligger över tröskelvärdet flyttas högst upp. Fasettvärden med antal under tröskelvärdet flyttas längst ned. Du måste ange ett delningströskelvärde om du vill att värden för ett visst intervall alltid ska vara längst upp. </p> </li> 
+      <li id="li_4AB8276577384B1099CBA895898205AD"> <span class="uicontrol"> break  </span> <p>Tvingar fram vissa värden längst upp eller längst ned i listan. Du kanske alltid vill att termen "Annat" ska visas längst ned i listan. Värden för översta eller nedersta är obligatoriska när du använder en radbrytning för att identifiera explicita värden som ska vara högst upp eller längst ned i sorteringen. </p> </li> 
+      <li id="li_227E96CFED2044FCA2F10B6913B03CFB"> <span class="uicontrol"> beställd  </span> <p>Fasettvärdena ska alltid vara i fast ordning (en lista med avgränsningsavgränsade värden som definieras i alternativet <span class="uicontrol"> Order </span> som beskrivs nedan). </p> </li> 
       </ul> </td> 
       </tr> 
       <tr> 
@@ -274,19 +277,19 @@ Se [Lägga till fältinmatningsdefinitioner](../c-about-settings-menu/c-about-me
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ansiktets spårnamn </p> </td> 
-      <td colname="col2"> <p>Namnet på faktablad om du bestämmer dig för att sortera dina ansikten i bokstavsordning, efter antal eller med en anpassad metod. </p> <p>Se <a href="../c-about-design-menu/c-about-facet-rails.md#concept_1FDC8BCDFFC84A0889DA670F63D5F6DB" format="dita" scope="local"> Om Facet Rail </a>. </p> </td> 
+      <td colname="col2"> <p>Namnet på faktablad om du bestämmer dig för att sortera dina ansikten i bokstavsordning, efter antal eller med en anpassad metod. </p> <p>Se <a href="../c-about-design-menu/c-about-facet-rails.md#concept_1FDC8BCDFFC84A0889DA670F63D5F6DB" format="dita" scope="local"> Om Fasett Rail </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Order </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Ordnad </span> i <span class="uicontrol"> listrutan </span> Sortera. </p> <p>Här kan du definiera en avgränsad lista med värden som anger den ordning som ska användas. </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Ordnad </span> i listrutan <span class="uicontrol"> Sortera </span>. </p> <p>Här kan du definiera en avgränsad lista med värden som anger den ordning som ska användas. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Lägg till extras </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Ordnad </span> i <span class="uicontrol"> listrutan </span> Sortera. </p> <p>Om värdena inte finns i den ordnade listan läggs värdena till i slutet. </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Ordnad </span> i listrutan <span class="uicontrol"> Sortera </span>. </p> <p>Om värdena inte finns i den ordnade listan läggs värdena till i slutet. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Visa fantomskuggor </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Ordnad </span> i <span class="uicontrol"> listrutan </span> Sortera. </p> <p>Om de värden som anges av den ordnade listan saknas, flaggar det här alternativet varje saknat objekt i ansiktet som "spöke" så att objekten visas på olika sätt. </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Ordnad </span> i listrutan <span class="uicontrol"> Sortera </span>. </p> <p>Om de värden som anges av den ordnade listan saknas, flaggar det här alternativet varje saknat objekt i ansiktet som "spöke" så att objekten visas på olika sätt. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Kapslad yta </p> </td> 
@@ -294,37 +297,37 @@ Se [Lägga till fältinmatningsdefinitioner](../c-about-settings-menu/c-about-me
       </tr> 
       <tr> 
       <td colname="col1"> <p>Namn på kapslad överordnad </p> </td> 
-      <td colname="col2"> <p>Den här listrutan är bara tillgänglig om du har valt <span class="uicontrol"> Kapslad yta </span>. </p> <p>Här kan du välja vilket fält som representerar den överordnade kategorin. Det här fältet används vid sökningen i matchande överordnade kategorier. </p> </td> 
+      <td colname="col2"> <p>Den här listrutan är bara tillgänglig om du har valt <span class="uicontrol"> Kapslad begränsning </span>. </p> <p>Här kan du välja vilket fält som representerar den överordnade kategorin. Det här fältet används vid sökningen i matchande överordnade kategorier. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Kapslat underordnat namn </p> </td> 
-      <td colname="col2"> <p>Den här listrutan är bara tillgänglig om du har valt <span class="uicontrol"> Kapslad yta </span>. </p> <p>Här kan du välja vilket fält som representerar den underordnade kategorin. Det här fältet används vid sökningen i matchande underordnade kategorier. </p> </td> 
+      <td colname="col2"> <p>Den här listrutan är bara tillgänglig om du har valt <span class="uicontrol"> Kapslad begränsning </span>. </p> <p>Här kan du välja vilket fält som representerar den underordnade kategorin. Det här fältet används vid sökningen i matchande underordnade kategorier. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Avgränsare för kapslade ytor </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Kapslad yta </span>. </p> <p>Tecknet som anges här används för att tolka de överordnade kategorierna och underkategorierna från sina data. </p> <p>Om ':' används som avgränsare och det överordnade är 'skor' och det underordnade är 'boots', förväntar det sig att data formateras som 'skor:boots'. </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Kapslad begränsning </span>. </p> <p>Tecknet som anges här används för att tolka de överordnade kategorierna och underkategorierna från sina data. </p> <p>Om ':' används som avgränsare och det överordnade är 'skor' och det underordnade är 'boots', förväntar det sig att data formateras som 'skor:boots'. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Delat tröskelvärde </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Dela </span> i <span class="uicontrol"> listrutan </span> Sortera. </p> <p>När du använder en delad sortering definierar delningströskeln antalet vid vilket aspekten ska delas upp i två separata listor. Värden med tal som är större än eller lika med tröskelvärdet behålls överst medan värden under tröskelvärdet flyttas längst ned. </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Dela </span> i listrutan <span class="uicontrol"> Sortera </span>. </p> <p>När du använder en delad sortering definierar delningströskeln antalet vid vilket aspekten ska delas upp i två separata listor. Värden med tal som är större än eller lika med tröskelvärdet behålls överst medan värden under tröskelvärdet flyttas längst ned. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Övre värden </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Bryt </span> i <span class="uicontrol"> listrutan </span> Sortera. </p> <p>När du använder en radbrytning placeras den här avgränsade listan med värden alltid överst i listan. Användning av reguljära uttryck är tillåten men ska vara inom klammerparenteser eller klammerparenteser, till exempel: {^New.*?},{^Mycket nytt.*} </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Bryt </span> i listrutan <span class="uicontrol"> Sortera </span>. </p> <p>När du använder en radbrytning placeras den här avgränsade listan med värden alltid överst i listan. Användning av reguljära uttryck är tillåten men ska vara inom klammerparenteser eller klammerparenteser, till exempel: {^New.*?},{^Mycket nytt.*} </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nedre värden </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Bryt </span> i <span class="uicontrol"> listrutan </span> Sortera. </p> <p>När du använder en brytning-sortering placeras den här avgränsade listan med värden alltid längst ned i listan. Användning av reguljära uttryck är tillåten men ska vara inom klammerparenteser eller klammerparenteser, som i följande exempel: {^Gammal.*?},{^Mycket gammal.*} </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Bryt </span> i listrutan <span class="uicontrol"> Sortera </span>. </p> <p>När du använder en brytning-sortering placeras den här avgränsade listan med värden alltid längst ned i listan. Användning av reguljära uttryck är tillåten men ska vara inom klammerparenteser eller klammerparenteser, som i följande exempel: {^Gammal.*?},{^Mycket gammal.*} </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
 1. Klicka på **[!UICONTROL Add]**.
-1. (Valfritt) Gör något av följande på [!DNL Facets] sidan:
+1. (Valfritt) Gör något av följande på sidan [!DNL Facets]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -367,23 +370,23 @@ Tänk på följande när du skapar en kapslad aspekt:
 
 Lägg till ett nytt metataggsfält som är dedikerat till lagringsdatum för den kapslade aspekten. Det kan vara ett fält med flera värden eller ett fält med ett värde.
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]**.
-1. På [!DNL Definitions] sidan klickar du på **[!UICONTROL Add New Field]**.
-1. Ange önskade alternativ på [!DNL Add Field] sidan.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]** på produktmenyn.
+1. Klicka på **[!UICONTROL Add New Field]** på sidan [!DNL Definitions].
+1. Ange önskade alternativ på sidan [!DNL Add Field].
 
-   Se [Lägga till ett nytt fält](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)för metataggar.
+   Se [Lägga till ett nytt metataggsfält](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 1. Klicka på **[!UICONTROL Add]**.
 1. (Valfritt) Återskapa indexet för den mellanlagrade platsen om du vill förhandsgranska resultatet.
 
    Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
-   De återstående åtgärderna refererar till det här metataggsfältet som **n1**.
+   De återstående aktiviteterna refererar till det här metataggsfältet som **n1**.
 
 ## Aktivitet 2 - Lägg till ett filtreringsskript för att generera förformaterade data {#task_2DFED8BCB87B4067A6CE280945D7CAF4}
 
 1. Lägg till ett filterskript för att kombinera de ursprungliga aspekterna i följande format: `<parent_value><nested_delimiter><child_value>`.
 
-   Se [Lägga till ett filterskript](../c-about-settings-menu/c-about-filtering-menu.md#task_0AB84FD1133F47F9AA069A79BEA13A22).
+   Se [Lägga till ett filtreringsskript](../c-about-settings-menu/c-about-filtering-menu.md#task_0AB84FD1133F47F9AA069A79BEA13A22).
 
    Följande är exempel på värden för metataggsfältet n1, som använder formatet ovan
 
@@ -501,45 +504,46 @@ Lägg till ett nytt metataggsfält som är dedikerat till lagringsdatum för den
 
 ## Aktivitet 3 - Lägg till en ny aspekt {#task_3C11A4159FC44B9494D48594941AF8CF}
 
-1. På produktmenyn klickar du på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Facets]**.
-1. På [!DNL Facets] sidan klickar du på **[!UICONTROL Add New Facet]**.
-1. Ange följande alternativ på [!DNL Add Facet] sidan:
+1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Facets]** på produktmenyn.
+1. Klicka på **[!UICONTROL Add New Facet]** på sidan [!DNL Facets].
+1. Ange följande alternativ på sidan [!DNL Add Facet]:
 
-   * I den [!DNL Facet Name] nedrullningsbara listan markerar du metataggsfältet som du definierade i Aktivitet 1. Om du använder sökfältstabeller väljer du **[!UICONTROL custom]** i listrutan och anger sedan det anpassade namnet på ansiktet.
+   * I listrutan [!DNL Facet Name] väljer du metataggsfältet som du definierade i Aktivitet 1. Om du använder sökfältstabeller väljer du **[!UICONTROL custom]** i listrutan och anger sedan det anpassade namnet på ansiktet.
 
    * Markera **[!UICONTROL Nested Facet]** om du vill aktivera kapslade ansikten.
-   * I listrutorna [!DNL Nested Parent Name] och [!DNL Nested Child Name] väljer du de metataggfält som du kan använda. Om du använder sökfältstabeller markerar du **[!UICONTROL custom]** och anger det anpassade namnet på ansiktet.
+   * I listrutorna [!DNL Nested Parent Name] och [!DNL Nested Child Name] väljer du de metataggsfält som du kan använda. Om du använder sökfältstabeller väljer du **[!UICONTROL custom]** och anger det anpassade namnet på ansiktet.
 
-   * I [!DNL Nested Facet Delimiter] fältet anger du den avgränsare som du vill använda, till exempel ett &quot;:&quot; (kolon). Blanda inte ihop detta med avgränsaren för flera värden. Båda avgränsarna ska vara olika.
+   * I fältet [!DNL Nested Facet Delimiter] anger du den avgränsare som du vill använda, till exempel ett &quot;:&quot; (kolon). Blanda inte ihop detta med avgränsaren för flera värden. Båda avgränsarna ska vara olika.
    * Om du anger ansiktets beteende **[!UICONTROL Category]** kan du ange ansiktets överordnade (blanda inte ihop överordnade med kapslade facet-överordnade). I allmänhet ska du aldrig använda namnet på en annan kapslad aspekt som överordnad kategori. Använd i stället de enskilda ansiktena som utgör den kapslade aspekten.
    * Ange eventuella andra ansiktsalternativ.
+
    Se [Lägga till en ny aspekt](../c-about-design-menu/c-about-facets.md#task_FC07BFFA62CA4B718D6CBF4F2855C89B).
 1. Klicka på **[!UICONTROL Add]**.
 
 ## Aktivitet 4 - Redigera sökning med guidade sökningar {#task_E50EFD7BBD0F45729C15759EA4F548D8}
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Searching]** > **[!UICONTROL Searches]**.
-1. På [!DNL Searches] sidorna klickar du **[!UICONTROL Edit]** på det söktypsnamn som du vill uppdatera.
-1. Behovsfältet n1, t1 och t2 `sp_field_table` behövs.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Searching]** > **[!UICONTROL Searches]** på produktmenyn.
+1. På [!DNL Searches]-sidorna klickar du på **[!UICONTROL Edit]** på det söktypsnamn som du vill uppdatera.
+1. `sp_field_table` behöver fält n1, t1 och t2.
 
-   Om fälttabeller används bör du redigera `sp_field_table` parametern. Du kan även göra detta någon annanstans genom att använda renderingsregler eller regler för försökning.
+   Om fälttabeller används bör du redigera parametern `sp_field_table`. Du kan även göra detta någon annanstans genom att använda renderingsregler eller regler för försökning.
 
-   Se [Lägga till en frågerensningsregel](../c-about-rules-menu/c-about-query-cleaning-rules.md#task_47F43988D3D9485F8AE1DFDA7E00BF54).
+   Se [Lägga till en frågerengöringsregel](../c-about-rules-menu/c-about-query-cleaning-rules.md#task_47F43988D3D9485F8AE1DFDA7E00BF54).
 
-   Se [Lägga till en ny regel](../c-about-rules-menu/c-about-pre-search-rules.md#task_182B95918462490D8BDA7F16A81CAC11)för försökning.
+   Se [Lägga till en ny regel för försökning](../c-about-rules-menu/c-about-pre-search-rules.md#task_182B95918462490D8BDA7F16A81CAC11).
 1. Klicka på **[!UICONTROL Save Changes]**.
 
 ## Aktivitet 5 - Skapa transportmallen {#task_C1FEDEF11D2549DEB1A9C09BFBA64381}
 
 1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Templates]** på produktmenyn.
-1. Klicka på [!DNL Templates] sidorna **[!UICONTROL Add New Template]**.
-1. Ange namnet på transportmallfilen i [!DNL Add Template] dialogrutan.
+1. Klicka på **[!UICONTROL Add New Template]** på [!DNL Templates]-sidorna.
+1. Ange namnet på transportmallfilen i dialogrutan [!DNL Add Template].
 1. I listrutan [!DNL New Template Type] väljer du **[!UICONTROL Transport]**.
 1. Klicka på **[!UICONTROL Add]**.
-1. På [!DNL Templates] sidan klickar du på namnet på transportmallsfilen som du just lade till.
-1. Inkludera de data som kommer från fältet n1 på [!DNL Template Editor] sidan för transportmallen. Se följande exempel.
+1. På sidan [!DNL Templates] klickar du på namnet på transportmallsfilen som du just lade till.
+1. På sidan [!DNL Template Editor] för transportmallen tar du med data som kommer från fältet n1. Se följande exempel.
 
-   **XML-exempel på returnering av kapslade** fasettdata XML-exemplet måste ange vilket tecken som ska användas som avgränsare mellan fasettvärden. I det här fallet är det ett rör (|).
+   **XML-exempel på returnering av kapslade** fasettdataXML-exemplet måste ange vilket tecken som ska användas som avgränsare mellan fasettvärden. I det här fallet är det ett rör (|).
 
    ```
    <facet name="n1"> 
@@ -561,20 +565,20 @@ Lägg till ett nytt metataggsfält som är dedikerat till lagringsdatum för den
 ## Aktivitet 6 - Skapa presentationsmallen {#task_4B2ABB37B9CD4F3F8AF8E6874227A995}
 
 1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Templates]** på produktmenyn.
-1. Klicka på [!DNL Templates] sidorna **[!UICONTROL Add New Template]**.
-1. I [!DNL Add Template] dialogrutan anger du namnet på presentationsmallfilen.
+1. Klicka på **[!UICONTROL Add New Template]** på [!DNL Templates]-sidorna.
+1. Ange namnet på presentationsmallfilen i dialogrutan [!DNL Add Template].
 1. I listrutan [!DNL New Template Type] väljer du **[!UICONTROL Presentation]**.
 1. Klicka på **[!UICONTROL Add]**.
-1. På [!DNL Templates] sidan klickar du på namnet på presentationsmallfilen som du just lade till.
-1. Lägg till HTML-kod som är integrerad med dina förväntade utdata på [!DNL Template Editor] sidan för presentationsmallen.
+1. På sidan [!DNL Templates] klickar du på namnet på presentationsmallfilen som du just lade till.
+1. Lägg till HTML-kod som är integrerad med dina förväntade utdata på [!DNL Template Editor]-sidan för presentationsmallen.
 
    Du kan använda följande taggar för att visa underordnade taggar:
 
-* **Om underordnade taggar finns**`<guided-if-facet-value-has-children><guided-else-facet-value-selected></guided-if-facet-value-has-children>`
+* **Om underordnade taggar finns** `<guided-if-facet-value-has-children><guided-else-facet-value-selected></guided-if-facet-value-has-children>`
 
-* **Underordnade värdetaggar**`<guided-facet-value-children></guided-facet-value-children>`
+* **Underordnade värdetaggar** `<guided-facet-value-children></guided-facet-value-children>`
 
-   Taggar för underordnat värde fungerar inte som vanliga guidade-facet-value-taggar. taggarna are wrapper tvingar alla omgivande `<guided-facet-value>` taggar att iterera genom underordnade ansiktsvärden i stället för överordnade ansiktsvärden. På samma sätt följer andra guidade ansiktstaggar, som taggarna undo, samma sak. De används bäst inom `<guided-if-facet-value-has-children>` taggar.
+   Taggar för underordnat värde fungerar inte som vanliga guidade-facet-value-taggar. De är wrapper-taggar som tvingar alla inkluderande `<guided-facet-value>`-taggar att iterera genom underordnade ansiktsvärden i stället för överordnade ansiktsvärden. På samma sätt följer andra guidade ansiktstaggar, som taggarna undo, samma sak. De används bäst i `<guided-if-facet-value-has-children>`-taggar.
 
    Följande är ett exempel på en presentationsmall med HTML-kod.
 
@@ -636,9 +640,9 @@ Lägg till ett nytt metataggsfält som är dedikerat till lagringsdatum för den
 
 Om du använder vägbeskrivningar i sökningen måste du ange beteendet **Gå till**.
 
-1. På produktmenyn klickar du på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Breadcrumbs]**.
-1. På [!DNL Breadcrumbs] sidorna klickar du **[!UICONTROL Edit]** på det vägbeskrivande namn vars beteende du vill uppdatera.
-1. På [!DNL Edit Breadcrumb] sidan väljer du [!DNL Behavior] Gå till i **listrutan**.
+1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Breadcrumbs]** på produktmenyn.
+1. På [!DNL Breadcrumbs]-sidorna klickar du på **[!UICONTROL Edit]** på det vägbeskrivningsnamn vars beteende du vill uppdatera.
+1. På sidan [!DNL Edit Breadcrumb] väljer du **Gå till** i listrutan [!DNL Behavior].
 1. Klicka på **[!UICONTROL Save Changes]**.
 
 ## Redigera en faset {#task_457EDC49983F4F7781873703AF574DA5}
@@ -657,17 +661,17 @@ t_editing_a_facet.xml
 
 **Redigera en fasett**
 
-1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Facets.]**
-1. På [!DNL Facets] sidan klickar du **[!UICONTROL Edit]** längst till höger på ett ansiktsnamn.
-1. Ange önskade alternativ på [!DNL Edit Facet] sidan.
+1. På produktmenyn klickar du på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Facets.]**
+1. På sidan [!DNL Facets] klickar du på **[!UICONTROL Edit]** längst till höger om ett ansiktsnamn.
+1. Ange önskade alternativ på sidan [!DNL Edit Facet].
 
-   Se tabellen med alternativ under [Lägga till en ny aspekt](../c-about-design-menu/c-about-facets.md#task_FC07BFFA62CA4B718D6CBF4F2855C89B).
+   Se tabellen med alternativ under [Lägga till en ny faktor](../c-about-design-menu/c-about-facets.md#task_FC07BFFA62CA4B718D6CBF4F2855C89B).
 1. Klicka på **[!UICONTROL Save Changes]**.
-1. (Valfritt) På [!DNL Facets] sidan
+1. (Valfritt) På sidan [!DNL Facets],
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -677,7 +681,7 @@ t_editing_a_facet.xml
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Ta bort en fasett {#task_17756FD66BCC49629325B2217F821BDD}
+## Ta bort en aspekt {#task_17756FD66BCC49629325B2217F821BDD}
 
 Du kan ta bort alla ansikten som du har lagt till.
 
@@ -689,14 +693,14 @@ t_deleting_a_facet.xml
 
 **Ta bort en fasett**
 
-1. På produktmenyn klickar du på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Facets]**.
-1. På [!DNL Facets] sidan klickar du **[!UICONTROL Delete]** längst till höger på ett ansiktsnamn.
-1. Klicka på i [!DNL Confirmation] dialogrutan **[!UICONTROL OK]**.
+1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Facets]** på produktmenyn.
+1. På sidan [!DNL Facets] klickar du på **[!UICONTROL Delete]** längst till höger om ett ansiktsnamn.
+1. Klicka på **[!UICONTROL OK]** i dialogrutan [!DNL Confirmation].
 1. Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
