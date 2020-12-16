@@ -9,11 +9,14 @@ topic: Index,Site search and merchandising
 uuid: ded09e89-5a52-4e8c-a6f7-3e25b4191183
 translation-type: tm+mt
 source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+workflow-type: tm+mt
+source-wordcount: '775'
+ht-degree: 0%
 
 ---
 
 
-# Om Lodrät uppdatering{#about-vertical-update}
+# Om lodrät uppdatering{#about-vertical-update}
 
 Du kan använda Lodrät uppdatering för att snabbt uppdatera delar av indexet utan att behöva bearbeta stora mängder data.
 
@@ -29,15 +32,15 @@ Medan det nya lodräta indexet uppdaterar din aktiva webbplats kan kunderna fort
 
 >[!NOTE]
 >
->Den här funktionen är som standard inte aktiverad i [!DNL Adobe Search&Promote]. Kontakta teknisk support för att aktivera funktionen.
+>Den här funktionen är inte aktiverad i [!DNL Adobe Search&Promote] som standard. Kontakta teknisk support för att aktivera funktionen.
 
-Lodräta uppdateringar är särskilt avsedda att användas på e-handelskonton som använder IndexConnector för att leverera innehållet för sökindexet. [!DNL Adobe Search&Promote] Det typiska användningsfallet är ett fall där [!DNL Adobe Search&Promote] indexet representerar en sökbar produktkatalog och behovet finns att snabbt kunna uppdatera värden som ändras ofta, som lagerbehållning, tillgänglighet och/eller pris. En lodrät uppdatering liknar ett inkrementellt index, förutom att delar av varje dokument endast uppdateras, medan ett inkrementellt index ersätter hela dokument med nya versioner.
+Lodräta uppdateringar är särskilt avsedda att användas på e-handelskonton i [!DNL Adobe Search&Promote] som använder IndexConnector för att tillhandahålla innehållet för sökindexet. Det typiska användningsfallet är ett fall där indexet [!DNL Adobe Search&Promote] representerar en sökbar produktkatalog och behovet finns att snabbt kunna uppdatera värden som ändras ofta, till exempel lagerbehållning, tillgänglighet och/eller pris. En lodrät uppdatering liknar ett inkrementellt index, förutom att delar av varje dokument endast uppdateras, medan ett inkrementellt index ersätter hela dokument med nya versioner.
 
-Termen&quot;Lodrät uppdatering&quot; avser begreppet att ett [!DNL Adobe Search&Promote] index kan anges som en kolumntabell, där varje kolumn motsvarar en [!DNL Adobe Search&Promote] metadatafältdefinition och varje rad motsvarar ett dokument. Processen Lodrät uppdatering ersätter en eller flera kolumner utan att något av de andra kolumnernas innehåll behöver ändras.
+Termen&quot;Lodrät uppdatering&quot; avser begreppet att ett [!DNL Adobe Search&Promote]-index kan anges som en kolumntabell, där varje kolumn motsvarar en metadatafältdefinition för [!DNL Adobe Search&Promote] och varje rad motsvarar ett dokument. Processen Lodrät uppdatering ersätter en eller flera kolumner utan att något av de andra kolumnernas innehåll behöver ändras.
 
-När huvudkällan för innehåll, en IndexConnector-feed, innehåller alla nödvändiga dataelement som behövs för att skapa indexet, är den lodräta uppdateringsmatningen en delmängd av huvudmatningen, en som använder samma IndexConnector-schema för att definiera dataelementen, men som *bara* innehåller de dataobjekt som behöver uppdateras.
+Där huvudkällan för innehåll, en IndexConnector-feed, innehåller alla nödvändiga dataelement som behövs för att skapa indexet, är den lodräta uppdateringsmatningen en delmängd av huvudmatningen, en som använder samma IndexConnector-schema för att definiera dataelementen, men som bara innehåller ** de dataobjekt som behöver uppdateras.
 
-Som ett minimum måste elementet för den lodräta uppdateringen innehålla primärnyckeln (som identifieras med kryssrutan **Primärnyckel** i konfigurationen för IndexConnector) och minst ett dataelement som ska uppdateras.
+Som minimum måste flödet för lodrät uppdatering innehålla elementet&quot;primärnyckel&quot; (som identifieras med kryssrutan **primärnyckel** i konfigurationen för IndexConnector) och minst ett dataelement som ska uppdateras.
 
 En primär IndexConnector-feed kan till exempel se ut så här (men oftast med många fler dataobjekt):
 
@@ -62,7 +65,7 @@ En primär IndexConnector-feed kan till exempel se ut så här (men oftast med m
 </products>
 ```
 
-Ett krav är att man snabbt ska kunna uppdatera bara värdena `<price>` och `<inventory>` värdena, eftersom dessa värden snabbt kan ändras på kundens webbplats. En lodrät uppdateringsfeed kan då se ut så här:
+Ett krav är att snabbt kunna uppdatera endast `<price>`- och `<inventory>`-värdena, eftersom dessa värden kan ändras snabbt på kundens webbplats. En lodrät uppdateringsfeed kan då se ut så här:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -78,21 +81,21 @@ Ett krav är att man snabbt ska kunna uppdatera bara värdena `<price>` och `<in
 </products>
 ```
 
-Den här informationen lagras vanligtvis i en separat fil på kundens server och konfigurationsinställningen IndexConnector &quot;Vertical File Path&quot; pekar på den här filen. Den lodräta uppdateringsprocessen läser det nya innehållet och uppdaterar det befintliga [!DNL Adobe Search&Promote] indexet, bara värdena för `<price>` och `<inventory>`i det här fallet. Efterföljande sökningar returnerar det nya uppdaterade innehållet.
+Den här informationen lagras vanligtvis i en separat fil på kundens server och konfigurationsinställningen IndexConnector &quot;Vertical File Path&quot; pekar på den här filen. Den lodräta uppdateringsprocessen läser det nya innehållet och uppdaterar det befintliga [!DNL Adobe Search&Promote]-indexet, och uppdaterar bara värdena för `<price>` och `<inventory>`, i det här fallet. Efterföljande sökningar returnerar det nya uppdaterade innehållet.
 
 >[!NOTE]
-I det här exemplet måste `<price>` - och `<inventory>` metadatafälten ha definierats med alternativet **Lodrätt uppdateringsfält** markerat.
+I det här exemplet måste metadatafälten `<price>` och `<inventory>` ha definierats med alternativet **Lodrätt uppdateringsfält** markerat.
 
-Se även [Fjärrkontroll för indexering](../c-about-index-menu/c-about-remote-control-for-indexing.md#concept_C79B322190E84106A434E5C6D4A4118F) och [Lägga till ett nytt fält](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)för metataggar.
+Se även [Om fjärrstyrning för indexering](../c-about-index-menu/c-about-remote-control-for-indexing.md#concept_C79B322190E84106A434E5C6D4A4118F) och [Lägga till ett nytt metataggsfält](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 
-## Konfigurera en lodrät uppdatering av en mellanlagrad webbplats {#task_46A367B0786C4C90BFFA5D3F95FD86C0}
+## Konfigurera en lodrät uppdatering för en mellanlagrad webbplats {#task_46A367B0786C4C90BFFA5D3F95FD86C0}
 
 Du kan konfigurera vilka indexanslutningskällor du vill ta med i den lodräta uppdateringen genom att ange URL:er.
 
 **Konfigurera en lodrät uppdatering av en mellanlagrad webbplats**
 
-1. På produktmenyn klickar du på **[!UICONTROL Index]** > **[!UICONTROL Vertical Update]** > **[!UICONTROL Configuration]**.
-1. På **[!UICONTROL Vertical Update Configuration]** sidan anger du URL-adresserna till sidorna som du vill indexera i fältet Uppdatera URL-adresser.
+1. Klicka på **[!UICONTROL Index]** > **[!UICONTROL Vertical Update]** > **[!UICONTROL Configuration]** på produktmenyn.
+1. På sidan **[!UICONTROL Vertical Update Configuration]** anger du URL-adresserna för sidorna som du vill indexera i fältet Uppdatera URL-adresser.
 
    Sökroboten uppdaterar bara de dokument som identifieras i de angivna indexanslutningskällorna.
 
@@ -102,9 +105,9 @@ Du kan konfigurera vilka indexanslutningskällor du vill ta med i den lodräta u
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -130,7 +133,7 @@ Du kan inte exportera lodräta uppdateringsloggfiler och inte heller spara dem. 
 
 1. Gör något av följande på loggsidan, längst upp eller längst ned:
 
-   * Använd navigeringsalternativen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** eller **[!UICONTROL Go to line]** för att förflytta dig i loggen.
+   * Använd navigeringsalternativen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** eller **[!UICONTROL Go to line]** för att gå igenom loggen.
 
    * Använd visningsalternativen **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** eller **[!UICONTROL Show]** för att förfina det du ser.
 
