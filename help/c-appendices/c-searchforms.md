@@ -8,6 +8,9 @@ topic: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
 source-git-commit: 4542702e1d2ba04c70d9f6b24bfa32e1f1c6acb5
+workflow-type: tm+mt
+source-wordcount: '2921'
+ht-degree: 0%
 
 ---
 
@@ -86,7 +89,7 @@ Kryssrutans sökformulär genereras med följande HTML-kod:
 
 ## Sökresultat {#section_BBDD5B44E2B349BC88D937F44583D350}
 
-Sökmallstaggen `<search-input-collections>` genererar samlingslistrutans HTML-kod i sökresultaten och väljer automatiskt den samling som har angetts i sökningen. Om du i stället vill generera kryssrutor använder du taggen `<search-input>` i stället för `<input>` taggen enligt följande:
+Sökmallstaggen `<search-input-collections>` genererar samlingslistrutans HTML-kod i sökresultaten och väljer automatiskt den samling som har angetts i sökningen. Om du vill generera kryssrutor i stället använder du taggen `<search-input>` i stället för taggen `<input>` enligt följande:
 
 ```
 <search-input type="checkbox" name="sp_k" value="">All of Adobe<br> 
@@ -96,7 +99,7 @@ Sökmallstaggen `<search-input-collections>` genererar samlingslistrutans HTML-k
 <search-input type="checkbox" name="sp_k" value="About Adobe">About Adobe<br>
 ```
 
-Taggen `<search-input>` genererar en `<input>` -tagg och innehåller `checked` attributet om samlingen angavs i sökningen.
+Taggen `<search-input>` returnerar taggen `<input>` och innehåller attributet `checked` om samlingen angavs i sökningen.
 
 ## Använda ramar med formulär {#reference_82CDDDA1E37042E4849EBF7EA05407C5}
 
@@ -115,7 +118,7 @@ Om ramar används på webbplatsen kan du ange en målram för sökresultatlänka
 
 Om du inte använder ramar på webbplatsen bör du troligtvis inte ändra standardmålnamnet.
 
-Om du skapar en anpassad sökresultatmall för webbplatsen kan du åsidosätta den angivna inställningen genom att använda `target` attributet för `<search-link>` -taggen.
+Om du skapar en anpassad sökresultatmall för webbplatsen kan du åsidosätta den angivna inställningen genom att använda attributet `target` för taggen `<search-link>`.
 
 Så här konfigurerar du ramuppsättningar:
 
@@ -129,36 +132,36 @@ Så här konfigurerar du ramuppsättningar:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>1 </p> </td> 
+   <td colname="col1"> <p>3 </p> </td> 
    <td colname="col02"> <p>Lägg till formuläret i önskad ram på webbsidan. </p> </td> 
-   <td colname="col2"> <p> <a href="#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> Lägger till sökformulärkoden i en ram i ... </a> </p> </td> 
+   <td colname="col2"> <p> <a href="#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> Lägger till sökformulärkoden i en ram i ...  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col02"> <p>Ange målramen för sökresultatsidan. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> Ange målramen för sökresultatsidan </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_532CACB90888467093D95EACB64FDFA1" type="section" format="dita"> Ange målramen för sökresultatsidan  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
    <td colname="col02"> <p>Ange målet för länkar som skapats från sökresultatsidan. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_523248C5AC424D878321C21A23A5CD66" type="section" format="dita"> Anger målet för länkar som skapats från sökresultaten.. </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_523248C5AC424D878321C21A23A5CD66" type="section" format="dita"> Anger målet för länkar som skapats från sökresultaten..  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
    <td colname="col02"> <p>Redigera sidorna i navigeringsramen för att förhindra att de indexeras. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_C62E5F0EE1294D5EBD97E123E54433FC" type="section" format="dita"> Redigerar sidor i navigeringsramen för att förhindra att de.. </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_C62E5F0EE1294D5EBD97E123E54433FC" type="section" format="dita"> Redigerar sidor i navigeringsramen för att förhindra att de..  </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>5 </p> </td> 
    <td colname="col02"> <p>Testa sökformuläret. </p> </td> 
-   <td colname="col2"> <p> <a scope="local" href="#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Testa sökformuläret </a> </p> </td> 
+   <td colname="col2"> <p> <a scope="local" href="#section_43D8D4A7BF524DC480DFE5442F6A2E3C" type="section" format="dita"> Testa sökformuläret  </a> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Lägga till sökformulärskoden i en ram på webbsidan {#section_BAA8A502BB2243F8B5FF9783CDF2BFFD}
 
-1. På produktmenyn klickar du på **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Form Source]**.
+1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Form Source]** på produktmenyn.
 
    Koden för HTML-sökformuläret ser ut ungefär så här:
 
@@ -171,14 +174,14 @@ Så här konfigurerar du ramuppsättningar:
    </form>
    ```
 
-1. Markera och kopiera HTML-sökformulärskoden som visas i textfältet på [!DNL Standard Form Source] sidan.
+1. På sidan [!DNL Standard Form Source] markerar och kopierar du HTML-sökformulärskoden som visas i textfältet.
 1. Klistra in koden i sökformuläret i den ram du vill ha i ramuppsättningen.
 
    I exemplet nedan klistras koden i sökformuläret in i navigeringsramen, den smala lodräta ramen till vänster på skärmen.
 
    ![](assets/frames1.gif)
 
-## Ange målramen för sökresultatsidan {#section_532CACB90888467093D95EACB64FDFA1}
+## Ange målbildrutan för sökresultatsidan {#section_532CACB90888467093D95EACB64FDFA1}
 
 Om du placerade din sökformulärkod i den lodräta navigeringsramen som ovan kan du visa sökresultaten i den större, huvudsakliga ramen. I det här exemplet anropar du huvudbildrutan &quot;body&quot; och anger den som målbildruta.
 
@@ -213,22 +216,22 @@ Målnamnet kan antingen vara namnet på en bildruta som anges i HTML-koden eller
 
 * `target="_self"` Standard. Öppna länkar i det fönster där sökresultaten finns. I det här fallet det ursprungliga fönstret för sökresultat. Använd det här alternativet om du vill åsidosätta ett globalt tilldelat basmål.
 
-* `target="_parent"` Öppna länkar i den överordnade ramuppsättningen för länksidan. Om dokumentet inte har någon överordnad funktion fungerar detta som `"_self"` standard.
+* `target="_parent"` Öppna länkar i den överordnade ramuppsättningen för länksidan. Om dokumentet inte har någon överordnad funktion fungerar detta som `"_self"` som standard.
 
-* `target="_top"` Öppna länkar i hela fönstret. Om dokumentet redan är överst fungerar det som `"_self"` standard. Använd det här alternativet om du vill bryta ut från en godtyckligt djup kapsling av bildrutor.
+* `target="_top"` Öppna länkar i hela fönstret. Om dokumentet redan finns överst fungerar det som standard som `"_self"`. Använd det här alternativet om du vill bryta ut ur en godtyckligt djup kapsling av bildrutor.
 
-Om du till exempel vill ange målmålramen kan du redigera mallen på följande sätt: `_blank`
+Om du till exempel vill ange målramen `_blank` kan du redigera mallen på följande sätt:
 
 1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Templates]** på produktmenyn.
 
-1. Klicka på mallens namn med målmålramen på [!DNL Staged Templates] sidan i tabellen.
-1. Leta reda på `<search-link>` taggen. Your default `<search-link>` tag should look similar to the following:
+1. På sidan [!DNL Staged Templates] i tabellen klickar du på namnet på mallen med målmålramen.
+1. Leta reda på taggen `<search-link>`. Standardtaggen `<search-link>` ska se ut ungefär så här:
 
    `<search-link><search-title length=100></search-link>`
 
-1. Lägg till rammålet i `<search-link>` -taggen. I exemplet ovan anger du `target="_blank"`. Se till att du tar med understrecket och citattecknen runt målvärdet.
+1. Lägg till rammålet i taggen `<search-link>`. I exemplet ovan anger du `target="_blank"`. Se till att du tar med understrecket och citattecknen runt målvärdet.
 
-   Taggen visas nu på följande sätt `<search-link>` :
+   Taggen `<search-link>` ser nu ut så här:
 
    `<search-link target="_blank"><search-title length=100></search-link>`
 
@@ -236,10 +239,10 @@ När en besökare väljer en sökresultatlänk öppnas nu den länkade sidan i e
 
 ## Redigera sidor i navigeringsramen för att förhindra att de indexeras {#section_C62E5F0EE1294D5EBD97E123E54433FC}
 
-Vanligtvis vill du utesluta navigeringsbildrutor från indexering med sökresultaten. För att uppnå den här funktionen kan du lägga till metatagg `noindex` på dessa sidor.
+Vanligtvis vill du utesluta navigeringsbildrutor från indexering med sökresultaten. Om du vill använda den här funktionen kan du lägga till metataggen `noindex` på dessa sidor.
 
 1. Öppna HTML-sidans källa för navigeringsramen.
-1. Lägg till följande meta-tagg i - `<head>` avsnittet i din HTML:
+1. Lägg till följande meta-tagg i `<head>`-avsnittet i HTML-koden:
 
    `<meta name="robots" content="noindex">`
 
@@ -264,6 +267,7 @@ Vanligtvis vill du utesluta navigeringsbildrutor från indexering med sökresult
    * Sökresultatsidan visas i den angivna målramen.
    * Länkar från sökresultaten finns i den angivna målbildrutan.
    * Resultatet för navigeringsramen visas inte.
+
    Om du får problem med ramar efter att du har testat sökformuläret kontaktar du kundsupport.
 
 ## Exempel på avancerat sökformulär {#reference_82E1051918744EBA88A01E9E6AE42C4A}
@@ -286,9 +290,9 @@ Med hjälp av följande exempelformulär för avancerad sökning visar resten av
 
 Du kan visa hela HTML-koden för det avancerade sökformuläret i exemplet ovan.
 
-Se [Avancerad HTML-kod](#reference_9AAD4A46B68D4D48865508982CB86DB9)för sökformulär.
+Se [Avancerad HTML-kod för sökformulär](#reference_9AAD4A46B68D4D48865508982CB86DB9).
 
-Se [Konfigurera Komplettera CSS](../c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96)automatiskt.
+Se [Konfigurera Komplettera CSS automatiskt](../c-about-auto-complete.md#task_EECE35DEB6C94F4A8A5B42B4DED76D96).
 
 Se [Kopiera HTML-koden för sökformuläret till ...](../c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7).
 
@@ -304,41 +308,41 @@ Se [Kopiera HTML-koden för sökformuläret till ...](../c-about-auto-complete.m
  <tbody> 
   <tr> 
    <td colname="col2"> <p>Aktivera avancerade alternativ för sökformulär (dolt fält) </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_advanced </span> </p> </td> 
-   <td colname="col3"> <p> <span class="syntax html codeph"> &lt;input type=hidden name="sp_advanced" value=1&gt; </span> </p> </td> 
-   <td colname="col4"> <p>Aktivera eller inaktivera avancerade sökalternativ. Du kan t.ex. placera ett standardsökformulär på din hemsida med en länk till en andra sida som innehåller ett avancerat formulär. I det här fallet placerar du en kopia av standardformuläret i <span class="codeph"> &lt;search-if-not-advanced&gt;...&lt;/search-if-not-advanced&gt;- </span> malltaggar. </p> <p>En kund som utför en sökning från standardformuläret ser ett standardsökformulär när sökresultaten visas. På den avancerade sökformulärsskärmen inkluderar du taggen <span class="codeph"> &lt;input type=hidden name="sp_advanced" value=1&gt; </span> med de andra avancerade formuläralternativen. </p> <p>Du kan även inkludera en kopia av det avancerade sökformuläret i &lt;search-if-advanced&gt;... &lt;/search-if-advanced&gt;-malltaggar. En kund som utför en sökning från ditt avancerade sökformulär ser ett avancerat sökformulär när sökresultaten visas. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_advanced  </span> </p> </td> 
+   <td colname="col3"> <p> <span class="syntax html codeph"> &lt;input type="hidden" name="sp_advanced" value="1"&gt; </span> </p> </td> 
+   <td colname="col4"> <p>Aktivera eller inaktivera avancerade sökalternativ. Du kan t.ex. placera ett standardsökformulär på din hemsida med en länk till en andra sida som innehåller ett avancerat formulär. I det här fallet placerar du en kopia av standardformuläret i <span class="codeph"> &lt;search-if-not-advanced&gt;...&lt;/search-if-not-advanced&gt; </span> malltaggar. </p> <p>En kund som utför en sökning från standardformuläret ser ett standardsökformulär när sökresultaten visas. På den avancerade sökformulärsskärmen inkluderar du taggen <span class="codeph"> &lt;input type=hidden name="sp_advanced" value=1&gt; </span> med de andra avancerade formuläralternativen. </p> <p>Du kan även inkludera en kopia av det avancerade sökformuläret i &lt;search-if-advanced&gt;... &lt;/search-if-advanced&gt;-malltaggar. En kund som utför en sökning från ditt avancerade sökformulär ser ett avancerat sökformulär när sökresultaten visas. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p> Matcha alla, alla eller fraser </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_p </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_p  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Allow&nbsp;"any,"&nbsp;"all,"&nbsp;or&nbsp;"phrase"&nbsp;--&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="any"&gt;Any&nbsp;word 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="all"&nbsp;checked&gt;All&nbsp;words 
       &lt;input&nbsp;type=radio&nbsp;name="sp_p"&nbsp;value="phrase"&gt;Exact&nbsp;phrase </code> </p> </td> 
-   <td colname="col4"> <p>Låt kunden ange att"alla ord","alla ord" eller"den exakta frasen" måste finnas för att ett dokument ska matcha. När <span class="codeph"> parametern sp_p </span> anges behöver kunderna inte använda"+","-" eller båda i sökfrågan. </p> <p> Om parametern <span class="codeph"> sp_p </span> utelämnas, eller om den är inställd på "" eller "any", kan kunderna fortfarande använda specificerarna "+" och "-". Om parametern <span class="codeph"> sp_p </span> är inställd på "all" eller "phrase" ignoreras "+" och "-". </p> <p>Du kan lära dig mer om hur du använder"+" och"-" i en sökning. </p> <p>Se <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local"> Om sökningar </a>. </p> </td> 
+   <td colname="col4"> <p>Låt kunden ange att"alla ord","alla ord" eller"den exakta frasen" måste finnas för att ett dokument ska matcha. När parametern <span class="codeph"> sp_p </span> anges behöver kunderna inte använda"+","-" eller båda i sökfrågan. </p> <p> Om parametern <span class="codeph"> sp_p </span> utelämnas, eller om den är inställd på "" eller "any", kan kunderna fortfarande använda specificerarna "+" och "-". Om parametern <span class="codeph"> sp_p </span> är inställd på "all" eller "phrase" ignoreras de angivna "+" och "-". </p> <p>Du kan lära dig mer om hur du använder"+" och"-" i en sökning. </p> <p>Se <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local"> Om sökningar </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p> Ljudliknande matchning </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_w </span> </p> <p>och </p> <p> <span class="codeph"> sp_w_control </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_w  </span> </p> <p>och </p> <p> <span class="codeph"> sp_w_control  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Checkbox&nbsp;enables&nbsp;sound-alike&nbsp;matching&nbsp;--&gt; 
       &lt;input&nbsp;type=hidden&nbsp;name="sp_w_control"&nbsp;value=1&gt; 
       &lt;input&nbsp;type=checkbox&nbsp;name="sp_w"&nbsp;value="alike"&gt;&nbsp;Sound-alike&nbsp;matching </code> </p> </td> 
-   <td colname="col4"> <p>Låter kunderna aktivera eller inaktivera matchning av ljud. Matchning med lika ljud gör att felstavade sökfrågor matchar ord som "låter lika" i dina dokument. </p> <p>När <span class="codeph"> parametern </span> sp_w_control är inställd på 1 och <span class="codeph"> parametern </span> sp_w är inställd på "alike", markeras den genererade kryssrutan, vilket aktiverar ljudmatchning som standard. </p> <p>Om <span class="codeph"> parametern sp_w </span> är inställd på "" markeras inte kryssrutan. </p> <p>Om du inte aktiverade ljudmatchning under den senaste indexeringsåtgärden, går det inte att matcha ljud med, och <span class="codeph"> parametern </span> sp_w ignoreras. Om du vill aktivera ljudmatchning klickar du på <span class="uicontrol"> Linguistics </span> &gt; <span class="uicontrol"> Words &amp; Language </span> &gt; <span class="uicontrol"> Sound-Alike Matching på produktmenyn </span>. </p> <p>Du kan också tilldela parametrarna <span class="codeph"> sp_w </span> och <span class="codeph"> sp_w_control </span> på följande sätt: </p> <p> <code class="syntax html"> &lt;!--&nbsp;Checkbox&nbsp;disables&nbsp;sound-alike&nbsp;matching&nbsp;--&gt; 
+   <td colname="col4"> <p>Låter kunderna aktivera eller inaktivera matchning av ljud. Matchning med lika ljud gör att felstavade sökfrågor matchar ord som "låter lika" i dina dokument. </p> <p>När parametern <span class="codeph"> sp_w_control </span> är inställd på 1 och parametern <span class="codeph"> sp_w </span> är inställd på "alike", markeras den genererade kryssrutan och ljudmatchning aktiveras som standard. </p> <p>Om parametern <span class="codeph"> sp_w </span> är inställd på "" markeras inte kryssrutan. </p> <p>Om du inte aktiverade ljudmatchning under den senaste indexeringsåtgärden, går det inte att matcha ljud lika och parametern <span class="codeph"> sp_w </span> ignoreras. Om du vill aktivera ljudmatchning klickar du på <span class="uicontrol"> Linguistics </span> &gt; <span class="uicontrol"> Words &amp; Language </span> &gt; <span class="uicontrol"> Sound-Alike Matching </span> på produktmenyn. </p> <p>Du kan också tilldela parametrarna <span class="codeph"> sp_w </span> och <span class="codeph"> sp_w_control </span> på följande sätt: </p> <p> <code class="syntax html"> &lt;!--&nbsp;Checkbox&nbsp;disables&nbsp;sound-alike&nbsp;matching&nbsp;--&gt; 
       &lt;input&nbsp;type=hidden&nbsp;name="sp_w_control"&nbsp;value=0&gt; 
       &lt;input&nbsp;type=checkbox&nbsp;name="sp_w"&nbsp;value="exact"&gt; 
-      No&nbsp;sound-alike&nbsp;matching </code> </p> <p>I det här fallet är <span class="codeph"> sp_w_control- </span> parametern inställd på 0 och sp_w- <span class="codeph"> </span> parametern är inställd på "exact", ljudliknande matchning är inaktiverad som standard. Om <span class="codeph"> parametern sp_w </span> är inställd på "" aktiveras ljudmatchning. </p> </td> 
+      No&nbsp;sound-alike&nbsp;matching </code> </p> <p>När parametern <span class="codeph"> sp_w_control </span> är inställd på 0 och parametern <span class="codeph"> sp_w </span> är inställd på "exact" inaktiveras matchning av ljud som standard. Om parametern <span class="codeph"> sp_w </span> är inställd på "" aktiveras matchning av ljud. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Datumintervallmatchning </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_d </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_d  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--Specifies&nbsp;type&nbsp;of&nbsp;date&nbsp;range&nbsp;searching&nbsp;to&nbsp;perform.--&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_d"&nbsp;value="custom"&nbsp;checked&gt; 
       &lt;input&nbsp;type=radio&nbsp;name="sp_d"&nbsp;value="specific"&gt; </code> </p> </td> 
-   <td colname="col4"> <p>Parametern <span class="codeph"> sp_d </span> anger ett anpassat dataområdesmatchning som ska utföras eller en specifik datumintervallmatchning som ska utföras. </p> <p>I standardformuläret för avancerad sökning visas det här alternativet som en alternativknappsgrupp med en listruta med"anpassade" datumintervall som genererats med en <span class="codeph"> sp_date_range- </span> parameter. Den innehåller också och en grupp med"specifika" start- och slutdatum som genereras med parametrarna <span class="codeph"> sp_start_day </span>, <span class="codeph"> sp_start_month </span>, <span class="codeph"> sp_start_year </span>, <span class="codeph"> sp_end_day </span>, <span class="codeph"> sp_end_month </span><span class="codeph"> </span> och¥ sp_end_year¥. </p> <p>Ett anpassat datumintervall är ett namngivet datumintervall som ska sökas igenom. Till exempel"Anytime","Today","Within the last year" och så vidare. </p> <p>Ett"specifikt" datumintervall består av ett startdatum och ett slutdatum. Exempel: från "8 september 2009 till 18 oktober 2011." </p> </td> 
+   <td colname="col4"> <p>Parametern <span class="codeph"> sp_d </span> anger ett anpassat dataområdesmatchning som ska utföras eller en specifik datumintervallmatchning som ska utföras. </p> <p>I standardformuläret för avancerad sökning visas det här alternativet som en alternativknappsgrupp med en listruta med"anpassade" datumintervall som genererats med parametern <span class="codeph"> sp_date_range </span>. Den innehåller också och en grupp"specifika" start- och slutdatum som genereras med <span class="codeph"> sp_start_day </span>, <span class="codeph"> sp_start_month </span>, <span class="codeph"> sp_start_year </span>, <span class="codeph"> sp_end_day </span>, <span class="codeph"> sp_end_month </span> och <span class="codeph"> sp_end_year </span>-parametrar. </p> <p>Ett anpassat datumintervall är ett namngivet datumintervall som ska sökas igenom. Till exempel"Anytime","Today","Within the last year" och så vidare. </p> <p>Ett"specifikt" datumintervall består av ett startdatum och ett slutdatum. Exempel: från "8 september 2009 till 18 oktober 2011." </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Matchning av datumintervall: anpassat datumintervall </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_date_range </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_date_range  </span> </p> <p> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--Selection&nbsp;list&nbsp;for&nbsp;custom&nbsp;date&nbsp;range.--&gt; 
       &lt;select&nbsp;name="sp_date_range"&nbsp;size=1&gt; 
       &lt;option&nbsp;value=-1&nbsp;selected&gt;Anytime&lt;/option&gt; 
@@ -351,7 +355,7 @@ Se [Kopiera HTML-koden för sökformuläret till ...](../c-about-auto-complete.m
       &lt;option&nbsp;value=365&gt;Within&nbsp;the&nbsp;last&nbsp;year&lt;/option&gt; 
       &lt;option&nbsp;value=730&gt;Within&nbsp;the&nbsp;last&nbsp;two&nbsp;years&lt;/option&gt; 
       &lt;/select&gt; </code> </p> </td> 
-   <td colname="col4"> <p>Parametern <span class="codeph"> sp_date_range används </span> för att skapa ett anpassat datumintervall. Till exempel"Anytime","Today","Within the last year" och så vidare. </p> <p>Värden större än eller lika med noll anger antalet dagar som ska sökas före idag. Värdet 0 anger till exempel "Idag", värdet "1" anger "Idag och igår", värdet "30" anger "Inom de senaste 30 dagarna" och så vidare. Värden som är mindre än noll anger ett anpassat intervall enligt följande: </p> <p> 
+   <td colname="col4"> <p>Parametern <span class="codeph"> sp_date_range </span> används för att skapa ett anpassat datumintervall. Till exempel"Anytime","Today","Within the last year" och så vidare. </p> <p>Värden större än eller lika med noll anger antalet dagar som ska sökas före idag. Värdet 0 anger till exempel "Idag", värdet "1" anger "Idag och igår", värdet "30" anger "Inom de senaste 30 dagarna" och så vidare. Värden som är mindre än noll anger ett anpassat intervall enligt följande: </p> <p> 
      <ul id="ul_E65DDE33883F441F9730F315E485AD98"> 
       <li id="li_83E9466AB9D7438A8544001F6B007186"> <p>-1 = "Anytime," är detsamma som att ange inget datumintervall. </p> </li> 
       <li id="li_38AB8D97179A47F9B860A96EA09119BB"> <p>-2 = "Den här veckan", som söker från söndag till lördag den aktuella veckan. </p> </li> 
@@ -364,19 +368,19 @@ Se [Kopiera HTML-koden för sökformuläret till ...](../c-about-auto-complete.m
   </tr> 
   <tr> 
    <td colname="col2"> <p>Matchning av datumintervall: startdatum </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_start_day, sp_start_month, sp_start_year </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_start_day, sp_start_month, sp_start_year  </span> </p> <p> </p> </td> 
    <td colname="col3"> </td> 
    <td colname="col4"> <p>Den här trippeln med numeriska värden anger startdatumet för ett visst datumintervall som ska sökas igenom. Se till att du anger alla tre värdena eftersom ett delvis angivet datum ignoreras. </p> <p>Det är tillåtet att bara ange startdatum, bara slutdatum eller både startdatum och slutdatum. Om bara startdatumet anges innehåller sökningen matchande dokument som är daterade på eller efter startdatumet. Om bara slutdatumet anges innehåller sökningen matchande dokument på eller före slutdatumet. Om både startdatum och slutdatum anges innehåller sökningen matchande dokument från startdatumet till slutdatumet. </p> <p>Alla datum söks igenom i förhållande till Greenwich Mean Time. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p> Matchning av datumintervall: slutdatum </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_end_day, sp_end_month, sp_end_year </span> </p> <p> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_end_day, sp_end_month, sp_end_year  </span> </p> <p> </p> </td> 
    <td colname="col3"> </td> 
    <td colname="col4"> <p>Den här trippeln med numeriska värden anger slutdatumet för det specifika datumintervall som ska sökas igenom. Se till att du anger alla tre värdena eftersom ett delvis angivet datum ignoreras. </p> <p>Det är tillåtet att bara ange startdatum, bara slutdatum eller både start- och slutdatum. Om bara startdatumet anges innehåller sökningen matchande dokument som är daterade på eller efter startdatumet. Om bara slutdatumet anges innehåller sökningen matchande dokument på eller före slutdatumet. Om både start- och slutdatumet anges innehåller sökningen matchande dokument från startdatumet till slutdatumet. </p> <p>Alla datum söks igenom i förhållande till Greenwich Mean Time. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>I sökfältet </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_x </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_x  </span> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;List&nbsp;box&nbsp;selects&nbsp;the&nbsp;search&nbsp;field&nbsp;--&gt; 
       Within&nbsp;&lt;select&nbsp;name="sp_x"&nbsp;size=1&gt; 
       &lt;option&nbsp;value="any"&nbsp;selected&gt;Anywhere&lt;/option&gt; 
@@ -389,11 +393,11 @@ Se [Kopiera HTML-koden för sökformuläret till ...](../c-about-auto-complete.m
       &lt;option&nbsp;value="target"&gt;Target&lt;/option&gt; 
       &lt;option&nbsp;value="date"&gt;Date&lt;/option&gt;* 
       &lt;/select&gt; </code> </p> </td> 
-   <td colname="col4"> <p>I listrutan <span class="codeph"> sp_x kan </span> dina kunder ange i vilket fält de ska söka efter frågesträngarna. </p> <p>Kunderna kan välja antingen alla fält, titel, dokumentbeskrivning, dokumentnyckelord, brödtext, alternativ text, dokumentets URL-adress, datum eller målnyckelord. </p> <p>När parametern <span class="codeph"> sp_x </span> används behöver kunderna inte ange "title:," "desc:," "keys:," "body:," "alt:," "url:," och "target:" i sökfrågesträngar. </p> <p>Om parametern <span class="codeph"> sp_x </span> utelämnas, eller om den är inställd på "" eller "any", kan kunderna fortfarande använda fältspecifikationssträngarna. Om parametern <span class="codeph"> sp_x </span> är inställd på ett specifikt fält ignoreras alla andra fältspecifikationssträngar. </p> <p>Se <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local"> Om sökningar </a>. </p> </td> 
+   <td colname="col4"> <p>I listrutan <span class="codeph"> sp_x </span> kan dina kunder ange i vilket fält de ska söka efter frågesträngarna. </p> <p>Kunderna kan välja antingen alla fält, titel, dokumentbeskrivning, dokumentnyckelord, brödtext, alternativ text, dokumentets URL-adress, datum eller målnyckelord. </p> <p>När parametern <span class="codeph"> sp_x </span> används behöver kunderna inte ange "title:," "desc:," "keys:," "body:," "alt:," "url:," och "target:" i sökfrågesträngar. </p> <p>Om parametern <span class="codeph"> sp_x </span> utelämnas, eller om den är inställd på "" eller "any", kan kunderna fortfarande använda fältspecificeringssträngarna. Om parametern <span class="codeph"> sp_x </span> är inställd på ett specifikt fält ignoreras alla andra fältspecifikationssträngar. </p> <p>Se <a href="../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8" type="concept" format="dita" scope="local"> Om sökningar </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col2"> <p>Visa resultatantal </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_c </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_c  </span> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;List&nbsp;box&nbsp;selects&nbsp;number&nbsp;of&nbsp;results&nbsp;to&nbsp;show&nbsp;per&nbsp;page&nbsp;--&gt; 
       Show&nbsp;&lt;select&nbsp;name="sp_c"&nbsp;size=1&gt; 
       &lt;option&nbsp;value=5&gt;5&lt;/option&gt; 
@@ -406,7 +410,7 @@ Se [Kopiera HTML-koden för sökformuläret till ...](../c-about-auto-complete.m
   </tr> 
   <tr> 
    <td colname="col2"> <p>Visa eller dölj sammanfattningar </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_m </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_m  </span> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Show&nbsp;or&nbsp;hide&nbsp;summaries&nbsp;in&nbsp;search&nbsp;results&nbsp;--&gt; 
       &lt;select&nbsp;name="sp_m"&nbsp;size=1&gt; 
       &lt;option&nbsp;value=1&nbsp;selected&gt;with&lt;/option&gt; 
@@ -418,7 +422,7 @@ Se [Kopiera HTML-koden för sökformuläret till ...](../c-about-auto-complete.m
   </tr> 
   <tr> 
    <td colname="col2"> <p>Sortera efter resultat </p> </td> 
-   <td colname="col1"> <p> <span class="codeph"> sp_s </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> sp_s  </span> </p> </td> 
    <td colname="col3"> <p> <code class="syntax html"> &lt;!--&nbsp;Sort&nbsp;results&nbsp;by&nbsp;relevance&nbsp;or&nbsp;by&nbsp;date&nbsp;--&gt; 
       Sort&nbsp;by&nbsp;&lt;select&nbsp;name="sp_s"&nbsp;size=1&gt; 
       &lt;option&nbsp;value=0&nbsp;selected&gt;relevance&lt;/option&gt; 
@@ -437,9 +441,9 @@ Den HTML-formulärkod som används för att skapa det avancerade sökformuläret
 
 Se [Exempel på avancerat sökformulär](#reference_82E1051918744EBA88A01E9E6AE42C4A).
 
-Om du använder den här koden måste du komma ihåg att ersätta `sp_a` värdet för `sp99999999` med ditt faktiska kontonummer.
+Om du använder den här koden måste du komma ihåg att ersätta `sp_a`-värdet `sp99999999` med ditt faktiska kontonummer.
 
-Du hittar ditt kontonummer genom att klicka på **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Account Settings]** på produktmenyn.
+Om du vill hitta ditt kontonummer klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Account Options]** > **[!UICONTROL Account Settings]** på produktmenyn.
 
 ```
 <form method="get" action="https://search.atomz.com/search/"> 
@@ -631,11 +635,11 @@ Sound-alike matching
 </form>
 ```
 
-## Avancerad kod för formulärmall för sökning {#reference_D762C22E754E462DBEECD88D2C3FA579}
+## Avancerad kod för sökformulärsmall {#reference_D762C22E754E462DBEECD88D2C3FA579}
 
 Du kan lägga till HTML-koden för det avancerade sökformuläret i mallen på ett sådant sätt att standardalternativet för alla parametrar är detsamma som för föregående sökning.
 
-Det innebär att om en kund klickar på **[!UICONTROL Exact phrase]** alternativknappen kan du se till att alternativknappen är markerad som standard när sökresultaten visas.
+Det innebär att om en kund klickar på alternativknappen **[!UICONTROL Exact phrase]** kan du se till att alternativknappen är markerad som standard när sökresultaten visas.
 
 Den här funktionaliteten uppnås genom att alla&quot;markerade&quot; eller&quot;markerade&quot; specifikationer tas bort från standard-HTML-taggarna och sedan ersätts följande HTML-taggar:
 
@@ -653,7 +657,7 @@ med följande motsvarande malltaggar:
 * `</search-option>`
 * `</search-select>`
 
-För att göra detta använder du följande kod som `<form>` -tagg i sökmallen.
+Du gör detta genom att använda följande kod som `<form>`-tagg i sökmallen.
 
 ```
 <!-- Adobe Target results section.--> 
