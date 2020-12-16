@@ -9,6 +9,9 @@ topic: Design,Site search and merchandising
 uuid: 8ab1b35c-f953-4c26-921f-524af1fea4ef
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '204'
+ht-degree: 0%
 
 ---
 
@@ -21,12 +24,12 @@ Du använder sidan Senaste sökningar för att konfigurera hur sökningar funger
 
 Mer information om de olika taggarna som du kan använda för att visa de senaste sökningarna i presentationsmallen finns i referensavsnittet för presentationsmallen.
 
-Se [Presentationsmalltaggar](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64).
+Se [Taggar för presentationsmall](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64).
 
 **Så här konfigurerar du senaste sökningar**
 
-1. På programmenyn klickar du på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Recent Searches]**.
-1. Ange önskade alternativ på [!DNL Recent Searches] sidan.
+1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Recent Searches]** på programmenyn.
+1. Ange önskade alternativ på sidan [!DNL Recent Searches].
 
    <!-- 
    
@@ -59,9 +62,9 @@ Se [Presentationsmalltaggar](../c-appendices/c-templates.md#reference_F1BBF616BC
 
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
