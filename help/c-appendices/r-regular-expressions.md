@@ -108,17 +108,17 @@ Se även [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](..
 * Ett vanligt tecken, inte ett av specialtecknen som beskrivs nedan, är ett reguljärt uttryck med ett tecken som matchar sig självt.
 * Ett omvänt snedstreck (\) följt av ett specialtecken är ett reguljärt uttryck med ett tecken som matchar specialtecknet. Specialtecken är följande:
 
-   * `.` (punkt), `*` (asterisk), `?` (frågetecken), `+` (plustecken), `[` (vänster hakparentes), `|` (vertikalt vertikalt vertikalt streck) och `\` (omvänt snedstreck) är alltid specialtecken, förutom när de visas inom hakparenteser.
+   * `.` (punkt),  `*` (asterisk),  `?` (frågetecken),  `+` (plustecken),  `[` (vänster hakparentes),  `|` (vertikalt rör) och  `\` (omvänt snedstreck) är alltid specialtecken, utom när de visas inom hakparenteser.
    * `^` (cirkumflex eller cirkumflex) är speciellt i början av ett reguljärt uttryck eller när det omedelbart följer vänster om ett par hakparenteser.
    * `$` (dollartecken) är specialtecken i slutet av ett reguljärt uttryck.
    * `.` (punkt) är ett reguljärt uttryck med ett tecken som matchar alla tecken, inklusive extra koduppsättningstecken med undantag för radbyten.
-   * En icke-tom sträng med tecken inom `[ ]` (vänster och höger hakparentes) är ett reguljärt uttryck med ett tecken som matchar ett tecken, inklusive extratecken för koduppsättningen, i den strängen.
+   * En sträng med tecken som inte är tom och som omges av `[ ]` (vänster och höger hakparentes) är ett reguljärt uttryck med ett tecken som matchar ett tecken, inklusive extratecken för koduppsättningen, i strängen.
 
-      Om det första tecknet i strängen däremot är ett `^` (cirkumflex) matchar det reguljära uttrycket ett tecken alla tecken, inklusive extratecknen, med undantag för den nya raden och de återstående tecknen i strängen.
+      Om det första tecknet i strängen är `^` (cirflex) matchar det reguljära uttrycket med ett tecken alla tecken, inklusive extratecken, med undantag för tecken på en ny rad och de återstående tecknen i strängen.
 
-      Den `^` här speciella betydelsen finns bara om den förekommer först i strängen. Du kan använda `-` (minustecken) för att ange ett intervall med efterföljande tecken, inklusive extra koduppsättningstecken. Till exempel motsvarar [0-9] [0123456789].
+      `^` har bara den här speciella betydelsen om den förekommer först i strängen. Du kan använda `-` (minustecken) för att ange ett intervall med efterföljande tecken, inklusive extratecknen för koduppsättningen. [0-9] motsvarar till exempel [0123456789].
 
-      Tecken som anger intervallet måste komma från samma koduppsättning. När tecknen kommer från olika koduppsättningar matchas ett av tecknen som anger intervallet. Den `-` här speciella betydelsen försvinner om den inträffar först (efter en inledande `^`, om det finns någon) eller sist i strängen. En sådan sträng avslutas inte med `]` (höger hakparentes) när den är det första tecknet i strängen, efter en inledande `^`, om det finns någon. Matchar t.ex. `[]a-f]` antingen en `]` (höger hakparentes) eller en av ASCII-bokstäverna a till och med f. De fyra tecknen som anges som specialtecken ovan står för sig själva inom en sådan teckensträng.
+      Tecken som anger intervallet måste komma från samma koduppsättning. När tecknen kommer från olika koduppsättningar matchas ett av tecknen som anger intervallet. `-` förlorar den här speciella betydelsen om den inträffar först (efter en inledande `^`, om det finns någon) eller sist i strängen. `]` (höger hakparentes) avslutar inte en sådan sträng när den är det första tecknet i den, efter en inledande `^`, om det finns någon. `[]a-f]` matchar till exempel antingen `]` (höger hakparentes) eller en av ASCII-bokstäverna a till och med f. De fyra tecknen som anges som specialtecken ovan står för sig själva inom en sådan teckensträng.
 
 **Regler för att skapa reguljära uttryck från reguljära uttryck med ett tecken**
 
@@ -128,18 +128,18 @@ Du kan använda följande regler för att skapa reguljära uttryck från regulj�
 * Ett reguljärt uttryck med ett tecken följt av en `*` (asterisk) är ett reguljärt uttryck som matchar noll eller flera förekomster av det reguljära uttrycket med ett tecken, som kan vara ett tilläggstecken i koduppsättningen. Om det finns något alternativ väljs den längsta vänstra strängen som tillåter en matchning.
 * Ett reguljärt uttryck med ett tecken följt av ett `?` (frågetecken) är ett reguljärt uttryck som matchar noll eller en förekomst av det reguljära uttrycket med ett tecken, som kan vara ett tilläggstecken i koduppsättningen. Om det finns något alternativ väljs den längsta vänstra strängen som tillåter en matchning.
 * Ett reguljärt uttryck med ett tecken följt av ett `+` (plustecken) är ett reguljärt uttryck som matchar en eller flera förekomster av det reguljära uttrycket med ett tecken, som kan vara ett tilläggstecken i koduppsättningen. Om det finns något alternativ väljs den längsta vänstra strängen som tillåter en matchning.
-* Ett reguljärt uttryck med ett tecken följt av `{m}`, `{m,}`eller `{m,n}` är ett reguljärt uttryck som matchar ett intervall med förekomster av det reguljära uttrycket med ett tecken. Värdena för m och n får inte vara negativa heltal under 256. `{m}` matchar exakt m förekomster, `{m,}` matchar minst m förekomster, `{m,n}` matchar alla förekomster mellan m och n. När det finns ett val matchar det reguljära uttrycket så många förekomster som möjligt.
+* Ett reguljärt uttryck med ett tecken följt av `{m}`, `{m,}` eller `{m,n}` är ett reguljärt uttryck som matchar ett intervall med förekomster av det reguljära uttrycket med ett tecken. Värdena för m och n får inte vara negativa heltal under 256. `{m}` matchar exakt m förekomster; `{m,}` matchar minst m förekomster; `{m,n}` matchar alla förekomster mellan m och n. När det finns ett val matchar det reguljära uttrycket så många förekomster som möjligt.
 * Sammanfogningen av reguljära uttryck är ett reguljärt uttryck som matchar sammanfogningen av strängarna som matchas av varje komponent i det reguljära uttrycket.
 * Ett reguljärt uttryck mellan teckensekvenserna ( och ) är ett reguljärt uttryck som matchar det reguljära uttryck som inte är indraget.
-* Ett reguljärt uttryck följt av ett `|` (vertikalt vertikalt vertikalt vertikalt vertikalt uttryck) följt av ett reguljärt uttryck är ett reguljärt uttryck som matchar antingen det första reguljära uttrycket (före vertikalt vertikalt vertikalt vertikalt uttryck) eller det andra reguljära uttrycket (efter vertikalt vertikalt vertikalt vertikalt vertikalt vertikalt uttryck).
+* Ett reguljärt uttryck följt av ett `|` (vertikalt vertikalt rör) följt av ett reguljärt uttryck är ett reguljärt uttryck som matchar antingen det första reguljära uttrycket (före vertikalt vertikalt rör) eller det andra reguljära uttrycket (efter vertikalt rör).
 
 Du kan också begränsa ett reguljärt uttryck så att det bara matchar ett inledande segment eller det sista segmentet i en linje, eller både och.
 
-* Ett `^` (cirkumflex) i början av ett reguljärt uttryck begränsar det reguljära uttrycket så att det matchar ett inledande segment på en rad.
-* Ett `$` (dollartecken) i slutet av ett helt reguljärt uttryck begränsar det reguljära uttrycket så att det matchar ett linjesegment.
+* Ett `^` (cirflex) i början av ett reguljärt uttryck begränsar det reguljära uttrycket så att det matchar ett inledande segment på en rad.
+* Ett `$`-tecken (dollartecken) i slutet av ett helt reguljärt uttryck begränsar det reguljära uttrycket så att det matchar ett linjesegment.
 * Konstruktionen ^regular expression$ begränsar det reguljära uttrycket så att det matchar hela raden.
 
-Det finns några fördefinierade teckenklassnamn som du kan använda i stället för reguljära uttryck med komplexa hakparenteser. En siffra kan till exempel representeras av det reguljära uttrycket [0-9] med ett tecken eller av det reguljära uttrycket med ett tecken i teckenklassen [[:digit:]].
+Det finns några fördefinierade teckenklassnamn som du kan använda i stället för reguljära uttryck med komplexa hakparenteser. En siffra kan till exempel representeras av det reguljära uttrycket [0-9] för ett tecken eller av det reguljära uttrycket för en teckenklass [[:digit:]].
 
 De fördefinierade teckenklasserna och deras innebörd är följande:
 
