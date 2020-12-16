@@ -8,17 +8,20 @@ topic: Linguistics,Site search and merchandising
 uuid: c5973541-3d6b-4fc9-bad4-66d4d3559fe8
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '776'
+ht-degree: 0%
 
 ---
 
 
-# Om du menade{#about-did-you-mean}
+# Om Menade du{#about-did-you-mean}
 
 Du kan konfigurera Menade du så att kunderna får förslag på giltiga söktermer när de har provat sökningar som har misslyckats. Förslag skapas genom att söka efter stavnings- och skrivkorrigeringar av söktermerna som ger en giltig sökning.
 
-## Att konfigurera menade du {#task_B539D6A0043547EFB1CA19B67E762371}
+## Konfigureringen betydde {#task_B539D6A0043547EFB1CA19B67E762371}
 
-Du kan ange hur sökförslag ska visas när kundens fråga returnerar inga, eller minimala, sökresultat. [!DNL site search/merchandising]
+Du kan anpassa hur [!DNL site search/merchandising] ger sökförslag när en kunds fråga returnerar inga, eller minimala, sökresultat.
 
 <!-- 
 
@@ -29,11 +32,11 @@ t_configuring_did_you_mean.xml
 **Att konfigurera menade du**
 
 1. Klicka på **[!UICONTROL Linguistics]** > **[!UICONTROL Did You Mean]** på produktmenyn.
-1. I textfältet [!DNL Did You Mean] Ta bort dessa ord från förslag **på** sidan anger du blanksteg eller radavgränsade ord för att filtrera bort oönskade förslag.
+1. På sidan [!DNL Did You Mean] anger du blanksteg eller radavgränsade ord för att filtrera bort oönskade förslag i textfältet **Ta bort dessa ord från Förslag**.
 
    Det här är ord i sökindexet som inte visas som rekommenderade alternativa söktermer. Du kan utesluta ord som matchar ett mönster genom att använda reguljära uttryck. Annars tas bara det exakta ordet bort.
 
-1. Ange **Menade** du önskade alternativ.
+1. Ange **Menade du** alternativ som du vill använda.
 
    <!-- 
    
@@ -51,7 +54,7 @@ t_configuring_did_you_mean.xml
     <tbody> 
       <tr> 
       <td colname="col1"> <p>Förslagsalgoritm </p> </td> 
-      <td colname="col2"> <p>Justerar hur långt programmet går för att hitta förslag. Om en användare gör ett misstag med en bokstav visas samma förslag för alla algoritmer. Orsaken till detta är att det bara krävs en redigering för att komma fram till ett fungerande förslag, och alla algoritmer hittar ord som ligger nära originalet. Men när de ursprungliga söktermerna inte liknar de befintliga termerna i indexet fortsätter algoritmerna <b>Djup</b> och <b>Felaktig stavningsförslag</b> att söka efter möjliga förslag. Det här scenariot är användbart om en kund försöker med ett egennamn som är svårt att skriva och de låter ut namnen. Om du bara vill att liknande förslag ska visas kan du välja <b>snabbalgoritmen</b> . </p> </td> 
+      <td colname="col2"> <p>Justerar hur långt programmet går för att hitta förslag. Om en användare gör ett misstag med en bokstav visas samma förslag för alla algoritmer. Orsaken till detta är att det bara krävs en redigering för att komma fram till ett fungerande förslag, och alla algoritmer hittar ord som ligger nära originalet. Men när de ursprungliga söktermerna inte liknar de befintliga termerna i indexet fortsätter <b>Deep</b> och <b>Bad Spellers</b> förslagsalgoritmer att söka efter möjliga förslag. Det här scenariot är användbart om en kund försöker med ett egennamn som är svårt att skriva och de låter ut namnen. Om du bara vill att liknande förslag ska visas kan du välja algoritmen <b>Quick</b>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Standardantal förslag som ska visas </p> </td> 
@@ -71,7 +74,7 @@ t_configuring_did_you_mean.xml
       </tr> 
       <tr> 
       <td colname="col1"> <p>Gör förslag på grund av låga resultat </p> </td> 
-      <td colname="col2"> <p>Om en kund söker efter en term som ger mindre än tio resultat, kontrollerar sökmotorn om den har ett förslag som kan ge mer än 100 resultat. Om den gör det kan du använda följande taggar för att visa för användaren att de kanske har velat söka efter något annat medan de har resultat: </p> <p> <code>&nbsp;&lt;guided-if-suggestion-low-results&gt; &nbsp;&nbsp;You&nbsp;have&nbsp;a&nbsp;low&nbsp;result&nbsp;count&nbsp;for&nbsp;&lt;Search&nbsp;for&nbsp;guided-param&nbsp;gsname="q"&gt;.&nbsp;&nbsp;Did&nbsp;you&nbsp;mean:&nbsp;&lt;guided-suggestion&gt;&lt;guided-suggestion-link&gt;&lt;guided-suggestion&nbsp;/&gt;&lt;/guided-suggestion-link&gt;&lt;guided-if-not-last&gt;,&nbsp;&lt;/guided-if-not-last&gt;&lt;/guided-suggestions&gt;&nbsp;&lt;/guided-if-suggestion-low-results&gt;</code> </p> <p> I ovanstående scenario styrs antalet förslag av värdet som anges i <span class="uicontrol"> standardantalet förslag som ska visas</span>. Det låga och höga tröskelvärdet kan konfigureras med alternativen nedan. </p> </td> 
+      <td colname="col2"> <p>Om en kund söker efter en term som ger mindre än tio resultat, kontrollerar sökmotorn om den har ett förslag som kan ge mer än 100 resultat. Om den gör det kan du använda följande taggar för att visa för användaren att de kanske har velat söka efter något annat medan de har resultat: </p> <p> <code>&nbsp;&lt;guided-if-suggestion-low-results&gt; &nbsp;&nbsp;You&nbsp;have&nbsp;a&nbsp;low&nbsp;result&nbsp;count&nbsp;for&nbsp;&lt;Search&nbsp;for&nbsp;guided-param&nbsp;gsname="q"&gt;.&nbsp;&nbsp;Did&nbsp;you&nbsp;mean:&nbsp;&lt;guided-suggestion&gt;&lt;guided-suggestion-link&gt;&lt;guided-suggestion&nbsp;/&gt;&lt;/guided-suggestion-link&gt;&lt;guided-if-not-last&gt;,&nbsp;&lt;/guided-if-not-last&gt;&lt;/guided-suggestions&gt;&nbsp;&lt;/guided-if-suggestion-low-results&gt;</code> </p> <p> I ovanstående scenario styrs antalet förslag av värdet som anges i <span class="uicontrol"> Standardantal förslag att visa</span>. Det låga och höga tröskelvärdet kan konfigureras med alternativen nedan. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Gör förslag när de inledande resultaten är färre än </p> </td> 
@@ -87,9 +90,9 @@ t_configuring_did_you_mean.xml
 1. Klicka på **Spara ändringar**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
