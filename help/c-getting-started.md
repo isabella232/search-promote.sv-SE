@@ -1,6 +1,6 @@
 ---
-description: Om du inte har använt Search&Promote och dynamisk navigering tidigare kan du börja här för att komma igång med ditt konto. Du får bland annat lära dig hur du indexerar webbplatsen och anpassar utseendet på sökresultaten.
-seo-description: Om du inte har använt Search&Promote och dynamisk navigering tidigare kan du börja här för att komma igång med ditt konto. Du får bland annat lära dig hur du indexerar webbplatsen och anpassar utseendet på sökresultaten.
+description: Om du inte är van vid Search & Promote och dynamisk navigering kan du börja här för att komma igång med ditt konto. Du får bland annat lära dig hur du indexerar webbplatsen och anpassar utseendet på sökresultaten.
+seo-description: Om du inte är van vid Search & Promote och dynamisk navigering kan du börja här för att komma igång med ditt konto. Du får bland annat lära dig hur du indexerar webbplatsen och anpassar utseendet på sökresultaten.
 seo-title: Komma igång
 solution: Target
 title: Komma igång
@@ -8,6 +8,9 @@ topic: Getting Started,Site search and merchandising
 uuid: 816ad003-15c9-4e44-b09d-cab284518634
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '1065'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
 Om du inte har använt Sök&amp;höj och dynamisk navigering tidigare kan du börja här för att komma igång med ditt konto. Du får bland annat lära dig hur du indexerar webbplatsen och anpassar utseendet på sökresultaten.
 
-## Konfigurera ditt konto {#section_FD4C71A422BD4ACEA51AFC98CDD3211C}
+## Konfigurerar ditt konto {#section_FD4C71A422BD4ACEA51AFC98CDD3211C}
 
 Innan du börjar anpassa ditt konto ska du ändra lösenordet som ursprungligen tilldelats dig.
 
@@ -32,21 +35,21 @@ När du är klar med dina personliga inställningar öppnar du dina kontoövergr
 
 Se [Konfigurera dina kontoinställningar](c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
-Granska kontonamnet och webbplatsadressen och välj sedan en tidszon att använda för rapporter och schemaläggning. Den webbplatsadress du anger är platsens huvudingångspunkt. Alla sidor under ingångspunkten crawlas och indexeras om de är direkt eller indirekt länkade till den angivna URL:en. Om ingångspunkten till exempel är `https://www.mysite.com/`indexeras sidan, om den är länkad från `https://www.mysite.com/news/04.html` `index.html` huvudsidan eller en sida som är länkad från det indexet. Om webbplatsen innehåller avsnitt som inte är länkade från huvudingångspunkten, till exempel sidor på en andra domän, kan du ange ytterligare URL-startpunkter.
+Granska kontonamnet och webbplatsadressen och välj sedan en tidszon att använda för rapporter och schemaläggning. Den webbplatsadress du anger är platsens huvudingångspunkt. Alla sidor under ingångspunkten crawlas och indexeras om de är direkt eller indirekt länkade till den angivna URL:en. Om ingångspunkten till exempel är `https://www.mysite.com/` indexeras sidan `https://www.mysite.com/news/04.html`, om den är länkad från huvudsidan `index.html` eller en sida som är länkad från det indexet. Om webbplatsen innehåller avsnitt som inte är länkade från huvudingångspunkten, till exempel sidor på en andra domän, kan du ange ytterligare URL-startpunkter.
 
 Se [Lägga till flera URL-startpunkter som du vill indexera](c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
 
-## Lägga till exempelkoden för sökformulär på dina webbsidor {#section_2BC00BE7D81245188E4A89E09D41D387}
+## Lägga till exempelkoden för sökformuläret på dina webbsidor {#section_2BC00BE7D81245188E4A89E09D41D387}
 
 Nu kan du lägga till sökkoden på dina webbsidor. Exempelformulärkod finns för ett standardsökformulär.
 
-Se [Förhandsgranska sökformuläret som det skulle se ut på din..](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714).
+Se [Förhandsgranska sökformuläret som det skulle se ut på din dator..](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714).
 
 Se [Kopiera HTML-koden för sökformuläret till ...](c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7).
 
 Kopiera och klistra in koden på dina webbsidor där du vill att ett sökformulär ska visas. Många webbplatser placerar till exempel ett formulär på sin hemsida eller i en navigeringsram. Du kan redigera formulärkoden så att den passar dina design- och innehållsbehov eller lägga till ytterligare sökparametrar.
 
-## Anpassa länken för sökresultat {#section_0B4E2D6E1A3E4D3FBDBB607260CDB111}
+## Anpassa sökresultatlänken {#section_0B4E2D6E1A3E4D3FBDBB607260CDB111}
 
 Du kan också anpassa sökresultatlänken, bakgrundsfärgerna och rubrikinformationen.
 
@@ -58,33 +61,33 @@ Se [Redigera en presentation eller en transportmall](c-about-design-menu/c-about
 
 När du är nöjd med mallens utseende sparar du ändringarna och klickar sedan på **[!UICONTROL Push Live]**.
 
-Se [Köra ett fullständigt index för en publicerad eller mellanlagrad webbplats..](c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+Se [Köra ett fullständigt index för en aktiv eller mellanlagrad webbplats..](c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-## Indexera webbplatsen {#section_6BBD16929CF04CB2A78BD657681C06B8}
+## Indexerar din webbplats {#section_6BBD16929CF04CB2A78BD657681C06B8}
 
 Webbplatsen indexeras när du först skapar ett konto. Om du har lagt till nytt innehåll eller redigerat befintligt innehåll indexerar du om webbplatsen.
 
-Se [Köra ett fullständigt index för en publicerad eller mellanlagrad webbplats..](c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+Se [Köra ett fullständigt index för en aktiv eller mellanlagrad webbplats..](c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
 Du kan också schemalägga vanliga indextider.
 
-Se [Ställa in ett fullständigt indexschema för en aktiv webbplats](c-about-index-menu/c-about-full-index.md#task_6760F3256D004A228B38968DF15421F0).
+Se [Ange fullständigt indexschema för en aktiv webbplats](c-about-index-menu/c-about-full-index.md#task_6760F3256D004A228B38968DF15421F0).
 
-Se [Köra ett inkrementellt index för en aktiv eller mellanlagrad webbplats..](c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+Se [Köra ett inkrementellt index för en aktiv eller mellanlagrad webbplats...](c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 
 Om webbplatsen är stor, eller om du bara vill indexera om en uppsättning sidor som ändras ofta, kan du konfigurera och sedan utföra ett inkrementellt index i stället.
 
 Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
-Se [Köra ett inkrementellt index för en aktiv eller mellanlagrad webbplats..](c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+Se [Köra ett inkrementellt index för en aktiv eller mellanlagrad webbplats...](c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 
 Om du vill utföra ett inkrementellt index utan att behöva logga in kan du skapa ett skriptindex.
 
-Se [Konfigurera ett skriptbaserat inkrementellt index](c-about-index-menu/c-about-scripted-index.md#task_05AE040FE75E40FFAA5E10B6B6D4D255).
+Se [Konfigurera ett skriptat inkrementellt index](c-about-index-menu/c-about-scripted-index.md#task_05AE040FE75E40FFAA5E10B6B6D4D255).
 
 Du kan också använda ett skript för att skicka en fjärrbegäran om indexering.
 
-Se [Konfigurera fjärrkontroll för indexering](c-about-index-menu/c-about-remote-control-for-indexing.md#task_57C296258404448DA7A5ADC9B7232391).
+Se [Konfigurera fjärrstyrning för indexering](c-about-index-menu/c-about-remote-control-for-indexing.md#task_57C296258404448DA7A5ADC9B7232391).
 
 ## Visa söktermrapporter {#section_1F4A7F57B9C64FBDA5E3E592621BF6F4}
 
@@ -110,16 +113,16 @@ Det finns många andra alternativ som gör att ni kan anpassa och styra kundens 
    Se [Om lösenord](c-about-settings-menu/c-about-crawling-menu.md#concept_3EDBD731725D46B891F834D4472774DC).
 * Styr antalet anslutningar som används för att indexera webbplatsen.
 
-   Se [Anslutningar](c-about-settings-menu/c-about-crawling-menu.md#concept_E2F3B7E7521147479E5948A94BB3A40B).
+   Se [Om anslutningar](c-about-settings-menu/c-about-crawling-menu.md#concept_E2F3B7E7521147479E5948A94BB3A40B).
 * Ange information om formulär som du vill ha crawlade och skickade.
 
-   Se [Om inskickning](c-about-settings-menu/c-about-crawling-menu.md#concept_CADD5D7CF373497DAA6F8564D7BC8502)av formulär.
+   Se [Om inskickning av formulär](c-about-settings-menu/c-about-crawling-menu.md#concept_CADD5D7CF373497DAA6F8564D7BC8502).
 * Undanta vanliga ord som&quot;a&quot; eller&quot;the&quot; från sökningar.
 
    Se [Om uteslutna ord](c-about-linguistics-menu/c-about-excluded-words.md#concept_9DB67BD2F0DC43AC88741003D9F39812).
 * Ange vilka delar av webbplatsen du vill söka efter, till exempel&quot;Nyhetsavsnitt&quot; eller&quot;Reseavsnitt&quot;.
 
-   Se [Samlingar](c-about-settings-menu/c-about-searching-menu.md#concept_62E42ACE53D54EEE9273433B86259127).
+   Se [Om samlingar](c-about-settings-menu/c-about-searching-menu.md#concept_62E42ACE53D54EEE9273433B86259127).
 * Anpassa sökningen för användning med ramuppsättningar.
 
    Se [Använda ramar med formulär](c-appendices/c-searchforms.md#reference_82CDDDA1E37042E4849EBF7EA05407C5).
@@ -132,9 +135,9 @@ Det finns många andra alternativ som gör att ni kan anpassa och styra kundens 
 * Med metadataalternativen kan du anpassa HTML- och metafältens relevans (till exempel nyckelord eller dokumentets brödtext) som ska beaktas när en kund skickar en sökfråga. Du kan anpassa och definiera metadatafält.
 
    Se [Om definitioner](c-about-settings-menu/c-about-metadata-menu.md#concept_AE48035C210145169BE067D396975620).
-* Ändra innehållet i fördefinierade fält. Du kan t.ex. lägga till nytt innehåll, t.ex.&quot;Vid försäljning nu!&quot;) till en sidas eller en sidgrupps meta- `desc` taggar. Du kan också ta bort irrelevant innehåll utan att ändra de faktiska webbsidorna.
+* Ändra innehållet i fördefinierade fält. Du kan t.ex. lägga till nytt innehåll, t.ex.&quot;Vid försäljning nu!&quot;) till metataggar för `desc` för en sida eller en grupp med sidor. Du kan också ta bort irrelevant innehåll utan att ändra de faktiska webbsidorna.
 
-   Se [Injektioner](c-about-settings-menu/c-about-metadata-menu.md#concept_DA091920671948A0A893A26B3A2FAAE5).
+   Se [Om injektioner](c-about-settings-menu/c-about-metadata-menu.md#concept_DA091920671948A0A893A26B3A2FAAE5).
 
 * Använd alternativen under **[!UICONTROL Settings]** > **[!UICONTROL Filtering]** och **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** för att skriva om sidinnehållet innan det indexeras.
 
