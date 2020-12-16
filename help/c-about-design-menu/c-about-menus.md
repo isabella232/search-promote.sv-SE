@@ -42,9 +42,9 @@ t_adding_a_new_menu.xml
 
 **Lägga till en ny meny**
 
-1. På produktmenyn klickar du på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Menus]**.
-1. På [!DNL Menus] sidan klickar du på **[!UICONTROL Add New Menu]**.
-1. Ange önskade alternativ på [!DNL Add Menu] sidan.
+1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Menus]** på produktmenyn.
+1. Klicka på **[!UICONTROL Add New Menu]** på sidan [!DNL Menus].
+1. Ange önskade alternativ på sidan [!DNL Add Menu].
 
    De här inställningarna påverkar både beteendet och standardpresentationen för en vägbeskrivare. Du kan åsidosätta vissa av de här inställningarna med hjälp av presentationsmallens inställningar.
 
@@ -70,9 +70,9 @@ t_adding_a_new_menu.xml
       <td colname="col1"> <p>Menytyp </p> </td> 
       <td colname="col2"> <p>Anger någon av följande tre menytyper: </p> <p> 
       <ul id="ul_7E66ACC1DA494B20BEC3B0B2CCAB103A"> 
-      <li id="li_D81876660A8B48AFB70D3317063FBF6F"> <span class="uicontrol"> Sortera </span> <p>Sorterar sökningen efter någon av dina definierade metadatatyper. </p> <p>Du kan till exempel definiera en sorteringsmeny med följande metadatatyper: tre faktorer av betydelse, ett anpassat metadatafält, t.ex. en tillgänglighetskod, och priset. De tre objekten kan ha etiketterna Sortera efter relevans, Sortera efter tillgänglighet respektive Sortera efter pris. När du inkluderar detta i presentationsmallen kan kunden använda den här kontrollen för att sortera sina sökresultat. </p> </li> 
-      <li id="li_63AE06B544B64DCAA8C55031B3DFFFF7"> <span class="uicontrol"> Antal </span> <p>Definierar antalet sökresultat som ska visas. Den här menytypen mappar till cgi-parametern <span class="varname"> sp_c </span>. </p> <p>Se CGI-parametrar för <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" format="dita" scope="local"> backend-sökning </a>. </p> </li> 
-      <li id="li_EEC810D420FF41498ECE49EBAAB33BE5"> <span class="uicontrol"> Navigering </span> <p>Anger en uppsättning statiska URL:er som är associerade med menyalternativ. Vanligtvis används en navigeringsmeny för att skapa ett navigeringsfält på den översta nivån på sökresultatsidan. </p> <p>Du kan till exempel skapa en meny som innehåller kvinnor, män, pojkar och flickor där menyalternativen skulle vara något som följer: 
+      <li id="li_D81876660A8B48AFB70D3317063FBF6F"> <span class="uicontrol"> Sortera  </span> <p>Sorterar sökningen efter någon av dina definierade metadatatyper. </p> <p>Du kan till exempel definiera en sorteringsmeny med följande metadatatyper: tre faktorer av betydelse, ett anpassat metadatafält, t.ex. en tillgänglighetskod, och priset. De tre objekten kan ha etiketterna Sortera efter relevans, Sortera efter tillgänglighet respektive Sortera efter pris. När du inkluderar detta i presentationsmallen kan kunden använda den här kontrollen för att sortera sina sökresultat. </p> </li> 
+      <li id="li_63AE06B544B64DCAA8C55031B3DFFFF7"> <span class="uicontrol"> Antal  </span> <p>Definierar antalet sökresultat som ska visas. Den här menytypen mappar till cgi-parametern <span class="varname"> sp_c </span>. </p> <p>Se <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" format="dita" scope="local"> CGI-parametrar för backend-sökning </a>. </p> </li> 
+      <li id="li_EEC810D420FF41498ECE49EBAAB33BE5"> <span class="uicontrol"> Navigering  </span> <p>Anger en uppsättning statiska URL:er som är associerade med menyalternativ. Vanligtvis används en navigeringsmeny för att skapa ett navigeringsfält på den översta nivån på sökresultatsidan. </p> <p>Du kan till exempel skapa en meny som innehåller kvinnor, män, pojkar och flickor där menyalternativen skulle vara något som följer: 
       <code>
         /?q1=womens;x1=gender 
       </code>, 
@@ -114,11 +114,11 @@ t_adding_a_new_menu.xml
     </table>
 
 1. Klicka på **[!UICONTROL Add]**.
-1. (Valfritt) Gör något av följande på [!DNL Menus] sidan:
+1. (Valfritt) Gör något av följande på sidan [!DNL Menus]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -144,17 +144,17 @@ t_editing_a_menu.xml
 
 **Redigera en meny**
 
-1. På produktmenyn klickar du på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Menus]**.
-1. På [!DNL Menus] sidan klickar du **[!UICONTROL Edit]** längst till höger på ett menynamn.
-1. Ange önskade alternativ på [!DNL Edit Menu] sidan.
+1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Menus]** på produktmenyn.
+1. På sidan [!DNL Menus] klickar du på **[!UICONTROL Edit]** längst till höger om ett menynamn.
+1. Ange önskade alternativ på sidan [!DNL Edit Menu].
 
    Se tabellen med alternativ under [Lägga till en ny meny](../c-about-design-menu/c-about-menus.md#task_EE171532D3AE477FAFE8C2F4077A6D73).
 1. Klicka på **[!UICONTROL Save Changes]**.
-1. (Valfritt) Gör något av följande på [!DNL Menus] sidan:
+1. (Valfritt) Gör något av följande på sidan [!DNL Menus]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -164,7 +164,7 @@ t_editing_a_menu.xml
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Ta bort en meny {#task_645E212311A045CD8D9D906878165F47}
+## Tar bort en meny {#task_645E212311A045CD8D9D906878165F47}
 
 Du kan ta bort alla menyer som du har lagt till.
 
@@ -176,14 +176,14 @@ t_deleting_a_menu.xml
 
 **Ta bort en meny**
 
-1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Menus]**
-1. På [!DNL Menus] sidan klickar du **[!UICONTROL Delete]** längst till höger på ett menynamn.
-1. Klicka på i [!DNL Confirmation] dialogrutan **[!UICONTROL OK]**.
+1. På produktmenyn klickar du på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Menus]**
+1. På sidan [!DNL Menus] klickar du på **[!UICONTROL Delete]** längst till höger om ett menynamn.
+1. Klicka på **[!UICONTROL OK]** i dialogrutan [!DNL Confirmation].
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
