@@ -65,7 +65,7 @@ ht-degree: 0%
    + [Regler för eftersökning](c-about-rules-menu/c-about-post-search-rules.md)
    + [Affärsregler](c-about-rules-menu/c-about-business-rules.md)
    + [Rankningsregler](c-about-rules-menu/c-about-ranking-rules.md)
-+ Använda sökspråk {#linguistics}
++ Använda söklingvistik {#linguistics}
    + [Ordlistor](c-about-linguistics-menu/c-about-dictionaries.md)
    + [Ord och språk](c-about-linguistics-menu/c-about-words-and-language.md)
    + [Menade du](c-about-linguistics-menu/c-about-did-you-mean.md)
@@ -87,7 +87,7 @@ ht-degree: 0%
    + [Fjärrkontroll för indexering](c-about-index-menu/c-about-remote-control-for-indexing.md)
    + [Återställning för index](c-about-index-menu/c-about-rollback-for-indexes.md)
    + [Lodrät uppdatering](c-about-index-menu/c-about-vertical-updates.md)
-+ Konfigurera inställningar {#settings}
++ Konfigurerar inställningar {#settings}
    + [Crawling](c-about-settings-menu/c-about-crawling-menu.md)
    + [Söker](c-about-settings-menu/c-about-searching-menu.md)
    + [Metadata](c-about-settings-menu/c-about-metadata-menu.md)
