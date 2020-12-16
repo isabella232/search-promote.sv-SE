@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# Om skriptindex{#about-scripted-index}
+# Om skriptat index{#about-scripted-index}
 
 Med skriptbaserat index kan du skriva, uppdatera och underhålla alternativ för inkrementell indexering utan att behöva logga in. Sökroboten läser instruktioner från en textfil som finns på servern.
 
@@ -50,16 +50,16 @@ En inledande nolla krävs för alla ordningstal som är lägre än den 10:e när
    <td colname="col1"> <p>date-command </p> </td> 
    <td colname="col2"> <p>Den första raden i varje block börjar med ett av två datumkommandon: </p> <p> 
      <ul id="ul_9C1B229B7F1846C490B853FC34989E77"> 
-      <li id="li_31FEF1A7163842BDBB0ABE779D07045A"> <span class="codeph"> datum </span> <p>Använd kommandot "date" för att ange att datumspecificeraren ska bestå av en dag, ett datum, en tid och en tidszon. </p> </li> 
-      <li id="li_0918D5B090014C1A852CB80BB7C2867C"> <span class="codeph"> sekunder </span> <p>Använd <span class="codeph"> sekunder </span> för att ange att datumspecificeraren ska bestå av en tid i epoksekunder (till exempel 78411777). När du använder <span class="codeph"> sekunder </span>måste du se till att antalet sekunder mellan blocken ökar. </p> </li> 
+      <li id="li_31FEF1A7163842BDBB0ABE779D07045A"> <span class="codeph"> datum  </span> <p>Använd kommandot "date" för att ange att datumspecificeraren ska bestå av en dag, ett datum, en tid och en tidszon. </p> </li> 
+      <li id="li_0918D5B090014C1A852CB80BB7C2867C"> <span class="codeph"> sekunder  </span> <p>Använd <span class="codeph"> sekunder </span> för att ange att datumspecificeraren ska bestå av en tid i epoksekunder (till exempel 78411777). När du använder <span class="codeph"> sekunder </span> måste du se till att antalet sekunder ökar mellan blocken. </p> </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>datumspecificerare </p> </td> 
-   <td colname="col2"> <p>Det <span class="codeph"> datumspecificerande </span> kommandot registrerar vanligtvis antingen ordningstalsdatum och -tid (kommandot date) eller tiden i epoksekunder (kommandot seconds) som blockinformationen lades till i filen. Exempel: </p> <p> <code> date&nbsp;Sun,&nbsp;06&nbsp;Nov&nbsp;1994&nbsp;08:49:37&nbsp;GMT&nbsp;(HTTP&nbsp;1.1&nbsp;style) 
+   <td colname="col2"> <p>Kommandot <span class="codeph"> date-specify </span> registrerar vanligtvis antingen ordningstalsdatumet och -tiden (date-kommando) eller tiden i epoksekunder (seconds-kommando) som blockinformationen lades till i filen. Exempel: </p> <p> <code> date&nbsp;Sun,&nbsp;06&nbsp;Nov&nbsp;1994&nbsp;08:49:37&nbsp;GMT&nbsp;(HTTP&nbsp;1.1&nbsp;style) 
       date&nbsp;Sunday,&nbsp;06-Nov-94&nbsp;08:49:37&nbsp;GMT&nbsp;(HTTP&nbsp;1.0&nbsp;style) 
       date&nbsp;Sun&nbsp;Nov&nbsp;6&nbsp;08:49:37&nbsp;1994&nbsp;(Unix&nbsp;asctime()&nbsp;date&nbsp;style) 
-      seconds&nbsp;784111777&nbsp;(Unix&nbsp;epoch-seconds&nbsp;style) </code> </p> <p>En inledande nolla krävs för alla ordningstal som är lägre än den 10:e när formatet HTTP 1.1 används. Den 6 november är till exempel 06 nov, inte 6 nov. </p> <p>Sökroboten "kommer ihåg" datumspecificeraren för det senast bearbetade blocket och indexerar bara information som den anser vara "nyare". (Det spelar ingen roll för sökroboten i realtid. I stället är tiden i förhållande till andra tidigare bearbetade tider det som är viktigt.) </p> <p>När sökroboten läser ett block med datumspecificeraren 10:00, läser den till exempel inte några block som spelar in före 10:00, oavsett när indexåtgärden körs. I ett värsta fall kanske du av misstag anger året "2040" i stället för "2004" i datumspecifikationen. I så fall indexerar sökroboten blocket 2040 under nästa indexeringsåtgärd och vägrar sedan att läsa andra informationsblock (såvida inte ett efter 2040). Om detta skulle inträffa tar du bort alla tidigare bearbetade block från textfilen, klickar på <span class="uicontrol"> Rensa datum </span>och aktiverar det sedan. </p> </td> 
+      seconds&nbsp;784111777&nbsp;(Unix&nbsp;epoch-seconds&nbsp;style) </code> </p> <p>En inledande nolla krävs för alla ordningstal som är lägre än den 10:e när formatet HTTP 1.1 används. Den 6 november är till exempel 06 nov, inte 6 nov. </p> <p>Sökroboten "kommer ihåg" datumspecificeraren för det senast bearbetade blocket och indexerar bara information som den anser vara "nyare". (Det spelar ingen roll för sökroboten i realtid. I stället är tiden i förhållande till andra tidigare bearbetade tider det som är viktigt.) </p> <p>När sökroboten läser ett block med datumspecificeraren 10:00, läser den till exempel inte några block som spelar in före 10:00, oavsett när indexåtgärden körs. I ett värsta fall kanske du av misstag anger året "2040" i stället för "2004" i datumspecifikationen. I så fall indexerar sökroboten blocket 2040 under nästa indexeringsåtgärd och vägrar sedan att läsa andra informationsblock (såvida inte ett efter 2040). Om detta skulle inträffa tar du bort alla tidigare bearbetade block från textfilen, klickar på <span class="uicontrol"> Radera datum </span> och aktiverar det sedan. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>kommentarsrad </p> </td> 
@@ -73,30 +73,34 @@ En inledande nolla krävs för alla ordningstal som är lägre än den 10:e när
       <li id="li_22181666628C48A28A6A0BA1F7CA8E77"> 
        <code>
          add 
-       </code> <p>Använd med URL. Sökroboten indexerar bara de angivna URL:er som har ändrats sedan den senaste indexeringsåtgärden. Sökroboten följer dessutom länkar som finns i angivna dokument och indexerar endast de dokument som har ändrats. </p> <p>Du kan följa URL:en med <code>
+       </code> <p>Använd med URL. Sökroboten indexerar bara de angivna URL:er som har ändrats sedan den senaste indexeringsåtgärden. Sökroboten följer dessutom länkar som finns i angivna dokument och indexerar endast de dokument som har ändrats. </p> <p>Du kan följa URL:en med 
+        <code>
           nofollow 
-        </code> eller <code>
+        </code> eller 
+        <code>
           noindex 
         </code> nyckelord som i följande exempel: </p> <p> <code> add&amp;nbsp;https://www.mydomain.com/&amp;nbsp;noindex </code> </p> </li> 
       <li id="li_8E47BF07DB24417083883F5BF40D6B9E"> 
        <code>
          update 
-       </code> <p>Använd med URL-mask. Sökroboten hittar och uppdaterar alla dokument som matchar den angivna URL-masken. </p> <p>Du kan följa URL:en med <code>
+       </code> <p>Använd med URL-mask. Sökroboten hittar och uppdaterar alla dokument som matchar den angivna URL-masken. </p> <p>Du kan följa URL:en med 
+        <code>
           nofollow 
-        </code> eller <code>
+        </code> eller 
+        <code>
           noindex 
         </code> nyckelord som i följande exempel: </p> <p> <code> update&amp;nbsp;https://www.mydomain.com/products/ </code> </p> </li> 
       <li id="li_B3EC8B1670D54F66A1D8411A694EF7E4"> 
        <code>
          include 
-       </code> eller 
+       </code> eller  
        <code>
          exclude 
        </code> <p>Använd med URL-mask. Sökroboten hittar och indexerar ("include") eller ignorerar ("exclude") dokument baserat på den angivna masktypen. </p> <p>Exempel: </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/products/household/lightbulbs*.html </code> </p> <p>eller </p> <p> <code> exclude&amp;nbsp;https://www.mydomain.com/archive/ </code> </p> </li> 
       <li id="li_050B54B735F0475E93806455FA6DC6A5"> 
        <code>
          include-date 
-       </code> eller 
+       </code> eller  
        <code>
          exclude-date 
        </code> <p>Använd med URL-mask. Sökroboten hittar och indexerar ("include") eller ignorerar ("exclude") dokument baserat på både URL:en och dokumentdatumet. Följande typer av masker är tillgängliga: </p> <p> 
@@ -104,33 +108,41 @@ En inledande nolla krävs för alla ordningstal som är lägre än den 10:e när
          <li id="li_0C7051AC3B5A4C57A3E477F7B6246611"> 
           <code>
             include-days NNN 
-          </code> <p>Sökroboten indexerar alla dokument som matchar den angivna URL-masken och är NNN days eller mer gamla. </p> <p>Du kan följa URL-masken med nyckelorden <code>
+          </code> <p>Sökroboten indexerar alla dokument som matchar den angivna URL-masken och är NNN days eller mer gamla. </p> <p>Du kan följa URL-masken med nyckelorden 
+           <code>
              nofollow 
-           </code>, <code>
+           </code>, 
+           <code>
              noindex 
-           </code>och/eller <code>
+           </code>, och/eller 
+           <code>
              server-date 
            </code>. </p> </li> 
          <li id="li_983A10E2ED5D434EA9031F32143F4EF4"> 
           <code>
             include-date YYYY-MM-DD 
-          </code> <p> Sökroboten indexerar alla dokument som matchar den angivna URL-masken och som är lika gamla eller äldre än datumet YYY-MM-DD, där "YYY" är det fyrsiffriga året, "MM" är den en- eller tvåsiffriga månaden (1-12) och "DD" är den en- eller tvåsiffriga dagen (1-31). </p> <p>Du kan följa URL-masken med nyckelorden <code>
+          </code> <p> Sökroboten indexerar alla dokument som matchar den angivna URL-masken och som är lika gamla eller äldre än datumet YYY-MM-DD, där "YYY" är det fyrsiffriga året, "MM" är den en- eller tvåsiffriga månaden (1-12) och "DD" är den en- eller tvåsiffriga dagen (1-31). </p> <p>Du kan följa URL-masken med nyckelorden 
+           <code>
              nofollow 
-           </code>, <code>
+           </code>, 
+           <code>
              noindex 
-           </code>och/eller <code>
+           </code>, och/eller 
+           <code>
              server-date 
            </code>. </p> </li> 
          <li id="li_733CE1B748024CECA7FBE00D7BC7B88A"> 
           <code>
             exclude-days NNN 
-          </code> <p> Inaktiverar indexering av alla dokument som matchar den angivna URL-masken och som är NNN days eller mer gamla. </p> <p>Du kan följa URL-masken med nyckelordet <code>
+          </code> <p> Inaktiverar indexering av alla dokument som matchar den angivna URL-masken och som är NNN days eller mer gamla. </p> <p>Du kan följa URL-masken med nyckelordet 
+           <code>
              server-date 
            </code>. </p> </li> 
          <li id="li_90056A0B96CC4DA3854711860A15CE89"> 
           <code>
             exclude-date YYYY-MM-DD 
-          </code> <p>Inaktiverar indexering av alla dokument som matchar den angivna URL-masken och som är lika gamla eller äldre än datumet YYY-MM-DD. </p> <p>Du kan följa URL-masken med nyckelordet <code>
+          </code> <p>Inaktiverar indexering av alla dokument som matchar den angivna URL-masken och som är lika gamla eller äldre än datumet YYY-MM-DD. </p> <p>Du kan följa URL-masken med nyckelordet 
+           <code>
              server-date 
            </code>. </p> </li> 
         </ul> </p> </li> 
@@ -154,17 +166,17 @@ Se även [Om URL-masker](../c-about-settings-menu/c-about-crawling-menu.md#conce
 I följande skriptfilexempel bearbetar sökroboten blocken under förutsättning att datumspecificerarna efterdaterar datumspecificeraren för det senast bearbetade blocket. Om så är fallet utförs följande indexeringsåtgärder:
 
 * Tar bort `y2k-problems.html` från indexet.
-* Lägger `no-y2k-problems.html` till i sökindexet och följer inte någon av länkarna för `no-y2k-problems.html`.
+* Lägger till `no-y2k-problems.html` i sökindexet och följer inte någon av länkarna för `no-y2k-problems.html`.
 
 * Vid crawlning utelämnar du URL:er som matchar `housewares.htm` och `lightfixtures.htm`l från sökindexet.
 
 * Inkludera alla andra kataloger och dokument under `www.mydomain.com`.
-* Uppdatera alla dokument i katalogerna `products` och `information` katalogerna, crawla och indexera alla underordnade länkar som har ändrats sedan den senaste indexeringsåtgärden.
+* Uppdatera alla dokument i katalogerna `products` och `information`, crawlar och indexerar alla underordnade länkar som har ändrats sedan den senaste indexeringsåtgärden.
 
-* Vid crawlning bör URL-adresser i webbplatsens avsnitt utelämnas om de är daterade den 1 januari 1999 eller tidigare. `archive`
+* Undanta URL:er i avsnittet `archive` på webbplatsen om de är daterade den 1 januari 1999 eller tidigare när de crawlas.
 * Uteslut URL:er som matchar `housewares.html` och `lightfixtures.html` från sökindexet.
 
-* Indexera filer i `help` katalogen, men crawla eller indexera inga länkar från dessa filer.
+* Indexera filer i katalogen `help`, men crawla eller indexera inga länkar från de filerna.
 * Crawla och indexera alla andra filer som påträffats för `www.mydomain.com`.
 
 ```
@@ -198,19 +210,19 @@ Du kan ange ett skript som du har skapat och som skriver, uppdaterar och underh�
 
 **Konfigurera ett skriptbaserat inkrementellt index**
 
-1. På produktmenyn klickar du på **[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Configuration]**.
-1. På **[!UICONTROL Scripted Incremental Index Configuration]** sidan i **[!UICONTROL Script File URL]** anger du URL:en till det textskript som finns på servern.
+1. Klicka på **[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Configuration]** på produktmenyn.
+1. På sidan **[!UICONTROL Scripted Incremental Index Configuration]** anger du URL:en till textfilsskriptet som finns på servern i **[!UICONTROL Script File URL]**.
 
    Se [Om skriptat index](../c-about-index-menu/c-about-scripted-index.md#concept_34F58D551BC04BFB8ADC294B9DA9199D).
-1. (Valfritt) Kontrollera **[!UICONTROL Clear Date]** om du inte vill att sökroboten ska &quot;komma ihåg&quot; datumspecificeraren för det senast bearbetade blocket.
+1. (Valfritt) Markera **[!UICONTROL Clear Date]** om du inte vill att sökroboten ska &quot;komma ihåg&quot; datumspecificeraren för det senast bearbetade blocket.
 
    Som standard behandlar sökroboten endast nya kommandoblock som finns i textfilen, vilket avgörs av filens datum. Om du inte vill använda standardinställningen markerar du **[!UICONTROL Clear Date]**.
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -234,9 +246,9 @@ Indexschemat gäller endast ditt liveindex. du kan inte schemalägga mellanlagra
 
 **Ställa in skriptbaserat inkrementellt indexschema för en aktiv webbplats**
 
-1. På produktmenyn klickar du på **[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Live Schedule]**.
-1. På **[!UICONTROL Scripted Incremental Index Schedule]** sidan väljer du i **[!UICONTROL Read the Scripted Incrementally Indexing File]** listrutan hur ofta du vill att den skriptade stegvisa indextextfilen ska köras, i timmar eller minuter.
-1. I den **[!UICONTROL Base Time]** nedrullningsbara listan väljer du starttid när du vill återskapa ett nytt skriptbaserat stegvis indexvärde.
+1. Klicka på **[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Live Schedule]** på produktmenyn.
+1. På sidan **[!UICONTROL Scripted Incremental Index Schedule]** väljer du i listrutan **[!UICONTROL Read the Scripted Incrementally Indexing File]** den frekvens som du vill att den skriptade inkrementella indextextfilen ska köras, i timmar eller minuter.
+1. I listrutan **[!UICONTROL Base Time]** väljer du starttid när du vill generera om ett nytt skriptat inkrementellt index.
 1. Klicka på **[!UICONTROL Save Changes]**.
 
 ## Köra ett skriptbaserat inkrementellt index för en aktiv eller mellanlagrad webbplats {#task_6E6FC76EE1E84A5FADB3B67AD7B1DACB}
@@ -245,7 +257,7 @@ Du kan använda Stegvis skriptad inkrementell indexposition om du vill indexera&
 
 Om du vill använda den här funktionen måste du konfigurera en skriptad inkrementell indextextfil.
 
-Se [Konfigurera ett skriptbaserat inkrementellt index](../c-about-index-menu/c-about-scripted-index.md#task_05AE040FE75E40FFAA5E10B6B6D4D255).
+Se [Konfigurera ett skriptat inkrementellt index](../c-about-index-menu/c-about-scripted-index.md#task_05AE040FE75E40FFAA5E10B6B6D4D255).
 
 **Så här kör du ett skriptbaserat inkrementellt index för en aktiv eller mellanlagrad webbplats**
 
@@ -255,7 +267,7 @@ Se [Konfigurera ett skriptbaserat inkrementellt index](../c-about-index-menu/c-a
    * Klicka på **[!UICONTROL Index]** > **[!UICONTROL Scripted Index]** > **[!UICONTROL Staged Index]**.
 
 1. Klicka på **[!UICONTROL Scripted Index Now]**.
-1. (Valfritt) Om indexeringsfel uppstår kan du visa den associerade loggen genom **[!UICONTROL View Errors]** att klicka.
+1. (Valfritt) Om indexeringsfel inträffar klickar du på **[!UICONTROL View Errors]** för att visa den associerade loggen.
 
 ## Visa skriptad inkrementell indexlogg för en aktiv eller mellanlagrad webbplats {#task_CBFCE9B9A87B4DF7A2A35A6E83DE93D7}
 
@@ -273,7 +285,7 @@ Du kan inte exportera loggar eller spara dem. Loggen är dock fortfarande tillg�
 
 1. Gör något av följande på loggsidan, längst upp eller längst ned:
 
-   * Använd navigeringsalternativen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** eller **[!UICONTROL Go to line]** för att förflytta dig i loggen.
+   * Använd navigeringsalternativen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** eller **[!UICONTROL Go to line]** för att gå igenom loggen.
 
    * Använd visningsalternativen **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** eller **[!UICONTROL Show]** för att förfina det du ser.
 
