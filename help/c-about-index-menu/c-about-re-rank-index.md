@@ -9,11 +9,14 @@ topic: Index,Site search and merchandising
 uuid: 5c2a4c12-5e06-4fcc-897c-c12fcc5d7aa8
 translation-type: tm+mt
 source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 1%
 
 ---
 
 
-# Om Re-Rank-index{#about-re-rank-index}
+# Om rangordningsindex{#about-re-rank-index}
 
 Du kan använda [!DNL Re-Rank Index] för att uppdatera rankningsinformationen för din webbplats utan att behöva rita om webbplatsen.
 
@@ -23,11 +26,11 @@ Du kan använda det här alternativet när du ändrar vissa inställningar för 
 
 Som standard tas inte allt nytt eller ändrat webbplatsinnehåll med i indexet. Om du vill ta med sådant innehåll kör du ett fullständigt eller inkrementellt index.
 
-Se [Köra ett fullständigt index för en publicerad eller mellanlagrad webbplats..](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+Se [Köra ett fullständigt index för en aktiv eller mellanlagrad webbplats..](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-Se [Köra ett inkrementellt index för en aktiv eller mellanlagrad webbplats..](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+Se [Köra ett inkrementellt index för en aktiv eller mellanlagrad webbplats...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
 
-## rangordna indexet för en publicerad eller mellanlagrad webbplats {#task_02E190CF700742FEACAFFD5986B0353A}
+## Rankar om indexet för en aktiv eller mellanlagrad webbplats {#task_02E190CF700742FEACAFFD5986B0353A}
 
 Du kan använda [!DNL Re-Rank Index] för att uppdatera rankningsinformationen för din webbplats utan att behöva rita om webbplatsen.
 
@@ -39,12 +42,12 @@ Du kan använda [!DNL Re-Rank Index] för att uppdatera rankningsinformationen f
 
    * Klicka på **[!UICONTROL Index]** > **[!UICONTROL Re-Rank Index]** > **[!UICONTROL Staged Re-Rank]**.
 
-1. På [!DNL Re-Rank] sidan klickar du på **[!UICONTROL Re-Rank Now]**.
+1. Klicka på **[!UICONTROL Re-Rank Now]** på sidan [!DNL Re-Rank].
 1. (Valfritt) Gör något av följande:
 
-   * Om du väljer att köra **[!UICONTROL Live Re-Rank]** kan du klicka **[!UICONTROL View Last Crawl]** för att visa prestandastatistik för den senaste omrangordningen av index som utfördes.
+   * Om du väljer att köra **[!UICONTROL Live Re-Rank]** klickar du på **[!UICONTROL View Last Crawl]** för att se prestandastatistik för den senaste omrangordningen av index som utfördes.
 
-   * Medan omrangordningen bearbetas klickar du för **[!UICONTROL Stop Re-Rank Now]** att avbryta omrangordningen av index.
+   * När rangordningen bearbetas klickar du på **[!UICONTROL Stop Re-Rank Now]** för att avbryta omrangordningen av index.
    * Om indexeringsfel uppstår efter att en mellanlagrad webbplats har rangordnats om klickar du på **[!UICONTROL View Errors]** för att visa den associerade loggen.
 
 ## Visa den omrangordnade indexloggen för en aktiv eller mellanlagrad webbplats {#task_3C76107DFAC1495FACD3ABB0A688208D}
@@ -63,7 +66,7 @@ Du kan inte exportera loggar eller spara dem. Loggen är dock fortfarande tillg�
 
 1. Gör något av följande på loggsidan, längst upp eller längst ned:
 
-   * Använd navigeringsalternativen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** eller **[!UICONTROL Go to line]** för att förflytta dig i loggen.
+   * Använd navigeringsalternativen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** eller **[!UICONTROL Go to line]** för att gå igenom loggen.
 
    * Använd visningsalternativen **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** eller **[!UICONTROL Show]** för att förfina det du ser.
 
