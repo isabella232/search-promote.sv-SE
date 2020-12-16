@@ -8,15 +8,18 @@ topic: Simulator,Site search and merchandising
 uuid: 7ec8f5b9-3ab3-4b9a-bf8a-65d0ca1dfddb
 translation-type: tm+mt
 source-git-commit: 91ddead9f73b73ea1a20e26582998966f801d6ff
+workflow-type: tm+mt
+source-wordcount: '398'
+ht-degree: 0%
 
 ---
 
 
-# Om Simulator{#about-simulator}
+# Om simulator{#about-simulator}
 
 Använd Simulator för att se hur sökningen skulle se ut om du skulle skicka allt som för närvarande är mellanlagrat, live.
 
-## Om Simulator {#concept_020AA6751E32421A96A3455508364C7E}
+## Om simulator {#concept_020AA6751E32421A96A3455508364C7E}
 
 Använd Simulator för att se hur sökningen skulle se ut om du skulle skicka allt som för närvarande är mellanlagrat, live.
 
@@ -32,8 +35,8 @@ Se [Lägga till en ny affärsregel](c-about-rules-menu/c-about-business-rules.md
 
 **Så här använder du simulatorn**
 
-1. Klicka på på produktmenyn **[!UICONTROL Simulator]**.
-1. I den **[!UICONTROL Options]** nedrullningsbara listan väljer du det alternativ som du vill köra.
+1. Klicka på **[!UICONTROL Simulator]** på produktmenyn.
+1. Välj det alternativ som du vill köra i listrutan **[!UICONTROL Options]**.
 
    <!-- 
    
