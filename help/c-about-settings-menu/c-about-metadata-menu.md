@@ -24,9 +24,9 @@ Använd menyn Metadata för att anpassa sökdefinitioner och indexinjektioner.
 
 Du kan använda [!DNL Definitions] för att anpassa innehållet och relevansen i HTML- och metadatafälten som beaktas när en kund skickar en sökfråga.
 
-Du kan redigera de fält som redan är fördefinierade. Du kan också skapa nya användardefinierade fält baserat på innehåll i metadatataggar. Varje definition visas på en rad på [!DNL Staged Definitions] sidan.
+Du kan redigera de fält som redan är fördefinierade. Du kan också skapa nya användardefinierade fält baserat på innehåll i metadatataggar. Varje definition visas på en rad på sidan [!DNL Staged Definitions].
 
-Se även [Datavyer](../c-about-reports-menu/c-about-data-views.md#concept_DCA897D074464BC1861AA47B40CC86C3).
+Se även [Om datavyer](../c-about-reports-menu/c-about-data-views.md#concept_DCA897D074464BC1861AA47B40CC86C3).
 
 ## Lägga till ett nytt metataggsfält {#task_6DF188C0FC7F4831A4444CA9AFA615E5}
 
@@ -36,9 +36,9 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
 
 **Lägga till ett nytt metataggsfält**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]**.
-1. På [!DNL Definitions] sidan klickar du på **[!UICONTROL Add New Field]**.
-1. Ange önskade alternativ på [!DNL Add Field] sidan.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]** på produktmenyn.
+1. Klicka på **[!UICONTROL Add New Field]** på sidan [!DNL Definitions].
+1. Ange önskade alternativ på sidan [!DNL Add Field].
 
    <table> 
     <thead> 
@@ -56,7 +56,7 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       <li id="li_7FC340E7C58545C88CE9AF4AF09AD7AD"> Bindestreck tillåts i namnet, men inga mellanslag. </li> 
       <li id="li_996FF38457AB4C6DB22B15850A0830CC"> Du kan ange ett namn som är högst 20 tecken långt. </li> 
       <li id="li_C1019E587995444D9587D5EA495D719E"> Namnet är inte skiftlägeskänsligt, men visas och lagras exakt som du skriver det. </li> 
-      <li id="li_E55404D6CE354EC89CFFEB1048A11F44"> Du kan inte använda namnen som finns i de fördefinierade fälten så som de visas i tabellen på <span class="wintitle"> sidan </span> Mellanlagrade definitioner. </li> 
+      <li id="li_E55404D6CE354EC89CFFEB1048A11F44"> Du kan inte använda namnen som finns i de fördefinierade fälten så som de visas i tabellen på sidan <span class="wintitle"> Mellanlagrade definitioner </span>. </li> 
       <li id="li_7CE328AE3B5F45A8A09E2DA7ECB62551"> Du kan inte använda ordet "any" som värde för ett användardefinierat fältnamn. </li> 
       <li id="li_9B8287EED1784E79BFCBBBA956705CD2"> Du kan inte redigera namnen på fördefinierade fält. </li> 
       </ul> </p> <p> Exempel på fältnamn: </p> <p> 
@@ -68,9 +68,10 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       </tr> 
       <tr> 
       <td colname="col1"> <p>Metataggens namn </p> </td> 
-      <td colname="col2"> <p>Bestämmer innehållet som är associerat med det definierade fältet. </p> <p>Namnlistan kan innehålla upp till 255 tecken. Namnet kan dessutom innehålla alla tecken som tillåts i namnattributet för en HTML-meta-tagg. </p> <p>Du kan ange flera metataggar i en enda fältdefinition. </p> <p>Flera värden måste vara kommaavgränsade, och metataggens namn längst till vänster som finns på en viss webbsida har företräde. </p> <p>Anta till exempel att du har definierat ett fält med namnet "auth". Fältnamnet har de associerade metataggarna "author, dc.author". I det här fallet indexeras och söks innehållet från meta-taggen "author" över innehållet i "dc.author" om båda meta-taggarna visas på en webbsida. </p> <p>Användardefinierade fält måste ha minst ett metataggnamn i definitionen. Fördefinierade fält behöver inte ha någon associerad metatagg. Om en eller flera metataggar anges åsidosätter emellertid innehållet i metataggen den aktuella datakällan för varje tagg. </p> <p>Om metataggen "dc.title" till exempel är associerad med det fördefinierade "title"-fältet, indexeras innehållet från metataggen "dc.title" över taggen för <code>
+      <td colname="col2"> <p>Bestämmer innehållet som är associerat med det definierade fältet. </p> <p>Namnlistan kan innehålla upp till 255 tecken. Namnet kan dessutom innehålla alla tecken som tillåts i namnattributet för en HTML-meta-tagg. </p> <p>Du kan ange flera metataggar i en enda fältdefinition. </p> <p>Flera värden måste vara kommaavgränsade, och metataggens namn längst till vänster som finns på en viss webbsida har företräde. </p> <p>Anta till exempel att du har definierat ett fält med namnet "auth". Fältnamnet har de associerade metataggarna "author, dc.author". I det här fallet indexeras och söks innehållet från meta-taggen "author" över innehållet i "dc.author" om båda meta-taggarna visas på en webbsida. </p> <p>Användardefinierade fält måste ha minst ett metataggnamn i definitionen. Fördefinierade fält behöver inte ha någon associerad metatagg. Om en eller flera metataggar anges åsidosätter emellertid innehållet i metataggen den aktuella datakällan för varje tagg. </p> <p>Om metataggen "dc.title" är associerad med det fördefinierade "title"-fältet, indexeras innehållet från metataggen "dc.title" över det i 
+      <code>
         &lt;title&gt; 
-      </code> ett visst dokument. </p> <p>Exempel: </p> <p> 
+      </code>-tagg för ett visst dokument. </p> <p>Exempel: </p> <p> 
       <ul id="ul_0132E15FC19E4C0CA13CD5A12EA3BBEC"> 
       <li id="li_ECD3B194FECB4C2090CAEC8449320D3F"> dc.date </li> 
       <li id="li_09C76BC7AC7348859D01989697212E31"> description </li> 
@@ -81,12 +82,12 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       <td colname="col1"> <p>Datatyp </p> </td> 
       <td colname="col2"> <p>Alla fält har en associerad datatyp som text, tal, datum, version, rangordning eller plats. Den här datatypen avgör hur fältets innehåll indexeras, söks och sorteras om så önskas. </p> <p>Du kan inte ändra datatypen när du har skapat fältdefinitionen. </p> <p>Använd följande information för att välja den datatyp som är relevant för informationen som fältet innehåller. </p> <p> 
       <ul id="ul_A3AD5A0CF354410F836311F39151B8A6"> 
-      <li id="li_9F412DA7D9EF497BA6E65F9CE10F3046"> <span class="uicontrol"> Textdatatypsfält </span> behandlas som teckensträngar. </li> 
-      <li id="li_AD78B75644AE40208F0239311015611F"> <span class="uicontrol"> Nummerdatatypfält </span> behandlas som numeriska heltal eller flyttal. </li> 
-      <li id="li_0B46975C589148E9A7C32A8D250487B7"> <span class="uicontrol"> Datumdatatypsfält </span> behandlas som datum-/tidsspecificerare. Du kan anpassa de tillåtna formaten för datum och tid när du lägger till eller redigerar det nya fältet. </li> 
-      <li id="li_BB68CB1DBE0543AC9000B3DEDFB28E7E"> <span class="uicontrol"> Datatypsfält för versioner </span> behandlas som numeriska data i fri form. 1.2.3 sorterar till exempel före 1.2.2. </li> 
-      <li id="li_0BA895B4DADA46528A7A4161EEB1521E"> <span class="uicontrol"> Rankade </span> datatypfält behandlas på samma sätt som"Number"-typfält, förutom att de dessutom påverkar ranknings-/relevansberäkningarna i sökresultaten. <p>Se <a href="../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397" type="concept" format="dita" scope="local"> Om rankningsregler </a>. </p> </li> 
-      <li id="li_459405DA437049AD88AA1FAC28F04720"> <span class="uicontrol"> Platsdatatypfält </span> behandlas som fysiska platser var som helst i världen. Tillåtna platsformat är: <p> 
+      <li id="li_9F412DA7D9EF497BA6E65F9CE10F3046"> <span class="uicontrol"> Textdatatypsfält  </span> behandlas som teckensträngar. </li> 
+      <li id="li_AD78B75644AE40208F0239311015611F"> <span class="uicontrol"> Nummerdatatypfält  </span> behandlas som numeriska heltal eller flyttal. </li> 
+      <li id="li_0B46975C589148E9A7C32A8D250487B7"> <span class="uicontrol"> Datumdatatypsfält  </span> behandlas som datum/tid-specificerare. Du kan anpassa de tillåtna formaten för datum och tid när du lägger till eller redigerar det nya fältet. </li> 
+      <li id="li_BB68CB1DBE0543AC9000B3DEDFB28E7E"> <span class="uicontrol"> Versionens  </span> datatypfält behandlas som numeriska data i fri form. 1.2.3 sorterar till exempel före 1.2.2. </li> 
+      <li id="li_0BA895B4DADA46528A7A4161EEB1521E"> <span class="uicontrol"> Rankade  </span> datatypfält behandlas på samma sätt som"Number"-typfält, förutom att de dessutom påverkar ranknings-/relevansberäkningarna i sökresultaten. <p>Se <a href="../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397" type="concept" format="dita" scope="local"> Om rankningsregler </a>. </p> </li> 
+      <li id="li_459405DA437049AD88AA1FAC28F04720"> <span class="uicontrol"> Platsdatatypfält  </span> behandlas som fysiska platser var som helst i världen. Tillåtna platsformat är: <p> 
       <ul id="ul_D2CEBFA1A5504AA996BA2F7641AFB7F3"> 
       <li id="li_5283A2F2D5D84840B3D920C08D43654C"> 5- eller 9-siffriga ZIP-koder i form av DDDDD eller DDDD-DDDD, där varje "D" är en siffra mellan 0 och 9. </li> 
       <li id="li_A5CD4DFC90164BC68183DB7D10603B7C"> Tresiffriga områdeskoder i form av DDD. </li> 
@@ -96,17 +97,23 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       </tr> 
       <tr> 
       <td colname="col1"> <p>tillåtelselista </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> Text </span>eller <span class="uicontrol"> Number </span> har valts. </p> <p>Indexera avgränsade värden separat i metadatainnehållet i det här fältet. </p> <p>Innehållet"Röd, Gul, Grön, Blå" behandlas som fyra separata värden i stället för ett när"Tillåtelselista" är markerat. Den här behandlingen är mest användbar vid intervallsökning (med <code>
+      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> Text </span>, eller <span class="uicontrol"> Number </span> har valts. </p> <p>Indexera avgränsade värden separat i metadatainnehållet i det här fältet. </p> <p>Innehållet"Röd, Gul, Grön, Blå" behandlas som fyra separata värden i stället för ett när"Tillåtelselista" är markerat. Den här behandlingen är mest användbar vid sökning efter intervall (med 
+      <code>
         sp_q_min 
-      </code>, <code>
+      </code>, 
+      <code>
         sp_q_max 
-      </code>eller <code>
+      </code>, eller 
+      <code>
         sp_q_exact 
-      </code>) och med <code>
+      </code>) och med 
+      <code>
         &lt;search-field-value-list&gt; 
-      </code>, <code>
+      </code>, 
+      <code>
         &lt;search-field-values&gt; 
-      </code>och <code>
+      </code>, och 
+      <code>
         &lt;search-display-field-values&gt; 
       </code>. </p> <p>Inte tillgängligt om Version-datatypen har valts. </p> </td> 
       </tr> 
@@ -117,9 +124,10 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       </tr> 
       <tr> 
       <td colname="col1"> <p>Tillåt borttagning </p> </td> 
-      <td colname="col2"> <p>Markera det här alternativet om du vill aktivera borttagning av dubbletter för det här fältet. Det innebär att det här fältet kan anges vid sökningen med hjälp av CGI-parametern <code>
+      <td colname="col2"> <p>Markera det här alternativet om du vill aktivera borttagning av dubbletter för det här fältet. Det innebär att det här fältet kan anges vid sökningen via 
+        <code>
           sp_dedupe_field 
-        </code> Search. </p> <p>Se <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Sök efter CGI-parametrar </a>. </p> </td> 
+        </code> Sök efter CGI-parameter. </p> <p>Se <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Söka efter CGI-parametrar </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Tabellnamn </p> </td> 
@@ -127,7 +135,7 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       </tr> 
       <tr> 
       <td colname="col1"> <p>Listavgränsare </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Tillåtelselista </span> har valts. </p> <p>Anger vilka tecken som skiljer enskilda listvärden åt. Du kan ange flera tecken, där vart och ett behandlas som en värdeavgränsare. </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Tillåtelselista </span> är markerat. </p> <p>Anger vilka tecken som skiljer enskilda listvärden åt. Du kan ange flera tecken, där vart och ett behandlas som en värdeavgränsare. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Sök som standard </p> </td> 
@@ -135,7 +143,7 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       </tr> 
       <tr> 
       <td colname="col1"> <p>Lodrätt uppdateringsfält </p> </td> 
-      <td colname="col2"> <p> <p>Obs!  Den här funktionen är inte aktiverad som standard. Kontakta teknisk support för att aktivera den för användning. När den har aktiverats visas den i användargränssnittet. </p> </p> <p>Anger att det identifierade fältet ska vara ett lodrätt uppdateringsfält. </p> <p>Lodräta uppdateringsfält kan uppdateras genom den lodräta uppdateringsprocessen ( <span class="uicontrol"> Index </span> &gt; <span class="uicontrol"> Lodrät uppdatering </span>). På grund av det sätt som lodräta uppdateringar görs kan innehåll från dessa fält inte sökas i fritextsökningar. Om du markerar det här alternativet läggs inte fältets innehåll till i "Word"-indexet under någon typ av indexåtgärd. Det aktiverar även uppdatering av det här fältet under en vertikal uppdatering. </p> <p>Mer information om lodräta uppdateringar finns i <a href="../c-about-index-menu/c-about-vertical-updates.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> Om lodrät uppdatering </a>. </p> </td> 
+      <td colname="col2"> <p> <p>Obs!  Den här funktionen är inte aktiverad som standard. Kontakta teknisk support för att aktivera den för användning. När den har aktiverats visas den i användargränssnittet. </p> </p> <p>Anger att det identifierade fältet ska vara ett lodrätt uppdateringsfält. </p> <p>Lodräta uppdateringsfält kan uppdateras via den lodräta uppdateringsprocessen ( <span class="uicontrol"> Index </span> &gt; <span class="uicontrol"> Lodrät uppdatering </span>.) På grund av det sätt som lodräta uppdateringar görs kan innehåll från dessa fält inte sökas i fritextsökningar. Om du markerar det här alternativet läggs inte fältets innehåll till i "Word"-indexet under någon typ av indexåtgärd. Det aktiverar även uppdatering av det här fältet under en vertikal uppdatering. </p> <p>Mer information om lodräta uppdateringar finns i <a href="../c-about-index-menu/c-about-vertical-updates.md#concept_E65A70C9C2E04804BF24FBE1B3CAD899" format="dita" scope="local"> Om lodrät uppdatering </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Relevans </p> </td> 
@@ -143,17 +151,18 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       </tr> 
       <tr> 
       <td colname="col1"> <p>Sortering </p> </td> 
-      <td colname="col2"> <p>Anger när resultaten sorteras efter det namngivna fältet med hjälp av CGI-parametern <code>
+      <td colname="col2"> <p>Anger när resultaten sorteras efter det namngivna fältet med hjälp av 
+        <code>
           sp_s 
-        </code> Search. </p> <p>Se <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Sök efter CGI-parametrar </a>. </p> </td> 
+        </code> Sök efter CGI-parameter. </p> <p>Se <a href="../c-appendices/c-cgiparameters.md#reference_DA27A8B0728246DA94994885E1353890" type="reference" format="dita" scope="local"> Söka efter CGI-parametrar </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Språk </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> Rankning </span>, <span class="uicontrol"> Nummer </span>eller <span class="uicontrol"> Datum </span> har valts. </p> <p>Styr de språk- och språkkonventioner som används vid indexering av datum-, nummer- och rangvärden för det här fältet. </p> <p>Du kan välja att använda kontospråket (Språk &gt; Ord och språk). Du kan också använda det språk som är associerat med dokumentet som innehåller varje tal- eller datumvärde, eller ett visst språk. </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> rangordning </span>, <span class="uicontrol"> tal </span> eller <span class="uicontrol"> datum </span> har valts. </p> <p>Styr de språk- och språkkonventioner som används vid indexering av datum-, nummer- och rangvärden för det här fältet. </p> <p>Du kan välja att använda kontospråket (Språk &gt; Ord och språk). Du kan också använda det språk som är associerat med dokumentet som innehåller varje tal- eller datumvärde, eller ett visst språk. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Datumformat </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> Date </span> är markerad. </p> <p>Styr de datumformat som identifieras när datumvärden indexeras för det här fältet. </p> <p>En standardlista med strängar för datumformat finns för varje datumfält. Du kan lägga till i listan eller redigera den så att den passar din egen webbplats behov. </p> <p>Se <a href="../c-appendices/r-date-formats.md#reference_4D1FC1F6B9F44857967188496D8D335B" type="reference" format="dita" scope="local"> Datumformat </a>. </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> Datum </span> har valts. </p> <p>Styr de datumformat som identifieras när datumvärden indexeras för det här fältet. </p> <p>En standardlista med strängar för datumformat finns för varje datumfält. Du kan lägga till i listan eller redigera den så att den passar din egen webbplats behov. </p> <p>Se <a href="../c-appendices/r-date-formats.md#reference_4D1FC1F6B9F44857967188496D8D335B" type="reference" format="dita" scope="local"> Datumformat </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Testdatumformat </p> </td> 
@@ -161,7 +170,7 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       </tr> 
       <tr> 
       <td colname="col1"> <p>Tidszon </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> Datum </span> har valts som datatyp. </p> <p>Styr den förmodade tidszon som används vid indexering av datumvärden för det här fältet som inte anger någon tidszon. </p> <p>Om tidszonen för ditt konto till exempel är inställd på"Amerika/Los Angeles" och du väljer <span class="uicontrol"> Använd tidszon för konto, </span>behandlas följande metadatumvärde, som inte har någon angiven tidszon, som om det vore Pacific Time, vilket ger besparingar i dagsljus: </p> <p>&lt;meta name="dc.date" content="Mon, 05 Sep 2012:12:00"&gt; </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> Datum </span> har valts som datatyp. </p> <p>Styr den förmodade tidszon som används vid indexering av datumvärden för det här fältet som inte anger någon tidszon. </p> <p>Om tidszonen för ditt konto till exempel är inställd på"Amerika/Los Angeles" och du väljer <span class="uicontrol"> Använd kontotidszon </span>, behandlas följande metadatumvärde, som inte har någon angiven tidszon, som om det vore Pacific Time, vilket ger sommartid: </p> <p>&lt;meta name="dc.date" content="Mon, 05 Sep 201213:12:00"&gt; </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Minst viktigt rangordningsvärde </p> </td> 
@@ -177,29 +186,32 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       </tr> 
       <tr> 
       <td colname="col1"> <p>Standardenheter </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> Location </span> har valts som datatyp. </p> <p>Kontrollerar behandlingen av avståndsvärden för närhetssökningar. </p> <p>Om du anger standardenheterna till <span class="uicontrol"> Miles </span>behandlas alla kriterier för minsta/största avstånd för närhetssökning som tillämpas på det här fältet (via parametrarna <code>
+      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> Plats </span> har valts som datatyp. </p> <p>Kontrollerar behandlingen av avståndsvärden för närhetssökningar. </p> <p>Om du ställer in standardenheten på <span class="uicontrol"> Miles </span>, kommer eventuella kriterier för närhetssökning som tillämpas på det här fältet (via 
+      <code>
         sp_q_min[_#] 
-      </code> eller <code>
+      </code> eller 
+      <code>
         sp_q_max[_#] 
-      </code> Sök CGI) som engelska mil, annars som kilometer. </p> <p>Det här alternativet styr också de standardavståndsenheter som används för utdata från malltaggen för sökresultat när de används i ett utdatafält för närliggande sökning. <code>
+      </code> Sök (CGI-parametrar) behandlas som engelska mil, annars som kilometer. </p> <p>Det här alternativet styr även de standardavståndsenheter som används på utdata för 
+      <code>
         &lt;Search-Display-Field&gt; 
-      </code> </p> <p>Se <a href="../c-appendices/r-about-proximity-search.md#reference_45AC6BB50609431ABD31DA46EE65360D" type="reference" format="dita" scope="local"> Om närhetssökning </a>. </p> </td> 
+      </code> malltagg för sökresultat när den används i ett utdatafält för närhetssökning. </p> <p>Se <a href="../c-appendices/r-about-proximity-search.md#reference_45AC6BB50609431ABD31DA46EE65360D" type="reference" format="dita" scope="local"> Om närhetssökning </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Vill du skapa intervallbeskrivning? </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Nummer </span> har valts som datatyp. </p> <p>Styr det automatiska skapandet av fältintervallbeskrivningar, som används med <span class="uicontrol"> Design </span> &gt; <span class="uicontrol"> Navigering </span> &gt; <span class="uicontrol"> Ansikten </span>. </p> <p>Se <a href="../c-about-design-menu/c-about-facets.md#concept_FA912B3B41EE493DB2F492D188457FF5" format="dita" scope="local"> Om ansikten </a>. </p> <p> <p>Obs!  Om det här fältet har <span class="uicontrol"> fältet för lodrät uppdatering </span> markerat uppdateras det genererade fältintervallbeskrivningsfältet under en lodrät uppdatering. Vi rekommenderar dock att fältet som identifieras i <span class="uicontrol"> Intervallfält </span> också har <span class="uicontrol"> Lodrätt uppdateringsfält </span> markerat. </p> </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Number </span> har valts som datatyp. </p> <p>Controls the automatic creation of Field Range descriptions, for use with <span class="uicontrol"> Design </span> &gt; <span class="uicontrol"> Navigation </span> &gt; <span class="uicontrol"> Facets </span>. </p> <p>Se <a href="../c-about-design-menu/c-about-facets.md#concept_FA912B3B41EE493DB2F492D188457FF5" format="dita" scope="local"> Om ansikten </a>. </p> <p> <p>Obs!  Om det här fältet har <span class="uicontrol"> markerat lodrätt uppdateringsfält </span> uppdateras det genererade beskrivningsfältet för fältintervall under en lodrät uppdatering. Det rekommenderas dock att fältet som identifieras i <span class="uicontrol"> Intervallfält </span> också har <span class="uicontrol"> Lodrätt uppdateringsfält </span> markerat. </p> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Intervallfält </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat. </p> <p>Det <span class="uicontrol"> textfält </span> som ska uppdateras med intervallbeskrivningar för det aktuella fältet. Den här listan innehåller alla <span class="uicontrol"> textfält </span> som inte redan används med andra fält för generering av fältintervall. </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat. </p> <p>Fältet <span class="uicontrol"> Text </span> som ska uppdateras med intervallbeskrivningar för det aktuella fältet. Den här listan innehåller alla <span class="uicontrol"> textfält </span> som inte redan används med andra fält för generering av fältintervall. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Intervallvärden </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span> är markerat. </p> <p>En tom avgränsad lista med datapunkter som ska användas när du skapar fältintervallbeskrivningar. Exempel: </p> <code> 10&amp;nbsp;20&amp;nbsp;50&amp;nbsp;100&amp;nbsp;1000 </code> <p>Du kan ange dessa värden i valfri ordning. Värdena sorteras och dubbletter tas bort innan de sparas. Du kan också ange negativa värden och värden som inte är heltal. </p> <p>För varje värde i det här fältet: 
+      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span>-objekt är markerat. </p> <p>En tom avgränsad lista med datapunkter som ska användas när du skapar fältintervallbeskrivningar. Exempel: </p> <code> 10&amp;nbsp;20&amp;nbsp;50&amp;nbsp;100&amp;nbsp;1000 </code> <p>Du kan ange dessa värden i valfri ordning. Värdena sorteras och dubbletter tas bort innan de sparas. Du kan också ange negativa värden och värden som inte är heltal. </p> <p>För varje värde i det här fältet: 
       <ul id="ul_C4B41AF5AADF4B84B9C489CE82FF7075"> 
-      <li id="li_90736394A5AE4F5CA6B47687BCB627AA">om värdet är mindre än (&lt;) det minsta värdet i <span class="uicontrol"> Intervallvärden </span>används formatet <span class="uicontrol"> "Mindre än" </span> </li> 
-      <li id="li_A5C272B2D26A468CA07EB2046B2EA8A7">Om värdet är större än eller lika med (&gt;=) det största värdet i <span class="uicontrol"> Intervallvärden </span>används formatet <span class="uicontrol"> "Större än" </span> . </li> 
-      <li id="li_9DDFB70E1E824CF4819C57450C1A6DD2">I annat fall hittas ett "intervall" där fältvärdet ligger mellan två på varandra följande <span class="uicontrol"> intervallvärden </span> (större än (&gt;), det mindre värdet och mindre än eller lika med (&lt;=) det större värdet), och <span class="uicontrol"> Mellanliggande format </span> används. </li> 
+      <li id="li_90736394A5AE4F5CA6B47687BCB627AA">om värdet är mindre än (&lt;) det minsta värdet i <span class="uicontrol"> Intervallvärden </span>, används formatet <span class="uicontrol"> "Mindre än" </span> </li> 
+      <li id="li_A5C272B2D26A468CA07EB2046B2EA8A7">Om värdet är större än eller lika med (&gt;=) det största värdet i <span class="uicontrol"> Intervallvärden </span> används formatet <span class="uicontrol"> "Större än" </span>. </li> 
+      <li id="li_9DDFB70E1E824CF4819C57450C1A6DD2">Annars hittas ett "intervall" där fältvärdet ligger mellan två på varandra följande <span class="uicontrol"> intervallvärden </span> (större än (&gt;) det mindre värdet och mindre än eller lika med (&lt;=) det större värdet), och det mellanliggande formatet <span class="uicontrol"> </span> används. </li> 
     </ul> </p> <p>Ovanstående exempeluppsättning värden definierar till exempel en uppsättning beskrivningar för värden: 
     <ul id="ul_03ED30D5A19346AB8E6809BDD186A9A9"> 
       <li id="li_F97A6B3763954EFE9B6751F472AF7D20">mindre än 10 </li> 
@@ -208,71 +220,71 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       <li id="li_26A8CD2422524D2CBD36794C6908572A">större än eller lika med 50 och mindre än 100 </li> 
       <li id="li_05EBEEE68DC348E0821F1CC16D04D69C">större än eller lika med 100 och mindre än 10000 </li> 
       <li id="li_9513A6B519394780A6A41B80762A0370">större än eller lika med 10000 </li> 
-      </ul> </p> <p>Vill du se <span class="uicontrol"> Testa med större än? </span> för att ändra hur dessa tester utförs. </p> </td> 
+      </ul> </p> <p>Se <span class="uicontrol"> Testa med större än? </span> för att ändra hur dessa tester utförs. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>"Mindre än"-format </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span> är markerat. </p> <p>Det här är den mall som används för att ange intervallbeskrivningen för värden som är mindre än det minsta värdet i <span class="uicontrol"> Intervallvärden </span>. Det minsta värdet representeras med den numeriska platshållartoken <span class="uicontrol"> ~N~ </span>. Exempel: </p> <code> Less&amp;nbsp;than&amp;nbsp;~N~ </code> <p>eller: </p> <code> ~N~&amp;nbsp;and&amp;nbsp;below </code> <p>Normalt formateras värdet "as-is", dvs. för en <span class="uicontrol"> intervallvärdesdefinition </span> på "5 10 20" och ett angivet värde på 1, blir den genererade intervallbeskrivningen helt enkelt något som "Mindre än 5". Om du istället vill ha det som"4.99 och lägre" ställer du in <span class="uicontrol"> Precision </span> till <span class="uicontrol"> 2 </span> och använder det här formatet: </p> <code> ~n~&amp;nbsp;and&amp;nbsp;below </code> <p>I <span class="uicontrol"> "Mindre än"-format </span>kommer det gemena <span class="uicontrol"> ~n~ </span> att göra att värdet avrundas <i>nedåt</i> enligt <span class="uicontrol"> precisionsinställningen </span> . </p> <p>Obs! om du vill ta med en numerisk platshållare i intervallbeskrivningen, som den är, anger du med ett omvänt snedstreck (\)-prefix, t.ex. <span class="uicontrol"> \~N~ </span> eller <span class="uicontrol"> \~n~ </span>. Om du vill ta med ett omvänt snedstreck anger du det med ett annat omvänt snedstreck, t.ex. <span class="uicontrol"> \\ </span>. </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span>-objekt är markerat. </p> <p>Det här är mallen som används för att ange intervallbeskrivningen för värden som är mindre än det minsta värdet som finns i <span class="uicontrol"> intervallvärden </span>. Det minsta värdet representeras med den numeriska platshållartoken <span class="uicontrol"> ~N~ </span>. Exempel: </p> <code> Less&amp;nbsp;than&amp;nbsp;~N~ </code> <p>eller: </p> <code> ~N~&amp;nbsp;and&amp;nbsp;below </code> <p>Normalt formateras värdet "as-is", d.v.s. för en <span class="uicontrol"> intervallvärde </span>-definition av "5 10 20" och ett angivet värde på 1, blir den genererade intervallbeskrivningen helt enkelt något som "Mindre än 5". Om du i stället vill att det ska vara"4.99 och lägre" anger du <span class="uicontrol"> Precision </span> till <span class="uicontrol"> 2 </span> och använder det här formatet: </p> <code> ~n~&amp;nbsp;and&amp;nbsp;below </code> <p>I <span class="uicontrol">-formatet </span> kommer gemener <span class="uicontrol"> ~n~ </span> att göra att värdet avrundas <i>nedåt</i> enligt <span class="uicontrol"> Precision </span>-inställningen. </p> <p>Obs! om du vill ta med en numerisk platshållare i intervallbeskrivningen, som den är, anger du med ett omvänt snedstreck (\)-prefix, t.ex. <span class="uicontrol"> \~N~ </span> eller <span class="uicontrol"> \~n~ </span>. Om du vill ta med ett omvänt snedstreck anger du det med ett annat omvänt snedstreck, t.ex. <span class="uicontrol"> \\ </span>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Mellanliggande format </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span> är markerat. </p> <p>Det här är mallen som används för att ange intervallbeskrivningen för värden som ligger någonstans mellan de minsta och största värdena i <span class="uicontrol"> Intervallvärden </span>. För det angivna intervallet representeras det undre intervallvärdet med den numeriska platshållartoken <span class="uicontrol"> ~L~ </span>, och det högre intervallvärdet representeras med token <span class="uicontrol"> ~H~ </span>. Exempel: </p> <code> ~L~&amp;nbsp;to&amp;nbsp;~H~ </code> <p>eller: </p> <code> Between&amp;nbsp;~L~&amp;nbsp;and&amp;nbsp;~H~ </code> <p>eller: </p> <code> Less&amp;nbsp;than&amp;nbsp;~H~&amp;nbsp;and&amp;nbsp;greater&amp;nbsp;than&amp;nbsp;~L~ </code> <p>Normalt formateras värdena "as-is", dvs. för en <span class="uicontrol"> intervallvärdesdefinition </span> på "5 10 20" och ett angivet värde på 8, blir den genererade intervallbeskrivningen helt enkelt något som "Mellan 5 och 10". Om du i stället vill ha värdet "Mellan 5 och 9,99", med det högre värdet justerat <i>nedåt</i>, ställer du in <span class="uicontrol"> Precision </span> till <span class="uicontrol"> 2 </span> och använder det här formatet: </p> <code> Between&amp;nbsp;~L~&amp;nbsp;and&amp;nbsp;~h~ </code> <p>På samma sätt kan <span class="uicontrol"> ~L~ </span> ersättas med <span class="uicontrol"> ~l~ </span> så att det lägre värdet justeras <i>uppåt</i>, även enligt <span class="uicontrol"> precisionsinställningen </span> . Detta innebär att en definition som: </p> <code> Between&amp;nbsp;~l~&amp;nbsp;and&amp;nbsp;~H~ </code> <p>med ett <span class="uicontrol"> precisionsvärde </span> på <span class="uicontrol"> 2 </span> skapas"Mellan 5,01 och 10". </p> <p>Det gemena värdet <span class="uicontrol"> ~l~ </span> gör att det lägre värdet avrundas <i>uppåt</i> enligt <span class="uicontrol"> precisionsinställningen, och det gemena värdet </span> ~h~ <span class="uicontrol"> gör att det högre värdet avrundas </span> nedåt <i></i>. </p> <p>Obs! om du vill ta med en numerisk platshållare i intervallbeskrivningen, som den är, anger du med ett omvänt snedstreck (\)-prefix, t.ex. <span class="uicontrol"> \~L~ </span> eller <span class="uicontrol"> \~h~ </span>. Om du vill ta med ett omvänt snedstreck anger du det med ett annat omvänt snedstreck, t.ex. <span class="uicontrol"> \\ </span>. </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span>-objekt är markerat. </p> <p>Det här är mallen som används för att ange intervallbeskrivningen för värden som ligger någonstans mellan de minsta och största värdena som finns i <span class="uicontrol"> intervallvärden </span>. För det angivna intervallet representeras det undre intervallvärdet med den numeriska platshållartoken <span class="uicontrol"> ~L~ </span>, och det högre intervallvärdet representeras med token <span class="uicontrol"> ~H~ </span>. Exempel: </p> <code> ~L~&amp;nbsp;to&amp;nbsp;~H~ </code> <p>eller: </p> <code> Between&amp;nbsp;~L~&amp;nbsp;and&amp;nbsp;~H~ </code> <p>eller: </p> <code> Less&amp;nbsp;than&amp;nbsp;~H~&amp;nbsp;and&amp;nbsp;greater&amp;nbsp;than&amp;nbsp;~L~ </code> <p>Normalt formateras värdena "as-is", d.v.s. för en <span class="uicontrol"> intervallvärde </span>-definition av "5 10 20" och ett angivet värde på 8, blir den genererade intervallbeskrivningen helt enkelt något som "Mellan 5 och 10". Om du i stället vill ha det som "Mellan 5 och 9,99", med det högre värdet justerat <i>nedåt</i>, ställer du <span class="uicontrol"> Precision </span> till <span class="uicontrol"> 2 </span> och använder det här formatet: </p> <code> Between&amp;nbsp;~L~&amp;nbsp;and&amp;nbsp;~h~ </code> <p>På samma sätt kan <span class="uicontrol"> ~L~ </span> ersättas med <span class="uicontrol"> ~l~ </span> om du vill att det lägre värdet ska justeras <i>uppåt</i>, även enligt inställningen <span class="uicontrol"> Precision </span>. Detta innebär att en definition som: </p> <code> Between&amp;nbsp;~l~&amp;nbsp;and&amp;nbsp;~H~ </code> <p>med ett <span class="uicontrol"> Precision </span>-värde på <span class="uicontrol"> 2 </span> skapar "Mellan 5.01 och 10". </p> <p>Gemener <span class="uicontrol"> ~l~ </span> gör att det lägre värdet avrundas <i>uppåt</i> enligt <span class="uicontrol"> Precision </span>-inställningen, och gemener <span class="uicontrol"> ~h~ </span> gör att det högre värdet avrundas <i>nedåt</i>. </p> <p>Obs! om du vill ta med en numerisk platshållare i intervallbeskrivningen, som den är, anger du med ett omvänt snedstreck (\)-prefix, t.ex. <span class="uicontrol"> \~L~ </span> eller <span class="uicontrol"> \~h~ </span>. Om du vill ta med ett omvänt snedstreck anger du det med ett annat omvänt snedstreck, t.ex. <span class="uicontrol"> \\ </span>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>"Större än"-format </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span> är markerat. </p> <p>Det här är den mall som används för att ange intervallbeskrivningen för värden som är större än det största värdet i <span class="uicontrol"> Intervallvärden </span>. Det största värdet representeras med den numeriska platshållartoken <span class="uicontrol"> ~N~ </span>. Exempel: </p> <code> Greater&amp;nbsp;than&amp;nbsp;~N~ </code> <p>eller: </p> <code> ~N~&amp;nbsp;and&amp;nbsp;above </code> <p>Normalt formateras värdet "as-is", dvs. för en <span class="uicontrol"> intervallvärdesdefinition </span> på "5 10 20" och ett angivet värde på 30, skulle den genererade intervallbeskrivningen helt enkelt vara något som "Större än 20". Om du istället vill ha det som"20.01 och högre" ställer du in <span class="uicontrol"> Precision </span> till <span class="uicontrol"> 2 </span> och använder det här formatet: </p> <code> ~n~&amp;nbsp;and&amp;nbsp;above </code> <p>I <span class="uicontrol"> "Större än"-format </span>kommer det gemena värdet <span class="uicontrol"> ~n~ </span> att avrundas <i>uppåt</i> enligt <span class="uicontrol"> precisionsinställningen </span> . </p> <p>Obs! om du vill ta med en numerisk platshållare i intervallbeskrivningen, som den är, anger du med ett omvänt snedstreck (\)-prefix, t.ex. <span class="uicontrol"> \~N~ </span> eller <span class="uicontrol"> \~n~ </span>. Om du vill ta med ett omvänt snedstreck anger du det med ett annat omvänt snedstreck, t.ex. <span class="uicontrol"> \\ </span>. </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span>-objekt är markerat. </p> <p>Det här är mallen som används för att ange intervallbeskrivningen för värden som är större än det största värdet som finns i <span class="uicontrol"> intervallvärden </span>. Det största värdet representeras med den numeriska platshållartoken <span class="uicontrol"> ~N~ </span>. Exempel: </p> <code> Greater&amp;nbsp;than&amp;nbsp;~N~ </code> <p>eller: </p> <code> ~N~&amp;nbsp;and&amp;nbsp;above </code> <p>Normalt formateras värdet "as-is", d.v.s. för en <span class="uicontrol"> intervallvärde </span>-definition av "5 10 20" och ett angivet värde på 30 är den genererade intervallbeskrivningen helt enkelt något som "Större än 20". Om du i stället vill att den ska vara "20.01 och högre" anger du <span class="uicontrol"> Precision </span> till <span class="uicontrol"> 2 </span> och använder det här formatet: </p> <code> ~n~&amp;nbsp;and&amp;nbsp;above </code> <p>I <span class="uicontrol">-formatet "Större än" </span> gör gemener <span class="uicontrol"> ~n~ </span> att värdet avrundas <i>uppåt</i> enligt <span class="uicontrol"> precisionsinställningen </span>. </p> <p>Obs! om du vill ta med en numerisk platshållare i intervallbeskrivningen, som den är, anger du med ett omvänt snedstreck (\)-prefix, t.ex. <span class="uicontrol"> \~N~ </span> eller <span class="uicontrol"> \~n~ </span>. Om du vill ta med ett omvänt snedstreck anger du det med ett annat omvänt snedstreck, t.ex. <span class="uicontrol"> \\ </span>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Precision </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span> är markerat. </p> <p>Ett heltalsvärde som anger antalet siffror till höger om ett decimaltecken. Detta styr även avrundningsåtgärder. </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span>-objekt är markerat. </p> <p>Ett heltalsvärde som anger antalet siffror till höger om ett decimaltecken. Detta styr även avrundningsåtgärder. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ta bort inledande nollor? </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat, ett <span class="uicontrol"> Intervallfält- </span> objekt har markerats och ett <span class="uicontrol"> precisionsvärde som inte är noll har </span> angetts. </p> <p>Ska vi visa "0.50" som ".50"? </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat, ett <span class="uicontrol"> Intervallfält </span>-objekt är markerat och ett <span class="uicontrol"> Precision </span>-värde har angetts som inte är noll. </p> <p>Ska vi visa "0.50" som ".50"? </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Vill du ta bort efterföljande nollor? </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat, ett <span class="uicontrol"> Intervallfält- </span> objekt har markerats och ett <span class="uicontrol"> precisionsvärde som inte är noll har </span> angetts. </p> <p>Ska vi visa"10.00" som"10"? </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat, ett <span class="uicontrol"> Intervallfält </span>-objekt är markerat och ett <span class="uicontrol"> Precision </span>-värde har angetts som inte är noll. </p> <p>Ska vi visa"10.00" som"10"? </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Visa tusentals avgränsare? </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span> är markerat. </p> <p>Ska vi visa "10000" som "10 000"? Språkspecifika värden används. </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span>-objekt är markerat. </p> <p>Ska vi visa "10000" som "10 000"? Språkspecifika värden används. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Vill du justera nollvärden? </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span> är markerat. </p> <p>När rundade nollvärden visas, ska de avrundas uppåt eller nedåt enligt <span class="uicontrol"> precisionsinställningen </span> ? d.v.s. display "0.01"? </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span>-objekt är markerat. </p> <p>När rundade nollvärden visas, ska de avrundas uppåt eller nedåt enligt inställningen <span class="uicontrol"> Precision </span>? d.v.s. display "0.01"? </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Testa med större än? </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span> är markerat. </p> <p>Eftersom varje värde jämförs med värdena i <span class="uicontrol"> Intervallvärden </span>, som bearbetas i <i><b>fallande</b></i> ordning, jämförs det som standard med operatorn större än eller lika med (&gt;=), som stoppas när testet har slutförts. Det innebär att om du har en uppsättning <span class="uicontrol"> intervallvärden </span> som "10 20 50 100 1000" hamnar värdet 100 i intervallet 100 till 1000, eftersom 100 faktiskt är &gt;= 100. Om du hellre vill att den ska ligga i intervallet 50 till 100 markerar du det här alternativet, vilket gör att jämförelsen använder operatorn större än (&gt;) i stället. </p> <p>Om det här alternativet är markerat för till exempel alla värden i det här fältet: 
+      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span>-objekt är markerat. </p> <p>Eftersom varje värde jämförs med värdena i <span class="uicontrol"> Intervallvärden </span>, som bearbetas i <i><b>fallande</b></i> ordning, jämförs det som standard med operatorn större än eller lika (&gt;=), som stoppas när testet har slutförts. Det innebär att om du har en uppsättning med <span class="uicontrol"> intervallvärden </span> som "10 20 50 100 1000" hamnar värdet 100 i intervallet 100 till 1000, eftersom 100 faktiskt är &gt;= 100. Om du hellre vill att den ska ligga i intervallet 50 till 100 markerar du det här alternativet, vilket gör att jämförelsen använder operatorn större än (&gt;) i stället. </p> <p>Om det här alternativet är markerat för till exempel alla värden i det här fältet: 
       <ul id="ul_969621B1BD914FA5BD73ED21F8841010"> 
-      <li id="li_157BEFDA7D0E44C481F4E4BC9046EF24">om värdet är mindre än eller lika med (&lt;=) det minsta värdet i <span class="uicontrol"> Intervallvärden </span>används formatet <span class="uicontrol"> "Mindre än" </span> </li> 
-      <li id="li_737EE666CA6243A8864E17A311CF3ACC">om värdet är större än (&gt;) det största värdet i <span class="uicontrol"> Intervallvärden </span>används formatet <span class="uicontrol"> "Större än" </span> </li> 
-      <li id="li_353A9820F7F74CCCBB3281EC4CB48734">i annat fall hittas ett intervall där fältvärdet ligger mellan två på varandra följande <span class="uicontrol"> intervallvärden </span> (större än eller lika med (&gt;=) det mindre värdet och mindre än (&lt;) det större värdet), och <span class="uicontrol"> Mellanliggande format </span> används </li> 
+      <li id="li_157BEFDA7D0E44C481F4E4BC9046EF24">om värdet är mindre än eller lika med (&lt;=) det minsta värdet i <span class="uicontrol"> Intervallvärden </span>, kommer formatet <span class="uicontrol"> "Mindre än" </span> att användas </li> 
+      <li id="li_737EE666CA6243A8864E17A311CF3ACC">om värdet är större än (&gt;) det största värdet i <span class="uicontrol"> Intervallvärden </span>, kommer formatet <span class="uicontrol"> "Större än" </span> att användas </li> 
+      <li id="li_353A9820F7F74CCCBB3281EC4CB48734">i annat fall finns ett intervall där fältvärdet ligger mellan två på varandra följande <span class="uicontrol"> intervallvärden </span> (större än eller lika med (&gt;=) det mindre värdet och mindre än (&lt;) det större värdet), och det mellanliggande formatet <span class="uicontrol"> </span> används </li> 
     </ul> </p> <p>och, när det inte är markerat: 
     <ul id="ul_945844C33C2E4D95A598C4876E15F211"> 
-      <li id="li_653B6E2934574DA3B4BCEF07D0A84527">om värdet är mindre än (&lt;) det minsta värdet i <span class="uicontrol"> Intervallvärden </span>används formatet <span class="uicontrol"> "Mindre än" </span> </li> 
-      <li id="li_AECA6880002F40FAB1820B37237550A7">om värdet är större än eller lika med (&gt;=) det största värdet i <span class="uicontrol"> Intervallvärden </span>används formatet <span class="uicontrol"> "Större än" </span> </li> 
-      <li id="li_ECB2DF7CA592497298E9ADC708220366">i annat fall hittas ett intervall där fältvärdet ligger mellan två på varandra följande <span class="uicontrol"> intervallvärden </span> (större än (&gt;) det mindre värdet och mindre än eller lika med (&lt;=) det större värdet) och <span class="uicontrol"> Mellanliggande format </span> används </li> 
+      <li id="li_653B6E2934574DA3B4BCEF07D0A84527">om värdet är mindre än (&lt;) det minsta värdet i <span class="uicontrol"> Intervallvärden </span>, kommer formatet <span class="uicontrol"> "Mindre än" </span> att användas </li> 
+      <li id="li_AECA6880002F40FAB1820B37237550A7">om värdet är större än eller lika med (&gt;=) det största värdet i <span class="uicontrol"> Intervallvärden </span>, kommer formatet <span class="uicontrol"> "Större än" </span> att användas </li> 
+      <li id="li_ECB2DF7CA592497298E9ADC708220366">i annat fall kommer ett intervall att hittas där fältvärdet ligger mellan två på varandra följande <span class="uicontrol"> intervallvärden </span> (större än (&gt;) det mindre värdet och mindre än eller lika med (&lt;=) det större värdet), och det mellanliggande formatet <span class="uicontrol"> </span> kommer att användas </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Testa </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span> är markerat. </p> <p>Ange ett numeriskt exempelvärde och tryck på <span class="uicontrol"> knappen Testa </span> för att se hur intervallfältet skapas. Den genererade intervallbeskrivningen visas i fönstret. </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span>-objekt är markerat. </p> <p>Ange ett numeriskt exempelvärde och tryck på knappen <span class="uicontrol"> Testa </span> för att se hur intervallfältet skapas. Den genererade intervallbeskrivningen visas i fönstret. </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
-   Se även [Lägga till ett nytt fält](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)för metataggar.
+   Se även [Lägga till ett nytt metataggsfält](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 1. Klicka på **[!UICONTROL Add]**.
 1. (Valfritt) Återskapa indexet för den mellanlagrade platsen om du vill förhandsgranska resultatet.
 
    Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
-1. (Valfritt) Gör något av följande på [!DNL Definitions] sidan:
+1. (Valfritt) Gör något av följande på sidan [!DNL Definitions]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -290,23 +302,23 @@ Innan effekterna av dina metataggsändringar är synliga för kunderna måste du
 
 **Redigera fördefinierade eller användardefinierade metataggsfält**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]**.
-1. På [!DNL Definitions] sidan, i tabellens [!DNL Actions] kolumn, klickar du **[!UICONTROL Edit]** på raden med metataggens fältnamn som du vill ändra.
-1. På [!DNL Pinned Keyword Results Manager] sidan klickar du i tabellen **[!UICONTROL Edit]** på raden för det nyckelord som du vill ändra.
-1. Ange önskade alternativ på [!DNL Edit Field] sidan.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]** på produktmenyn.
+1. På sidan [!DNL Definitions] i kolumnen [!DNL Actions] i tabellen klickar du på **[!UICONTROL Edit]** i raden för det metataggsfältnamn som du vill ändra.
+1. På sidan [!DNL Pinned Keyword Results Manager] i tabellen klickar du på **[!UICONTROL Edit]** i raden för det nyckelord som du vill ändra.
+1. Ange önskade alternativ på sidan [!DNL Edit Field].
 
    Om du väljer att göra ändringar i ett fördefinierat metataggsfält ska du vara medveten om att alla fält inte kan redigeras.
 
-   Se tabellen med alternativ under [Lägga till ett nytt fält](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)för metataggar.
+   Se tabellen med alternativ under [Lägga till ett nytt meta tag-fält](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Återskapa indexet för den mellanlagrade platsen om du vill förhandsgranska resultatet.
 
    Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
-1. (Valfritt) Gör något av följande på [!DNL Definitions] sidan:
+1. (Valfritt) Gör något av följande på sidan [!DNL Definitions]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -322,23 +334,23 @@ Du kan ta bort ett användardefinierat fält för metataggar som du inte längre
 
 Du kan inte ta bort fördefinierade metataggsfält. Du kan dock redigera vissa fält.
 
-Se [Redigera fördefinierade eller användardefinierade metataggfält](../c-about-settings-menu/c-about-metadata-menu.md#task_0A7657B63596421BB6DB3ED44F827AB3).
+Se [Redigera fördefinierade eller användardefinierade meta tag-fält](../c-about-settings-menu/c-about-metadata-menu.md#task_0A7657B63596421BB6DB3ED44F827AB3).
 
 Innan effekterna av meta-taggen för borttagning är synliga för kunderna måste du återskapa platsindexet.
 
 **Ta bort ett användardefinierat metataggsfält**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]**.
-1. På [!DNL Definitions] sidan, i tabellavsnittet, klickar du på raden [!DNL User-defined fields] **[!UICONTROL Delete]** i metataggens fältnamn som du vill ta bort.
-1. Klicka på i dialogrutan Bekräfta **[!UICONTROL OK]**.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Definitions]** på produktmenyn.
+1. På sidan [!DNL Definitions] i avsnittet [!DNL User-defined fields] i tabellen klickar du på **[!UICONTROL Delete]** i raden för det metataggsfältnamn som du vill ta bort.
+1. Klicka på **[!UICONTROL OK]** i bekräftelsedialogrutan.
 1. (Valfritt) Återskapa indexet för den mellanlagrade platsen om du vill förhandsgranska resultatet.
 
    Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
-1. (Valfritt) Gör något av följande på [!DNL Definitions] sidan:
+1. (Valfritt) Gör något av följande på sidan [!DNL Definitions]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -367,7 +379,7 @@ Du kan lägga till innehåll i specifika indexerade fält som&quot;target&quot; 
 
 ## Arbeta med testfältsinjektioner {#section_74939EA9E6EA4D2A92E8066B3B11CF92}
 
-Du kan också använda **[!UICONTROL Test]** på [!DNL Staged Injections] sidan. Du anger ett testfältsnamn (till exempel &quot;titel&quot; eller &quot;brödtext&quot;), det ursprungliga fältvärdet (till exempel &quot;Hemsida&quot;) och en test-URL från webbplatsen. Resultatet visas som referens. De aktuella värdena ändras inte under testet.
+Du kan också använda **[!UICONTROL Test]** på sidan [!DNL Staged Injections]. Du anger ett testfältsnamn (till exempel &quot;titel&quot; eller &quot;brödtext&quot;), det ursprungliga fältvärdet (till exempel &quot;Hemsida&quot;) och en test-URL från webbplatsen. Resultatet visas som referens. De aktuella värdena ändras inte under testet.
 
 ## Arbeta med fältinjektionsdefinitioner {#section_C1BBF19DE8EF4A6F8CC3ED691F3953A9}
 
@@ -377,7 +389,7 @@ Injektionsdefinitionerna har följande form:
 append|replace field [regexp] URL value
 ```
 
-The `append|replace`, `field`, `URL`.. och `value` poster är obligatoriska. Du anger en injektionsdefinition per rad. Följande exempel innehåller sex olika injektionsdefinitioner.
+`append|replace`, `field`, `URL`. och `value` objekt är obligatoriska. Du anger en injektionsdefinition per rad. Följande exempel innehåller sex olika injektionsdefinitioner.
 
 ```
 replace title  https://www.yoursite.com/company/contactus.html Adobe: Contact Us 
@@ -397,29 +409,29 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> append|replace </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> append|replace  </span> </p> </td> 
    <td colname="col2"> <p>Välj "append" om du vill lägga till värdet för injektionsdefinitionen ("Adobe: Kontakta oss eller"On Sale Now!" i exemplen ovan) till innehållet i befintliga fält. Välj Ersätt om du vill skriva över befintligt fältinnehåll med det definierade värdet. Om ett fält inte har något innehåll läggs det definierade värdet till automatiskt, oavsett vilket alternativ (lägg till eller ersätt) som används. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> fält </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> fält  </span> </p> </td> 
    <td colname="col2"> <p>Ett fältnamn krävs. Följande är tio fördefinierade fältnamn som du kan använda: </p> <p> 
      <ul id="ul_B9336FA53023474EAEE399116E7FC972"> 
-      <li id="li_C621203DCD2B4875A54A1DD19F0B5B90"> <span class="codeph"> alt </span> </li> 
-      <li id="li_9217E6A037254BEDBB8D006B70D7670D"> <span class="codeph"> brödtext </span> </li> 
-      <li id="li_DCDC50F93F224F02897419B745E09399"> <span class="codeph"> charset </span> </li> 
-      <li id="li_D95668236B6547B99966668C82B302AB"> <span class="codeph"> datum </span> </li> 
-      <li id="li_D2071681274345C3B97E9ADA6D223271"> <span class="codeph"> desc </span> </li> 
-      <li id="li_26683A9209454A438D811187FB929482"> <span class="codeph"> tangenter </span> </li> 
-      <li id="li_A5E19F81B872402CA62B5AB9497E030D"> <span class="codeph"> språk </span> </li> 
-      <li id="li_FD0B1CD9E6304B18B9D7F57E61015107"> <span class="codeph"> target </span> </li> 
-      <li id="li_400D7E3F3E9B47EFB2FF5C0D278DB573"> <span class="codeph"> title </span> </li> 
-      <li id="li_449BCBEE4F64424BB69F780C10F5956C"> <span class="codeph"> url </span> </li> 
-     </ul> </p> <p>Varje fältnamn motsvarar element på webbplatsens sidor. Om du till <span class="codeph"> exempel anger fältnamnet </span> desc kan du lägga till värdet för injektionsdefinitionen i det fält som motsvarar metataggen för beskrivningen på webbplatsens sidor. </p> <p>Om det inte finns någon meta-tagg för beskrivning på sidorna skapas taggen för det definierade innehållet. Innehållet som anges i en <span class="codeph"> desc- </span> injektion visas på resultatsidan på samma sätt som innehåll i en metabeskrivning med hårdkod. </p> <p>Du kan också skapa flera definitioner med samma fältnamn. Anta till exempel att du har följande injektioner: </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/&nbsp;Welcome&nbsp;to&nbsp;My&nbsp;Site </code> </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/company/*.html&nbsp;My&nbsp;Site:&nbsp;Contact </code> </p> <p>Alla webbplatssidor i exemplet ovan får den inmatade titeln"Välkommen till Min webbplats". Sidorna i mappen "/company/" injiceras med den nya titeln "Min webbplats: Kontakta oss" som ersätter den tidigare versionen. </p> <p>Observera att injektionerna används i den ordning som de visas i <span class="wintitle"> textrutan </span> Fältinjektionsdefinitioner. Om samma fält ("titel" i det här exemplet) definieras mer än en gång för sidor på samma plats, har den senare definitionen företräde. </p> <p> <span class="codeph"> [regexp] </span> - valfritt. Om du väljer att använda <span class="codeph"> alternativet </span> regexp behandlas den definierade URL:en som ett reguljärt uttryck. </p> <p>Se <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck </a>. </p> <p>I följande definition: </p> <p> <code> replace&nbsp;target&nbsp; <b>regexp&amp;nbsp;^.*/products/.*\.html$</b>&nbsp;Important&nbsp;information </code> </p> <p> "Viktig information" infogas i "målfältet" på alla sidor som matchar det reguljära uttrycket <span class="codeph"> ^.*/products/.*\.html$ </span>. </p> <p>Därför har du följande: </p> <p> <code> https://www.mydomain.com/products/page1.html 
+      <li id="li_C621203DCD2B4875A54A1DD19F0B5B90"> <span class="codeph"> alt  </span> </li> 
+      <li id="li_9217E6A037254BEDBB8D006B70D7670D"> <span class="codeph"> brödtext  </span> </li> 
+      <li id="li_DCDC50F93F224F02897419B745E09399"> <span class="codeph"> charset  </span> </li> 
+      <li id="li_D95668236B6547B99966668C82B302AB"> <span class="codeph"> datum  </span> </li> 
+      <li id="li_D2071681274345C3B97E9ADA6D223271"> <span class="codeph"> desc  </span> </li> 
+      <li id="li_26683A9209454A438D811187FB929482"> <span class="codeph"> tangenter  </span> </li> 
+      <li id="li_A5E19F81B872402CA62B5AB9497E030D"> <span class="codeph"> språk  </span> </li> 
+      <li id="li_FD0B1CD9E6304B18B9D7F57E61015107"> <span class="codeph"> target  </span> </li> 
+      <li id="li_400D7E3F3E9B47EFB2FF5C0D278DB573"> <span class="codeph"> title  </span> </li> 
+      <li id="li_449BCBEE4F64424BB69F780C10F5956C"> <span class="codeph"> url  </span> </li> 
+     </ul> </p> <p>Varje fältnamn motsvarar element på webbplatsens sidor. Om du till exempel anger fältnamnet <span class="codeph"> desc </span> kan du lägga till värdet för injektionsdefinitionen i fältet som motsvarar metataggen för beskrivningen på webbplatssidorna. </p> <p>Om det inte finns någon meta-tagg för beskrivning på sidorna skapas taggen för det definierade innehållet. Innehållet som anges i en <span class="codeph"> desc </span>-injektion visas på resultatsidan på samma sätt som innehåll med hårdkodad metabeskrivning. </p> <p>Du kan också skapa flera definitioner med samma fältnamn. Anta till exempel att du har följande injektioner: </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/&nbsp;Welcome&nbsp;to&nbsp;My&nbsp;Site </code> </p> <p> <code> replace&nbsp; <b>title</b>&nbsp;https://www.mysite.com/company/*.html&nbsp;My&nbsp;Site:&nbsp;Contact </code> </p> <p>Alla webbplatssidor i exemplet ovan får den inmatade titeln"Välkommen till Min webbplats". Sidorna i mappen "/company/" injiceras med den nya titeln "Min webbplats: Kontakta oss" som ersätter den tidigare versionen. </p> <p>Observera att injektionerna används i den ordning som de visas i textrutan <span class="wintitle"> Fältinjektionsdefinitioner </span>. Om samma fält ("titel" i det här exemplet) definieras mer än en gång för sidor på samma plats, har den senare definitionen företräde. </p> <p> <span class="codeph"> [regexp]  </span> - valfritt. Om du väljer att använda alternativet <span class="codeph"> regexp </span> behandlas den definierade URL:en som ett reguljärt uttryck. </p> <p>Se <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck </a>. </p> <p>I följande definition: </p> <p> <code> replace&nbsp;target&nbsp; <b>regexp&amp;nbsp;^.*/products/.*\.html$</b>&nbsp;Important&nbsp;information </code> </p> <p> "Viktig information" matas in i målfältet på alla sidor som matchar det reguljära uttrycket <span class="codeph"> ^.*/products/.*\.html$ </span>. </p> <p>Därför har du följande: </p> <p> <code> https://www.mydomain.com/products/page1.html 
       &nbsp;&nbsp;&nbsp;&nbsp;(Will&nbsp;receive&nbsp;"target"&nbsp;content) </code> </p> <p> <code> https://www.mydomain.com/product/oldstuff.html 
       &nbsp;&nbsp;&nbsp;&nbsp;(Will&nbsp;not&nbsp;receive&nbsp;"target"&nbsp;content) </code> </p> <p>I följande exempel: </p> <p> <code> append&amp;nbsp;title&amp;nbsp;regexp&amp;nbsp;^.*\.pdf$&amp;nbsp;Millennium&amp;nbsp;Science </code> </p> <p>"Millennium Science" läggs till i "title"-innehållet på alla sidor som slutar med filnamnstillägget ".pdf". </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> URL </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> URL  </span> </p> </td> 
    <td colname="col2"> <p>En URL krävs och anger vilka dokument som ska matas in. </p> <p>URL:en är något av följande: </p> <p> 
      <ul id="ul_C5C74F6D5EA943B293742989EB822751"> 
       <li id="li_382392DB778D4E14BFFC96D35A861951"> En fullständig sökväg, som i https://www.mydomain.com/products.html </li> 
@@ -428,31 +440,31 @@ replace language https://www.yoursite.com/japanese/intro.txt ja_JP
      </ul> </p> <p>URL-värdet får inte innehålla blankstegstecken. Om alternativet <span class="codeph"> regexp </span> används behandlas URL:en som ett reguljärt uttryck. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> value </span> </p> </td> 
-   <td colname="col2"> <p>Ett värde krävs och används för att antingen ersätta eller lägga till i befintligt fältinnehåll. Du kan ange flera värden för samma fältnamn. Exempel: </p> <p>lägga till <b>tangenter</b> https://www.mysite.com/travel/ <b>sommar</b>, <b>strand</b>, <b>sand</b> </p> <p>lägg till <b>nycklar</b> https://www.mysite.com/travel/fare/*.html <b>billiga biljetter</b> </p> <p>I ovanstående exempel läggs ordet"sommar, strand, sand" till i fältet"nycklar" på alla sidor i katalogen"/travel/". Orden "billiga biljetter" läggs också till i fältet "nycklar" på alla sidor i katalogen "/travel/fare/". </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> value  </span> </p> </td> 
+   <td colname="col2"> <p>Ett värde krävs och används för att antingen ersätta eller lägga till i befintligt fältinnehåll. Du kan ange flera värden för samma fältnamn. Exempel: </p> <p>lägg till <b>tangenter</b> https://www.mysite.com/travel/ <b>sommar</b>, <b>strand</b>, <b>sand</b> </p> <p>lägg till <b>tangenter</b> https://www.mysite.com/travel/fare/*.html <b>billiga biljetter</b> </p> <p>I ovanstående exempel läggs ordet"sommar, strand, sand" till i fältet"nycklar" på alla sidor i katalogen"/travel/". Orden "billiga biljetter" läggs också till i fältet "nycklar" på alla sidor i katalogen "/travel/fare/". </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-Se även [Välja innehållstyper som ska crawlas och indexeras](../c-about-settings-menu/c-about-crawling-menu.md#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8).
+Se även [Markera de innehållstyper som ska crawlas och indexeras](../c-about-settings-menu/c-about-crawling-menu.md#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8).
 
 ## Lägga till fältinmatningsdefinitioner {#task_E86566FA1FF74CF68115C0ADA05172AE}
 
 Du kan använda [!DNL Injections] för att infoga innehåll på dina webbsidor utan att behöva redigera själva sidorna.
 
-Du kan också använda **[!UICONTROL Test]** på [!DNL Injections] sidan. Du anger ett testfältsnamn (till exempel &quot;titel&quot; eller &quot;brödtext&quot;), det ursprungliga fältvärdet (till exempel &quot;Hemsida&quot;) och en test-URL från webbplatsen. Resultatet visas som referens. De aktuella värdena ändras inte under testet.
+Du kan också använda **[!UICONTROL Test]** på sidan [!DNL Injections]. Du anger ett testfältsnamn (till exempel &quot;titel&quot; eller &quot;brödtext&quot;), det ursprungliga fältvärdet (till exempel &quot;Hemsida&quot;) och en test-URL från webbplatsen. Resultatet visas som referens. De aktuella värdena ändras inte under testet.
 
 **Lägga till fältinmatningsdefinitioner**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Injections]**.
-1. (Valfritt) På [!DNL Injections] sidan, i [!DNL Test Field Injections] området, anger du testfältet, testets ursprungliga värde och test-URL och klickar sedan på **[!UICONTROL Test]**.
-1. I [!DNL Field Injection Definitions] fältet anger du en injektionsdefinition per rad.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Injections]** på produktmenyn.
+1. (Valfritt) På sidan [!DNL Injections] anger du testfältet, testets ursprungliga värde och test-URL i området **[!UICONTROL Test]**.[!DNL Test Field Injections]
+1. I fältet [!DNL Field Injection Definitions] anger du en injektionsdefinition per rad.
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -462,9 +474,9 @@ Du kan också använda **[!UICONTROL Test]** på [!DNL Injections] sidan. Du ang
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Om attributinläsare {#concept_9EF38E98811B42CDA41996432B9AD209}
+## Om Inläsare för attribut {#concept_9EF38E98811B42CDA41996432B9AD209}
 
-Använd [!DNL Attribute Loader] för att definiera ytterligare indatakällor för att utöka data som crawlas från en webbplats.
+Använd [!DNL Attribute Loader] för att definiera ytterligare indatakällor för att förstärka data som crawlas från en webbplats.
 
 >[!NOTE]
 >
@@ -472,22 +484,22 @@ Använd [!DNL Attribute Loader] för att definiera ytterligare indatakällor fö
 
 Du kan använda en indatakälla för dataflöden för att komma åt innehåll som lagras i ett annat format än det som normalt identifieras på en webbplats. Du gör detta med en av de tillgängliga crawlningsmetoderna. Data från dessa källor kan sedan injiceras i data från crawlat innehåll.
 
-När du har lagt till en Loader-definition för attribut på [!DNL Staged Attribute Loader Definitions] sidan kan du ändra alla konfigurationsinställningar förutom värdena Namn och Typ
+När du har lagt till en Loader-definition för attribut på sidan [!DNL Staged Attribute Loader Definitions] kan du ändra alla konfigurationsinställningar förutom värdena Namn och Typ
 
-På [!DNL Attribute Loader] sidan visas följande information:
+På sidan [!DNL Attribute Loader] visas följande information:
 
 * Namnet på den definierade attributinläsarkonfiguration som du har konfigurerat och lagt till.
 * En av följande datakälltyper för varje koppling du har lagt till:
 
-   * **Text** - Enkla&quot;platta&quot; filer, kommaavgränsade, tabbavgränsade eller andra konsekvent avgränsade format.
-   * **Feed** - XML-flöden.
+   * **Text**  - Enkla&quot;platta&quot; filer, kommaavgränsade, tabbavgränsade eller andra konsekvent avgränsade format.
+   * **Feed**  - XML-flöden.
 
 * Anger om konfigurationen är aktiverad eller inte för nästa crawl och indexering.
 * Datakällans adress.
 
 Se även [Hur attributinjektionen fungerar för Text och feed...](../c-about-settings-menu/c-about-metadata-menu.md#section_E059A33D61EE4DB0972A37B8A35E9E16)
 
-Se även [Konfigurera flera attributinläsare](../c-about-settings-menu/c-about-metadata-menu.md#section_4CC49C74EF294608A184E233F215ADFF)
+Se även [Om att konfigurera flera attributinläsare](../c-about-settings-menu/c-about-metadata-menu.md#section_4CC49C74EF294608A184E233F215ADFF)
 
 Se även [Om hur du använder Förhandsgranska när du lägger till ett attribut...](../c-about-settings-menu/c-about-metadata-menu.md#section_E9CAB000A94C4D9189786C1EDB1CDB46)
 
@@ -503,27 +515,27 @@ Se även [Om hur du använder Förhandsgranska när du lägger till ett attribut
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>1 </p> </td> 
+   <td colname="col1"> <p>3 </p> </td> 
    <td colname="col2"> <p>Hämta datakällan. </p> </td> 
    <td colname="col3"> <p>För konfigurationer av text och feed är det en enkel filhämtning. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col2"> <p>Dela upp den hämtade datakällan i enskilda pseudodokument. </p> </td> 
-   <td colname="col3"> <p>För <span class="uicontrol"> text </span>motsvarar varje radavgränsad textrad ett enskilt dokument och tolkas med den angivna avgränsaren, till exempel ett komma eller en tabb. </p> <p>För <span class="uicontrol"> Feed </span>extraheras data från varje dokument med hjälp av ett mönster för reguljära uttryck i följande form: </p> <p> <code class="syntax js"> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>Skapa en cachelagrad kopia av data med hjälp av <span class="uicontrol"> Karta </span> på <span class="wintitle"> sidan </span> Attributinläsare, och skapa sedan en lista med länkar för crawlern. Data lagras i en lokal cache och fylls i med de konfigurerade fälten. </p> <p>De tolkade data skrivs till det lokala cacheminnet. </p> <p>Cachen läses senare för att skapa de enkla HTML-dokument som behövs för crawlningen. Exempel: </p> <p> <code class="syntax html"> &lt;html&gt;&lt;head&gt; 
+   <td colname="col3"> <p>För <span class="uicontrol"> text </span> motsvarar varje radavgränsad textrad ett enskilt dokument och tolkas med den angivna avgränsaren, till exempel ett komma eller en tabb. </p> <p>För <span class="uicontrol">-feed </span> extraheras data för varje dokument med hjälp av ett mönster för reguljära uttryck i följande format: </p> <p> <code class="syntax js"> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>Skapa en cachelagrad kopia av data och skapa sedan en lista med länkar för crawlern med hjälp av <span class="uicontrol"> Map </span> på sidan <span class="wintitle"> Attributinläsare för </span>. Data lagras i en lokal cache och fylls i med de konfigurerade fälten. </p> <p>De tolkade data skrivs till det lokala cacheminnet. </p> <p>Cachen läses senare för att skapa de enkla HTML-dokument som behövs för crawlningen. Exempel: </p> <p> <code class="syntax html"> &lt;html&gt;&lt;head&gt; 
       &lt;title&gt;{title}&lt;/title&gt; 
       &lt;meta&nbsp;name="{field}"&nbsp;content="{data}"&nbsp;/&gt; 
       ... 
       &lt;/head&gt;&lt;body&gt; 
       {body} 
-      &lt;/body&gt;&lt;/html&gt; </code> </p> <p>Elementet <span class="codeph"> &lt;title&gt; </span> genereras bara när det finns en mappning till metadatafältet Rubrik. På samma sätt genereras elementet <span class="codeph"> &lt;body&gt; </span> bara när det finns en mappning till tabellens metadatafält. </p> <p> <b>Viktigt</b>: Tilldelning av värden till den fördefinierade URL-meta-taggen stöds inte. </p> <p>För alla andra mappningar genereras <span class="codeph"> &lt;meta&gt;- </span> taggar för varje fält som innehåller data i det ursprungliga dokumentet. </p> <p>Fälten för varje dokument läggs till i cachen. För varje dokument som skrivs till cachen skapas även en länk enligt följande exempel: </p> <p> <code class="syntax html"> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
+      &lt;/body&gt;&lt;/html&gt; </code> </p> <p><span class="codeph"> &lt;title&gt; </span>-elementet genereras bara när det finns en mappning till metadatafältet Rubrik. På samma sätt genereras <span class="codeph"> &lt;body&gt; </span>-elementet endast när det finns en mappning till body-metadatafältet. </p> <p> <b>Viktigt</b>: Tilldelning av värden till den fördefinierade URL-meta-taggen stöds inte. </p> <p>För alla andra mappningar genereras <span class="codeph"> &lt;meta&gt; </span>-taggar för varje fält som innehåller data i det ursprungliga dokumentet. </p> <p>Fälten för varje dokument läggs till i cachen. För varje dokument som skrivs till cachen skapas även en länk enligt följande exempel: </p> <p> <code class="syntax html"> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
       &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
-      .... </code> </p> <p>Konfigurationens mappning måste ha ett fält som identifieras som primärnyckel. Den här mappningen utgör nyckeln som används när data hämtas från cachen. </p> <p>Crawlningen känner igen URL- <span class="codeph"> indexet: </span> schemaprefix, som sedan kan komma åt lokalt cachelagrade data. </p> </td> 
+      .... </code> </p> <p>Konfigurationens mappning måste ha ett fält som identifieras som primärnyckel. Den här mappningen utgör nyckeln som används när data hämtas från cachen. </p> <p>Crawlningen känner igen URL:en <span class="codeph">-index: </span>-schemaprefix, som sedan kan komma åt lokalt cachelagrade data. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
    <td colname="col2"> <p>Crawla den cachelagrade dokumentuppsättningen. </p> </td> 
-   <td colname="col3"> <p>Indexvärdet <span class="codeph"> : </span> länkar läggs till i crawlerns väntande lista och bearbetas i den normala crawlningssekvensen. </p> </td> 
+   <td colname="col3"> <p>Indexvärdet <span class="codeph">: </span>-länkar läggs till i crawlerns väntande lista och bearbetas i den normala crawlningssekvensen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
@@ -549,7 +561,7 @@ När du lägger till en attributinläsare kan du använda funktionen **[!UICONTR
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Text </p> </td> 
-   <td colname="col2"> <p>Avgör avgränsningsvärdet genom att först prova tabbar och sedan lodräta staplar ( <span class="codeph"> | </span>), och slutligen kommatecken ( <span class="codeph"> , </span>). Om du redan har angett ett avgränsningsvärde innan du klickade på <span class="uicontrol"> Konfigurera kartor </span>används det värdet i stället. </p> <p>Det bästa schemat för anpassning gör att kartfälten fylls i med gissningar på rätt tagg- och fältvärden. Dessutom visas en sampling av tolkade data. Välj <span class="uicontrol"> Sidhuvuden i första raden </span> om du vet att filen innehåller en rubrikrad. Installationsfunktionen använder den här informationen för att bättre identifiera de resulterande mappningsposterna. </p> </td> 
+   <td colname="col2"> <p>Avgör avgränsarvärdet genom att prova tabbar först och sedan lodräta staplar ( <span class="codeph">) | </span>) och finally-kommatecken ( <span class="codeph">, </span>). Om du redan har angett ett avgränsningsvärde innan du klickade på <span class="uicontrol"> Setup Maps </span>, används det värdet i stället. </p> <p>Det bästa schemat för anpassning gör att kartfälten fylls i med gissningar på rätt tagg- och fältvärden. Dessutom visas en sampling av tolkade data. Se till att du väljer <span class="uicontrol"> Rubriker i första raden </span> om du vet att filen innehåller en rubrikrad. Installationsfunktionen använder den här informationen för att bättre identifiera de resulterande mappningsposterna. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Feed </p> </td> 
@@ -566,13 +578,13 @@ När du lägger till en attributinläsare kan du använda funktionen **[!UICONTR
 
 Loader-data för attribut läses in före en Index-åtgärd.
 
-När du lägger till en attributinläsare kan du använda funktionen för **[!UICONTROL Preview]** att validera data, som om du sparade dem. Den kör ett test mot konfigurationen, men utan att spara konfigurationen till kontot. Testet kommer åt den konfigurerade datakällan. Hämtningscachen skrivs dock till en tillfällig plats. den inte hamnar i konflikt med huvudcachemappen som används av indexeringscrawlern.
+När du lägger till en attributinläsare kan du använda funktionen **[!UICONTROL Preview]** för att validera data, som om du sparade dem. Den kör ett test mot konfigurationen, men utan att spara konfigurationen till kontot. Testet kommer åt den konfigurerade datakällan. Hämtningscachen skrivs dock till en tillfällig plats. den inte hamnar i konflikt med huvudcachemappen som används av indexeringscrawlern.
 
-I Förhandsgranska bearbetas bara standardvärdena för fem dokument, vilket styrs av **Account:IndexConnector-Preview-Max-Documents**. De förhandsvisade dokumenten visas i källformat när de presenteras för indexeringscrawlaren. Visningen liknar funktionen Visa källa i en webbläsare. Du kan navigera bland dokumenten i förhandsvisningsuppsättningen med hjälp av standardnavigeringslänkar.
+Förhandsgranskning bearbetar bara standardvärdena för fem dokument enligt **Act:IndexConnector-Preview-Max-Documents**. De förhandsvisade dokumenten visas i källformat när de presenteras för indexeringscrawlaren. Visningen liknar funktionen Visa källa i en webbläsare. Du kan navigera bland dokumenten i förhandsvisningsuppsättningen med hjälp av standardnavigeringslänkar.
 
 Förhandsgranskningen stöder inte XML-konfigurationer eftersom sådana dokument bearbetas direkt och inte hämtas till cachen.
 
-## Lägga till en Loader-definition för attribut {#task_A735E5EF763343A9B675E1A3B09AFDBC}
+## Lägga till en attributinläsardefinition {#task_A735E5EF763343A9B675E1A3B09AFDBC}
 
 Varje konfiguration för Loader-attribut definierar en datakälla och mappningar som relaterar dataobjekten som definierats för den källan till metadatafälten i indexet.
 
@@ -584,9 +596,9 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
 
 **Lägga till en Loader-definition för attribut**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. På [!DNL Stage Attribute Loader Definitions] sidan klickar du på **[!UICONTROL Add New Attribute Loader]**.
-1. Ange de konfigurationsalternativ som du vill ha på [!DNL Attribute Loader Add] sidan. Vilka alternativ som är tillgängliga beror på vilken **[!UICONTROL Type]** du har valt.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]** på produktmenyn.
+1. Klicka på **[!UICONTROL Add New Attribute Loader]** på sidan [!DNL Stage Attribute Loader Definitions].
+1. På sidan [!DNL Attribute Loader Add] anger du önskade konfigurationsalternativ. Vilka alternativ som är tillgängliga beror på **[!UICONTROL Type]** som du har valt.
 
    <table> 
     <thead> 
@@ -602,10 +614,10 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       </tr> 
       <tr> 
       <td colname="col1"> <p>Typ </p> </td> 
-      <td colname="col2"> <p>Källan till dina data. Den typ av datakälla du väljer påverkar de alternativ som är tillgängliga på <span class="wintitle"> sidan Lägg till attributinläsare </span> . Du kan välja mellan följande: </p> <p> 
+      <td colname="col2"> <p>Källan till dina data. Datakälltypen som du väljer påverkar de alternativ som är tillgängliga på sidan <span class="wintitle"> Attributinläsare Lägg till </span>. Du kan välja mellan följande: </p> <p> 
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
-      <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Text </span> <p>Enkla platta textfiler, kommaavgränsade, tabbavgränsade eller andra konsekvent avgränsade format. Varje radavgränsad textrad motsvarar ett enskilt dokument och tolkas med den angivna avgränsaren. </p> <p>Du kan mappa varje värde, eller kolumn, till ett metadatafält, som kolumnnumret refererar till, med början vid 1 (ett). </p> </li> 
-      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Hämtar ett primärt XML-dokument som innehåller flera "rader" med information. </p> </li> 
+      <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Text  </span> <p>Enkla platta textfiler, kommaavgränsade, tabbavgränsade eller andra konsekvent avgränsade format. Varje radavgränsad textrad motsvarar ett enskilt dokument och tolkas med den angivna avgränsaren. </p> <p>Du kan mappa varje värde, eller kolumn, till ett metadatafält, som kolumnnumret refererar till, med början vid 1 (ett). </p> </li> 
+      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed  </span> <p>Hämtar ett primärt XML-dokument som innehåller flera "rader" med information. </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -649,7 +661,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       </tr> 
       <tr> 
       <td colname="col1"> <p>Avgränsare </p> </td> 
-      <td colname="col2"> <p>Anger det tecken som du vill använda för att avgränsa varje fält i den angivna datakällfilen. </p> <p>Kommatecknet ( <span class="codeph"> , </span>) är ett exempel på en avgränsare. Kommatecknet fungerar som en fältavgränsare som hjälper till att separera datafält i den angivna datakällfilen. </p> <p>Välj <span class="uicontrol"> Tabb? </span> om du vill använda det vågräta tabbtecknet som avgränsare. </p> </td> 
+      <td colname="col2"> <p>Anger det tecken som du vill använda för att avgränsa varje fält i den angivna datakällfilen. </p> <p>Kommatecknet ( <span class="codeph">, </span>) är ett exempel på en avgränsare. Kommatecknet fungerar som en fältavgränsare som hjälper till att separera datafält i den angivna datakällfilen. </p> <p>Välj fliken <span class="uicontrol">? </span> om du vill använda det vågräta tabbtecknet som avgränsare. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Rubriker i första raden </p> </td> 
@@ -663,12 +675,12 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       <td colname="col1"> <p>Karta </p> </td> 
       <td colname="col2"> <p>Anger mappningar kolumn-till-metadata med kolumnnummer. </p> <p> 
       <ul id="ul_981AE2C6D30443BDBFC6575D413732A2"> 
-      <li id="li_A42CB9DFFF8C45A7BAC2D471FE96CEBE"> <span class="uicontrol"> Kolumn </span> <p> Anger ett kolumnnummer med den första kolumnen som 1 (ett). Om du vill lägga till nya mappningsrader för varje kolumn klickar du på <span class="wintitle"> + </span>under Åtgärd <span class="uicontrol"> </span>. </p> <p>Du behöver inte referera till varje kolumn i datakällan. I stället kan du välja att hoppa över värden. </p> </li> 
-      <li id="li_26E8C9554A5D4BC5A5073D6385E3626F"> <span class="uicontrol"> Fält </span> <p>Definierar det name-attributvärde som används för varje genererad &lt;meta&gt;-tagg. </p> </li> 
-      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadata? </span> <p>Gör <span class="uicontrol"> fält </span> till en nedrullningsbar lista där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Fältvärdet <span class="uicontrol"> kan </span> vara ett odefinierat metadatafält, om så önskas. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av ett <span class="wintitle"> filtreringsskript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Filtrera skript </a>. </p> </li> 
-      <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Primärnyckel? </span> <p>Endast ett fält identifieras som primärnyckel. Det här fältet används som "sekundärnyckel" för att matcha attributets inläsardata med motsvarande dokument i indexet. </p> </li> 
-      <li id="li_80DB205525094CE1AA6762BFC7892D96"> <span class="uicontrol"> Ta bort HTML? </span> <p>När det här alternativet är markerat tas alla HTML-taggar som finns i fältets data bort. </p> </li> 
-      <li id="li_359D2902859B4C5BADB0BA26F0BA4DC0"> <span class="uicontrol"> Åtgärd </span> <p>Gör att du kan lägga till rader på kartan eller ta bort rader från kartan. Radernas ordning är inte viktig. </p> </li> 
+      <li id="li_A42CB9DFFF8C45A7BAC2D471FE96CEBE"> <span class="uicontrol"> Kolumn  </span> <p> Anger ett kolumnnummer med den första kolumnen som 1 (ett). Om du vill lägga till nya mappningsrader för varje kolumn, under <span class="wintitle"> Åtgärd </span>, klickar du på <span class="uicontrol"> + </span>. </p> <p>Du behöver inte referera till varje kolumn i datakällan. I stället kan du välja att hoppa över värden. </p> </li> 
+      <li id="li_26E8C9554A5D4BC5A5073D6385E3626F"> <span class="uicontrol"> Fält  </span> <p>Definierar det name-attributvärde som används för varje genererad &lt;meta&gt;-tagg. </p> </li> 
+      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadata?  </span> <p>Gör att <span class="uicontrol">-fältet </span> blir en listruta där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Värdet för <span class="uicontrol">-fältet </span> kan vid behov vara ett odefinierat metadatafält. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle">-filterskriptet </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Om att filtrera skript </a>. </p> </li> 
+      <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Primärnyckel?  </span> <p>Endast ett fält identifieras som primärnyckel. Det här fältet används som "sekundärnyckel" för att matcha attributets inläsardata med motsvarande dokument i indexet. </p> </li> 
+      <li id="li_80DB205525094CE1AA6762BFC7892D96"> <span class="uicontrol"> Ta bort HTML?  </span> <p>När det här alternativet är markerat tas alla HTML-taggar som finns i fältets data bort. </p> </li> 
+      <li id="li_359D2902859B4C5BADB0BA26F0BA4DC0"> <span class="uicontrol"> Åtgärd  </span> <p>Gör att du kan lägga till rader på kartan eller ta bort rader från kartan. Radernas ordning är inte viktig. </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -700,7 +712,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       </tr> 
       <tr> 
       <td colname="col1"> <p>ItemTagg </p> </td> 
-      <td colname="col2"> <p>Identifierar XML-elementet som du kan använda för att identifiera enskilda XML-rader i datakällfilen som du har angett. </p> <p>I följande feed-fragment i ett XML-dokument i Adobe är itemTag-värdet <span class="codeph"> post </span>: </p> <p> <code class="syntax xml"> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
+      <td colname="col2"> <p>Identifierar XML-elementet som du kan använda för att identifiera enskilda XML-rader i datakällfilen som du har angett. </p> <p>I följande feed-fragment av ett XML-dokument i Adobe är ItemTag-värdet <span class="codeph"> post </span>: </p> <p> <code class="syntax xml"> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
         &lt;!DOCTYPE&nbsp;gsafeed&nbsp;PUBLIC&nbsp;"-//Google//DTD&nbsp;GSA&nbsp;Feeds//EN"&nbsp;""&gt; 
         &lt;gsafeed&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt; 
@@ -741,7 +753,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       </tr> 
       <tr> 
       <td colname="col1"> <p>Fältnamn för korsreferens </p> </td> 
-      <td colname="col2"> <p>Anger ett metadatafält vars värden används som söknycklar till data i konfigurationen för attributinläsaren. Om inget värde har valts (<b>—Ingen—</b>) är den här konfigurationens data inte tillgängliga för användning i rangordningsberäkningar (<b>Regler</b> &gt; <b>Rankningsregler</b> &gt; <b>Redigera regler</b>). När du väljer ett värde används värdena i det här fältet för att korsreferera webbplatssöknings-/försäljningsdokument med data från den här konfigurationen. </p> </td> 
+      <td colname="col2"> <p>Anger ett metadatafält vars värden används som söknycklar till data i konfigurationen för attributinläsaren. Om inget värde är markerat (<b>—None—</b>) är den här konfigurationens data inte tillgängliga för användning i rankningsberäkningar (<b>Regler</b> &gt; <b>Rankningsregler</b> &gt; <b>Redigera regler</b>). När du väljer ett värde används värdena i det här fältet för att korsreferera webbplatssöknings-/försäljningsdokument med data från den här konfigurationen. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Inaktuella dagar </p> </td> 
@@ -751,34 +763,34 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       <td colname="col1"> <p>Karta </p> </td> 
       <td colname="col2"> <p>Gör att du kan ange mappningar av XML-element-till-metadata med XPath-uttryck. </p> <p> 
       <ul id="ul_604108C0277C4892AE8A40CA39889ABD"> 
-      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Tagg </span> <p>Anger en XPath-representation av tolkade XML-data. Med exempeldokumentet Adobe XML ovan, under alternativet Item-tag, kan det mappas med följande syntax: </p> <p> <code class="syntax xml"> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Tagg  </span> <p>Anger en XPath-representation av tolkade XML-data. Med exempeldokumentet Adobe XML ovan, under alternativet Item-tag, kan det mappas med följande syntax: </p> <p> <code class="syntax xml"> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
         /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>Syntaxen ovan innebär följande: </p> <p> 
         <ul id="ul_6400EBD08D424EADA1612FE4F7EFB640"> 
-        <li id="li_9958F9B40D42434195597DBA9F2AF28F"> <code class="syntax xml"> /record/@displayurl&amp;nbsp;-&gt;&amp;nbsp;page-url </code> <p>Attributet <span class="codeph"> displayURL </span> för <span class="codeph"> record </span> element mappas till <span class="codeph"> page-url för metadatafältet </span>. </p> </li> 
-        <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code class="syntax xml"> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>Innehållsattributet <span class="codeph"> för alla </span> metaelement <span class="codeph"> som finns inuti ett </span> metadataelement, som finns inuti ett <span class="codeph"> postelement, </span> vars namnattribut är <span class="codeph"> title, mappas till metadatafältet¥ </span> <span class="codeph"> </span><span class="codeph"> </span>. </p> </li> 
-        <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>Innehållsattributet <span class="codeph"> för alla </span> metaelement <span class="codeph"> som finns inuti ett </span> metadataelement, som finns inuti <span class="codeph"> postelementet </span> , vars name-attribut är <span class="codeph"> description, mappas till metadatafältet¥ desc </span> <span class="codeph"> </span><span class="codeph"> </span>. </p> </li> 
-        <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>Innehållsattributet <span class="codeph"> för </span> alla <span class="codeph"> metaelement </span> som finns i ett <span class="codeph"> metadataelement, som finns i </span> postelementet <span class="codeph"> , vars name-attribut är </span> <span class="codeph"> </span><span class="codeph"> </span>description, mappas till metadatafältet¥. </p> </li> 
+        <li id="li_9958F9B40D42434195597DBA9F2AF28F"> <code class="syntax xml"> /record/@displayurl&amp;nbsp;-&gt;&amp;nbsp;page-url </code> <p><span class="codeph"> displayURL </span>-attributet för <span class="codeph">-posten </span>-element mappar till metadatafältet <span class="codeph"> page-url </span>. </p> </li> 
+        <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code class="syntax xml"> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns inuti ett <span class="codeph"> metadata </span>-element, som finns inuti en <span class="codeph">-post </span>-element, vars namnattribut är <span class="codeph"> title </span>, mappar till metadatafältet <span class="codeph"> title &lt;a1/&gt;.</span> </p> </li> 
+        <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns i ett <span class="codeph"> metadata </span>-element, som finns inuti <span class="codeph">-posten </span>-element, vars name-attribut är <span class="codeph"> description </span>, mappar till metadatafältet <span class="codeph"> desc &lt;a1 1/&gt;.</span> </p> </li> 
+        <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns i ett <span class="codeph"> metadata </span>-element, som finns i <span class="codeph">-elementet </span>, vars namnattribut är <span class="codeph"> description </span>, mappas till metadatafältet <span class="codeph"> body &lt;a1/&gt;.</span> </p> </li> 
         </ul> </p> <p>XPath är en relativt komplicerad notation. Mer information finns på följande plats: </p> <p>Se <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
-      <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Fält </span> <p>Definierar det name-attributvärde som används för varje genererad <span class="codeph"> &lt;meta&gt;- </span> tagg. </p> </li> 
-      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadata? </span> <p>Gör <span class="uicontrol"> fält </span> till en nedrullningsbar lista där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Fältvärdet <span class="uicontrol"> kan </span> vara ett odefinierat metadatafält, om så önskas. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtrera skript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Filtrera skript </a>. </p> <p>När Loader-attribut bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle"> fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributet <span class="wintitle"> Tillåtelselista </span> inställt. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
-      <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Primärnyckel? </span> <p>Endast ett fält identifieras som primärnyckel. Det här fältet används som "sekundärnyckel" för att matcha attributets inläsardata med motsvarande dokument i indexet. </p> </li> 
-      <li id="li_80D6AF130FCE40AC972FE4B605B86BF6"> <span class="uicontrol"> Ta bort HTML? </span> <p>När det här alternativet är markerat tas alla HTML-taggar som finns i fältets data bort. </p> </li> 
-      <li id="li_D40E2F9AD8AD49FC9AC4B8C75BA31E28"> <span class="uicontrol"> Åtgärd </span> <p>Gör att du kan lägga till rader på kartan eller ta bort rader från kartan. Radernas ordning är inte viktig. </p> </li> 
+      <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Fält  </span> <p>Definierar det name-attributvärde som används för varje genererad <span class="codeph"> &lt;meta&gt; </span>-tagg. </p> </li> 
+      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadata?  </span> <p>Gör att <span class="uicontrol">-fältet </span> blir en listruta där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Värdet för <span class="uicontrol">-fältet </span> kan vid behov vara ett odefinierat metadatafält. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtreringsskript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Om att filtrera skript </a>. </p> <p>När Loader-attribut bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle">-fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributuppsättningen <span class="wintitle"> Tillåtelselista </span>. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
+      <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Primärnyckel?  </span> <p>Endast ett fält identifieras som primärnyckel. Det här fältet används som "sekundärnyckel" för att matcha attributets inläsardata med motsvarande dokument i indexet. </p> </li> 
+      <li id="li_80D6AF130FCE40AC972FE4B605B86BF6"> <span class="uicontrol"> Ta bort HTML?  </span> <p>När det här alternativet är markerat tas alla HTML-taggar som finns i fältets data bort. </p> </li> 
+      <li id="li_D40E2F9AD8AD49FC9AC4B8C75BA31E28"> <span class="uicontrol"> Åtgärd  </span> <p>Gör att du kan lägga till rader på kartan eller ta bort rader från kartan. Radernas ordning är inte viktig. </p> </li> 
       </ul> </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
-1. (Valfritt) Klicka **[!UICONTROL Setup Maps]** för att hämta ett exempel på datakällan. Uppgifterna granskas med avseende på lämplighet.
-1. Klicka **[!UICONTROL Add]** för att lägga till konfigurationen på [!DNL Attribute Loader Definitions] sidan.
-1. På [!DNL Attribute Loader Definitions] sidan klickar du på **[!UICONTROL rebuild your staged site index]**.
-1. (Valfritt) Gör något av följande på [!DNL Attribute Loader Definitions] sidan:
+1. (Valfritt) Klicka på **[!UICONTROL Setup Maps]** om du vill hämta ett exempel på datakällan. Uppgifterna granskas med avseende på lämplighet.
+1. Klicka på **[!UICONTROL Add]** för att lägga till konfigurationen på sidan [!DNL Attribute Loader Definitions].
+1. Klicka på **[!UICONTROL rebuild your staged site index]** på sidan [!DNL Attribute Loader Definitions].
+1. (Valfritt) Gör något av följande på sidan [!DNL Attribute Loader Definitions]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -788,7 +800,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Redigera en Loader-definition för attribut {#task_AA2D1B2BCAFA44A6A0C59A0318274E80}
+## Redigera en attributinläsardefinition {#task_AA2D1B2BCAFA44A6A0C59A0318274E80}
 
 Du kan redigera en befintlig attributinläsare som du har definierat.
 
@@ -796,22 +808,22 @@ Du kan redigera en befintlig attributinläsare som du har definierat.
 >
 >Om du vill använda attributinläsaren måste den vara aktiverad på ditt konto av din Adobe-kontorepresentant eller Adobe Support.
 
-Du kan inte ändra alla alternativ för attributinläsare, till exempel namnet på attributinläsaren eller typen i [!DNL Type] listrutan.
+Det finns inte alla alternativ för attributinläsare tillgängliga som du kan ändra, till exempel namnet på attributinläsaren eller typen i listrutan [!DNL Type].
 
 **Redigera en Loader-definition för attribut**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. På [!DNL Attribute Loader] sidan, under [!DNL Actions] kolumnrubriken, klickar du **[!UICONTROL Edit]** på ett namn på den attributinläsardefinition vars inställningar du vill ändra.
-1. Ange önskade alternativ på [!DNL Attribute Loader Edit] sidan.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]** på produktmenyn.
+1. På sidan [!DNL Attribute Loader], under kolumnrubriken [!DNL Actions], klickar du på **[!UICONTROL Edit]** för ett definitionsnamn för attributinläsaren vars inställningar du vill ändra.
+1. Ange önskade alternativ på sidan [!DNL Attribute Loader Edit].
 
    Se tabellen med alternativ under [Lägga till en attributinläsardefinition](../c-about-settings-menu/c-about-metadata-menu.md#task_A735E5EF763343A9B675E1A3B09AFDBC).
 1. Klicka på **[!UICONTROL Save Changes]**.
-1. (Valfritt) På [!DNL Attribute Loader Definitions] sidan klickar du på **[!UICONTROL rebuild your staged site index]**.
-1. (Valfritt) Gör något av följande på [!DNL Attribute Loader Definitions] sidan:
+1. (Valfritt) På sidan [!DNL Attribute Loader Definitions] klickar du på **[!UICONTROL rebuild your staged site index]**.
+1. (Valfritt) Gör något av följande på sidan [!DNL Attribute Loader Definitions]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -829,21 +841,21 @@ Du kan kopiera en befintlig attributinläsardefinition som du vill använda som 
 >
 >Om du vill använda attributinläsaren måste den vara aktiverad på ditt konto av din Adobe-kontorepresentant eller Adobe Support.
 
-När du kopierar en attributinläsardefinition är den kopierade definitionen inaktiverad som standard. Om du vill aktivera eller aktivera definitionen måste du redigera den från [!DNL Attribute Loader Edit] sidan och markera **[!UICONTROL Enable]**.
+När du kopierar en attributinläsardefinition är den kopierade definitionen inaktiverad som standard. Om du vill aktivera eller aktivera definitionen måste du redigera den på sidan [!DNL Attribute Loader Edit] och välja **[!UICONTROL Enable]**.
 
 Se [Redigera en attributinläsardefinition](../c-about-settings-menu/c-about-metadata-menu.md#task_AA2D1B2BCAFA44A6A0C59A0318274E80).
 
 **Kopiera en Loader-definition för attribut**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. På [!DNL Attribute Loader] sidan, under [!DNL Actions] kolumnrubriken, klickar du **[!UICONTROL Copy]** på ett namn på den attributinläsardefinition vars inställningar du vill duplicera.
-1. Ange det nya namnet på definitionen på [!DNL Attribute Loader Copy] sidan.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]** på produktmenyn.
+1. På sidan [!DNL Attribute Loader], under kolumnrubriken [!DNL Actions], klickar du på **[!UICONTROL Copy]** för ett definitionsnamn för attributinläsaren vars inställningar du vill duplicera.
+1. Ange det nya namnet på definitionen på sidan [!DNL Attribute Loader Copy].
 1. Klicka på **[!UICONTROL Copy]**.
-1. (Valfritt) Gör något av följande på [!DNL Attribute Loader Definitions] sidan:
+1. (Valfritt) Gör något av följande på sidan [!DNL Attribute Loader Definitions]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -863,15 +875,15 @@ Du kan ändra namnet på en befintlig Loader-definition för attribut.
 
 **Byta namn på en Loader-definition för attribut**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. På [!DNL Attribute Loader] sidan, under [!DNL Actions] kolumnrubriken, klickar du på **[!UICONTROL Rename]** namnet på den attributinläsardefinition som du vill ändra.
-1. På [!DNL Attribute Loader Rename] sidan anger du det nya namnet på definitionen i [!DNL Name] fältet.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]** på produktmenyn.
+1. På sidan [!DNL Attribute Loader], under kolumnrubriken [!DNL Actions], klickar du på **[!UICONTROL Rename]** för det definitionsnamn för attributinläsaren som du vill ändra.
+1. På sidan [!DNL Attribute Loader Rename] anger du det nya namnet på definitionen i fältet [!DNL Name].
 1. Klicka på **[!UICONTROL Rename]**.
-1. (Valfritt) Gör något av följande på [!DNL Attribute Loader Definitions] sidan:
+1. (Valfritt) Gör något av följande på sidan [!DNL Attribute Loader Definitions]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -881,11 +893,11 @@ Du kan ändra namnet på en befintlig Loader-definition för attribut.
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Läser in attributinläsardata {#task_2F3C55189B0A4049AB2113F2291CC181}
+## Läser in inläsningsdata för attribut {#task_2F3C55189B0A4049AB2113F2291CC181}
 
 Du kan hämta konfigurerade attributinläsardata till webbplatssökning/försäljning.
 
-På [!DNL Data Load] sidan visas följande information om statusen för den senaste inläsningen av attributdata:
+På sidan [!DNL Data Load] visas följande information om statusen för den senaste inläsningen av attributdata:
 
 <table> 
  <thead> 
@@ -912,19 +924,19 @@ På [!DNL Data Load] sidan visas följande information om statusen för den sena
 
 **Läs in Loader-data för attribut**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. På [!DNL Attribute Loader Definitions] sidan klickar du på **[!UICONTROL Load Attribute Loader Data]**.
-1. Gör något av följande på **[!UICONTROL Attribute Loader Data Load]** sidan:
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]** på produktmenyn.
+1. Klicka på **[!UICONTROL Load Attribute Loader Data]** på sidan [!DNL Attribute Loader Definitions].
+1. Gör något av följande på sidan **[!UICONTROL Attribute Loader Data Load]**:
 
-   * Klicka **[!UICONTROL Start Load]** för att starta inläsningen.
+   * Klicka på **[!UICONTROL Start Load]** för att starta inläsningen.
 
-      Under en datainläsningsåtgärd ger **raden Förlopp** information om dess förlopp.
+      Under en datainläsning ger raden **Progress** information om dess förlopp.
 
-   * Klicka **[!UICONTROL Stop Load]** för att stoppa inläsningen.
+   * Klicka på **[!UICONTROL Stop Load]** för att stoppa inläsningen.
 
-1. Klicka **[!UICONTROL Close]** för att gå tillbaka till [!DNL Attribute Loader Definitions] sidan.
+1. Klicka på **[!UICONTROL Close]** för att återgå till sidan [!DNL Attribute Loader Definitions].
 
-## Förhandsgranska attributinläsardata {#task_735CDCC1D8174B7B9F5B8E0AFA5F0CA0}
+## Förhandsgranska inläsningsdata för attribut {#task_735CDCC1D8174B7B9F5B8E0AFA5F0CA0}
 
 Du kan använda Förhandsgranska för att visa dina senast inlästa attributinläsardata.
 
@@ -932,27 +944,27 @@ I kolumnen Rad i tabellen visas numret för varje datarad, vilket anger i vilken
 
 De återstående kolumnerna visar de värden som är associerade med varje post.
 
-Om tabellen är tom betyder det att du inte har läst in några Loader-data för Attribute. Du kan stänga [!DNL Attribute Loader Data Preview] sidan och sedan läsa in Loader-data för attribut.
+Om tabellen är tom betyder det att du inte har läst in några Loader-data för Attribute. Du kan stänga sidan [!DNL Attribute Loader Data Preview] och sedan läsa in Loader-data för attribut.
 
-Se [Läsa in inläsningsdata](../c-about-settings-menu/c-about-metadata-menu.md#task_2F3C55189B0A4049AB2113F2291CC181)för attribut.
+Se [Inläsning av attributinläsardata](../c-about-settings-menu/c-about-metadata-menu.md#task_2F3C55189B0A4049AB2113F2291CC181).
 
 **Förhandsgranska Loader-data för attribut**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. På [!DNL Attribute Loader Definitions] sidan, under [!DNL Actions] kolumnen, klickar du **[!UICONTROL Preview]** för den konfiguration vars hämtade data du vill visa.
-1. Använd navigerings- och visningsalternativen längst upp och längst ned på sidan för att visa data på [!DNL Attribute Loader Data Preview] sidan.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]** på produktmenyn.
+1. På sidan [!DNL Attribute Loader Definitions], under kolumnen [!DNL Actions], klickar du på **[!UICONTROL Preview]** för den konfiguration vars hämtade data du vill visa.
+1. På sidan [!DNL Attribute Loader Data Preview] använder du navigerings- och visningsalternativen längst upp och längst ned på sidan för att visa data.
 
    Klicka på en kolumnrubrik i tabellen om du vill sortera data i stigande eller fallande ordning.
 1. Gör något av följande:
 
-   * Klicka **[!UICONTROL Download to Desktop]** för att hämta och spara tabellen som en .xlt-fil.
+   * Klicka på **[!UICONTROL Download to Desktop]** om du vill hämta och spara tabellen som en .xlt-fil.
    * Stäng sidan när du är klar med förhandsgranskningen av Loader-data för attribut och återgå till den tidigare visade sidan.
 
 ## Visa inställningarna för en attributinläsardefinition {#task_EA99A9694FE948ADA82C1DBA0667851B}
 
 Du kan granska konfigurationsinställningarna för en befintlig attributinläsardefinition.
 
-När en attributinläsardefinition har lagts till på [!DNL Attribute Loader Definitions] sidan kan du inte ändra dess typinställning. I stället måste du ta bort definitionen och sedan lägga till en ny.
+När en attributinläsardefinition har lagts till på sidan [!DNL Attribute Loader Definitions] kan du inte ändra dess typinställning. I stället måste du ta bort definitionen och sedan lägga till en ny.
 
 >[!NOTE]
 >
@@ -960,23 +972,23 @@ När en attributinläsardefinition har lagts till på [!DNL Attribute Loader Def
 
 **Så här visar du inställningarna för en Loader-definition för attribut**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. På [!DNL Attribute Loader] sidan, under [!DNL Actions] kolumnrubriken, klickar du **[!UICONTROL Edit]** på ett namn på den attributinläsardefinition vars inställningar du vill granska eller redigera.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]** på produktmenyn.
+1. På sidan [!DNL Attribute Loader], under kolumnrubriken [!DNL Actions], klickar du på **[!UICONTROL Edit]** för ett definitionsnamn för attributinläsaren vars inställningar du vill granska eller redigera.
 
 ## Visa loggen från den senaste inläsningen av attributinläsarens data {#task_9C7D6E34BB6C4A40B7CA3EE36ACB0837}
 
 Du kan använda [!DNL View Log] för att undersöka dataloggfilen för Loader-attributet för den senaste hämtningsprocessen. Du kan också använda loggvyn för att övervaka en nedladdning som körs.
 
-Se [Läsa in inläsningsdata](../c-about-settings-menu/c-about-metadata-menu.md#task_2F3C55189B0A4049AB2113F2291CC181)för attribut.
+Se [Inläsning av attributinläsardata](../c-about-settings-menu/c-about-metadata-menu.md#task_2F3C55189B0A4049AB2113F2291CC181).
 
 **Så här visar du loggen från den senaste inläsningen av attributinläsarens data**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. På [!DNL Attribute Loader Definitions] sidan klickar du på **[!UICONTROL View Log]**. Loggsida,
-1. Använd navigerings- och visningsalternativen längst upp och längst ned på sidan för att visa logginformationen på [!DNL Attribute Loader Data Log] sidan.
-1. När du är klar stänger du sidan för att gå tillbaka till [!DNL Attribute Loader Definitions] sidan.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]** på produktmenyn.
+1. Klicka på **[!UICONTROL View Log]** på sidan [!DNL Attribute Loader Definitions]. Loggsida,
+1. På sidan [!DNL Attribute Loader Data Log] använder du navigerings- och visningsalternativen längst upp och längst ned på sidan för att visa logginformationen.
+1. När du är klar stänger du sidan för att återgå till sidan [!DNL Attribute Loader Definitions].
 
-## Ta bort en Loader-definition för attribut {#task_E8980F66888B476E98C228C1D307EDF8}
+## Tar bort en attributinläsardefinition {#task_E8980F66888B476E98C228C1D307EDF8}
 
 Du kan ta bort en befintlig attributinläsardefinition som du inte längre behöver eller använder.
 
@@ -986,6 +998,6 @@ Du kan ta bort en befintlig attributinläsardefinition som du inte längre behö
 
 **Ta bort en Loader-definition för attribut**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]**.
-1. På [!DNL Attribute Loader Definitions] sidan, under [!DNL Actions] kolumnrubriken, klickar du **[!UICONTROL Delete]** på namnet på den attributinläsardefinition som du vill ta bort.
-1. På [!DNL Attribute Loader Delete] sidan klickar du på **[!UICONTROL Delete]**.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Attribute Loader]** på produktmenyn.
+1. På sidan [!DNL Attribute Loader Definitions], under kolumnrubriken [!DNL Actions], klickar du på **[!UICONTROL Delete]** för det definitionsnamn för attributinläsaren som du vill ta bort.
+1. Klicka på **[!UICONTROL Delete]** på sidan [!DNL Attribute Loader Delete].
