@@ -9,6 +9,9 @@ topic: Settings,Site search and merchandising
 uuid: 6242b73c-5e8a-44b7-9942-0684530940bc
 translation-type: tm+mt
 source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+workflow-type: tm+mt
+source-wordcount: '1487'
+ht-degree: 0%
 
 ---
 
@@ -19,15 +22,15 @@ Använd menyn Användare för att visa och lägga till användare, visa och läg
 
 ## Visa kontoanvändare {#task_FDDF30EE23C548DF8CFBB2FB2605303C}
 
-Du kan använda [!DNL View Users] sidan för att visa alla befintliga kontoanvändare. Du kan även ta bort kontoanvändare (förutom kontoägaren).
+Du kan använda sidan [!DNL View Users] för att visa alla befintliga kontoanvändare. Du kan även ta bort kontoanvändare (förutom kontoägaren).
 
-Endast kontoanvändare med **[!UICONTROL User Admin]** markering kan ta bort användare eller ändra användarroller.
+Endast kontoanvändare med **[!UICONTROL User Admin]** markerat kan ta bort användare eller ändra användarroller.
 
 Innan du kan ta bort en kontoägare överför du kontoägarskapet till en annan användare.
 
 När du har överfört ägarskap kan du ta bort ett konto precis som alla andra användare. Borttagna användare får ett e-postmeddelande som meddelar dem om statusändringen.
 
-Se [Överföra kontoägarskap till en annan kontoanvändare](../c-about-settings-menu/c-about-account-options-menu.md#task_47E3C66CC6374274830DA10171E0CF17).
+Se [Överför kontoägarskap till en annan kontoanvändare](../c-about-settings-menu/c-about-account-options-menu.md#task_47E3C66CC6374274830DA10171E0CF17).
 
 >[!NOTE]
 >
@@ -35,29 +38,29 @@ Se [Överföra kontoägarskap till en annan kontoanvändare](../c-about-settings
 
 **Så här visar du kontoanvändare**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Users]** > **[!UICONTROL View Users]**.
-1. (Valfritt) Under [!DNL User Admin] kolumnrubriken markerar du de kontoanvändare som du vill ge möjlighet att ta bort kontoanvändare eller redigera kontoanvändarroller.
-1. (Valfritt) Under [!DNL Remove?] kolumnrubriken väljer du vilka kontoanvändare du vill ta bort.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Users]** > **[!UICONTROL View Users]** på produktmenyn.
+1. (Valfritt) Under kolumnrubriken [!DNL User Admin] väljer du kontoanvändare som du vill ge möjlighet att ta bort kontoanvändare eller redigera kontoanvändarroller.
+1. (Valfritt) Välj de kontoanvändare som du vill ta bort under kolumnrubriken [!DNL Remove?].
 1. Klicka på **[!UICONTROL Save Changes]**.
-1. (Valfritt) Klicka på ett hyperlänkat rollnamn på [!DNL View Users] sidan. Sidan öppnas där du kan tilldela användare till roller eller ta bort användartilldelningar från roller. [!DNL Role Membership] Du kan också göra det.
+1. (Valfritt) Klicka på ett hyperlänkat rollnamn på sidan [!DNL View Users]. Sidan [!DNL Role Membership] öppnas där du kan tilldela användare till roller eller ta bort användartilldelningar från roller.
 
    Se [Konfigurera rollmedlemskap](../c-about-settings-menu/c-about-users-menu.md#task_DAC596AAFFCE4EF0BE68CEEF7E365414).
 
-## Lägga till kontoanvändare {#task_176C463A0C0849B29245C28EC9876326}
+## Lägger till kontoanvändare {#task_176C463A0C0849B29245C28EC9876326}
 
-Du kan använda [!DNL Add Users] sidan för att lägga till nya kontoanvändare till webbplatssökningar/-marknadsföring.
+Du kan använda sidan [!DNL Add Users] för att lägga till nya kontoanvändare till webbplatssökning/försäljning.
 
 Endast den nya användarens e-postadress krävs. När den nya användaren läggs till i kontot skickas kontoinformationen till den nya användaren.
 
-Som standard tilldelas ingen ny användare som användaradministratör. Användaradministratörens kan definiera och redigera roller samt ta bort andra användare. Du kan välja att göra en ny användare till användaradministratör på [!DNL Add Users] sidan. Du kan också använda sidan Visa användare för att göra den nya användaren till en användaradministratör.
+Som standard tilldelas ingen ny användare som användaradministratör. Användaradministratörens kan definiera och redigera roller samt ta bort andra användare. Du kan välja att göra en ny användare till användaradministratör på sidan [!DNL Add Users]. Du kan också använda sidan Visa användare för att göra den nya användaren till en användaradministratör.
 
 Se [Visa kontoanvändare](../c-about-settings-menu/c-about-users-menu.md#task_FDDF30EE23C548DF8CFBB2FB2605303C).
 
-Den e-postadress du anger får endast innehålla ASCII-tecken. Använd alfabetisk standard (a..z) eller numeriska (0..9) tecken med exakt ett `@` tecken som används för att separera användarnamnet från domänen. Tecknen `_`, `+`, `-`, `.`, `!`, `#`, `$`, `'`, `%`, `&``*``=``?``^``{``}` ¥,¥,¥,¥,¥ och¥ är också tillåtna. Starta inte e-postadressen med `.`
+Den e-postadress du anger får endast innehålla ASCII-tecken. Använd alfabetisk standard (a..z) eller numeriska (0..9) tecken med exakt ett `@`-tecken som används för att separera användarnamnet från domänen. Tecknen `_`, `+`, `-`, `.`, `!`, `#`, `$`, `'`, `%`, `&`, `*`, `=`, `?`, `^`, &lt;a 14/>, och `}` tillåts också. `{` Starta inte e-postadressen med `.`
 
 Om den nya användaren inte redan är en Adobe-kund uppmanas du att skapa en kundinloggning för den personen. Den nya användaren får ett inloggningslösenord och en bekräftelse. När den nya användaren loggar in för första gången fyller de i en kundprofil.
 
-Du kan också klicka på ett hyperlänkat rollnamn på [!DNL Add Users] sidan. Sidan öppnas där du kan tilldela användare till roller eller ta bort användartilldelningar från roller. [!DNL Role Membership] Du kan också göra det.
+Du kan också klicka på ett hyperlänkat rollnamn på sidan [!DNL Add Users]. Sidan [!DNL Role Membership] öppnas där du kan tilldela användare till roller eller ta bort användartilldelningar från roller.
 
 Se [Konfigurera rollmedlemskap](../c-about-settings-menu/c-about-users-menu.md#task_DAC596AAFFCE4EF0BE68CEEF7E365414).
 
@@ -67,15 +70,15 @@ Se [Konfigurera rollmedlemskap](../c-about-settings-menu/c-about-users-menu.md#t
 
 **Lägga till kontoanvändare**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Users]** > **[!UICONTROL Add Users]**.
-1. På [!DNL Add Users] sidan anger du den nya användarens e-postadress i [!DNL User's Email] fältet och i [!DNL User's Email (again)] fälten.
-1. (Valfritt) Markera om du **[!UICONTROL User Administrator]** vill att den nya kontoanvändaren ska kunna ta bort kontoanvändare eller redigera kontoanvändarroller.
-1. I [!DNL Roles for this User] tabellen markerar du de roller du vill tilldela den nya kontoanvändaren.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Users]** > **[!UICONTROL Add Users]** på produktmenyn.
+1. På sidan [!DNL Add Users] anger du den nya användarens e-postadress i fältet [!DNL User's Email] och i fälten [!DNL User's Email (again)].
+1. (Valfritt) Markera **[!UICONTROL User Administrator]** om du vill att den nya kontoanvändaren ska kunna ta bort kontoanvändare eller redigera kontoanvändarroller.
+1. I tabellen [!DNL Roles for this User] kontrollerar du de roller som du vill tilldela den nya kontoanvändaren.
 1. Klicka på **[!UICONTROL Add User]**.
 
 ## Visa rollerna som finns för ett konto {#task_4EAE1D018F384691A083AD51E5CE58DC}
 
-Du kan använda [!DNL View Roles] sidan för att visa alla roller som för närvarande finns för det inloggade kontot.
+Du kan använda sidan [!DNL View Roles] för att visa alla roller som för närvarande finns för det inloggade kontot.
 
 Om det inte finns några roller för kontot informeras du om problemet i användargränssnittet. Du kan använda Lägg till roller för att skapa och lägga till en roll.
 
@@ -89,16 +92,16 @@ När du tar bort en roll tas inte kontoanvändare som är tilldelade till den bo
 
 **Så här visar du rollerna som finns för ett konto**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Users]** > **[!UICONTROL View Roles]**.
-1. (Valfritt) Markera de roller som du vill ta bort under kolumnrubriken i tabellen [!DNL Remove?] .
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Users]** > **[!UICONTROL View Roles]** på produktmenyn.
+1. (Valfritt) Markera de roller som du vill ta bort under kolumnrubriken [!DNL Remove?] i tabellen.
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka på ett hyperlänkat rollnamn under kolumnrubriken i tabellen [!DNL Role Name] . Sidan öppnas där du kan tilldela användare till roller eller ta bort användartilldelningar från roller. [!DNL Role Membership] Du kan också göra det.
+   * Klicka på ett hyperlänkat rollnamn under kolumnrubriken [!DNL Role Name] i tabellen. Sidan [!DNL Role Membership] öppnas där du kan tilldela användare till roller eller ta bort användartilldelningar från roller.
 
       Se [Konfigurera rollmedlemskap](../c-about-settings-menu/c-about-users-menu.md#task_DAC596AAFFCE4EF0BE68CEEF7E365414).
 
-   * Klicka på pennikonen under kolumnrubriken i tabellen [!DNL Edit] . Sidan öppnas där du kan byta namn på rollen, ändra beskrivningen och mycket mer. [!DNL Edit Role]
+   * Klicka på pennikonen under kolumnrubriken [!DNL Edit] i tabellen. Sidan [!DNL Edit Role] öppnas där du kan byta namn på rollen, ändra beskrivningen med mera.
 
       Se [Redigera en roll](../c-about-settings-menu/c-about-users-menu.md#task_13875C2464034CE387285640412E1B59).
 
@@ -114,29 +117,29 @@ Se [Lägga till en ny roll till ett konto](../c-about-settings-menu/c-about-user
 
 **Så här redigerar du en roll**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Users]** > **[!UICONTROL View Roles]**.
-1. Klicka på pennikonen bredvid den roll du vill ändra under kolumnrubriken i tabellen. [!DNL Edit]
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Users]** > **[!UICONTROL View Roles]** på produktmenyn.
+1. Klicka på pennikonen bredvid den roll du vill ändra under kolumnrubriken [!DNL Edit] i tabellen.
 1. (Valfritt) Gör något av följande:
 
-   * Skriv ett nytt namn i [!DNL Role Name] textfältet, om du vill. * anger att det här fältet är obligatoriskt för rollen.
-   * Skriv en ny beskrivning av rollen i [!DNL Description] textfältet, om du vill.
+   * I textfältet [!DNL Role Name] skriver du ett nytt namn om du vill. * anger att det här fältet är obligatoriskt för rollen.
+   * I textfältet [!DNL Description] skriver du en ny beskrivning av rollen, om du vill.
    * Markera eller avmarkera de funktioner som du vill att rollen ska ha åtkomst till eller blockera i grupprutan.
 
 1. Klicka på **[!UICONTROL Save Changes]**.
 
 ## Lägga till en ny roll till ett konto {#task_E148D02275DE4F899BA79736A29895AB}
 
-Du kan använda [!DNL Add Roles] sidan för att göra det enklare och snabbare att tilldela behörigheter till kontoanvändare.
+Du kan använda sidan [!DNL Add Roles] för att göra det enklare och snabbare att tilldela behörigheter till kontoanvändare.
 
 Du kan till exempel ge varje enskild medlem på din PR-avdelning åtkomst till webbplatssöknings-/försäljningsaktiviteter. Det är dock mycket effektivare att lägga till dessa användare i en&quot;PR&quot;-roll och sedan tilldela uppgifterna till hela rollen.
 
-Varje rollnamn måste vara unikt. Du kan använda alfanumeriska tecken och vanliga symboler, inklusive streck `"-"`, understreck `"_"`och punkter `"."` . Namnet får inte börja med ett understreck eller en punkt.
+Varje rollnamn måste vara unikt. Du kan använda alfanumeriska tecken och vanliga symboler, inklusive bindestreck `"-"`, understreck `"_"` och punkter `"."`. Namnet får inte börja med ett understreck eller en punkt.
 
-Under kolumnrubriken i tabellen kan du också klicka på en användares hyperlänkade e-postadress. [!DNL Users in This Role] Sidan öppnas för den specifika användaren där du kan tilldela användaren roller eller ta bort tilldelningen för användaren från roller. [!DNL Role Membership]
+Under kolumnrubriken [!DNL Users in This Role] i tabellen kan du även klicka på en hyperlänkad e-postadress för en användare. Sidan [!DNL Role Membership] öppnas för den specifika användaren där du kan tilldela användaren roller eller ta bort tilldelningen för användaren från roller.
 
 Se [Konfigurera rollmedlemskap](../c-about-settings-menu/c-about-users-menu.md#task_DAC596AAFFCE4EF0BE68CEEF7E365414).
 
-Under kolumnrubriken i tabellen kan du också klicka på ett rollnamn med hyperlänk. [!DNL Roles] Sidan öppnas där du kan tilldela användare till den valda rollen eller ta bort användartilldelningar från den valda rollen. [!DNL Role Membership]
+Under kolumnrubriken [!DNL Roles] i tabellen kan du klicka på ett hyperlänkat rollnamn om du vill. Sidan [!DNL Role Membership] öppnas där du kan tilldela användare till den valda rollen eller ta bort användartilldelning från den valda rollen.
 
 >[!NOTE]
 >
@@ -144,15 +147,15 @@ Under kolumnrubriken i tabellen kan du också klicka på ett rollnamn med hyperl
 
 **Lägga till en ny roll i ett konto**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Users]** > **[!UICONTROL Add Roles]**.
-1. Ange rollens namn på [!DNL Add Roles] sidan i [!DNL Role Name] fältet.
-1. (Valfritt) I [!DNL Description] fältet anger du en mening som beskriver rollen korrekt.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Users]** > **[!UICONTROL Add Roles]** på produktmenyn.
+1. På sidan [!DNL Add Roles] anger du rollens namn i fältet [!DNL Role Name].
+1. (Valfritt) I fältet [!DNL Description] anger du en mening som beskriver rollen korrekt.
 1. Välj vilka användare som ska ha rollen genom att markera kryssrutorna till vänster om varje e-postadress.
 1. Klicka på **[!UICONTROL Add Role]**.
 
 ## Konfigurerar rollmedlemskap {#task_DAC596AAFFCE4EF0BE68CEEF7E365414}
 
-Du kan använda [!DNL Role Membership] sidan för att lägga till användare i en roll eller ta bort användare från en roll.
+Du kan använda sidan [!DNL Role Membership] för att lägga till användare i en roll eller ta bort användare från en roll.
 
 Du kan också hantera medlemskap för enskilda användargrupper när du visar roller per användare.
 
@@ -166,8 +169,8 @@ Se [Visa rollerna som finns för ett konto](../c-about-settings-menu/c-about-use
 
 **Så här tilldelar du kontoanvändare till roller**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Users]** > **[!UICONTROL Role Membership]**.
-1. Gör något av följande på [!DNL Role Membership] sidan:
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Users]** > **[!UICONTROL Role Membership]** på produktmenyn.
+1. Gör något av följande på sidan [!DNL Role Membership]:
 
    <table> 
       <thead class="chhead sthead"> 
@@ -178,8 +181,8 @@ Se [Visa rollerna som finns för ett konto](../c-about-settings-menu/c-about-use
       <td class="choption"><strong>Lägga till en eller flera användare i en roll</strong></td> 
       <td class="chdesc stentry"> <p>
       <ul id="ul_59E7C36210804EF9B6A2706A5357A892"> 
-      <li id="li_2A8D31C968B543EBA7948DD4EFA350AA"> I listrutan <span class="uicontrol"> Ändra roll</span> väljer du en roll som du vill lägga till användare i. <p>Om du inte ser listrutan <span class="uicontrol"> Ändra roll</span> klickar du på <span class="uicontrol"> Visa användare efter grupp</span>. </p> </li> 
-      <li id="li_3A67F0DDBDBE4883A17300A3F088D71A"> (Valfritt) Markera <span class="uicontrol"> Visa endast rollmedlemmar</span> i tabellen om du bara vill att de kontoanvändare som för närvarande är tilldelade till den valda rollen ska visas. </li> 
+      <li id="li_2A8D31C968B543EBA7948DD4EFA350AA"> I listrutan <span class="uicontrol"> Ändra roll</span> väljer du en roll som du vill lägga till användare i. <p>Om du inte ser listrutan <span class="uicontrol"> Ändra roll</span> klickar du på <span class="uicontrol"> Visa användare via GRUPP</span>. </p> </li> 
+      <li id="li_3A67F0DDBDBE4883A17300A3F088D71A"> (Valfritt) Markera <span class="uicontrol"> Visa endast rollmedlemmar</span> i tabellen om du bara vill att tabellen ska visa kontoanvändare som för närvarande är tilldelade till den valda rollen. </li> 
       <li id="li_4926A22D1ED94AC9972C2619A398A8C7"> Markera en eller flera kontoanvändare som du vill tilldela den valda rollen i kryssrutekolumnen i tabellen. <p>Avmarkera en eller flera kontoanvändare som du vill ta bort från den valda rollen. </p> </li> 
       </ul> </p> </td> 
       </tr> 
