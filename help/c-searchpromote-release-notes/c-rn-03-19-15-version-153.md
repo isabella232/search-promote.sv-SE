@@ -8,11 +8,14 @@ topic: Release Notes,Site search and merchandising
 uuid: f02da5a4-2207-4603-aa05-5cff7be16dd5
 translation-type: tm+mt
 source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 0%
 
 ---
 
 
-# Search&amp;Promote 15.3.1 Versionsinformation (03/24/2015){#search-promote-release-notes}
+# Versionsinformation om Search &amp; Promote 15.3.1 (03/24/2015){#search-promote-release-notes}
 
 ## Nya funktioner och förbättringar {#section_2A10EF6B40FC4F2CB2381FFA9FFA64BD}
 
@@ -26,18 +29,18 @@ source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 * Dynamiskt genererade intervall för intervallattribut med autofacet-value-låsningsfunktioner.
 
-   Adobe Systems kräver för närvarande att du tillhandahåller innehåll som identifierar intervallvärden för att göra detta. Om du till exempel anger priset 10 genererar du en intervallsträng (&quot;Mellan $10 och $20&quot;). Eller så kräver Adobe Systems att du använder skriptad filtrering. Nya attribut har lagts till i en metadatafältdefinition, endast för `Type=Number` fält. De nya alternativen associerar det numeriska fältet med ett `Type=Text` fält och anger konfigurationsinformation som beskriver hur intervallbeskrivningen skapas.
+   Adobe Systems kräver för närvarande att du tillhandahåller innehåll som identifierar intervallvärden för att göra detta. Om du till exempel anger priset 10 genererar du en intervallsträng (&quot;Mellan $10 och $20&quot;). Du kan också använda skriptad filtrering i Adobe Systems. Nya attribut har lagts till i en metadatafältdefinition, endast för `Type=Number`-fält. De nya alternativen associerar det numeriska fältet med ett `Type=Text`-fält och anger konfigurationsinformation som beskriver hur intervallbeskrivningen skapas.
 
-   Se [Lägga till ett nytt fält](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5)för metataggar.
+   Se [Lägga till ett nytt metataggsfält](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 
 ## Korrigeringar {#section_22D1AFC99F394D569898828A0D3C419D}
 
 * Dialogrutan för redigering av Fasetterad rälskarta ska innehålla mellanliggande fasetter.
 * Tomma kärnsökresultat för inbäddat sökläge, för en sökning som innehåller japanska tecken.
-* Tikakonverteringen av Word.docx-filer fyller nu i `title` attributet.
-* Felaktiga dubblettbanderollmeddelanden i **[!UICONTROL Banner]** hanteraren har korrigerats.
+* Tikakonverteringen av Word.docx-filer fyller nu i attributet `title`.
+* Felaktiga dubblettbanderollmeddelanden i **[!UICONTROL Banner]**-hanteraren har korrigerats.
 * [!DNL Dynamic Media Classic] banners är nu protokollagnostiska.
-* Fältattributet var ibland dolt när användardefinierade fält redigerades i användargränssnittet för metadata, även när det **[!UICONTROL Table Name]** **[!UICONTROL Dynamic Facets]** aktiverades för kontot.
+* Fältattributet **[!UICONTROL Table Name]** var ibland dolt när användardefinierade fält redigerades i metadataanvändargränssnittet, även när **[!UICONTROL Dynamic Facets]** aktiverades för kontot.
 * **[!UICONTROL Recent Searches]** inte längre multiplicera icke-ASCII-tecken.
 * MDI-fält kan fyllas i utan att använda skriptbaserad filtrering.
 * Fel kodning i förslag.
