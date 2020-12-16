@@ -15,19 +15,19 @@ ht-degree: 0%
 ---
 
 
-# Adobe Search &amp; Promote Guide {#search-promote-documentation}
+# Handbok för Adobe Search &amp; Promote {#search-promote-documentation}
 
-## Nyheter och notiser {#topic_02625547D07F411DBAC9593FCBD4741B}
+## Nyheter och meddelanden {#topic_02625547D07F411DBAC9593FCBD4741B}
 
 * Adobe Marketing Cloud Release Notes - Innehåller nya funktioner, korrigeringar och kända fel i alla lösningar för Marketing Cloud. Funktionsreleaser inträffar under våren och hösten, där underhållsreleaser sker månadsvis.
 
-   **Tidig åtkomst**: Anmäl dig till produktuppdateringen [för](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) Adobe Priority om du vill få information om Adobe Marketing Cloud-releaser en vecka före varje release.
+   **Tidig åtkomst**: Anmäl dig till  [Adobe Priority Product ](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) Updato om du vill få information från Adobe Marketing Cloud en vecka före varje release.
 
 * Den senaste versionsinformationen för Adobe Search &amp; Promote:
 
    [Versionsinformation](/help/c-searchpromote-release-notes/c-rn-02-13-18-version-1811.md)
 
-## Whitepaper {#topic_EED10B7F7E8D4A9A8F759FE24C461937}
+## Informationsdokument {#topic_EED10B7F7E8D4A9A8F759FE24C461937}
 
 [Förstå och utforma indexanslutningsflöden i Adobe Search &amp; Promote](https://marketing.adobe.com/resources/help/en_US/snp/index_connector_feeds.pdf)
 
@@ -35,4 +35,4 @@ ht-degree: 0%
 
 [Adobe Search &amp; Promote webbplats](https://www.adobe.com/solutions/testing-targeting/search-driven-merchandising.html)
 
-[Branschinsikter](https://blogs.adobe.com/digitalmarketing/) - bloggen Adobe för digital marknadsföring.
+[Branschinsikter](https://blogs.adobe.com/digitalmarketing/)  - Bloggen Adobe för digital marknadsföring.
