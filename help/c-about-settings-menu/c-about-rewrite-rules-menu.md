@@ -9,6 +9,9 @@ topic: Settings,Site search and merchandising
 uuid: 77ee84dd-fdba-4d34-ae8e-2fe786599800
 translation-type: tm+mt
 source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+workflow-type: tm+mt
+source-wordcount: '10216'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
 
 Använd menyn Skriv om regler om du vill ange regler för crawlning och sökning av URL:er och titlar.
 
-## Om Lagra URL-regler för crawlningslista {#concept_B71CF4C8030A4A74A22C3BFE4DE3B865}
+## Om URL-regler för crawllistans lager {#concept_B71CF4C8030A4A74A22C3BFE4DE3B865}
 
 URL-regler för crawlning anger hur de URL:er som upptäcks i webbinnehållet skrivs om. Du kan ange ett obegränsat antal regler och villkor, och du kan ändra vilken del som helst av de URL-adresser som påträffas.
 
@@ -31,7 +34,7 @@ Crawlningsregler är mest användbara när du vill skriva om dynamiska delar av 
 
 När en webbplats crawlas lagras inbäddade innehålls-URL:er i en tillfällig lista över ytterligare webbsidor som ska crawlas. Innan en URL läggs till i den här listan används reglerna för omskrivning av arkiv på den. Normalt används regler för att ta bort ett sessions-ID från en URL eller för att framtvinga ett särskilt sessions-ID för crawlning. När sökroboten hämtar en URL från listan används reglerna för att hämta omskrivning för att manipulera delar av den URL:en igen. Hämtningsreglerna används vanligtvis för att infoga tidskänsliga data i URL:en. Det är den slutliga URL-adressen som används för att hämta sidan från din webbplats.
 
-Se [Om Hämta URL-regler för crawlningslista](../c-about-settings-menu/c-about-rewrite-rules-menu.md#concept_EC8E2E48B99A458D8567B526C9827CBA).
+Se [Om Hämta URL-regler för crawllista](../c-about-settings-menu/c-about-rewrite-rules-menu.md#concept_EC8E2E48B99A458D8567B526C9827CBA).
 
 Vanligtvis använder du enbart Lagra URL-regler. Hämta URL-regler är bara nödvändigt om URL-adresser innehåller dynamiska data, som ett sessions-ID, och om dessa dynamiska data ändras över tid för att förbli giltiga. I det här fallet använder du Lagra URL-regler för att hämta det senaste tillståndet för data från de URL:er som påträffas. Sedan använder du Hämta URL-regler för att lägga till data till varje URL när sökroboten försöker hämta sidan.
 
@@ -66,29 +69,29 @@ Du kan inte använda tecknet &quot;not&quot; (&#39;!&#39;) för att prefix till 
 
 Du kan använda parenteser för att skapa en bakåtreferens i mönstret, som du kan referera till av Substitution och CondPattern.
 
-**Ersättning** URL-adressen ersätts med ersättningssträngen som innehåller följande:
+**** SubstitutionURL:en ersätts av ersättningssträngen som innehåller följande:
 
 Oformaterad text: Text som skickas oförändrad.
 
 Med bakåtreferenser får du tillgång till de grupperade delarna (inom parentes) av mönstret eller CondPattern. Följande två typer av bakåtreferenser:
 
-* **RewriteRule Backreferences** Dessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0 &lt;= N &lt;= 9). Exempel: `RewriteRule ^https:// ([^/]*) (.*)$ https://${tolower: $1} $2.`
+* **RewriteRule** BackreferencesDessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0)  &lt;> Exempel: `RewriteRule ^https:// ([^/]*) (.*)$ https://${tolower: $1} $2.`
 
-* **RewriteCond Backreferences** Dessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0 &lt;= N &lt;= 9).
+* **RewriteCond** BackreferencesDessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0)  &lt;>
 
-Variabler: Detta är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE är en sträng för namnet på en definierad variabel. Mer information om hur du ställer in miljövariabler finns i `*[E]*` flaggan.
+Variabler: Detta är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE är en sträng för namnet på en definierad variabel. Mer information om hur du anger miljövariabler finns i `*[E]*`-flaggan.
 
 Funktioner: Detta är funktioner i formatet ${NAME_OF_FUNCTION:key} där NAME_OF_FUNCTION är följande:
 
 * tolower gör alla tecken i *key* gemener.
-* toupper gör alla tecken i *stora* bokstäver.
-* escape URL-kodar alla tecken i *nyckeln*.
+* toupper gör alla tecken i *nyckel* versaler.
+* escape URL-kodar alla tecken i *nyckel*.
 * Tecknen &#39;a&#39;..&#39;z&#39;, &#39;A&#39;..&#39;Z&#39;, &#39;0&#39;..&#39;9, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; och &#39;_&#39; ändras inte; Blanksteg översätts till + och alla andra tecken omvandlas till sin %xx URL-kodade motsvarighet.
 * unescape omformar &#39;+&#39; tillbaka till blanksteg och alla %xx URL-kodade tecken tillbaka till enskilda tecken.
 
 >[!NOTE]
 >
->Det finns en särskild ersättningssträng: `'-'` det betyder&quot;INGEN substitution&quot;. Strängen används ofta med C-flaggan (chain) så att du kan matcha en URL till flera mönster innan en ersättning görs. `'-'`
+>Det finns en särskild ersättningssträng: `'-'` betyder&quot;INGEN ersättning&quot;. Strängen `'-'` används ofta med C-flaggan (chain), vilket gör att du kan matcha en URL till flera mönster innan en ersättning görs.
 
 **Flaggor**
 
@@ -135,7 +138,7 @@ Funktioner: Detta är funktioner i formatet ${NAME_OF_FUNCTION:key} där NAME_OF
 
 **Exempel på en RewriteRule med en funktion**
 
-Anta att du har en skiftlägeskänslig server som hanterar strängarna `"www.mydomain.com"` och `"www.MyDomain.com"` på ett annat sätt. För att servern ska fungera på rätt sätt måste domänen alltid vara `"www.mydomain.com"` även om vissa dokument innehåller länkar som refererar till `"www.MyDomain.com."` För att göra detta kan du använda följande regel:
+Anta att du har en skiftlägeskänslig server som hanterar strängarna `"www.mydomain.com"` och `"www.MyDomain.com"` på olika sätt. För att servern ska fungera på rätt sätt måste domänen alltid vara `"www.mydomain.com"` även om vissa dokument innehåller länkar som refererar till `"www.MyDomain.com."` För att göra detta kan du använda följande regel:
 
 ```
 RewriteRule  ^https:// 
@@ -143,13 +146,13 @@ RewriteRule  ^https://
 <i>(.*)</i>$  https://${tolower:$1}$2
 ```
 
-Den här omskrivningsregeln använder funktionen `tolower` för att skriva om domändelen av en URL för att säkerställa att den alltid är i gemener, som i följande exempel:
+Denna omskrivningsregel använder funktionen `tolower` för att skriva om domändelen av en URL för att säkerställa att den alltid är i gemener, som i följande:
 
-1. Mönstret `(^https://([^/]*)(.*)$)` innehåller en bakåtreferens `([^/]*)` som matchar alla tecken mellan `https://` och det första `/` i URL:en. Mönstret innehåller också en andra bakåtreferens `(.*)` som matchar alla återstående tecken i URL:en.
+1. Mönstret `(^https://([^/]*)(.*)$)` innehåller en bakåtreferens `([^/]*)` som matchar alla tecken mellan `https://` och den första `/` i URL:en. Mönstret innehåller också en andra bakåtreferens `(.*)` som matchar alla återstående tecken i URL:en.
 
-1. Ersättningen `(https://${tolower:$1}$2)` innebär att sökmotorn skriver om URL:en med hjälp av funktionen `tolower` på den första bakåtreferensen `(https:// ${tolower:$1}$2)` och lämnar resten av URL:en orörd `(https://${tolower:$1} $2)`.
+1. Ersättningen `(https://${tolower:$1}$2)` anger för sökmotorn att skriva om URL:en med funktionen `tolower` på den första bakåtreferensen `(https:// ${tolower:$1}$2)` och lämna resten av URL:en orörd `(https://${tolower:$1} $2)`.
 
-En URL till formuläret `https://www.MyDomain.com/INTRO/index.Html` skrivs därför om som `https://www.mydomain.com/INTRO/index.Html`.
+Därför skrivs en URL-adress i formatet `https://www.MyDomain.com/INTRO/index.Html` om som `https://www.mydomain.com/INTRO/index.Html`.
 
 ## Om RewriteCond-direktiv {#section_CD5A19B2D3204F73B645411931FC34A1}
 
@@ -167,20 +170,20 @@ Oformaterad text: Text som skickas oförändrad.
 
 Med bakåtreferenser får du tillgång till de grupperade delarna (inom parentes) av mönstret eller CondPattern. Följande två typer av bakåtreferenser:
 
-* **RewriteRule Backreferences** Dessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0 &lt;= N &lt;= 9). Exempel, `RewriteRule ^https:// ([^/]*) (.*)$ https://${tolower: $1} $2`.
+* **RewriteRule** BackreferencesDessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0)  &lt;> Exempel, `RewriteRule ^https:// ([^/]*) (.*)$ https://${tolower: $1} $2`.
 
-* **RewriteCond Backreferences** Dessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0&lt;= N &lt;= 9).
+* **RewriteCond** BackreferencesDessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0)&lt;>
 
-Variabler: Detta är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE kan vara en sträng för namnet på en definierad variabel. Mer information om hur du anger variabler finns i RewriteRule- *`[E]`* flaggan.
+Variabler: Detta är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE kan vara en sträng för namnet på en definierad variabel. Mer information om hur du anger variabler finns i RewriteRule-flaggan *`[E]`*.
 
 Funktioner: Detta är funktioner i formatet ${NAME_OF_FUNCTION:key} där NAME_OF_FUNCTION är följande:
 
 * tolower gör alla tecken i *key* gemener.
-* toupper gör alla tecken i *stora* bokstäver.
+* toupper gör alla tecken i *nyckel* versaler.
 * escape URL-kodar alla tecken i nyckeln. Tecknen &#39;a&#39;..&#39;z&#39;, &#39;A&#39;..&#39;Z&#39;, &#39;0&#39;..&#39;9, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; och &#39;_&#39; ändras inte, blanksteg översätts till &#39;+&#39; och alla andra tecken omvandlas till sin `%xx` URL-kodade motsvarighet.
 * unescape omformar &#39;+&#39; tillbaka till blanksteg och alla `%xx` URL-kodningstecken tillbaka till enskilda tecken.
 
-**CondPattern** är ett utökat reguljärt standarduttryck med vissa tillägg. Mönstersträngen kan prefixeras med ett `!` tecken (utropstecken) för att ange ett mönster som inte matchar. I stället för riktiga strängar för reguljära uttryck kan du använda någon av följande specialvarianter:
+**** CondPattern är ett utökat reguljärt standarduttryck med några tillägg. Mönstersträngen kan prefixeras med ett `!`-tecken (utropstecken) för att ange ett icke-matchande mönster. I stället för riktiga strängar för reguljära uttryck kan du använda någon av följande specialvarianter:
 
 >[!NOTE]
 >
@@ -209,7 +212,8 @@ Funktioner: Detta är funktioner i formatet ${NAME_OF_FUNCTION:key} där NAME_OF
  </tbody> 
 </table>
 
-**Flaggor**(valfritt) Omslut flaggor inom hakparenteser `[]`. Flera flaggor är kommaavgränsade.
+**Flaggor**
+ (valfritt) Omslut flaggor inom hakparenteser  `[]`. Flera flaggor är kommaavgränsade.
 
 <table> 
  <thead> 
@@ -243,9 +247,9 @@ RewriteRule  ^.+sessionid=
 <i>[E=sessionid:$1]</i>
 ```
 
-RewriteRule använder en E-flagga `([E=sessionid:$1])` för att tilldela variabeln det aktuella värdet för sessionid-parametern CGI `sessionid`. Referensen `$1` refererar till den första bakåtreferensen, som finns mellan den första uppsättningen parenteser i RewriteRule-mönstret `([^&#]+)`.
+RewriteRule använder en E-flagga `([E=sessionid:$1])` för att tilldela det aktuella värdet för sessionid-parametern CGI till variabeln `sessionid`. `$1` refererar till den första bakåtreferensen, som finns mellan den första uppsättningen parenteser i RewriteRule-mönstret `([^&#]+)`.
 
-Det reguljära uttrycket `^&#]+` matchar delen av en URL mellan ordet `sessionid` och nästa `**&**or**#**` tecken. Eftersom RewriteRule endast används för att skapa det ursprungliga värdet för sessionid-variabeln skrivs det inte om. Observera att regelns ersättningsfält är inställt på `-` att ange att ingen omskrivning krävs.
+Det reguljära uttrycket `^&#]+` matchar delen av en URL mellan ordet `sessionid` och nästa `**&**or**#**`-tecken. Eftersom RewriteRule endast används för att skapa det ursprungliga värdet för sessionid-variabeln skrivs det inte om. Observera att regelns ersättningsfält är inställt på `-` för att ange att ingen omskrivning krävs.
 
 RewriteCond undersöker variabeln `sessionid` ( `%{sessionid}`). Om den inte har ett enda tecken (!.).+) matchar RewriteRule.
 
@@ -259,17 +263,17 @@ RewriteRule
 <i>(.*)$</i>  $1sessionid=%{sessionid}$2
 ```
 
-RewriteRule-mönstret innehåller två bakåtreferenser: `(.+)` och `(.*)`. Den första bakåtreferensen matchar alla tecken före `sessionid`. Den andra bakåtreferensen matchar alla tecken efter avslutningen `&` eller `#`.
+RewriteRule-mönstret innehåller två bakåtreferenser: `(.+)` och `(.*)`. Den första bakåtreferensen matchar alla tecken före `sessionid`. Den andra bakåtreferensen matchar alla tecken efter avslutandet `&` eller `#`.
 
-Ersättningsmönstret skriver om URL:en med den första bakåtreferensen, följt av strängen &quot;sessionid=&quot;, följt av värdet på den sessions-ID-variabel som definieras av den första regeln `%{sessionid}`och därefter den andra bakåtreferensen. `($1sessionid=%{sessionid} $2)`
+Ersättningsmönstret skriver om URL:en med den första bakåtreferensen, följt av strängen &quot;sessionid=&quot;, följt av värdet på den sessions-ID-variabel som definieras av den första regeln `%{sessionid}`, följt av den andra bakåtreferensen. `($1sessionid=%{sessionid} $2)`
 
-Observera att RewriteRule inte innehåller en RewriteCond. Därför skapas en omskrivning för alla URL:er som matchar RewriteRule- *mönstret*. Om värdet för sessionid-variabeln ( `%{sessionid}`) är `1234`, skrivs en URL-adress om i formuläret `https://www.domain.com/products/?sessionid=5678&function=buy` som `https://www.domain.com/products/?sessionid=1234&function=buy`
+Observera att RewriteRule inte innehåller en RewriteCond. Därför skapas en omskrivning för alla URL:er som matchar RewriteRule *Pattern*. Om värdet för sessionid-variabeln ( `%{sessionid}`) är `1234` skrivs en URL i formatet `https://www.domain.com/products/?sessionid=5678&function=buy` om som `https://www.domain.com/products/?sessionid=1234&function=buy`
 
 ## Bekräftelse {#section_B17088EF38244496BC1DDD4ECF75EB5B}
 
 Programvaran för omskrivningsmotorn utvecklades ursprungligen av Apache Group för användning i Apache HTTP-serverprojektet (https://www.apache.org/).
 
-## Lägga till en URL-regel för crawllistearkiv {#task_22DD40DF95584B12BE8E6ECFBF579BCD}
+## Lägger till en URL-regel för crawllistans arkiv {#task_22DD40DF95584B12BE8E6ECFBF579BCD}
 
 Du kan lägga till URL-regler för crawllistearkiv för att ange hur URL:er som påträffas i webbinnehållet ska skrivas om. Du kan ange ett obegränsat antal regler och villkor, och du kan ändra vilken del som helst av de URL-adresser som påträffas.
 
@@ -281,20 +285,20 @@ t_adding_a_crawl_list_store_url_rule.xml
 
 **Lägga till URL-regler för crawllistans arkiv**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Store URL Rules]**.
-1. I [!DNL Crawl List Store URL Rules] fältet anger du de regler du vill använda.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Store URL Rules]** på produktmenyn.
+1. I fältet [!DNL Crawl List Store URL Rules] anger du de regler du vill använda.
 
    Tomma rader och kommentarsrader som börjar med tecknet &#39;#&#39; (hash) tillåts.
-1. (Valfritt) På [!DNL Crawl List Store URL Rules] sidan anger du en test-URL i [!DNL Test Crawl List Store URL Rules] fältet vars crawlningsregler du vill testa och klickar sedan på **Testa**.
+1. (Valfritt) På sidan [!DNL Crawl List Store URL Rules] anger du en test-URL vars crawlningsregler du vill testa i fältet [!DNL Test Crawl List Store URL Rules] och klickar sedan på **Testa**.
 1. Klicka på **Spara ändringar**.
 1. (Valfritt) Återskapa indexet för den mellanlagrade platsen om du vill förhandsgranska resultatet.
 
    Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
-1. (Valfritt) Gör något av följande på [!DNL Crawl List Store URL Rules] sidan:
+1. (Valfritt) Gör något av följande på sidan [!DNL Crawl List Store URL Rules]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -353,23 +357,23 @@ Du kan inte använda tecknet &quot;not&quot; (&#39;!&#39;) för att prefix till 
 
 Du kan använda parenteser för att skapa en bakåtreferens i mönstret, som du kan referera till av Substitution och CondPattern.
 
-**Ersättning** URL-adressen ersätts med ersättningssträngen som innehåller följande:
+**** SubstitutionURL:en ersätts av ersättningssträngen som innehåller följande:
 
 Oformaterad text: Text som skickas oförändrad.
 
 Med bakåtreferenser får du tillgång till de grupperade delarna (inom parentes) av mönstret eller CondPattern. Följande två typer av bakåtreferenser:
 
-* **RewriteRule Backreferences** Dessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0 &lt;= N &lt;= 9). Exempel: `RewriteRule ^https:// ([^/]*) (.*)$ https://${tolower: $1} $2.`
+* **RewriteRule** BackreferencesDessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0)  &lt;> Exempel: `RewriteRule ^https:// ([^/]*) (.*)$ https://${tolower: $1} $2.`
 
 * ** RewriteCond Backreferences** Dessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0 &lt;= N &lt;= 9).
 
-Variabler: Detta är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE är en sträng för namnet på en definierad variabel. Mer information om hur du ställer in miljövariabler finns i *[E]* -flaggan.
+Variabler: Detta är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE är en sträng för namnet på en definierad variabel. Mer information om hur du anger miljövariabler finns i *[E]*-flaggan.
 
 Funktioner: Detta är funktioner i formatet ${NAME_OF_FUNCTION:key} där NAME_OF_FUNCTION är följande:
 
 * tolower gör alla tecken i *key* gemener.
-* toupper gör alla tecken i *stora* bokstäver.
-* escape URL-kodar alla tecken i *nyckeln*.
+* toupper gör alla tecken i *nyckel* versaler.
+* escape URL-kodar alla tecken i *nyckel*.
 * Tecknen &#39;a&#39;..&#39;z&#39;, &#39;A&#39;..&#39;Z&#39;, &#39;0&#39;..&#39;9, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; och &#39;_&#39; ändras inte; Blanksteg översätts till + och alla andra tecken omvandlas till sin %xx URL-kodade motsvarighet.
 * unescape omformar &#39;+&#39; tillbaka till blanksteg och alla %xx URL-kodade tecken tillbaka till enskilda tecken.
 
@@ -428,12 +432,12 @@ RewriteRule  ^https://
 <i>(.*)</i>$  https://${tolower:$1}$2
 ```
 
-Den här omskrivningsregeln använder funktionen `tolower` för att skriva om domändelen av en URL för att säkerställa att den alltid är i gemener, som i följande exempel:
+Denna omskrivningsregel använder funktionen `tolower` för att skriva om domändelen av en URL för att säkerställa att den alltid är i gemener, som i följande:
 
 1. Mönstret `(^https://([^/]*)(.*)$)` innehåller en bakåtreferens ** `([^/]*)`** som matchar alla tecken mellan `https://` och den första `/` i URL:en. Mönstret innehåller också en andra bakåtreferens `(.*)` som matchar alla återstående tecken i URL:en.
-1. Ersättningen `(https://${tolower:$1}$2)` innebär att sökmotorn skriver om URL:en med hjälp av funktionen `tolower` på den första bakåtreferensen `(https:// ${tolower:$1}$2)` och lämnar resten av URL:en orörd `(https://${tolower:$1} $2)`.
+1. Ersättningen `(https://${tolower:$1}$2)` anger för sökmotorn att skriva om URL:en med funktionen `tolower` på den första bakåtreferensen `(https:// ${tolower:$1}$2)` och lämna resten av URL:en orörd `(https://${tolower:$1} $2)`.
 
-En URL till formuläret `https://www.MyDomain.com/INTRO/index.Html` skrivs därför om som `https://www.mydomain.com/INTRO/index.Html`.
+Därför skrivs en URL-adress i formatet `https://www.MyDomain.com/INTRO/index.Html` om som `https://www.mydomain.com/INTRO/index.Html`.
 
 ## Om RewriteCond-direktiv {#section_ADD642A24B68452CB98294A0BD687EC3}
 
@@ -451,20 +455,20 @@ Oformaterad text: Text som skickas oförändrad.
 
 Med bakåtreferenser får du tillgång till de grupperade delarna (inom parentes) av mönstret eller CondPattern. Följande två typer av bakåtreferenser:
 
-* **RewriteRule Backreferences** Dessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0 &lt;= N &lt;= 9). Exempel, `RewriteRule ^https:// ([^/]*) (.*)$ https://${tolower: $1} $2`.
+* **RewriteRule** BackreferencesDessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0)  &lt;> Exempel, `RewriteRule ^https:// ([^/]*) (.*)$ https://${tolower: $1} $2`.
 
-* **RewriteCond Backreferences** Dessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0&lt;= N &lt;= 9).
+* **RewriteCond** BackreferencesDessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0)&lt;>
 
-Variabler: Detta är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE kan vara en sträng för namnet på en definierad variabel. Mer information om hur du anger variabler finns i RewriteRule- *`[E]`* flaggan.
+Variabler: Detta är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE kan vara en sträng för namnet på en definierad variabel. Mer information om hur du anger variabler finns i RewriteRule-flaggan *`[E]`*.
 
 Funktioner: Detta är funktioner i formatet ${NAME_OF_FUNCTION:key} där NAME_OF_FUNCTION är följande:
 
 * tolower gör alla tecken i *key* gemener.
-* toupper gör alla tecken i *stora* bokstäver.
+* toupper gör alla tecken i *nyckel* versaler.
 * escape URL-kodar alla tecken i nyckeln. Tecknen &#39;a&#39;..&#39;z&#39;, &#39;A&#39;..&#39;Z&#39;, &#39;0&#39;..&#39;9, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; och &#39;_&#39; ändras inte, blanksteg översätts till &#39;+&#39; och alla andra tecken omvandlas till sin %xx URL-kodade motsvarighet.
 * unescape omformar &#39;+&#39; tillbaka till blanksteg och alla %xx URL-kodningstecken tillbaka till enskilda tecken.
 
-**CondPattern** är ett utökat reguljärt standarduttryck med vissa tillägg. Mönstersträngen kan prefixeras med &#39;!&#39; (utropstecken) om du vill ange ett mönster som inte matchar. I stället för riktiga strängar för reguljära uttryck kan du använda någon av följande specialvarianter:
+**** CondPattern är ett utökat reguljärt standarduttryck med några tillägg. Mönstersträngen kan prefixeras med &#39;!&#39; (utropstecken) om du vill ange ett mönster som inte matchar. I stället för riktiga strängar för reguljära uttryck kan du använda någon av följande specialvarianter:
 
 >[!NOTE]
 >
@@ -493,7 +497,8 @@ Funktioner: Detta är funktioner i formatet ${NAME_OF_FUNCTION:key} där NAME_OF
  </tbody> 
 </table>
 
-**Flaggor**(valfritt) Omslut flaggor inom hakparenteser `[]`. Flera flaggor är kommaavgränsade.
+**Flaggor**
+ (valfritt) Omslut flaggor inom hakparenteser  `[]`. Flera flaggor är kommaavgränsade.
 
 <table> 
  <thead> 
@@ -527,9 +532,9 @@ RewriteRule  ^.+sessionid=
 <i>[E=sessionid:$1]</i>
 ```
 
-RewriteRule använder en E-flagga `([E=sessionid:$1])` för att tilldela variabeln det aktuella värdet för sessionid-parametern CGI `sessionid`. Referensen `$1` refererar till den första bakåtreferensen, som finns mellan den första uppsättningen parenteser i RewriteRule-mönstret `([^&#]+)`.
+RewriteRule använder en E-flagga `([E=sessionid:$1])` för att tilldela det aktuella värdet för sessionid-parametern CGI till variabeln `sessionid`. `$1` refererar till den första bakåtreferensen, som finns mellan den första uppsättningen parenteser i RewriteRule-mönstret `([^&#]+)`.
 
-Det reguljära uttrycket `^&#]+` matchar delen av en URL mellan ordet `sessionid` och nästa**&amp;**eller**#**tecken. Eftersom RewriteRule endast används för att skapa det ursprungliga värdet för sessionid-variabeln skrivs det inte om. Observera att regelns ersättningsfält är inställt på `-` att ange att ingen omskrivning krävs.
+Det reguljära uttrycket `^&#]+` matchar delen av en URL mellan ordet `sessionid` och nästa**&amp;**eller**#**tecken. Eftersom RewriteRule endast används för att skapa det ursprungliga värdet för sessionid-variabeln skrivs det inte om. Observera att regelns ersättningsfält är inställt på `-` för att ange att ingen omskrivning krävs.
 
 RewriteCond undersöker variabeln `sessionid` ( `%{sessionid}`). Om den inte har ett enda tecken (!.).+) matchar RewriteRule.
 
@@ -543,17 +548,17 @@ RewriteRule
 <i>(.*)$</i>  $1sessionid=%{sessionid}$2
 ```
 
-RewriteRule-mönstret innehåller två bakåtreferenser: `(.+)` och `(.*)`. Den första bakåtreferensen matchar alla tecken före `sessionid`. Den andra bakåtreferensen matchar alla tecken efter avslutningen `&` eller `#`.
+RewriteRule-mönstret innehåller två bakåtreferenser: `(.+)` och `(.*)`. Den första bakåtreferensen matchar alla tecken före `sessionid`. Den andra bakåtreferensen matchar alla tecken efter avslutandet `&` eller `#`.
 
-Ersättningsmönstret skriver om URL:en med den första bakåtreferensen, följt av strängen &quot;sessionid=&quot;, följt av värdet på den sessions-ID-variabel som definieras av den första regeln `%{sessionid}`och därefter den andra bakåtreferensen. `($1sessionid=%{sessionid} $2)`
+Ersättningsmönstret skriver om URL:en med den första bakåtreferensen, följt av strängen &quot;sessionid=&quot;, följt av värdet på den sessions-ID-variabel som definieras av den första regeln `%{sessionid}`, följt av den andra bakåtreferensen. `($1sessionid=%{sessionid} $2)`
 
-Observera att RewriteRule inte innehåller en RewriteCond. Därför skapas en omskrivning för alla URL:er som matchar RewriteRule- *mönstret*. Om värdet för sessionid-variabeln ( `%{sessionid}`) är `1234`, skrivs en URL-adress om i formuläret `https://www.domain.com/products/?sessionid=5678&function=buy` som `https://www.domain.com/products/?sessionid=1234&function=buy`
+Observera att RewriteRule inte innehåller en RewriteCond. Därför skapas en omskrivning för alla URL:er som matchar RewriteRule *Pattern*. Om värdet för sessionid-variabeln ( `%{sessionid}`) är `1234` skrivs en URL i formatet `https://www.domain.com/products/?sessionid=5678&function=buy` om som `https://www.domain.com/products/?sessionid=1234&function=buy`
 
 ## Bekräftelse {#section_EC3A1DAEB5A54C93A265CB119DF91E9F}
 
 Programvaran för omskrivningsmotorn utvecklades ursprungligen av Apache Group för användning i Apache HTTP-serverprojektet (https://www.apache.org/).
 
-## Lägger till hämtningsregler för crawlningslista {#task_94A28ED7DC404BFF9767DBB5ADEE6B7A}
+## Lägger till crawlningslista hämtar URL-regler {#task_94A28ED7DC404BFF9767DBB5ADEE6B7A}
 
 Du kan lägga till regler för hämtning av crawlningslistor för att ange hur påträffade URL:er i webbinnehållet ska skrivas om. Hämta regler för att skriva över är bara nödvändigt om URL-adresserna innehåller dynamiska data, till exempel ett sessions-ID, och om dessa dynamiska data ändras över tid för att förbli giltiga.
 
@@ -565,20 +570,20 @@ t_adding_crawl_list_retrieve_url_rules.xml
 
 **Hämta URL-regler för att lägga till crawlningslista**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Retrieve URL Rules]**.
-1. I [!DNL Crawl List Retrieve URL Rules] fältet anger du de regler du vill använda.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Retrieve URL Rules]** på produktmenyn.
+1. I fältet [!DNL Crawl List Retrieve URL Rules] anger du de regler du vill använda.
 
    Tomma rader och kommentarsrader som börjar med tecknet &#39;#&#39; (hash) tillåts.
-1. (Valfritt) På [!DNL Crawl List Retrieve URL Rules] sidan anger du en test-URL i [!DNL Test Crawl List Retrieve URL Rules] fältet vars crawlningsregler du vill testa och klickar sedan på **Testa**.
+1. (Valfritt) På sidan [!DNL Crawl List Retrieve URL Rules] anger du en test-URL vars crawlningsregler du vill testa i fältet [!DNL Test Crawl List Retrieve URL Rules] och klickar sedan på **Testa**.
 1. Klicka på **Spara ändringar**.
 1. (Valfritt) Återskapa indexet för den mellanlagrade platsen om du vill förhandsgranska resultatet.
 
    Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
-1. (Valfritt) Gör något av följande på [!DNL Crawl List Retrieve URL Rules] sidan:
+1. (Valfritt) Gör något av följande på sidan [!DNL Crawl List Retrieve URL Rules]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -588,7 +593,7 @@ t_adding_crawl_list_retrieve_url_rules.xml
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Om regler för kryptext {#concept_BD3A576987DA4D93A998B0B9CDDC3C79}
+## Om regler för crawlningsrubrik {#concept_BD3A576987DA4D93A998B0B9CDDC3C79}
 
 Regler för kryptext anger hur påträffade titlar i webbinnehåll skrivs om innan de lagras i sökindexet.
 
@@ -638,7 +643,7 @@ Du kan använda&quot;inte&quot;-tecknet (&#39;!&#39;) för att prefix till möns
 
 Du kan använda parenteser för att skapa en bakåtreferens som kan refereras av Substitution och CondPattern.
 
-**Ersättning** Titeln ersätts med ersättningssträngen. Strängen kan innehålla följande:
+**** ErsättningTiteln ersätts av ersättningssträngen. Strängen kan innehålla följande:
 
 Oformaterad text - Text som skickas oförändrad.
 
@@ -651,20 +656,20 @@ Med bakåtreferenser får du tillgång till de grupperade delarna (inom parentes
 
    Dessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0 &lt;= N &lt;= 9).
 
-Variabler Det här är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE kan vara en sträng för namnet på en definierad variabel. Mer information om hur du ställer in miljövariabler finns i `[E]` flaggan.
+Variabler Det här är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE kan vara en sträng för namnet på en definierad variabel. Mer information om hur du anger miljövariabler finns i `[E]`-flaggan.
 
 Funktioner som är funktioner i formatet ${NAME_OF_FUNCTION: nyckel} där NAME_OF_FUNCTION är:
 
 * tolower gör alla tecken i *key* gemener.
-* toupper gör alla tecken i *stora* bokstäver.
+* toupper gör alla tecken i *nyckel* versaler.
 
 >[!NOTE]
 >
 >Det finns en särskild ersättningssträng: &#39;-&#39; betyder &quot;INGEN substitution&quot;. Strängen &#39;-&#39; är ofta användbar med C-flaggan (chain) så att du kan matcha en titel mot flera mönster innan en ersättning görs.
 
-**Flaggor** (valfritt)
+**Flaggor**  (valfritt)
 
-Flaggor omges av parenteser `[]`och flera flaggor är kommaavgränsade:
+Flaggor omsluts av hakparenteser `[]`och flera flaggor är kommaavgränsade:
 
 <table> 
  <thead> 
@@ -711,7 +716,7 @@ Omskrivningsvillkorsdirektiv har följande format:
 RewriteCond TestString CondPattern [Flags] 
 ```
 
-**TestString** är en sträng som kan innehålla följande konstruktioner:
+**** TestStringis a string that can contain the following constructs:
 
 Oformaterad text - Text som skickas oförändrad.
 
@@ -720,17 +725,17 @@ Med bakåtreferenser får du tillgång till de grupperade delarna (inom parentes
 * RewriteRule Backreferences Dessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0 &lt;= N &lt;= 9). Exempel: `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
 * RewriteCond Backreferences Dessa matchar bakåtreferenser i det senast matchade RewriteCond CondPattern och har formatet %N (0 &lt;= N &lt;= 9).
 
-Variabler Det här är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE kan vara en sträng för namnet på en definierad variabel. Mer information om hur du ställer in miljövariabler finns i `[E]` flaggan.
+Variabler Det här är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE kan vara en sträng för namnet på en definierad variabel. Mer information om hur du anger miljövariabler finns i `[E]`-flaggan.
 
 Funktioner som är funktioner i formatet ${NAME_OF_FUNCTION:key} där NAME_OF_FUNCTION är:
 
 * tolower gör alla tecken i *key* gemener.
-* toupper gör alla tecken i *stora* bokstäver.
+* toupper gör alla tecken i *nyckel* versaler.
 * escape URL-kodar alla tecken i nyckeln.
 * Tecknen &#39;a&#39;..&#39;z&#39;, &#39;A&#39;..&#39;Z&#39;, &#39;0&#39;..&#39;9, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; och &#39;_&#39; ändras inte, blanksteg översätts till &#39;+&#39; och alla andra tecken omvandlas till sin %xx URL-kodade motsvarighet.
 * unescape omformar &#39;+&#39; tillbaka till blanksteg och alla %xx URL-kodade tecken tillbaka till enskilda tecken.
 
-**CondPattern** är ett utökat reguljärt standarduttryck med vissa tillägg. Mönstersträngen kan prefixeras med &#39;!&#39; (utropstecken) om du vill ange ett mönster som inte matchar. I stället för riktiga strängar för reguljära uttryck kan du använda någon av följande specialvarianter.
+**** CondPattern är ett utökat reguljärt standarduttryck med några tillägg. Mönstersträngen kan prefixeras med &#39;!&#39; (utropstecken) om du vill ange ett mönster som inte matchar. I stället för riktiga strängar för reguljära uttryck kan du använda någon av följande specialvarianter.
 
 >[!NOTE]
 >
@@ -754,14 +759,14 @@ Funktioner som är funktioner i formatet ${NAME_OF_FUNCTION:key} där NAME_OF_FU
   </tr> 
   <tr> 
    <td colname="col1"> <p> '=CondPattern' </p> </td> 
-   <td colname="col2"> <p> Är lika i alla lektioner. </p> <p>Hanterar <i>CondPattern</i> som en oformaterad sträng och jämför den lexibelt med <i>TestString</i>. True if <i>TestString</i> is lexically equal equal to <i>CondPattern</i>, d.v.s., the two strings are exact (character by character). Om <i>CondPattern</i> bara är "" (två citattecken) jämförs <i>TestString</i> med den tomma strängen. </p> </td> 
+   <td colname="col2"> <p> Är lika i alla lektioner. </p> <p>Hanterar <i>CondPattern</i> som en oformaterad sträng och jämför den lexibelt med <i>TestString</i>. True if <i>TestString</i> is lexically equal equal to <i>CondPattern</i>, d.v.s., the two strings are exact (character by character). Om <i>CondPattern</i> bara är "" (två citattecken) jämför detta <i>TestString</i> med den tomma strängen. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Flaggor** (valfritt)
+**Flaggor**  (valfritt)
 
-Flaggor omges av parenteser `[]`och flera flaggor är kommaavgränsade:
+Flaggor omsluts av hakparenteser `[]`och flera flaggor är kommaavgränsade:
 
 <table> 
  <thead> 
@@ -794,7 +799,7 @@ RewriteRule  ^My[[:blank:]]Company[[:blank:]]-[[:blank:]]
 <b>$1</b>}
 ```
 
-Regelns mönster `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` innehåller en bakåtreferens `(.*)` som matchar titelinnehållet som följer efter &quot;Mitt företag-&quot;. Tänk på att om du omger en del av ett mönster med parentes ( ) skapas en bakåtreferens som kan refereras av Ersättning. I det här exemplet skriver Ersättning (${toupper:**$1**}) om den bakåtreferensen (**$1**) med hjälp av pekarfunktionen.
+Regelns mönster `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` innehåller en bakåtreferens `(.*)` som matchar titelinnehållet som följer &quot;Mitt företag-&quot;. Tänk på att om du omger en del av ett mönster med parentes ( ) skapas en bakåtreferens som kan refereras av Ersättning. I det här exemplet skriver Ersättning (${toupper:**$1**}) om den bakåtreferensen (**$1**) med hjälp av pekarfunktionen.
 
 Därför skrivs texten&quot;My Company - Welcome&quot; om till&quot;WELCOME&quot;.
 
@@ -802,7 +807,7 @@ Därför skrivs texten&quot;My Company - Welcome&quot; om till&quot;WELCOME&quot
 
 Programvaran för omskrivningsmotorn utvecklades ursprungligen av Apache Group för användning i Apache HTTP-serverprojektet (https://www.apache.org/).
 
-## Lägga till regler för crawlningsrubrik {#task_272BB4C603BA4C9ABDBEEB398798B101}
+## Lägger till regler för crawlningsrubrik {#task_272BB4C603BA4C9ABDBEEB398798B101}
 
 Du kan lägga till regler för kryptext för att ange hur påträffade titlar i webbinnehållet ska skrivas om innan de lagras i sökindexet.
 
@@ -814,20 +819,20 @@ t_adding_crawl_title_rules.xml
 
 **Lägga till regler för crawlningsrubrik**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl Title Rules]**.
-1. I [!DNL Crawl Title Rules] fältet anger du de regler du vill använda.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl Title Rules]** på produktmenyn.
+1. I fältet [!DNL Crawl Title Rules] anger du de regler du vill använda.
 
    Tomma rader och kommentarsrader som börjar med tecknet &#39;#&#39; (hash) tillåts.
-1. (Valfritt) På [!DNL Crawl Title Rules] sidan anger du en test-URL i [!DNL Test Crawl Title Rules] fältet vars sökregler du vill testa och klickar sedan på **Testa**.
+1. (Valfritt) På sidan [!DNL Crawl Title Rules] anger du en test-URL vars sökregler du vill testa i fältet [!DNL Test Crawl Title Rules] och klickar sedan på **Testa**.
 1. Klicka på **Spara ändringar**.
 1. (Valfritt) Återskapa indexet för den mellanlagrade platsen om du vill förhandsgranska resultatet.
 
    Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
-1. (Valfritt) Gör något av följande på [!DNL Crawl Title Rules] sidan:
+1. (Valfritt) Gör något av följande på sidan [!DNL Crawl Title Rules]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -882,7 +887,7 @@ Du kan använda&quot;inte&quot;-tecknet (&#39;!&#39;) för att prefix till möns
 
 Du kan använda parenteser för att skapa en bakåtreferens som kan refereras av Substitution och CondPattern.
 
-**Ersättning** URL:en ersätts helt av ersättningssträngen som kan innehålla följande:
+**** SubstitutionURL:en ersätts helt av ersättningssträngen som kan innehålla följande:
 
 Oformaterad text - Text som skickas oförändrad.
 
@@ -895,8 +900,8 @@ RewriteCond Backreferences- Dessa matchar bakåtreferenser i det senast matchade
 Funktioner: Detta är funktioner i formatet ${NAME_OF_FUNCTION:key} där NAME_OF_FUNCTION är:
 
 * tolower gör alla tecken i *key* gemener.
-* toupper gör alla tecken i *stora* bokstäver.
-* escape URL-kodar alla tecken i *nyckeln*.
+* toupper gör alla tecken i *nyckel* versaler.
+* escape URL-kodar alla tecken i *nyckel*.
 * Tecknen &#39;a&#39;..&#39;z&#39;, &#39;A&#39;..&#39;Z&#39;, &#39;0&#39;..&#39;9, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; och &#39;_&#39; ändras inte; Blanksteg översätts till +. alla andra tecken omvandlas till sin %xx URL-kodade motsvarighet.
 * unescape omformar &#39;+&#39; tillbaka till blanksteg och alla %xx URL-kodade tecken tillbaka till enskilda tecken.
 
@@ -904,9 +909,9 @@ Funktioner: Detta är funktioner i formatet ${NAME_OF_FUNCTION:key} där NAME_OF
 >
 >Det finns en särskild ersättningssträng: &#39;-&#39; betyder &quot;INGEN substitution&quot;. Strängen &#39;-&#39; är ofta användbar tillsammans med flaggan C (chain). Du kan matcha en URL-adress mot flera mönster innan en ersättning görs.
 
-**Flaggor** (valfritt)
+**Flaggor**  (valfritt)
 
-Flaggor omges av parenteser `[]`och flera flaggor är kommaavgränsade:
+Flaggor omsluts av hakparenteser `[]`och flera flaggor är kommaavgränsade:
 
 <table> 
  <thead> 
@@ -957,13 +962,13 @@ RewriteRule  ^https://
 
 Denna omskrivningsregel använder funktionen &quot;tolower&quot; för att skriva om domändelen av en URL för att säkerställa att den alltid är i gemener:
 
-1. Mönstret `(^https://([^/]*)(.*)$)` innehåller en bakåtreferens **`([^/]*)`** som matchar alla tecken mellan&quot;https://&quot; och det första &quot;/&quot; i URL:en. Mönstret innehåller också en andra bakåtreferens **().*)** som matchar alla återstående tecken i URL:en.
+1. Mönstret `(^https://([^/]*)(.*)$)` innehåller en bakåtreferens **`([^/]*)`** som matchar alla tecken mellan &quot;https://&quot; och den första &quot;/&quot; i URL:en. Mönstret innehåller också en andra bakåtreferens **(.*)** som matchar alla återstående tecken i URL:en.
 
-1. Ersättningen `(https://${tolower:$1}$2)` anger för sökmotorn att skriva om URL:en genom att använda **tolower** -funktionen på den första bakåtreferensen `(https://**${tolower:$1**}$2)` och lämna resten av URL:en orörd `(https://${tolower:$1}*$2*)`.
+1. Ersättningen `(https://${tolower:$1}$2)` instruerar sökmotorn att skriva om URL:en med funktionen **tolower** på den första bakåtreferensen `(https://**${tolower:$1**}$2)` och lämnar resten av URL:en orörd `(https://${tolower:$1}*$2*)`.
 
-Därför `https://www.MyDomain.com/INTRO/index.Html` skrivs en URL för formuläret om som `https://www.mydomain.com/INTRO/index.Html`
+Därför skrivs en URL-adress i formatet `https://www.MyDomain.com/INTRO/index.Html` om som `https://www.mydomain.com/INTRO/index.Html`
 
-**RewriteCond-direktivet** (valfritt)
+**direktivet**  RewriteCond (valfritt)
 
 Direktivet RewriteCond definierar ett regelvillkor. När en RewriteCond föregår en RewriteRule används regeln bara om dess mönster matchar den aktuella titeln och de ytterligare villkoren gäller.
 
@@ -974,7 +979,7 @@ RewriteCond
 <i>TestString CondPattern [Flags]</i>
 ```
 
-*TestString* är en sträng som kan innehålla följande konstruktioner:
+** TestString är en sträng som kan innehålla följande konstruktioner:
 
 Oformaterad text: Text som skickas oförändrad.
 
@@ -982,22 +987,22 @@ Med bakåtreferenser får du tillgång till de grupperade delarna (inom parentes
 
 * ** RewriteRule Backreferences** Dessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0 &lt;= N &lt;= 9). Exempel: `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
 
-* **RewriteCond Backreferences** Dessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0 &lt;= N &lt;= 9).
+* **RewriteCond** BackreferencesDessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0)  &lt;>
 
-Variabler Det här är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE kan vara en sträng för namnet på en definierad variabel. Mer information om hur du anger variabler finns i RewriteRule- *`[E]`* flaggan.
+Variabler Det här är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE kan vara en sträng för namnet på en definierad variabel. Mer information om hur du anger variabler finns i RewriteRule-flaggan *`[E]`*.
 
 >[!NOTE]
 >
->I allmänhet används variabler för att skriva om regler. Alla CGI-parametrar från den aktuella URL:en konverteras automatiskt till variabler. Sökwebbadressen `"https://search.atomz.com/search/?sp_a=sp00000000&sp_q="Product"&session=1234&id=5678"` kommer till exempel automatiskt att innehålla fyra variabler som kan refereras i reglerna för omskrivning. I det här exemplet kallas en variabel för&quot;session&quot; och dess värde är&quot;1234&quot;, medan en annan variabel kallas för&quot;id&quot; och dess värde är&quot;5678&quot;. (De andra två variablerna är `sp_a` och `sp_q`.) Du bör skicka alla nödvändiga variabler som dolda fält från sökformuläret på webbsidan. I det här exemplet bör du skicka värdena &quot;session&quot; och &quot;id&quot;, som identifierar den webbplatsanvändare som utför sökningen. Om du vill skicka ett dolt fält till sökformuläret använder du en tagg som `<input type=hidden name="session" value="1234">`.
+>I allmänhet används variabler för att skriva om regler. Alla CGI-parametrar från den aktuella URL:en konverteras automatiskt till variabler. Sökwebbadressen `"https://search.atomz.com/search/?sp_a=sp00000000&sp_q="Product"&session=1234&id=5678"` innehåller till exempel automatiskt fyra variabler som kan refereras i reglerna för omskrivning. I det här exemplet kallas en variabel för&quot;session&quot; och dess värde är&quot;1234&quot;, medan en annan variabel kallas för&quot;id&quot; och dess värde är&quot;5678&quot;. (De andra två variablerna är `sp_a` och `sp_q`.) Du bör skicka alla nödvändiga variabler som dolda fält från sökformuläret på webbsidan. I det här exemplet bör du skicka värdena &quot;session&quot; och &quot;id&quot;, som identifierar den webbplatsanvändare som utför sökningen. Om du vill skicka ett dolt fält till sökformuläret använder du en tagg som `<input type=hidden name="session" value="1234">`.
 
 Funktioner som är funktioner i formatet ${NAME_OF_FUNCTION:key} där NAME_OF_FUNCTION är:
 
 * tolower gör alla tecken i *key* gemener.
-* toupper gör alla tecken i *stora* bokstäver.
-* escape URL-kodar alla tecken i *nyckeln*. Tecknen &#39;a&#39;..&#39;z&#39;, &#39;A&#39;..&#39;Z&#39;, &#39;0&#39;..&#39;9, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; och &#39;_&#39; ändras inte, blanksteg översätts till &#39;+&#39; och alla andra tecken omvandlas till sin %xx URL-kodade motsvarighet.
+* toupper gör alla tecken i *nyckel* versaler.
+* escape URL-kodar alla tecken i *nyckel*. Tecknen &#39;a&#39;..&#39;z&#39;, &#39;A&#39;..&#39;Z&#39;, &#39;0&#39;..&#39;9, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; och &#39;_&#39; ändras inte, blanksteg översätts till &#39;+&#39; och alla andra tecken omvandlas till sin %xx URL-kodade motsvarighet.
 * unescape omformar &#39;+&#39; tillbaka till blanksteg och alla %xx URL-kodningstecken tillbaka till enskilda tecken.
 
-**CondPattern** är ett utökat reguljärt standarduttryck med vissa tillägg. Mönstersträngen kan prefixeras med &#39;!&#39; (utropstecken) om du vill ange ett mönster som inte matchar. I stället för riktiga strängar för reguljära uttryck kan du använda någon av följande specialvarianter.
+**** CondPattern är ett utökat reguljärt standarduttryck med några tillägg. Mönstersträngen kan prefixeras med &#39;!&#39; (utropstecken) om du vill ange ett mönster som inte matchar. I stället för riktiga strängar för reguljära uttryck kan du använda någon av följande specialvarianter.
 
 Du kan prefix för alla dessa tester med ett utropstecken (!) för att förneka deras betydelse.
 
@@ -1019,14 +1024,14 @@ Du kan prefix för alla dessa tester med ett utropstecken (!) för att förneka 
   </tr> 
   <tr> 
    <td colname="col1"> <p> '=CondPattern' </p> </td> 
-   <td colname="col2"> <p>Är lika i alla lektioner. </p> <p> Hanterar <i>CondPattern</i> som en oformaterad sträng och jämför den lexibelt med <i>TestString</i>. True if <i>TestString</i> is lexically equal equal to <i>CondPattern</i>. De två strängarna är alltså exakt lika (tecken för tecken). Om <i>CondPattern</i> bara är "" (två citattecken) jämförs <i>TestString</i> med den tomma strängen. </p> </td> 
+   <td colname="col2"> <p>Är lika i alla lektioner. </p> <p> Hanterar <i>CondPattern</i> som en oformaterad sträng och jämför den lexibelt med <i>TestString</i>. True if <i>TestString</i> is lexically equal equal to <i>CondPattern</i>. De två strängarna är alltså exakt lika (tecken för tecken). Om <i>CondPattern</i> bara är "" (två citattecken) jämför detta <i>TestString</i> med den tomma strängen. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Flaggor** (valfritt)
+**Flaggor**  (valfritt)
 
-Flaggor omges av parenteser `[]`och flera flaggor är kommaavgränsade:
+Flaggor omsluts av hakparenteser `[]`och flera flaggor är kommaavgränsade:
 
 &#39;nocase|NC&#39; (inget skiftläge): Detta gör testet skiftlägeskänsligt. Det finns alltså ingen skillnad mellan&quot;A-Z&quot; och&quot;a-z&quot; både i den expanderade *TestString* och i *CondPattern*.
 
@@ -1049,15 +1054,15 @@ RewriteRule-mönstret innehåller två bakåtreferenser: (.+) och (.*). Den för
 
 I ersättningsmönstret skrivs URL:en om med den första bakåtreferensen, följt av strängen &quot;sessionid=&quot;, följt av värdet på variabeln sessions-ID, som skickades som en CGI-parameter i URL:en, följt av den andra bakåtreferensen. `($1sessionid=%{sessionid}$2)`.
 
-RewriteCond **** undersöker variabeln sessionid `(%{sessionid})`. Om den innehåller minst ett tecken (.+) matchar RewriteRule.
+**RewriteCond** undersöker variabeln sessionid `(%{sessionid})`. Om den innehåller minst ett tecken (.+) matchar RewriteRule.
 
-Om sökfrågan är `"https://search.atomz.com/search/?sp_a=sp99999999&sp_q=word&sessionid=5678"`skrivs alla URL:er för sökresultat om så att värdet &quot;sessionid&quot; är &quot;5678&quot; i stället för värdet &quot;sessionid&quot; som sökroboten påträffade när den crawlade webbplatsen och sparade länkarna.
+Om sökfrågan är `"https://search.atomz.com/search/?sp_a=sp99999999&sp_q=word&sessionid=5678"` skrivs alla URL:er för sökresultat om så att värdet &quot;sessionid&quot; är &quot;5678&quot; i stället för värdet &quot;sessionid&quot; som sökroboten påträffade när den crawlade webbplatsen och sparade länkarna.
 
 **Bekräftelse**
 
 Programvaran för omskrivningsmotorn utvecklades ursprungligen av Apache Group för användning i Apache HTTP-serverprojektet (https://www.apache.org/).
 
-## Lägga till sök-URL-regler {#task_50C77D1B53804AEEB20896F74265BD6F}
+## Lägga till URL-regler för sökning {#task_50C77D1B53804AEEB20896F74265BD6F}
 
 Du kan lägga till regler för sök-URL för att ange hur URL:er i sökresultaten för din webbplats ska visas. Reglerna fungerar på fullständiga URL:er. Du kan ändra valfri del av URL:en, inklusive frågeargument där sessions-ID-information ofta behålls.
 
@@ -1069,20 +1074,20 @@ t_adding_search_url_rules.xml
 
 **Lägga till sök-URL-regler**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Search URL Rules]**.
-1. I [!DNL Search URL Rules] fältet anger du de regler du vill använda.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Search URL Rules]** på produktmenyn.
+1. I fältet [!DNL Search URL Rules] anger du de regler du vill använda.
 
    Tomma rader och kommentarsrader som börjar med tecknet &#39;#&#39; (hash) tillåts.
-1. (Valfritt) På [!DNL Search URL Rules] sidan anger du en test-URL i [!DNL Test Search URL Rules] fältet vars crawlningsregler du vill testa och klickar sedan på **Testa**.
+1. (Valfritt) På sidan [!DNL Search URL Rules] anger du en test-URL vars crawlningsregler du vill testa i fältet [!DNL Test Search URL Rules] och klickar sedan på **Testa**.
 1. Klicka på **Spara ändringar**.
 1. (Valfritt) Återskapa indexet för den mellanlagrade platsen om du vill förhandsgranska resultatet.
 
    Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
-1. (Valfritt) Gör något av följande på [!DNL Search URL Rules] sidan:
+1. (Valfritt) Gör något av följande på sidan [!DNL Search URL Rules]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -1092,7 +1097,7 @@ t_adding_search_url_rules.xml
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Om regler för sökrubrik {#concept_C72D20F8DFF64EDE809AF4B72797E858}
+## Om regler för söktitel {#concept_C72D20F8DFF64EDE809AF4B72797E858}
 
 Titelregler för sökning anger hur titlar i sökresultatet på din webbplats visas. Alla delar av titeln kan ändras.
 
@@ -1120,7 +1125,7 @@ RewriteRule
 
 När en titel påträffas försöker webbplatssökningen/försäljningen matcha den med mönstret för varje crawlningsregel. Om mönstret matchar söker omskrivningsmotorn efter motsvarande RewriteCond-direktiv. Om det inte finns några villkor ersätts titeln med ett nytt värde som är konstruerat av ersättningssträngen och fortsätter med nästa regel i regeluppsättningen. Om det finns villkor bearbetas de i den ordning som de listas. Omskrivningsmotorn försöker matcha ett villkorsmönster (CondPattern) mot en teststräng (TestString). Om de två matchar varandra behandlas nästa villkor tills inga fler villkor är tillgängliga. Om alla villkor matchar ersätts URL:en med den ersättning som anges i regeln. Om villkoret inte uppfylls misslyckas hela uppsättningen villkor och motsvarande regel.
 
-## direktivet RewriteRule {#section_3BF2B0FF89F74A26AE79D68FA3184B9B}
+## RewriteRule-direktiv {#section_3BF2B0FF89F74A26AE79D68FA3184B9B}
 
 Varje RewriteRule-direktiv definierar en återskrivningsregel. Reglerna tillämpas i den ordning som de anges. En omskrivningsregel har följande format:
 
@@ -1128,7 +1133,7 @@ Varje RewriteRule-direktiv definierar en återskrivningsregel. Reglerna tillämp
 RewriteRule Pattern Substitution [Flags]
 ```
 
-**Mönster** Ett reguljärt POSIX-uttryck som används i den aktuella titeln. &quot;Aktuell titel&quot; kan skilja sig från den ursprungliga titeln eftersom tidigare regler kanske redan har matchat och ändrat den.
+**MönsterEtt** reguljärt POSIX-uttryck som används för den aktuella titeln. &quot;Aktuell titel&quot; kan skilja sig från den ursprungliga titeln eftersom tidigare regler kanske redan har matchat och ändrat den.
 
 Se [Reguljära uttryck](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
@@ -1136,28 +1141,28 @@ Du kan använda tecknet &quot;not&quot; (&#39;!&#39;) för att prefix till möns
 
 Du kan använda parenteser för att skapa en bakåtreferens som kan refereras av Substitution och CondPattern.
 
-**Ersättning** Titeln ersätts helt av ersättningssträngen som kan innehålla följande:
+**** SubstitutionTiteln ersätts helt av ersättningssträngen som kan innehålla följande:
 
 Oformaterad text - Text som skickas oförändrad.
 
-**Bakåtreferenser** ger åtkomst till de grupperade delarna (inom parentes) av mönstret eller CondPattern. Följande är två typer av bakåtreferenser:
+**** BakåtreferenserGe åtkomst till de grupperade delarna (inom parentes) av mönstret eller CondPattern. Följande är två typer av bakåtreferenser:
 
-* **RewriteRule Backreferences** Dessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0 &lt;= N &lt;= 9). Exempel: `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* **RewriteRule** BackreferencesDessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0)  &lt;> Exempel: `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
 
 * ** RewriteCond Backreferences** Dessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0 &lt;= N &lt;= 9).
 
-**Variabler** Det här är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE kan vara en sträng för namnet på en definierad variabel. Mer information om hur du ställer in miljövariabler finns i [E] -flaggan. Variabler kan också definieras i det sökformulär som genererade sökresultaten.
+**** VariablerDetta är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE kan vara en sträng för namnet på en definierad variabel. Mer information om hur du anger miljövariabler finns i [E]-flaggan. Variabler kan också definieras i det sökformulär som genererade sökresultaten.
 
-**Funktioner** Dessa är funktioner i formatet ${NAME_OF_FUNCTION: nyckel} där NAME_OF_FUNCTION är:
+**FunktionerDetta är funktioner i formatet ${NAME_OF_FUNCTION:**  nyckel} där NAME_OF_FUNCTION är:
 
 * tolower gör alla tecken i *key* gemener.
-* toupper gör alla tecken i *stora* bokstäver.
+* toupper gör alla tecken i *nyckel* versaler.
 
 Det finns en särskild ersättningssträng: &#39;-&#39; betyder &quot;INGEN substitution&quot;. Strängen &#39;-&#39; är ofta användbar tillsammans med flaggan C (chain), vilket gör att du kan matcha en titel mot flera mönster innan en ersättning görs.
 
-**Flaggor** (valfritt)
+**Flaggor**  (valfritt)
 
-Flaggor omsluts av hakparenteser `[]`och flera flaggor är kommaavgränsade:
+Flaggor omsluts av hakparenteser `[]`, och flera flaggor är kommaavgränsade:
 
 <table> 
  <thead> 
@@ -1204,29 +1209,29 @@ Omskrivningsvillkorsdirektiv har följande format:
 RewriteCond TestString CondPattern [Flags]
 ```
 
-**TestString** är en sträng som kan innehålla följande konstruktioner:
+**** TestStringis a string that can contain the following constructs:
 
 Oformaterad text - Text som skickas oförändrad.
 
 Med bakåtreferenser får du tillgång till de grupperade delarna (inom parentes) av mönstret eller CondPattern. Det finns två typer av bakåtreferenser:
 
-* **RewriteRule Backreferences** Dessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0 &lt;= N &lt;= 9). Exempel: `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* **RewriteRule** BackreferencesDessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0)  &lt;> Exempel: `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
 
-* **RewriteCond Backreferences** Dessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0 &lt;= N &lt;= 9).
+* **RewriteCond** BackreferencesDessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0)  &lt;>
 
-**Variabler** Det här är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE kan vara en sträng för namnet på en definierad variabel. Mer information om hur du ställer in miljövariabler finns i `[E]` flaggan. Variabler kan också definieras i det sökformulär som genererade sökresultaten.
+**** VariablerDetta är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE kan vara en sträng för namnet på en definierad variabel. Mer information om hur du anger miljövariabler finns i `[E]`-flaggan. Variabler kan också definieras i det sökformulär som genererade sökresultaten.
 
-**Funktioner** Dessa är funktioner i formatet ${NAME_OF_FUNCTION:key} där NAME_OF_FUNCTION är:
+**FunktionerDetta är funktioner i formatet ${NAME_OF_FUNCTION:key} där NAME_OF_FUNCTION är:** 
 
 * tolower gör alla tecken i *key* gemener.
-* toupper gör alla tecken i *stora* bokstäver.
-* escape URL-kodar alla tecken i *nyckeln*.
+* toupper gör alla tecken i *nyckel* versaler.
+* escape URL-kodar alla tecken i *nyckel*.
 * Tecknen &#39;a&#39;..&#39;z&#39;, &#39;A&#39;..&#39;Z&#39;, &#39;0&#39;..&#39;9, &#39;*&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;@&#39; och &#39;_&#39; ändras inte, blanksteg översätts till &#39;+&#39; och alla andra tecken omvandlas till sin %xx URL-kodade motsvarighet.
 * unescape omformar &#39;+&#39; tillbaka till blanksteg och alla %xx URL-kodade tecken tillbaka till enskilda tecken.
 
 Det finns en särskild ersättningssträng: &#39;-&#39; betyder &quot;INGEN substitution&quot;. Strängen &#39;-&#39; är ofta användbar tillsammans med flaggan C (chain), vilket gör att du kan matcha en URL till flera mönster innan en ersättning görs.
 
-**CondPattern** Ett utökat reguljärt standarduttryck med några tillägg. Mönstersträngen kan prefixeras med &#39;!&#39; (utropstecken) om du vill ange ett mönster som inte matchar. I stället för riktiga strängar för reguljära uttryck kan du använda någon av följande specialvarianter.
+**** CondPatternEtt utökat reguljärt standarduttryck med några tillägg. Mönstersträngen kan prefixeras med &#39;!&#39; (utropstecken) om du vill ange ett mönster som inte matchar. I stället för riktiga strängar för reguljära uttryck kan du använda någon av följande specialvarianter.
 
 Alla dessa tester kan också föregås av ett utropstecken (&#39;!&#39;) för att förneka deras betydelse.
 
@@ -1248,14 +1253,14 @@ Alla dessa tester kan också föregås av ett utropstecken (&#39;!&#39;) för at
   </tr> 
   <tr> 
    <td colname="col1"> <p> '=CondPattern' </p> </td> 
-   <td colname="col2"> <p>Är lika i alla lektioner. </p> <p> Hanterar <i>CondPattern</i> som en oformaterad sträng och jämför den lexibelt med <i>TestString</i>. True if <i>TestString</i> is lexically equal equal to <i>CondPattern</i>. De två strängarna är alltså exakt lika (tecken för tecken). Om <i>CondPattern</i> bara är "" (två citattecken) jämförs <i>TestString</i> med den tomma strängen. </p> </td> 
+   <td colname="col2"> <p>Är lika i alla lektioner. </p> <p> Hanterar <i>CondPattern</i> som en oformaterad sträng och jämför den lexibelt med <i>TestString</i>. True if <i>TestString</i> is lexically equal equal to <i>CondPattern</i>. De två strängarna är alltså exakt lika (tecken för tecken). Om <i>CondPattern</i> bara är "" (två citattecken) jämför detta <i>TestString</i> med den tomma strängen. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Flaggor** (valfritt)
+**Flaggor**  (valfritt)
 
-Flaggor omsluts av hakparenteser`[]`och flera flaggor är kommaavgränsade:
+Flaggor omsluts av hakparenteser`[]`, och flera flaggor är kommaavgränsade:
 
 <table> 
  <thead> 
@@ -1288,7 +1293,7 @@ RewriteRule  ^My[[:blank:]]Company[[:blank:]]-[[:blank:]]
 <b>$1</b>} 
 ```
 
-Regelns mönster `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` innehåller en bakåtreferens **`(.*)`** som matchar titelinnehållet som följer efter &quot;Mitt företag-&quot;. Tänk på att om du omger en del av ett mönster med parentes ( ) skapas en bakåtreferens som kan refereras av Ersättning. I det här exemplet skriver Ersättning (${toupper:**$1**}) om den bakåtreferensen (**$1**) med hjälp av pekarfunktionen.
+Regelns mönster `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` innehåller en bakåtreferens **`(.*)`** som matchar titelinnehållet som följer &quot;Mitt företag-&quot;. Tänk på att om du omger en del av ett mönster med parentes ( ) skapas en bakåtreferens som kan refereras av Ersättning. I det här exemplet skriver Ersättning (${toupper:**$1**}) om den bakåtreferensen (**$1**) med hjälp av pekarfunktionen.
 
 Därför skrivs texten&quot;My Company - Welcome&quot; om till&quot;WELCOME&quot;.
 
@@ -1308,20 +1313,20 @@ t_adding_search_title_rules.xml
 
 **Lägga till regler för sökrubrik**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Search Title Rules]**.
-1. I [!DNL Search Title Rules] fältet anger du de regler du vill använda.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Search Title Rules]** på produktmenyn.
+1. I fältet [!DNL Search Title Rules] anger du de regler du vill använda.
 
    Tomma rader och kommentarsrader som börjar med tecknet &#39;#&#39; (hash) tillåts.
-1. (Valfritt) På [!DNL Search Title Rules] sidan anger du en testtitel i [!DNL Test Search Title Rules] fältet och klickar sedan på **Testa**.
+1. (Valfritt) På sidan [!DNL Search Title Rules] anger du en testtitel i fältet [!DNL Test Search Title Rules] och klickar sedan på **Testa**.
 1. Klicka på **Spara ändringar**.
 1. (Valfritt) Återskapa indexet för den mellanlagrade platsen om du vill förhandsgranska resultatet.
 
    Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
-1. (Valfritt) Gör något av följande på [!DNL Search Title Rules] sidan:
+1. (Valfritt) Gör något av följande på sidan [!DNL Search Title Rules]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
