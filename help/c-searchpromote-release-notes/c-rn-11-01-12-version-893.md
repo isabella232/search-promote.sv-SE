@@ -8,13 +8,16 @@ topic: Release Notes,Site search and merchandising
 uuid: 7bc7bcb6-f47f-4e05-94e5-a22a13a187b7
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '285'
+ht-degree: 0%
 
 ---
 
 
-# Search&amp;Promote 8.9.3 versionsinformation (11/01/2012){#search-promote-release-notes}
+# Versionsinformation om Search &amp; Promote 8.9.3 (11/01/2012){#search-promote-release-notes}
 
-## Search&amp;Promote 8.9.3 versionsinformation (11/01/2012) {#concept_85F5B4B4C40C43FEA3AD63E6EA5593CF}
+## Versionsinformation om Search &amp; Promote 8.9.3 (11/01/2012) {#concept_85F5B4B4C40C43FEA3AD63E6EA5593CF}
 
 <table> 
  <thead> 
@@ -27,21 +30,21 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
   <tr> 
    <td colname="col1"> <p>Fasett Rail </p> </td> 
    <td colname="col2"> <p> 
-     <!--3309390--> Lagt till det nya alternativet <span class="uicontrol"> Facet Rail</span> för att ge dig bättre kontroll över ordningen för ansiktsfamiljer och ansiktsnamn (efter antal, i alfabetisk ordning). </p> <p>Se <a href="../c-about-design-menu/c-about-facet-rails.md#concept_1FDC8BCDFFC84A0889DA670F63D5F6DB" format="dita" scope="local"> Om Facet Rail</a>. </p> </td> 
+     <!--3309390--> Lagt till det nya  <span class="uicontrol"> Facet </span> Järnoption som ger dig större kontroll över ordningen på facet-familjer och facet-namn (efter antal, i alfabetisk ordning). </p> <p>Se <a href="../c-about-design-menu/c-about-facet-rails.md#concept_1FDC8BCDFFC84A0889DA670F63D5F6DB" format="dita" scope="local"> Om Fasett Rail</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> Kapslade aspekter </p> </td> 
-   <td colname="col2"> <p> Stöd för alternativ sortering av kapslade aspekter har lagts till. </p> <p>Se <a href="../c-about-design-menu/c-about-facet-rails.md#concept_1FDC8BCDFFC84A0889DA670F63D5F6DB" format="dita" scope="local"> Om Facet Rail</a>. </p> </td> 
+   <td colname="col2"> <p> Stöd för alternativ sortering av kapslade aspekter har lagts till. </p> <p>Se <a href="../c-about-design-menu/c-about-facet-rails.md#concept_1FDC8BCDFFC84A0889DA670F63D5F6DB" format="dita" scope="local"> Om Fasett Rail</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Anteckningsfält i rankningsregler </p> </td> 
    <td colname="col2"> <p> 
-     <!--3063772--> Ett <span class="wintitle"> anteckningsfält</span> med flera rader har lagts till i dialogrutan <span class="wintitle"> Lägg till rankningsmått</span> och i dialogrutan <span class="wintitle"> Redigera rankningsmått</span> för rankningsregler och regelgruppsdefinitioner. </p> <p>Anteckningar om rankningsregler visas på sidan <span class="wintitle"> Definiera</span> rankningsregler. Regelgruppsanteckningar visas när du redigerar definitionen. </p> <p>Se <a href="../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397" format="dita" scope="local"> Om rankningsregler</a>. </p> </td> 
+     <!--3063772--> Ett  <span class="wintitle"> </span> anteckningsfält med flera rader har lagts till i dialogrutan  <span class="wintitle"> Lägg till </span> rankningsmetod och i dialogrutan  <span class="wintitle"> Redigera </span> rankningsmetod för rankningsregler och regelgruppsdefinitioner. </p> <p>Rankningsregelanteckningar visas på sidan <span class="wintitle"> Definiera rankningsregler</span>. Regelgruppsanteckningar visas när du redigerar definitionen. </p> <p>Se <a href="../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397" format="dita" scope="local"> Om rankningsregler</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Affärsregler </p> </td> 
    <td colname="col2"> <p> 
-     <!--3331637--> Förbättrat stöd för landningssidor genom att ta bort naturliga resultat i en affärsregel med det nya alternativet <span class="uicontrol"> Ta bort alla resultat</span> . </p> <p>Använd det här nya alternativet tillsammans med andra affärsregelåtgärder för att skapa"inlästa landningssidor". Det innebär att du vill skapa en sidas innehåll utifrån åtgärder för affärsregler exklusivt och du måste ignorera de"naturliga" resultaten av sökningen. </p> <p>Se <a href="../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7" format="dita" scope="local"> Lägga till en ny affärsregel</a> eller <a href="../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087" format="dita" scope="local"> Redigera en affärsregel</a>. </p> </td> 
+     <!--3331637--> Förbättrat stöd för landningssidor genom att ta bort naturliga resultat i en affärsregel med det nya alternativet  <span class="uicontrol"> Ta bort alla </span> resultat. </p> <p>Använd det här nya alternativet tillsammans med andra affärsregelåtgärder för att skapa"inlästa landningssidor". Det innebär att du vill skapa en sidas innehåll utifrån åtgärder för affärsregler exklusivt och du måste ignorera de"naturliga" resultaten av sökningen. </p> <p>Se <a href="../c-about-rules-menu/c-about-business-rules.md#task_BD3B31ED48BB4B1B8F1DCD3BFA2528E7" format="dita" scope="local"> Lägga till en ny affärsregel</a> eller <a href="../c-about-rules-menu/c-about-business-rules.md#task_375CFA75D1D94D9E92A35DE1228E5087" format="dita" scope="local"> Redigera en affärsregel</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Banderoller och affärsregler </p> </td> 
@@ -52,10 +55,10 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
 **Korrigeringar**
 
-* Affärsreglerna fungerade inkonsekvent när det fanns ett [!DNL Stage] index.
+* Affärsreglerna fungerade inkonsekvent när det fanns ett [!DNL Stage]-index.
 * Regler för automatisk rangordning tillämpas nu på inlästa landningssidor.
 
-   Se tabellen med alternativ när du [lägger till en rankningsregel](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A).
+   Se tabellen med alternativ i [Lägga till en rankningsregel](../c-about-rules-menu/c-about-ranking-rules.md#task_A132789FD4E5423DAD090DCDA7311E8A).
 
 * [!DNL promosearch.cgi] returnerade inte kampanjer.
 
@@ -67,5 +70,5 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
 
 * **[!UICONTROL Did You Mean]** sökfrågecachelagring är nu inaktiverad.
 
-   Se [om menade](../c-about-linguistics-menu/c-about-did-you-mean.md#concept_7D4F3C29EF184B538B8AE2ECAE0CDC5E)du.
+   Se [Om Menade du](../c-about-linguistics-menu/c-about-did-you-mean.md#concept_7D4F3C29EF184B538B8AE2ECAE0CDC5E).
 
