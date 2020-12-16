@@ -36,8 +36,8 @@ Du kan konfigurera vilka webbsidor som ska ingå i det inkrementella indexet gen
 
 **Konfigurera ett inkrementellt index för en mellanlagrad webbplats**
 
-1. På produktmenyn klickar du på **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Configuration]**.
-1. På **[!UICONTROL Incremental Index Configuration]** sidan använder du de olika fälten för att ange vilka sidor du vill indexera.
+1. Klicka på **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Configuration]** på produktmenyn.
+1. På sidan **[!UICONTROL Incremental Index Configuration]** använder du de olika fälten för att ange vilka sidor du vill indexera.
 
    <table> 
     <thead> 
@@ -57,25 +57,29 @@ Du kan konfigurera vilka webbsidor som ska ingå i det inkrementella indexet gen
           <li id="li_32C2B21DE75C4459908384CC44822F7D"> 
           <code>
             noindex 
-          </code> <p>Om du inte vill indexera texten på sidan som matchar en angiven URL-adress, men vill följa sidans länkar, lägger du till <code>
+          </code> <p>Om du inte vill indexera texten på sidan som matchar en angiven URL, men vill följa sidans länkar, lägger du till 
+            <code>
               noindex 
-            </code> efter URL-adressen enligt följande exempel: </p> <p> 
+            </code> efter URL:en som i följande exempel: </p> <p> 
             <code>
               https://www.mydomain.com/products/new.html noindex 
-            </code> </p> <p>Se till att du skiljer <code>
+            </code> </p> <p>Se till att separera 
+            <code>
               noindex 
-            </code> från URL:en med ett blanksteg. ett komma är inte en giltig avgränsare. </p> </li> 
+            </code> från URL:en med blanksteg; ett komma är inte en giltig avgränsare. </p> </li> 
           <li id="li_33AB62B669084BF7B976F4308715E435"> 
           <code>
             nofollow 
-          </code> <p>Om du vill indexera texten på sidan som matchar den angivna URL:en, men inte vill följa sidans länkar, lägger du till <code>
+          </code> <p>Om du vill indexera texten på sidan som matchar den angivna URL-adressen, men inte vill följa sidans länkar, lägger du till 
+            <code>
               nofollow 
-            </code> efter URL:en enligt följande exempel: </p> <p> 
+            </code> efter URL:en som i följande exempel: </p> <p> 
             <code>
               https://www.mydomain.com/products/new.html nofollow 
-            </code> </p> <p> Se till att du skiljer <code>
+            </code> </p> <p> Se till att separera 
+            <code>
               nofollow 
-            </code> från URL:en med ett blanksteg. ett komma är inte en giltig avgränsare. </p> </li> 
+            </code> från URL:en med blanksteg; ett komma är inte en giltig avgränsare. </p> </li> 
         </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -86,9 +90,11 @@ Du kan konfigurera vilka webbsidor som ska ingå i det inkrementella indexet gen
       </code> </p> <p>Du kan också använda reguljära uttryck som i följande exempel: </p> <p> 
       <code>
         regexp ^https://www\.mydomain\.com/products/household/.*\.html$ 
-      </code> </p> <p>Se <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck</a>. </p> <p>Du kan också använda nyckelorden <code>
+      </code> </p> <p>Se <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck</a>. </p> <p>Du kan också använda nyckelorden 
+      <code>
         nofollow 
-      </code> och <code>
+      </code> och 
+      <code>
         noindex 
       </code> enligt beskrivningen i <span class="uicontrol"> Lägg till eller uppdatera URL:er </span> ovan. </p> </td> 
       </tr> 
@@ -100,13 +106,17 @@ Du kan konfigurera vilka webbsidor som ska ingå i det inkrementella indexet gen
       </code> </p> <p> 
       <code>
         exclude https://www.mydomain.com/products/ 
-      </code> </p> <p>indexerar sidorna <code>
+      </code> </p> <p>indexerar sidorna 
+      <code>
         lightbulbs1.html 
-      </code> och <code>
+      </code> och 
+      <code>
         lightbulbs2.html 
-      </code>. Den indexerar dock inte några andra sidor som finns listade under produktkatalogen. </p> <p>En URL-mask som visas först har alltid företräde framför en som visas senare i listan. Om sökroboten dessutom stöter på ett dokument som matchar både en inkluderingsmask och en exkluderingsmask, har den mask som listas först företräde. </p> <p>Du kan också använda nyckelorden <code>
+      </code>. Den indexerar dock inte några andra sidor som finns listade under produktkatalogen. </p> <p>En URL-mask som visas först har alltid företräde framför en som visas senare i listan. Om sökroboten dessutom stöter på ett dokument som matchar både en inkluderingsmask och en exkluderingsmask, har den mask som listas först företräde. </p> <p>Du kan också använda nyckelorden 
+      <code>
         nofollow 
-      </code> och <code>
+      </code> och 
+      <code>
         noindex 
       </code> enligt beskrivningen i <span class="uicontrol"> Lägg till eller uppdatera URL:er </span> ovan. </p> <p>Se <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Om URL-masker</a>. </p> </td> 
       </tr> 
@@ -141,7 +151,8 @@ Du kan konfigurera vilka webbsidor som ska ingå i det inkrementella indexet gen
       <li id="li_172692DEDA8744B3AA492701D24C2D80"> 
       <code>
         exclude-days NNN 
-      </code> <p>Inaktivera indexering av alla dokument som matchar den angivna URL-masken och som är NNN days eller mer gamla. </p> <p>Du kan också följa URL-masken med nyckelordet <code>
+      </code> <p>Inaktivera indexering av alla dokument som matchar den angivna URL-masken och som är NNN days eller mer gamla. </p> <p>Du kan också följa URL-masken med nyckelordet . 
+        <code>
           server-date 
         </code>. </p> <p>I följande maskexempel utesluts alla PDF-filer som är 90 dagar gamla eller äldre från indexet: </p> <p> 
         <code>
@@ -150,13 +161,14 @@ Du kan konfigurera vilka webbsidor som ska ingå i det inkrementella indexet gen
       <li id="li_26078517744D4AECBE1351008926CBAE"> 
       <code>
         exclude-date YYYY-MM-DD 
-      </code> <p>Inaktivera indexering av alla dokument som matchar den angivna URL-masken och som är lika gamla eller äldre än datumet YYY-MM-DD. </p> <p>Du kan också följa URL-masken med nyckelordet <code>
+      </code> <p>Inaktivera indexering av alla dokument som matchar den angivna URL-masken och som är lika gamla eller äldre än datumet YYY-MM-DD. </p> <p>Du kan också följa URL-masken med nyckelordet . 
+        <code>
           server-date 
         </code>. </p> <p>I följande maskexempel utesluts alla dokument i mappen /archive/ som är daterad den 23 april 2004 eller tidigare: </p> <p> 
         <code>
           exclude-date 2004-04-23 https://www.mydomain.com/archive/ 
         </code> </p> </li> 
-      </ul> </p> <p>Se <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_F4F1F58A646F4A86B8650EC46FDCEF66" type="concept" format="dita" scope="local"> Om datummasker</a>. </p> </td> 
+      </ul> </p> <p>Se <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_F4F1F58A646F4A86B8650EC46FDCEF66" type="concept" format="dita" scope="local"> Datummasker</a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Ta bort URL:er </p> </td> 
@@ -178,9 +190,9 @@ Du kan konfigurera vilka webbsidor som ska ingå i det inkrementella indexet gen
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -204,9 +216,9 @@ Indexschemat gäller endast ditt liveindex. du kan inte schemalägga mellanlagra
 
 **Ställa in inkrementellt indexschema för en aktiv webbplats**
 
-1. På produktmenyn klickar du på **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Live Schedule]**.
-1. Välj indexeringsfrekvens i timmar eller minuter på **[!UICONTROL Incremental Index Schedule]** sidan i **[!UICONTROL Incrementally Index]** listrutan.
-1. I den **[!UICONTROL Base Time]** nedrullningsbara listan väljer du starttid när du vill generera om ett nytt inkrementellt index.
+1. Klicka på **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Live Schedule]** på produktmenyn.
+1. Välj indexeringsfrekvens i timmar eller minuter i listrutan **[!UICONTROL Incremental Index Schedule]** på sidan &lt;a0/>.**[!UICONTROL Incrementally Index]**
+1. Välj starttid i listrutan **[!UICONTROL Base Time]** när du vill generera om ett nytt inkrementellt index.
 1. Klicka på **[!UICONTROL Save Changes]**.
 
 ## Köra ett inkrementellt index för en aktiv eller mellanlagrad webbplats {#task_9BFB6157F3884B2FAECB7E0E9CA318CB}
@@ -222,7 +234,7 @@ Du kan använda Inkrementellt index om du vill indexera&quot;delar&quot; av en p
    * Klicka på **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Staged Index]**.
 
 1. Klicka på **[!UICONTROL Incremental Index Now]**.
-1. (Valfritt) Om indexeringsfel uppstår kan du visa den associerade loggen genom **[!UICONTROL View Errors]** att klicka.
+1. (Valfritt) Om indexeringsfel inträffar klickar du på **[!UICONTROL View Errors]** för att visa den associerade loggen.
 
 ## Visa den inkrementella indexloggen för en aktiv eller mellanlagrad webbplats {#task_E668E1F1240C476DAA1CA783DC728232}
 
@@ -241,7 +253,7 @@ Du kan inte exportera loggar eller spara dem. Loggen är fortfarande tillgängli
 
 1. Gör något av följande på loggsidan, längst upp eller längst ned:
 
-   * Använd navigeringsalternativen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** eller **[!UICONTROL Go to line]** för att förflytta dig i loggen.
+   * Använd navigeringsalternativen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** eller **[!UICONTROL Go to line]** för att gå igenom loggen.
 
    * Använd visningsalternativen **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** eller **[!UICONTROL Show]** för att förfina det du ser.
 
