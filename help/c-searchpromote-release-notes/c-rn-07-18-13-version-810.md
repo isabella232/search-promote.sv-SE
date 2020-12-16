@@ -8,11 +8,14 @@ topic: Release Notes,Site search and merchandising
 uuid: 161d678a-6393-4adb-a47a-e28e108acc31
 translation-type: tm+mt
 source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 0%
 
 ---
 
 
-# Search&amp;Promote 8.10.1 versionsinformation (07/18/2013){#search-promote-release-notes}
+# Versionsinformation om Search &amp; Promote 8.10.1 (07/18/2013){#search-promote-release-notes}
 
 <table> 
  <thead> 
@@ -37,17 +40,17 @@ source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
 
 * **[!DNL Business Rules]** - Lagt till möjlighet att tilldela mer än ett schema till en affärsregel.
 
-   Se [Affärsregler](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
+   Se [Om affärsregler](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
-* **Guidad sökning** - Korrigerade ett fel där återgång till XML-parsern inaktiverades.
-* **Arkivera, komprimera och okomprimerade filer** - Möjlighet att hämta och extrahera information från följande arkivfiltyper, komprimerade och okomprimerade: .zip/tar/tar.gz/tar.bz2/gzip/bzip2
-* **Indexering** av fjärrstyrning - Lagt till möjlighet att återskapa indexeringsåtgärder för fjärrstyrning.
+* **Guidad sökning**  - Korrigerade ett fel där återgång till XML-parsern inaktiverades.
+* **Arkivera, komprimera och okomprimerade filer**  - Lagt till möjlighet att hämta och extrahera information från följande arkivfiltyper, komprimerade och okomprimerade: .zip/tar/tar.gz/tar.bz2/gzip/bzip2
+* **Fjärrstyrningsindexering**  - Lagt till återskapningsmöjlighet för indexeringsåtgärder för fjärrstyrning.
 
-   Se [Fjärrkontroll för indexering](../c-about-index-menu/c-about-remote-control-for-indexing.md#concept_C79B322190E84106A434E5C6D4A4118F).
+   Se [Om fjärrstyrning för indexering](../c-about-index-menu/c-about-remote-control-for-indexing.md#concept_C79B322190E84106A434E5C6D4A4118F).
 
-   Se även [Återskapa index](../c-about-index-menu/c-about-regenerate-index.md#concept_6CBE6B8D18EF47D293091CBA542245FA).
+   Se även [Om att återskapa index](../c-about-index-menu/c-about-regenerate-index.md#concept_6CBE6B8D18EF47D293091CBA542245FA).
 
-* **Fasett** -räl - Stöd för flera fasettrattar har lagts till.
+* **Fasett**  räl - Stöd för flera fasettrattar har lagts till.
 
-   Se [Om Facet Rail](../c-about-design-menu/c-about-facet-rails.md#concept_1FDC8BCDFFC84A0889DA670F63D5F6DB).
+   Se [Om Fasett Rail](../c-about-design-menu/c-about-facet-rails.md#concept_1FDC8BCDFFC84A0889DA670F63D5F6DB).
 
