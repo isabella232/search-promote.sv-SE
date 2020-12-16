@@ -9,21 +9,24 @@ topic: Design,Site search and merchandising
 uuid: fb17a99e-d7b4-415e-ba1b-ca194fe41a5d
 translation-type: tm+mt
 source-git-commit: 7f1b5d94e8002992d62ec1e3dce11f9c5605fde8
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 1%
 
 ---
 
 
 # Om sidnavigering{#about-page-navigation}
 
-Du kan använda **[!UICONTROL Page Navigation]** för att anpassa sidnavigeringskontrollen för sökpresentationslagret.
+Du kan använda **[!UICONTROL Page Navigation]** för att anpassa sidnavigeringskontrollen för ditt sökpresentationslager.
 
 ## Använda sidnavigering {#concept_4488C73B2F59457CB76B658FF71B9E4B}
 
 Om presentationslagret innehåller fler än en uppsättning sökresultat används sidnavigeringskontrollen för den primära sökningen på sidan.
 
-## Lägga till navigering på webbsidor {#task_8FC098E36A7D495695F3FA4F85DA600C}
+## Lägga till webbsidonavigering {#task_8FC098E36A7D495695F3FA4F85DA600C}
 
-Du kan använda [!DNL Page Navigation] för att anpassa sidnavigeringskontrollen för sökpresentationslagret.
+Du kan använda [!DNL Page Navigation] för att anpassa sidnavigeringskontrollen för ditt sökpresentationslager.
 
 <!-- 
 
@@ -33,9 +36,9 @@ t_configuring_web_page_navigation.xml
 
 **Lägga till navigering på webbsidor**
 
-1. På programmenyn klickar du på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Page Navigation]**.
-1. På [!DNL Page Navigation] sidan klickar du på **[!UICONTROL Add New Page Navigation]**.
-1. Ange önskade alternativ på [!DNL Add Page Navigation] sidan.
+1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Page Navigation]** på programmenyn.
+1. Klicka på **[!UICONTROL Add New Page Navigation]** på sidan [!DNL Page Navigation].
+1. Ange önskade alternativ på sidan [!DNL Add Page Navigation].
 
    <!-- 
    r_page_navigation_options.xml
@@ -83,9 +86,9 @@ t_configuring_web_page_navigation.xml
 1. Klicka på **[!UICONTROL Add]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -95,9 +98,9 @@ t_configuring_web_page_navigation.xml
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Redigera navigering på webbsidor {#task_D0938D15521F4139B23C643DA609F881}
+## Redigera webbsidesnavigering {#task_D0938D15521F4139B23C643DA609F881}
 
-Du kan redigera [!DNL Page Navigation] för att anpassa sidnavigeringskontrollen i sökpresentationslagret.
+Du kan redigera [!DNL Page Navigation] om du vill anpassa sidnavigeringskontrollen för sökpresentationslagret.
 
 <!-- 
 
@@ -109,17 +112,17 @@ Om presentationslagret innehåller fler än en uppsättning sökresultat använd
 
 **Så här redigerar du navigering på webbsidor**
 
-1. På programmenyn klickar du på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Page Navigation]**.
-1. På [!DNL Page Navigation] sidan klickar du i tabellen längst **[!UICONTROL Edit]** till höger om sidnavigeringsnamnet.
-1. Ange önskade alternativ på [!DNL Edit Page Navigation] sidan.
+1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Navigation]** > **[!UICONTROL Page Navigation]** på programmenyn.
+1. På sidan [!DNL Page Navigation] i tabellen klickar du på **[!UICONTROL Edit]** längst till höger om sidnavigeringsnamnet.
+1. Ange önskade alternativ på sidan [!DNL Edit Page Navigation].
 
-   Se tabellen med alternativ under [Lägga till webbsidesnavigering](../c-about-design-menu/c-about-page-navigation.md#task_8FC098E36A7D495695F3FA4F85DA600C).
+   Se tabellen med alternativ under [Lägga till webbsidsnavigering](../c-about-design-menu/c-about-page-navigation.md#task_8FC098E36A7D495695F3FA4F85DA600C).
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
