@@ -8,6 +8,9 @@ topic: Design,Site search and merchandising
 uuid: f5805d3e-43bf-4e13-95df-b6bd6b762d11
 translation-type: tm+mt
 source-git-commit: 60cedaac1846e384a37699a42bf7fda33828e1c0
+workflow-type: tm+mt
+source-wordcount: '2661'
+ht-degree: 0%
 
 ---
 
@@ -28,31 +31,31 @@ Du kan lägga till, redigera, kopiera, byta namn på eller ta bort presentations
 
 Du kan återställa alla ändringar du gör i mallar med hjälp av funktionen Historik i mallnamnets listruta i tabellen Mallar.
 
-Du kan minska sidbredden för en presentationsmall genom att markera motsvarande **[!UICONTROL Minimize]** kryssruta för mallen i malltabellen. Genom att minska mallens sidbredd minimerar du dynamiskt infogat JavaScript och CSS. Du kan också ta bort överflödigt tomt utrymme i HTML-koden. Genom att minimera sidbredden i presentationsmallen kan du leverera sökresultaten snabbare.
+Du kan minska sidbredden för en presentationsmall genom att markera kryssrutan **[!UICONTROL Minimize]** för mallen i malltabellen. Genom att minska mallens sidbredd minimerar du dynamiskt infogat JavaScript och CSS. Du kan också ta bort överflödigt tomt utrymme i HTML-koden. Genom att minimera sidbredden i presentationsmallen kan du leverera sökresultaten snabbare.
 
-Du kan förhandsgranska den minimerade mallens utseende genom att klicka på listrutan bredvid filnamnet och sedan klicka på **[!UICONTROL Preview minimized]**. Om du minimerar huvudpresentationsmallen måste du komma ihåg att aktivera minimering för inkluderade (med `guided-include` -tagg) mallar eftersom det här alternativet inte kan ärvas.
+Du kan förhandsgranska den minimerade mallens utseende genom att klicka på listrutan bredvid filnamnet och sedan klicka på **[!UICONTROL Preview minimized]**. Om du minimerar huvudpresentationsmallen måste du komma ihåg att aktivera minimering för inkluderade (med taggen `guided-include`) mallar eftersom det här alternativet inte kan ärvas.
 
 Även om du minimerar en presentationsmall kan du fortfarande redigera den&quot;ominimerade&quot; versionen av samma mall.
 
 Du kan använda reglerna för försökning, eftersökning och affärsregler för att avgöra när du ska använda någon av dina andra presentationsmallar. Det är vanligt att ha en regel som &quot;Ställ in målmallen på xxxx för varje sökning&quot;. När du ändrar standardmallen i tabellen Mallar när du har en sådan regel på plats, verkar den inte ha någon effekt.
 
-Se [Om regler](../c-about-rules-menu/c-about-pre-search-rules.md#concept_5BF84BB6FACB4645BA9CB7496A01CD1F)för försökning.
+Se [Om regler för försökning](../c-about-rules-menu/c-about-pre-search-rules.md#concept_5BF84BB6FACB4645BA9CB7496A01CD1F).
 
-Se [Om regler](../c-about-rules-menu/c-about-post-search-rules.md#concept_AF6ADFCC0ADF4A788003964939917FDE)för eftersökning.
+Se [Om regler för eftersökning](../c-about-rules-menu/c-about-post-search-rules.md#concept_AF6ADFCC0ADF4A788003964939917FDE).
 
-Se [Affärsregler](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
+Se [Om affärsregler](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
 ## Om presentationsmallar {#section_ACDDEA5C499E481C828A517C230D4596}
 
 Presentationsmallar är HTML-mallar som en kund ser när de visar sökresultaten på din webbplats.
 
-I presentationslagret kan du ha en enda presentationsmall som visar resultatet av flera sökningar från olika källor. Du kan definiera hur många presentationsmallar du vill och till och med definiera presentationsmallar som andra mallar delar med hjälp av `include` kommandon. Presentationsmallen är den plats där alla designkomponenter, som fasetter, menyer och vägbeskrivningar, samlas. Om du vill visa de olika designkomponenterna måste du använda taggar för presentationsmallar.
+I presentationslagret kan du ha en enda presentationsmall som visar resultatet av flera sökningar från olika källor. Du kan definiera så många presentationsmallar du vill och till och med definiera presentationsmallar som andra mallar delar med hjälp av `include`-kommandon. Presentationsmallen är den plats där alla designkomponenter som fasetter, menyer och vägbeskrivningar finns samlade. Om du vill visa de olika designkomponenterna måste du använda taggar för presentationsmallar.
 
-Se taggar [för presentationsmall](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64)
+Se [Presentationsmalltaggar](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64)
 
 När du har flera presentationsmallar definierar du under vilka förhållanden de olika presentationsmallarna ska användas. Du kan välja vilken presentationsmall som ska användas baserat på inkommande CGI-parametrar och cookies. Du kan också växla vilken presentationsmall du använder baserat på resultatet från en tidigare sökning.
 
-När du använder flera presentationsmallar måste du ange vilken mall du vill att sökresultaten ska visas från början. Det gör du med hjälp av kolumnen **[!UICONTROL Default]** i tabellen Mallar.
+När du använder flera presentationsmallar måste du ange vilken mall du vill att sökresultaten ska visas från början. Du kan göra detta med kolumnen **[!UICONTROL Default]** i tabellen Mallar.
 
 ## Om transportmallar {#section_35FD3E8AAA4E4695A737DB7E00C3258B}
 
@@ -79,8 +82,8 @@ Se [Sök efter malltaggar](../c-appendices/c-templates.md#reference_F7AA3FF60231
    <td colname="col2"> <p>Detta är de XML-rottaggar som används i presentationslagret för att identifiera vad det måste tolka från transportmallen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;allmän&gt;&lt;/allmän&gt; </span> </p> </td> 
-   <td colname="col2"> <p>Den här uppsättningen taggar omger sökmallstaggar som ger sammanfattningsdata baserat på resultatuppsättningen. Vanligtvis innehåller dessa taggar söktaggar för det totala antalet resultat, det lägsta resultatet och det högsta resultatet. Du kan definiera valfritt antal ytterligare globala fält som du vill använda med <span class="codeph"> taggen </span> för allmänt fält. </p> <p> <b>Exempel</b> </p> <p> <code> &nbsp;&nbsp;&nbsp;&nbsp;&lt;general&gt; 
+   <td colname="col1"> <p> <span class="codeph"> &lt;general&gt;&lt;/general&gt; </span> </p> </td> 
+   <td colname="col2"> <p>Den här uppsättningen taggar omger sökmallstaggar som ger sammanfattningsdata baserat på resultatuppsättningen. Vanligtvis innehåller dessa taggar söktaggar för det totala antalet resultat, det lägsta resultatet och det högsta resultatet. Du kan definiera valfritt antal ytterligare globala fält som du vill använda med taggen <span class="codeph"> general-field </span>. </p> <p> <b>Exempel</b> </p> <p> <code> &nbsp;&nbsp;&nbsp;&nbsp;&lt;general&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;total&gt;&lt;search-total&nbsp;/&gt;&lt;/total&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;lower&gt;&lt;search-lower&nbsp;/&gt;&lt;/lower&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;upper&gt;&lt;search-upper&nbsp;/&gt;&lt;/upper&gt; 
@@ -103,7 +106,7 @@ Se [Sök efter malltaggar](../c-appendices/c-templates.md#reference_F7AA3FF60231
       &nbsp;&nbsp;&nbsp;&nbsp;&lt;/results&gt; </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;attribute-table name="tabellename"&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;attribute-table name="tablename"&gt; </span> </p> </td> 
    <td colname="col2"> <p>Med den här taggen kan du göra en slinga genom varje objekt i en flervärdeslista för ett enda resultat. Använd taggen bara i ett resultat. Dess främsta syfte är att du ska kunna iterera över attribut som tillhör ett resultatfält. </p> <p> <b>Exempel</b> </p> <p> <code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;results&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;search-results&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;result&gt; 
@@ -136,11 +139,11 @@ Se [Sök efter malltaggar](../c-appendices/c-templates.md#reference_F7AA3FF60231
       &nbsp;&nbsp;&nbsp;&nbsp;&lt;/facets&gt; </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;förslag&gt;&lt;/förslag&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;suggestions&gt;&lt;/suggestions&gt; </span> </p> </td> 
    <td colname="col2"> <p>Den här uppsättningen taggar omger dina Menade-förslag så att guidad sökning känner igen vilka XML-noder som innehåller förslag. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;förslag&gt;&lt;/förslag&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;suggestion&gt;&lt;/suggestion&gt; </span> </p> </td> 
    <td colname="col2"> <p>Den här uppsättningen taggar omsluter varje "Menade du förslag". </p> <p> <b>Exempel</b> </p> <p> <code> &nbsp;&nbsp;&nbsp;&nbsp;&lt;search-if-suggestions&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;suggestions&gt; 
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;search-suggestions&gt; 
@@ -337,7 +340,7 @@ Om du inte har använt JSON tidigare kan du använda följande länkar och exemp
 
 ## Lägga till en ny presentations- eller transportmallfil {#task_73199757B6E748CAA604902FF913F012}
 
-Du kan använda **[!UICONTROL Add Template]** för att lägga till presentationsmallar (.tmpl) eller transportmallar (.tpl) på [!DNL Templates] sidan.
+Du kan använda **[!UICONTROL Add Template]** för att lägga till presentationsmallar (.tmpl) eller transportmallar (.tpl) på sidan [!DNL Templates].
 
 <!-- 
 
@@ -348,8 +351,8 @@ t_adding_a_new_presentation_or_transport_template_file.xml
 **Lägga till en ny presentations- eller transportmallfil**
 
 1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Templates]** på produktmenyn.
-1. På [!DNL Templates] sidan klickar du på **[!UICONTROL Add New Template]**.
-1. Ange önskade alternativ i [!DNL Add Template] dialogrutan.
+1. Klicka på **[!UICONTROL Add New Template]** på sidan [!DNL Templates].
+1. Ange önskade alternativ i dialogrutan [!DNL Add Template].
 
    <!-- 
    
@@ -364,11 +367,11 @@ t_adding_a_new_presentation_or_transport_template_file.xml
 
    Se även [Redigera en presentation eller en transportmall](../c-about-design-menu/c-about-templates.md#task_800E0E2265C34C028C92FEB5A1243EC3).
 1. Klicka på **[!UICONTROL Add]**.
-1. (Valfritt) Gör något av följande på [!DNL Templates] sidan:
+1. (Valfritt) Gör något av följande på sidan [!DNL Templates]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -388,11 +391,11 @@ t_editing_a_template.xml
 
  -->
 
-Du kan redigera och testa dina presentations- och transportmallar medan besökarna på webbplatsen fortsätter att använda liveversionerna av mallarna. Du testar den mellanlagrade mallen med den mellanlagrade versionen av din sökdomän-URL. Du kan till exempel testa den mellanlagrade transportmallen genom att köra en mellanlagrad fråga ( `sp_staged=1`) med `sp_t` det namnet på transportmallen. När du är nöjd med hur layouten visas kan du använda mallredigeraren **[!UICONTROL Push Live]** för att göra mallen offentlig. När mallen är publicerad börjar besökarna använda den.
+Du kan redigera och testa dina mallar för presentationer och transport, medan besökarna på webbplatsen fortsätter att använda liveversionerna av mallarna. Du testar den mellanlagrade mallen med den mellanlagrade versionen av din sökdomän-URL. Du kan till exempel testa den mellanlagrade transportmallen genom att köra en mellanlagrad fråga ( `sp_staged=1`) med `sp_t` som är inställd på transportmallens namn. När du är nöjd med hur layouten visas kan du använda **[!UICONTROL Push Live]** inifrån mallredigeraren för att göra mallen offentlig. När mallen är publicerad börjar besökarna använda den.
 
 Använd taggreferensen för presentationsmallen om du vill lära dig hur du kopplar ihop presentationsmallen med komponenter för guidad sökning, t.ex. ansikten, vägbeskrivningar och menyer.
 
-Se taggar [för presentationsmall](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64)
+Se [Presentationsmalltaggar](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64)
 
 Använd transportmallens taggreferens för att lära dig mer om taggarna som ska användas i transportmallar.
 
@@ -401,17 +404,17 @@ Se [Transportmallstaggar](../c-appendices/c-templates.md#reference_227D199F5A724
 **[!UICONTROL To edit a presentation or a transport template]**
 
 1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Templates]** på produktmenyn.
-1. Klicka på ett presentations- eller transportmallsfilnamn på [!DNL Templates] sidan.
-1. Gör de ändringar du vill av taggarna och kodningen på [!DNL Template Editor] sidan.
+1. Klicka på ett presentations- eller transportmallfilnamn på sidan [!DNL Templates].
+1. Gör de ändringar du vill av taggarna och kodningen på sidan [!DNL Template Editor].
 
-   Var försiktig med de ändringar du gör i [!DNL Template Editor]; det finns ingen Ångra-funktion. Om du gör en oönskad ändring och vill gå tillbaka till den tidigare versionen av filen kan du klicka för **[!UICONTROL Cancel]** att gå tillbaka till malltabellen (förutsatt att du inte sparat några ändringar fram till den tidpunkten). Om du redan har sparat ändringarna kan du använda **[!UICONTROL History]** redigeraren för att återställa ändringarna.
-1. (Valfritt) Klicka **[!UICONTROL Insert Symbol]** för att ange specialtecken och symboler som inte har motsvarande tangenter på tangentbord för amerikansk engelska.
+   Var försiktig med de ändringar du gör i [!DNL Template Editor]; det finns ingen Ångra-funktion. Om du gör en oönskad ändring och vill gå tillbaka till den tidigare versionen av filen kan du klicka på **[!UICONTROL Cancel]** för att gå tillbaka till malltabellen (förutsatt att du inte sparat några ändringar fram till den tidpunkten). Om du redan har sparat ändringarna kan du använda **[!UICONTROL History]** i redigeraren för att återställa ändringarna.
+1. (Valfritt) Klicka på **[!UICONTROL Insert Symbol]** om du vill ange specialtecken och symboler som inte har motsvarande tangenter på tangentbord för amerikansk engelska.
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -425,7 +428,7 @@ Se [Transportmallstaggar](../c-appendices/c-templates.md#reference_227D199F5A724
 
 ## Kopiera en presentation eller en transportmallfil {#task_B744AB3384C84DD59C33CD25E18C2C90}
 
-Du kan spara tid genom **[!UICONTROL Copy Template]** att duplicera en befintlig presentationsmall (.tmpl) eller transportmall (.tpl) och lägga till den på mallsidan.
+Du kan använda **[!UICONTROL Copy Template]** för att spara tid genom att duplicera en befintlig presentationsmall (.tmpl) eller transportmall (.tpl) och lägga till den på mallsidan.
 
 <!-- 
 
@@ -442,14 +445,14 @@ Se [Lägga till en ny presentations- eller transportmallfil](../c-about-design-m
 **Så här kopierar du en presentation eller en transportmallfil**
 
 1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Templates]** på produktmenyn.
-1. På [!DNL Templates] sidan klickar du på i listrutan bredvid ett mallnamn som du vill kopiera **[!UICONTROL Copy]**.
-1. Ange ett eller flera av de alternativ som du vill använda i dialogrutan [!DNL Copy Template] .
+1. På sidan [!DNL Templates] klickar du på **[!UICONTROL Copy]** i listrutan bredvid ett mallnamn som du vill kopiera.
+1. I dialogrutan [!DNL Copy Template] anger du ett eller flera av de alternativ du vill använda.
 1. Klicka på **[!UICONTROL Copy]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -478,14 +481,14 @@ Se [Lägga till en ny presentations- eller transportmallfil](../c-about-design-m
 **Byta namn på en presentation eller en transportmallfil**
 
 1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Templates]** på produktmenyn.
-1. På [!DNL Templates] sidan klickar du på i listrutan bredvid ett mallnamn som du vill byta namn på **[!UICONTROL Rename]**.
-1. Ange ett eller flera av de alternativ som du vill använda i dialogrutan [!DNL Rename Template] .
+1. På sidan [!DNL Templates] klickar du på **[!UICONTROL Rename]** i listrutan bredvid ett mallnamn som du vill byta namn på.
+1. I dialogrutan [!DNL Rename Template] anger du ett eller flera av de alternativ du vill använda.
 1. Klicka på **[!UICONTROL Rename]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -495,7 +498,7 @@ Se [Lägga till en ny presentations- eller transportmallfil](../c-about-design-m
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Ta bort en presentation eller en transportmallfil {#task_67E532C2B83A449687737E3B06C5AA58}
+## Tar bort en presentation eller en transportmallfil {#task_67E532C2B83A449687737E3B06C5AA58}
 
 Du kan använda **[!UICONTROL Delete Template]** för att ta bort en befintlig presentationsmall (.tmpl) eller en transportmall (.tpl).
 
@@ -505,7 +508,7 @@ t_deleting_a_presentation_or_a_transport_template_file.xml
 
  -->
 
-Du kanske redan har en motsvarande version av den mellanlagrade mallen som publiceras. I så fall måste du se till att du gör den borttagna mallen offentlig **[!UICONTROL Staging]** så att den också tas bort från den aktiva miljön. Du kan också använda **[!UICONTROL Push Live]** på mallsidan.
+Du kanske redan har en motsvarande version av den mellanlagrade mallen som publiceras. I så fall måste du se till att du gör den borttagna mallen offentlig med **[!UICONTROL Staging]** så att den också tas bort från den aktiva miljön. Du kan också använda **[!UICONTROL Push Live]** på mallsidan.
 
 Se [Om mellanlagring](../c-about-staging.md#concept_08B8F3CA1F4241108F14BA7FC7806CA7)
 
@@ -518,13 +521,13 @@ Se [Lägga till en ny presentations- eller transportmallfil](../c-about-design-m
 **Ta bort en presentation eller en transportmallfil**
 
 1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Templates]** på produktmenyn.
-1. På [!DNL Templates] sidan klickar du på i listrutan bredvid ett mallnamn som du vill ta bort **[!UICONTROL Delete]**.
-1. Klicka på i [!DNL Delete Template] dialogrutan **[!UICONTROL Delete.]**
+1. På sidan [!DNL Templates] klickar du på **[!UICONTROL Delete]** i listrutan bredvid ett mallnamn som du vill ta bort.
+1. Klicka på **[!UICONTROL Delete.]** i dialogrutan [!DNL Delete Template]
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -534,9 +537,9 @@ Se [Lägga till en ny presentations- eller transportmallfil](../c-about-design-m
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Förhandsgranska presentationsmallen minimerad {#task_1757B6207CC74221AE4BFFE5674D320B}
+## Förhandsgranskning av presentationsmallen minimerad {#task_1757B6207CC74221AE4BFFE5674D320B}
 
-Du kan använda **[!UICONTROL Preview minimized]** för att se hur den reducerade sidbredden i en presentationsmall skulle se ut om du väljer att minimera den.
+Du kan använda **[!UICONTROL Preview minimized]** för att se hur den reducerade sidvikten för en presentationsmall skulle se ut om du väljer att minimera den.
 
 <!-- 
 
@@ -546,7 +549,7 @@ t_previewing_the_presentation_template_minimized.xml
 
 Om du minimerar huvudpresentationsmallen måste du komma ihåg att aktivera minimering för inkluderade (med tagg för guidad infogning) mallar eftersom det här alternativet inte kan ärvas.
 
-Se [Minska sidbredden för en presentationsmall på ...](../c-about-design-menu/c-about-templates.md#task_B09BB3CE89714DEAAE8D9A899CF3009E)
+Se [Minska sidbredden för en presentationsmall på din...](../c-about-design-menu/c-about-templates.md#task_B09BB3CE89714DEAAE8D9A899CF3009E)
 
 Du måste ha en mall som redan har lagts till för att förhandsgranska mallen minimerad.
 
@@ -554,21 +557,21 @@ Se [Lägga till en ny presentations- eller transportmallfil](../c-about-design-m
 
 Du kan förhandsgranska XML-koden för en transportmallfil.
 
-Se [Förhandsgranska XML-koden för en transportmallfil](../c-about-design-menu/c-about-templates.md#task_58C6C52078E14AD88D2B2F0B3C439AE8)
+Se [Förhandsgranska XML för en transportmallfil](../c-about-design-menu/c-about-templates.md#task_58C6C52078E14AD88D2B2F0B3C439AE8)
 
 **Förhandsgranska presentationsmallen minimerad**
 
 1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Templates]** på produktmenyn.
-1. På [!DNL Templates] sidan klickar du på i listrutan bredvid namnet på en presentationsmall **[!UICONTROL Preview minimized]**.
+1. På sidan [!DNL Templates] klickar du på **[!UICONTROL Preview minimized]** i listrutan bredvid ett presentationsmallnamn.
 
    Använd kolumnen **[!UICONTROL Type]** i tabellen Mallar för att sortera mallarna efter presentation och transport.
-1. (Valfritt) På [!DNL Preview Minimized Template] sidan kontrollerar du **[!UICONTROL Wrap lines]** att taggarna i det definierade fönstret är lästa.
+1. (Valfritt) På sidan [!DNL Preview Minimized Template] markerar du **[!UICONTROL Wrap lines]** för att läsa taggarna i det definierade fönstret.
 1. Klicka på **[!UICONTROL Close]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -578,9 +581,9 @@ Se [Förhandsgranska XML-koden för en transportmallfil](../c-about-design-menu/
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Minska sidbredden på en presentationsmall på webbplatsen {#task_B09BB3CE89714DEAAE8D9A899CF3009E}
+## Minska sidbredden för en presentationsmall på webbplatsen {#task_B09BB3CE89714DEAAE8D9A899CF3009E}
 
-Du kan minska sidbredden för en presentationsmall genom att använda **[!UICONTROL Minimize]** alternativet i malltabellen.
+Du kan minska sidbredden för en presentationsmall genom att använda alternativet **[!UICONTROL Minimize]** i malltabellen.
 
 <!-- 
 
@@ -590,21 +593,21 @@ t_reducing_the_page_weight_of_a_presentation_template.xml
 
 Genom att minska mallens sidbredd minimerar du dynamiskt infogat JavaScript och CSS. Du kan också ta bort överflödigt tomt utrymme i HTML-koden. Genom att minimera sidbredden i presentationsmallen kan du leverera sökresultaten snabbare.
 
-Du kan också förhandsgranska utseendet på den minimerade presentationsmallen med hjälp av **[!UICONTROL Preview minimized]**.
+Du kan också förhandsgranska utseendet på den minimerade presentationsmallen genom att använda **[!UICONTROL Preview minimized]**.
 
 Se [Förhandsgranska presentationsmallen minimerad](../c-about-design-menu/c-about-templates.md#task_1757B6207CC74221AE4BFFE5674D320B).
 
 **[!UICONTROL To reduce the page weight of a presentation template on your website]**
 
 1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Templates]** på produktmenyn.
-1. Markera kryssrutan för en eller flera presentationsmallfiler som du vill skicka som minimerade på webbplatsen under [!DNL Templates] kolumnen på [!DNL Minimize] sidan.
+1. Markera kryssrutan för en eller flera presentationsmallfiler som du vill skicka som minimerade på webbplatsen under kolumnen [!DNL Minimize] på sidan [!DNL Templates].
 
-   Använd **[!UICONTROL Type]** kolumnen i [!DNL Templates] tabellen för att sortera mallarna efter presentation och transport.
+   Använd kolumnen **[!UICONTROL Type]** i tabellen [!DNL Templates] för att sortera mallarna efter Presentation och Transport.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -614,7 +617,7 @@ Se [Förhandsgranska presentationsmallen minimerad](../c-about-design-menu/c-abo
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Ställa in standardpresentationsmallfilen som ska användas på webbplatsen {#task_C1E8CE817E4D43E096167A347C54DD53}
+## Anger standardpresentationsmallfilen som ska användas på webbplatsen {#task_C1E8CE817E4D43E096167A347C54DD53}
 
 När du har flera presentationsmallar kan du ange vilken mall som ska användas först för att visa sökresultaten.
 
@@ -626,25 +629,25 @@ t_setting_the_default_presentation_template_file_to_use.xml
 
 Du kan använda reglerna för försökning, eftersökning och affärsregler för att avgöra när någon av dina andra presentationsmallar ska användas.
 
-Se [Om regler](../c-about-rules-menu/c-about-pre-search-rules.md#concept_5BF84BB6FACB4645BA9CB7496A01CD1F)för försökning.
+Se [Om regler för försökning](../c-about-rules-menu/c-about-pre-search-rules.md#concept_5BF84BB6FACB4645BA9CB7496A01CD1F).
 
-Se [Om regler](../c-about-rules-menu/c-about-post-search-rules.md#concept_AF6ADFCC0ADF4A788003964939917FDE)för eftersökning.
+Se [Om regler för eftersökning](../c-about-rules-menu/c-about-post-search-rules.md#concept_AF6ADFCC0ADF4A788003964939917FDE).
 
-Se [Affärsregler](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
+Se [Om affärsregler](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
 Det är vanligt att ha en regel som &quot;Ställ in målpresentationsmallen på xxxx för varje sökning.&quot; När en sådan regel är på plats verkar det som om ändringar av standardmallen på mallsidan inte har någon effekt.
 
 **[!UICONTROL To set the default presentation template file to use on your website]**
 
 1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Templates]** på produktmenyn.
-1. Klicka på alternativknappen under [!DNL Templates] kolumnen på [!DNL Default] sidan till motsvarande presentationsmallfil som du vill använda som standard.
+1. Klicka på alternativknappen under kolumnen [!DNL Default] på sidan [!DNL Templates] till motsvarande presentationsmallfil som du vill ska fungera som standard.
 
-   Använd **[!UICONTROL Type]** kolumnen i [!DNL Templates] tabellen för att sortera mallarna efter presentation och transport.
+   Använd kolumnen **[!UICONTROL Type]** i tabellen [!DNL Templates] för att sortera mallarna efter Presentation och Transport.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -656,7 +659,7 @@ Det är vanligt att ha en regel som &quot;Ställ in målpresentationsmallen på 
 
 ## Förhandsgranska XML för en transportmallfil {#task_58C6C52078E14AD88D2B2F0B3C439AE8}
 
-Du kan använda [!DNL Preview] för att granska XML-koden för en transportmall som du har lagt till.
+Du kan använda [!DNL Preview] för att granska XML för en transportmall som du har lagt till.
 
 <!-- 
 
@@ -675,15 +678,15 @@ Se [Förhandsgranska presentationsmallen minimerad](../c-about-design-menu/c-abo
 **Förhandsgranska XML-koden för en transportmallfil**
 
 1. Klicka på **[!UICONTROL Design]** > **[!UICONTROL Templates]** på produktmenyn.
-1. Klicka på på [!DNL Templates] sidan i listrutan bredvid namnet på en transportmall **[!UICONTROL Preview]**.
+1. På sidan [!DNL Templates] klickar du på **[!UICONTROL Preview]** i listrutan bredvid namnet på en transportmall.
 
-   Använd **[!UICONTROL Type]** kolumnen i [!DNL Templates] tabellen för att sortera mallarna efter presentation och transport.
-1. Stäng visningsfönstret och gå tillbaka till [!DNL site search/merchandising].
+   Använd kolumnen **[!UICONTROL Type]** i tabellen [!DNL Templates] för att sortera mallarna efter Presentation och Transport.
+1. Stäng visningsfönstret och återgå till [!DNL site search/merchandising].
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
