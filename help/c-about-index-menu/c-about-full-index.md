@@ -9,6 +9,9 @@ topic: Index,Site search and merchandising
 uuid: dce1eafd-5aea-4945-8305-8f9e7dc392df
 translation-type: tm+mt
 source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
+workflow-type: tm+mt
+source-wordcount: '795'
+ht-degree: 0%
 
 ---
 
@@ -41,8 +44,8 @@ Indexschemat gäller endast ditt liveindex. du kan inte schemalägga mellanlagra
 
 **Ställa in ett fullständigt indexschema för en aktiv webbplats**
 
-1. På produktmenyn klickar du på **[!UICONTROL Index]** > **[!UICONTROL Full Index]** > **[!UICONTROL Live Schedule]**.
-1. I den **[!UICONTROL Time]** nedrullningsbara listan väljer du den timme då du vill att den fullständiga indexeringen ska börja.
+1. Klicka på **[!UICONTROL Index]** > **[!UICONTROL Full Index]** > **[!UICONTROL Live Schedule]** på produktmenyn.
+1. I listrutan **[!UICONTROL Time]** väljer du den timme då du vill att den fullständiga indexeringen ska börja.
 1. Markera en eller flera dagar som du vill att den fullständiga indexeringen ska köras.
 1. Klicka på **[!UICONTROL Save Changes]**.
 
@@ -85,7 +88,7 @@ Du kan använda Fullständigt index om du vill indexera alla sidor på den testa
     <li id="li_7F49B86D94974E79AAD381A64A1400F2">Växla mellan skiftlägeskänslig sökning </li> 
     <li id="li_E8FE6EE240A840AC826ADF4294AAC6F6">Växla diakritiskt stöd </li> 
     <li id="li_51763D482DCB4ED0972966F492B8C0F2">Växlar nummerindexering </li> 
-    </ul> </p> <p>Innan en ny crawlning tar plats sker en snabb genomgång av alla indexdata så att de överensstämmer med de nya kontoinställningarna. </p> <p>Det här alternativet är bara tillgängligt om du gör ett fullständigt index för en mellanlagrad webbplats. </p> </td> 
+    </ul> </p> <p>Innan en ny crawlning tar plats sker en snabb överföring genom alla indexdata så att de överensstämmer med de nya kontoinställningarna. </p> <p>Det här alternativet är bara tillgängligt om du gör ett fullständigt index för en mellanlagrad webbplats. </p> </td> 
     </tr> 
     <tr> 
     <td colname="col1"> <p>Räkna alla sidor </p> </td> 
@@ -95,9 +98,9 @@ Du kan använda Fullständigt index om du vill indexera alla sidor på den testa
     </table>
 
 1. Klicka på **[!UICONTROL Full Index Now]**.
-1. (Valfritt) Om indexeringsfel uppstår kan du visa den associerade loggen genom **[!UICONTROL View Errors]** att klicka.
+1. (Valfritt) Om indexeringsfel inträffar klickar du på **[!UICONTROL View Errors]** för att visa den associerade loggen.
 
-## Visa hela indexloggen för en aktiv eller mellanlagrad webbplats {#task_02E5E944C56B4EB19CC1FF321F3221B8}
+## Visa den fullständiga indexloggen för en aktiv eller mellanlagrad webbplats {#task_02E5E944C56B4EB19CC1FF321F3221B8}
 
 När ett fullständigt index eller ett mellanlagrat fullständigt index är klart kan du visa tillhörande logg för att felsöka eventuella fel som inträffat.
 
@@ -113,7 +116,7 @@ Du kan inte exportera loggar eller spara dem. Loggen är fortfarande tillgängli
 
 1. Gör något av följande på loggsidan, längst upp eller längst ned:
 
-   * Använd navigeringsalternativen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** eller **[!UICONTROL Go to line]** för att förflytta dig i loggen.
+   * Använd navigeringsalternativen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** eller **[!UICONTROL Go to line]** för att gå igenom loggen.
 
    * Använd visningsalternativen **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** eller **[!UICONTROL Show]** för att förfina det du ser.
 
