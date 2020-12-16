@@ -8,6 +8,9 @@ topic: Appendices,Site search and merchandising
 uuid: 148914b5-33ef-41db-8404-67c03f6f0832
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '767'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ Anta att du har angett följande datumformat:
  </tbody> 
 </table>
 
-Det första formatet, %B %d, %Y %T %Z, matchar datum som följande 20 september 2014 13:12:00 PDT. Om metadatataggens innehåll inte kan parsas med den här formatsträngen, kommer nästa tillgängliga format, %b %d, %Y %T %Z att försökas. Det här formatet matchar datum enligt följande: &quot;20 september 2014 3:12:00 PDT&quot;. Om metadatataggens innehåll inte kan analyseras med den här formatsträngen, flyttas webbplatssökningen/försäljningen nedåt i listan med formatsträngar tills en formatsträng som fungerar hittas.
+Det första formatet, %B %d, %Y %T %Z, matchar datum som följande 20 september 2014 13:12:00 PDT. Om metadatataggens innehåll inte kan parsas med den här formatsträngen, kommer nästa tillgängliga format, %b %d, %Y %T %Z att försökas. Formatet matchar datum enligt följande: &quot;20 september 2014 3:12:00 PDT&quot;. Om metadatataggens innehåll inte kan analyseras med den här formatsträngen, flyttas webbplatssökningen/försäljningen nedåt i listan med formatsträngar tills en formatsträng som fungerar hittas.
 
 I följande tabell beskrivs tillgängliga datumformatsträngar:
 
