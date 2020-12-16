@@ -8,6 +8,9 @@ topic: Linguistics,Site search and merchandising
 uuid: d4463896-30fe-4385-a283-c930c8264a02
 translation-type: tm+mt
 source-git-commit: 4531970404c189ffa1d4359d1431c97df893ba35
+workflow-type: tm+mt
+source-wordcount: '2475'
+ht-degree: 0%
 
 ---
 
@@ -51,21 +54,21 @@ Du kan inkludera mer än en akronym och/eller utökning med flera ord i varje sy
 
 Hyponymer utökas inte med andra hyponymer. Hyponymer utökas på högst en nivå med sina synonymer. Om du till exempel söker efter &quot;fordon&quot; returneras resultatet för &quot;bil&quot; och &quot;bil&quot;, men resultatet returneras inte för &quot;sedan&quot; och &quot;stationsvagn&quot;.
 
-## Om att söka efter termer i olika lexikon {#section_28E7F80CE68D4481BBF4F51EED237C67}
+## Om sökning efter termer i olika ordlistor {#section_28E7F80CE68D4481BBF4F51EED237C67}
 
 Du kan söka efter hyponymer och synonymer i alla ordlistor som du lägger till. Den här funktionen är användbar om du vill redigera eller ta bort en viss term som kan finnas i flera ordlistor. Alla lexikon med matchande resultat visas med sina matchande orduppsättningar. Om frågan returnerar fler än 1 000 uppsättningar, eller träd, visas bara de första 1 000.
 
-Se [Söka mellan ordlistor](../c-about-linguistics-menu/c-about-dictionaries.md#task_8D2BACC6F9B4487FA82367CBEDEE306F).
+Se [Söka i ordlistor](../c-about-linguistics-menu/c-about-dictionaries.md#task_8D2BACC6F9B4487FA82367CBEDEE306F).
 
-Se [Redigera ett lexikon](../c-about-linguistics-menu/c-about-dictionaries.md#task_7B349B2D385048D7A06E754FAB75316A).
+Se [Redigera en ordlista](../c-about-linguistics-menu/c-about-dictionaries.md#task_7B349B2D385048D7A06E754FAB75316A).
 
 ## Konfigurera en ordlista som en ordlista {#section_B859E2E957674F558AC6F8D05A0ED190}
 
-Stemming, som är en funktion av att söka i roten av ett ord som kan ha flera ändar, kan fungera i ett av tre lägen: Domänordlistor, alternativa standardordformer och inga.
+Stemming, som är en funktion av att söka i roten på ett ord som kan ha flera ändar, kan fungera i ett av tre lägen: Domänordlistor, alternativt Word Forms som standard och Ingen.
 
 Se [Om ord och språk](../c-about-linguistics-menu/c-about-words-and-language.md#concept_CEB4B9576F3C4E2EB87B352EEC738D79).
 
-I följande information förutsätts att ditt konto har **[!UICONTROL Alternative Word Forms]** angetts till **[!UICONTROL Domain Dictionaries]**, så att du kan konfigurera specifika domänordlistor som din datakälla.
+Följande information förutsätter att ditt konto har **[!UICONTROL Alternative Word Forms]** inställt på **[!UICONTROL Domain Dictionaries]**, så att du kan konfigurera specifika domänordlistor som din datakälla.
 
 Du kan göra om vilken domänordlista som helst till en ordlista för ordstamning. Synonymer och hyponymer fortsätter att växa som förväntat, men med ytterligare biverkningar. Om några termer finns gemensamt i en annan ordlista, eller till och med i sig själv, sammanfogas ordgruppen med dessa synonymer eller hyponymer. Du kan tänka dig detta som en annan nivå av ordexpansion.
 
@@ -102,13 +105,13 @@ Se även [Lägga till en ny affärsregel](../c-about-rules-menu/c-about-business
 **Lägga till en ny ordlista**
 
 1. Klicka på **[!UICONTROL Linguistics]** > **[!UICONTROL Dictionaries]** på produktmenyn.
-1. På **[!UICONTROL Dictionary Menu]** sidan klickar du på **[!UICONTROL Add New Dictionary]**.
-1. Ange namnet på den nya ordlistan på **[!UICONTROL Dictionary]** sidan i **[!UICONTROL Name]** fältet.
+1. Klicka på **[!UICONTROL Add New Dictionary]** på sidan **[!UICONTROL Dictionary Menu]**.
+1. På sidan **[!UICONTROL Dictionary]** anger du namnet på den nya ordlistan i fältet **[!UICONTROL Name]**.
 1. Klicka på **[!UICONTROL Add Synonyms]**.
-1. Gör något av följande i **[!UICONTROL Add Terms]** dialogrutan:
+1. Gör något av följande i dialogrutan **[!UICONTROL Add Terms]**:
 
    * Om du vill lägga till synonymer anger du två eller flera termer i huvudtextfältet, där varje ord eller fras avgränsas med ett likhetstecken (=). Till exempel byxor = byxor = slacks.
-   * Om du vill lägga till hyponymer anger du en hypernyterm i huvudtextfältet. Klicka **[!UICONTROL Add Hyponym]** och ange sedan en hyponym som relaterar till hypernymet som du angav. Till exempel kan &quot;sedan&quot;, &quot;sedan&quot;, &quot;stationsvagn&quot; och &quot;fastighet&quot; vara hyponymer av &quot;bil&quot; och &quot;bil&quot; (båda hypernymerna) enligt nedan.
+   * Om du vill lägga till hyponymer anger du en hypernyterm i huvudtextfältet. Klicka på **[!UICONTROL Add Hyponym]** och ange sedan en hyponym som relaterar till hypernymet som du angav. Till exempel kan &quot;sedan&quot;, &quot;sedan&quot;, &quot;stationsvagn&quot; och &quot;fastighet&quot; vara hyponymer av &quot;bil&quot; och &quot;bil&quot; (båda hypernymerna) enligt nedan.
 
       ![](assets/synonym2.png)
 
@@ -120,16 +123,16 @@ Se även [Lägga till en ny affärsregel](../c-about-rules-menu/c-about-business
    * Upprepa steg 4-6 för att lägga till fler synonymer och hyponymer.
    * Fortsätt till nästa steg.
 
-1. Om du vill förhandsgranska resultatet av ändringarna klickar du på **[!UICONTROL regenerate your staged site index]** för att återskapa det mellanlagrade webbplatsindexet.
+1. Om du vill förhandsgranska resultatet av ändringarna klickar du på **[!UICONTROL regenerate your staged site index]** för att återskapa indexet för den mellanlagrade webbplatsen.
 
-   Se [Köra ett fullständigt index för en publicerad eller mellanlagrad webbplats..](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+   Se [Köra ett fullständigt index för en aktiv eller mellanlagrad webbplats..](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-   Se [Köra ett inkrementellt index för en aktiv eller mellanlagrad webbplats..](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
-1. (Valfritt) På produktmenyn klickar du på **[!UICONTROL Linguistics]** > **[!UICONTROL Dictionaries]** och gör sedan något av följande:
+   Se [Köra ett inkrementellt index för en aktiv eller mellanlagrad webbplats...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+1. (Valfritt) Klicka på **[!UICONTROL Linguistics]** > **[!UICONTROL Dictionaries]** på produktmenyn och gör sedan något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -146,22 +149,22 @@ Förhållandena för varje ord genereras när du indexerar webbplatsen. Före n�
 **Aktivera eller inaktivera ett lexikon**
 
 1. Klicka på **[!UICONTROL Linguistics]** > **[!UICONTROL Dictionaries]** på produktmenyn.
-1. Gör något av följande på **[!UICONTROL Dictionary Menu]** sidan under tabellens **[!UICONTROL Enabled]** kolumn:
+1. Gör något av följande på sidan **[!UICONTROL Dictionary Menu]**, under kolumnen **[!UICONTROL Enabled]** i tabellen:
 
    * Markera rutan för ett lexikon som du vill aktivera och ha indexerat.
    * Avmarkera rutan för ett lexikon som du vill inaktivera och som inte har indexerats.
 
 1. Klicka på **[!UICONTROL Save Changes]**.
-1. Om du vill förhandsgranska resultatet av ändringarna klickar du på **[!UICONTROL regenerate your staged site index]** för att återskapa det mellanlagrade webbplatsindexet.
+1. Om du vill förhandsgranska resultatet av ändringarna klickar du på **[!UICONTROL regenerate your staged site index]** för att återskapa indexet för den mellanlagrade webbplatsen.
 
-   Se [Köra ett fullständigt index för en publicerad eller mellanlagrad webbplats..](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+   Se [Köra ett fullständigt index för en aktiv eller mellanlagrad webbplats..](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-   Se [Köra ett inkrementellt index för en aktiv eller mellanlagrad webbplats..](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
-1. (Valfritt) På produktmenyn klickar du på **[!UICONTROL Linguistics]** > **[!UICONTROL Dictionaries]** och gör sedan något av följande:
+   Se [Köra ett inkrementellt index för en aktiv eller mellanlagrad webbplats...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+1. (Valfritt) Klicka på **[!UICONTROL Linguistics]** > **[!UICONTROL Dictionaries]** på produktmenyn och gör sedan något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -188,10 +191,10 @@ Du kan också använda **[!UICONTROL Find]** för att hitta specifika synonymer 
 1. Klicka på **[!UICONTROL Linguistics]** > **[!UICONTROL Dictionaries]** på produktmenyn.
 1. Gör något av följande:
 
-   * Klicka på det hyperlänkade namnet på en ordlista vars termer du vill redigera eller ta bort på [!DNL Dictionary Menu] sidan i tabellen.
-   * Skriv en term som du vill söka efter i alla ordlistor på [!DNL Dictionary Menu] sidan i **[!UICONTROL Find]** textfältet och klicka sedan på **[!UICONTROL Find]**.
+   * På sidan [!DNL Dictionary Menu] i tabellen klickar du på det hyperlänkade namnet på en ordlista vars termer du vill redigera eller ta bort.
+   * På sidan [!DNL Dictionary Menu] skriver du en term som du vill söka efter i alla ordlistor i textfältet **[!UICONTROL Find]**. Klicka sedan på **[!UICONTROL Find]**.
 
-      Använd de medföljande listrutorna på [!DNL Find in Dictionaries] sidan för att ange vilka förfiningsalternativ du vill ha.
+      Använd de medföljande listrutorna för att ange vilka förfiningsalternativ du vill använda på sidan [!DNL Find in Dictionaries].
 
       <table> 
       <thead> 
@@ -209,26 +212,26 @@ Du kan också använda **[!UICONTROL Find]** för att hitta specifika synonymer 
         <td colname="col1"> <p>Listrutan Matcha </p> </td> 
         <td colname="col2"> <p>Här kan du välja mellan följande fyra typer av matchning: 
         <ul id="ul_D656F159677946938050115F610EEF4B"> 
-        <li id="li_2D6B302E021A4CE7A47F028812633EDC"> <span class="uicontrol"> Exakt matchning </span> <p>Frågan måste ha en exakt matchning med en hyponym eller synonym. </p> </li> 
-        <li id="li_30AD5976E43041E98190F4757E821092"> <span class="uicontrol"> Innehåller text </span> <p>Frågan behöver bara en delsträngsmatchning; en matchning inuti en hyponym eller synonym. </p> </li> 
-        <li id="li_9BF911EFB54345BB82679BDE51DDF8AF"> <span class="uicontrol"> Börjar med </span> <p>Frågan matchas bara mot början av varje hyponym och synonym. </p> </li> 
-        <li id="li_CB791C7F5B5A4496B329ED505E7D97BC"> <span class="uicontrol"> Word Match </span> <p>Frågan jämförs med varje ord från en synonym eller hyponym, men ordet måste matcha exakt. </p> </li> 
+        <li id="li_2D6B302E021A4CE7A47F028812633EDC"> <span class="uicontrol"> Exakt matchning  </span> <p>Frågan måste ha en exakt matchning med en hyponym eller synonym. </p> </li> 
+        <li id="li_30AD5976E43041E98190F4757E821092"> <span class="uicontrol"> Innehåller text  </span> <p>Frågan behöver bara en delsträngsmatchning; en matchning inuti en hyponym eller synonym. </p> </li> 
+        <li id="li_9BF911EFB54345BB82679BDE51DDF8AF"> <span class="uicontrol"> Börjar med  </span> <p>Frågan matchas bara mot början av varje hyponym och synonym. </p> </li> 
+        <li id="li_CB791C7F5B5A4496B329ED505E7D97BC"> <span class="uicontrol"> Word Match  </span> <p>Frågan jämförs med varje ord från en synonym eller hyponym, men ordet måste matcha exakt. </p> </li> 
         </ul> </p> </td> 
         </tr> 
         <tr> 
         <td colname="col1"> <p>Listruta för aktiverad/inaktiverad ordlista </p> </td> 
         <td colname="col2"> <p>Här kan du välja bland följande alternativ: 
         <ul id="ul_EBBD3F3A2D854952A35CBDDBECB40958"> 
-        <li id="li_7F5654C284BE485EAC9B000A663C6C60"> <span class="uicontrol"> Aktiverade och inaktiverade ordlistor </span> <p>Sök efter den angivna termen i både aktiverade och inaktiverade ordlistor. </p> </li> 
-        <li id="li_4A83EECF38044287A923EC0AAF639079"> <span class="uicontrol"> Endast aktiverade ordlistor </span> <p>Det är bara praktiskt att söka i aktiverade ordlistor om du vill felsöka det aktuella indexet. </p> </li> 
+        <li id="li_7F5654C284BE485EAC9B000A663C6C60"> <span class="uicontrol"> Aktiverade och inaktiverade ordlistor  </span> <p>Sök efter den angivna termen i både aktiverade och inaktiverade ordlistor. </p> </li> 
+        <li id="li_4A83EECF38044287A923EC0AAF639079"> <span class="uicontrol"> Endast aktiverade ordlistor  </span> <p>Det är bara praktiskt att söka i aktiverade ordlistor om du vill felsöka det aktuella indexet. </p> </li> 
         </ul> </p> <p>Se <a href="../c-about-linguistics-menu/c-about-dictionaries.md#task_EC282EA0846942F6913918EA8218220B" type="task" format="dita" scope="local"> Aktivera eller inaktivera ett lexikon </a>. </p> </td> 
         </tr> 
         <tr> 
         <td colname="col1"> <p>Listrutan Mellanlagrad/Live </p> </td> 
         <td colname="col2"> <p>Här kan du välja bland följande alternativ: 
         <ul id="ul_BD0733A30E6B470E942B21F499A4373B"> 
-        <li id="li_F9A8C39C22EA4FBF86536F5924ED973C"> <span class="uicontrol"> Mellanlagrade/dynamiska ordlistor </span> <p>Söker efter den angivna termen i mellanlagrade och liveordlistor. Den söker dock bara i den mellanlagrade versionen av ordlistan om den finns. Om den mellanlagrade versionen inte finns söker den i lexikonets liveversion. </p> </li> 
-        <li id="li_DB0944DB18564269AA10676BDFDB0460"> <span class="uicontrol"> Live-ordlistor </span> <p>Sök bara efter den angivna termen i de aktiva ordlistorna. </p> </li> 
+        <li id="li_F9A8C39C22EA4FBF86536F5924ED973C"> <span class="uicontrol"> Mellanlagrade/dynamiska ordlistor  </span> <p>Söker efter den angivna termen i mellanlagrade och liveordlistor. Den söker dock bara i den mellanlagrade versionen av ordlistan om den finns. Om den mellanlagrade versionen inte finns söker den i lexikonets liveversion. </p> </li> 
+        <li id="li_DB0944DB18564269AA10676BDFDB0460"> <span class="uicontrol"> Live-ordlistor  </span> <p>Sök bara efter den angivna termen i de aktiva ordlistorna. </p> </li> 
         </ul> </p> </td> 
         </tr> 
       </tbody> 
@@ -236,20 +239,20 @@ Du kan också använda **[!UICONTROL Find]** för att hitta specifika synonymer 
 
 1. Gör något av följande i tabellen:
 
-   * Klicka på ![](assets/icon_edit.gif) den term som är associerad med den term som du vill uppdatera. Ändra de termer du vill använda i **[!UICONTROL Edit Terms]** dialogrutan. När du är klar klickar du på **[!UICONTROL Save]**.
+   * Klicka på ![](assets/icon_edit.gif) som är associerad med den term som du vill uppdatera. Ändra de termer du vill använda i dialogrutan **[!UICONTROL Edit Terms]**. Klicka på **[!UICONTROL Save]** när du är klar.
 
-   * Klicka på ![](assets/icon_delete.gif) den term som är associerad med den term som du vill ta bort. Klicka på i **[!UICONTROL Delete Terms]** dialogrutan **[!UICONTROL Delete]**. Se till att du tar bort rätt term. det inte finns någon bekräftelsedialogruta för borttagning.
+   * Klicka på ![](assets/icon_delete.gif) som är associerad med den term som du vill ta bort. Klicka på **[!UICONTROL Delete]** i dialogrutan **[!UICONTROL Delete Terms]**. Se till att du tar bort rätt term. det inte finns någon bekräftelsedialogruta för borttagning.
 
-1. Om du vill förhandsgranska resultatet av ändringarna klickar du på **[!UICONTROL regenerate your staged site index]** för att återskapa det mellanlagrade webbplatsindexet.
+1. Om du vill förhandsgranska resultatet av ändringarna klickar du på **[!UICONTROL regenerate your staged site index]** för att återskapa indexet för den mellanlagrade webbplatsen.
 
-   Se [Köra ett fullständigt index för en publicerad eller mellanlagrad webbplats..](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+   Se [Köra ett fullständigt index för en aktiv eller mellanlagrad webbplats..](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-   Se [Köra ett inkrementellt index för en aktiv eller mellanlagrad webbplats..](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
-1. (Valfritt) På produktmenyn klickar du på **[!UICONTROL Linguistics]** > **[!UICONTROL Dictionaries]** och gör sedan något av följande:
+   Se [Köra ett inkrementellt index för en aktiv eller mellanlagrad webbplats...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+1. (Valfritt) Klicka på **[!UICONTROL Linguistics]** > **[!UICONTROL Dictionaries]** på produktmenyn och gör sedan något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -269,32 +272,32 @@ t_renaming_a_dictionary.xml
 
  -->
 
-Om du anger att **[!UICONTROL Alternate Word Forms]** alternativet ska vara **[!UICONTROL Domain Dictionaries]** i **[!UICONTROL Words & Language]** används alternativet i stället **[!UICONTROL Configure]** för **[!UICONTROL Rename]**.
+Om du anger **[!UICONTROL Alternate Word Forms]** som **[!UICONTROL Domain Dictionaries]** i **[!UICONTROL Words & Language]** används alternativet **[!UICONTROL Configure]** i stället för **[!UICONTROL Rename]**.
 
 Se [Om ord och språk](../c-about-linguistics-menu/c-about-words-and-language.md#concept_CEB4B9576F3C4E2EB87B352EEC738D79).
 
 **Byta namn på en ordlista**
 
 1. Klicka på **[!UICONTROL Linguistics]** > **[!UICONTROL Dictionaries]** på produktmenyn.
-1. Gör något av följande på **[!UICONTROL Dictionary Menu]** sidan under tabellens **[!UICONTROL Actions]** kolumn:
+1. Gör något av följande på sidan **[!UICONTROL Dictionary Menu]**, under kolumnen **[!UICONTROL Actions]** i tabellen:
 
-   * Klicka **[!UICONTROL Rename]** för det tillhörande lexikon vars namn du vill ändra.
+   * Klicka på **[!UICONTROL Rename]** för den tillhörande ordlista vars namn du vill ändra.
 
-      In the **[!UICONTROL Rename Dictionary]** dialog box. Ange det nya namnet på ordlistan i **[!UICONTROL Name]** fältet.
+      I dialogrutan **[!UICONTROL Rename Dictionary]**. i fältet **[!UICONTROL Name]** anger du det nya namnet på ordlistan.
 
       Klicka på **[!UICONTROL Rename File]**.
 
-   * Klicka **[!UICONTROL Configure]** för det tillhörande lexikon vars namn du vill ändra.
+   * Klicka på **[!UICONTROL Configure]** för den tillhörande ordlista vars namn du vill ändra.
 
-      In the **[!UICONTROL Configure Dictionary]** dialog box. Ange det nya namnet på ordlistan i **[!UICONTROL Name]** fältet.
+      I dialogrutan **[!UICONTROL Configure Dictionary]**. i fältet **[!UICONTROL Name]** anger du det nya namnet på ordlistan.
 
       Klicka på **[!UICONTROL Save Configuration]**.
 
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -323,25 +326,25 @@ Se [Om ord och språk](../c-about-linguistics-menu/c-about-words-and-language.md
 **Konfigurera en ordlista som en ordlista**
 
 1. Klicka på **[!UICONTROL Linguistics]** > **[!UICONTROL Words & Language]** på produktmenyn.
-1. On the [!DNL Words & Languages] page, in the **[!UICONTROL Alternate Words Forms]** drop-down list, select **[!UICONTROL Domain Dictionaries]**.
+1. På sidan [!DNL Words & Languages] väljer du **[!UICONTROL Domain Dictionaries]** i listrutan **[!UICONTROL Alternate Words Forms]**.
 
    Alla domänordlistor som anges som ordlistor (se steg 7 nedan) används som en källa med alternativa ordformer.
 
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. Klicka på **[!UICONTROL Linguistics]** > **[!UICONTROL Dictionaries]** på produktmenyn.
-1. På [!DNL Dictionaries Menu] sidan, under **[!UICONTROL Actions]** kolumnen i tabellen, klickar du **[!UICONTROL Configure]** på en associerad ordlista som du vill ange som ordlista.
-1. Välj i **[!UICONTROL Configure Dictionary]** listrutan i **[!UICONTROL Advanced Stemming Mode]** dialogrutan **[!UICONTROL Yes]**.
+1. På sidan [!DNL Dictionaries Menu], under kolumnen **[!UICONTROL Actions]** i tabellen, klickar du på **[!UICONTROL Configure]** för en associerad ordlista som du vill ange som ordlista.
+1. I dialogrutan **[!UICONTROL Configure Dictionary]** väljer du **[!UICONTROL Yes]** i listrutan **[!UICONTROL Advanced Stemming Mode]**.
 1. Klicka på **[!UICONTROL Save Configuration]**.
-1. Klicka **[!UICONTROL regenerate your staged site index]** för att återskapa indexet för den mellanlagrade webbplatsen.
+1. Klicka på **[!UICONTROL regenerate your staged site index]** för att återskapa indexet för den mellanlagrade webbplatsen.
 
-   Se [Köra ett fullständigt index för en publicerad eller mellanlagrad webbplats..](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+   Se [Köra ett fullständigt index för en aktiv eller mellanlagrad webbplats..](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-   Se [Köra ett inkrementellt index för en aktiv eller mellanlagrad webbplats..](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
-1. (Valfritt) På produktmenyn klickar du på **[!UICONTROL Linguistics]** > **[!UICONTROL Dictionaries]** och gör sedan något av följande:
+   Se [Köra ett inkrementellt index för en aktiv eller mellanlagrad webbplats...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+1. (Valfritt) Klicka på **[!UICONTROL Linguistics]** > **[!UICONTROL Dictionaries]** på produktmenyn och gör sedan något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -351,7 +354,7 @@ Se [Om ord och språk](../c-about-linguistics-menu/c-about-words-and-language.md
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Söka mellan ordlistor {#task_8D2BACC6F9B4487FA82367CBEDEE306F}
+## Söka i ordlistor {#task_8D2BACC6F9B4487FA82367CBEDEE306F}
 
 Du kan söka efter hyponymer och synonymer i alla ordlistor som läggs till i webbplatssökningar/-marknadsföring.
 
@@ -363,16 +366,16 @@ t_searching_across_dictionaries.xml
 
 Den här funktionen är användbar om du vill redigera eller ta bort en viss term som kan finnas i flera ordlistor. Alla lexikon med matchande resultat visas med sina matchande orduppsättningar. Om frågan returnerar fler än 1 000 uppsättningar, eller träd, visas bara de första 1 000.
 
-Se [Redigera ett lexikon](../c-about-linguistics-menu/c-about-dictionaries.md#task_7B349B2D385048D7A06E754FAB75316A).
+Se [Redigera en ordlista](../c-about-linguistics-menu/c-about-dictionaries.md#task_7B349B2D385048D7A06E754FAB75316A).
 
 **Söka mellan ordlistor**
 
 1. Klicka på **[!UICONTROL Linguistics]** > **[!UICONTROL Dictionaries]** på produktmenyn.
-1. Skriv en term som du vill söka efter i alla ordlistor på [!DNL Dictionary Menu] sidan i **[!UICONTROL Find]** textfältet och klicka sedan på **[!UICONTROL Find]**.
-1. Använd de medföljande listrutorna på [!DNL Find in Dictionaries] sidan för att ange vilka förfiningsalternativ du vill ha.
+1. På sidan [!DNL Dictionary Menu] skriver du en term som du vill söka efter i alla ordlistor i textfältet **[!UICONTROL Find]**. Klicka sedan på **[!UICONTROL Find]**.
+1. På sidan [!DNL Find in Dictionaries] använder du de medföljande listrutorna för att ange vilka förfiningsalternativ du vill ha.
 
-   Se [Redigera ett lexikon](../c-about-linguistics-menu/c-about-dictionaries.md#task_7B349B2D385048D7A06E754FAB75316A).
-1. (Valfritt) Använd **[!UICONTROL Show]** listrutan för att ange maximalt antal resultat som du vill visa per sida.
+   Se [Redigera en ordlista](../c-about-linguistics-menu/c-about-dictionaries.md#task_7B349B2D385048D7A06E754FAB75316A).
+1. (Valfritt) Använd listrutan **[!UICONTROL Show]** för att ange det maximala antal resultat som du vill visa per sida.
 
 ## Ta bort en ordlista {#task_DBAAEE624BC14D2590444B0B7869ECCA}
 
@@ -391,8 +394,8 @@ Se till att du tar bort ett lexikon som du vet längre behövs. det finns ingen 
 **Ta bort en ordlista**
 
 1. Klicka på **[!UICONTROL Linguistics]** > **[!UICONTROL Dictionaries]** på produktmenyn.
-1. Klicka på den tillhörande ordlista som du vill ta bort under tabellens [!DNL Dictionary Menu] kolumn på **[!UICONTROL Actions]** **[!UICONTROL Delete]** sidan.
-1. In the **[!UICONTROL Delete Dictionary]** dialog box. klicka **[!UICONTROL Yes]** för att bekräfta borttagningen.
+1. På sidan [!DNL Dictionary Menu], under kolumnen **[!UICONTROL Actions]** i tabellen, klickar du på **[!UICONTROL Delete]** för den tillhörande ordlista som du vill ta bort.
+1. I dialogrutan **[!UICONTROL Delete Dictionary]**. klicka på **[!UICONTROL Yes]** för att bekräfta borttagningen.
 1. (Valfritt) Gör något av följande om du har tagit bort en aktiv ordlista:
 
    * Klicka på **[!UICONTROL Live]**.
