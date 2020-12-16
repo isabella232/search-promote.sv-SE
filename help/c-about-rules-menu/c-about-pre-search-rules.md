@@ -8,6 +8,9 @@ topic: Rules,Site search and merchandising
 uuid: e75f9d9e-e8ca-4184-bf79-b1fdadb5c0fe
 translation-type: tm+mt
 source-git-commit: d07cdc2c88f93eed4cecb0ee8818f7fdea06ee9d
+workflow-type: tm+mt
+source-wordcount: '1709'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ Regler före sökning används vanligtvis för att välja vilken presentationsma
 
 I modulen Försöksbearbetning instansieras alla definierade mallar och tillhörande namngivna sökningar där varje sökning får en lokal kopia av cgi-parametrarna. Det innebär att du kan anpassa en sökning genom att lägga till, ta bort eller ändra någon av de cgi-parametrar som används i sökningen utan att ändra några andra namngivna sökningar som mallen använder eller påverkar någon av de andra mallarna. Om du har en presentationsmall som visar mer än en resultatuppsättning kan du därför anpassa varje sökning individuellt. Om du vill göra ändringar i de globala CGI-parametrarna innan de kopieras till varje sökning för varje mall använder du frågerensningsmodulen.
 
-## Villkor för regel före sökning {#section_B5568ADEB28546A280720309498B045D}
+## Villkor för regel för försökning {#section_B5568ADEB28546A280720309498B045D}
 
 Villkoren är valfria. Om du väljer att ange åtgärder för varje fråga utförs alltid åtgärderna. Det är en god vana att köra den första regeln för varje fråga, där den väljer din standardpresentationsmall. På det här sättet kan du vara säker på att du, oavsett vilken fråga som kommer in, har valt en mall för presentation av det värsta scenariot som ska användas. Villkoren kan baseras på CGI-frågeparametrar, cookies eller anpassade variabler som en tidigare regel har angett eller en systemvariabel.
 
@@ -68,9 +71,9 @@ Du kan använda [!DNL Pre-Search Rules] för att välja vilken presentationsmall
 **Lägga till en ny regel för försökning**
 
 1. Klicka på **[!UICONTROL Rules]** > **[!UICONTROL Pre-Search Rules]** på produktmenyn.
-1. På [!DNL Pre-Search Rules] sidan klickar du på **[!UICONTROL Add New Rule]**.
-1. I [!DNL Name] fältet skriver du namnet på den nya frågerensningsregeln.
-1. Använd listrutorna och textfälten på [!DNL Add Pre-Search Rule] sidan för att bygga ut frågan.
+1. Klicka på **[!UICONTROL Add New Rule]** på sidan [!DNL Pre-Search Rules].
+1. I fältet [!DNL Name] skriver du namnet på den nya frågerengöringsregeln.
+1. Använd listrutorna och textfälten på sidan [!DNL Add Pre-Search Rule] för att bygga ut frågan.
 
    <table> 
     <thead> 
@@ -92,11 +95,11 @@ Du kan använda [!DNL Pre-Search Rules] för att välja vilken presentationsmall
       <td colname="col1"> <p>Systemvariabel </p> </td> 
       <td colname="col2"> <p>Skrivskyddade variabler som angetts av det interna systemet som du kan kontrollera. Följande systemvariabler stöds: </p> <p> 
         <ul id="ul_BC17F1637F27424CA4E8F530C28A3245"> 
-          <li id="li_C7DF96EFD7AA4A449D00F7EACCAA0EB1"> <span class="uicontrol"> värdnamn </span> <p>Namnet på servervärden. </p> </li> 
-          <li id="li_F85AB1D2B9374A859657D12B8ED6674B"> <span class="uicontrol"> uri </span> <p>Begärd URI utan frågesträngen. </p> </li> 
-          <li id="li_440149C9EC6E4805B77BBC97BE41542A"> <span class="uicontrol"> args </span> <p>Hela frågesträngen. </p> </li> 
-          <li id="li_F583FC4B0E404858BB3522B33A6F7A0A"> <span class="uicontrol"> miljö </span> <p>"Stage" eller "live" beroende på om den inkommande frågan skickades till din staged- eller livemiljö. </p> </li> 
-          <li id="li_15902AA49B144D42A5E95D7E8B0FB1E1"> <span class="uicontrol"> hänvisare </span> <p>Den URL som kunden kom ifrån. </p> </li> 
+          <li id="li_C7DF96EFD7AA4A449D00F7EACCAA0EB1"> <span class="uicontrol"> värdnamn  </span> <p>Namnet på servervärden. </p> </li> 
+          <li id="li_F85AB1D2B9374A859657D12B8ED6674B"> <span class="uicontrol"> uri  </span> <p>Begärd URI utan frågesträngen. </p> </li> 
+          <li id="li_440149C9EC6E4805B77BBC97BE41542A"> <span class="uicontrol"> args  </span> <p>Hela frågesträngen. </p> </li> 
+          <li id="li_F583FC4B0E404858BB3522B33A6F7A0A"> <span class="uicontrol"> miljö  </span> <p>"Stage" eller "live" beroende på om den inkommande frågan skickades till din staged- eller livemiljö. </p> </li> 
+          <li id="li_15902AA49B144D42A5E95D7E8B0FB1E1"> <span class="uicontrol"> hänvisare  </span> <p>Den URL som kunden kom ifrån. </p> </li> 
         </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -113,7 +116,7 @@ Du kan använda [!DNL Pre-Search Rules] för att välja vilken presentationsmall
       </tr> 
       <tr> 
       <td colname="col1"> <p>Mallens serverdelsparameter </p> </td> 
-      <td colname="col2"> <p>Inkommande frågeparametrar översätts till slut till serverdelsparametrar som används för att utföra sökningen. </p> <p>Se CGI-parametrar för <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> backend-sökning </a>. </p> <p>Backend-parametrar visas inte i navigeringselement. Det innebär att du kan dölja eventuella ytterligare parametrar som du vill tillämpa på en sökning från dina kunder. Parametern är lokal för en viss sökning i en presentationsmall. Åtgärder på backend-parametrar är sena. alltså används de precis innan sökningen skickas. </p> </td> 
+      <td colname="col2"> <p>Inkommande frågeparametrar översätts till slut till serverdelsparametrar som används för att utföra sökningen. </p> <p>Se <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> CGI-parametrar för backend-sökning </a>. </p> <p>Backend-parametrar visas inte i navigeringselement. Det innebär att du kan dölja eventuella ytterligare parametrar som du vill tillämpa på en sökning från dina kunder. Parametern är lokal för en viss sökning i en presentationsmall. Åtgärder på backend-parametrar är sena. alltså används de precis innan sökningen skickas. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Målmall </p> </td> 
@@ -125,7 +128,7 @@ Du kan använda [!DNL Pre-Search Rules] för att välja vilken presentationsmall
       </tr> 
       <tr> 
       <td colname="col1"> <p>Butik </p> </td> 
-      <td colname="col2"> <p>Sökmotorn identifierar automatiskt vilket arkiv kunden befinner sig i baserat på värdnamnet eller frågeparametern <span class="codeph"> </span> gs_store, där den senare har prioritet. Du kan skapa villkor från butiken. Om du bara rensar en fråga kan du även använda en åtgärd för att åsidosätta den aktuella butiken. </p> </td> 
+      <td colname="col2"> <p>Sökmotorn identifierar automatiskt vilket arkiv kunden befinner sig i baserat på värdnamnet eller frågeparametern <span class="codeph"> gs_store </span>, där den senare har prioritet. Du kan skapa villkor från butiken. Om du bara rensar en fråga kan du även använda en åtgärd för att åsidosätta den aktuella butiken. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Sista regeln </p> </td> 
@@ -141,9 +144,9 @@ Du kan använda [!DNL Pre-Search Rules] för att välja vilken presentationsmall
 1. Klicka på **[!UICONTROL Add]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -155,21 +158,21 @@ Du kan använda [!DNL Pre-Search Rules] för att välja vilken presentationsmall
 
 ## Redigera en regel för försökning {#task_25F77050C5DA42B29DFD1C9718FB8C64}
 
-Du kan redigera befintliga regler för försökning som du har lagt till på [!DNL Pre-Search Rules] sidan.
+Du kan redigera befintliga regler för försökning som du har lagt till på sidan [!DNL Pre-Search Rules].
 
 **Redigera en regel för försökning**
 
 1. Klicka på **[!UICONTROL Rules]** > **[!UICONTROL Pre-Search Rules]** på produktmenyn.
-1. På [!DNL Pre-Search Rules] sidan, under tabellens **[!UICONTROL Actions]** kolumn, klickar du **[!UICONTROL Edit]** på den associerade regel som du vill redigera.
-1. Använd listrutorna och textfälten på [!DNL Edit Pre-Search Rule] sidan för att bygga ut frågan.
+1. På sidan [!DNL Pre-Search Rules], under kolumnen **[!UICONTROL Actions]** i tabellen, klickar du på **[!UICONTROL Edit]** för den associerade regel som du vill redigera.
+1. Använd listrutorna och textfälten på sidan [!DNL Edit Pre-Search Rule] för att bygga ut frågan.
 
-   Se tabellen med alternativ under [Lägga till en ny regel](../c-about-rules-menu/c-about-pre-search-rules.md#task_182B95918462490D8BDA7F16A81CAC11)för försökning.
+   Se tabellen med alternativ under [Lägga till en ny regel för försökning](../c-about-rules-menu/c-about-pre-search-rules.md#task_182B95918462490D8BDA7F16A81CAC11).
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -179,7 +182,7 @@ Du kan redigera befintliga regler för försökning som du har lagt till på [!D
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Ta bort en regel för försökning {#task_128B6A79CA6C451C991AEDAD58F51743}
+## Tar bort en regel {#task_128B6A79CA6C451C991AEDAD58F51743} för försökning
 
 Du kan ta bort regler för försökning som du inte längre behöver eller använder.
 
@@ -188,13 +191,13 @@ När du tar bort en regel justeras ordningen som återstående regler körs auto
 **Ta bort en regel för försökning**
 
 1. Klicka på **[!UICONTROL Rules]** > **[!UICONTROL Pre-Search Rules]** på produktmenyn.
-1. På [!DNL Pre-Search Rules] sidan, under tabellens **[!UICONTROL Actions]** kolumn, klickar du **[!UICONTROL Delete]** på den associerade regel som du vill ta bort.
-1. Klicka på i [!DNL Confirmation] dialogrutan **[!UICONTROL OK]**.
+1. På sidan [!DNL Pre-Search Rules], under kolumnen **[!UICONTROL Actions]** i tabellen, klickar du på **[!UICONTROL Delete]** för den associerade regel som du vill ta bort.
+1. Klicka på **[!UICONTROL OK]** i dialogrutan [!DNL Confirmation].
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -204,27 +207,27 @@ När du tar bort en regel justeras ordningen som återstående regler körs auto
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Ändra ordningen som regler för försökning körs {#task_C18817276A3C459089C97448076365D1}
+## Ändra ordningen som reglerna för försökning körs {#task_C18817276A3C459089C97448076365D1}
 
 Du kan ändra ordningen på reglerna för förhandssökning om du vill ändra i vilken ordning de körs på presentationsmallar.
 
-Regler för försökning körs i den ordning de definierats. Ju högre ordningsnummer en regel har, desto senare körs den i processen, och tidigare regler trumpetas. Du ändrar ordning på reglerna genom att ange ett nytt nummer i kolumnen Ordning i tabellen på [!DNL Pre-Search Rules] sidan. Du kan också använda dra-och-släpp-regler för att ändra deras körningsordning.
+Regler för försökning körs i den ordning de definierats. Ju högre ordningsnummer en regel har, desto senare körs den i processen, och tidigare regler trumpetas. Du ändrar ordning på reglerna genom att ange ett nytt nummer i kolumnen Ordning i tabellen på sidan [!DNL Pre-Search Rules]. Du kan också använda dra-och-släpp-regler för att ändra deras körningsordning.
 
 **Så här ändrar du ordningen som regler för försökning körs**
 
 1. Klicka på **[!UICONTROL Rules]** > **[!UICONTROL Pre-Search Rules]** på produktmenyn.
-1. Gör något av följande på [!DNL Pre-Search Rules] sidan:
+1. Gör något av följande på sidan [!DNL Pre-Search Rules]:
 
-   * Klicka på kolumnrubriken om du vill sortera reglerna i stigande eller fallande ordning. **[!UICONTROL Order]**
-   * I kolumnen, i textfältet till vänster om ett regelnamn för försökning, skriver du det ordningsnummer som du vill att regeln ska köras i. **[!UICONTROL Order]**
+   * Klicka på kolumnrubriken **[!UICONTROL Order]** om du vill sortera reglerna i stigande eller fallande ordning.
+   * I kolumnen **[!UICONTROL Order]** skriver du ordningsnumret som du vill att regeln ska köras i textfältet till vänster om namnet på en regel för försökning.
    * Dra och släpp en tabellrad till den position där du vill att linjen ska köras. Alla ordernummer uppdateras för att återspegla den nya ordningen som reglerna körs i.
 
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
