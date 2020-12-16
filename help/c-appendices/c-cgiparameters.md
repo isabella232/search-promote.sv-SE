@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## CGI-parametrar {#concept_F395999090FE4926B38BC73D5E612800}
 
-## Sök i CGI-parametrar {#reference_DA27A8B0728246DA94994885E1353890}
+## Sök efter CGI-parametrar {#reference_DA27A8B0728246DA94994885E1353890}
 
 Du kan kopiera och klistra in formulärkoden i webbplatsens HTML-kod ( **[!UICONTROL Design]** > **[!UICONTROL Auto-Complete]** > **[!UICONTROL Form Source]**).
 
@@ -27,7 +27,7 @@ Se [Kopiera HTML-koden för sökformuläret till ...](../c-about-auto-complete.m
 
 Du kan också ange parametrarna som visas antingen i själva sökformuläret eller från ett skript. Förutom de parametrar som anges nedan kan du även använda backend-sökparametrarna för att styra sökningen.
 
-Se CGI-parametrar för [serverdelssökning](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8).
+Se [CGI-parametrar för backend-sökning](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8).
 
 Sökbegäranden består av en bas-URL. Bas-URL:en anger vilket konto kunden söker och en uppsättning CGI-parametrar (nyckel-värde-par) som anger hur det önskade sökresultatet för det associerade kontot ska returneras.
 
@@ -41,7 +41,7 @@ Om du vill kan du låta kontohanteraren konfigurera ditt konto så att det anvä
 
 `https://search.megacorp.com?q=shoes&page=2`
 
-Ett tredje format, som kallas SEO-format, stöds också när ett snedstreck `/` används i stället för avgränsaren och likhetstecken, som i följande exempel:
+Ett tredje format, som kallas SEO-format, stöds också när ett snedstreck `/` används i stället för avgränsaren och likhetstecken som i följande exempel:
 
 `https://search.megacorp.com/q/shoes/page/2`
 
@@ -49,16 +49,16 @@ Varje gång SEO-formatet används för att skicka en begäran returneras alla ut
 
 | Parametern Guidad sökning | Exempel | Beskrivning |
 |--- |--- |--- |
-| q | `q=string` | Anger frågesträngen för sökningen. Den här parametern mappas till parametern för `sp_q` backend-sökning.  Se CGI-parametrar för [serverdelssökning](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
-| q# | `q#=string` | Motsökning (sökning i ett visst fält) görs med hjälp av numrerade q- och x-parametrar.  q-parametern definierar den term som du söker efter i ansiktet enligt den motsvarande numrerade x-parametern.<br>Om du t.ex. har två ansikten med namnet size och color kan du ha något som q1=small;x1=size;q2=red;x2=color.  Den här parametern mappar till `sp_q_exact_#` backend-sökparametrarna.  <br>Se CGI-parametrar för [serverdelssökning](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
-| x# | `q#=string` | Motsökning (sökning i ett visst fält) görs med hjälp av numrerade q- och x-parametrar.  q-parametern definierar den term som du söker efter i ansiktet enligt den motsvarande numrerade x-parametern. <br>Om du t.ex. har två ansikten med namnet size och color kan du ha något som q1=small;x1=size;q2=red;x2=color.  Den här parametern mappar till `sp_x_#` backend-sökparametrarna.  <br>Se CGI-parametrar för [serverdelssökning](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
-| samling | `collection=string` | Anger den samling som ska användas för sökningen.  Den här parametern mappas till parametern för `sp_k` backend-sökning.  Se CGI-parametrar för [serverdelssökning](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
-| antal | `count=number` | Anger det totala antalet resultat som visas.  Standardvärdet definieras i [!UICONTROL Settings ] > [!UICONTROL Searching ] > [!UICONTROL Searches ]. .  Den här parametern mappas till parametern för `sp_c` backend-sökning.  Se CGI-parametrar för [serverdelssökning](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
+| q | `q=string` | Anger frågesträngen för sökningen. Den här parametern mappar till `sp_q`-parametern för backend-sökning.  Se [CGI-parametrar för backend-sökning](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
+| q# | `q#=string` | Motsökning (sökning i ett visst fält) görs med hjälp av numrerade q- och x-parametrar.  q-parametern definierar den term som du söker efter i ansiktet enligt den motsvarande numrerade x-parametern.<br>Om du t.ex. har två ansikten med namnet size och color kan du ha något som q1=small;x1=size;q2=red;x2=color.  Den här parametern mappar till `sp_q_exact_#`-parametrar för backend-sökning.  <br>Se CGI-parametrar för  [serverdelssökning](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
+| x# | `q#=string` | Motsökning (sökning i ett visst fält) görs med hjälp av numrerade q- och x-parametrar.  q-parametern definierar den term som du söker efter i ansiktet enligt den motsvarande numrerade x-parametern. <br>Om du t.ex. har två ansikten med namnet size och color kan du ha något som q1=small;x1=size;q2=red;x2=color.  Den här parametern mappar till `sp_x_#`-parametrar för backend-sökning.  <br>Se CGI-parametrar för  [serverdelssökning](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
+| samling | `collection=string` | Anger den samling som ska användas för sökningen.  Den här parametern mappar till `sp_k`-parametern för backend-sökning.  Se [CGI-parametrar för backend-sökning](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
+| antal | `count=number` | Anger det totala antalet resultat som visas.  Standardvärdet definieras i [!UICONTROL Settings ] > [!UICONTROL Searching ] > [!UICONTROL Searches ]. .  Den här parametern mappar till `sp_c`-parametern för backend-sökning.  Se [CGI-parametrar för backend-sökning](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
 | page | `page=number` | Anger sidan med resultat som returneras. |
-| rankning | `rank=field` | Anger det rangordningsfält som ska användas för statisk rankning.  Fältet måste vara ett fält av typen Rank med relevans större än 0.  Den här parametern mappas till parametern `sp_sr` backend.  Se CGI-parametrar för [serverdelssökning](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
-| sortera | `sort=number` | Anger sorteringsordningen.<br>&quot;0&quot; är standardvärdet och sorterar efter relevanspoäng, &quot;1&quot; sortera efter datum. -1 sorterar inte.  Användare kan ange ett fältnamn för värdet på `sp_s` parametern.  Du kan t.ex. `sp_s=title` sortera resultaten efter de värden som finns i titelfältet. När ett fältnamn används som värde för en ` sp_s ` parameter sorteras resultaten efter det fältet och sorteras sedan efter relevans.  Om du vill aktivera den här funktionen klickar du på [!UICONTROL Settings ] > [!UICONTROL Metadata ] > [!UICONTROL Definitions ]. På sidan Definitioner klickar du på [!UICONTROL Add New Field ] eller klickar [!UICONTROL Edit ] för ett specifikt fältnamn. I den [!UICONTROL Sorting ] nedrullningsbara listan väljer du antingen [!UICONTROL Ascending ] eller [!UICONTROL Descending ]. Den här parametern mappas till parametern för `sp_s` backend-sökning. <br>Se CGI-parametrar för [serverdelssökning].(../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
+| rankning | `rank=field` | Anger det rangordningsfält som ska användas för statisk rankning.  Fältet måste vara ett fält av typen Rank med relevans större än 0.  Den här parametern mappas till parametern `sp_sr` för serverdelen.  Se [CGI-parametrar för backend-sökning](../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
+| sortera | `sort=number` | Anger sorteringsordningen.<br>&quot;0&quot; är standardvärdet och sorterar efter relevanspoäng, &quot;1&quot; sortera efter datum. -1 sorterar inte.  Användarna kan ange ett fältnamn för värdet för parametern `sp_s`.  `sp_s=title` sorterar till exempel resultaten enligt de värden som finns i titelfältet. När ett fältnamn används som värde för en ` sp_s `-parameter sorteras resultaten efter det fältet och subsorteras sedan efter relevans.  Om du vill aktivera den här funktionen klickar du på [!UICONTROL Settings ] > [!UICONTROL Metadata ] > [!UICONTROL Definitions ]. På sidan Definitioner klickar du på [!UICONTROL Add New Field ] eller [!UICONTROL Edit ] för ett visst fältnamn. I listrutan [!UICONTROL Sorting ] väljer du antingen [!UICONTROL Ascending ] eller [!UICONTROL Descending ]. Den här parametern mappar till `sp_s`-parametern för backend-sökning. <br>Se CGI-parametrar för  [serverdelssökning].(../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8). |
 
-## CGI-parametrar för serversökning {#reference_582E85C3886740C98FE88CA9DF7918E8}
+## CGI-parametrar för backend-sökning {#reference_582E85C3886740C98FE88CA9DF7918E8}
 
 Normalt interagerar kunderna med ett presentationslager som kallas guidad sökning. Det är dock teoretiskt möjligt att hoppa över lagret Guidad sökning och interagera med backend-kärnsökningen direkt med CGI-parametrarna som beskrivs på den här sidan.
 
@@ -75,7 +75,7 @@ Du kan välja CGI-parametrar för serverdelssökning i följande tabell:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>1 </p> </td> 
+   <td colname="col1"> <p>3 </p> </td> 
    <td colname="col2"> <p>sp_a </p> </td> 
    <td colname="col03"> <p> </p> </td> 
    <td colname="col3"> <p> <code>sp_a= string </code> </p> </td> 
@@ -86,7 +86,7 @@ Du kan välja CGI-parametrar för serverdelssökning i följande tabell:
    <td colname="col2"> <p>sp_advanced </p> </td> 
    <td colname="col03"> <p> </p> </td> 
    <td colname="col3"> <p> <code>sp_advanced= 0 or 1 </code> </p> </td> 
-   <td colname="col4"> <p>Om <code>sp_advanced=1 </code> skickas med en fråga används all kod mellan <code>&lt;search-if-advanced&gt; </code> -taggen och - <code>&lt;/search-if-advanced&gt; </code> taggen i sökmallen för sökformuläret. All kod mellan <code>&lt;search-if-not-advanced&gt; </code> -taggen och <code>&lt;/search-if-not-advanced&gt; </code> -taggen ignoreras. Om <code>sp_advanced=0 </code> (eller något annat värde) skickas ignoreras mallblocket &lt;search-if-advanced&gt; och mallblocket &lt;search-if-not-advanced&gt; används. </p> </td> 
+   <td colname="col4"> <p>Om <code>sp_advanced=1 </code> skickas med en fråga används all kod mellan <code>&lt;search-if-advanced&gt; </code>-taggen och <code>&lt;/search-if-advanced&gt; </code>-taggen i sökmallen för sökformuläret. All kod mellan taggen <code>&lt;search-if-not-advanced&gt; </code> och taggen <code>&lt;/search-if-not-advanced&gt; </code> ignoreras. Om <code>sp_advanced=0 </code> (eller något annat värde) skickas ignoreras mallblocket &lt;search-if-advanced&gt; och mallblocket &lt;search-if-not-advanced&gt; används. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
@@ -100,21 +100,21 @@ Du kan välja CGI-parametrar för serverdelssökning i följande tabell:
    <td colname="col2"> <p>sp_context_field </p> </td> 
    <td colname="col03"> <p> </p> </td> 
    <td colname="col3"> <p> <code> sp_context_field= <i>field</i> </code> </p> </td> 
-   <td colname="col4"> <p>Samlar in sammanhangsberoende information för det angivna fältet. Den insamlade informationen genereras i sökresultaten via <code>&lt;search-context&gt; </code> malltaggen. Standardvärdet är <code>body </code>. </p> </td> 
+   <td colname="col4"> <p>Samlar in sammanhangsberoende information för det angivna fältet. Samlad information genereras i sökresultaten med hjälp av malltaggen <code>&lt;search-context&gt; </code>. Standardvärdet är <code>body </code>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>5 </p> </td> 
    <td colname="col2"> <p>sp_d </p> </td> 
    <td colname="col03"> <p> </p> </td> 
    <td colname="col3"> <p> <code>sp_d= type </code> </p> </td> 
-   <td colname="col4"> <p>Anger vilken typ av datumintervall som ska utföras. Möjliga värden för typen är any, vilket betyder att det inte utförs någon sökning efter datumintervall, anpassad, vilket anger att värdet för <code>sp_date_range </code> ska användas för att bestämma vilka datum som ska sökas och specifik, vilket anger att värdena i <code>sp_start_day </code>, <code>sp_start_month </code>, <code>sp_start_year </code>, <code>sp_end_day </code>, <code>sp_end_month </code>och <code>sp_end_year </code> används för att bestämma vilket datumintervall som ska sökas igenom. <code>sp_d </code> är bara nödvändigt om sökformuläret innehåller ett alternativ för att söka antingen efter ett anpassat intervall (som <code>sp_date_range </code>exempel) eller efter ett visst start- och slutdatumintervall. </p> </td> 
+   <td colname="col4"> <p>Anger vilken typ av datumintervall som ska utföras. Möjliga värden för typen är any, vilket innebär att sökning i datumintervall inte utförs, custom, vilket anger att värdet <code>sp_date_range </code> ska användas för att bestämma vilka datum som ska sökas, och specific, vilket anger att värdena i <code>sp_start_day </code>, <code>sp_start_month </code>, <code>sp_start_year </code>, <code>sp_end_day </code>, <code>sp_end_month </code> och <code>sp_end_year </code> används för att avgöra vilket datumintervall som ska sökas. <code>sp_d </code> är bara nödvändigt om sökformuläret innehåller ett alternativ för att söka antingen efter ett anpassat intervall (som  <code>sp_date_range </code>exempel) eller efter ett visst start- och slutdatumintervall. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>6 </p> </td> 
    <td colname="col2"> <p> </p> </td> 
    <td colname="col03"> <p> sp_d_# </p> </td> 
    <td colname="col3"> <p> <code>sp_d_#= type </code> </p> </td> 
-   <td colname="col4"> <p>Anger den typ av datumintervallsökning som ska utföras för motsvarande <code>sp_q_# </code> fråga. "#" ersätts med en siffra mellan 1 och 16 (gäller t.ex. <code>sp_d_8 </code>för den numrerade frågan <code>sp_q_8 </code>). </p> <p>Du kan ange <code>type </code> till any, vilket betyder att ingen sökning i datumintervall utförs, anpassad, vilket anger att värdet för <code>sp_date_range_# </code> används för att bestämma vilka datum som ska sökas och specifik, vilket anger att värdena i <code>sp_q_min_day_# </code>, <code>sp_q_min_month_# </code>, <code>sp_q_min_year_# </code>, <code>sp_q_max_day_# </code>, <code>sp_q_max_month_# </code>och <code>sp_q_max_year_# </code> ska användas för att bestämma datumintervallet. Du behöver bara använda <code>sp_d_# </code> det här alternativet om sökformuläret innehåller ett alternativ för att söka antingen efter ett anpassat intervall (som <code>sp_date_range_# </code>exempel) eller efter ett visst start- och slutdatumintervall. </p> </td> 
+   <td colname="col4"> <p>Anger vilken typ av datumintervall som ska användas för motsvarande <code>sp_q_# </code>-fråga. "#" ersätts med ett tal mellan 1 och 16 (t.ex. <code>sp_d_8 </code> gäller för den numrerade frågan <code>sp_q_8 </code>). </p> <p>Du kan ställa in <code>type </code> på any, vilket betyder att sökning i datumintervall inte utförs, anpassad, vilket anger att värdet <code>sp_date_range_# </code> används för att bestämma vilka datum som ska sökas och specifik, vilket innebär att värdena i <code>sp_q_min_day_# </code>, <code>sp_q_min_month_# </code>, <code>sp_q_min_year_# </code>, <code>sp_q_max_day_# </code>, <code>sp_q_max_month_# </code> och <code>sp_q_max_year_# </code> ska användas för att bestämma datumintervallet. Du behöver bara använda <code>sp_d_# </code> om sökformuläret innehåller ett alternativ för att söka antingen efter ett anpassat intervall (med <code>sp_date_range_# </code>) eller efter ett visst start- och slutdatumintervall. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>7 </p> </td> 
@@ -128,28 +128,28 @@ Du kan välja CGI-parametrar för serverdelssökning i följande tabell:
    <td colname="col2"> <p> </p> </td> 
    <td colname="col03"> <p>sp_date_range_# </p> </td> 
    <td colname="col3"> <p> <code> sp_date_range_#= <i>number</i> </code> </p> </td> 
-   <td colname="col4"> <p>Anger ett fördefinierat datumintervall som ska användas för motsvarande <code>sp_q_# </code> fråga. "#" ersätts med en siffra mellan 1 och 16 (gäller t.ex. <code>sp_date_range_8 </code>för den numrerade frågan <code>sp_q_8 </code>). </p> <p>Värden större än eller lika med noll anger antalet dagar som ska sökas före idag. Värdet 0 anger till exempel idag; Värdet 1 anger idag och igår. ett värde på 30 anger inom de senaste 30 dagarna o.s.v. </p> <p>Värden under noll anger ett anpassat intervall enligt följande: </p> <p>-1 = "Ingen", samma som att ange inget datumintervall. </p> <p>-2 = "Den här veckan", som söker från söndag till lördag den aktuella veckan. </p> <p>-3 = "Sista veckan", som söker från söndag till lördag i veckan före den aktuella veckan. </p> <p>-4 = "Den här månaden", som söker efter datum inom den aktuella månaden. </p> <p>-5 = "Sista månaden", som söker efter datum i månaden före den aktuella månaden. </p> <p>-6 = "Det här året", som söker efter datum under det aktuella året. </p> <p>-7 = "Sista året", som söker efter datum under året före det aktuella året. </p> </td> 
+   <td colname="col4"> <p>Anger ett fördefinierat datumintervall som ska användas för motsvarande <code>sp_q_# </code>-fråga. "#" ersätts med ett tal mellan 1 och 16 (t.ex. <code>sp_date_range_8 </code> gäller för den numrerade frågan <code>sp_q_8 </code>). </p> <p>Värden större än eller lika med noll anger antalet dagar som ska sökas före idag. Värdet 0 anger till exempel idag; Värdet 1 anger idag och igår. ett värde på 30 anger inom de senaste 30 dagarna o.s.v. </p> <p>Värden under noll anger ett anpassat intervall enligt följande: </p> <p>-1 = "Ingen", samma som att ange inget datumintervall. </p> <p>-2 = "Den här veckan", som söker från söndag till lördag den aktuella veckan. </p> <p>-3 = "Sista veckan", som söker från söndag till lördag i veckan före den aktuella veckan. </p> <p>-4 = "Den här månaden", som söker efter datum inom den aktuella månaden. </p> <p>-5 = "Sista månaden", som söker efter datum i månaden före den aktuella månaden. </p> <p>-6 = "Det här året", som söker efter datum under det aktuella året. </p> <p>-7 = "Sista året", som söker efter datum under året före det aktuella året. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>9 </p> </td> 
    <td colname="col2"> <p>sp_dedupe_field </p> </td> 
    <td colname="col03"> <p> </p> </td> 
    <td colname="col3"> <p> <code> sp_dedupe_field= <i>fieldname</i> </code> </p> </td> 
-   <td colname="col4"> <p>Anger ett enskilt fält som sökresultaten ska tas bort från. Alla dubblettresultat i det fältet tas bort från sökresultatet. Om till exempel <code>sp_dedupe_field=title </code>bara det översta resultatet för en viss titel visas i sökresultatet (inga två resultat har identiskt innehåll i titelfältet). För flervärdestypfält (tillåtelselista) används hela fältinnehållet för jämförelse. Endast ett fält kan anges. Det är inte tillåtet att ange "table-qualifier" i fältnamnet. </p> </td> 
+   <td colname="col4"> <p>Anger ett enskilt fält som sökresultaten ska tas bort från. Alla dubblettresultat i det fältet tas bort från sökresultatet. Om du till exempel anger <code>sp_dedupe_field=title </code> visas bara det översta resultatet för en viss titel i sökresultatet (inga två resultat har identiskt innehåll i titelfältet). För flervärdestypfält (tillåtelselista) används hela fältinnehållet för jämförelse. Endast ett fält kan anges. Det är inte tillåtet att ange "table-qualifier" i fältnamnet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>10 </p> </td> 
    <td colname="col2"> <p>sp_e </p> </td> 
    <td colname="col03"> <p> </p> </td> 
    <td colname="col3"> <p> <code>sp_e= number </code> </p> </td> 
-   <td colname="col4"> <p>Anger att automatisk utökning av jokertecken ska ske för alla ord från frågesträngen med fler än siffror. Med andra ord <code>sp_e=5 </code> anger att ord med 5 eller fler tecken, som "query" eller "number", ska expanderas med jokertecknet "*", vilket gör sökningen ekvivalent med en sökning efter "query*" eller "number*". Ord med färre tecken utökas inte, så om du söker efter ordet utökas inte jokertecknet automatiskt. </p> </td> 
+   <td colname="col4"> <p>Anger att automatisk utökning av jokertecken ska ske för alla ord från frågesträngen med fler än siffror. Med andra ord anger <code>sp_e=5 </code> att ord med fem eller fler tecken, som "query" eller "number", ska expanderas med jokertecknet "*", vilket gör sökningen ekvivalent med en sökning efter "query*" eller "number*". Ord med färre tecken utökas inte, så om du söker efter ordet utökas inte jokertecknet automatiskt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>11 </p> </td> 
    <td colname="col2"> <p> </p> </td> 
    <td colname="col03"> <p> sp_e_# </p> </td> 
    <td colname="col3"> <p> <code>sp_e_#= number </code> </p> </td> 
-   <td colname="col4"> <p>Anger att automatisk utökning av jokertecken sker för alla ord från motsvarande <code>sp_q_# </code> frågesträng med fler än siffror. Med andra ord <code>sp_e_2=5 </code> anger att ord med fem eller fler tecken i <code>sp_q_2 </code> frågesträngen, som "query" eller "number", ska expanderas med jokertecknet " <code>* </code>", vilket gör sökningen ekvivalent med en sökning efter "query*" eller "number*". Ord med färre tecken utökas inte, så vid sökning efter ordet i <code>sp_q_2 </code> utökas inte jokertecknet automatiskt. </p> </td> 
+   <td colname="col4"> <p>Anger att automatisk utökning av jokertecken sker för alla ord från den motsvarande <code>sp_q_# </code>-frågesträngen med fler än siffror. Med andra ord anger <code>sp_e_2=5 </code> att ord med fem eller fler tecken i <code>sp_q_2 </code>-frågesträngen, som "query" eller "number", ska expanderas med jokertecknet " <code>* </code>", vilket gör sökningen ekvivalent med en sökning efter "query*" eller "number*". Ord med färre tecken utökas inte, så om du söker efter ordet i <code>sp_q_2 </code> utökas inte jokertecknet automatiskt. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>12 </p> </td> 
@@ -170,7 +170,7 @@ Du kan välja CGI-parametrar för serverdelssökning i följande tabell:
    <td colname="col2"> <p>sp_field_table </p> </td> 
    <td colname="col03"> <p> </p> </td> 
    <td colname="col3"> <p> <code> sp_field_ table=table: field,field... </code> </p> </td> 
-   <td colname="col4"> <p>Definierar en logisk datatabell som består av de angivna fälten. En tabell med namnet "items" som består av fälten "color", "size" och "price" skulle definieras så här: </p> <p> <code>sp_field_table=items:color,size,price </code> </p> <p>Logiska tabeller är mest användbara i samband med fält som har "Tillåtelselista" markerat (under <span class="uicontrol"> Inställningar </span> &gt; <span class="uicontrol"> Metadata </span> &gt; <span class="uicontrol"> Definitioner </span>). Alla CGI-parametrar och malltaggar som får ett fältnamn som ett värde kan eventuellt ange ett tabellnamn följt av ett "." före fältnamnet (till exempel <code>sp_x_1=tablename.fieldname </code>). </p> <p>Om du till exempel vill söka efter dokument som innehåller ett eller flera "röda" objekt i storleken "large" (där objekten representeras som parallella rader med metadata), kan du använda följande: </p> <p> <code> sp_q_exact_1=red&amp;sp_x_1=items.color&amp; sp_q_exact_2=large&amp;sp_x_2=items.size&amp;sp_field_table=items:color,size,price </code> </p> </td> 
+   <td colname="col4"> <p>Definierar en logisk datatabell som består av de angivna fälten. En tabell med namnet "items" som består av fälten "color", "size" och "price" skulle definieras så här: </p> <p> <code>sp_field_table=items:color,size,price </code> </p> <p>Logiska tabeller är mest användbara i samband med fält där Tillåtelselista har markerats (under <span class="uicontrol"> Inställningar </span> &gt; <span class="uicontrol"> Metadata </span> &gt; <span class="uicontrol"> Definitioner </span>). Alla CGI-parametrar och malltaggar som får ett fältnamn som ett värde kan eventuellt ange ett tabellnamn följt av ett "." före fältnamnet (till exempel <code>sp_x_1=tablename.fieldname </code>). </p> <p>Om du till exempel vill söka efter dokument som innehåller ett eller flera "röda" objekt i storleken "large" (där objekten representeras som parallella rader med metadata), kan du använda följande: </p> <p> <code> sp_q_exact_1=red&amp;sp_x_1=items.color&amp; sp_q_exact_2=large&amp;sp_x_2=items.size&amp;sp_field_table=items:color,size,price </code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>15 </p> </td> 
@@ -213,7 +213,7 @@ Du bör vanligtvis använda standardparametrar när du startar en sökning. På 
 
 ## Ett detaljerat exempel på hur CGI-parametrar för backend-sökning används {#section_5FA3C620D5124FB2AB28857F8D8473F6}
 
-Följande formulärfrågor visar `25` resultat med början på resultatet `10`. Sammanfattningar visas inte, sorteringsordningen är efter datum och samlingen med namnet `support` används. Endast dokument som är daterade de senaste 30 dagarna returneras.
+Följande formulärfrågor visar `25`-resultat med början vid `10`. Sammanfattningar visas inte, sorteringsordningen är efter datum och samlingen `support` används. Endast dokument som är daterade de senaste 30 dagarna returneras.
 
 ```
 <form action="https://search.atomz.com/search/"> 
