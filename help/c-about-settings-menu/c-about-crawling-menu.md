@@ -52,37 +52,45 @@ Du kvalificerar varje startpunkt med ett eller flera av följande blankstegsavgr
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> Om du inte vill indexera texten på startpunktssidan, men vill följa sidans länkar, lägger du till <code>
+   <td colname="col2"> <p> Om du inte vill indexera texten på startpunktssidan, men vill följa sidans länkar, lägger du till 
+     <code>
        noindex 
-     </code> efter startpunkten. </p> <p>Avgränsa nyckelordet från startpunkten med ett blanksteg som i följande exempel: </p> <p> <code> https://www.my-additional-domain.com/more_pages/main.html&amp;nbsp;noindex </code> </p> <p>Det här nyckelordet motsvarar en meta-tagg för robotar med <code>
+     </code> efter startpunkten. </p> <p>Avgränsa nyckelordet från startpunkten med ett blanksteg som i följande exempel: </p> <p> <code> https://www.my-additional-domain.com/more_pages/main.html&amp;nbsp;noindex </code> </p> <p>Det här nyckelordet motsvarar en meta-tagg för robotar med 
+     <code>
        content="noindex" 
-     </code>) mellan <code>
+     </code>) mellan 
+     <code>
        &lt;head&gt; 
-     </code>... 
+     </code>.. 
      <code>
        &lt;/head&gt; 
-     </code> -taggar för startpunktssidan. </p> </td> 
+     </code>-taggar för startpunktssidan. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofollow </p> </td> 
-   <td colname="col2"> <p> Om du vill indexera texten på startpunktssidan men inte vill följa någon av sidans länkar, lägger du till <code>
+   <td colname="col2"> <p> Om du vill indexera texten på startpunktssidan men inte vill följa någon av sidans länkar, lägger du till 
+     <code>
        nofollow 
-     </code> efter startpunkten. </p> <p>Avgränsa nyckelordet från startpunkten med ett blanksteg som i följande exempel: </p> <p> <code> https://www.domain.com/not_linked/directory_listing&amp;nbsp;nofollow </code> </p> <p>Det här nyckelordet motsvarar en meta-tagg för robotar <code>
+     </code> efter startpunkten. </p> <p>Avgränsa nyckelordet från startpunkten med ett blanksteg som i följande exempel: </p> <p> <code> https://www.domain.com/not_linked/directory_listing&amp;nbsp;nofollow </code> </p> <p>Det här nyckelordet motsvarar en meta-tagg för robotar med 
+     <code>
        content="nofollow" 
-     </code> mellan <code>
+     </code> mellan 
+     <code>
        &lt;head&gt; 
-     </code>... 
+     </code>.. 
      <code>
        &lt;/head&gt; 
-     </code> -taggen för en startpunktssida. </p> </td> 
+     </code>-tagg för en startpunktssida. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>formulär </p> </td> 
-   <td colname="col2"> <p> När startpunkten är en inloggningssida, används det oftast så att sökroboten kan skicka inloggningsformuläret och få lämpliga cookies innan webbplatsen crawlas. <code>
+   <td colname="col2"> <p> När startpunkten är en inloggningssida 
+     <code>
        form 
-     </code> När nyckelordet "form" används indexeras inte startpunktssidan och sökroboten markerar inte startpunktssidan som crawlad. Använd <code>
+     </code> används vanligtvis så att sökroboten kan skicka inloggningsformuläret och ta emot lämpliga cookies innan webbplatsen crawlas. När nyckelordet "form" används indexeras inte startpunktssidan och sökroboten markerar inte startpunktssidan som crawlad. Använd 
+     <code>
        nofollow 
-     </code> det här alternativet om du inte vill att sökroboten ska följa sidans länkar. </p> </td> 
+     </code> om du inte vill att sökroboten ska följa sidans länkar. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -101,9 +109,9 @@ Se [Konfigurera dina kontoinställningar](../c-about-settings-menu/c-about-accou
 
 **Lägga till flera URL-startpunkter som du vill indexera**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**.
-1. På [!DNL URL Entrypoints] sidan anger du en URL-adress per rad i [!DNL Entrypoints] fältet.
-1. (Valfritt) I **[!UICONTROL Add Index Connector Configurations]** listrutan väljer du en indexkoppling som du vill lägga till som startpunkt för indexering.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]** på produktmenyn.
+1. På sidan [!DNL URL Entrypoints] anger du en URL-adress per rad i fältet [!DNL Entrypoints].
+1. (Valfritt) I listrutan **[!UICONTROL Add Index Connector Configurations]** väljer du en indexkoppling som du vill lägga till som en startpunkt för indexering.
 
    Listrutan är bara tillgänglig om du tidigare har lagt till en eller flera definitioner för indexkoppling.
 
@@ -113,9 +121,9 @@ Se [Konfigurera dina kontoinställningar](../c-about-settings-menu/c-about-accou
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -151,7 +159,7 @@ Varje URL-mask som du anger måste finnas på en separat rad.
 Masken kan ange något av följande:
 
 * En fullständig sökväg som i `https://www.mydomain.com/products.html`.
-* En delvis sökväg som i `https://www.mydomain.com/products`.
+* En partiell sökväg som i `https://www.mydomain.com/products`.
 * En URL som använder jokertecken som i `https://www.mydomain.com/*.html`.
 * Ett reguljärt uttryck (för avancerade användare).
 
@@ -163,7 +171,7 @@ Följande är ett enkelt exempel på en exkluderad URL-mask:
 exclude https://www.mydomain.com/photos
 ```
 
-Eftersom det här exemplet är en exkluderande URL-mask, indexeras inte dokument som matchar mönstret. Mönstret matchar alla objekt som påträffas, både filer och mappar, så att `https://www.mydomain.com/photos.html` och `https://www.mydomain.com/photos/index.html`, som båda matchar den uteslutna URL:en, inte indexeras. Om du bara vill matcha filer i `/photos/` mappen måste URL-masken innehålla ett avslutande snedstreck, som i följande exempel:
+Eftersom det här exemplet är en exkluderande URL-mask, indexeras inte dokument som matchar mönstret. Mönstret matchar alla påträffade objekt, både filer och mappar, så att `https://www.mydomain.com/photos.html` och `https://www.mydomain.com/photos/index.html`, som båda matchar den utelämnade URL:en, inte indexeras. Om du bara vill matcha filer i mappen `/photos/` måste URL-masken innehålla ett avslutande snedstreck, som i följande exempel:
 
 ```
 exclude https://www.mydomain.com/photos/
@@ -191,15 +199,15 @@ Inkludera masker och exkludera masker kan fungera tillsammans. Du kan utesluta e
 https://www.mydomain.com/photos/
 ```
 
-Sökroboten crawlar och indexerar alla sidor under `/photos/summer/`, `/photos/spring/` och `/photos/fall/` (förutsatt att det finns länkar till minst en sida i varje katalog från `photos` mappen). Detta beteende beror på att länksökvägarna gör det möjligt för sökroboten att hitta dokumenten i mapparna `/summer/`, `/spring/`och `/fall/`mapparna och mappens URL:er matchar den inkluderingsmask som genereras automatiskt av entrypoint-URL:en.
+Sökroboten crawlar och indexerar alla sidor under `/photos/summer/`, `/photos/spring/` och `/photos/fall/` (förutsatt att det finns länkar till minst en sida i varje katalog från mappen `photos`). Detta beteende beror på att länksökvägarna gör det möjligt för sökroboten att hitta dokumenten i mapparna `/summer/`, `/spring/` och `/fall/`, och mappens URL:er matchar den inkluderingsmask som skapas automatiskt av startpunktens URL.
 
-Du kan välja att exkludera alla sidor i `/fall/` mappen med en exklusiv URL-mask som i följande exempel:
+Du kan välja att exkludera alla sidor i mappen `/fall/` med en exklusiv URL-mask som i följande exempel:
 
 ```
 exclude https://www.mydomain.com/photos/fall/
 ```
 
-Eller ta endast med `/photos/fall/redleaves4.html` som en del av indexet med följande URL-mask:
+Eller ta med endast `/photos/fall/redleaves4.html` som en del av indexet med följande URL-mask:
 
 ```
 include https://www.mydomain.com/photos/fall/redleaves4.html
@@ -212,7 +220,7 @@ include https://www.mydomain.com/photos/fall/redleaves4.html
 exclude https://www.mydomain.com/photos/fall/
 ```
 
-Eftersom sökroboten följer anvisningarna i den ordning som de listas, inkluderas först sökroboten `/photos/fall/redleaves4.html`och sedan exkluderas resten av filerna i `/fall` mappen.
+Eftersom sökroboten följer instruktionerna i den ordning de listas, innehåller sökroboten först `/photos/fall/redleaves4.html` och utesluter sedan resten av filerna i mappen `/fall`.
 
 Om instruktionerna anges på motsatt sätt som i följande:
 
@@ -221,7 +229,7 @@ exclude https://www.mydomain.com/photos/fall/
 include https://www.mydomain.com/photos/fall/redleaves4.html
 ```
 
-Då `/photos/fall/redleaves4.html` tas inte med, även om masken anger att den ingår.
+Sedan tas inte `/photos/fall/redleaves4.html` med, även om masken anger att den ingår.
 
 En URL-mask som visas först har alltid företräde framför en URL-mask som visas senare i maskinställningarna. Om sökroboten hittar en sida som matchar en inkluderingswebbmask och en exkluderande URL-mask, har den mask som visas först alltid företräde.
 
@@ -243,49 +251,61 @@ Ett komma är inte giltigt som avgränsare mellan masken och nyckelordet. Du kan
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> Om du inte vill indexera texten på sidorna som matchar URL-masken, men vill följa de matchade sidlänkarna, lägger du till <code>
+   <td colname="col2"> <p> Om du inte vill indexera texten på sidorna som matchar URL-masken, men vill följa de matchade sidlänkarna, lägger du till 
+     <code>
        noindex 
-     </code> efter inkluderingswebbmasken. Se till att du skiljer nyckelordet från masken med ett blanksteg som i följande exempel: </p> <p> <code> include&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>Exemplet ovan anger att sökroboten följer alla länkar från filer med <code>
+     </code> efter inkluderingswebbmasken. Se till att du skiljer nyckelordet från masken med ett blanksteg som i följande exempel: </p> <p> <code> include&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>Exemplet ovan anger att sökroboten följer alla länkar från filer med 
+     <code>
        .swf 
-     </code> filtillägget, men inaktiverar indexering av all text i dessa filer. </p> <p>Nyckelordet motsvarar en meta-tagg för robot <code>
+     </code>-tillägg, men inaktiverar indexering av all text i dessa filer. </p> <p>The 
+     <code>
        noindex 
-     </code> mellan <code>
+     </code>-nyckelordet motsvarar en robotmeta-tagg med 
+     <code>
        content="noindex" 
-     </code> <code>
+     </code> mellan 
+     <code>
        &lt;head&gt;...&lt;/head&gt; 
-     </code> taggarna för matchade sidor. </p> </td> 
+     </code>-taggar för matchade sidor. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofollow </p> </td> 
-   <td colname="col2"> <p> Om du vill indexera texten på sidorna som matchar URL-masken, men inte vill följa den matchade sidans länkar, lägger du till <code>
+   <td colname="col2"> <p> Om du vill indexera texten på sidorna som matchar URL-masken, men inte vill följa länkarna för den matchade sidan, lägger du till 
+     <code>
        nofollow 
-     </code> efter inkluderingswebbmasken. Se till att du skiljer nyckelordet från masken med ett blanksteg som i följande exempel: </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>Nyckelordet motsvarar en meta-tagg för robot <code>
+     </code> efter inkluderingswebbmasken. Se till att du skiljer nyckelordet från masken med ett blanksteg som i följande exempel: </p> <p> <code> include&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>The 
+     <code>
        nofollow 
-     </code> mellan <code>
+     </code>-nyckelordet motsvarar en robotmeta-tagg med 
+     <code>
        content="nofollow" 
-     </code> <code>
+     </code> mellan 
+     <code>
        &lt;head&gt;...&lt;/head&gt; 
-     </code> taggarna för matchade sidor. </p> </td> 
+     </code>-taggar för matchade sidor. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>regexp </p> </td> 
-   <td colname="col2"> <p>Används för både att inkludera och exkludera masker. </p> <p>Alla URL-masker som föregås av <code>
+   <td colname="col2"> <p>Används för både att inkludera och exkludera masker. </p> <p>En URL-mask föregås av 
+     <code>
        regexp 
      </code> behandlas som ett reguljärt uttryck. Om sökroboten stöter på dokument som matchar en URL-mask för ett exkluderat uttryck, indexeras inte dessa dokument. Om sökroboten påträffar dokument som matchar en URL-mask för ett reguljärt uttryck, indexeras dessa dokument. Anta att du har följande URL-mask: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*/products/.*\.html$ </code> </p> <p>Sökroboten exkluderar matchande filer som 
      <code>
        https://www.mydomain.com/products/page1.html 
-     </code> </p> <p>Om du hade följande URL-mask för reguljära uttryck: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*\?..*$ </code> </p> <p>Sökroboten innehåller ingen URL som innehåller en CGI-parameter som <code>
+     </code> </p> <p>Om du hade följande URL-mask för reguljära uttryck: </p> <p> <code> exclude&amp;nbsp;regexp&amp;nbsp;^.*\?..*$ </code> </p> <p>Sökroboten innehåller ingen URL som innehåller en CGI-parameter som 
+     <code>
        https://www.mydomain.com/cgi/prog/?arg1=val1&amp;arg2=val2 
-     </code>. </p> <p>Om du hade följande URL-mask för reguljära uttryck: </p> <p> <code> include&amp;nbsp;regexp&amp;nbsp;^.*\.swf$&amp;nbsp;noindex </code> </p> <p>Sökroboten följer alla länkar från filer med tillägget".swf". Nyckelordet <code>
+     </code>. </p> <p>Om du hade följande URL-mask för reguljära uttryck: </p> <p> <code> include&amp;nbsp;regexp&amp;nbsp;^.*\.swf$&amp;nbsp;noindex </code> </p> <p>Sökroboten följer alla länkar från filer med tillägget".swf". The 
+     <code>
        noindex 
-     </code> anger också att texten i matchade filer inte indexeras. </p> <p>Se <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck </a>. </p> </td> 
+     </code>-nyckelordet anger också att texten i matchade filer inte indexeras. </p> <p>Se <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Lägga till URL-masker till index eller inte indexera delar av webbplatsen {#task_E1AFC17C746048B8843013D979E082C1}
 
-Du kan använda för [!DNL URL Masks] att definiera vilka delar av webbplatsen som du vill eller inte vill ska crawlas och indexeras.
+Du kan använda [!DNL URL Masks] för att definiera vilka delar av webbplatsen som du vill eller inte vill ska crawlas och indexeras.
 
 Använd fältet Testa URL-masker för att testa om ett dokument finns med eller inte efter indexeringen.
 
@@ -295,9 +315,9 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
 
 **Lägga till URL-masker i index eller inte indexera delar av webbplatsen**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Masks]**.
-1. (Valfritt) På [!DNL URL Masks] sidan anger du en test-URL-mask från webbplatsen i **[!UICONTROL Test URL Masks]** fältet och klickar sedan på **[!UICONTROL Test]**.
-1. I [!DNL URL Masks] fältet skriver du `include` (för att lägga till en webbplats som du vill crawla och indexera) eller skriver `exclude` (för att blockera en webbplats från att crawlas och indexeras), följt av URL-maskadressen.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Masks]** på produktmenyn.
+1. (Valfritt) På sidan [!DNL URL Masks] anger du en test-URL-mask från webbplatsen i fältet **[!UICONTROL Test URL Masks]** och klickar sedan på **[!UICONTROL Test]**.
+1. I fältet [!DNL URL Masks] skriver du `include` (för att lägga till en webbplats som du vill crawla och indexera) eller `exclude` (för att blockera en webbplats från att crawlas och indexeras), följt av URL-maskadressen.
 
    Ange en URL-maskadress per rad. Exempel:
 
@@ -311,9 +331,9 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -346,8 +366,8 @@ Varje datummask som du anger måste finnas på en separat rad.
 
 Masken kan ange något av följande:
 
-* En fullständig sökväg som `https://www.mydomain.com/products.html`
-* En del av en bana som i `https://www.mydomain.com/products`
+* En fullständig sökväg som i `https://www.mydomain.com/products.html`
+* En partiell sökväg som i `https://www.mydomain.com/products`
 * En URL som använder jokertecken `https://www.mydomain.com/*.html`
 * Ett reguljärt uttryck. Om du vill göra en mask till ett reguljärt uttryck infogar du nyckelordet `regexp` före URL:en.
 
@@ -375,7 +395,7 @@ Följande är ett enkelt exempel på en uteslutningsdatummask:
 exclude-days 90 https://www.mydomain.com/docs/archive
 ```
 
-Eftersom det här är en mask för uteslutningsdatum indexeras inte filer som matchar mönstret och är 90 dagar eller äldre. När du utelämnar ett dokument indexeras ingen text och inga länkar följer från filen. Filen ignoreras. I det här exemplet kan både filer och mappar matcha det angivna URL-mönstret. Observera att både `https://www.mydomain.com/docs/archive.html` och `https://www.mydomain.com/docs/archive/index.html` matchar mönstret och inte indexeras om de är 90 dagar gamla eller äldre. Om du bara vill matcha filer i `/docs/archive/` mappen måste datummasken innehålla ett avslutande snedstreck enligt följande:
+Eftersom det här är en mask för uteslutningsdatum indexeras inte filer som matchar mönstret och är 90 dagar eller äldre. När du utelämnar ett dokument indexeras ingen text och inga länkar följer från filen. Filen ignoreras. I det här exemplet kan både filer och mappar matcha det angivna URL-mönstret. Observera att både `https://www.mydomain.com/docs/archive.html` och `https://www.mydomain.com/docs/archive/index.html` matchar mönstret och inte indexeras om de är 90 dagar eller äldre. Om du bara vill matcha filer i mappen `/docs/archive/` måste datummasken innehålla ett avslutande snedstreck enligt följande:
 
 ```
 exclude-days 90 https://www.mydomain.com/docs/archive/
@@ -387,7 +407,7 @@ Datummasker kan också användas med jokertecken. Följande exkluderingsmask ang
 exclude-date 2011-02-15 *.pdf
 ```
 
-Inkludera en datummask ser likadan ut, bara matchade filer läggs till i indexet. Följande exempel på en datummask anger för sökroboten att indexera texten från filer som är noll dagar gamla eller äldre i webbplatsens `/docs/archive/manual/` område.
+Inkludera en datummask ser likadan ut, bara matchade filer läggs till i indexet. Följande exempel på en datummask anger för sökroboten att indexera texten från filer som är noll dagar gamla eller äldre i `/docs/archive/manual/`-området på webbplatsen.
 
 ```
 include-days 0 https://www.mydomain.com/docs/archive/manual/
@@ -399,19 +419,19 @@ Inkludera masker och exkludera masker kan fungera tillsammans. Du kan t.ex. utes
 https://www.mydomain.com/archive/
 ```
 
-Sökroboten crawlar och indexerar alla sidor under `/archive/summer/`, `/archive/spring/`och `/archive/fall/` (förutsatt att det finns länkar till minst en sida i varje mapp från `archive` mappen). Detta beteende beror på att länksökvägarna gör det möjligt för sökroboten att &quot;söka efter&quot; filer i `/summer/`-, `/spring/`- och `/fall/` -mapparna och att mappens URL:er matchar den inkluderingsmask som genereras automatiskt av entrypoint-URL:en.
+Sökroboten crawlar och indexerar alla sidor under `/archive/summer/`, `/archive/spring/` och `/archive/fall/` (förutsatt att det finns länkar till minst en sida i varje mapp från mappen `archive`). Detta beteende beror på att länksökvägarna gör att sökroboten kan &quot;söka efter&quot; filer i mapparna `/summer/`, `/spring/` och `/fall/` och mappens URL:er matchar den inkluderingsmask som skapas automatiskt av startpunktens URL.
 
 Se [Om URL-adresser](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
 Se [Konfigurera dina kontoinställningar](../c-about-settings-menu/c-about-account-options-menu.md#task_80A38D0C8E4F453395BD67B81E4B45D9).
 
-Du kan välja att exkludera alla sidor som är äldre än 90 dagar i `/fall/` mappen med en exkluderingsdatummask enligt följande:
+Du kan välja att exkludera alla sidor som är äldre än 90 dagar i mappen `/fall/` med en exkluderingsdatummask enligt följande:
 
 ```
 exclude-days 90 https://www.mydomain.com/archive/fall/
 ```
 
-Du kan endast inkludera `/archive/fall/index.html` (oavsett hur gammal den är - alla filer från 0 dagar eller äldre matchas) som en del av indexet med följande datummask:
+Du kan välja att endast inkludera `/archive/fall/index.html` (oavsett hur gammal den är - alla filer från 0 dagar eller äldre matchas) som en del av indexet med följande datummask:
 
 ```
 include-days 0 https://www.mydomain.com/archive/fall/index.html
@@ -424,7 +444,7 @@ include-days 0 https://www.mydomain.com/archive/fall/index.html
 exclude-days 90 https://www.mydomain.com/archive/fall/
 ```
 
-Eftersom sökroboten följer instruktionerna i den ordning som de anges, inkluderas först de övriga filerna i `/archive/fall/index.html`mappen `/fall` i sökroboten.
+Eftersom sökroboten följer instruktionerna i den ordning som de anges, innehåller sökroboten först `/archive/fall/index.html` och utesluter sedan resten av filerna i mappen `/fall`.
 
 Om instruktionerna anges på motsatt sätt som i följande:
 
@@ -453,44 +473,54 @@ Ett komma är inte giltigt som avgränsare mellan masken och nyckelordet. Du kan
  <tbody> 
   <tr> 
    <td colname="col1"> <p>noindex </p> </td> 
-   <td colname="col2"> <p> Om du inte vill indexera texten på sidorna som är daterade på eller före det datum som anges av inkluderingsmasken lägger du till <code>
+   <td colname="col2"> <p> Om du inte vill indexera texten på sidorna som är daterade på eller före det datum som anges av inkluderingsmasken lägger du till 
+     <code>
        noindex 
      </code> efter inkluderingsdatummasken enligt följande: </p> <p> <code> include-days&amp;nbsp;10&amp;nbsp;*.swf&amp;nbsp;noindex </code> </p> <p>Se till att du skiljer nyckelordet från masken med ett mellanslag. </p> <p>Exemplet ovan anger att sökroboten följer alla länkar från filer med tillägget".swf" som är 10 dagar eller äldre. Den inaktiverar emellertid indexering av all text i dessa filer. </p> <p>Du kan kontrollera att texten för äldre filer inte är indexerad, men ändå följa alla länkar från dessa filer. I sådana fall ska du använda en inkluderingsdatummask med nyckelordet "noindex" i stället för en exkluderingsdatummask. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nofollow </p> </td> 
-   <td colname="col2"> <p> Om du vill indexera texten på sidorna som är daterade på eller före det datum som anges av inkluderingsmasken, men inte vill följa den matchade sidans länkar, lägger du till <code>
+   <td colname="col2"> <p> Om du vill indexera texten på sidorna som är daterade på eller före det datum som anges av inkluderingsmasken, men inte vill följa den matchade sidans länkar, lägger du till 
+     <code>
        nofollow 
-     </code> efter inkluderingsdatummasken enligt följande: </p> <p> <code> include-days&amp;nbsp;8&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>Se till att du skiljer nyckelordet från masken med ett mellanslag. </p> <p>Nyckelordet motsvarar en meta-tagg för robot <code>
+     </code> efter inkluderingsdatummasken enligt följande: </p> <p> <code> include-days&amp;nbsp;8&amp;nbsp;https://www.mydomain.com/photos&amp;nbsp;nofollow </code> </p> <p>Se till att du skiljer nyckelordet från masken med ett mellanslag. </p> <p>The 
+     <code>
        nofollow 
-     </code> mellan <code>
+     </code>-nyckelordet motsvarar en robotmeta-tagg med 
+     <code>
        content="nofollow" 
-     </code> <code>
+     </code> mellan 
+     <code>
        &lt;head&gt;...&lt;/head&gt; 
-     </code> taggen med matchade sidor. </p> </td> 
+     </code>-tagg för matchade sidor. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>serverdatum </p> </td> 
-   <td colname="col2"> <p>Används för både att inkludera och exkludera masker. </p> <p>Sökroboten hämtar och tolkar vanligtvis alla filer innan datummaskerna kontrolleras. Detta beteende beror på att vissa filtyper kan ange ett datum inuti själva filen. Ett HTML-dokument kan till exempel innehålla metataggar som anger datumet för filen. </p> <p>Om du ska utesluta många filer baserat på deras datum och du inte vill göra en onödig belastning på servrarna, kan du använda <code>
+   <td colname="col2"> <p>Används för både att inkludera och exkludera masker. </p> <p>Sökroboten hämtar och tolkar vanligtvis alla filer innan datummaskerna kontrolleras. Detta beteende beror på att vissa filtyper kan ange ett datum inuti själva filen. Ett HTML-dokument kan till exempel innehålla metataggar som anger datumet för filen. </p> <p>Om du ska utesluta många filer baserat på deras datum och du inte vill göra en onödig belastning på dina servrar, kan du använda 
+     <code>
        server-date 
-     </code> efter URL:en i datummasken. </p> <p>Det här nyckelordet instruerar sökroboten att lita på datumet för filen som returneras av servern i stället för att analysera varje fil. I följande mask för exkluderingsdatum ignoreras sidor som matchar URL:en om dokumenten är 90 dagar eller äldre, enligt det datum som servern returnerar i HTTP-rubrikerna: </p> <p> <code> exclude-days&amp;nbsp;90&amp;nbsp;https://www.mydomain.com/docs/archive&amp;nbsp;server-date </code> </p> <p> Om det datum som servern returnerar är 90 dagar eller längre <code>
+     </code> efter URL:en i datummasken. </p> <p>Det här nyckelordet instruerar sökroboten att lita på datumet för filen som returneras av servern i stället för att analysera varje fil. I följande mask för exkluderingsdatum ignoreras sidor som matchar URL:en om dokumenten är 90 dagar eller äldre, enligt det datum som servern returnerar i HTTP-rubrikerna: </p> <p> <code> exclude-days&amp;nbsp;90&amp;nbsp;https://www.mydomain.com/docs/archive&amp;nbsp;server-date </code> </p> <p> Om datumet som returneras av servern är 90 dagar eller längre, 
+     <code>
        server-date 
-     </code> anges att de undantagna dokumenten inte ska hämtas från servern. Resultatet innebär snabbare indexeringstid för dina dokument och minskad belastning på servrarna. Om <code>
+     </code> anger att de undantagna dokumenten inte ska hämtas från servern. Resultatet innebär snabbare indexeringstid för dina dokument och minskad belastning på servrarna. If 
+     <code>
        server-date 
-     </code> inte anges ignorerar sökroboten datumet som returneras av servern i HTTP-rubrikerna. I stället hämtas och kontrolleras varje fil för att se om datumet har angetts. Om inget datum anges i filen använder sökroboten det datum som returneras av servern. </p> <p>Du bör inte använda <code>
+     </code> har inte angetts. Sökroboten ignorerar det datum som servern returnerade i HTTP-rubrikerna. I stället hämtas och kontrolleras varje fil för att se om datumet har angetts. Om inget datum anges i filen använder sökroboten det datum som returneras av servern. </p> <p>Du ska inte använda 
+     <code>
        server-date 
      </code> om filerna innehåller kommandon som åsidosätter serverdatumet. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>regexp </p> </td> 
-   <td colname="col2"> <p> Använd för både inkludera och exkludera masker. </p> <p>Alla datummasker som föregås av <code>
+   <td colname="col2"> <p> Använd för både inkludera och exkludera masker. </p> <p>Alla datummasker som föregås av 
+     <code>
        regexp 
      </code> behandlas som ett reguljärt uttryck. </p> <p>Om sökroboten hittar filer som matchar en exkluderad datummask för reguljära uttryck indexeras inte dessa filer. </p> <p>Om sökroboten hittar filer som matchar en datummask för ett reguljärt uttryck indexeras dessa dokument. </p> <p>Anta att du har följande datummask: </p> <p> <code> exclude-days&amp;nbsp;180&amp;nbsp;regexp&amp;nbsp;.*archive.* </code> </p> <p>Masken instruerar sökroboten att utesluta matchande filer som är 180 dagar eller äldre. Det vill säga filer som innehåller ordet"arkiv" i sin URL. </p> <p>Se <a href="../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A" type="reference" format="dita" scope="local"> Reguljära uttryck </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Lägga till datummasker till index eller inte indexera delar av webbplatsen {#task_0010543C55F648D2B5DEFEFAD60FAF04}
+## Lägga till datummasker i index eller inte indexera delar av webbplatsen {#task_0010543C55F648D2B5DEFEFAD60FAF04}
 
 Du kan använda Datummasker för att inkludera eller exkludera filer från kundsökresultat baserat på filernas ålder.
 
@@ -502,15 +532,15 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
 
 **Lägga till datummasker i index eller inte indexera delar av webbplatsen**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Date Masks]**.
-1. (Valfritt) På [!DNL Date Masks] sidan anger du i **[!UICONTROL Test Date]** fältet ett datum formaterat som YYY-MM-DD (till exempel `2011-07-25`); i **[!UICONTROL Test URL]** fältet anger du en URL-mask från webbplatsen och klickar sedan på **[!UICONTROL Test]**.
-1. I [!DNL Date Masks] fältet anger du en datummaskadress per rad.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Date Masks]** på produktmenyn.
+1. (Valfritt) På sidan [!DNL Date Masks] anger du i fältet **[!UICONTROL Test Date]** ett datum formaterat som YYY-MM-DD (t.ex. `2011-07-25`); i fältet **[!UICONTROL Test URL]** anger du en URL-mask från webbplatsen och klickar sedan på **[!UICONTROL Test]**.
+1. I fältet [!DNL Date Masks] anger du en datummaskadress per rad.
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -528,7 +558,7 @@ Innan effekterna av lösenordsinställningarna är synliga för kunderna måste 
 
 Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
 
-På [!DNL Passwords] sidan skriver du respektive lösenord på en rad. Lösenordet består av en URL eller sfär, ett användarnamn och ett lösenord, som i följande exempel:
+På sidan [!DNL Passwords] skriver du respektive lösenord på en rad. Lösenordet består av en URL eller sfär, ett användarnamn och ett lösenord, som i följande exempel:
 
 ```
 https://www.mydomain.com/ myname mypassword
@@ -567,7 +597,7 @@ https://www.mysite.com/path1/path5 name5 password5
 https://www.mysite.com/path6 name6 password6
 ```
 
-I listan ovan används det första lösenordet som innehåller en sfär eller URL som matchar serverns autentiseringsbegäran. Även om filen på `https://www.mysite.com/path1/path2/index.html` finns i `Realm3`till exempel `name2` och `password2` används eftersom lösenordet som definieras med URL:en listas ovanför det som definierats med sfären.
+I listan ovan används det första lösenordet som innehåller en sfär eller URL som matchar serverns autentiseringsbegäran. Även om filen på `https://www.mysite.com/path1/path2/index.html` är i `Realm3`, används till exempel `name2` och `password2` eftersom lösenordet som definieras med URL:en finns ovanför det som definierats med sfären.
 
 ## Lägga till lösenord för att komma åt områden på webbplatsen som kräver autentisering {#task_DED19D476FF04B48BB6456D5ECB8628A}
 
@@ -579,8 +609,8 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
 
 **Lägga till lösenord för att komma åt områden på webbplatsen som kräver autentisering**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Passwords]**.
-1. På [!DNL Passwords] sidan anger du en sfär eller URL-adress i **[!UICONTROL Passwords]** fältet, med tillhörande användarnamn och lösenord, avgränsade med blanksteg.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Passwords]** på produktmenyn.
+1. På sidan [!DNL Passwords] anger du en sfär eller URL och tillhörande användarnamn och lösenord i fältet **[!UICONTROL Passwords]**, avgränsat med blanksteg.
 
    Exempel på ett sfäriskt lösenord och ett URL-lösenord på separata rader:
 
@@ -593,9 +623,9 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -617,7 +647,7 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
 
 ## Indexera MP3-musikfiler {#section_AD2E28BEEE3E46629E2B05C34A963673}
 
-Om du väljer alternativet **[!UICONTROL Text in MP3 Music Files]** på [!DNL Content Types] sidan crawlas en MP3-fil och indexeras på ett av två sätt. Det första och vanligaste sättet är från en href-ankartagg i en HTML-fil som i följande:
+Om du väljer alternativet **[!UICONTROL Text in MP3 Music Files]** på sidan [!DNL Content Types] crawlas och indexeras en MP3-fil på ett av två sätt. Det första och vanligaste sättet är från en href-ankartagg i en HTML-fil som i följande:
 
 ```
 <a href="MP3-file-URL"></a>
@@ -638,17 +668,17 @@ Tänk på att storleken på MP3-musikfiler kan vara ganska stor, även om de van
 
 Observera att varje MP3-fil som crawlas och indexeras på webbplatsen räknas som en sida.
 
-Om webbplatsen innehåller många stora MP3-filer kan du överskrida indexeringsbytegränsen för ditt konto. Om detta inträffar kan du avmarkera **[!UICONTROL Text in MP3 Music Files]** på [!DNL Content Types] sidan för att förhindra indexering av alla MP3-filer på webbplatsen.
+Om webbplatsen innehåller många stora MP3-filer kan du överskrida indexeringsbytegränsen för ditt konto. Om detta inträffar kan du avmarkera **[!UICONTROL Text in MP3 Music Files]** på [!DNL Content Types]-sidan för att förhindra indexering av alla MP3-filer på webbplatsen.
 
 Om du bara vill förhindra indexering av vissa MP3-filer på webbplatsen kan du göra något av följande:
 
-* Omge ankartaggarna som länkar till MP3-filerna med `<nofollow>` - och `</nofollow>` -taggar. Sökroboten följer inte länkar mellan dessa taggar.
+* Omge ankartaggarna som länkar till MP3-filerna med `<nofollow>`- och `</nofollow>`-taggar. Sökroboten följer inte länkar mellan dessa taggar.
 
 * Lägg till MP3-filernas URL:er som exkluderingsmasker.
 
    Se [Om URL-masker](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
-## Markera innehållstyper som ska crawlas och indexeras {#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8}
+## Välja innehållstyper som ska crawlas och indexeras {#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8}
 
 Du kan använda [!DNL Content Types] för att välja vilka typer av filer som du vill crawla och indexera för det här kontot.
 
@@ -660,18 +690,18 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
 
 Följ stegen nedan för att crawla och indexera kinesiska, japanska eller koreanska MP3-filer. I **[!UICONTROL Settings]** > **[!UICONTROL Metadata]** > **[!UICONTROL Injections]** anger du sedan den teckenuppsättning som används för att koda MP3-filerna.
 
-Se [Injektioner](../c-about-settings-menu/c-about-metadata-menu.md#concept_DA091920671948A0A893A26B3A2FAAE5).
+Se [Om injektioner](../c-about-settings-menu/c-about-metadata-menu.md#concept_DA091920671948A0A893A26B3A2FAAE5).
 
 **Så här väljer du innehållstyper som ska crawlas och indexeras**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]**.
-1. På [!DNL Content Types] sidan kontrollerar du de filtyper som du vill crawla och indexera på webbplatsen.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Content Types]** på produktmenyn.
+1. På sidan [!DNL Content Types] kontrollerar du de filtyper som du vill crawla och indexera på webbplatsen.
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -695,14 +725,14 @@ Tänk på att varje ytterligare anslutning ökar belastningen som läggs på ser
 
 **Lägga till anslutningar för att öka indexeringshastigheten**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Connections]**.
-1. På [!DNL Parallel Indexing Connections] sidan anger du antalet anslutningar (1-10) som du vill lägga till i **[!UICONTROL Number of Connections]** fältet.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Connections]** på produktmenyn.
+1. På sidan [!DNL Parallel Indexing Connections] anger du antalet anslutningar (1-10) som du vill lägga till i fältet **[!UICONTROL Number of Connections]**.
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -728,11 +758,11 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
 
 **Lägga till formulärdefinitioner för att indexera formulär på webbplatsen**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Form Submission]**.
-1. På [!DNL Form Submission] sidan klickar du på **[!UICONTROL Add New Form]**.
-1. På [!DNL Add Form Definition] sidan anger du alternativ för [!DNL Form Recognition] och [!DNL Form Submission] .
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Form Submission]** på produktmenyn.
+1. Klicka på **[!UICONTROL Add New Form]** på sidan [!DNL Form Submission].
+1. På sidan [!DNL Add Form Definition] anger du alternativen [!DNL Form Recognition] och [!DNL Form Submission].
 
-   De fem alternativen i [!DNL Form Recognition] avsnittet på [!DNL Form Definition] sidan används för att identifiera formulär på webbsidorna som kan bearbetas.
+   De fem alternativen i avsnittet [!DNL Form Recognition] på [!DNL Form Definition]-sidan används för att identifiera formulär på dina webbsidor som kan bearbetas.
 
    De tre alternativen i avsnittet [!DNL Form Submission] används för att ange parametrar och värden som skickas med ett formulär till webbservern.
 
@@ -752,47 +782,59 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
       </tr> 
       <tr> 
       <td colname="col1"> <p>URL-mask för sida </p> </td> 
-      <td colname="col2"> <p>Identifiera den eller de webbsidor som innehåller formuläret. Om du vill identifiera ett formulär som visas på en sida anger du sidans URL-adress som i följande exempel: </p> <p> <code> https://www.mydomain.com/login.html </code> </p> <p>Om du vill identifiera formulär som visas på flera sidor anger du en URL-mask som använder jokertecken för att beskriva sidorna. Om du vill identifiera formulär som har påträffats på en ASP-sida under <code> https://www.mydomain.com/register/ </code>kan du till exempel ange följande: </p> <p> <code> https://www.mydomain.com/register/*.asp&amp;nbsp; </code> </p> <p>Du kan också använda ett reguljärt uttryck för att identifiera flera sidor. Ange bara <code>
+      <td colname="col2"> <p>Identifiera den eller de webbsidor som innehåller formuläret. Om du vill identifiera ett formulär som visas på en sida anger du sidans URL-adress som i följande exempel: </p> <p> <code> https://www.mydomain.com/login.html </code> </p> <p>Om du vill identifiera formulär som visas på flera sidor anger du en URL-mask som använder jokertecken för att beskriva sidorna. Om du vill identifiera formulär som har påträffats på en ASP-sida under <code> https://www.mydomain.com/register/ </code> anger du till exempel följande: </p> <p> <code> https://www.mydomain.com/register/*.asp&amp;nbsp; </code> </p> <p>Du kan också använda ett reguljärt uttryck för att identifiera flera sidor. Ange bara 
+      <code>
         regexp 
-      </code> nyckelordet före URL-masken som i följande exempel: </p> <p> <code> regexp&amp;nbsp;^https://www\.mydomain\.com/.*/login\.html$ </code> </p> </td> 
+      </code>-nyckelord före URL-masken som i följande exempel: </p> <p> <code> regexp&amp;nbsp;^https://www\.mydomain\.com/.*/login\.html$ </code> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Åtgärds-URL-mask </p> </td> 
-      <td colname="col2"> <p>Identifierar <code>
+      <td colname="col2"> <p>Identifierar åtgärdsattributet för 
+      <code>
         &lt;form&gt; 
-      </code> taggens åtgärdsattribut. </p> <p>Precis som sidans URL-mask kan URL-masken för åtgärden ha formen av en enda URL, en URL med jokertecken eller ett reguljärt uttryck. </p> <p>URL-masken kan vara något av följande: 
+      </code>-tagg. </p> <p>Precis som sidans URL-mask kan URL-masken för åtgärden ha formen av en enda URL, en URL med jokertecken eller ett reguljärt uttryck. </p> <p>URL-masken kan vara något av följande: 
       <ul id="ul_EDFE7688D3DD4C0BBACCE5D4648D8E44"> 
       <li id="li_77550A448D954EF29FF33EE5E8B5E0F5"> En fullständig sökväg som i följande: <code> https://www.mydomain.com/products.html </code> </li> 
       <li id="li_F84E25553BBA41419BE153DC0709E011"> En del sökväg som i följande: <code> https://www.mydomain.com/products </code> </li> 
       <li id="li_8DADA1C8604740FCACBA30B4AAADB2A1"> En URL som använder jokertecken som i följande exempel: <code> https://www.mydomain.com/*.html </code> </li> 
       <li id="li_1EF637B450654B509AA4B618F7FD3C2B"> Ett reguljärt uttryck som i följande: <code> regexp&amp;nbsp^https://www\.mydomain\.com/.*/login\.html$ </code> </li> 
-      </ul> </p> <p>Om du inte vill indexera texten på sidor som identifieras av en URL-mask eller en URL-mask för åtgärd, eller om du inte vill att länkarna ska följas på dessa sidor, kan du använda nyckelorden <code>
+      </ul> </p> <p>Om du inte vill indexera texten på sidor som identifieras av en URL-mask eller en URL-mask för en åtgärd, eller om du inte vill att länkarna ska följas på dessa sidor, kan du använda kommandot 
+      <code>
         noindex 
-      </code> och <code>
+      </code> och 
+      <code>
         nofollow 
-      </code> . Du kan lägga till dessa nyckelord i masker med hjälp av URL-masker eller ingångspunkter. </p> <p>Se <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573" type="concept" format="dita" scope="local"> Om URL-adresser </a>. </p> <p>Se <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Om URL-masker </a>. </p> </td> 
+      </code> nyckelord. Du kan lägga till dessa nyckelord i masker med hjälp av URL-masker eller ingångspunkter. </p> <p>Se <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573" type="concept" format="dita" scope="local"> Om URL-adresser </a>. </p> <p>Se <a href="../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164" type="concept" format="dita" scope="local"> Om URL-masker </a>. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Formulärnamnsmask </p> </td> 
-      <td colname="col2"> <p>Identifierar formulär om <code>
+      <td colname="col2"> <p>Identifierar formulär om 
+      <code>
         &lt;form&gt; 
-      </code> -taggarna på dina webbsidor innehåller ett namnattribut. </p> <p>Du kan använda ett enkelt namn ( <code>
+      </code>-taggar på dina webbsidor innehåller ett namnattribut. </p> <p>Du kan använda ett enkelt namn ( 
+      <code>
         login_form 
-      </code>), ett namn med jokertecken ( <code>
+      </code>), ett namn med jokertecken ( 
+      <code>
         form* 
-      </code>) eller ett reguljärt uttryck ( <code>
+      </code>, eller ett reguljärt uttryck ( 
+      <code>
         regexp ^.*authorize.*$ 
       </code>). </p> <p>Du kan vanligtvis lämna fältet tomt eftersom formulär vanligtvis inte har något namnattribut. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Form ID Mask </p> </td> 
-      <td colname="col2"> <p>Identifierar formulär om <code>
+      <td colname="col2"> <p>Identifierar formulär om 
+      <code>
         &lt;form&gt; 
-      </code> -taggarna på dina webbsidor innehåller ett id-attribut. </p> <p>Du kan använda ett enkelt namn ( <code>
+      </code>-taggar på dina webbsidor innehåller ett id-attribut. </p> <p>Du kan använda ett enkelt namn ( 
+      <code>
         login_form 
-      </code>), ett namn med jokertecken ( <code>
+      </code>), ett namn med jokertecken ( 
+      <code>
         form* 
-      </code>) eller ett reguljärt uttryck ( <code>
+      </code>, eller ett reguljärt uttryck ( 
+      <code>
         regexp ^.*authorize.*$ 
       </code>). </p> <p>Du kan vanligtvis lämna fältet tomt eftersom formulär vanligtvis inte har något namnattribut. </p> </td> 
       </tr> 
@@ -810,23 +852,29 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
       </tr> 
       <tr> 
       <td colname="col1"> <p>Åsidosättningsmetod </p> </td> 
-      <td colname="col2"> <p>Ange när målet för formuläröverföringen skiljer sig från det som används i formulärets åtgärdsattribut och när den inskickande JavaScript-koden har ändrat metoden. </p> <p>Standardvärdena för alla formulärparametrar ( <code>
+      <td colname="col2"> <p>Ange när målet för formuläröverföringen skiljer sig från det som används i formulärets åtgärdsattribut och när den inskickande JavaScript-koden har ändrat metoden. </p> <p>Standardvärdena för alla formulärparametrar ( 
+      <code>
         &lt;input&gt; 
-      </code> -taggar, inklusive dolda fält), standardvärdet <code>
+      </code>-taggar, inklusive dolda fält), standardvärdet 
+      <code>
         &lt;option&gt; 
-      </code> för en <code>
+      </code> från en 
+      <code>
         &lt;select&gt; 
-      </code> -tagg och standardtexten mellan <code>
+      </code>-taggen och standardtexten mellan 
+      <code>
         &lt;textarea&gt;...&lt;/textarea&gt; 
-      </code> -taggar) läses från webbsidan. Alla parametrar som visas i <span class="wintitle"> avsnittet Formuläröverföring </span> , i fältet <span class="uicontrol"> Parametrar, </span> ersätts med standardvärdena för formuläret. </p> </td> 
+      </code>-taggar) läses från webbsidan. Alla parametrar som visas i avsnittet <span class="wintitle"> Formulärinskickning </span> i fältet <span class="uicontrol"> Parametrar </span> ersätts dock med standardvärdena för formuläret. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Parametrar </p> </td> 
-      <td colname="col2"> <p>Du kan lägga till nyckelordet till prefix för parametrar för att skicka formulär <code>
+      <td colname="col2"> <p>Du kan lägga till prefix i parametrar för formulärinskickning med 
+      <code>
         not 
-      </code> . </p> <p>När du lägger till ett prefix till en parameter <code>
+      </code>-nyckelord. </p> <p>När du prefix en parameter med 
+      <code>
         not 
-      </code>skickas den inte som en del av formuläröverföringen. Det här beteendet är användbart för kryssrutor som ska skickas avmarkerade. </p> <p>Anta att du vill skicka följande parametrar: </p> <p> 
+      </code> skickas inte som en del av formuläröverföringen. Det här beteendet är användbart för kryssrutor som ska skickas avmarkerade. </p> <p>Anta att du vill skicka följande parametrar: </p> <p> 
       <ul id="ul_962D12BACF464FF189DB12BFAFCC93A6"> 
       <li id="li_830C6C3EC8D2448388A453BB8EDE5940"> E-postparametern med värdet 
       <code>
@@ -837,16 +885,19 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
         tryme 
       </code> </li> 
       <li id="li_AAA411708ADC464793EADF0D821E282E"> Parametern mycheckbox har avmarkerats. </li> 
-      <li id="li_0D3DDE641E2B4BEF9F570C03FDB40ED2"> <p>Alla andra <code>
+      <li id="li_0D3DDE641E2B4BEF9F570C03FDB40ED2"> <p>Alla andra 
+      <code>
         &lt;form&gt; 
-      </code> parametrar som standardvärden </p> </li> 
+      </code>-parametrar som standardvärden </p> </li> 
       </ul> </p> <p>Din formulärinlämningsparameter ser ut så här: </p> <p> <code> email=nobody@mydomain.com 
         password=tryme 
-        not&nbsp;mycheckbox </code> </p> <p>Metodattributet för <code>
+        not&nbsp;mycheckbox </code> </p> <p>Metodattributet för 
+      <code>
         &lt;form&gt; 
-      </code> -taggen på webbsidan används för att avgöra om data skickas till servern med hjälp av metoden GET eller POST. </p> <p>Om taggen inte innehåller något metodattribut skickas formuläret med metoden GET. <code>
+      </code>-taggen på webbsidan används för att avgöra om data skickas till servern med hjälp av metoden GET eller POST. </p> <p>Om 
+      <code>
         &lt;form&gt; 
-      </code> </p> </td> 
+      </code>-taggen innehåller inget metodattribut. Formuläret skickas med metoden GET. </p> </td> 
       </tr> 
     </tbody> 
     </table>
@@ -866,7 +917,7 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
 
 Du kan redigera en befintlig formulärdefinition om ett formulär på webbplatsen har ändrats eller om du bara behöver ändra definitionen.
 
-Observera att det inte finns någon [!DNL History] funktion på [!DNL Form Submission] sidan som kan återställa ändringar som du gör i en formulärdefinition.
+Observera att det inte finns någon [!DNL History]-funktion på [!DNL Form Submission]-sidan som kan återställa ändringar som du gör i en formulärdefinition.
 
 Se till att du återskapar webbplatsindexet så att resultatet av ändringarna blir synligt för dina kunder.
 
@@ -874,11 +925,11 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
 
 **Redigera en formulärdefinition**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Form Submission]**.
-1. På [!DNL Form Submission] sidan klickar du **[!UICONTROL Edit]** till höger om den formulärdefinition som du vill uppdatera.
-1. På [!DNL Edit Form Definition] sidan anger du alternativ för [!DNL Form Recognition] och [!DNL Form Submission] .
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Form Submission]** på produktmenyn.
+1. På sidan [!DNL Form Submission] klickar du på **[!UICONTROL Edit]** till höger om den formulärdefinition som du vill uppdatera.
+1. På sidan [!DNL Edit Form Definition] anger du alternativen [!DNL Form Recognition] och [!DNL Form Submission].
 
-   Se tabellen med alternativ under [Lägga till formulärdefinitioner för att indexera formulär på webbplatsen](../c-about-settings-menu/c-about-crawling-menu.md#task_62FBCE9E6DBE4BDA8D1249233ADFC00F).
+   Se tabellen med alternativ under [Lägga till formulärdefinitioner för att indexera formulär på din webbplats](../c-about-settings-menu/c-about-crawling-menu.md#task_62FBCE9E6DBE4BDA8D1249233ADFC00F).
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Gör något av följande:
 
@@ -890,11 +941,11 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Ta bort en formulärdefinition {#task_C350FC0CDE344F2786215D544C048B5E}
+## Tar bort en formulärdefinition {#task_C350FC0CDE344F2786215D544C048B5E}
 
 Du kan ta bort en befintlig formulärdefinition om formuläret inte längre finns på webbplatsen eller om du inte längre vill bearbeta och indexera ett visst formulär.
 
-Observera att det inte finns någon [!DNL History] funktion på [!DNL Form Submission] sidan som kan återställa ändringar som du gör i en formulärdefinition.
+Observera att det inte finns någon [!DNL History]-funktion på [!DNL Form Submission]-sidan som kan återställa ändringar som du gör i en formulärdefinition.
 
 Se till att du återskapar webbplatsindexet så att resultatet av ändringarna blir synligt för dina kunder.
 
@@ -902,11 +953,11 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
 
 **Ta bort en formulärdefinition**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Form Submission]**.
-1. På [!DNL Form Submission] sidan klickar du **[!UICONTROL Delete]** till höger om den formulärdefinition som du vill ta bort.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Form Submission]** på produktmenyn.
+1. På sidan [!DNL Form Submission] klickar du på **[!UICONTROL Delete]** till höger om en formulärdefinition som du vill ta bort.
 
-   Se till att du väljer rätt formulärdefinition att ta bort. När du klickar **[!UICONTROL Delete]** i nästa steg visas ingen bekräftelsedialogruta för borttagning.
-1. På [!DNL Delete Form Definition] sidan klickar du på **[!UICONTROL Delete]**.
+   Se till att du väljer rätt formulärdefinition att ta bort. Det finns ingen bekräftelsedialogruta för borttagning när du klickar på **[!UICONTROL Delete]** i nästa steg.
+1. Klicka på **[!UICONTROL Delete]** på sidan [!DNL Delete Form Definition].
 1. (Valfritt) Gör något av följande:
 
    * Klicka på **[!UICONTROL Live]**.
@@ -917,7 +968,7 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Om Index Connector {#concept_CA6921E2FBF641F9B4F60C92B32AFA84}
+## Om Indexanslutning {#concept_CA6921E2FBF641F9B4F60C92B32AFA84}
 
 Använd [!DNL Index Connector] för att definiera ytterligare indatakällor för indexering av XML-sidor eller andra typer av flöden.
 
@@ -925,23 +976,23 @@ Du kan använda en indatakälla för dataflöden för att komma åt innehåll so
 
 En XML-datakälla består av XML-stanter, eller poster, som innehåller information som motsvarar enskilda dokument. Dessa enskilda dokument läggs till i indexet. En textmatning innehåller enskilda radavgränsade poster som motsvarar enskilda dokument. Dessa enskilda dokument läggs också till i indexet. I båda fallen beskrivs hur matningen ska tolkas i en indexanslutningskonfiguration. Varje konfiguration beskriver var filen finns och hur servrarna kommer åt den. I konfigurationen beskrivs även mappningsinformation. Det innebär att varje posts objekt används för att fylla i metadatafälten i det resulterande indexet.
 
-När du har lagt till en indexanslutningsdefinition på [!DNL Staged Index Connector Definitions] sidan kan du ändra alla konfigurationsinställningar, *förutom* värdena Namn och Typ.
+När du har lagt till en indexanslutningsdefinition på sidan [!DNL Staged Index Connector Definitions] kan du ändra alla konfigurationsinställningar, *förutom* för värdena Namn och Typ.
 
-På [!DNL Index Connector] sidan visas följande information:
+På sidan [!DNL Index Connector] visas följande information:
 
 * Namnet på definierade indexanslutningar som du har konfigurerat och lagt till.
 * En av följande datakälltyper för varje koppling du har lagt till:
 
-   * **Text** - Enkla&quot;platta&quot; filer, kommaavgränsade, tabbavgränsade eller andra konsekvent avgränsade format.
-   * **Feed** - XML-flöden.
+   * **Text**  - Enkla&quot;platta&quot; filer, kommaavgränsade, tabbavgränsade eller andra konsekvent avgränsade format.
+   * **Feed**  - XML-flöden.
    * **XML** - Samlingar med XML-dokument.
 
 * Anger om kopplingen är aktiverad eller inte för nästa crawl och indexering.
 * Datakällans adress.
 
-Se även [Om indexkoppling](../c-about-settings-menu/c-about-crawling-menu.md#concept_CA6921E2FBF641F9B4F60C92B32AFA84)
+Se även [Om Index Connector](../c-about-settings-menu/c-about-crawling-menu.md#concept_CA6921E2FBF641F9B4F60C92B32AFA84)
 
-## Så här fungerar indexeringsprocessen för text- och flödeskonfigurationer i Index Connector {#section_E059A33D61EE4DB0972A37B8A35E9E16}
+## Så här fungerar indexeringsprocessen för konfigurationer av text och feed i Index Connector {#section_E059A33D61EE4DB0972A37B8A35E9E16}
 
 <table> 
  <thead> 
@@ -953,27 +1004,27 @@ Se även [Om indexkoppling](../c-about-settings-menu/c-about-crawling-menu.md#co
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>1 </p> </td> 
+   <td colname="col1"> <p>3 </p> </td> 
    <td colname="col2"> <p>Hämta datakällan. </p> </td> 
    <td colname="col3"> <p>För konfigurationer av text och feed är det en enkel filhämtning. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>2 </p> </td> 
    <td colname="col2"> <p>Dela upp den hämtade datakällan i enskilda pseudodokument. </p> </td> 
-   <td colname="col3"> <p>För <span class="uicontrol"> text </span>motsvarar varje radavgränsad textrad ett enskilt dokument och tolkas med den angivna avgränsaren, till exempel ett komma eller en tabb. </p> <p>För <span class="uicontrol"> Feed </span>extraheras data från varje dokument med hjälp av ett mönster för reguljära uttryck i följande form: </p> <p> <code> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>Skapa en cachelagrad kopia av data med hjälp av <span class="uicontrol"> Karta </span> på <span class="wintitle"> Index Connector Add- </span> sidan och skapa sedan en lista med länkar för crawlern. Data lagras i en lokal cache och fylls i med de konfigurerade fälten. </p> <p>De tolkade data skrivs till det lokala cacheminnet. </p> <p>Cachen läses senare för att skapa de enkla HTML-dokument som crawlern behöver. Exempel: </p> <p> <code> &lt;html&gt;&lt;head&gt; 
+   <td colname="col3"> <p>För <span class="uicontrol"> text </span> motsvarar varje radavgränsad textrad ett enskilt dokument och tolkas med den angivna avgränsaren, till exempel ett komma eller en tabb. </p> <p>För <span class="uicontrol">-feed </span> extraheras data för varje dokument med hjälp av ett mönster för reguljära uttryck i följande format: </p> <p> <code> &lt;${Itemtag}&gt;(.*?)&lt;/${Itemtag}&gt; </code> </p> <p>Skapa en cachelagrad kopia av data och skapa sedan en lista med länkar för crawlern med hjälp av <span class="uicontrol"> Map </span> på sidan <span class="wintitle"> Index Connector Add </span>. Data lagras i en lokal cache och fylls i med de konfigurerade fälten. </p> <p>De tolkade data skrivs till det lokala cacheminnet. </p> <p>Cachen läses senare för att skapa de enkla HTML-dokument som crawlern behöver. Exempel: </p> <p> <code> &lt;html&gt;&lt;head&gt; 
       &lt;title&gt;{title}&lt;/title&gt; 
       &lt;meta&nbsp;name="{field}"&nbsp;content="{data}"&nbsp;/&gt; 
       ... 
       &lt;/head&gt;&lt;body&gt; 
       {body} 
-      &lt;/body&gt;&lt;/html&gt; </code> </p> <p>Elementet <span class="codeph"> &lt;title&gt; </span> genereras bara när det finns en mappning till metadatafältet Rubrik. På samma sätt genereras elementet <span class="codeph"> &lt;body&gt; </span> bara när det finns en mappning till tabellens metadatafält. </p> <p> <b>Viktigt</b>: Det finns inget stöd för tilldelning av värden till den fördefinierade URL-meta-taggen. </p> <p>För alla andra mappningar genereras <span class="codeph"> &lt;meta&gt;- </span> taggar för varje fält som innehåller data i det ursprungliga dokumentet. </p> <p>Fälten för varje dokument läggs till i cachen. För varje dokument som skrivs till cachen skapas även en länk enligt följande exempel: </p> <p> <code> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
+      &lt;/body&gt;&lt;/html&gt; </code> </p> <p><span class="codeph"> &lt;title&gt; </span>-elementet genereras bara när det finns en mappning till metadatafältet Rubrik. På samma sätt genereras <span class="codeph"> &lt;body&gt; </span>-elementet endast när det finns en mappning till body-metadatafältet. </p> <p> <b>Viktigt</b>: Det finns inget stöd för tilldelning av värden till den fördefinierade URL-meta-taggen. </p> <p>För alla andra mappningar genereras <span class="codeph"> &lt;meta&gt; </span>-taggar för varje fält som innehåller data i det ursprungliga dokumentet. </p> <p>Fälten för varje dokument läggs till i cachen. För varje dokument som skrivs till cachen skapas även en länk enligt följande exempel: </p> <p> <code> &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
       &lt;a&nbsp;href="index:Adobe?key=&lt;primary&nbsp;key&nbsp;field&gt;\"&nbsp;/&gt; 
-      .... </code> </p> <p>Konfigurationens mappning måste ha ett fält som identifieras som primärnyckel. Den här mappningen utgör nyckeln som används när data hämtas från cachen. </p> <p>Crawlningen känner igen URL- <span class="codeph"> indexet: </span> schemaprefix, som sedan kan komma åt lokalt cachelagrade data. </p> </td> 
+      .... </code> </p> <p>Konfigurationens mappning måste ha ett fält som identifieras som primärnyckel. Den här mappningen utgör nyckeln som används när data hämtas från cachen. </p> <p>Crawlningen känner igen URL:en <span class="codeph">-index: </span>-schemaprefix, som sedan kan komma åt lokalt cachelagrade data. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>3 </p> </td> 
    <td colname="col2"> <p>Crawla den cachelagrade dokumentuppsättningen. </p> </td> 
-   <td colname="col3"> <p>Indexvärdet <span class="codeph"> : </span> länkar läggs till i crawlerns väntande lista och bearbetas i den normala crawlningssekvensen. </p> </td> 
+   <td colname="col3"> <p>Indexvärdet <span class="codeph">: </span>-länkar läggs till i crawlerns väntande lista och bearbetas i den normala crawlningssekvensen. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>4 </p> </td> 
@@ -983,11 +1034,11 @@ Se även [Om indexkoppling](../c-about-settings-menu/c-about-crawling-menu.md#co
  </tbody> 
 </table>
 
-## Hur indexeringsprocessen fungerar för XML-konfigurationer i Index Connector {#section_7F1551EA51854C5C99F284CE260526EB}
+## Så här fungerar indexeringsprocessen för XML-konfigurationer i Index Connector {#section_7F1551EA51854C5C99F284CE260526EB}
 
 Indexeringsprocessen för XML-konfigurationen liknar processen för text- och flödeskonfigurationer med följande mindre ändringar och undantag.
 
-Eftersom dokumenten för XML-crawlningar redan är separerade till enskilda filer, gäller inte steg 1 och 2 i tabellen ovan direkt. Om du anger en URL-adress i **[!UICONTROL Host Address]** - och **[!UICONTROL File Path]** -fälten på [!DNL Index Connector Add] sidan hämtas den och bearbetas som ett vanligt HTML-dokument. Förväntningen är att det nedladdade dokumentet innehåller en samling `<a href="{url}"...` länkar, som var och en pekar på ett XML-dokument som bearbetas. Sådana länkar konverteras till följande format:
+Eftersom dokumenten för XML-crawlningar redan är separerade till enskilda filer, gäller inte steg 1 och 2 i tabellen ovan direkt. Om du anger en URL i fälten **[!UICONTROL Host Address]** och **[!UICONTROL File Path]** på sidan [!DNL Index Connector Add] hämtas den och behandlas som ett vanligt HTML-dokument. Förväntningen är att det hämtade dokumentet innehåller en samling `<a href="{url}"...`-länkar, som alla pekar på ett XML-dokument som bearbetas. Sådana länkar konverteras till följande format:
 
 ```
 <a href="index:<ic_config_name>?url="{url}">
@@ -1002,9 +1053,9 @@ Om Adobe-inställningarna till exempel returnerade följande länkar:
 
 I tabellen ovan gäller inte steg 3 och steg 4 slutförs vid crawlning och indexering.
 
-Du kan också blanda XML-dokument med andra dokument som har identifierats naturligt under crawlningsprocessen. I så fall kan du använda omskrivningsregler ( **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Retrieve URL Rules]**) för att ändra XML-dokumentens URL:er så att de dirigeras till Index Connector.
+Du kan också blanda XML-dokument med andra dokument som har identifierats naturligt under crawlningsprocessen. I sådana fall kan du använda omskrivningsregler ( **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Retrieve URL Rules]**) för att ändra XML-dokumentens URL:er så att de dirigeras till Index Connector.
 
-Se [Om Hämta URL-regler för crawlningslista](../c-about-settings-menu/c-about-rewrite-rules-menu.md#concept_EC8E2E48B99A458D8567B526C9827CBA).
+Se [Om Hämta URL-regler för crawllista](../c-about-settings-menu/c-about-rewrite-rules-menu.md#concept_EC8E2E48B99A458D8567B526C9827CBA).
 
 Anta att du har följande regel för omskrivning:
 
@@ -1012,9 +1063,9 @@ Anta att du har följande regel för omskrivning:
 RewriteRule (^http.*[.]xml$) index:Adobe?key=$1
 ```
 
-Den här regeln översätter alla URL:er som slutar med `.xml` till en Index Connector-länk. Crawlningen känner igen och skriver om `index:` URL-schemat. Hämtningsprocessen dirigeras om via Index Connector Apache-servern på den primära servern. Varje nedladdat dokument granskas med samma mönster för reguljära uttryck som används med Feeds. I det här fallet sparas dock inte det tillverkade HTML-dokumentet i cachen. I stället skickas den direkt till crawlern för indexbearbetning.
+Den här regeln översätter alla URL:er som slutar med `.xml` till en indexkopplingslänk. Crawlningen känner igen och skriver om URL-schemat `index:`. Hämtningsprocessen dirigeras om via Index Connector Apache-servern på den primära servern. Varje nedladdat dokument granskas med samma mönster för reguljära uttryck som används med Feeds. I det här fallet sparas dock inte det tillverkade HTML-dokumentet i cachen. I stället skickas den direkt till crawlern för indexbearbetning.
 
-## Konfigurera flera Index Connectors {#section_C2B14C0F06354A57AEF6238FF3814E5D}
+## Konfigurera flera indexanslutningar {#section_C2B14C0F06354A57AEF6238FF3814E5D}
 
 Du kan definiera flera Index Connector-konfigurationer för vilket konto som helst. Konfigurationerna läggs automatiskt till i listrutan i **[!UICONTROL Settings]** > **[!UICONTROL Crawl]** > **[!UICONTROL URL Entrypoints]** enligt följande bild:
 
@@ -1034,13 +1085,13 @@ index:<indexconnector_configuration_name>
 
 Crawlningen bearbetar varje tillagd post om den finns på sidan Indexanslutningar och är aktiverad.
 
-Obs! Eftersom varje dokuments URL skapas med hjälp av konfigurationsnamnet för indexkoppling och dokumentets primärnyckel, måste du använda samma konfigurationsnamn för indexkoppling när du utför stegvisa uppdateringar. Om du gör det kan du [!DNL Adobe Search&Promote] uppdatera tidigare indexerade dokument korrekt.
+Obs! Eftersom varje dokuments URL skapas med hjälp av konfigurationsnamnet för indexkoppling och dokumentets primärnyckel, måste du använda samma konfigurationsnamn för indexkoppling när du utför stegvisa uppdateringar. Om du gör det kan [!DNL Adobe Search&Promote] uppdatera tidigare indexerade dokument korrekt.
 
 Se även [Om URL-adresser](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
 
 **Användning av Setup Maps när du lägger till en Index Connector**
 
-När du lägger till en Index Connector kan du använda funktionen **[!UICONTROL Setup Maps]** för att hämta ett exempel på datakällan. Uppgifterna undersöks för indexering av lämplighet.
+När du lägger till en Index Connector kan du välja att använda funktionen **[!UICONTROL Setup Maps]** för att hämta ett exempel på datakällan. Uppgifterna undersöks för indexering av lämplighet.
 
 <table> 
  <thead> 
@@ -1052,7 +1103,7 @@ När du lägger till en Index Connector kan du använda funktionen **[!UICONTROL
  <tbody> 
   <tr> 
    <td colname="col1"> <p>Text </p> </td> 
-   <td colname="col2"> <p>Avgör avgränsningsvärdet genom att först prova tabbar och sedan lodräta staplar ( <span class="codeph"> | </span>), och slutligen kommatecken ( <span class="codeph"> , </span>). Om du redan har angett ett avgränsningsvärde innan du klickade på <span class="uicontrol"> Konfigurera kartor </span>används det värdet i stället. </p> <p>Det bästa schemat för anpassning gör att kartfälten fylls i med gissningar på rätt tagg- och fältvärden. Dessutom visas en sampling av tolkade data. Välj <span class="uicontrol"> Sidhuvuden i första raden </span> om du vet att filen innehåller en rubrikrad. Installationsfunktionen använder den här informationen för att bättre identifiera de resulterande mappningsposterna. </p> </td> 
+   <td colname="col2"> <p>Avgör avgränsarvärdet genom att prova tabbar först och sedan lodräta staplar ( <span class="codeph">) | </span>) och finally-kommatecken ( <span class="codeph">, </span>). Om du redan har angett ett avgränsningsvärde innan du klickade på <span class="uicontrol"> Setup Maps </span>, används det värdet i stället. </p> <p>Det bästa schemat för anpassning gör att kartfälten fylls i med gissningar på rätt tagg- och fältvärden. Dessutom visas en sampling av tolkade data. Se till att du väljer <span class="uicontrol"> Rubriker i första raden </span> om du vet att filen innehåller en rubrikrad. Installationsfunktionen använder den här informationen för att bättre identifiera de resulterande mappningsposterna. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Feed </p> </td> 
@@ -1060,16 +1111,16 @@ När du lägger till en Index Connector kan du använda funktionen **[!UICONTROL
   </tr> 
   <tr> 
    <td colname="col1"> <p>XML </p> </td> 
-   <td colname="col2"> <p>Hämtar URL:en för ett representativt enskilt dokument, inte den primära länklistan. Det här dokumentet tolkas på samma sätt som i Feeds, och resultatet visas. </p> <p>Innan du klickar på <span class="uicontrol"> Lägg till </span> för att spara konfigurationen måste du ändra tillbaka URL-adressen till det primära länklistdokumentet. </p> </td> 
+   <td colname="col2"> <p>Hämtar URL:en för ett representativt enskilt dokument, inte den primära länklistan. Det här dokumentet tolkas på samma sätt som i Feeds, och resultatet visas. </p> <p>Innan du klickar på <span class="uicontrol"> Lägg till </span> för att spara konfigurationen måste du ändra URL:en tillbaka till listdokumentet för den primära länken. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**Viktigt**: Funktionen Setup Maps fungerar kanske inte för stora XML-datauppsättningar eftersom filparsern försöker läsa hela filen i minnet. Det kan leda till att minnet tar slut. Men när samma dokument bearbetas vid indexeringen läses det inte in i minnet. I stället bearbetas stora dokument &quot;i farten&quot; och läses inte in helt i minnet först.
+**Viktigt**: Funktionen Setup Maps fungerar kanske inte för stora XML-datauppsättningar eftersom filparsern försöker läsa hela filen i minnet. Det kan leda till att minnet tar slut. Men när samma dokument bearbetas vid indexeringen läses det inte in i minnet. I stället bearbetas stora dokument &quot;i farten&quot; och läses inte helt in i minnet först.
 
 **Användning av Förhandsgranska när du lägger till en indexkoppling**
 
-När du lägger till en Index Connector kan du använda funktionen för **[!UICONTROL Preview]** att validera data, som om du sparade dem. Den kör ett test mot konfigurationen, men utan att spara konfigurationen till kontot. Testet kommer åt den konfigurerade datakällan. Hämtningscachen skrivs dock till en tillfällig plats. den inte hamnar i konflikt med huvudcachemappen som används av indexeringscrawlern.
+När du lägger till en Index Connector kan du använda funktionen **[!UICONTROL Preview]** för att validera data, som om du sparade dem. Den kör ett test mot konfigurationen, men utan att spara konfigurationen till kontot. Testet kommer åt den konfigurerade datakällan. Hämtningscachen skrivs dock till en tillfällig plats. den inte hamnar i konflikt med huvudcachemappen som används av indexeringscrawlern.
 
 I Förhandsgranska bearbetas bara standardvärdena för fem dokument enligt funktionen Act:IndexConnector-Preview-Max-Documents. De förhandsvisade dokumenten visas i källformat när de presenteras för indexeringscrawlaren. Visningen liknar funktionen Visa källa i en webbläsare. Du kan navigera bland dokumenten i förhandsvisningsuppsättningen med hjälp av standardnavigeringslänkar.
 
@@ -1083,9 +1134,9 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
 
 **Lägga till en indexanslutningsdefinition**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]**.
-1. På [!DNL Stage Index Connector Definitions] sidan klickar du på **[!UICONTROL Add New Index Connector]**.
-1. Ange önskade anslutningsalternativ på [!DNL Index Connector Add] sidan. Vilka alternativ som är tillgängliga beror på vilken **[!UICONTROL Type]** du har valt.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]** på produktmenyn.
+1. Klicka på **[!UICONTROL Add New Index Connector]** på sidan [!DNL Stage Index Connector Definitions].
+1. På sidan [!DNL Index Connector Add] anger du önskade anslutningsalternativ. Vilka alternativ som är tillgängliga beror på **[!UICONTROL Type]** som du har valt.
 
    <table> 
     <thead> 
@@ -1101,11 +1152,12 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       </tr> 
       <tr> 
       <td colname="col1"> <p>Typ </p> </td> 
-      <td colname="col2"> <p>Källan till dina data. Den typ av datakälla du väljer påverkar de alternativ som är tillgängliga på <span class="wintitle"> sidan Lägg till </span> indexkoppling. Du kan välja mellan följande: </p> <p> 
+      <td colname="col2"> <p>Källan till dina data. Datakälltypen som du väljer påverkar de alternativ som är tillgängliga på sidan <span class="wintitle"> Lägg till </span> indexkoppling. Du kan välja mellan följande: </p> <p> 
       <ul id="ul_1ADC3DFBC929467385F7465BE8E13635"> 
-      <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Text </span> <p>Enkla platta textfiler, kommaavgränsade, tabbavgränsade eller andra konsekvent avgränsade format. Varje radavgränsad textrad motsvarar ett enskilt dokument och tolkas med den angivna avgränsaren. </p> <p>Du kan mappa varje värde, eller kolumn, till ett metadatafält, som kolumnnumret refererar till, med början vid 1 (ett). </p> </li> 
-      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed </span> <p>Hämtar ett primärt XML-dokument som innehåller flera "rader" med information. </p> </li> 
-      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML </span> <p>Hämtar ett primärt XML-dokument som innehåller länkar ( <code>
+      <li id="li_64FCD749F55442BAB316BD474128D4F9"> <span class="uicontrol"> Text  </span> <p>Enkla platta textfiler, kommaavgränsade, tabbavgränsade eller andra konsekvent avgränsade format. Varje radavgränsad textrad motsvarar ett enskilt dokument och tolkas med den angivna avgränsaren. </p> <p>Du kan mappa varje värde, eller kolumn, till ett metadatafält, som kolumnnumret refererar till, med början vid 1 (ett). </p> </li> 
+      <li id="li_2A4F16CE6DCE4114B7F8E4FE156252BB"> <span class="uicontrol"> Feed  </span> <p>Hämtar ett primärt XML-dokument som innehåller flera "rader" med information. </p> </li> 
+      <li id="li_5A61C53522D74D4C9A5F65989604BDEF"> <span class="uicontrol"> XML  </span> <p>Hämtar ett primärt XML-dokument som innehåller länkar ( 
+      <code>
         &lt;a&gt; 
       </code>) till enskilda XML-dokument. </p> </li> 
       </ul> </p> </td> 
@@ -1136,7 +1188,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       </tr> 
       <tr> 
       <td colname="col1"> <p>Tar bort filsökväg </p> </td> 
-      <td colname="col2"> <p>Anger sökvägen till den enkla platta textfilen, som innehåller ett enda dokumentidentifierarvärde per rad. </p> <p>Sökvägen är relativ till värdadressens rot. </p> <p>Den här filen hämtas och bearbetas under inkrementella indexåtgärder, om den anges. De värden som hittas i den här filen används för att skapa"delete"-begäranden för att ta bort tidigare indexerade dokument. Värdena i den här filen måste motsvara de värden som finns i den fullständiga eller inkrementella filsökvägen, i kolumnen som identifieras som <span class="uicontrol"> primärnyckel </span>. </p> <p> <b>Obs</b>: Den här funktionen är inte aktiverad som standard. Kontakta teknisk support för att aktivera funktionen. </p> </td> 
+      <td colname="col2"> <p>Anger sökvägen till den enkla platta textfilen, som innehåller ett enda dokumentidentifierarvärde per rad. </p> <p>Sökvägen är relativ till värdadressens rot. </p> <p>Den här filen hämtas och bearbetas under inkrementella indexåtgärder, om den anges. De värden som hittas i den här filen används för att skapa"delete"-begäranden för att ta bort tidigare indexerade dokument. Värdena i den här filen måste motsvara de värden som finns i den fullständiga eller inkrementella filsökvägen, i kolumnen <span class="uicontrol"> primärnyckel </span>. </p> <p> <b>Obs</b>: Den här funktionen är inte aktiverad som standard. Kontakta teknisk support för att aktivera funktionen. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Protokoll </p> </td> 
@@ -1163,7 +1215,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       </tr> 
       <tr> 
       <td colname="col1"> <p>Avgränsare </p> </td> 
-      <td colname="col2"> <p>Anger det tecken som du vill använda för att avgränsa varje fält i den angivna datakällfilen. </p> <p>Kommatecknet ( <span class="codeph"> , </span>) är ett exempel på en avgränsare. Kommatecknet fungerar som en fältavgränsare som hjälper till att separera datafält i den angivna datakällfilen. </p> <p>Välj <span class="uicontrol"> Tabb? </span> om du vill använda det vågräta tabbtecknet som avgränsare. </p> </td> 
+      <td colname="col2"> <p>Anger det tecken som du vill använda för att avgränsa varje fält i den angivna datakällfilen. </p> <p>Kommatecknet ( <span class="codeph">, </span>) är ett exempel på en avgränsare. Kommatecknet fungerar som en fältavgränsare som hjälper till att separera datafält i den angivna datakällfilen. </p> <p>Välj fliken <span class="uicontrol">? </span> om du vill använda det vågräta tabbtecknet som avgränsare. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Rubriker i första raden </p> </td> 
@@ -1177,12 +1229,12 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       <td colname="col1"> <p>Karta </p> </td> 
       <td colname="col2"> <p>Anger mappningar kolumn-till-metadata med kolumnnummer. </p> <p> 
       <ul id="ul_981AE2C6D30443BDBFC6575D413732A2"> 
-      <li id="li_A42CB9DFFF8C45A7BAC2D471FE96CEBE"> <span class="uicontrol"> Kolumn </span> <p> Anger ett kolumnnummer med den första kolumnen som 1 (ett). Om du vill lägga till nya mappningsrader för varje kolumn klickar du på <span class="wintitle"> + </span>under Åtgärd <span class="uicontrol"> </span>. </p> <p>Du behöver inte referera till varje kolumn i datakällan. I stället kan du välja att hoppa över värden. </p> </li> 
-      <li id="li_26E8C9554A5D4BC5A5073D6385E3626F"> <span class="uicontrol"> Fält </span> <p>Definierar det name-attributvärde som används för varje genererad &lt;meta&gt;-tagg. </p> </li> 
-      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadata? </span> <p>Gör <span class="uicontrol"> fält </span> till en nedrullningsbar lista där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Fältvärdet <span class="uicontrol"> kan </span> vara ett odefinierat metadatafält, om så önskas. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtrera skript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Filtrera skript </a>. </p> <p>När Index Connector bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle"> fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributet <span class="wintitle"> Tillåtelselista </span> inställt. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
-      <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Primärnyckel? </span> <p>Endast en kartdefinition identifieras som primärnyckel. Det här fältet blir den unika referens som visas när dokumentet läggs till i indexet. Det här värdet används i dokumentets URL i indexet. </p> <p>Värdena för <span class="uicontrol"> primärnyckel måste vara unika </span> för alla dokument som representeras av konfigurationen för indexkoppling. Eventuella dubbletter som påträffas ignoreras. Om källdokumenten inte innehåller ett enda unikt värde som ska användas som <span class="uicontrol"> primärnyckel, </span>men två eller flera fält tillsammans <i>kan</i> utgöra en unik identifierare, kan du definiera <span class="uicontrol"> primärnyckeln </span> genom att kombinera flera <span class="uicontrol"> kolumnvärden </span> med ett lodrätt streck ("|") som avgränsar värdena. </p> </li> 
-      <li id="li_80DB205525094CE1AA6762BFC7892D96"> <span class="uicontrol"> Ta bort HTML? </span> <p>När det här alternativet är markerat tas alla HTML-taggar som finns i fältets data bort. </p> </li> 
-      <li id="li_359D2902859B4C5BADB0BA26F0BA4DC0"> <span class="uicontrol"> Åtgärd </span> <p>Gör att du kan lägga till rader på kartan eller ta bort rader från kartan. Radernas ordning är inte viktig. </p> </li> 
+      <li id="li_A42CB9DFFF8C45A7BAC2D471FE96CEBE"> <span class="uicontrol"> Kolumn  </span> <p> Anger ett kolumnnummer med den första kolumnen som 1 (ett). Om du vill lägga till nya mappningsrader för varje kolumn, under <span class="wintitle"> Åtgärd </span>, klickar du på <span class="uicontrol"> + </span>. </p> <p>Du behöver inte referera till varje kolumn i datakällan. I stället kan du välja att hoppa över värden. </p> </li> 
+      <li id="li_26E8C9554A5D4BC5A5073D6385E3626F"> <span class="uicontrol"> Fält  </span> <p>Definierar det name-attributvärde som används för varje genererad &lt;meta&gt;-tagg. </p> </li> 
+      <li id="li_5DFA514B7F9549B98D6CBC095A66033C"> <span class="uicontrol"> Metadata?  </span> <p>Gör att <span class="uicontrol">-fältet </span> blir en listruta där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Värdet för <span class="uicontrol">-fältet </span> kan vid behov vara ett odefinierat metadatafält. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtreringsskript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Om att filtrera skript </a>. </p> <p>När Index Connector bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle">-fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributuppsättningen <span class="wintitle"> Tillåtelselista </span>. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
+      <li id="li_80DB205525094CE1AA6762BFC7892C95"> <span class="uicontrol"> Primärnyckel?  </span> <p>Endast en kartdefinition identifieras som primärnyckel. Det här fältet blir den unika referens som visas när dokumentet läggs till i indexet. Det här värdet används i dokumentets URL i indexet. </p> <p>Värdena <span class="uicontrol"> för primärnyckeln </span> måste vara unika för alla dokument som representeras av konfigurationen för indexkoppling. Eventuella dubbletter som påträffas ignoreras. Om källdokumenten inte innehåller ett enda unikt värde att använda som <span class="uicontrol"> primärnyckel </span>, men två eller flera fält tillsammans <i>kan</i> vara en unik identifierare, kan du definiera primärnyckeln <span class="uicontrol"> </span> genom att kombinera flera <span class="uicontrol"> kolumnvärden </span> med ett lodrätt fält ("|") som avgränsar värdena. </p> </li> 
+      <li id="li_80DB205525094CE1AA6762BFC7892D96"> <span class="uicontrol"> Ta bort HTML?  </span> <p>När det här alternativet är markerat tas alla HTML-taggar som finns i fältets data bort. </p> </li> 
+      <li id="li_359D2902859B4C5BADB0BA26F0BA4DC0"> <span class="uicontrol"> Åtgärd  </span> <p>Gör att du kan lägga till rader på kartan eller ta bort rader från kartan. Radernas ordning är inte viktig. </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -1211,7 +1263,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       </tr> 
       <tr> 
       <td colname="col1"> <p>Tar bort filsökväg </p> </td> 
-      <td colname="col2"> <p>Anger sökvägen till den enkla platta textfilen, som innehåller ett enda dokumentidentifierarvärde per rad. </p> <p>Sökvägen är relativ till värdadressens rot. </p> <p>Den här filen hämtas och bearbetas under inkrementella indexåtgärder, om den anges. De värden som hittas i den här filen används för att skapa"delete"-begäranden för att ta bort tidigare indexerade dokument. Värdena i den här filen måste motsvara de värden som finns i den fullständiga eller inkrementella filsökvägen, i kolumnen som identifieras som <span class="uicontrol"> primärnyckel </span>. </p> <p> <b>Obs</b>: Den här funktionen är inte aktiverad som standard. Kontakta teknisk support för att aktivera funktionen. </p> </td> 
+      <td colname="col2"> <p>Anger sökvägen till den enkla platta textfilen, som innehåller ett enda dokumentidentifierarvärde per rad. </p> <p>Sökvägen är relativ till värdadressens rot. </p> <p>Den här filen hämtas och bearbetas under inkrementella indexåtgärder, om den anges. De värden som hittas i den här filen används för att skapa"delete"-begäranden för att ta bort tidigare indexerade dokument. Värdena i den här filen måste motsvara de värden som finns i den fullständiga eller inkrementella filsökvägen, i kolumnen <span class="uicontrol"> primärnyckel </span>. </p> <p> <b>Obs</b>: Den här funktionen är inte aktiverad som standard. Kontakta teknisk support för att aktivera funktionen. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Protokoll </p> </td> 
@@ -1226,7 +1278,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       </tr> 
       <tr> 
       <td colname="col1"> <p>ItemTagg </p> </td> 
-      <td colname="col2"> <p>Identifierar XML-elementet som du kan använda för att identifiera enskilda XML-rader i datakällfilen som du har angett. </p> <p>I följande feed-fragment i ett XML-dokument i Adobe är itemTag-värdet <span class="codeph"> post </span>: </p> <p> <code> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
+      <td colname="col2"> <p>Identifierar XML-elementet som du kan använda för att identifiera enskilda XML-rader i datakällfilen som du har angett. </p> <p>I följande feed-fragment av ett XML-dokument i Adobe är ItemTag-värdet <span class="codeph"> post </span>: </p> <p> <code> &lt;?xml&nbsp;version="1.0"&nbsp;encoding="utf-8"?&gt; 
         &lt;!DOCTYPE&nbsp;gsafeed&nbsp;PUBLIC&nbsp;"-//Google//DTD&nbsp;GSA&nbsp;Feeds//EN"&nbsp;""&gt; &lt;gsafeed&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;header&gt; 
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;datasource&gt;marketplace&lt;/datasource&gt; 
@@ -1267,22 +1319,22 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       <td colname="col1"> <p>Karta </p> </td> 
       <td colname="col2"> <p>Gör att du kan ange mappningar av XML-element-till-metadata med XPath-uttryck. </p> <p> 
       <ul id="ul_604108C0277C4892AE8A40CA39889ABD"> 
-      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Tagg </span> <p>Anger en XPath-representation av tolkade XML-data. Med exempeldokumentet Adobe XML ovan, under alternativet Item-tag, kan det mappas med följande syntax: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0AF92270AE9F4BA8B2C7EE41FABC0F34"> <span class="uicontrol"> Tagg  </span> <p>Anger en XPath-representation av tolkade XML-data. Med exempeldokumentet Adobe XML ovan, under alternativet Item-tag, kan det mappas med följande syntax: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
       /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
       /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
       /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>Syntaxen ovan innebär följande: </p> <p> 
       <ul id="ul_6400EBD08D424EADA1612FE4F7EFB640"> 
-      <li id="li_9958F9B40D42434195597DBA9F2AF28F"> <code> /record/@displayurl&amp;nbsp;-&gt;&amp;nbsp;page-url </code> <p>Attributet <span class="codeph"> displayURL </span> för <span class="codeph"> record </span> element mappas till <span class="codeph"> page-url för metadatafältet </span>. </p> </li> 
-      <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>Innehållsattributet <span class="codeph"> för alla </span> metaelement <span class="codeph"> som finns inuti ett </span> metadataelement, som finns inuti ett <span class="codeph"> postelement, </span> vars namnattribut är <span class="codeph"> title, mappas till metadatafältet¥ </span> <span class="codeph"> </span><span class="codeph"> </span>. </p> </li> 
-      <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>Innehållsattributet <span class="codeph"> för alla </span> metaelement <span class="codeph"> som finns inuti ett </span> metadataelement, som finns inuti <span class="codeph"> postelementet </span> , vars name-attribut är <span class="codeph"> description, mappas till metadatafältet¥ desc </span> <span class="codeph"> </span><span class="codeph"> </span>. </p> </li> 
-      <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>Innehållsattributet <span class="codeph"> för </span> alla <span class="codeph"> metaelement </span> som finns i ett <span class="codeph"> metadataelement, som finns i </span> postelementet <span class="codeph"> , vars name-attribut är </span> <span class="codeph"> </span><span class="codeph"> </span>description, mappas till metadatafältet¥. </p> </li> 
+      <li id="li_9958F9B40D42434195597DBA9F2AF28F"> <code> /record/@displayurl&amp;nbsp;-&gt;&amp;nbsp;page-url </code> <p><span class="codeph"> displayURL </span>-attributet för <span class="codeph">-posten </span>-element mappar till metadatafältet <span class="codeph"> page-url </span>. </p> </li> 
+      <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns inuti ett <span class="codeph"> metadata </span>-element, som finns inuti en <span class="codeph">-post </span>-element, vars namnattribut är <span class="codeph"> title </span>, mappar till metadatafältet <span class="codeph"> title &lt;a1/&gt;.</span> </p> </li> 
+      <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns i ett <span class="codeph"> metadata </span>-element, som finns inuti <span class="codeph">-posten </span>-element, vars name-attribut är <span class="codeph"> description </span>, mappar till metadatafältet <span class="codeph"> desc &lt;a1 1/&gt;.</span> </p> </li> 
+      <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns i ett <span class="codeph"> metadata </span>-element, som finns i <span class="codeph">-elementet </span>, vars namnattribut är <span class="codeph"> description </span>, mappas till metadatafältet <span class="codeph"> body &lt;a1/&gt;.</span> </p> </li> 
       </ul> </p> <p>XPath är en relativt komplicerad notation. Mer information finns på följande plats: </p> <p>Se <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
-      <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Fält </span> <p>Definierar det name-attributvärde som används för varje genererad <span class="codeph"> &lt;meta&gt;- </span> tagg. </p> </li> 
-      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadata? </span> <p>Gör <span class="uicontrol"> fält </span> till en nedrullningsbar lista där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Fältvärdet <span class="uicontrol"> kan </span> vara ett odefinierat metadatafält, om så önskas. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtrera skript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Filtrera skript </a>. </p> <p>När Index Connector bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle"> fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributet <span class="wintitle"> Tillåtelselista </span> inställt. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
-      <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Primärnyckel? </span> <p>Endast en kartdefinition identifieras som primärnyckel. Det här fältet blir den unika referens som visas när dokumentet läggs till i indexet. Det här värdet används i dokumentets URL i indexet. </p> <p>Värdena för <span class="uicontrol"> primärnyckel måste vara unika </span> för alla dokument som representeras av konfigurationen för indexkoppling. Eventuella dubbletter som påträffas ignoreras. Om källdokumenten inte innehåller ett enda unikt värde som ska användas som <span class="uicontrol"> primärnyckel, </span>men två eller flera fält tillsammans <i>kan</i> utgöra en unik identifierare, kan du definiera <span class="uicontrol"> primärnyckeln </span> genom att kombinera flera <span class="uicontrol"> taggdefinitioner </span> med ett lodrätt streck ("|") som avgränsar värdena. </p> </li> 
-      <li id="li_DEA24003E97E406DA2510C43CCFDC81F"> <span class="uicontrol"> Ta bort HTML? </span> <p>När det här alternativet är markerat tas alla HTML-taggar som hittas i fältets data bort. </p> </li> 
-      <li id="li_5E829D1D0DBD4BB7AAB5DB983053D248"> <span class="uicontrol"> Används för att ta bort? </span> <p>Används endast vid inkrementella indexåtgärder. Poster som matchar detta XPath-mönster identifierar objekt som ska tas bort. Värdet <span class="uicontrol"> Primärnyckel </span> för varje sådan post används för att konstruera"delete"-begäranden, precis som med Ta bort filsökväg. </p> <p> <b>Obs</b>: Den här funktionen är inte aktiverad som standard. Kontakta teknisk support för att aktivera funktionen. </p> </li> 
-      <li id="li_D40E2F9AD8AD49FC9AC4B8C75BA31E28"> <span class="uicontrol"> Åtgärd </span> <p>Gör att du kan lägga till rader på kartan eller ta bort rader från kartan. Radernas ordning är inte viktig. </p> </li> 
+      <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Fält  </span> <p>Definierar det name-attributvärde som används för varje genererad <span class="codeph"> &lt;meta&gt; </span>-tagg. </p> </li> 
+      <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadata?  </span> <p>Gör att <span class="uicontrol">-fältet </span> blir en listruta där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Värdet för <span class="uicontrol">-fältet </span> kan vid behov vara ett odefinierat metadatafält. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtreringsskript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Om att filtrera skript </a>. </p> <p>När Index Connector bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle">-fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributuppsättningen <span class="wintitle"> Tillåtelselista </span>. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
+      <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Primärnyckel?  </span> <p>Endast en kartdefinition identifieras som primärnyckel. Det här fältet blir den unika referens som visas när dokumentet läggs till i indexet. Det här värdet används i dokumentets URL i indexet. </p> <p>Värdena <span class="uicontrol"> för primärnyckeln </span> måste vara unika för alla dokument som representeras av konfigurationen för indexkoppling. Eventuella dubbletter som påträffas ignoreras. Om källdokumenten inte innehåller ett enda unikt värde att använda som <span class="uicontrol"> primärnyckel </span>, men två eller flera fält tillsammans <i>kan</i> vara en unik identifierare, kan du definiera primärnyckeln <span class="uicontrol"> </span> genom att kombinera flera <span class="uicontrol">-taggdefinitioner </span> med ett lodrätt fält ("|") som avgränsar värdena. </p> </li> 
+      <li id="li_DEA24003E97E406DA2510C43CCFDC81F"> <span class="uicontrol"> Ta bort HTML?  </span> <p>När det här alternativet är markerat tas alla HTML-taggar som hittas i fältets data bort. </p> </li> 
+      <li id="li_5E829D1D0DBD4BB7AAB5DB983053D248"> <span class="uicontrol"> Används för att ta bort?  </span> <p>Används endast vid inkrementella indexåtgärder. Poster som matchar detta XPath-mönster identifierar objekt som ska tas bort. Värdet <span class="uicontrol"> för primärnyckeln </span> för varje sådan post används för att skapa borttagningsbegäranden, som med Ta bort filsökväg. </p> <p> <b>Obs</b>: Den här funktionen är inte aktiverad som standard. Kontakta teknisk support för att aktivera funktionen. </p> </li> 
+      <li id="li_D40E2F9AD8AD49FC9AC4B8C75BA31E28"> <span class="uicontrol"> Åtgärd  </span> <p>Gör att du kan lägga till rader på kartan eller ta bort rader från kartan. Radernas ordning är inte viktig. </p> </li> 
       </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -1299,7 +1351,8 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       </tr> 
       <tr> 
       <td colname="col1"> <p>Filsökväg </p> </td> 
-      <td colname="col2"> <p>Anger sökvägen till det primära XML-dokumentet som innehåller länkar ( <code>
+      <td colname="col2"> <p>Anger sökvägen till det primära XML-dokumentet som innehåller länkar ( 
+      <code>
         &lt;a&gt; 
       </code>) till enskilda XML-dokument. </p> <p>Sökvägen är relativ till värdadressens rot. </p> </td> 
       </tr> 
@@ -1322,37 +1375,37 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       <td colname="col1"> <p>Karta </p> </td> 
       <td colname="col2"> <p>Här kan du ange mappningar kolumn-till-metadata med kolumnnummer. </p> <p> 
       <ul id="ul_06F50CBA0AA64C7CB1AFAE076E629A64"> 
-      <li id="li_0FA2502869BA40DC93D790B79E15A9D2"> <span class="uicontrol"> Tagg </span> <p>Anger en XPath-representation av tolkade XML-data. Med exempeldokumentet Adobe XML ovan, under alternativet Item-tag, kan du mappa det med följande syntax: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
+      <li id="li_0FA2502869BA40DC93D790B79E15A9D2"> <span class="uicontrol"> Tagg  </span> <p>Anger en XPath-representation av tolkade XML-data. Med exempeldokumentet Adobe XML ovan, under alternativet Item-tag, kan du mappa det med följande syntax: </p> <p> <code> /record/@displayurl&nbsp;-&gt;&nbsp;page-url 
         /record/metadata/meta[@name='title']/@content&nbsp;-&gt;&nbsp;title 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;desc 
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>Syntaxen ovan innebär följande: </p> <p> 
       <ul id="ul_F8C536E6E54546D9AA5B22B879C0AF39"> 
-      <li id="li_78A35DFFF1B4496CAC6EDC7B1E991F29"> <code> /record/@displayurl&amp;nbsp;-&gt;&amp;nbsp;page-url </code> <p>Attributet <span class="codeph"> displayURL </span> för <span class="codeph"> record </span> element mappas till <span class="codeph"> page-url för metadatafältet </span>. </p> </li> 
-      <li id="li_FA7DF3D1942248B98660F3D0C82F4563"> <code> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p>Innehållsattributet <span class="codeph"> för alla </span> metaelement <span class="codeph"> som finns inuti ett </span> metadataelement, som finns inuti ett <span class="codeph"> postelement, </span> vars namnattribut är <span class="codeph"> title, mappas till metadatafältet¥ </span> <span class="codeph"> </span><span class="codeph"> </span>. </p> </li> 
-      <li id="li_D8000A116FF84DE59ED19C656DDD3BC1"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p>Innehållsattributet <span class="codeph"> för alla </span> metaelement <span class="codeph"> som finns inuti ett </span> metadataelement, som finns inuti <span class="codeph"> postelementet </span> , vars name-attribut är <span class="codeph"> description, mappas till metadatafältet¥ desc </span> <span class="codeph"> </span><span class="codeph"> </span>. </p> </li> 
-      <li id="li_7FA6A53DFD3D42A98B7BA17CC29DDB81"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p>Innehållsattributet <span class="codeph"> för </span> alla <span class="codeph"> metaelement </span> som finns i ett <span class="codeph"> metadataelement, som finns i </span> postelementet <span class="codeph"> , vars name-attribut är </span> <span class="codeph"> </span><span class="codeph"> </span>description, mappas till metadatafältet¥. </p> </li> 
+      <li id="li_78A35DFFF1B4496CAC6EDC7B1E991F29"> <code> /record/@displayurl&amp;nbsp;-&gt;&amp;nbsp;page-url </code> <p><span class="codeph"> displayURL </span>-attributet för <span class="codeph">-posten </span>-element mappar till metadatafältet <span class="codeph"> page-url </span>. </p> </li> 
+      <li id="li_FA7DF3D1942248B98660F3D0C82F4563"> <code> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns inuti ett <span class="codeph"> metadata </span>-element, som finns inuti en <span class="codeph">-post </span>-element, vars namnattribut är <span class="codeph"> title </span>, mappar till metadatafältet <span class="codeph"> title &lt;a1/&gt;.</span> </p> </li> 
+      <li id="li_D8000A116FF84DE59ED19C656DDD3BC1"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns i ett <span class="codeph"> metadata </span>-element, som finns inuti <span class="codeph">-posten </span>-element, vars name-attribut är <span class="codeph"> description </span>, mappar till metadatafältet <span class="codeph"> desc &lt;a1 1/&gt;.</span> </p> </li> 
+      <li id="li_7FA6A53DFD3D42A98B7BA17CC29DDB81"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns i ett <span class="codeph"> metadata </span>-element, som finns i <span class="codeph">-elementet </span>, vars namnattribut är <span class="codeph"> description </span>, mappas till metadatafältet <span class="codeph"> body &lt;a1/&gt;.</span> </p> </li> 
       </ul> </p> <p>XPath är en relativt komplicerad notation. Mer information finns på följande plats: </p> <p>Se <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
-      <li id="li_84999D07E0AE4265BC7928BBB49957B9"> <span class="uicontrol"> Fält </span> <p>Definierar det name-attributvärde som används för varje genererad &lt;meta&gt;-tagg. </p> </li> 
-      <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadata? </span> <p>Gör <span class="uicontrol"> fält </span> till en nedrullningsbar lista där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Fältvärdet <span class="uicontrol"> kan </span> vara ett odefinierat metadatafält, om så önskas. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtrera skript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Filtrera skript </a>. </p> <p>När Index Connector bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle"> fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributet <span class="wintitle"> Tillåtelselista </span> inställt. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
-      <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Primärnyckel? </span> <p>Endast en kartdefinition identifieras som primärnyckel. Det här fältet blir den unika referens som visas när dokumentet läggs till i indexet. Det här värdet används i dokumentets URL i indexet. </p> <p>Värdena för <span class="uicontrol"> primärnyckel måste vara unika </span> för alla dokument som representeras av konfigurationen för indexkoppling. Eventuella dubbletter som påträffas ignoreras. Om källdokumenten inte innehåller ett enda unikt värde som ska användas som <span class="uicontrol"> primärnyckel, </span>men två eller flera fält tillsammans <i>kan</i> utgöra en unik identifierare, kan du definiera <span class="uicontrol"> primärnyckeln </span> genom att kombinera flera <span class="uicontrol"> taggdefinitioner </span> med ett lodrätt streck ("|") som avgränsar värdena. </p> </li> 
-      <li id="li_9F435EFB3EC74B409EC82A851824610G"> <span class="uicontrol"> Ta bort HTML? </span> <p>När det här alternativet är markerat tas alla HTML-taggar som hittas i fältets data bort. </p> </li> 
-      <li id="li_6302D18971AD439FBECE27742649C56B"> <span class="uicontrol"> Åtgärd </span> <p>Gör att du kan lägga till rader på kartan eller ta bort rader från kartan. Radernas ordning är inte viktig. </p> </li> 
+      <li id="li_84999D07E0AE4265BC7928BBB49957B9"> <span class="uicontrol"> Fält  </span> <p>Definierar det name-attributvärde som används för varje genererad &lt;meta&gt;-tagg. </p> </li> 
+      <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadata?  </span> <p>Gör att <span class="uicontrol">-fältet </span> blir en listruta där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Värdet för <span class="uicontrol">-fältet </span> kan vid behov vara ett odefinierat metadatafält. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtreringsskript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Om att filtrera skript </a>. </p> <p>När Index Connector bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle">-fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributuppsättningen <span class="wintitle"> Tillåtelselista </span>. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
+      <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Primärnyckel?  </span> <p>Endast en kartdefinition identifieras som primärnyckel. Det här fältet blir den unika referens som visas när dokumentet läggs till i indexet. Det här värdet används i dokumentets URL i indexet. </p> <p>Värdena <span class="uicontrol"> för primärnyckeln </span> måste vara unika för alla dokument som representeras av konfigurationen för indexkoppling. Eventuella dubbletter som påträffas ignoreras. Om källdokumenten inte innehåller ett enda unikt värde att använda som <span class="uicontrol"> primärnyckel </span>, men två eller flera fält tillsammans <i>kan</i> vara en unik identifierare, kan du definiera primärnyckeln <span class="uicontrol"> </span> genom att kombinera flera <span class="uicontrol">-taggdefinitioner </span> med ett lodrätt fält ("|") som avgränsar värdena. </p> </li> 
+      <li id="li_9F435EFB3EC74B409EC82A851824610G"> <span class="uicontrol"> Ta bort HTML?  </span> <p>När det här alternativet är markerat tas alla HTML-taggar som hittas i fältets data bort. </p> </li> 
+      <li id="li_6302D18971AD439FBECE27742649C56B"> <span class="uicontrol"> Åtgärd  </span> <p>Gör att du kan lägga till rader på kartan eller ta bort rader från kartan. Radernas ordning är inte viktig. </p> </li> 
       </ul> </p> </td> 
       </tr> 
     </tbody> 
     </table>
 
-1. (Valfritt) Klicka **[!UICONTROL Setup Maps]** för att hämta ett exempel på datakällan. Uppgifterna undersöks för indexering av lämplighet. Den här funktionen är endast tillgänglig för text- och matningstyper.
-1. (Valfritt) Klicka **[!UICONTROL Preview]** för att testa hur konfigurationen fungerar. Den här funktionen är endast tillgänglig för text- och matningstyper.
-1. Klicka **[!UICONTROL Add]** för att lägga till konfigurationen på [!DNL Index Connector Definitions] sidan och i [!DNL Index Connector Configurations] listrutan på [!DNL URL Entrypoints] sidan.
+1. (Valfritt) Klicka på **[!UICONTROL Setup Maps]** om du vill hämta ett exempel på datakällan. Uppgifterna undersöks för indexering av lämplighet. Den här funktionen är endast tillgänglig för text- och matningstyper.
+1. (Valfritt) Klicka på **[!UICONTROL Preview]** för att testa hur konfigurationen fungerar. Den här funktionen är endast tillgänglig för text- och matningstyper.
+1. Klicka på **[!UICONTROL Add]** för att lägga till konfigurationen på sidan [!DNL Index Connector Definitions] och i listrutan [!DNL Index Connector Configurations] på sidan [!DNL URL Entrypoints].
 
    Se [Om URL-adresser](../c-about-settings-menu/c-about-crawling-menu.md#concept_5D857E3B5C124E85BC0B5AE77A509573).
-1. På [!DNL Index Connector Definitions] sidan klickar du på **[!UICONTROL rebuild your staged site index]**.
-1. (Valfritt) Gör något av följande på [!DNL Index Connector Definitions] sidan:
+1. Klicka på **[!UICONTROL rebuild your staged site index]** på sidan [!DNL Index Connector Definitions].
+1. (Valfritt) Gör något av följande på sidan [!DNL Index Connector Definitions]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -1362,28 +1415,28 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Redigera en definition för indexkoppling {#task_DCFC9C6A9964421DB5AB6C25DEE98DE9}
+## Redigera en indexanslutningsdefinition {#task_DCFC9C6A9964421DB5AB6C25DEE98DE9}
 
 Du kan redigera en befintlig Index Connector som du har definierat.
 
 >[!NOTE]
 >
->Det finns inte alla alternativ som du kan ändra, till exempel namnet på indexkopplingen eller typen i [!DNL Type] listrutan.
+>Det finns inte alla alternativ som du kan ändra, till exempel namnet på indexkopplingen eller typen i listrutan [!DNL Type].
 
 **Så här redigerar du en definition för en indexkoppling**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]**.
-1. På [!DNL Index Connector] sidan, under [!DNL Actions] kolumnrubriken, klickar du **[!UICONTROL Edit]** på ett definitionsnamn för Index Connector vars inställningar du vill ändra.
-1. Ange önskade alternativ på [!DNL Index Connector Edit] sidan.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]** på produktmenyn.
+1. På sidan [!DNL Index Connector], under kolumnrubriken [!DNL Actions], klickar du på **[!UICONTROL Edit]** för ett definitionsnamn för Index Connector vars inställningar du vill ändra.
+1. Ange önskade alternativ på sidan [!DNL Index Connector Edit].
 
    Se tabellen med alternativ under [Lägga till en indexanslutningsdefinition](../c-about-settings-menu/c-about-crawling-menu.md#task_96779B651A654E1F871F55D6DBBC8886).
 1. Klicka på **[!UICONTROL Save Changes]**.
-1. (Valfritt) På [!DNL Index Connector Definitions] sidan klickar du på **[!UICONTROL rebuild your staged site index]**.
-1. (Valfritt) Gör något av följande på [!DNL Index Connector Definitions] sidan:
+1. (Valfritt) På sidan [!DNL Index Connector Definitions] klickar du på **[!UICONTROL rebuild your staged site index]**.
+1. (Valfritt) Gör något av följande på sidan [!DNL Index Connector Definitions]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -1397,32 +1450,32 @@ Du kan redigera en befintlig Index Connector som du har definierat.
 
 Du kan granska konfigurationsinställningarna för en befintlig indexanslutningsdefinition.
 
-När du har lagt till en indexanslutningsdefinition på [!DNL Index Connector Definitions] sidan kan du inte ändra dess typinställning. I stället måste du ta bort definitionen och sedan lägga till en ny.
+När en definition av Indexanslutning har lagts till på sidan [!DNL Index Connector Definitions] kan du inte ändra dess typinställning. I stället måste du ta bort definitionen och sedan lägga till en ny.
 
 **Så här visar du inställningarna för en indexanslutningsdefinition**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]**.
-1. På [!DNL Index Connector] sidan, under [!DNL Actions] kolumnrubriken, klickar du **[!UICONTROL Edit]** på ett definitionsnamn för Index Connector vars inställningar du vill granska eller redigera.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]** på produktmenyn.
+1. På sidan [!DNL Index Connector], under kolumnrubriken [!DNL Actions], klickar du på **[!UICONTROL Edit]** för ett definitionsnamn för Index Connector vars inställningar du vill granska eller redigera.
 
 ## Kopiera en indexanslutningsdefinition {#task_3AD55DF07FC44A748D0EFDAB7B35699B}
 
 Du kan kopiera en befintlig Index Connector-definition som ska användas som bas för en ny Index Connector som du vill skapa.
 
-När du kopierar en indexanslutningsdefinition är den kopierade definitionen inaktiverad som standard. Om du vill aktivera eller aktivera definitionen måste du redigera den från [!DNL Index Connector Edit] sidan och markera **[!UICONTROL Enable]**.
+När du kopierar en indexanslutningsdefinition är den kopierade definitionen inaktiverad som standard. Om du vill aktivera eller aktivera definitionen måste du redigera den på sidan [!DNL Index Connector Edit] och välja **[!UICONTROL Enable]**.
 
 Se [Redigera en indexanslutningsdefinition](../c-about-settings-menu/c-about-crawling-menu.md#task_DCFC9C6A9964421DB5AB6C25DEE98DE9).
 
 **Så här kopierar du en indexanslutningsdefinition**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]**.
-1. På [!DNL Index Connector] sidan, under [!DNL Actions] kolumnrubriken, klickar du **[!UICONTROL Copy]** på ett definitionsnamn för Index Connector vars inställningar du vill duplicera.
-1. Ange det nya namnet på definitionen på [!DNL Index Connector Copy] sidan.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]** på produktmenyn.
+1. På sidan [!DNL Index Connector], under kolumnrubriken [!DNL Actions], klickar du på **[!UICONTROL Copy]** för ett definitionsnamn för Index Connector vars inställningar du vill duplicera.
+1. Ange det nya namnet på definitionen på sidan [!DNL Index Connector Copy].
 1. Klicka på **[!UICONTROL Copy]**.
-1. (Valfritt) Gör något av följande på [!DNL Index Connector Definitions] sidan:
+1. (Valfritt) Gör något av följande på sidan [!DNL Index Connector Definitions]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -1432,27 +1485,27 @@ Se [Redigera en indexanslutningsdefinition](../c-about-settings-menu/c-about-cra
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Byta namn på en definition för indexkoppling {#task_5132118FC21B47D99881E0ED425225D7}
+## Byta namn på en indexanslutningsdefinition {#task_5132118FC21B47D99881E0ED425225D7}
 
 Du kan ändra namnet på en befintlig Index Connector-definition.
 
-När du har bytt namn på definitionen kontrollerar du **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Du måste se till att det nya definitionsnamnet återspeglas i listrutan på [!DNL URL Entrypoints] sidan.
+När du har bytt namn på definitionen kontrollerar du **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Du vill se till att det nya definitionsnamnet återspeglas i listrutan på sidan [!DNL URL Entrypoints].
 
 Se [Lägga till flera URL-startpunkter som du vill indexera](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45).
 
 **Byta namn på en definition för indexkoppling**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]**.
-1. På [!DNL Index Connector] sidan, under [!DNL Actions] kolumnrubriken, klickar du **[!UICONTROL Rename]** på namnet på den indexanslutningsdefinition som du vill ändra.
-1. På [!DNL Index Connector Rename] sidan anger du det nya namnet på definitionen i [!DNL Name] fältet.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]** på produktmenyn.
+1. På sidan [!DNL Index Connector], under kolumnrubriken [!DNL Actions], klickar du på **[!UICONTROL Rename]** för det indexanslutningsdefinitionsnamn som du vill ändra.
+1. På sidan [!DNL Index Connector Rename] anger du det nya namnet på definitionen i fältet [!DNL Name].
 1. Klicka på **[!UICONTROL Rename]**.
 1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL URL Entrypoints]**. Om den föregående indexanslutarens namn finns i listan tar du bort det och lägger till den nya posten.
 
-   Se [Lägga till flera URL-startpunkter som du vill indexera](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45). 1. (Valfritt) Gör något av följande på [!DNL Index Connector Definitions] sidan:
+   Se [Lägga till flera URL-startpunkter som du vill indexera](../c-about-settings-menu/c-about-crawling-menu.md#task_2338A47387D74CFDAC4D4EF4A367ED45). 1. (Valfritt) Gör något av följande på sidan [!DNL Index Connector Definitions]:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -1462,12 +1515,12 @@ Se [Lägga till flera URL-startpunkter som du vill indexera](../c-about-settings
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Ta bort en definition för indexkoppling {#task_6B0BD5D0C09F4597A401B0F3AC7C7EA7}
+## Tar bort en indexanslutningsdefinition {#task_6B0BD5D0C09F4597A401B0F3AC7C7EA7}
 
 Du kan ta bort en befintlig Index Connector-definition som du inte längre behöver eller använder.
 
 **Så här tar du bort en definition för indexkoppling**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]**.
-1. På [!DNL Index Connector Definitions] sidan, under [!DNL Actions] kolumnrubriken, klickar du **[!UICONTROL Delete]** på namnet på den indexanslutningsdefinition som du vill ta bort.
-1. På [!DNL Index Connector Delete] sidan klickar du på **[!UICONTROL Delete]**.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Crawling]** > **[!UICONTROL Index Connector]** på produktmenyn.
+1. På sidan [!DNL Index Connector Definitions], under kolumnrubriken [!DNL Actions], klickar du på **[!UICONTROL Delete]** för det indexanslutningsdefinitionsnamn som du vill ta bort.
+1. Klicka på **[!UICONTROL Delete]** på sidan [!DNL Index Connector Delete].
