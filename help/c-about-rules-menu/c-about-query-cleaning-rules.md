@@ -1,6 +1,6 @@
 ---
-description: Analysera och ändra den inkommande frågan med hjälp av Regler för frågerensning.
-seo-description: Analysera och ändra den inkommande frågan med hjälp av Regler för frågerensning.
+description: Använd regler för frågerensning för att analysera och ändra den inkommande frågan.
+seo-description: Använd regler för frågerensning för att analysera och ändra den inkommande frågan.
 seo-title: Om renderingsregler för frågor
 solution: Target
 title: Om renderingsregler för frågor
@@ -8,15 +8,18 @@ topic: Rules,Site search and merchandising
 uuid: 683af81f-f7c0-45f8-9212-e5e7cb82ccca
 translation-type: tm+mt
 source-git-commit: d07cdc2c88f93eed4cecb0ee8818f7fdea06ee9d
+workflow-type: tm+mt
+source-wordcount: '1611'
+ht-degree: 0%
 
 ---
 
 
-# Om renderingsregler för frågor{#about-query-cleaning-rules}
+# Om regler för frågerensning{#about-query-cleaning-rules}
 
-Analysera och ändra den inkommande frågan med hjälp av Regler för frågerensning.
+Använd regler för frågerensning för att analysera och ändra den inkommande frågan.
 
-## Använda renderingsregler för frågor {#concept_17F3CDDC3C8A4128AF092A82B777B86C}
+## Använda frågerensningsregler {#concept_17F3CDDC3C8A4128AF092A82B777B86C}
 
 Den här funktionen används ofta när du vill ändra webbplatssöknings-/försäljningsbeteendet. Du kan t.ex. ändra en tom sökning till ett populärt nyckelord i stället för till en &quot;*&quot;-sökning och på så sätt marknadsföra en populär produkt. Du kan också använda frågerengöringsregler för att utföra en direkt träff, där du omdirigerar till en URL. Detta kan vara särskilt användbart när du upptäcker att någon söker efter en produkt-SKU och du vill hoppa över sökningen och dirigera om till den produktens sida. Frågerengöring kan även användas för att ta bort frågan och ange anpassade variabler som kan användas i senare bearbetningsflödessteg. Regler för frågerensning körs i sekvens för varje fråga. Om du vill ändra ordningen på reglerna kan du dra och släppa. Den faktiska ordningen ändras inte förrän du sparar den.
 
@@ -28,7 +31,7 @@ När frågerensningen är klar används de resulterande CGI-parametrarna framåt
 
 Villkoren är valfria. Om du bestämmer dig för att åtgärder ska anges för varje fråga utförs alltid åtgärderna. Villkoren kan baseras på CGI-frågeparametrar, befintliga cookies eller anpassade variabler som en tidigare regel har angett. Det anses vara&quot;bästa metoden&quot; att den första frågerengöringsregeln körs för varje fråga, där den definierar och initierar alla anpassade variabler som du tänker använda.
 
-## Om renderingsåtgärder för frågor {#section_78F74A9B48DE484191CDA95F5B4E7154}
+## Om åtgärder för att rensa frågor {#section_78F74A9B48DE484191CDA95F5B4E7154}
 
 Alla åtgärder i en frågerensningsregel som har matchande villkor utförs. Åtgärderna består vanligtvis av en åtgärd, de data som åtgärden ska utföras på och det värde som ska användas.
 
@@ -70,7 +73,7 @@ Perform the following actions:
   redirect to https://www.megaelectronic.com/?sku={{q}}
 ```
 
-## Lägga till en frågerensningsregel {#task_47F43988D3D9485F8AE1DFDA7E00BF54}
+## Lägger till en frågetorensningsregel {#task_47F43988D3D9485F8AE1DFDA7E00BF54}
 
 Du kan definiera regler som rensar eller redigerar den inkommande sökfrågan från en kund.
 
@@ -81,9 +84,9 @@ Se [Mallar](../c-about-design-menu/c-about-templates.md#concept_06EB481B14864E18
 **Lägga till en frågetorensningsregel**
 
 1. Klicka på **[!UICONTROL Rules]** > **[!UICONTROL Query Cleaning]** på produktmenyn.
-1. På [!DNL Query Cleaning Rules] sidan klickar du på **[!UICONTROL Add New Rule]**.
-1. I [!DNL Name] fältet skriver du namnet på den nya frågerensningsregeln.
-1. Använd listrutorna och textfälten på [!DNL Add Query Cleaning Rule] sidan för att bygga ut frågan.
+1. Klicka på **[!UICONTROL Add New Rule]** på sidan [!DNL Query Cleaning Rules].
+1. I fältet [!DNL Name] skriver du namnet på den nya frågerengöringsregeln.
+1. Använd listrutorna och textfälten på sidan [!DNL Add Query Cleaning Rule] för att bygga ut frågan.
 
    <table> 
     <thead> 
@@ -105,12 +108,12 @@ Se [Mallar](../c-about-design-menu/c-about-templates.md#concept_06EB481B14864E18
       <td colname="col1"> <p>Systemvariabel </p> </td> 
       <td colname="col2"> <p>Skrivskyddade variabler som angetts av det interna systemet som du kan kontrollera. Följande systemvariabler stöds: </p> <p> 
         <ul id="ul_BC17F1637F27424CA4E8F530C28A3245"> 
-          <li id="li_C7DF96EFD7AA4A449D00F7EACCAA0EB1"> <span class="uicontrol"> värdnamn </span> <p>Namnet på servervärden. </p> </li> 
-          <li id="li_F85AB1D2B9374A859657D12B8ED6674B"> <span class="uicontrol"> uri </span> <p>Begärd URI utan frågesträngen. </p> </li> 
-          <li id="li_440149C9EC6E4805B77BBC97BE41542A"> <span class="uicontrol"> args </span> <p>Hela frågesträngen. </p> </li> 
-          <li id="li_F583FC4B0E404858BB3522B33A6F7A0A"> <span class="uicontrol"> miljö </span> <p>"Stage" eller "live" beroende på om den inkommande frågan skickades till din staged- eller livemiljö. </p> </li> 
-          <li id="li_15902AA49B144D42A5E95D7E8B0FB1E1"> <span class="uicontrol"> hänvisare </span> <p>Den URL som kunden kom ifrån. </p> </li> 
-          <li id="li_6FEE352DB7A842FCB2EBE1398AD03666"> <span class="uicontrol"> användaragent </span> <p>Strängen "user-agent" i kundens webbläsare. </p> </li> 
+          <li id="li_C7DF96EFD7AA4A449D00F7EACCAA0EB1"> <span class="uicontrol"> värdnamn  </span> <p>Namnet på servervärden. </p> </li> 
+          <li id="li_F85AB1D2B9374A859657D12B8ED6674B"> <span class="uicontrol"> uri  </span> <p>Begärd URI utan frågesträngen. </p> </li> 
+          <li id="li_440149C9EC6E4805B77BBC97BE41542A"> <span class="uicontrol"> args  </span> <p>Hela frågesträngen. </p> </li> 
+          <li id="li_F583FC4B0E404858BB3522B33A6F7A0A"> <span class="uicontrol"> miljö  </span> <p>"Stage" eller "live" beroende på om den inkommande frågan skickades till din staged- eller livemiljö. </p> </li> 
+          <li id="li_15902AA49B144D42A5E95D7E8B0FB1E1"> <span class="uicontrol"> hänvisare  </span> <p>Den URL som kunden kom ifrån. </p> </li> 
+          <li id="li_6FEE352DB7A842FCB2EBE1398AD03666"> <span class="uicontrol"> användaragent  </span> <p>Strängen "user-agent" i kundens webbläsare. </p> </li> 
         </ul> </p> </td> 
       </tr> 
       <tr> 
@@ -119,7 +122,7 @@ Se [Mallar](../c-about-design-menu/c-about-templates.md#concept_06EB481B14864E18
       </tr> 
       <tr> 
       <td colname="col1"> <p>Backend-parameter </p> </td> 
-      <td colname="col2"> <p>Inkommande frågeparametrar översätts till slut till serverdelsparametrar som används för att utföra sökningen. </p> <p>Se CGI-parametrar för <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> backend-sökning </a>. </p> <p>Backend-parametrar visas inte i navigeringselement. Det innebär att du kan dölja eventuella ytterligare parametrar som du vill tillämpa på en sökning från dina kunder. Åtgärder på backend-parametrar är sena. alltså används de precis innan sökningen skickas. </p> </td> 
+      <td colname="col2"> <p>Inkommande frågeparametrar översätts till slut till serverdelsparametrar som används för att utföra sökningen. </p> <p>Se <a href="../c-appendices/c-cgiparameters.md#reference_582E85C3886740C98FE88CA9DF7918E8" type="reference" format="dita" scope="local"> CGI-parametrar för backend-sökning </a>. </p> <p>Backend-parametrar visas inte i navigeringselement. Det innebär att du kan dölja eventuella ytterligare parametrar som du vill tillämpa på en sökning från dina kunder. Åtgärder på backend-parametrar är sena. alltså används de precis innan sökningen skickas. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Fasett </p> </td> 
@@ -131,7 +134,7 @@ Se [Mallar](../c-about-design-menu/c-about-templates.md#concept_06EB481B14864E18
       </tr> 
       <tr> 
       <td colname="col1"> <p>Butik </p> </td> 
-      <td colname="col2"> <p>Sökmotorn identifierar automatiskt vilket arkiv användaren befinner sig i baserat på värdnamnet eller frågeparametern <span class="codeph"> </span> gs_store, och den senare har företräde. Du kan skapa villkor från butiken. Om du bara rensar en fråga kan du även använda en åtgärd för att åsidosätta den aktuella butiken. </p> </td> 
+      <td colname="col2"> <p>Sökmotorn identifierar automatiskt vilket arkiv användaren befinner sig i baserat på värdnamnet eller frågeparametern <span class="codeph"> gs_store </span>, där den senare har prioritet. Du kan skapa villkor från butiken. Om du bara rensar en fråga kan du även använda en åtgärd för att åsidosätta den aktuella butiken. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Sista regeln </p> </td> 
@@ -147,9 +150,9 @@ Se [Mallar](../c-about-design-menu/c-about-templates.md#concept_06EB481B14864E18
 1. Klicka på **[!UICONTROL Add]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -166,16 +169,16 @@ Du kan redigera befintliga frågerensningsregler som du har lagt till på sidan 
 **Så här redigerar du en frågerensningsregel**
 
 1. Klicka på **[!UICONTROL Rules]** > **[!UICONTROL Query Cleaning]** på produktmenyn.
-1. På [!DNL Query Cleaning Rules] sidan, under tabellens **[!UICONTROL Actions]** kolumn, klickar du **[!UICONTROL Edit]** på den associerade regel som du vill redigera.
-1. Använd listrutorna och textfälten på [!DNL Edit Query Cleaning Rule] sidan för att bygga ut frågan.
+1. På sidan [!DNL Query Cleaning Rules], under kolumnen **[!UICONTROL Actions]** i tabellen, klickar du på **[!UICONTROL Edit]** för den associerade regel som du vill redigera.
+1. Använd listrutorna och textfälten på sidan [!DNL Edit Query Cleaning Rule] för att bygga ut frågan.
 
    Se tabellen med alternativ under [Lägga till en frågerengöringsregel](../c-about-rules-menu/c-about-query-cleaning-rules.md#task_47F43988D3D9485F8AE1DFDA7E00BF54).
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -185,7 +188,7 @@ Du kan redigera befintliga frågerensningsregler som du har lagt till på sidan 
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Ta bort en frågerensningsregel {#task_C52D17226B824590B087CAB6970CBB01}
+## Tar bort en frågetorensningsregel {#task_C52D17226B824590B087CAB6970CBB01}
 
 Du kan ta bort frågerensningsregler som du inte längre behöver eller använder.
 
@@ -194,13 +197,13 @@ När du tar bort en regel justeras ordningen som återstående regler körs auto
 **Så här tar du bort en frågerengöringsregel**
 
 1. Klicka på **[!UICONTROL Rules]** > **[!UICONTROL Query Cleaning]** på produktmenyn.
-1. På [!DNL Query Cleaning Rules] sidan, under tabellens **[!UICONTROL Actions]** kolumn, klickar du **[!UICONTROL Delete]** på den associerade regel som du vill ta bort.
-1. Klicka på i [!DNL Confirmation] dialogrutan **[!UICONTROL OK]**.
+1. På sidan [!DNL Query Cleaning Rules], under kolumnen **[!UICONTROL Actions]** i tabellen, klickar du på **[!UICONTROL Delete]** för den associerade regel som du vill ta bort.
+1. Klicka på **[!UICONTROL OK]** i dialogrutan [!DNL Confirmation].
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
@@ -210,27 +213,27 @@ När du tar bort en regel justeras ordningen som återstående regler körs auto
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Ändra ordningen som frågetorensningsreglerna körs i {#task_C24012C45A4445468A7FD998017388CA}
+## Ändra ordningen som frågetorensningsreglerna körs {#task_C24012C45A4445468A7FD998017388CA}
 
 Du kan ändra ordningen på frågerengöringsregler om du vill ändra i vilken ordning de körs på presentationsmallar.
 
-Regler för frågerensning körs i den ordning de definierats. Ju högre ordningsnummer en regel har, desto senare körs den i processen, och tidigare regler trumpetas. Du ändrar ordning på reglerna genom att ange ett nytt nummer i kolumnen Ordning i tabellen på [!DNL Query Cleaning Rules] sidan. Du kan också använda dra-och-släpp-regler för att ändra deras körningsordning.
+Regler för frågerensning körs i den ordning de definierats. Ju högre ordningsnummer en regel har, desto senare körs den i processen, och tidigare regler trumpetas. Du ändrar ordning på reglerna genom att ange ett nytt nummer i kolumnen Ordning i tabellen på sidan [!DNL Query Cleaning Rules]. Du kan också använda dra-och-släpp-regler för att ändra deras körningsordning.
 
 **Så här ändrar du den ordning som frågerensregler körs i**
 
 1. Klicka på **[!UICONTROL Rules]** > **[!UICONTROL Query Cleaning]** på produktmenyn.
-1. Gör något av följande på [!DNL Query Cleaning Rules] sidan:
+1. Gör något av följande på sidan [!DNL Query Cleaning Rules]:
 
-   * Klicka på kolumnrubriken om du vill sortera reglerna i stigande eller fallande ordning. [!DNL Order]
-   * I [!DNL Order] kolumnen skriver du det ordningsnummer som du vill att regeln ska köras i textfältet till vänster om namnet på en frågerensregel.
+   * Klicka på kolumnrubriken [!DNL Order] om du vill sortera reglerna i stigande eller fallande ordning.
+   * I kolumnen [!DNL Order] skriver du ordningsnumret som du vill att regeln ska köras i textfältet till vänster om namnet på en frågerensregel.
    * Dra och släpp en tabellrad till den position där du vill att linjen ska köras. Alla ordernummer uppdateras för att återspegla den nya ordningen som reglerna körs i.
 
 1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Gör något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
