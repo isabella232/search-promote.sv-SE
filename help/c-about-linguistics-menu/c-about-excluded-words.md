@@ -8,6 +8,9 @@ topic: Linguistics,Site search and merchandising
 uuid: 1c879462-1b19-44f6-a3b2-20aa786b3221
 translation-type: tm+mt
 source-git-commit: 46cdbdf94ba8f92dba7d03ce80b25a2ae73b228a
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 46cdbdf94ba8f92dba7d03ce80b25a2ae73b228a
 
 Du kan använda Uteslutna ord för att ange fraser som du använder ofta och vanliga ord, t.ex. &quot;a&quot; och &quot;the&quot;, som du vill utesluta från sökresultatet.
 
-## Använda uteslutna ord {#concept_9DB67BD2F0DC43AC88741003D9F39812}
+## Använder uteslutna ord {#concept_9DB67BD2F0DC43AC88741003D9F39812}
 
 Se även [Om sökningar](../c-about-settings-menu/c-about-searching-menu.md#concept_207105CF26B1448F8A3D223787C56AB8).
 
@@ -28,7 +31,7 @@ När du anger ord som ska uteslutas från sökresultatet avgränsar du ord eller
 
 ![](assets/excluded_words_1.jpg)
 
-Om din kund söker efter&quot;USA:s enade delstater&quot; i exempellistan med uteslutna ord ovan utesluts ordet&quot;USA&quot; och ordet&quot;av&quot; från sökningen. Sökningen hittar i stället alla sidor som innehåller orden&quot;Förenade&quot;,&quot;lägen&quot; och&quot;amerika&quot;. Sidor som bara innehåller ordet &quot;av&quot; eller &quot;på&quot; visas inte.
+Om din kund söker efter&quot;USA:s USA&quot; i exempellistan med uteslutna ord ovan utesluts ordet&quot;USA&quot; och ordet&quot;av&quot; från sökningen. Sökningen hittar i stället alla sidor som innehåller orden&quot;Förenade&quot;,&quot;lägen&quot; och&quot;amerika&quot;. Sidor som bara innehåller ordet &quot;av&quot; eller &quot;på&quot; visas inte.
 
 Vissa webbplatser innehåller specifika fraser på de flesta, eller alla, sidor. En webbplats om turism i New York City kan till exempel innehålla orden New York i titeln på varje sida. Överväg att lägga till den här frasen, och andra gilla den, i exkluderingslistan:
 
@@ -49,21 +52,21 @@ Du kan välja att visa sökresultat när alla ord i kundens sökning är uteslut
 **Konfigurera uteslutna ord**
 
 1. Klicka på **[!UICONTROL Linguistics]** > **[!UICONTROL Excluded Words]** på produktmenyn.
-1. På [!DNL Excluded Words] sidan anger du de ord du vill utesluta från sökresultatet i **[!UICONTROL Words and Phrases]** textfältet.
-1. (Valfritt) Klicka **[!UICONTROL Show results when all words in the query are excluded words]**.
+1. På sidan [!DNL Excluded Words] anger du de ord du vill utesluta från sökresultatet i textfältet **[!UICONTROL Words and Phrases]**.
+1. (Valfritt) Klicka på **[!UICONTROL Show results when all words in the query are excluded words]**.
 
    När alla ord i kundens sökning är uteslutna, används alla ord tillsammans för att utföra sökningen.
 1. Klicka på **[!UICONTROL Save Changes]**.
-1. Om du vill förhandsgranska resultatet av ändringarna klickar du på **[!UICONTROL regenerate your staged site index]** för att återskapa det mellanlagrade webbplatsindexet.
+1. Om du vill förhandsgranska resultatet av ändringarna klickar du på **[!UICONTROL regenerate your staged site index]** för att återskapa indexet för den mellanlagrade webbplatsen.
 
-   Se [Köra ett fullständigt index för en publicerad eller mellanlagrad webbplats..](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
+   Se [Köra ett fullständigt index för en aktiv eller mellanlagrad webbplats..](../c-about-index-menu/c-about-full-index.md#task_F7FE04D8A1654A7787FCCA31B45EB42D).
 
-   Se [Köra ett inkrementellt index för en aktiv eller mellanlagrad webbplats..](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
-1. (Valfritt) På produktmenyn klickar du på **[!UICONTROL Linguistics]** > **[!UICONTROL Excluded Words]** och gör sedan något av följande:
+   Se [Köra ett inkrementellt index för en aktiv eller mellanlagrad webbplats...](../c-about-index-menu/c-about-incremental-index.md#task_9BFB6157F3884B2FAECB7E0E9CA318CB).
+1. (Valfritt) Klicka på **[!UICONTROL Linguistics]** > **[!UICONTROL Excluded Words]** på produktmenyn och gör sedan något av följande:
 
-   * Klicka **[!UICONTROL History]** för att återställa ändringar som du har gjort.
+   * Klicka på **[!UICONTROL History]** om du vill återställa ändringar som du har gjort.
 
-      Se [Använda alternativet](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002)Historik.
+      Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F87A67242BBBD2CB27156F43002).
 
    * Klicka på **[!UICONTROL Live]**.
 
