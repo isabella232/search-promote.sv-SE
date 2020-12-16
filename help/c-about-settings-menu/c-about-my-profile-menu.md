@@ -9,6 +9,9 @@ topic: Settings,Site search and merchandising
 uuid: 6a0a4e57-59fa-48fb-b712-eb16a9f47c3a
 translation-type: tm+mt
 source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Du kan visa och hantera din personliga användarinformation som är kopplad till
 
 Den teckenkodning du väljer används på webbsidorna på ditt konto så länge de inte anger någon åsidosättande teckenuppsättningskodning i en meta-tagg. Teckenkodningen används även på kontokonfigurationssidorna. Standardvärdet är &quot;Västerländsk (ISO-8859-1)&quot;.
 
-När du anger e-postadressen får den bara innehålla ASCII-tecken. Använd alfabetisk standard (a..z) tecken eller numeriska `(0..9)` tecken med exakt ett `@` tecken som används för att skilja användarnamnet från domänen. Tecknen `_`, `+`, `-`, `.`, `!`, `#`, `$`, `'`, `%`, `&``*``=``?``^``{``}` ¥,¥,¥,¥,¥ och¥ är också tillåtna. E-postadressen får inte börja med en punkt (`.`).
+När du anger e-postadressen får den bara innehålla ASCII-tecken. Använd alfabetisk standard (a..z) eller numeriska `(0..9)` tecken med exakt ett `@`-tecken som används för att skilja användarnamnet från domänen. Tecknen `_`, `+`, `-`, `.`, `!`, `#`, `$`, `'`, `%`, `&`, `*`, `=`, `?`, `^`, &lt;a 14/>, och `}` tillåts också. `{` E-postadressen får inte börja med en punkt (`.`).
 
 Se [Konfigurera dina inställningar](../c-about-settings-menu/c-about-my-profile-menu.md#task_5E06BF565C284C2EBBE18E10A1C4BFBB).
 
@@ -35,10 +38,10 @@ Se [Visa dina behörigheter](../c-about-settings-menu/c-about-my-profile-menu.md
 
 **Så här konfigurerar du din personliga användarinformation**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]**.
-1. På [!DNL Personal Information] sidan anger du de fält som du vill använda.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Personal Information]** på produktmenyn.
+1. På sidan [!DNL Personal Information] anger du de fält du vill använda.
 
-   Endast [!DNL Email Address] fältet är obligatoriskt.
+   Endast fältet [!DNL Email Address] krävs.
 1. Klicka på **[!UICONTROL Save Changes]**.
 
 ## Konfigurera dina inställningar {#task_5E06BF565C284C2EBBE18E10A1C4BFBB}
@@ -55,14 +58,14 @@ Se [Avbryta inloggningen](../c-about-settings-menu/c-about-my-profile-menu.md#ta
 
 Se [Visa dina behörigheter](../c-about-settings-menu/c-about-my-profile-menu.md#task_6107C5BA333B4053A56325AE5E3A1848).
 
-Se [Affärsregler](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
+Se [Om affärsregler](../c-about-rules-menu/c-about-business-rules.md#concept_2A93D76216754D3D8412CDEA00BD26BD).
 
 Se [Mallar](../c-about-design-menu/c-about-templates.md#concept_06EB481B14864E18A8AE2BCD1D6EF0B5).
 
 **Så här konfigurerar du dina inställningar**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL My Preferences]**.
-1. På [!DNL My Preferences] sidan anger du de fält som du vill ha.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL My Preferences]** på produktmenyn.
+1. På sidan [!DNL My Preferences] anger du fälten som du vill använda.
 
    | Alternativ | Beskrivning |
    |--- |--- |
@@ -76,14 +79,14 @@ Se [Mallar](../c-about-design-menu/c-about-templates.md#concept_06EB481B14864E18
 
 Du kan ändra lösenordet som du använder för att logga in. Förstagångsanvändare tilldelas ett lösenord automatiskt.
 
-Om du tappar bort eller glömmer bort lösenordet klickar du **[!UICONTROL Forgot your password?]** på inloggningssidan och följer instruktionerna för att generera ett nytt lösenord.
+Om du tappar bort eller glömmer lösenordet klickar du på **[!UICONTROL Forgot your password?]** på inloggningssidan och följer instruktionerna för att generera ett nytt lösenord.
 
 Följande regler och begränsningar gäller för kontolösenord:
 
 * Lösenord är skiftlägeskänsliga.
 * Minst 8 tecken och högst 20 tecken.
 * Måste innehålla minst en bokstav och en siffra.
-* Alla ASCII-texttecken tillåts, förutom `"@"` symbolen.
+* Alla ASCII-texttecken tillåts, förutom symbolen `"@"`.
 * Blanksteg tillåts (inledande blanksteg tas bort).
 * Ordlistor är inte tillåtna.
 
@@ -97,18 +100,18 @@ Se [Visa dina behörigheter](../c-about-settings-menu/c-about-my-profile-menu.md
 
 **Ändra inloggningslösenord**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Password]**.
-1. Skriv det inloggningslösenord som du använder på [!DNL Change Password] sidan i [!DNL Current Password] fältet.
-1. Skriv det nya inloggningslösenordet som du vill använda i [!DNL New Password] fältet och i [!DNL New Password (again)] fältet.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Password]** på produktmenyn.
+1. På sidan [!DNL Change Password] skriver du det aktuella inloggningslösenordet som du använder i fältet [!DNL Current Password].
+1. I fältet [!DNL New Password] och fältet [!DNL New Password (again)] skriver du det nya inloggningslösenordet som du vill använda.
 1. Klicka på **Spara ändringar**.
 
-## Avbryta inloggningen {#task_D57701BB726243B08CEA14EEC86C3087}
+## Avbryter inloggningen {#task_D57701BB726243B08CEA14EEC86C3087}
 
-Du kan välja att avbryta din Adobe-inloggning. Om du avbryter din inloggning kan du inte komma åt det här kontot eller något annat Adobe-konto med den visade inloggningsinformationen via e-post.
+Du kan välja att avbryta inloggningen på Adobe. Om du avbryter din inloggning kan du inte komma åt det här kontot eller något annat Adobe-konto med den visade inloggningsinformationen.
 
 Som kontoägare måste du överföra kontoägarskapet till en annan aktiv kontoanvändare innan du kan avbryta din inloggning. När den här åtgärden är slutförd kan du avbryta inloggningen på samma sätt som andra kontoanvändare.
 
-Se [Överföra kontoägarskap till en annan kontoanvändare](../c-about-settings-menu/c-about-account-options-menu.md#task_47E3C66CC6374274830DA10171E0CF17).
+Se [Överför kontoägarskap till en annan kontoanvändare](../c-about-settings-menu/c-about-account-options-menu.md#task_47E3C66CC6374274830DA10171E0CF17).
 
 Se [Ta bort dig själv från ett konto](../c-about-settings-menu/c-about-account-options-menu.md#task_C56F5AB87B664BAAAC2FD2F15003E73F).
 
@@ -118,10 +121,10 @@ Se [Ta bort ett konto](../c-about-settings-menu/c-about-account-options-menu.md#
 
 1. Överför kontoägarskap till en annan kontoanvändare.
 
-   Se [Överföra kontoägarskap till en annan kontoanvändare](../c-about-settings-menu/c-about-account-options-menu.md#task_47E3C66CC6374274830DA10171E0CF17).
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Cancel]**.
-1. På [!DNL Cancel Login] sidan klickar du på **[!UICONTROL Cancel Login]**.
-1. Klicka **[!UICONTROL Yes]** för att bekräfta annulleringen.
+   Se [Överför kontoägarskap till en annan kontoanvändare](../c-about-settings-menu/c-about-account-options-menu.md#task_47E3C66CC6374274830DA10171E0CF17).
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL Cancel]** på produktmenyn.
+1. Klicka på **[!UICONTROL Cancel Login]** på sidan [!DNL Cancel Login].
+1. Klicka på **[!UICONTROL Yes]** för att bekräfta annulleringen.
 
 ## Visa dina behörigheter {#task_6107C5BA333B4053A56325AE5E3A1848}
 
@@ -135,7 +138,7 @@ Se [Visa rollerna som finns för ett konto](../c-about-settings-menu/c-about-use
 
 Privilegiet **[!UICONTROL Can push live]** i trädvyn är en speciell kontroll som ger alla användare i den rollen möjlighet att överföra alla mellanlagrade objekt live. Genom att skapa en roll som inte har den här funktionen kan du se till att användare i den rollen inte kan påverka din livesökning förrän någon som kan göra inställningarna live granskar sitt arbete och gör det.
 
-Behörigheterna **[!UICONTROL Run live indexes]** och **[!UICONTROL Run stage indexes]** är specialkontroller som används för att ge eller neka användare i en roll möjligheten att köra ett index.
+Privilegierna **[!UICONTROL Run live indexes]** och **[!UICONTROL Run stage indexes]** är specialkontroller som används för att ge eller neka användare i en roll möjligheten att köra ett index.
 
 Du kan t.ex. ha vissa användare i en roll som kan köra mellanlagrade index, men inte direktindex, eller möjlighet att överföra mellanlagrade inställningar live. Användare med den här rollen kan testa allt arbete i en staged-miljö utan att det aktiva indexet påverkas. Vissa inställningar kräver att du återskapar indexet innan du kan förhandsgranska ändringarna.
 
@@ -151,5 +154,5 @@ Se [Avbryta inloggningen](../c-about-settings-menu/c-about-my-profile-menu.md#ta
 
 **Visa dina behörigheter**
 
-1. På produktmenyn klickar du på **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL My Access Privileges]**.
-1. Expandera trädvyerna på [!DNL My Access Privileges] sidan för att granska behörigheter eller begränsad åtkomst.
+1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL My Profile]** > **[!UICONTROL My Access Privileges]** på produktmenyn.
+1. Expandera trädvyerna på sidan [!DNL My Access Privileges] för att granska behörigheter eller begränsad åtkomst.
