@@ -8,11 +8,14 @@ topic: Appendices,Site search and merchandising
 uuid: 234fd563-f249-42b0-88ca-c89b44f8df77
 translation-type: tm+mt
 source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+workflow-type: tm+mt
+source-wordcount: '6298'
+ht-degree: 0%
 
 ---
 
 
-# Guidade sökresultat{#guided-search-output}
+# Utdata från guidad sökning{#guided-search-output}
 
 Du kan anpassa utdata i alla textbaserade format, inklusive XML och JSON.
 
@@ -20,17 +23,17 @@ Du kan anpassa utdata i alla textbaserade format, inklusive XML och JSON.
 
 Utdataformatet är anpassbart för att stödja fasettering, sortering och andra implementeringsspecifika beslut som fattas under designprocessen. Ni kan anpassa själva formatet för att vid behov förenkla utvecklingen av kundens gränssnitt.
 
-Hela utdata finns i `<result>` -taggar, och de flesta dynamiska data omges av `<![CDATA[ ]]>` -taggar. Sådan organisation tillåter att resultaten innehåller HTML och andra icke-XML-enheter.
+Hela utdata finns i `<result>`-taggar, och de flesta dynamiska data finns i `<![CDATA[ ]]>`-taggar. Sådan organisation tillåter att resultaten innehåller HTML och andra icke-XML-enheter.
 
 Där det finns länkar till andra sidor visas de i form av en relativ URL-adress. Resultatet innehåller också frågesträngsparametrar som skickas för att generera det önskade resultatet.
 
 ## Om en guidad sökimplementering {#section_95483980930C4325BAB50A40BD47245A}
 
-När du påbörjar en implementering av en guidad sökning måste du komma ihåg att den [!DNL Adobe Search&Promote] är ansvarig för Business Layer. Det är logiken som omger vilka resultat och aspekter som visas för kunden vid varje givet tillfälle.
+När du påbörjar en implementering av en guidad sökning måste du komma ihåg att [!DNL Adobe Search&Promote] är ansvarig för affärslagret. Det är logiken som omger vilka resultat och aspekter som visas för kunden vid varje givet tillfälle.
 
 När du implementerar webbprogrammets frontdel som tolkar och visar resultatet som HTML, ska du begränsa funktionen så att den bara visas. Det innebär att all logik på serversidan som du använder för att skapa presentationslagret inte avgör vad som ska visas för en kund, såvida det inte är nödvändigt. Affärsreglerna fungerar inte som du förväntar dig om frontendskriptet ändrar sökresultaten.
 
-[!DNL Adobe Search&Promote] behåller användartillståndet för de valda alternativen för sökförfining via URL-parametrarna. Alla `<link>` noder innehåller relevanta parametrar för kundens val. Parametrarna kan vara vägbeskrivningar, sidnumrering, sortering och ansiktsval. I tillämpliga fall returneras `<undolink>` noder för att kunden ska kunna&quot;hoppa ut&quot; från ett urval. Ansikten och vägbeskrivningar innehåller den här typen av länkar.
+[!DNL Adobe Search&Promote] behåller användartillståndet för de valda alternativen för sökförfining via URL-parametrarna. Alla `<link>`-noder innehåller de relevanta parametrarna för kundens val. Parametrarna kan vara vägbeskrivningar, sidnumrering, sortering och ansiktsval. I tillämpliga fall returneras `<undolink>`-noder så att kunden kan&quot;hoppa ut&quot; från ett urval. Ansikten och vägbeskrivningar innehåller den här typen av länkar.
 
 ## Arbeta med sökservern {#section_8DBEACDECD714E59BDED6315E6041B8D}
 
@@ -49,11 +52,11 @@ Tre format för CGI-parametrar stöds. Som standard är ditt konto konfigurerat 
 
 * `https://search.megacorp.com?q=shoes ;page=2`
 
-Om du vill kan du låta kontohanteraren konfigurera ditt konto så att det använder et-tecken ( `&`) för att skilja CGI-parametrarna åt, som i följande exempel:
+Om du vill kan du låta kontohanteraren konfigurera ditt konto så att det använder et-tecken ( `&`) för att separera CGI-parametrarna, som i följande exempel:
 
 * `https://search.megacorp.com?q=shoes &page=2`
 
-Ett tredje format, som kallas SEO-format, stöds också när ett snedstreck ( `/`) används i stället för avgränsaren och likhetstecken för att generera &quot;rena&quot; länkar, som i följande exempel:
+Ett tredje format, som kallas SEO-format, stöds också där ett snedstreck ( `/`) används i stället för avgränsaren och likhetstecken för att generera&quot;rena&quot; länkar, som i följande exempel:
 
 * `https://search.megacorp.com/q/shoes/page/2`
 
@@ -73,57 +76,57 @@ I följande tabell beskrivs standardparametrarna för sökfrågor som du kan anv
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> q </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> q= sträng </span> </p> </td> 
-   <td colname="col3"> <p> Anger frågesträngen för sökningen. Den här parametern mappar till <span class="codeph"> sp_q- </span> parametern för backend-sökning. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> q  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> q= sträng  </span> </p> </td> 
+   <td colname="col3"> <p> Anger frågesträngen för sökningen. Den här parametern mappar till <span class="codeph"> sp_q </span>-parametern för backend-sökning. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> q# </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> q#= sträng </span> </p> </td> 
-   <td colname="col3"> <p>Numrerade <span class="codeph"> q- </span> och <span class="codeph"> x- </span> parametrar ger fasettering eller sökning inom ett givet fält. </p> <p>Parametern <span class="codeph"> q </span> definierar termen som du söker efter i ansiktet som motsvarande numrerade <span class="codeph"> x- </span> parameter. Om du t.ex. har två ansikten med namnet size och color, kan du ha något av följande: </p> <p> <span class="codeph"> q1=small;x1=size;q2=red;x2=color </span> </p> <p>Den här parametern mappar till <span class="codeph"> sökparametrarna för sp_q_exact_# </span> . </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> q#  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> q#= sträng  </span> </p> </td> 
+   <td colname="col3"> <p>Numrerade <span class="codeph"> q </span>- och <span class="codeph"> x </span>-parametrar ger fasettering eller sökning i ett givet fält. </p> <p>Parametern <span class="codeph"> q </span> definierar den term som du söker efter i ansiktet som motsvarande numrerade <span class="codeph"> x </span>-parameter anger. Om du t.ex. har två ansikten med namnet size och color, kan du ha något av följande: </p> <p> <span class="codeph"> q1=small;x1=size;q2=red;x2=color  </span> </p> <p>Den här parametern mappar till <span class="codeph"> sp_q_exact_# </span>-parametrar för backend-sökning. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> x# </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> x#= sträng </span> </p> </td> 
-   <td colname="col3"> <p> Numrerade <span class="codeph"> q- </span> och <span class="codeph"> x- </span> parametrar ger fasettering eller sökning inom ett givet fält. </p> <p>Parametern <span class="codeph"> q </span> definierar termen som du söker efter i ansiktet som motsvarande numrerade <span class="codeph"> x- </span> parameter. Om du t.ex. har två ansikten med namnet size och color, kan du ha något av följande: </p> <p> <span class="codeph"> q1=small;x1=size;q2=red;x2=color </span> </p> <p>Den här parametern mappar till <span class="codeph"> sökparametrarna för sp_x_# </span> -serverdelen. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> x#  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> x#= sträng  </span> </p> </td> 
+   <td colname="col3"> <p> Numrerade <span class="codeph"> q </span>- och <span class="codeph"> x </span>-parametrar ger fasettering eller sökning i ett givet fält. </p> <p>Parametern <span class="codeph"> q </span> definierar den term som du söker efter i ansiktet som motsvarande numrerade <span class="codeph"> x </span>-parameter anger. Om du t.ex. har två ansikten med namnet size och color, kan du ha något av följande: </p> <p> <span class="codeph"> q1=small;x1=size;q2=red;x2=color  </span> </p> <p>Den här parametern mappar till <span class="codeph"> sp_x_# </span>-parametrar för backend-sökning. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> samling </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> collection= string </span> </p> </td> 
-   <td colname="col3"> <p> Anger den samling som ska användas för sökningen. Den här parametern mappar till <span class="codeph"> sp_k- </span> parametern för backend-sökning. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> samling  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> collection= string  </span> </p> </td> 
+   <td colname="col3"> <p> Anger den samling som ska användas för sökningen. Den här parametern mappar till <span class="codeph"> sp_k </span>-parametern för backend-sökning. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> antal </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> count= number </span> </p> </td> 
-   <td colname="col3"> <p> Anger det totala antalet resultat som visas. Standardvärdet definieras i <span class="uicontrol"> Inställningar </span> &gt; <span class="uicontrol"> Sökning </span> &gt; <span class="uicontrol"> Sökningar </span>. Den här parametern mappar till <span class="codeph"> sökparametern </span> sp_c backend. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> antal  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> count= number  </span> </p> </td> 
+   <td colname="col3"> <p> Anger det totala antalet resultat som visas. Standardvärdet definieras i <span class="uicontrol"> Inställningar </span> &gt; <span class="uicontrol"> Söka </span> &gt; <span class="uicontrol"> Söka </span>. Den här parametern mappar till <span class="codeph"> sp_c </span>-parametern för backend-sökning. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> page </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> page= number </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> page  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> page= number  </span> </p> </td> 
    <td colname="col3"> <p> Anger sidan med resultat som returneras. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> rankning </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> rank= field </span> </p> </td> 
-   <td colname="col3"> <p> Anger det rangordningsfält som ska användas för statisk rankning. Fältet måste vara ett fält av typen Rank med relevans större än 0. Den här parametern mappar till <span class="codeph"> parametern sp_sr </span> backend. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> rankning  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> rank= field  </span> </p> </td> 
+   <td colname="col3"> <p> Anger det rangordningsfält som ska användas för statisk rankning. Fältet måste vara ett fält av typen Rank med relevans större än 0. Den här parametern mappar till parametern <span class="codeph"> sp_sr </span> backend. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> gs_store </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> gs_store= sträng </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> gs_store  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> gs_store= sträng  </span> </p> </td> 
    <td colname="col3"> <p> Anger vilket arkiv som ska sökas igenom. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> sortera </span> </p> </td> 
-   <td colname="col2"> <p> <span class="codeph"> sort= number </span> </p> </td> 
-   <td colname="col3"> <p> Anger sorteringsordningen. "0" är standardvärdet och sorterar efter relevanspoäng, "1" sortera efter datum. -1 sorterar inte. </p> <p>Användare kan ange ett fältnamn för värdet på <span class="codeph"> sp_s- </span> parametern. Exempel: <span class="codeph"> sp_s=title </span> sorterar resultaten enligt värdena i titelfältet. När ett fältnamn används för värdet av en <span class="codeph"> sp_s- </span> parameter sorteras resultaten efter det fältet och sorteras sedan efter relevans. </p> <p>Så här aktiverar du den här funktionen: </p> 
+   <td colname="col1"> <p> <span class="codeph"> sortera  </span> </p> </td> 
+   <td colname="col2"> <p> <span class="codeph"> sort= number  </span> </p> </td> 
+   <td colname="col3"> <p> Anger sorteringsordningen. "0" är standardvärdet och sorterar efter relevanspoäng, "1" sortera efter datum. -1 sorterar inte. </p> <p>Användare kan ange ett fältnamn för värdet för parametern <span class="codeph"> sp_s </span>. Till exempel sorterar <span class="codeph"> sp_s=title </span> resultaten enligt värdena som finns i titelfältet. När ett fältnamn används för värdet för en <span class="codeph"> sp_s </span>-parameter sorteras resultaten efter det fältet och subsorteras sedan efter relevans. </p> <p>Så här aktiverar du den här funktionen: </p> 
     <ol id="ol_3894F81EA7BF4827A84DE8662111ABEF"> 
      <li id="li_C040C0B88F174A4885E1A8E721FD032A">På produktmenyn klickar du på <span class="uicontrol"> Inställningar </span> &gt; <span class="uicontrol"> Metadata </span> &gt; <span class="uicontrol"> Definitioner </span>. </li> 
-     <li id="li_2E83C3A46D1B4BF991EABAD9D3E52B7D">Gör något av följande på <span class="wintitle"> sidan </span> Mellanlagrade definitioner: 
+     <li id="li_2E83C3A46D1B4BF991EABAD9D3E52B7D">Gör något av följande på sidan <span class="wintitle"> Mellanlagrade definitioner </span>: 
       <ul id="ul_8018FEE10E0A4C96A74F84A897080580"> 
        <li id="li_E9A7CE43E2734F4D9522A1283CA111FB">Klicka på <span class="uicontrol"> Lägg till nytt fält </span>. </li> 
        <li id="li_9D2434A321924FBD874569CA9AD2EEF7">Klicka på <span class="uicontrol"> Redigera </span> för ett visst fältnamn. </li> 
       </ul> </li> 
-     <li id="li_90D5E3F4AC0A4A6189934A5589F69903">I <span class="wintitle"> listrutan </span> Sortering klickar du antingen på <span class="uicontrol"> Stigande </span> eller <span class="uicontrol"> Fallande </span>. <p>Den här parametern mappas till sökparametern <span class="codeph"> sp_s </span> backend. </p> </li> 
+     <li id="li_90D5E3F4AC0A4A6189934A5589F69903">I listrutan <span class="wintitle"> Sortering </span> klickar du antingen på <span class="uicontrol"> Stigande </span> eller <span class="uicontrol"> Fallande </span>. <p>Den här parametern mappar till <span class="codeph"> sp_s </span>-parametern för backend-sökning. </p> </li> 
     </ol> </td> 
   </tr> 
  </tbody> 
@@ -135,19 +138,19 @@ Nedan följer några rekommendationer för integrering med ditt system.
 
 * Kommunicera med sökservern.
 
-   Du kan kommunicera med [!DNL Adobe Search&Promote] webbservrarna med http GET-begäranden. Dina servrar genererar dessa förfrågningar eller på klientsidan som gör en Ajax-förfrågan.
+   Du kan kommunicera med [!DNL Adobe Search&Promote]-webbservrarna med http GET-begäranden. Dina servrar genererar dessa förfrågningar eller på klientsidan som gör en Ajax-förfrågan.
 * Sparar sökhistoriken.
 
 [!DNL Adobe Search&Promote] är tillståndslös där hela läget överförs i http-begäran.
 * Analyserar returnerade resultat.
 
-   Vi rekommenderar att du använder en SAX-baserad XML-tolk för att tolka XML-svaret. Om du genererar en Ajax-begäran kan du konfigurera så [!DNL Adobe Search&Promote] att JSON-svar returneras för dessa begäranden, så att det blir enklare att tolka svaret.
+   Vi rekommenderar att du använder en SAX-baserad XML-tolk för att tolka XML-svaret. Om du genererar en Ajax-begäran kan du konfigurera [!DNL Adobe Search&Promote] så att JSON-svar returneras för dessa begäranden, så att det blir enklare att tolka svaret.
 
 ## Guidad sökning - JSON-utdata {#reference_EB8182A564DE4374BB84158F2AABEF74}
 
 Tabeller som beskriver JSON-standardsvarans utdata.
 
-Se även [Guidad sökning - JSON-utdata](../c-appendices/c-guidedsearchoutput.md#reference_EB8182A564DE4374BB84158F2AABEF74).
+Se även [JSON-utdata för guidad sökning](../c-appendices/c-guidedsearchoutput.md#reference_EB8182A564DE4374BB84158F2AABEF74).
 
 Du kan granska JSON-svar för följande:
 
@@ -189,7 +192,7 @@ Exempel:
    <td colname="col2"> <p> En enskild bannernod. Du kan ha flera banderollnoder. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;område&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;area&gt; </span> </p> </td> 
    <td colname="col2"> <p> Det område på webbsidan där banderollen visas. </p> </td> 
   </tr> 
   <tr> 
@@ -228,22 +231,22 @@ Exempel:
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
-   <td colname="col2"> <p> En relativ länk till sökresultat som visar önskad vy. Om du klickar på en vägbeskrivningslänk får kunden en vy där alla finjusteringar tas bort. Andra alternativ är också tillgängliga. </p> </td> 
+   <td colname="col2"> <p> En relativ länk till sökresultat som visar önskad vy. Om du klickar på en vägbeskrivningslänk visas en vy där alla finjusteringar tas bort. Andra alternativ är också tillgängliga. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;värde&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;value&gt; </span> </p> </td> 
    <td colname="col2"> <p> Kundmotsatt text för det synliga objektet. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Fasetter {#section_65932C95931743A1BFAF1DF16D7E6D92}
+## Ansikten {#section_65932C95931743A1BFAF1DF16D7E6D92}
 
 Ansikten är förfiningsalternativ som ger kunderna möjlighet att filtrera utifrån resultaten. Ansikten används ofta för kategorisering, prisintervall, färgval och annan attributförfining. Metadata i indexet är vad som driver ansiktsuttryck.
 
 Det är vanligt att dölja eller visa kategoriseringsfacets när kunden rör sig nedåt genom kategoriseringen. Den högsta kategoriseringsnivån (kategori) kallas nivå 1. När en kund klickar på ett alternativ för nivå 1 visas förfiningsalternativen för nivå 2 (underkategori) och alternativen för nivå 1 försvinner. När en kund klickar på ett alternativ för nivå 2 visas förfiningsalternativen för nivå 3 (underkategori) och alternativen för nivå 2 försvinner. Som vi nämnt ovan är dessa alternativ dolda och visas-webbprogrammet påverkas inte av dem.
 
-Varje aspekt finns i `<facet-item>` -taggar. I följande exempel visas en aspekt som gör att kunden kan förfina sökresultaten med&quot;semester&quot;.
+Varje aspekt finns i `<facet-item>`-taggar. I följande exempel visas en aspekt som gör att kunden kan förfina sökresultaten med&quot;semester&quot;.
 
 Exempel:
 
@@ -344,7 +347,7 @@ Exempel:
    <td colname="col2"> <p> Relativ länk till resultat som alternativet förfinar. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;antal&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;count&gt; </span> </p> </td> 
    <td colname="col2"> <p> Antalet resultat i den förfinade resultatmängden. </p> </td> 
   </tr> 
   <tr> 
@@ -354,7 +357,7 @@ Exempel:
  </tbody> 
 </table>
 
-## Sidhuvud och fråga {#section_1D57062259CA46E0B4F598FA4EB37065}
+## Header and Query {#section_1D57062259CA46E0B4F598FA4EB37065}
 
 Exempel:
 
@@ -379,7 +382,7 @@ Tillsammans visar dessa taggar ett meddelande som följande: &quot;Visar resulta
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;användarfråga&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;user-query&gt; </span> </p> </td> 
    <td colname="col2"> <p> Nyckelordsfrågan som skickas med begäran. </p> </td> 
   </tr> 
   <tr> 
@@ -395,7 +398,7 @@ Tillsammans visar dessa taggar ett meddelande som följande: &quot;Visar resulta
    <td colname="col2"> <p> Det totala antalet resultat som matchar användarfrågan. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;anpassat fält&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;custom-field&gt; </span> </p> </td> 
    <td colname="col2"> <p> Ett valfritt fält som tillämpas globalt på sökresultaten. </p> </td> 
   </tr> 
  </tbody> 
@@ -436,7 +439,7 @@ Exempel:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;totalt antal sidor&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;total-pages&gt; </span> </p> </td> 
    <td colname="col2"> <p> Totalt antal resultatsidor, baserat på antalet resultat delat med antalet resultat per sida. </p> </td> 
   </tr> 
   <tr> 
@@ -456,11 +459,11 @@ Exempel:
    <td colname="col2"> <p> Innehåller en relativ länk till den sista sidan i resultatuppsättningen, såvida inte kunden visar den sista sidan. I så fall är det tomt. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;page position="x" </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;page position="x"&gt;</span> </p> </td> 
    <td colname="col2"> <p> Innehåller en relativ länk till ett visst sidnummer. Tio intilliggande sidnummer visas. På sidan 1 är det sidorna 1-10. I slutet av resultatmängden (i det här fallet 39) blir det sidorna 30-39. I mitten av resultatuppsättningen, sidan 15, blir det sidorna 11-20. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> selected="true"&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> selected="true"&gt;  </span> </p> </td> 
    <td colname="col2"> <p> Används som ett attribut på den markerade sidan. </p> </td> 
   </tr> 
  </tbody> 
@@ -490,11 +493,11 @@ Exempel:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;senaste sökningen&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;recent-search&gt; </span> </p> </td> 
    <td colname="col2"> <p> En enskild nod för senaste sökning. Du kan ha flera noder för senaste sökning. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;sökterm&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;search-term&gt; </span> </p> </td> 
    <td colname="col2"> <p> Termen som kunden sökte efter tidigare. </p> </td> 
   </tr> 
   <tr> 
@@ -685,7 +688,7 @@ Exempel:
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;include-tnt-mbox&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Valfritt. När det finns i JSON anger värdet 1 att ditt konto är länkat till <span class="keyword"> Test&amp;Target </span> och har minst en affärsregel som ingår i ett A:B-test. </p> </td> 
+   <td colname="col2"> <p> Valfritt. I JSON anger värdet 1 att ditt konto är länkat till <span class="keyword"> Test&amp;Target </span> och har minst en affärsregel som ingår i ett A:B-test. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;autocomplete&gt; </span> </p> </td> 
@@ -749,8 +752,8 @@ Exempel:
    <td colname="col2"> <p> Kundmotsatt text för alternativet. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;värde&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Representerar värdet för frågesträngsparametern "sort" för det här alternativet. Den här taggen behövs inte om <span class="codeph"> &lt;link&gt;- </span> värdet används. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;value&gt; </span> </p> </td> 
+   <td colname="col2"> <p> Representerar värdet för frågesträngsparametern "sort" för det här alternativet. Den här taggen behövs inte om <span class="codeph"> &lt;link&gt; </span>-värdet används. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
@@ -785,7 +788,7 @@ Exempel:
    <td colname="col2"> <p>En relativ länk som används för att skapa en hyperlänk för att söka efter resultat för förslagstermen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;ord&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;word&gt; </span> </p> </td> 
    <td colname="col2"> <p>Den föreslagna termen. </p> </td> 
   </tr> 
  </tbody> 
@@ -813,8 +816,8 @@ Exempel:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;zon&gt; </span> </p> </td> 
-   <td colname="col2"> <p> En individuell zonnod. Du kan ha flera zonnoder. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;zone&gt; </span> </p> </td> 
+   <td colname="col2"> <p> En enskild zonnod. Du kan ha flera zonnoder. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;name&gt; </span> </p> </td> 
@@ -871,7 +874,7 @@ Exempel:
    <td colname="col2"> <p> En enskild bannernod. Du kan ha flera banderollnoder. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;område&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;area&gt; </span> </p> </td> 
    <td colname="col2"> <p> Det område på webbsidan där banderollen visas. </p> </td> 
   </tr> 
   <tr> 
@@ -910,22 +913,22 @@ Exempel:
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
-   <td colname="col2"> <p> En relativ länk till sökresultat som visar önskad vy. Om du klickar på en vägbeskrivningslänk får kunden en vy där alla finjusteringar tas bort. Andra alternativ är också tillgängliga. </p> </td> 
+   <td colname="col2"> <p> En relativ länk till sökresultat som visar önskad vy. Om du klickar på en vägbeskrivningslänk visas en vy där alla finjusteringar tas bort. Andra alternativ är också tillgängliga. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;värde&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;value&gt; </span> </p> </td> 
    <td colname="col2"> <p> Kundmotsatt text för det synliga objektet. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## Fasetter {#section_5CEB1F966C004FFEA3CF675638966E25}
+## Ansikten {#section_5CEB1F966C004FFEA3CF675638966E25}
 
 Ansikten är förfiningsalternativ som ger kunderna möjlighet att filtrera utifrån resultaten. Ansikten används ofta för kategorisering, prisintervall, färgval och annan attributförfining. Metadata i indexet är vad som driver ansiktsuttryck.
 
 Det är vanligt att dölja eller visa kategoriseringsfacets när kunden rör sig nedåt genom kategoriseringen. Den högsta kategoriseringsnivån (kategori) kallas nivå 1. När en kund klickar på ett alternativ för nivå 1 visas förfiningsalternativen för nivå 2 (underkategori) och alternativen för nivå 1 försvinner. När en kund klickar på ett alternativ för nivå 2 visas förfiningsalternativen för nivå 3 (underkategori) och alternativen för nivå 2 försvinner. Som vi nämnt ovan är dessa alternativ dolda och visas-webbprogrammet påverkas inte av dem.
 
-Varje aspekt finns i `<facet-item>` -taggar. I följande exempel visas en aspekt som gör att kunden kan förfina sökresultaten med&quot;semester&quot;.
+Varje aspekt finns i `<facet-item>`-taggar. I följande exempel visas en aspekt som gör att kunden kan förfina sökresultaten med&quot;semester&quot;.
 
 Exempel:
 
@@ -1026,7 +1029,7 @@ Exempel:
    <td colname="col2"> <p> Relativ länk till resultat som alternativet förfinar. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;antal&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;count&gt; </span> </p> </td> 
    <td colname="col2"> <p> Antalet resultat i den förfinade resultatmängden. </p> </td> 
   </tr> 
   <tr> 
@@ -1036,7 +1039,7 @@ Exempel:
  </tbody> 
 </table>
 
-## Sidhuvud och fråga {#section_802835E19BCB48239C6770A1B72DFFF8}
+## Header and Query {#section_802835E19BCB48239C6770A1B72DFFF8}
 
 Exempel:
 
@@ -1062,7 +1065,7 @@ Tillsammans visar dessa taggar ett meddelande som följande: &quot;Visar resulta
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;användarfråga&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;user-query&gt; </span> </p> </td> 
    <td colname="col2"> <p> Nyckelordsfrågan som skickas med begäran. </p> </td> 
   </tr> 
   <tr> 
@@ -1078,7 +1081,7 @@ Tillsammans visar dessa taggar ett meddelande som följande: &quot;Visar resulta
    <td colname="col2"> <p> Det totala antalet resultat som matchar användarfrågan. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;anpassat fält&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;custom-field&gt; </span> </p> </td> 
    <td colname="col2"> <p> Ett valfritt fält som tillämpas globalt på sökresultaten. </p> </td> 
   </tr> 
  </tbody> 
@@ -1119,7 +1122,7 @@ Exempel:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;totalt antal sidor&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;total-pages&gt; </span> </p> </td> 
    <td colname="col2"> <p> Totalt antal resultatsidor, baserat på antalet resultat delat med antalet resultat per sida. </p> </td> 
   </tr> 
   <tr> 
@@ -1139,11 +1142,11 @@ Exempel:
    <td colname="col2"> <p> Innehåller en relativ länk till den sista sidan i resultatuppsättningen, såvida inte kunden visar den sista sidan. I så fall är det tomt. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;page position="x" </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;page position="x"&gt;</span> </p> </td> 
    <td colname="col2"> <p> Innehåller en relativ länk till ett visst sidnummer. Tio intilliggande sidnummer visas. På sidan 1 är det sidorna 1-10. I slutet av resultatmängden (i det här fallet 39) blir det sidorna 30-39. I mitten av resultatuppsättningen, sidan 15, blir det sidorna 11-20. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> selected="true"&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> selected="true"&gt;  </span> </p> </td> 
    <td colname="col2"> <p> Används som ett attribut på den markerade sidan. </p> </td> 
   </tr> 
  </tbody> 
@@ -1173,11 +1176,11 @@ Exempel:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;senaste sökningen&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;recent-search&gt; </span> </p> </td> 
    <td colname="col2"> <p> En enskild nod för senaste sökning. Du kan ha flera noder för senaste sökning. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;sökterm&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;search-term&gt; </span> </p> </td> 
    <td colname="col2"> <p> Termen som kunden sökte efter tidigare. </p> </td> 
   </tr> 
   <tr> 
@@ -1368,7 +1371,7 @@ Exempel:
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;include-tnt-mbox&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Valfritt. När det finns i XML anger värdet 1 att ditt konto är länkat till <span class="keyword"> Test&amp;Target </span> och har minst en affärsregel som finns i ett A:B-test. </p> </td> 
+   <td colname="col2"> <p> Valfritt. I XML anger värdet 1 att ditt konto är länkat till <span class="keyword"> Test&amp;Target </span> och har minst en affärsregel som ingår i ett A:B-test. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;autocomplete&gt; </span> </p> </td> 
@@ -1432,8 +1435,8 @@ Exempel:
    <td colname="col2"> <p> Kundmotsatt text för alternativet. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;värde&gt; </span> </p> </td> 
-   <td colname="col2"> <p> Representerar värdet för frågesträngsparametern "sort" för det här alternativet. Den här taggen behövs inte om <span class="codeph"> &lt;link&gt;- </span> värdet används. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;value&gt; </span> </p> </td> 
+   <td colname="col2"> <p> Representerar värdet för frågesträngsparametern "sort" för det här alternativet. Den här taggen behövs inte om <span class="codeph"> &lt;link&gt; </span>-värdet används. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;link&gt; </span> </p> </td> 
@@ -1468,7 +1471,7 @@ Exempel:
    <td colname="col2"> <p>En relativ länk som används för att skapa en hyperlänk för att söka efter resultat för förslagstermen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;ord&gt; </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;word&gt; </span> </p> </td> 
    <td colname="col2"> <p>Den föreslagna termen. </p> </td> 
   </tr> 
  </tbody> 
@@ -1496,8 +1499,8 @@ Exempel:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> &lt;zon&gt; </span> </p> </td> 
-   <td colname="col2"> <p> En individuell zonnod. Du kan ha flera zonnoder. </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> &lt;zone&gt; </span> </p> </td> 
+   <td colname="col2"> <p> En enskild zonnod. Du kan ha flera zonnoder. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> &lt;name&gt; </span> </p> </td> 
@@ -1640,7 +1643,7 @@ Exempelnod för breadcrumb:
   <tr> 
    <td colname="col1"> <p>link </p> </td> 
    <td colname="col2"> <p>breadcrumb-item </p> </td> 
-   <td colname="col3"> <p> En relativ länk till sökresultat som visar önskad vy. Om du klickar på en vägbeskrivningslänk får kunden en vy där alla finjusteringar tas bort. Det finns även andra alternativ, till exempel ta bort och släppa. </p> </td> 
+   <td colname="col3"> <p> En relativ länk till sökresultat som visar önskad vy. Om du klickar på en vägbeskrivningslänk visas en vy där alla finjusteringar tas bort. Det finns även andra alternativ, till exempel ta bort och släppa. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>value </p> </td> 
@@ -1690,13 +1693,13 @@ Exempel på anpassad fältnod:
  </tbody> 
 </table>
 
-## Fasetter {#section_BE98990E3DD748A1BD4E0CA322314B79}
+## Ansikten {#section_BE98990E3DD748A1BD4E0CA322314B79}
 
 Ansikten är förfiningsalternativ som ger kunderna möjlighet att filtrera utifrån resultaten. Ansikten används ofta för kategorisering, prisintervall, färgval och annan attributförfining. Ansikten byggs ovanpå metadata i indexet.
 
 Det är vanligt att dölja eller visa kategoriseringsfacets när kunden rör sig nedåt genom kategoriseringen. Den högsta kategoriseringsnivån (kategori) kallas nivå 1. När en kund klickar på ett alternativ för nivå 1 visas förfiningsalternativen för nivå 2 (underkategori) och alternativen för nivå 1 försvinner. När en kund klickar på ett alternativ för nivå 2 visas förfiningsalternativen för nivå 3 (underunderkategori) och alternativen för nivå 2 försvinner. Som nämnts ovan är dessa alternativ dolda och visade. ditt webbprogram påverkar inte dem.
 
-Varje aspekt finns i `<facet-item>` -taggar. I följande exempel visas en aspekt där kunden kan finjustera sökresultaten med&quot;semester&quot;.
+Varje aspekt finns i `<facet-item>`-taggar. I följande exempel visas en aspekt där kunden kan finjustera sökresultaten med&quot;semester&quot;.
 
 Exempel på facet-block:
 
@@ -1849,7 +1852,7 @@ Exempel på facet-block:
  </tbody> 
 </table>
 
-## Sidhuvud {#section_5305B1DC5774439485CA0665DB683F9C}
+## Rubrik {#section_5305B1DC5774439485CA0665DB683F9C}
 
 Exempel:
 
@@ -1948,7 +1951,7 @@ I följande exempel visas data för en sorteringsmeny med tre alternativ och en 
   <tr> 
    <td colname="col1"> <p>meny </p> </td> 
    <td colname="col2"> <p>menyer </p> </td> 
-   <td colname="col3"> <p>En förekomst av en meny (motsvarar en meny som är definierad i <span class="uicontrol"> Design </span> &gt; <span class="uicontrol"> Navigering </span> &gt; <span class="uicontrol"> Menyer </span>). </p> </td> 
+   <td colname="col3"> <p>En instans av en meny (motsvarar en meny som är definierad i <span class="uicontrol"> Design </span> &gt; <span class="uicontrol"> Navigering </span> &gt; <span class="uicontrol"> menyer </span>). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>name </p> </td> 
@@ -2064,7 +2067,7 @@ Exempelfrågenod:
   <tr> 
    <td colname="col1"> <p>användarfråga </p> </td> 
    <td colname="col2"> <p>fråga </p> </td> 
-   <td colname="col3"> <p> Nyckelordet som du sökte efter. Om <span class="uicontrol"> du menar att du </span> automatiskt sökte efter en föreslagen term på grund av att den ursprungliga termen inte gav några resultat, återspeglas det i det nya nyckelordet som du sökte efter (se förslagsnoden för att få det ursprungliga nyckelordet). </p> </td> 
+   <td colname="col3"> <p> Nyckelordet som du sökte efter. Om <span class="uicontrol"> du menar </span> automatiskt sökte efter en föreslagen term på grund av att den ursprungliga termen inte gav några resultat, återspeglas det i det nya nyckelordet som du sökte efter (se förslagsnoden för att få det ursprungliga nyckelordet). </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>lägre resultat </p> </td> 
@@ -2302,9 +2305,9 @@ Exempel på XML för sökformulär:
 
 ## Förslag {#section_2899FACB9AD84F60B3687C1B4EF09E15}
 
-Kunden kan konfigurera **[!UICONTROL Did You Mean]** funktionaliteten på tre sätt: kan du lägga till förslag på grund av att det inte finns några resultat, automatiskt söka efter det första förslaget när vi inte har några resultat eller ge förslag på grund av låga resultat (där förslagen har ett högre resultatantal). Alla förslag ger resultat.
+Kunder kan konfigurera **[!UICONTROL Did You Mean]**-funktionalitet på tre sätt: kan du lägga till förslag på grund av att det inte finns några resultat, automatiskt söka efter det första förslaget när vi inte har några resultat eller ge förslag på grund av låga resultat (där förslagen har ett högre resultatantal). Alla förslag ger resultat.
 
-Den här förslagsnoden innehåller termer som ger bra frågor. Länken returneras också så att kunden kan hoppa till den nya frågan.
+Den här förslagsnoden innehåller termer som ger lyckade frågor. Länken returneras också så att kunden kan hoppa till den nya frågan.
 
 Exempelutdata för förslag på grund av 0 resultat:
 
@@ -2448,7 +2451,7 @@ Exempel på zonnoder:
   <tr> 
    <td colname="col1"> <p>zon </p> </td> 
    <td colname="col2"> <p>zoner </p> </td> 
-   <td colname="col3"> <p> En individuell zonnod. Du kan ha flera zonnoder. </p> </td> 
+   <td colname="col3"> <p> En enskild zonnod. Du kan ha flera zonnoder. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>name </p> </td> 
