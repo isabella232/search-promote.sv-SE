@@ -8,11 +8,14 @@ topic: Release Notes,Site search and merchandising
 uuid: 973f9608-a5c7-4571-ae2b-6f1fa05bc862
 translation-type: tm+mt
 source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 0%
 
 ---
 
 
-# Search&amp;Promote 8.11.0 versionsinformation (10/29/2013){#search-promote-release-notes}
+# Versionsinformation om Search &amp; Promote 8.11.0 (2013-10-29){#search-promote-release-notes}
 
 <table> 
  <thead> 
@@ -24,34 +27,34 @@ source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
  <tbody> 
   <tr> 
    <td colname="col1"> <p> Dansk decomununder </p> </td> 
-   <td colname="col2"> <p> Det finns nu en mekanism som gör det möjligt för <span class="keyword"> Adobe Search&amp;Promote</span> att få tillgång till de tjänster för språkidentifiering, avkodning, ordstamning och segmentering som Adobe erbjuder. </p> </td> 
+   <td colname="col2"> <p> Det finns nu en mekanism som gör att <span class="keyword"> Adobe Search &amp; Promote</span> kan komma åt de tjänster för språkidentifiering, dekomposition, ordstamning och segmentering som Adobe tillhandahåller. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Förbättringar och korrigeringar**
 
-* Förbättringar har gjorts i de befintliga funktionerna för [!DNL Search&Promote] tabellmatchning. Förbättringarna ger bättre stöd för kundernas krav i samband med allt mer komplexa relationer mellan SKU och produktdata.
+* Förbättringar har gjorts i de befintliga [!DNL Search&Promote] tabellmatchningsfunktionerna. Förbättringarna ger bättre stöd för kundernas krav i samband med allt mer komplexa relationer mellan SKU och produktdata.
 
    >[!NOTE]
    >
-   >Den här funktionen är inte aktiverad som standard. Kontakta Adobes kundtjänst om du vill aktivera funktionen i Search&amp;Promote.
+   >Den här funktionen är inte aktiverad som standard. Kontakta Adobe kundtjänst om du vill aktivera funktionen i Search &amp; Promote.
 
 * Ett alternativ har lagts till som tillåter att guidad sökning sorterar ansikten med kontots språkinställning.
 
    >[!NOTE]
-   Den här funktionen är inte aktiverad som standard. Kontakta Adobes kundtjänst om du vill aktivera funktionen i Search&amp;Promote.
+   Den här funktionen är inte aktiverad som standard. Kontakta Adobe kundtjänst om du vill aktivera funktionen i Search &amp; Promote.
 
 * Ett alternativ har lagts till för att öka antalet fasettvärden som en användare kan ange för flervalsaspekter.
 
    >[!NOTE]
-   Den här funktionen är inte aktiverad som standard. Kontakta Adobes kundtjänst om du vill aktivera funktionen i Search&amp;Promote.
+   Den här funktionen är inte aktiverad som standard. Kontakta Adobe kundtjänst om du vill aktivera funktionen i Search &amp; Promote.
 
-* Kryssrutealternativet har lagts till **[!UICONTROL Only allow searches that use HTTPS]** i **[!UICONTROL Settings]** > **[!UICONTROL Searching]** > **[!UICONTROL Restrictions]**.
+* Kryssrutealternativet **[!UICONTROL Only allow searches that use HTTPS]** har lagts till i **[!UICONTROL Settings]** > **[!UICONTROL Searching]** > **[!UICONTROL Restrictions]**.
 
    Se [Om begränsningar](../c-about-settings-menu/c-about-searching-menu.md#concept_B5B527E04EBF4E9AB5956EEF881DDBF1).
 
-* Ett alternativ har lagts till i **[!UICONTROL Settings]** > **[!UICONTROL Searching]** > **[!UICONTROL Feeds]** > **[!UICONTROL Create Feed]** > **[!UICONTROL Generic Feed]** för att bevara tabbtecken på [!DNL File Submission] panelen i guiden.
+* Ett alternativ har lagts till i **[!UICONTROL Settings]** > **[!UICONTROL Searching]** > **[!UICONTROL Feeds]** > **[!UICONTROL Create Feed]** > **[!UICONTROL Generic Feed]** för att bevara tabbtecken i panelen [!DNL File Submission] i guiden.
 
    Se [Skapa en feed](../c-about-settings-menu/c-about-searching-menu.md#task_63179C1FC359497483CD6CE13FD1C250).
 
