@@ -4,12 +4,12 @@ seo-title: Adobe Search&amp;Befordra teknisk dokumentation och självhjälp
 description: Teknisk dokumentation och självhjälpsmaterial för Adobe Search&amp;Promote
 seo-description: Teknisk dokumentation, versionsinformation och självhjälpsmaterial för Adobe Search&amp;Promote
 solution: Target
-topic: Site search and merchandising
+topic: Webbplatssökning och -varuexponering
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
 translation-type: tm+mt
-source-git-commit: dcbee1a3092f46db8f19e0b14f55cafac5fdbc13
+source-git-commit: ce3b55f0265c52670a81a17b9eff79309ff32bc0
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,11 @@ ht-degree: 0%
 
 # Handbok för Adobe Search &amp; Promote {#search-promote-documentation}
 
+<!-- ## [Option 1: Lorem Ipsum FAQ announcement](#lorem-ipsum) -->
+
 ## Nyheter och meddelanden {#topic_02625547D07F411DBAC9593FCBD4741B}
+
+<!-- * [Option 2: Lorem ipsum FAQ announcement](anchor) -->
 
 * Adobe Marketing Cloud Release Notes - Innehåller nya funktioner, korrigeringar och kända fel i alla lösningar för Marketing Cloud. Funktionsreleaser inträffar under våren och hösten, där underhållsreleaser sker månadsvis.
 
