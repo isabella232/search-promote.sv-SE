@@ -1,15 +1,13 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Sökning&stämpel;amp;Promote 8.14.0 Versionsinformation (05/22/2014)
+description: Search&amp;Promote 8.14.0 Release Notes.
 solution: Target
 title: Sökning&stämpel;amp;Promote 8.14.0 Versionsinformation (05/22/2014)
-topic: Release Notes,Site search and merchandising
+topic: Versionsinformation,Webbplatssökning och -försäljning
 uuid: 308d84a9-ec38-4fec-b146-e8a353e65be4
 translation-type: tm+mt
-source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '102'
 ht-degree: 0%
 
 ---
