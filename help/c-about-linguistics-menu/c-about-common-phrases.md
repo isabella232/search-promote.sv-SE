@@ -1,15 +1,13 @@
 ---
 description: Du kan definiera vanliga fraser som används på webbplatsen så att när en kund skriver in en sökfråga behöver han/hon inte skriva citattecken runt någon av de fraser som du har definierat.
-seo-description: Du kan definiera vanliga fraser som används på webbplatsen så att när en kund skriver in en sökfråga behöver han/hon inte skriva citattecken runt någon av de fraser som du har definierat.
-seo-title: Om vanliga fraser
 solution: Target
 title: Om vanliga fraser
-topic: Linguistics,Site search and merchandising
+topic: Linguistics, Site search and merchandising
 uuid: 0f980a22-d826-4476-97de-0e9c14549bc8
 translation-type: tm+mt
-source-git-commit: 8efa90ac2927b263b7d48ccbf25d4b0e917dac79
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1183'
 ht-degree: 0%
 
 ---
