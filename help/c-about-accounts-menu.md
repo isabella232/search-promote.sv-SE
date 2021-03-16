@@ -1,15 +1,13 @@
 ---
 description: Använd konton på produktmenyn för att välja ett konto som du vill få tillgång till och använda.
-seo-description: Använd konton på produktmenyn för att välja ett konto som du vill få tillgång till och använda.
-seo-title: Om menyn Konton
 solution: Target
 title: Om menyn Konton
-topic: Settings,Site search and merchandising
+topic: Inställningar,Webbplatssökning och -försäljning
 uuid: 7cfc1b68-5126-484a-8a1d-54995a8fd19b
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
