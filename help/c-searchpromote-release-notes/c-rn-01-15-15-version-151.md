@@ -1,15 +1,13 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Sök&stämpel;amp;Promote 15.1.1 Versionsinformation (01/15/2015)
+description: Sök&amp;Befordra versionsinformation för 15.1.1.
 solution: Target
 title: Sök&stämpel;amp;Promote 15.1.1 Versionsinformation (01/15/2015)
-topic: Release Notes,Site search and merchandising
+topic: Versionsinformation,Webbplatssökning och -försäljning
 uuid: 070f9c46-426f-4ca1-80c7-8ca53d40a402
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
