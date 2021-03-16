@@ -1,15 +1,13 @@
 ---
-description: Använd regler för frågerensning för att analysera och ändra den inkommande frågan.
-seo-description: Använd regler för frågerensning för att analysera och ändra den inkommande frågan.
-seo-title: Om renderingsregler för frågor
+description: Analysera och ändra den inkommande frågan med hjälp av Regler för frågerensning.
 solution: Target
 title: Om renderingsregler för frågor
-topic: Rules,Site search and merchandising
+topic: Regler,Webbplatssökning och -försäljning
 uuid: 683af81f-f7c0-45f8-9212-e5e7cb82ccca
 translation-type: tm+mt
-source-git-commit: d07cdc2c88f93eed4cecb0ee8818f7fdea06ee9d
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1601'
 ht-degree: 0%
 
 ---
@@ -17,7 +15,7 @@ ht-degree: 0%
 
 # Om regler för frågerensning{#about-query-cleaning-rules}
 
-Använd regler för frågerensning för att analysera och ändra den inkommande frågan.
+Analysera och ändra den inkommande frågan med hjälp av Regler för frågerensning.
 
 ## Använda frågerensningsregler {#concept_17F3CDDC3C8A4128AF092A82B777B86C}
 
