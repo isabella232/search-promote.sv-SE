@@ -1,15 +1,13 @@
 ---
-description: Du kan anpassa utdata i alla textbaserade format, inklusive XML och JSON.
-seo-description: Du kan anpassa utdata i alla textbaserade format, inklusive XML och JSON.
-seo-title: Guidade sökresultat
+description: Lär dig hur du anpassar utdata i alla textbaserade format, inklusive XML och JSON.
 solution: Target
 title: Guidade sökresultat
-topic: Appendices,Site search and merchandising
+topic: bilagor,Webbplatssökning och -försäljning
 uuid: 234fd563-f249-42b0-88ca-c89b44f8df77
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '6298'
+source-wordcount: '6289'
 ht-degree: 0%
 
 ---
