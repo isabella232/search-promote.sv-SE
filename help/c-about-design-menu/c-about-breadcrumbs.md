@@ -1,16 +1,14 @@
 ---
 description: Bläddringar är en navigeringskontroll som du kan lägga till på webbplatsen. Breadcrumb ger kunderna feedback om var de befinner sig i en sökresultatuppsättning. Det hjälper dem också att snabbt gå tillbaka till ett tidigare steg.
-seo-description: Bläddringar är en navigeringskontroll som du kan lägga till på webbplatsen. Breadcrumb ger kunderna feedback om var de befinner sig i en sökresultatuppsättning. Det hjälper dem också att snabbt gå tillbaka till ett tidigare steg.
-seo-title: Om Breadcrumbs
 solution: Target
 subtopic: Navigation
 title: Om Breadcrumbs
-topic: Design,Site search and merchandising
+topic: Design, webbplatssökning och -försäljning
 uuid: 3e630a72-a631-4f4f-8aa5-adf2882cdf1c
 translation-type: tm+mt
-source-git-commit: 7f1b5d94e8002992d62ec1e3dce11f9c5605fde8
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '755'
 ht-degree: 1%
 
 ---
