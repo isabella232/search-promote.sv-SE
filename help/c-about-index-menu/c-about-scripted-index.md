@@ -1,16 +1,14 @@
 ---
 description: Med skriptbaserat index kan du skriva, uppdatera och underhålla alternativ för inkrementell indexering utan att behöva logga in. Sökroboten läser instruktioner från en textfil som finns på servern.
-seo-description: Med skriptbaserat index kan du skriva, uppdatera och underhålla alternativ för inkrementell indexering utan att behöva logga in. Sökroboten läser instruktioner från en textfil som finns på servern.
-seo-title: Om skriptindex
 solution: Target
 subtopic: Scripted Index
 title: Om skriptindex
-topic: Index,Site search and merchandising
+topic: Index,Webbplatssökning och -försäljning
 uuid: 51e726ad-414b-4cbd-8a68-fefc3cf9b565
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1730'
 ht-degree: 0%
 
 ---
@@ -103,7 +101,7 @@ En inledande nolla krävs för alla ordningstal som är lägre än den 10:e när
        </code> eller  
        <code>
          exclude-date 
-       </code> <p>Använd med URL-mask. Sökroboten hittar och indexerar ("include") eller ignorerar ("exclude") dokument baserat på både URL:en och dokumentdatumet. Följande typer av masker är tillgängliga: </p> <p> 
+       </code> <p>Använd med URL-mask. Sökroboten hittar och indexerar ("include") eller ignorerar ("exclude") dokument baserat på både URL-adressen och dokumentdatumet. Följande typer av masker är tillgängliga: </p> <p> 
         <ul id="ul_23A15CB492214B86BE84D8E6EA1820AE"> 
          <li id="li_0C7051AC3B5A4C57A3E477F7B6246611"> 
           <code>
