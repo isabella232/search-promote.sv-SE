@@ -1,15 +1,13 @@
 ---
 description: På sidan Varningar finns en central plats där du kan visa och hantera alla varningar som har att göra med ditt konto.
-seo-description: På sidan Varningar finns en central plats där du kan visa och hantera alla varningar som har att göra med ditt konto.
-seo-title: Om varningar
 solution: Target
 title: Om varningar
-topic: Reports,Site search and merchandising
+topic: Rapporter,Webbplatssökning och -försäljning
 uuid: 94524563-f9a6-40cf-89f3-e80b1d0113c7
 translation-type: tm+mt
-source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
