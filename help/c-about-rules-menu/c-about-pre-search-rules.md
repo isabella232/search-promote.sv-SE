@@ -1,15 +1,13 @@
 ---
 description: Använd regler före sökning för att analysera den inkommande frågan och avgöra vilken presentationsmall som ska användas. Regler före sökning körs i sekvens för varje fråga. Om du vill ändra ordningen på reglerna kan du dra och släppa. Den faktiska ordningen ändras inte förrän du sparar den.
-seo-description: Använd regler före sökning för att analysera den inkommande frågan och avgöra vilken presentationsmall som ska användas. Regler före sökning körs i sekvens för varje fråga. Om du vill ändra ordningen på reglerna kan du dra och släppa. Den faktiska ordningen ändras inte förrän du sparar den.
-seo-title: Om regler för försökning
 solution: Target
 title: Om regler för försökning
-topic: Rules,Site search and merchandising
+topic: Regler,Webbplatssökning och -försäljning
 uuid: e75f9d9e-e8ca-4184-bf79-b1fdadb5c0fe
 translation-type: tm+mt
-source-git-commit: d07cdc2c88f93eed4cecb0ee8818f7fdea06ee9d
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1666'
 ht-degree: 0%
 
 ---
