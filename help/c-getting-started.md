@@ -1,15 +1,13 @@
 ---
 description: Om du inte är van vid Search & Promote och dynamisk navigering kan du börja här för att komma igång med ditt konto. Du får bland annat lära dig hur du indexerar webbplatsen och anpassar utseendet på sökresultaten.
-seo-description: Om du inte är van vid Search & Promote och dynamisk navigering kan du börja här för att komma igång med ditt konto. Du får bland annat lära dig hur du indexerar webbplatsen och anpassar utseendet på sökresultaten.
-seo-title: Komma igång
 solution: Target
 title: Komma igång
-topic: Getting Started,Site search and merchandising
+topic: Komma igång,Webbplatssökning och -marknadsföring
 uuid: 816ad003-15c9-4e44-b09d-cab284518634
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
