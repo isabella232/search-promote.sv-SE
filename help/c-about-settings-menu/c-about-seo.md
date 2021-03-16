@@ -1,16 +1,14 @@
 ---
 description: Du kan använda SEO-metataggar (sökmotoroptimering) för att anpassa vissa element på sidorna och på så sätt förbättra sökmotorplaceringen.
-seo-description: Du kan använda SEO-metataggar (sökmotoroptimering) för att anpassa vissa element på sidorna och på så sätt förbättra sökmotorplaceringen.
-seo-title: Om SEO
 solution: Target
 subtopic: SEO
 title: Om SEO
-topic: Settings,Site search and merchandising
+topic: Inställningar,Webbplatssökning och -försäljning
 uuid: 5c5d64f5-fe79-4489-85c6-399d1437f2c4
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1206'
 ht-degree: 0%
 
 ---
