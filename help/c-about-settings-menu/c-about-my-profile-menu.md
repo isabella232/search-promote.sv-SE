@@ -1,16 +1,14 @@
 ---
 description: Använd menyn Min profil för att ange personlig information, inställningar, inloggningslösenord och behörighet att visa.
-seo-description: Använd menyn Min profil för att ange personlig information, inställningar, inloggningslösenord och behörighet att visa.
-seo-title: Om menyn Min profil
 solution: Target
 subtopic: My Profile
 title: Om menyn Min profil
-topic: Settings,Site search and merchandising
+topic: Inställningar,Webbplatssökning och -försäljning
 uuid: 6a0a4e57-59fa-48fb-b712-eb16a9f47c3a
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
