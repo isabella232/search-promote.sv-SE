@@ -1,16 +1,14 @@
 ---
 description: Använd menyn Skriv om regler om du vill ange regler för crawlning och sökning av URL:er och titlar.
-seo-description: Använd menyn Skriv om regler om du vill ange regler för crawlning och sökning av URL:er och titlar.
-seo-title: Om menyn Skriv om regler
 solution: Target
 subtopic: Rewrite Rules
 title: Om menyn Skriv om regler
-topic: Settings,Site search and merchandising
+topic: Inställningar,Webbplatssökning och -försäljning
 uuid: 77ee84dd-fdba-4d34-ae8e-2fe786599800
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '10216'
+source-wordcount: '10202'
 ht-degree: 0%
 
 ---
@@ -1125,7 +1123,7 @@ RewriteRule
 
 När en titel påträffas försöker webbplatssökningen/försäljningen matcha den med mönstret för varje crawlningsregel. Om mönstret matchar söker omskrivningsmotorn efter motsvarande RewriteCond-direktiv. Om det inte finns några villkor ersätts titeln med ett nytt värde som är konstruerat av ersättningssträngen och fortsätter med nästa regel i regeluppsättningen. Om det finns villkor bearbetas de i den ordning som de listas. Omskrivningsmotorn försöker matcha ett villkorsmönster (CondPattern) mot en teststräng (TestString). Om de två matchar varandra behandlas nästa villkor tills inga fler villkor är tillgängliga. Om alla villkor matchar ersätts URL:en med den ersättning som anges i regeln. Om villkoret inte uppfylls misslyckas hela uppsättningen villkor och motsvarande regel.
 
-## RewriteRule-direktiv {#section_3BF2B0FF89F74A26AE79D68FA3184B9B}
+## Direktivet RewriteRule {#section_3BF2B0FF89F74A26AE79D68FA3184B9B}
 
 Varje RewriteRule-direktiv definierar en återskrivningsregel. Reglerna tillämpas i den ordning som de anges. En omskrivningsregel har följande format:
 
