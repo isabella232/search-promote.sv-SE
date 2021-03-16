@@ -1,15 +1,13 @@
 ---
 description: Med mellanlagring kan du testa och förhandsgranska ändringar av dina inställningar och konfigurationer utan att påverka ditt Live-index.
-seo-description: Med mellanlagring kan du testa och förhandsgranska ändringar av dina inställningar och konfigurationer utan att påverka ditt Live-index.
-seo-title: Om Förproduktion
 solution: Target
 title: Om Förproduktion
-topic: Staging,Site search and merchandising
+topic: Mellanlagring,Webbplatssökning och -försäljning
 uuid: 2e5889a6-2e9c-4ac7-9d6e-d35e7cafda5b
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '964'
 ht-degree: 0%
 
 ---
