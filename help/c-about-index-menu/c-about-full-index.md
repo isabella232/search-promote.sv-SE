@@ -1,16 +1,14 @@
 ---
 description: Du kan använda Fullständigt index om du vill indexera alla sidor på den testade eller publicerade webbplatsen. Med indexering blir det enklare för kunderna att hitta det de söker efter eller vad de behöver när de gör en sökning.
-seo-description: Du kan använda Fullständigt index om du vill indexera alla sidor på den testade eller publicerade webbplatsen. Med indexering blir det enklare för kunderna att hitta det de söker efter eller vad de behöver när de gör en sökning.
-seo-title: Om Fullständigt index
 solution: Target
 subtopic: Full Index
 title: Om Fullständigt index
-topic: Index,Site search and merchandising
+topic: Index,Webbplatssökning och -försäljning
 uuid: dce1eafd-5aea-4945-8305-8f9e7dc392df
 translation-type: tm+mt
-source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '760'
 ht-degree: 0%
 
 ---
@@ -88,7 +86,7 @@ Du kan använda Fullständigt index om du vill indexera alla sidor på den testa
     <li id="li_7F49B86D94974E79AAD381A64A1400F2">Växla mellan skiftlägeskänslig sökning </li> 
     <li id="li_E8FE6EE240A840AC826ADF4294AAC6F6">Växla diakritiskt stöd </li> 
     <li id="li_51763D482DCB4ED0972966F492B8C0F2">Växlar nummerindexering </li> 
-    </ul> </p> <p>Innan en ny crawlning tar plats sker en snabb överföring genom alla indexdata så att de överensstämmer med de nya kontoinställningarna. </p> <p>Det här alternativet är bara tillgängligt om du gör ett fullständigt index för en mellanlagrad webbplats. </p> </td> 
+    </ul> </p> <p>Innan en ny crawlning tar plats sker en snabb genomgång av alla indexdata så att de överensstämmer med de nya kontoinställningarna. </p> <p>Det här alternativet är bara tillgängligt om du gör ett fullständigt index för en mellanlagrad webbplats. </p> </td> 
     </tr> 
     <tr> 
     <td colname="col1"> <p>Räkna alla sidor </p> </td> 
