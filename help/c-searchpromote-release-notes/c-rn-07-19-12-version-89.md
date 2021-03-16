@@ -1,15 +1,13 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Sökning&stämpel;amp;Promote 8.9 Versionsinformation (07/19/2012)
+description: Sök&amp;Promote 8.9 versionsinformation.
 solution: Target
 title: Sökning&stämpel;amp;Promote 8.9 Versionsinformation (07/19/2012)
-topic: Release Notes,Site search and merchandising
+topic: Versionsinformation,Webbplatssökning och -försäljning
 uuid: 3853c75d-19ed-4e36-9e81-dcbffe5f5b0c
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
