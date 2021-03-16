@@ -1,16 +1,14 @@
 ---
 description: Använd menyn Metadata för att anpassa sökdefinitioner och indexinjektioner.
-seo-description: Använd menyn Metadata för att anpassa sökdefinitioner och indexinjektioner.
-seo-title: Om menyn Metadata
 solution: Target
 subtopic: Metadata
 title: Om menyn Metadata
-topic: Settings,Site search and merchandising
+topic: Inställningar,Webbplatssökning och -försäljning
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '8039'
+source-wordcount: '8029'
 ht-degree: 0%
 
 ---
@@ -158,7 +156,7 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       </tr> 
       <tr> 
       <td colname="col1"> <p>Språk </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> rangordning </span>, <span class="uicontrol"> tal </span> eller <span class="uicontrol"> datum </span> har valts. </p> <p>Styr de språk- och språkkonventioner som används vid indexering av datum-, nummer- och rangvärden för det här fältet. </p> <p>Du kan välja att använda kontospråket (Språk &gt; Ord och språk). Du kan också använda det språk som är associerat med dokumentet som innehåller varje tal- eller datumvärde, eller ett visst språk. </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> rangordning </span>, <span class="uicontrol"> tal </span> eller <span class="uicontrol"> datum </span> har valts. </p> <p>Styr de språk- och språkkonventioner som tillämpas när värden för datum, nummer och rangordning för det här fältet indexeras. </p> <p>Du kan välja att använda kontospråket (Språk &gt; Ord och språk). Du kan också använda det språk som är associerat med dokumentet som innehåller varje tal- eller datumvärde, eller ett visst språk. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Datumformat </p> </td> 
@@ -256,7 +254,7 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       </tr> 
       <tr> 
       <td colname="col1"> <p>Testa med större än? </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span>-objekt är markerat. </p> <p>Eftersom varje värde jämförs med värdena i <span class="uicontrol"> Intervallvärden </span>, som bearbetas i <i><b>fallande</b></i> ordning, jämförs det som standard med operatorn större än eller lika (&gt;=), som stoppas när testet har slutförts. Det innebär att om du har en uppsättning med <span class="uicontrol"> intervallvärden </span> som "10 20 50 100 1000" hamnar värdet 100 i intervallet 100 till 1000, eftersom 100 faktiskt är &gt;= 100. Om du hellre vill att den ska ligga i intervallet 50 till 100 markerar du det här alternativet, vilket gör att jämförelsen använder operatorn större än (&gt;) i stället. </p> <p>Om det här alternativet är markerat för till exempel alla värden i det här fältet: 
+      <td colname="col2"> <p>Endast tillgängligt om <span class="uicontrol"> Skapa intervallbeskrivning </span> är markerat och ett <span class="uicontrol"> Intervallfält </span>-objekt är markerat. </p> <p>Eftersom varje värde jämförs med värdena i <span class="uicontrol"> Intervallvärden </span>, som bearbetas i <i><b>fallande</b></i>-ordning, jämförs det som standard med operatorn Större än eller Lika (&gt;=), som stoppas när testet har slutförts. Det innebär att om du har en uppsättning med <span class="uicontrol"> intervallvärden </span> som "10 20 50 100 1000" hamnar värdet 100 i intervallet 100 till 1000, eftersom 100 faktiskt är &gt;= 100. Om du hellre vill att den ska ligga i intervallet 50 till 100 markerar du det här alternativet, vilket gör att jämförelsen använder operatorn större än (&gt;) i stället. </p> <p>Om det här alternativet är markerat för till exempel alla värden i det här fältet: 
       <ul id="ul_969621B1BD914FA5BD73ED21F8841010"> 
       <li id="li_157BEFDA7D0E44C481F4E4BC9046EF24">om värdet är mindre än eller lika med (&lt;=) det minsta värdet i <span class="uicontrol"> Intervallvärden </span>, kommer formatet <span class="uicontrol"> "Mindre än" </span> att användas </li> 
       <li id="li_737EE666CA6243A8864E17A311CF3ACC">om värdet är större än (&gt;) det största värdet i <span class="uicontrol"> Intervallvärden </span>, kommer formatet <span class="uicontrol"> "Större än" </span> att användas </li> 
@@ -307,7 +305,7 @@ Innan effekterna av dina metataggsändringar är synliga för kunderna måste du
 1. På sidan [!DNL Pinned Keyword Results Manager] i tabellen klickar du på **[!UICONTROL Edit]** i raden för det nyckelord som du vill ändra.
 1. Ange önskade alternativ på sidan [!DNL Edit Field].
 
-   Om du väljer att göra ändringar i ett fördefinierat metataggsfält ska du vara medveten om att alla fält inte kan redigeras.
+   Om du väljer att göra ändringar i ett fördefinierat metataggsfält måste du vara medveten om att alla fält inte kan redigeras.
 
    Se tabellen med alternativ under [Lägga till ett nytt meta tag-fält](../c-about-settings-menu/c-about-metadata-menu.md#task_6DF188C0FC7F4831A4444CA9AFA615E5).
 1. Klicka på **[!UICONTROL Save Changes]**.
@@ -769,9 +767,9 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
         /record/metadata/meta[@name='description']/@content&nbsp;-&gt;&nbsp;body </code> </p> <p>Syntaxen ovan innebär följande: </p> <p> 
         <ul id="ul_6400EBD08D424EADA1612FE4F7EFB640"> 
         <li id="li_9958F9B40D42434195597DBA9F2AF28F"> <code class="syntax xml"> /record/@displayurl&amp;nbsp;-&gt;&amp;nbsp;page-url </code> <p><span class="codeph"> displayURL </span>-attributet för <span class="codeph">-posten </span>-element mappar till metadatafältet <span class="codeph"> page-url </span>. </p> </li> 
-        <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code class="syntax xml"> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns inuti ett <span class="codeph"> metadata </span>-element, som finns inuti en <span class="codeph">-post </span>-element, vars namnattribut är <span class="codeph"> title </span>, mappar till metadatafältet <span class="codeph"> title &lt;a1/&gt;.</span> </p> </li> 
+        <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code class="syntax xml"> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns inuti ett <span class="codeph"> metadata </span>-element, som finns inuti en <span class="codeph">-post </span>-element, vars namnattribut är <span class="codeph"> title </span>, mappar till metadatafältet <span class="codeph"> title </span>. </p> </li> 
         <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns i ett <span class="codeph"> metadata </span>-element, som finns inuti <span class="codeph">-posten </span>-element, vars name-attribut är <span class="codeph"> description </span>, mappar till metadatafältet <span class="codeph"> desc &lt;a1 1/&gt;.</span> </p> </li> 
-        <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns i ett <span class="codeph"> metadata </span>-element, som finns i <span class="codeph">-elementet </span>, vars namnattribut är <span class="codeph"> description </span>, mappas till metadatafältet <span class="codeph"> body &lt;a1/&gt;.</span> </p> </li> 
+        <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns i ett <span class="codeph"> metadata </span>-element, som finns i <span class="codeph">-elementet </span>, vars namnattribut är <span class="codeph"> description </span>, mappas till metadatafältet <span class="codeph"> body </span>. </p> </li> 
         </ul> </p> <p>XPath är en relativt komplicerad notation. Mer information finns på följande plats: </p> <p>Se <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Fält  </span> <p>Definierar det name-attributvärde som används för varje genererad <span class="codeph"> &lt;meta&gt; </span>-tagg. </p> </li> 
       <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadata?  </span> <p>Gör att <span class="uicontrol">-fältet </span> blir en listruta där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Värdet för <span class="uicontrol">-fältet </span> kan vid behov vara ett odefinierat metadatafält. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtreringsskript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Om att filtrera skript </a>. </p> <p>När Loader-attribut bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle">-fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributuppsättningen <span class="wintitle"> Tillåtelselista </span>. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
