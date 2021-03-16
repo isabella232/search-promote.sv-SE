@@ -1,16 +1,14 @@
 ---
 description: Använd filtermenyn för att använda skript som ändrar innehållet i ett webbdokument innan det indexeras.
-seo-description: Använd filtermenyn för att använda skript som ändrar innehållet i ett webbdokument innan det indexeras.
-seo-title: Om menyn Filtrera
 solution: Target
 subtopic: Filtering
 title: Om menyn Filtrera
-topic: Settings,Site search and merchandising
+topic: Inställningar,Webbplatssökning och -försäljning
 uuid: ebb08fa8-4e17-417d-868b-11fc2af9f284
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '4026'
+source-wordcount: '4008'
 ht-degree: 0%
 
 ---
