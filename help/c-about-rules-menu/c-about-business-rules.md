@@ -1,15 +1,13 @@
 ---
 description: Du kan använda affärsregler för att sälja sökningen.
-seo-description: Du kan använda affärsregler för att sälja sökningen.
-seo-title: Om affärsregler
 solution: Target
 title: Om affärsregler
-topic: Rules,Site search and merchandising
+topic: Regler,Webbplatssökning och -försäljning
 uuid: f2186f54-7a39-4f46-bb29-5115d5a17f07
 translation-type: tm+mt
-source-git-commit: fc1f0b15a15a9d0308494fc23c5b4258442c8aab
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '3127'
+source-wordcount: '3120'
 ht-degree: 0%
 
 ---
@@ -375,7 +373,7 @@ Du kan aktivera affärsregler som antingen har statusen Pågående arbete eller 
 
 Du kan göra uppehåll i affärsregler som har statusen Pågående arbete eller godkänt.
 
-När du har gjort uppehåll för en regel anger du i användargränssnittet att du tillfälligt har gjort den inaktiv och att du skjuter upp arbetet med den en annan gång. Du kan dock fortfarande redigera en inaktiverad regel.
+När du har gjort uppehåll för en regel anger du i användargränssnittet att du tillfälligt har gjort den inaktiv och du skjuter upp arbetet med den en annan gång. Du kan dock fortfarande redigera en inaktiverad regel.
 
 **Så här gör du för att pausa affärsregler**
 
