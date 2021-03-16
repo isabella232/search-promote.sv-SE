@@ -1,16 +1,14 @@
 ---
 description: Använd menyn Sökning för att ange uteslutna ord, samlingar, begränsningar, förhandsgranskning och ramar.
-seo-description: Använd menyn Sökning för att ange uteslutna ord, samlingar, begränsningar, förhandsgranskning och ramar.
-seo-title: Om menyn Söka
 solution: Target
 subtopic: Searching
 title: Om menyn Söka
-topic: Settings,Site search and merchandising
+topic: Inställningar,Webbplatssökning och -försäljning
 uuid: 072111fc-a32b-4acb-8337-cb21bcdb5542
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '11182'
+source-wordcount: '11170'
 ht-degree: 0%
 
 ---
@@ -38,7 +36,7 @@ Mer information om hur du definierar specifika, sökbara områden på webbplatse
 
 Mer information om hur du anger en målram för sökresultatlänkar finns i [Använda ramar med formulär](../c-appendices/c-searchforms.md#reference_82CDDDA1E37042E4849EBF7EA05407C5).
 
-Om du vill begränsa sökningar baserat på HTTP-referens, IP-adress eller begäranschema (HTTP eller HTTPS) läser du [Ange värden i Förhandsgranska](../c-about-settings-menu/c-about-searching-menu.md#task_CE267A0FF621474E80AB43B67B1C28D7).
+Information om hur du begränsar sökningar baserat på HTTP-referens, IP-adress eller begäranschema (HTTP eller HTTPS) finns i [Ange värden i Förhandsgranska](../c-about-settings-menu/c-about-searching-menu.md#task_CE267A0FF621474E80AB43B67B1C28D7).
 
 ## Söktips {#section_22F0E2BCF259459FA5F49FBCC0F09A7C}
 
@@ -847,7 +845,7 @@ t_adding_url_mask_or_jp_address_restrictions.xml
     <tbody> 
       <tr> 
       <td colname="col1"> <p>Refererande URL-masker </p> </td> 
-      <td colname="col2"> <p>Referent-URL:en från HTTP-referensrubriken läses. Den första masken som matchar referenswebbadressen avgör om sökningen ska tillåtas, om masken är en inkluderingsmask. Det kan också avgöra om sökningen ska nekas, om masken är en exkluderingsmask. Om ingen mask matchar referentens URL inkluderas den URL:en och sökningen tillåts. </p> <p> Om sökmallen innehåller ett nytt sökformulär eller om sökmallen kan innehålla länkar som "Nästa 10", "Föregående 10" eller "Dölj sammanfattningar", listar du din sökresultatmall som en "inkludera"-mask. Det enklaste sättet att göra det är med det reguljära uttrycket som i följande exempel: </p> <p> <span class="codeph"> inkludera regexp ^https?://[^/]*\.atomz\.com/.*[?&amp;]sp_a=sp1000130e.*$ </span> </p> <p>Följande exempel innehåller fem olika URL-masker för referenter: </p> <p> <code> include&nbsp;https://www.mydomain.com/search/ 
+      <td colname="col2"> <p>Referent-URL:en från HTTP-referensrubriken läses. Den första masken som matchar referenswebbadressen avgör om sökningen ska tillåtas, om masken är en inkluderingsmask. Det kan också avgöra om sökningen ska nekas, om masken är en exkluderingsmask. Om ingen mask matchar referenswebbadressen inkluderas den webbadressen och sökningen tillåts. </p> <p> Om sökmallen innehåller ett nytt sökformulär eller om sökmallen kan innehålla länkar som "Nästa 10", "Föregående 10" eller "Dölj sammanfattningar", listar du din sökresultatmall som en "inkludera"-mask. Det enklaste sättet att göra det är med det reguljära uttrycket som i följande exempel: </p> <p> <span class="codeph"> inkludera regexp ^https?://[^/]*\.atomz\.com/.*[?&amp;]sp_a=sp1000130e.*$ </span> </p> <p>Följande exempel innehåller fem olika URL-masker för referenter: </p> <p> <code> include&nbsp;https://www.mydomain.com/search/ 
           include&nbsp;https://search.mydomain.com/ 
           include&nbsp;regexp&nbsp;^https://www.mydomain.com/help/.*/search/ 
           include&nbsp;regexp&nbsp;^https?://[^/]*\.atomz\.com/.*[?&amp;]sp_a=sp1000130e.*$ 
@@ -1092,7 +1090,7 @@ t_creating_a_feed.xml
         </ol> </p> <p> <b>Avancerad användning</b> </p> <p>När du har mappat de första nio obligatoriska flödesfälten enligt ovan kan du skapa egna anpassade fält. I listrutan <span class="wintitle"> Feed Fields </span> klickar du på <span class="uicontrol"> Custom </span>. Ange ett eget taggnamn för fältet i det tillhörande textfältet. Det här anpassade alternativet är användbart om en feed behöver speciella leverantörsspecifika fält. </p> <p> <p>Obs!  Även om det i specifikationerna för rekommendationsfeed anges att varje fältnamn måste föregås av "entitet" är det inte nödvändigt i det här fallet. </p> </p> <p>Du kan också skapa ett anpassat metadatafält. I listrutan <span class="wintitle"> Metadatafält </span> klickar du på <span class="uicontrol"> Anpassad </span>. I det associerade textfältet anger du ett anpassat metadatafältvärde. Värdet infogas i den förgenererade mallen och kan även användas för att mata in egna sökmallstaggar. </p> <p>Se <a href="../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4" type="reference" format="dita" scope="local"> Sökmallstaggar </a>. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>Sökvillkor </p> </td> 
       <td colname="col3"> <p>När matningsfilerna genereras används en sökfråga för att filtrera data. Du definierar de filter som används för sökfrågan på den här panelen. </p> 
         <ul id="ul_799ECF61C03A44878C7182F8B88CC3AD"> 
@@ -1159,7 +1157,7 @@ t_creating_a_feed.xml
         </ul> <p>Allmänna feeds måste ha en särskild CGI-parameter angiven. Om du vill binda den särskilda mall som är associerad med denna feed definierar du parametern <span class="codeph"> sp_t </span>. Ange värdet <span class="codeph"> sp_t </span> till namnet på transportmallfilen. Om du till exempel har lagt till en transportmallfil med namnet <span class="codeph"> super_feed.tpl </span> skapar du en anpassad CGI-sökparameter som <span class="codeph"> sp_t=super_feed </span>. Textrutan där du anger <span class="codeph"> sp_t </span> visas inte förrän du väljer <span class="uicontrol"> Free Form </span> i listrutan <span class="wintitle"> Metafält </span>. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>Filöverföring </p> </td> 
       <td colname="col3"> <p>Gör att du kan konfigurera schemat för att skicka feed-filerna och ange den metod som du vill använda för att överföra filerna. </p> 
         <ul id="ul_30E830C41F6A4526822AF1FD3083075A"> 
@@ -1266,7 +1264,7 @@ t_creating_a_feed.xml
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>Feednamn </p> </td> 
       <td colname="col3"> <p>Anger feed-namnet. </p> </td> 
       </tr> 
