@@ -1,15 +1,13 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Sökning&stämpel;amp;Promote 8.9.4 Versionsinformation (01/17/2013)
+description: Search&amp;Promote 8.9.4 versionsinformation.
 solution: Target
 title: Sökning&stämpel;amp;Promote 8.9.4 Versionsinformation (01/17/2013)
-topic: Release Notes,Site search and merchandising
+topic: Versionsinformation,Webbplatssökning och -försäljning
 uuid: a9d550f6-0a23-4c71-b123-c31b997e7384
 translation-type: tm+mt
-source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -58,5 +56,5 @@ ht-degree: 0%
 
    Se [Rankningsregler](../c-about-rules-menu/c-about-ranking-rules.md#concept_F555C076759B4E81B925441CFE707397).
 
-   Se [Om rangordningsindex](../c-about-index-menu/c-about-re-rank-index.md#concept_147B0A9FCD51451787DA898E06F7C692).
+   Se [Om Re-Rank Index](../c-about-index-menu/c-about-re-rank-index.md#concept_147B0A9FCD51451787DA898E06F7C692).
 
