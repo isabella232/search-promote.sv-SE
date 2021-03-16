@@ -1,16 +1,14 @@
 ---
-description: Du kan använda Rankningsregler för att styra den relativa placeringen eller rankningen av en kunds sökresultat baserat på metataggens innehåll och relaterade Adobe Analytics-mått.
-seo-description: Du kan använda Rankningsregler för att styra den relativa placeringen eller rankningen av en kunds sökresultat baserat på metataggens innehåll och relaterade Adobe Analytics-mått.
-seo-title: Om rankningsregler
+description: Du kan använda Rankningsregler för att styra den relativa placeringen eller rangordningen av kundens sökresultat baserat på innehållet i metataggar och relaterade Adobe Analytics-mått.
 solution: Target
 subtopic: Ranking Rules
 title: Om rankningsregler
-topic: Rules,Site search and merchandising
+topic: Regler,Webbplatssökning och -försäljning
 uuid: 21962f9a-1d9c-442f-a6c4-5f452436c640
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '4647'
+source-wordcount: '4621'
 ht-degree: 0%
 
 ---
@@ -18,7 +16,7 @@ ht-degree: 0%
 
 # Om rankningsregler{#about-ranking-rules}
 
-Du kan använda Rankningsregler för att styra den relativa placeringen eller rankningen av en kunds sökresultat baserat på metataggens innehåll och relaterade Adobe Analytics-mått.
+Du kan använda Rankningsregler för att styra den relativa placeringen eller rangordningen av kundens sökresultat baserat på innehållet i metataggar och relaterade Adobe Analytics-mått.
 
 ## Använda rankningsregler {#concept_F555C076759B4E81B925441CFE707397}
 
@@ -239,7 +237,7 @@ Se [Konfigurera rankning](../c-about-rules-menu/c-about-ranking-rules.md#task_4C
       </tr> 
       <tr> 
       <td colname="col1"> <p>Vikter/villkor </p> </td> 
-      <td colname="col2"> <p>Innehåller antingen ett enkelt viktnummer för en regel eller en kombinerad lista med viktnummer för regler och testvillkor. </p> <p>Ett styckeviktsnummer är ett värde mellan 1 och 10 som anger hur viktig den här rangordningsregeln är i förhållande till de andra rangordningsreglerna när den totala rangordningen för ett dokument ska fastställas. En högre linjetjocklek anger högre prioritet. Värdet noll (0) ignorerar regeln. </p> <p>Välj <span class="uicontrol"> Anpassad </span> i listrutan om du vill anpassa regelbredden för olika sidor genom att definiera en lista med par för regelvikt/testvillkor. Testvillkoren är fragment av Perl som används för att testa datakällvärden, eller globala variabler som definieras i det anpassade filterskriptet (till exempel pris, märke, årstid eller sidvyer som i följande exempel). Om ett testvillkor utvärderas till "true" används det tillhörande regelviktsvärdet. Om ett testvillkor utvärderas till "false" utvärderas nästa villkor i listan. <code> 0&nbsp;({price}&nbsp;&gt;&nbsp;50.00)&nbsp;&amp;&amp;&nbsp;({brand}=~/Kuhl/)5&nbsp;{season}&nbsp;=~&nbsp;/Fall/10&nbsp;{pageviews}&nbsp;&gt;&nbsp;1000005 </code>I exemplet med anpassad vikt/villkor ovan används regelvikten 0 om det första testvillkoret utvärderas till "true". Det vill säga att priset innehåller ett värde som är större än 50 och varumärket innehåller "Kuhl"). Om det första testvillkoret utvärderas till "false" utvärderas nästa villkor. Om inget av de föregående villkoren uppfylls tilldelas regelvikten 5. </p> <p>Du bör alltid ange en linjetjocklek utan villkor i slutet av listan. Om du inte gör det får regeln vikten 0 om inget av villkorstesterna utvärderas som "true". </p> </td> 
+      <td colname="col2"> <p>Innehåller antingen ett enkelt viktnummer för en regel eller en kombinerad lista med viktnummer för regler och testvillkor. </p> <p>Ett styckeviktsnummer är ett värde mellan 1 och 10 som anger hur viktig den här rangordningsregeln är i förhållande till de andra rangordningsreglerna när den totala rangordningen för ett dokument ska fastställas. En högre linjetjocklek anger högre prioritet. Värdet noll (0) ignorerar regeln. </p> <p>Välj <span class="uicontrol"> Anpassad </span> i listrutan om du vill anpassa regelbredden för olika sidor genom att definiera en lista med par för regelvikt/testvillkor. Testvillkoren är fragment av Perl som används för att testa datakällvärden, eller globala variabler som definieras i ditt anpassade filterskript (till exempel pris, märke, årstid eller sidvyer som i följande exempel). Om ett testvillkor utvärderas till "true" används det tillhörande regelviktsvärdet. Om ett testvillkor utvärderas till "false" utvärderas nästa villkor i listan. <code> 0&nbsp;({price}&nbsp;&gt;&nbsp;50.00)&nbsp;&amp;&amp;&nbsp;({brand}=~/Kuhl/)5&nbsp;{season}&nbsp;=~&nbsp;/Fall/10&nbsp;{pageviews}&nbsp;&gt;&nbsp;1000005 </code>I exemplet med anpassad vikt/villkor ovan används regelvikten 0 om det första testvillkoret utvärderas till "true". Det vill säga att priset innehåller ett värde som är större än 50 och varumärket innehåller "Kuhl"). Om det första testvillkoret utvärderas till "false" utvärderas nästa villkor. Om inget av de föregående villkoren uppfylls tilldelas regelvikten 5. </p> <p>Du bör alltid ange en linjetjocklek utan villkor i slutet av listan. Om du inte gör det får regeln vikten 0 om inget av villkorstesterna utvärderas som "true". </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Värden/omfång </p> </td> 
