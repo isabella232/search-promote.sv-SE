@@ -1,15 +1,13 @@
 ---
-description: Med Proximity Search kan du associera en unik plats med en sida på webbplatsen och sedan söka och sortera resultaten efter närhet (avstånd) från en viss plats.
-seo-description: Med Proximity Search kan du associera en unik plats med en sida på webbplatsen och sedan söka och sortera resultaten efter närhet (avstånd) från en viss plats.
-seo-title: Om närhetssökning
+description: Med Proximity Search kan du koppla en unik plats till en sida på webbplatsen och sedan söka och sortera resultaten efter närhet (avstånd) från en viss plats.
 solution: Target
 title: Om närhetssökning
-topic: Appendices,Site search and merchandising
+topic: bilagor,Webbplatssökning och -försäljning
 uuid: 24fc9265-3400-46a7-b6e0-4de5b049a39a
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -17,7 +15,7 @@ ht-degree: 0%
 
 # Om närhetssökning{#about-proximity-search}
 
-Med Proximity Search kan du associera en unik plats med en sida på webbplatsen och sedan söka och sortera resultaten efter närhet (avstånd) från en viss plats.
+Med Proximity Search kan du koppla en unik plats till en sida på webbplatsen och sedan söka och sortera resultaten efter närhet (avstånd) från en viss plats.
 
 Anta till exempel att du har fyllt i sidor på din webbplats med metadata för postnummer i USA, som följande:
 
