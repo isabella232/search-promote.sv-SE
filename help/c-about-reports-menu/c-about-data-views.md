@@ -1,15 +1,13 @@
 ---
 description: Datavyer visar sökresultaten med metafälten. Varje kolumn är ett metafält och varje rad är ett resultat av en sökfråga. Anpassa datavyer genom att välja och ordna om kolumner. Datavyer kan också ha anpassade rubriker och beskrivningar.
-seo-description: Datavyer visar sökresultaten med metafälten. Varje kolumn är ett metafält och varje rad är ett resultat av en sökfråga. Anpassa datavyer genom att välja och ordna om kolumner. Datavyer kan också ha anpassade rubriker och beskrivningar.
-seo-title: Om datavyer
 solution: Target
 title: Om datavyer
-topic: Reports,Site search and merchandising
+topic: Rapporter,Webbplatssökning och -försäljning
 uuid: 18930551-960d-40c2-b5b7-0807a2e11134
 translation-type: tm+mt
-source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
