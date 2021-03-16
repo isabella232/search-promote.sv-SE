@@ -1,42 +1,45 @@
 ---
-title: 'Lorem Ipsum '
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate nulla quis libero sagittis sollicitudin.
-solution: Target
+title: Adobe Search & Promote meddelande om att tjänsten upphör
+description: Läs mer om Adobe Search & Promote meddelande om att tjänsten upphör.
+feature: null
+role: Administratör,Affärsansvarig,Datatekniker,Utvecklare
 hide: true
 hidefromtoc: true
 translation-type: tm+mt
-source-git-commit: ce3b55f0265c52670a81a17b9eff79309ff32bc0
+source-git-commit: aa10a950262e5d1828da3d2e417dd5a5b752029b
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
 
 
-# Lorem Ipsum
+# Adobe Search &amp; Promote meddelande om att tjänsten upphör
 
-## Lorem ipsum dolor sit amet
+## Vanliga frågor och svar om tjänstens upphörande för Search &amp; Promote
 
-Consectetur adipiscing elit. Etiam vulputate nulla quis libero sagittis sollicitudin. Quisque pellentesque enim sit amet maximus commodo. Suspendisse vitae risus volutpat, vehicula orci a, placerat nulla. Curabitur ullamcorper quis dolor ac lacinia. Fusce aliquet egestas mi nec Facilisis.
+### **_På vilket datum upphör Search &amp; Promote med sin verksamhet?_**
 
-Donec neque odio, scelerisque sed odio a, consectetur efficitur ex. Nunc Solales vitae turpis non rutrum. Mauris tar över sollicitudin leo vel efficitur. Quisque mattis nulla eget nulla ornnn, ac tempor lorem maximus. I en anläggning finns inget lock, et vulputate nunc maximus quis.
+Tjänsten upphör den 1 augusti 2022. På den tiden kommer det administrativa användargränssnittet för Search &amp; Promote inte längre att vara tillgängligt och förfrågningar till API:er för Search &amp; Promote kommer inte längre att ge resultat. Före detta datum kommer tjänsten att vara helt tillgänglig och fungera.
 
-### **_Lorem ipsum dolor sit amet, consectetur adipiscing elit?_**
+### **_Vad händer om en sökning eller annan API-begäran görs till Search &amp; Promote?_**
 
-I rutrum metus vid metus volutpat sålda produkter. Nec ipsum vestibulum, in elementum ante egestas. Duis solales ligula maximus ex auctor, at auctor tortor malesuada.
+Sökningar och andra API-begäranden som görs till Search &amp; Promote returnerar inte längre några resultat. Förfrågningar kan resultera i ett fel av typen &quot;Värden hittades inte&quot;, en 3xx HTTP-omdirigering eller ett HTTP-fel som 404, 408 eller annan HTTP-felkod.
 
-### **_Pellentesque fringilla purus convallis, sollicitudin leo sit amet, Condimentum ex?_**
+### **_Har Adobe alternativa alternativ för webbplatssökning och e-handelssökning?_**
 
-Quisque a magna dictum, molestie mauris at, ivaklis leo. Pellentesque vel erat ac tellus vehicula ultricies. Morbi Condimentum ligula ut Condimentum Impact.
+Ja. För produkt- och e-handelssökningar är [Live Search från Magento Commerce](https://blog.adobe.com/en/publish/2020/11/23/new-ai-capabilities-for-magento-commerce-improve-retail.html) Adobe&#39;s search application progress. Live Search från Magento Commerce ska startas under första halvåret 2021.
 
-### **_Curabitur id nunc at massa fringilla Condimentum?_**
+### **_Kan Adobe rekommendera alla ramverk eller plattformar som har funktioner som liknar Search &amp; Promote?_**
 
-Morbi eu nisl nec urna aliquet laoreet. Suspendisse luctus nisl in bibendum scelerisque. Pellentesque sit amet lacus vel erat convallis ornn. Quisque gravida eros eu dapibus tempor.
+Ja. Om funktionen Search &amp; Promote är viktig för er marknadsföringsstrategi bör du fundera på de många ramverk med öppen källkod som finns för att göra sökningar, inklusive [Apache Solr](https://solr.apache.org/) och [Elastic Free och Open](https://www.elastic.co/about/free-and-open).
 
-### **_Massa fringilla Condimentum?_**
+Både [AWS](https://aws.amazon.com/cloudsearch/) och [Microsoft® Azure](https://azure.microsoft.com/en-us/services/search/) har dessutom inbyggda sökfunktioner i molnet på sina respektive molnplattformar. Du kan integrera båda alternativen i Adobe Experience Manager Sites för att underlätta webbplatssökningar och mycket mer.
 
-Morbi eu nisl nec urna aliquet laoreet. Suspendisse luctus nisl in bibendum scelerisque. Pellentesque sit amet lacus vel erat convallis ornn. Quisque gravida eros eu dapibus tempor.
+### **_Vem kan jag kontakta för att få veta mer?_**
 
-### **_Nam et sem ac quam sollicitudin egestas et sit amet ligula?_**
+Kontakta din Customer Success Manager (CSM) om du har frågor eller kontakta Adobe team på [searchquestions@adobe.com](mailto:searchquestions@adobe.com).
 
-Ut id libero at velit porttitor lacinia sagittis sit amet metus. Nulla vehicula odio blöis dolor förenklsis tempor. Morbi sit amet felis sit amet dolor varius vehicula. Nulla vel leo sed purus varius rhoncus.
+### **_Kan jag fortfarande förnya min tillämpliga Search &amp; Promote-licens innan den upphör?_**
+
+Ja. Samarbeta med din Adobe-representant för att förnya din licens med ett slutdatum för avtalet senast den 1 augusti 2022.
