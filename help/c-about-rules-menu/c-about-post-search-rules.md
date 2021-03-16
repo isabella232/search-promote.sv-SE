@@ -1,15 +1,13 @@
 ---
 description: Du kan använda regler för eftersökning för att undersöka resultatet av en sökning och avgöra hur sökningen påverkar det visade innehållet.
-seo-description: Du kan använda regler för eftersökning för att undersöka resultatet av en sökning och avgöra hur sökningen påverkar det visade innehållet.
-seo-title: Om regler för eftersökning
 solution: Target
 title: Om regler för eftersökning
-topic: Rules,Site search and merchandising
+topic: Regler,Webbplatssökning och -försäljning
 uuid: 312d1e4a-f5b6-4629-8645-17e6f6c09fc4
 translation-type: tm+mt
-source-git-commit: d07cdc2c88f93eed4cecb0ee8818f7fdea06ee9d
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2102'
 ht-degree: 0%
 
 ---
@@ -116,7 +114,7 @@ Du kan använda [!DNL Post-Search Rules] för att välja vilken presentationsmal
       </tr> 
       <tr> 
       <td colname="col1"> <p>Anpassad variabel </p> </td> 
-      <td colname="col2"> <p>En användardefinierad variabel. Du kan lägga till, ta bort eller ange ett obegränsat antal anpassade variabler. </p> <p>Du kan referera till anpassade variabler som du har definierat i Frågerensning och i regelmodulerna Pre-Search, i Regler för postsökning. </p> </td> 
+      <td colname="col2"> <p>En användardefinierad variabel. Du kan lägga till, ta bort eller ange ett obegränsat antal anpassade variabler. </p> <p>Du kan referera till alla anpassade variabler som du har definierat i Frågerengöring och i regelmodulen Pre-Search, i Regler efter sökning. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Systemvariabel </p> </td> 
