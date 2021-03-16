@@ -1,15 +1,13 @@
 ---
 description: Du kan använda Banners för att hantera bannerannonserna på din webbplats.
-seo-description: Du kan använda Banners för att hantera bannerannonserna på din webbplats.
-seo-title: Om Banners
 solution: Target
 title: Om Banners
-topic: Design,Site search and merchandising
+topic: Design, webbplatssökning och -försäljning
 uuid: 653b567d-5cf3-41a0-a260-a6912d0fd20d
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '4810'
+source-wordcount: '4801'
 ht-degree: 0%
 
 ---
@@ -550,7 +548,7 @@ Se [Konfigurera åtkomst till ditt Adobe Dynamic Media Classic-konto](../c-about
       <td colname="col2"> <p>Lager i PSD-filen överförs som separata bilder. Du kan välja bland följande alternativ för att bestämma hur du vill namnge bilderna i Scene7 Publishing System: </p> 
         <ul id="ul_C2A25177A07740CA90B32C638304D39F"> 
         <li id="li_477D5BFF7238454BBF0E04B22DE378F7"> <span class="uicontrol"> Använd lagernamn från PSD-fil  </span> <p>Namnger bilderna efter deras lagernamn i PSD-filen. Ett lager med namnet <span class="codeph"> Price Tag </span> i den ursprungliga PSD-filen blir till exempel en bild med namnet <span class="codeph"> Price Tag </span>. Om lagernamnen i PSD-filen däremot är Photoshop standardlagernamn (Bakgrund, Lager 1, Lager 2 och så vidare) får bilderna namn efter sina lagernummer i PSD-filen, inte efter deras standardlagernamn. </p> </li> 
-        <li id="li_EB4173B884FC41328CFBDE27DA6D43AA"> <span class="uicontrol"> Använd PSD-filnamn och lägg till nummer  </span> <p>Namnger bilderna efter deras lagernummer i PSD-filen och ignorerar de ursprungliga lagernamnen. Bilderna får samma namn som Photoshop-filnamnet och ett nummer i det tillagda lagret. Det andra lagret i en fil med namnet <span class="codeph"> Spring Ad.psd </span> har till exempel namnet <span class="codeph"> Spring Ad_2 </span> även om det har ett icke-standardnamn i Photoshop. </p> </li> 
+        <li id="li_EB4173B884FC41328CFBDE27DA6D43AA"> <span class="uicontrol"> Använd PSD-filnamn och lägg till nummer  </span> <p>Namnger bilderna efter deras lagernummer i PSD-filen och ignorerar de ursprungliga lagernamnen. Bilderna får samma namn som Photoshop-filnamnet och ett nummer i det tillagda lagret. Det andra lagret i en fil med namnet <span class="codeph"> Spring Ad.psd </span> heter <span class="codeph"> Spring Ad_2 </span> även om det har ett icke-standardnamn i Photoshop. </p> </li> 
         <li id="li_10B2D2DE2FD24BD08DB56D1D95ABA53D"> <span class="uicontrol"> Använd PSD-filnamn och lagernamn eller -nummer  </span> <p>Namnger bilderna efter PSD-filen följt av lagernamnet eller lagernumret. Lagernumret används om lagernamnen i PSD-filen är Photoshop standardlagernamn. Ett lager med namnet <span class="codeph"> Price Tag </span> i en PSD-fil med namnet <span class="codeph"> SpringAd </span> har till exempel namnet <span class="codeph"> Spring Ad_Price Tag </span>. Ett lager med standardnamnet <span class="codeph"> Lager 2 </span> heter <span class="codeph"> Spring Ad_2 </span>. </p> </li> 
         <li id="li_5E57AC0719D4484B9C9BD14DB42B4455"> <span class="uicontrol"> Skapa mapp baserat på PSD-filnamnet  </span> <p>Skapar en mapp för lagerbilderna med PSD-filens namn. </p> </li> 
         </ul> </td> 
