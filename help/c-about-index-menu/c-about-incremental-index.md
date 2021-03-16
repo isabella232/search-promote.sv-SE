@@ -1,16 +1,14 @@
 ---
 description: Du kan använda Inkrementellt index om du vill indexera"delar" av en publicerad eller mellanlagrad webbplats, till exempel en samling sidor som ändras ofta.
-seo-description: Du kan använda Inkrementellt index om du vill indexera"delar" av en publicerad eller mellanlagrad webbplats, till exempel en samling sidor som ändras ofta.
-seo-title: Om inkrementellt index
 solution: Target
 subtopic: Incremental Index
 title: Om inkrementellt index
-topic: Index,Site search and merchandising
+topic: Index,Webbplatssökning och -försäljning
 uuid: b1ee9b08-dcbe-4ffe-b0b4-d379daaac9b5
 translation-type: tm+mt
-source-git-commit: 552f93f1f630c64bbe3d5c8a87c4f5895ae6868c
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1357'
 ht-degree: 0%
 
 ---
@@ -217,7 +215,7 @@ Indexschemat gäller endast ditt liveindex. du kan inte schemalägga mellanlagra
 **Ställa in inkrementellt indexschema för en aktiv webbplats**
 
 1. Klicka på **[!UICONTROL Index]** > **[!UICONTROL Incremental Index]** > **[!UICONTROL Live Schedule]** på produktmenyn.
-1. Välj indexeringsfrekvens i timmar eller minuter i listrutan **[!UICONTROL Incremental Index Schedule]** på sidan &lt;a0/>.**[!UICONTROL Incrementally Index]**
+1. Välj indexeringsfrekvens i timmar eller minuter i listrutan **[!UICONTROL Incremental Index Schedule]** på sidan **[!UICONTROL Incrementally Index]**.
 1. Välj starttid i listrutan **[!UICONTROL Base Time]** när du vill generera om ett nytt inkrementellt index.
 1. Klicka på **[!UICONTROL Save Changes]**.
 
