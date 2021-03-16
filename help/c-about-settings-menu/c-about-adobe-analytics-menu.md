@@ -1,16 +1,14 @@
 ---
 description: Använd Adobe Analytics-menyn för att konfigurera Adobe Analytics metrics authentication, hantera Adobe Analytics metrics of a Report Suite eller använd SAINT för att förbättra Adobe Analytics-rapporter genom att acceptera tabelldata från externa källor.
-seo-description: Använd Adobe Analytics-menyn för att konfigurera Adobe Analytics metrics authentication, hantera Adobe Analytics metrics of a Report Suite eller använd SAINT för att förbättra Adobe Analytics-rapporter genom att acceptera tabelldata från externa källor.
-seo-title: Om Adobe Analytics-menyn
 solution: Target
 subtopic: Adobe Analytics
 title: Om Adobe Analytics-menyn
-topic: Settings,Site search and merchandising
+topic: Inställningar,Webbplatssökning och -försäljning
 uuid: 5536edf1-d3a4-47af-a307-6e46f385f738
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '3448'
+source-wordcount: '3412'
 ht-degree: 0%
 
 ---
@@ -313,7 +311,7 @@ Se [Redigera Adobe Analytics-statistik för en Report Suite](../c-about-settings
     <tbody> 
       <tr> 
       <td colname="col1"> <p>Maximalt antal rader, alla mått </p> </td> 
-      <td colname="col2"> <p>En optimeringsinställning som förhindrar nedladdning av för mycket Adobe Analytics-data. </p> <p>Om du anger det här alternativet till ett värde som inte är noll stoppas datahämtningen i Adobe Analytics när det totala antalet rader som hämtas för varje mätvärde överskrider det angivna värdet. </p> <p>Standardvärdet är 0; inget maxvärde används. </p> </td> 
+      <td colname="col2"> <p>En optimeringsinställning som förhindrar nedladdning av för mycket Adobe Analytics-data. </p> <p>Om du anger det här alternativet till ett värde som inte är noll stoppas Adobe Analytics-datainhämtningen när det totala antalet rader som har hämtats för varje mätvärde överskrider det angivna värdet. </p> <p>Standardvärdet är 0; inget maxvärde används. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Måttupprepande hämtningsstorlek (rader) </p> </td> 
