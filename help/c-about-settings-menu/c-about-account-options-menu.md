@@ -1,16 +1,14 @@
 ---
 description: Använd menyn Kontoalternativ för att uppdatera kontoinställningarna, ange försäljningsinställningar eller ta bort en egen Search&amp;Promote-konto.
-seo-description: Använd menyn Kontoalternativ för att uppdatera kontoinställningarna, ange försäljningsinställningar eller ta bort en egen Search&amp;Promote-konto.
-seo-title: Om menyn Kontoalternativ
 solution: Target
 subtopic: Account Options
 title: Om menyn Kontoalternativ
-topic: Settings,Site search and merchandising
+topic: Inställningar,Webbplatssökning och -försäljning
 uuid: 0f830033-de9e-4197-8d76-906c818662eb
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1684'
+source-wordcount: '1662'
 ht-degree: 0%
 
 ---
