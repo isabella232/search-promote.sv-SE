@@ -1,15 +1,13 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Sök i formulär
+description: Lär dig mer om sökformulär i Sök&amp;Promote
 solution: Target
 title: Sök i formulär
-topic: Appendices,Site search and merchandising
+topic: bilagor,Webbplatssökning och -försäljning
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 translation-type: tm+mt
-source-git-commit: 4542702e1d2ba04c70d9f6b24bfa32e1f1c6acb5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '2921'
+source-wordcount: '2931'
 ht-degree: 0%
 
 ---
@@ -132,7 +130,7 @@ Så här konfigurerar du ramuppsättningar:
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>3 </p> </td> 
+   <td colname="col1"> <p>1 </p> </td> 
    <td colname="col02"> <p>Lägg till formuläret i önskad ram på webbsidan. </p> </td> 
    <td colname="col2"> <p> <a href="#section_BAA8A502BB2243F8B5FF9783CDF2BFFD" type="section" format="dita" scope="local"> Lägger till sökformulärkoden i en ram i ...  </a> </p> </td> 
   </tr> 
