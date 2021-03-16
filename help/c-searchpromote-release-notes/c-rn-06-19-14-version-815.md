@@ -1,15 +1,13 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Sökning&stämpel;amp;Promote 8.15.0 Versionsinformation (6/19/2014)
+description: Search&amp;Promote 8.15.0 versionsinformation.
 solution: Target
 title: Sökning&stämpel;amp;Promote 8.15.0 Versionsinformation (6/19/2014)
-topic: Release Notes,Site search and merchandising
+topic: Versionsinformation,Webbplatssökning och -försäljning
 uuid: bb250450-48b4-4563-84b9-66f2c3dc063a
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
