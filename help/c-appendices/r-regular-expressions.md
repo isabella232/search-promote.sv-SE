@@ -1,15 +1,13 @@
 ---
 description: En uppdaterare som rör syntax och regler för att skapa reguljära uttryck.
-seo-description: En uppdaterare som rör syntax och regler för att skapa reguljära uttryck.
-seo-title: Reguljära uttryck
 solution: Target
 title: Reguljära uttryck
-topic: Appendices,Site search and merchandising
+topic: bilagor,Webbplatssökning och -försäljning
 uuid: 369b54f6-372a-41de-bb5d-3ae0bd640199
 translation-type: tm+mt
-source-git-commit: 7b883870bb16284d8070a21547cdb62cc79d7632
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1050'
 ht-degree: 0%
 
 ---
@@ -114,7 +112,7 @@ Se även [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](..
    * `.` (punkt) är ett reguljärt uttryck med ett tecken som matchar alla tecken, inklusive extra koduppsättningstecken med undantag för radbyten.
    * En sträng med tecken som inte är tom och som omges av `[ ]` (vänster och höger hakparentes) är ett reguljärt uttryck med ett tecken som matchar ett tecken, inklusive extratecken för koduppsättningen, i strängen.
 
-      Om det första tecknet i strängen är `^` (cirflex) matchar det reguljära uttrycket med ett tecken alla tecken, inklusive extratecken, med undantag för tecken på en ny rad och de återstående tecknen i strängen.
+      Om det första tecknet i strängen däremot är ett `^` (cirflex) matchar det reguljära uttrycket med ett tecken alla tecken, inklusive extratecken, med undantag för den nya raden och de återstående tecknen i strängen.
 
       `^` har bara den här speciella betydelsen om den förekommer först i strängen. Du kan använda `-` (minustecken) för att ange ett intervall med efterföljande tecken, inklusive extratecknen för koduppsättningen. [0-9] motsvarar till exempel [0123456789].
 
