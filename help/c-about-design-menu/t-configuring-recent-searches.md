@@ -1,17 +1,15 @@
 ---
 description: Senaste sökningar är ett cookie-baserat system som gör att du kan använda en presentationsmall för att visa kundens senaste sökhistorik.
-seo-description: Senaste sökningar är ett cookie-baserat system som gör att du kan använda en presentationsmall för att visa kundens senaste sökhistorik.
-seo-title: Konfigurera senaste sökningar
 solution: Target
 subtopic: Navigation
 title: Konfigurera senaste sökningar
-topic: Design,Site search and merchandising
+topic: Design, webbplatssökning och -försäljning
 uuid: 8ab1b35c-f953-4c26-921f-524af1fea4ef
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 0%
+source-wordcount: '186'
+ht-degree: 1%
 
 ---
 
