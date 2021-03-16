@@ -1,15 +1,13 @@
 ---
 description: Använd menyn Rapporter för att visa eller återställa rapporter om kundernas sökfrågor.
-seo-description: Använd menyn Rapporter för att visa eller återställa rapporter om kundernas sökfrågor.
-seo-title: Om menyn Rapporter
 solution: Target
 title: Om menyn Rapporter
-topic: Reports,Site search and merchandising
+topic: Rapporter,Webbplatssökning och -försäljning
 uuid: 3ea856d7-dc07-455f-8dc7-c7f7f56355d7
 translation-type: tm+mt
-source-git-commit: 7af85dd37f06fe506e5f57e28a25385ca7ab3db5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1245'
 ht-degree: 0%
 
 ---
@@ -123,7 +121,7 @@ Sidan [!DNL Staged Adobe Analytics Terms Report] och sidan [!DNL Staged Adobe An
 
 ## Visa rapporten för sökbegäran eller rapporten för innehållsförfrågningar {#task_4C6EFB4D51474FC1BDE4326D1A726ECC}
 
-Du kan visa [!DNL Search Requests Report] för att se antalet sökbegäranden under en viss tidsperiod. Du kan också visa [!DNL Content Requests Report] för att se antalet innehållsförfrågningar under en angiven tidsperiod.
+Du kan visa [!DNL Search Requests Report] för att se antalet sökbegäranden under en angiven tidsperiod. Du kan också visa [!DNL Content Requests Report] för att se antalet innehållsförfrågningar under en angiven tidsperiod.
 
 >[!NOTE]
 >
