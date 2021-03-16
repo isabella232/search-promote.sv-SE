@@ -1,15 +1,13 @@
 ---
 description: Du kan använda Ord och språk för att bestämma hur söktermer matchas mot innehållet på dina webbsidor.
-seo-description: Du kan använda Ord och språk för att bestämma hur söktermer matchas mot innehållet på dina webbsidor.
-seo-title: Om ord och språk
 solution: Target
 title: Om ord och språk
-topic: Linguistics,Site search and merchandising
+topic: Linguistics, Site search and merchandising
 uuid: 793d7a40-4609-44b8-a170-536eb1434537
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
