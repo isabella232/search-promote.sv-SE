@@ -1,15 +1,13 @@
 ---
 description: Du kan definiera de datumformat som ska användas när fält med datatypen"date" tolkas och indexeras.
-seo-description: Du kan definiera de datumformat som ska användas när fält med datatypen"date" tolkas och indexeras.
-seo-title: Datumformat
 solution: Target
 title: Datumformat
-topic: Appendices,Site search and merchandising
+topic: bilagor,Webbplatssökning och -försäljning
 uuid: 148914b5-33ef-41db-8404-67c03f6f0832
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
