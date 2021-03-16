@@ -1,15 +1,13 @@
 ---
-description: Du kan konfigurera Menade du så att kunderna får förslag på giltiga söktermer när de har provat sökningar som har misslyckats. Förslag skapas genom att söka efter stavnings- och skrivkorrigeringar av söktermerna som ger en giltig sökning.
-seo-description: Du kan konfigurera Menade du så att kunderna får förslag på giltiga söktermer när de har provat sökningar som har misslyckats. Förslag skapas genom att söka efter stavnings- och skrivkorrigeringar av söktermerna som ger en giltig sökning.
-seo-title: Om du menade
+description: Du kan konfigurera Menade du så att kunderna får förslag på giltiga söktermer när de har provat sökningar som har misslyckats. Förslag skapas genom att söka efter stavnings- och skrivkorrigeringar av de söktermer som resulterar i en giltig sökning.
 solution: Target
 title: Om du menade
-topic: Linguistics,Site search and merchandising
+topic: Linguistics, Site search and merchandising
 uuid: c5973541-3d6b-4fc9-bad4-66d4d3559fe8
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -17,7 +15,7 @@ ht-degree: 0%
 
 # Om Menade du{#about-did-you-mean}
 
-Du kan konfigurera Menade du så att kunderna får förslag på giltiga söktermer när de har provat sökningar som har misslyckats. Förslag skapas genom att söka efter stavnings- och skrivkorrigeringar av söktermerna som ger en giltig sökning.
+Du kan konfigurera Menade du så att kunderna får förslag på giltiga söktermer när de har provat sökningar som har misslyckats. Förslag skapas genom att söka efter stavnings- och skrivkorrigeringar av de söktermer som resulterar i en giltig sökning.
 
 ## Konfigureringen betydde {#task_B539D6A0043547EFB1CA19B67E762371}
 
