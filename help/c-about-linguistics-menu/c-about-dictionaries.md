@@ -1,15 +1,13 @@
 ---
 description: Du kan använda ordlistor för att hantera en samling ordlistor och tillhörande synonymer och hyponymer.
-seo-description: Du kan använda ordlistor för att hantera en samling ordlistor och tillhörande synonymer och hyponymer.
-seo-title: Om ordlistor
 solution: Target
 title: Om ordlistor
-topic: Linguistics,Site search and merchandising
+topic: Linguistics, Site search and merchandising
 uuid: d4463896-30fe-4385-a283-c930c8264a02
 translation-type: tm+mt
-source-git-commit: 4531970404c189ffa1d4359d1431c97df893ba35
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '2475'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
