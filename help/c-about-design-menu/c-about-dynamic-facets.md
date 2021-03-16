@@ -1,16 +1,14 @@
 ---
 description: Använd dynamiska ansikten om du vill skapa nya områdesmarkeringar automatiskt vid sökningen. Du kan även associera varje dynamiskt facet-fält med upp till ett tabellnamn i Adobe Search&amp;Promote account. Du använder dessa tabellrelationer vid sökningen för alla dynamiska facettsfält som ingår i sökningen.
-seo-description: Använd dynamiska ansikten om du vill skapa nya områdesmarkeringar automatiskt vid sökningen. Du kan även associera varje dynamiskt facet-fält med upp till ett tabellnamn i Adobe Search&amp;Promote account. Du använder dessa tabellrelationer vid sökningen för alla dynamiska facettsfält som ingår i sökningen.
-seo-title: Om dynamiska ansikten
 solution: Target
 subtopic: Navigation
 title: Om dynamiska ansikten
-topic: Design,Site search and merchandising
+topic: Design, webbplatssökning och -försäljning
 uuid: 1ea91c22-dcc2-4173-aa50-ce618ad0a99c
 translation-type: tm+mt
-source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---
@@ -34,7 +32,7 @@ När Dynamic Faceting används finns det dock ingen gräns för hur många fakto
 
 Ansikten som är svagt populerade på webbplatsen och bara visas för en delmängd av sökningarna är bra för att göra dynamiska. En fasett med namnet &quot;fotsbredd&quot; kan till exempel bara fyllas i när du söker efter skor eller stövlar. En annan aspekt med namnet &quot;Ansiktsformat&quot;, med möjliga värden &quot;Romerska&quot; och &quot;Arabiska&quot;, kan bara visas när du söker efter färgrutor eller klockor.
 
-Om ditt konto har ett stort antal sådana aspekter förbättras sökprestandan så att du kan använda dynamiska funktioner i stället för att alltid välja hela uppsättningen möjliga aspekter för varje sökning. Allmänna aspekter som&quot;SKU&quot; eller&quot;varumärke&quot;, som normalt passar för att visas med resultaten från varje sökning, är vanligtvis inte lämpliga som dynamiska aspekter.
+Om ditt konto har ett stort antal sådana aspekter förbättras sökprestandan så att du kan använda dynamiska funktioner i stället för att alltid välja hela uppsättningen möjliga aspekter för varje sökning. Allmänna aspekter som&quot;SKU&quot; eller&quot;varumärke&quot;, som normalt passar för att visas med resultaten från varje sökning, passar vanligtvis inte som dynamiska aspekter.
 
 ## Relation mellan aspekter och metataggsfält {#section_2869E5FCDA8B431A87BC6E5573F2B0A0}
 
