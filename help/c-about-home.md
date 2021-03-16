@@ -1,15 +1,13 @@
 ---
 description: Du kan använda Hem för att visa en mängd olika rapportwidgetar som ger dig en snabb översikt av ditt Search&amp;Promote-konto.
-seo-description: Du kan använda Hem för att visa en mängd olika rapportwidgetar som ger dig en snabb översikt av ditt Search&amp;Promote-konto.
-seo-title: Om Hem
 solution: Target
 title: Om Hem
-topic: Home,Site search and merchandising
+topic: Hem,Webbplatssökning och -försäljning
 uuid: 5d4dbf5e-954d-46ae-a822-18a58af60de6
 translation-type: tm+mt
-source-git-commit: 91ddead9f73b73ea1a20e26582998966f801d6ff
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -37,7 +35,7 @@ I följande tabell beskrivs de rapportwidgetar som är tillgängliga från Hem:
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="uicontrol">Crawlningsprestanda (hämtade byte)</span> </p> </td> 
-   <td colname="col2"> <p>Diagram de byte som laddats ned under de senaste tre dagarna när webbplatsen crawlades. </p> <p>Diagrammet innehåller en profil för crawlningen. Om diagrammets form plötsligt ändras från en dag till nästa betyder det att något på din webbplats har ändrats. Det kan också betyda att crawlningens konfiguration har ändrats eller att det är något problem med själva crawlningen. </p> <p>Se <a href="c-about-settings-menu/c-about-crawling-menu.md#concept_59307680C6724E93952ADE5044983AF6" format="dita" scope="local"> Om crawlningsmenyn</a>. </p> </td> 
+   <td colname="col2"> <p>Diagram de byte som laddats ned under de senaste tre dagarna när webbplatsen crawlades. </p> <p>Diagrammet innehåller en profil för crawlningen. Om diagrammets form plötsligt ändras från en dag till nästa betyder det att något på din webbplats har ändrats. Det kan också betyda att crawlerns konfiguration har ändrats eller att det finns ett problem med själva crawlningen. </p> <p>Se <a href="c-about-settings-menu/c-about-crawling-menu.md#concept_59307680C6724E93952ADE5044983AF6" format="dita" scope="local"> Om crawlningsmenyn</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><span class="uicontrol">Indexinformation</span> </p> </td> 
