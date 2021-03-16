@@ -1,16 +1,14 @@
 ---
 description: Du kan använda Ansikten för att anpassa presentationslagret och ge användarna en guidad sökning där de kan fördjupa sig i sökresultaten.
-seo-description: Du kan använda Ansikten för att anpassa presentationslagret och ge användarna en guidad sökning där de kan fördjupa sig i sökresultaten.
-seo-title: Om ansikten
 solution: Target
 subtopic: Navigation
 title: Om ansikten
-topic: Design,Site search and merchandising
+topic: Design, webbplatssökning och -försäljning
 uuid: 28bc4d4d-a84c-4a77-befb-b0fb3bbdb966
 translation-type: tm+mt
-source-git-commit: 52c8d7985e7cb0aa35be1deabeb7cb92a55f07c2
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '3855'
+source-wordcount: '3832'
 ht-degree: 0%
 
 ---
@@ -213,7 +211,7 @@ Se [Lägga till fältinjektionsdefinitioner](../c-about-settings-menu/c-about-me
       <td colname="col1"> <p>Beteende </p> </td> 
       <td colname="col2"> <p>Anger en av tre fasetbeteenden. </p> <p> 
       <ul id="ul_67C19E1C16224B9990F04A0D05BD3D05"> 
-      <li id="li_6B232C11A61840B68CA59E1F593405A0"> <span class="uicontrol"> Normal  </span> <p>När en kund klickar på en fasett vars beteende är inställt på <span class="uicontrol"> Normal </span>, fördjupas sökresultaten för det objektet. Därifrån kan kunden förfina och begränsa antalet sökresultat ytterligare. </p> </li> 
+      <li id="li_6B232C11A61840B68CA59E1F593405A0"> <span class="uicontrol"> Normal  </span> <p>När en kund klickar på en aspekt vars beteende är inställt på <span class="uicontrol"> Normal </span>, fördjupas sökresultaten för det objektet. Därifrån kan kunden förfina och begränsa antalet sökresultat ytterligare. </p> </li> 
       <li id="li_7D7C43A7F7AB4B84A9B0FEF34627605A"> <span class="uicontrol"> Kategori  </span> <p>Kategorifaktorer fungerar som navigeringselement. Dessa faktorer är högnivåfaktorer som kunderna vanligen går igenom innan de avslöjar ansikten med attributalternativ. Kategorifasetterna är inte smala när andra aspekter är markerade och fortfarande öppna. Om du klickar på ett annat värde i en kategoriaspekt avmarkeras alla andra aspekter på sidan förutom den kategorifasettens överordnade. </p> </li> 
       <li id="li_01255993D71F40DBA8870AA3FEA7D304"> <span class="uicontrol"> Flera val för kategori  </span> <p>-faktorer är kategorifaktorer som stöder markering av flera objekt från den faktor där objekten är"ORed" tillsammans. </p> </li> 
       </ul> 
@@ -313,7 +311,7 @@ Se [Lägga till fältinjektionsdefinitioner](../c-about-settings-menu/c-about-me
       </tr> 
       <tr> 
       <td colname="col1"> <p>Övre värden </p> </td> 
-      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Bryt </span> i listrutan <span class="uicontrol"> Sortera </span>. </p> <p>När du använder en radbrytning placeras den här avgränsade listan med värden alltid överst i listan. Användning av reguljära uttryck är tillåten men ska vara inom klammerparenteser eller klammerparenteser, till exempel: {^New.*?},{^Mycket nytt.*} </p> </td> 
+      <td colname="col2"> <p>Det här alternativet är bara tillgängligt om du har valt <span class="uicontrol"> Bryt </span> i listrutan <span class="uicontrol"> Sortera </span>. </p> <p>När du använder en brytning-sortering placeras den här avgränsade listan med värden alltid överst i listan. Användning av reguljära uttryck är tillåten men ska vara inom klammerparenteser eller klammerparenteser, till exempel: {^New.*?},{^Mycket nytt.*} </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Nedre värden </p> </td> 
