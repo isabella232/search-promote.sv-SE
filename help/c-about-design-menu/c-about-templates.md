@@ -1,15 +1,13 @@
 ---
 description: Du kan använda Mallar för att hantera presentationsmallar och transportmallar.
-seo-description: Du kan använda Mallar för att hantera presentationsmallar och transportmallar.
-seo-title: Om mallar
 solution: Target
 title: Om mallar
-topic: Design,Site search and merchandising
+topic: Design, webbplatssökning och -försäljning
 uuid: f5805d3e-43bf-4e13-95df-b6bd6b762d11
 translation-type: tm+mt
-source-git-commit: 60cedaac1846e384a37699a42bf7fda33828e1c0
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '2661'
+source-wordcount: '2652'
 ht-degree: 0%
 
 ---
@@ -49,7 +47,7 @@ Se [Om affärsregler](../c-about-rules-menu/c-about-business-rules.md#concept_2A
 
 Presentationsmallar är HTML-mallar som en kund ser när de visar sökresultaten på din webbplats.
 
-I presentationslagret kan du ha en enda presentationsmall som visar resultatet av flera sökningar från olika källor. Du kan definiera så många presentationsmallar du vill och till och med definiera presentationsmallar som andra mallar delar med hjälp av `include`-kommandon. Presentationsmallen är den plats där alla designkomponenter som fasetter, menyer och vägbeskrivningar finns samlade. Om du vill visa de olika designkomponenterna måste du använda taggar för presentationsmallar.
+I presentationslagret kan du ha en enda presentationsmall som visar resultatet av flera sökningar från olika källor. Du kan definiera så många presentationsmallar du vill och till och med definiera presentationsmallar som andra mallar delar med hjälp av `include`-kommandon. Presentationsmallen är den plats där alla designkomponenter, som fasetter, menyer och vägbeskrivningar, samlas. Om du vill visa de olika designkomponenterna måste du använda taggar för presentationsmallar.
 
 Se [Presentationsmalltaggar](../c-appendices/c-templates.md#reference_F1BBF616BCEC4AD7B2548ECD3CA74C64)
 
@@ -391,7 +389,7 @@ t_editing_a_template.xml
 
  -->
 
-Du kan redigera och testa dina mallar för presentationer och transport, medan besökarna på webbplatsen fortsätter att använda liveversionerna av mallarna. Du testar den mellanlagrade mallen med den mellanlagrade versionen av din sökdomän-URL. Du kan till exempel testa den mellanlagrade transportmallen genom att köra en mellanlagrad fråga ( `sp_staged=1`) med `sp_t` som är inställd på transportmallens namn. När du är nöjd med hur layouten visas kan du använda **[!UICONTROL Push Live]** inifrån mallredigeraren för att göra mallen offentlig. När mallen är publicerad börjar besökarna använda den.
+Du kan redigera och testa dina presentations- och transportmallar medan besökarna på webbplatsen fortsätter att använda liveversionerna av mallarna. Du testar den mellanlagrade mallen med den mellanlagrade versionen av din sökdomän-URL. Du kan till exempel testa den mellanlagrade transportmallen genom att köra en mellanlagrad fråga ( `sp_staged=1`) med `sp_t` som är inställd på transportmallens namn. När du är nöjd med hur layouten visas kan du använda **[!UICONTROL Push Live]** inifrån mallredigeraren för att göra mallen offentlig. När mallen är publicerad börjar besökarna använda den.
 
 Använd taggreferensen för presentationsmallen om du vill lära dig hur du kopplar ihop presentationsmallen med komponenter för guidad sökning, t.ex. ansikten, vägbeskrivningar och menyer.
 
