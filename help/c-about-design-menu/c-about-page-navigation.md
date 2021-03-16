@@ -1,16 +1,14 @@
 ---
 description: Du kan använda Sidnavigering om du vill anpassa sidnavigeringskontrollen för sökpresentationslagret.
-seo-description: Du kan använda Sidnavigering om du vill anpassa sidnavigeringskontrollen för sökpresentationslagret.
-seo-title: Om sidnavigering
 solution: Target
 subtopic: Navigation
 title: Om sidnavigering
-topic: Design,Site search and merchandising
+topic: Design, webbplatssökning och -försäljning
 uuid: fb17a99e-d7b4-415e-ba1b-ca194fe41a5d
 translation-type: tm+mt
-source-git-commit: 7f1b5d94e8002992d62ec1e3dce11f9c5605fde8
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '405'
 ht-degree: 1%
 
 ---
