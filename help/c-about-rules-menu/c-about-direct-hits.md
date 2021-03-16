@@ -1,15 +1,13 @@
 ---
 description: Med direktträffar kan du omdirigera en kund till en angiven URL när kunden söker efter en matchande term. Med den här typen av funktioner kan du förbättra navigeringen i sökningen på webbplatsen.
-seo-description: Med direktträffar kan du omdirigera en kund till en angiven URL när kunden söker efter en matchande term. Med den här typen av funktioner kan du förbättra navigeringen i sökningen på webbplatsen.
-seo-title: Om direktträffar
 solution: Target
 title: Om direktträffar
-topic: Rules,Site search and merchandising
+topic: Regler,Webbplatssökning och -försäljning
 uuid: 374d63c8-2b82-4165-b543-05b587757baa
 translation-type: tm+mt
-source-git-commit: ef818327e1cdaad79ac47575a8dfba1de3dc5c2e
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '400'
 ht-degree: 1%
 
 ---
