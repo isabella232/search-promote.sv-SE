@@ -1,17 +1,15 @@
 ---
 description: Du kan använda Återskapa index för att uppdatera webbplatsens index utan att behöva crawla webbplatsen på nytt.
-seo-description: Du kan använda Återskapa index för att uppdatera webbplatsens index utan att behöva crawla webbplatsen på nytt.
-seo-title: Om Återskapa index
 solution: Target
 subtopic: Regenerate Index
 title: Om Återskapa index
-topic: Index,Site search and merchandising
+topic: Index,Webbplatssökning och -försäljning
 uuid: 9d1f1d88-0453-4422-a625-a348febbf224
 translation-type: tm+mt
-source-git-commit: f21a3f7fe0aeaab517a5ca36da43594873b3e69a
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 0%
+source-wordcount: '398'
+ht-degree: 1%
 
 ---
 
