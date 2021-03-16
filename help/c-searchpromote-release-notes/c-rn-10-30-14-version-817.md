@@ -1,15 +1,13 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: Söka&amp;Promote 8.17.0 Versionsinformation (10/30/2014)
+description: Sök&amp;Promote 8.17.0 versionsinformation.
 solution: Target
 title: Söka&amp;Promote 8.17.0 Versionsinformation (10/30/2014)
-topic: Release Notes,Site search and merchandising
+topic: Versionsinformation,Webbplatssökning och -försäljning
 uuid: ea1725df-778c-4875-a269-f33d0c367126
 translation-type: tm+mt
-source-git-commit: ffdec2cfcb30e733c664a7d1ca23868b7a9a9aa5
+source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
@@ -28,7 +26,7 @@ ht-degree: 0%
 
 * Vertikal uppdateringsbaserad omrangordning - snabbare omrangordning av indexet ger nu bättre resultat än vad webbtrafiken faktiskt upplever.
 
-   Se [Om rangordningsindex](../c-about-index-menu/c-about-re-rank-index.md#concept_147B0A9FCD51451787DA898E06F7C692).
+   Se [Om Re-Rank Index](../c-about-index-menu/c-about-re-rank-index.md#concept_147B0A9FCD51451787DA898E06F7C692).
 
 * När **[!UICONTROL Ignore Apostrophes]** och **[!UICONTROL Ignore Hyphens]** är aktiverat i **[!UICONTROL Linguistics]** > **[!UICONTROL Words & Language]**, tas apostrofer och bindestreck bort automatiskt från frågedata som förväntat.
 
