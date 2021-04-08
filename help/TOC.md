@@ -2,14 +2,15 @@
 cloud: Experience Cloud
 product: adobe search and promote
 solution: Search & Promote
-type: Dokumentation
+type: Documentation
 audience: end-user
 user-guide-title: Adobe Search&amp;Promote Guide
 breadcrumb-title: Adobe Search&amp;Promote Guide
+feature-set: Search & Promote
 translation-type: tm+mt
-source-git-commit: 5ecb1d79057b166887c37c1c54905a93e2a87835
+source-git-commit: bf5871534e74ecd9b309896de9412cc09c181c57
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '259'
 ht-degree: 0%
 
 ---
