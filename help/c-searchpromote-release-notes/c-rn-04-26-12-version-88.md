@@ -2,7 +2,7 @@
 description: Sök&amp;Promote 8.8 versionsinformation.
 solution: Target
 title: Söka&amp;Promote 8.8 Versionsinformation (04/26/2012)
-topic: Versionsinformation,Webbplatssökning och -försäljning
+topic: Release Notes,Site search and merchandising
 uuid: ddb9f1af-92a4-4f85-be8f-a36f34d31add
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -3,7 +3,7 @@ description: Du kan använda Fullständigt index om du vill indexera alla sidor 
 solution: Target
 subtopic: Full Index
 title: Om Fullständigt index
-topic: Index,Webbplatssökning och -försäljning
+topic: Index,Site search and merchandising
 uuid: dce1eafd-5aea-4945-8305-8f9e7dc392df
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

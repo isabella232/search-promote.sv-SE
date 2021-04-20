@@ -2,7 +2,7 @@
 description: Search&amp;Promote 8.14.0 Release Notes.
 solution: Target
 title: Sökning&stämpel;amp;Promote 8.14.0 Versionsinformation (05/22/2014)
-topic: Versionsinformation,Webbplatssökning och -försäljning
+topic: Release Notes,Site search and merchandising
 uuid: 308d84a9-ec38-4fec-b146-e8a353e65be4
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

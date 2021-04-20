@@ -3,7 +3,7 @@ description: Du kan använda Ansikten för att anpassa presentationslagret och g
 solution: Target
 subtopic: Navigation
 title: Om ansikten
-topic: Design, webbplatssökning och -försäljning
+topic: Design,Site search and merchandising
 uuid: 28bc4d4d-a84c-4a77-befb-b0fb3bbdb966
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: Du kan definiera de datumformat som ska användas när fält med datatypen"date" tolkas och indexeras.
 solution: Target
 title: Datumformat
-topic: bilagor,Webbplatssökning och -försäljning
+topic: Appendices,Site search and merchandising
 uuid: 148914b5-33ef-41db-8404-67c03f6f0832
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

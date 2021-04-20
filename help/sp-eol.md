@@ -2,7 +2,7 @@
 title: Adobe Search & Promote meddelande om att tjänsten upphör
 description: Läs mer om Adobe Search & Promote meddelande om att tjänsten upphör.
 feature: null
-role: Administratör,Affärsansvarig,Datatekniker,Utvecklare
+role: Administrator,Business Practitioner,Data Engineer,Developer
 hide: true
 hidefromtoc: true
 translation-type: tm+mt

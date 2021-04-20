@@ -2,7 +2,7 @@
 description: Använd Simulator för att se hur sökningen skulle se ut om du skulle skicka allt som för närvarande är mellanlagrat, live.
 solution: Target
 title: Om Simulator
-topic: Simulator,Webbplatssökning och -försäljning
+topic: Simulator,Site search and merchandising
 uuid: 7ec8f5b9-3ab3-4b9a-bf8a-65d0ca1dfddb
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

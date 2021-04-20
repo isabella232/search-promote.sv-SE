@@ -2,7 +2,7 @@
 description: Du kan använda regler för eftersökning för att undersöka resultatet av en sökning och avgöra hur sökningen påverkar det visade innehållet.
 solution: Target
 title: Om regler för eftersökning
-topic: Regler,Webbplatssökning och -försäljning
+topic: Rules,Site search and merchandising
 uuid: 312d1e4a-f5b6-4629-8645-17e6f6c09fc4
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: Sök&amp;Promote 8.7.1 versionsinformation.
 solution: Target
 title: Sökning&stämpel;amp;Promote 8.7.1 Versionsinformation (2012-02-23)
-topic: Versionsinformation,Webbplatssökning och -försäljning
+topic: Release Notes,Site search and merchandising
 uuid: 3fabf7b2-4a27-4f0a-862a-52f701a0631d
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

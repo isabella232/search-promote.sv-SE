@@ -2,7 +2,7 @@
 description: Sök&amp;Befordra versionsinformation för 15.3.1.
 solution: Target
 title: Sök&stämpel;amp;Promote 15.3.1 Versionsinformation (03/24/2015)
-topic: Versionsinformation,Webbplatssökning och -försäljning
+topic: Release Notes,Site search and merchandising
 uuid: f02da5a4-2207-4603-aa05-5cff7be16dd5
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

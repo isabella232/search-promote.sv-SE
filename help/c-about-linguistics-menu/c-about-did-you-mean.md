@@ -2,7 +2,7 @@
 description: Du kan konfigurera Menade du så att kunderna får förslag på giltiga söktermer när de har provat sökningar som har misslyckats. Förslag skapas genom att söka efter stavnings- och skrivkorrigeringar av de söktermer som resulterar i en giltig sökning.
 solution: Target
 title: Om du menade
-topic: Linguistics, Site search and merchandising
+topic: Linguistics,Site search and merchandising
 uuid: c5973541-3d6b-4fc9-bad4-66d4d3559fe8
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

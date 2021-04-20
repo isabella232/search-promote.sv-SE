@@ -2,7 +2,7 @@
 description: Med Proximity Search kan du koppla en unik plats till en sida på webbplatsen och sedan söka och sortera resultaten efter närhet (avstånd) från en viss plats.
 solution: Target
 title: Om närhetssökning
-topic: bilagor,Webbplatssökning och -försäljning
+topic: Appendices,Site search and merchandising
 uuid: 24fc9265-3400-46a7-b6e0-4de5b049a39a
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

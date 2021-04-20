@@ -2,7 +2,7 @@
 description: Sök&amp;Promote 8.13.0 versionsinformation.
 solution: Target
 title: Sökning&stämpel;amp;Promote 8.13.0 versionsinformation (04/16/2014)
-topic: Versionsinformation,Webbplatssökning och -försäljning
+topic: Release Notes,Site search and merchandising
 uuid: b3524992-ff00-4a7c-a404-078242456734
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

@@ -2,7 +2,7 @@
 description: Med direktträffar kan du omdirigera en kund till en angiven URL när kunden söker efter en matchande term. Med den här typen av funktioner kan du förbättra navigeringen i sökningen på webbplatsen.
 solution: Target
 title: Om direktträffar
-topic: Regler,Webbplatssökning och -försäljning
+topic: Rules,Site search and merchandising
 uuid: 374d63c8-2b82-4165-b543-05b587757baa
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

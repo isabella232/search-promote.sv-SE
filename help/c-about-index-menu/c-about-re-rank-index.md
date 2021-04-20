@@ -3,7 +3,7 @@ description: Du kan använda Re-Rank Index för att uppdatera din webbplats rank
 solution: Target
 subtopic: Re-Rank Index
 title: Om Re-Rank-index
-topic: Index,Webbplatssökning och -försäljning
+topic: Index,Site search and merchandising
 uuid: 5c2a4c12-5e06-4fcc-897c-c12fcc5d7aa8
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

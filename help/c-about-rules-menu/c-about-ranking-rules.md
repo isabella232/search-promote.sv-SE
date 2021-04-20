@@ -3,7 +3,7 @@ description: Du kan använda Rankningsregler för att styra den relativa placeri
 solution: Target
 subtopic: Ranking Rules
 title: Om rankningsregler
-topic: Regler,Webbplatssökning och -försäljning
+topic: Rules,Site search and merchandising
 uuid: 21962f9a-1d9c-442f-a6c4-5f452436c640
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

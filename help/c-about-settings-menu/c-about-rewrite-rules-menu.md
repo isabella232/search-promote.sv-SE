@@ -3,7 +3,7 @@ description: Använd menyn Skriv om regler om du vill ange regler för crawlning
 solution: Target
 subtopic: Rewrite Rules
 title: Om menyn Skriv om regler
-topic: Inställningar,Webbplatssökning och -försäljning
+topic: Settings,Site search and merchandising
 uuid: 77ee84dd-fdba-4d34-ae8e-2fe786599800
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

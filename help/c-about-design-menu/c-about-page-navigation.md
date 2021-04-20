@@ -3,7 +3,7 @@ description: Du kan använda Sidnavigering om du vill anpassa sidnavigeringskont
 solution: Target
 subtopic: Navigation
 title: Om sidnavigering
-topic: Design, webbplatssökning och -försäljning
+topic: Design,Site search and merchandising
 uuid: fb17a99e-d7b4-415e-ba1b-ca194fe41a5d
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

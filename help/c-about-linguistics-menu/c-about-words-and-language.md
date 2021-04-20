@@ -2,7 +2,7 @@
 description: Du kan använda Ord och språk för att bestämma hur söktermer matchas mot innehållet på dina webbsidor.
 solution: Target
 title: Om ord och språk
-topic: Linguistics, Site search and merchandising
+topic: Linguistics,Site search and merchandising
 uuid: 793d7a40-4609-44b8-a170-536eb1434537
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

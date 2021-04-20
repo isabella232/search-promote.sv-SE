@@ -2,7 +2,7 @@
 description: Analysera och ändra den inkommande frågan med hjälp av Regler för frågerensning.
 solution: Target
 title: Om renderingsregler för frågor
-topic: Regler,Webbplatssökning och -försäljning
+topic: Rules,Site search and merchandising
 uuid: 683af81f-f7c0-45f8-9212-e5e7cb82ccca
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

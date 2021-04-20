@@ -2,7 +2,7 @@
 description: Search&amp;Promote 8.9.5, versionsinformation.
 solution: Target
 title: Sökning&stämpel;amp;Promote 8.9.5 versionsinformation (2013-02-21)
-topic: Versionsinformation,Webbplatssökning och -försäljning
+topic: Release Notes,Site search and merchandising
 uuid: 1cd8a540-f85f-4e87-8e0c-dbdcd230a6c4
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

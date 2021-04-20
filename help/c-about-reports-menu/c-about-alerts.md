@@ -2,7 +2,7 @@
 description: På sidan Varningar finns en central plats där du kan visa och hantera alla varningar som har att göra med ditt konto.
 solution: Target
 title: Om varningar
-topic: Rapporter,Webbplatssökning och -försäljning
+topic: Reports,Site search and merchandising
 uuid: 94524563-f9a6-40cf-89f3-e80b1d0113c7
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

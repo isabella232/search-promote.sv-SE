@@ -2,7 +2,7 @@
 description: Med mellanlagring kan du testa och förhandsgranska ändringar av dina inställningar och konfigurationer utan att påverka ditt Live-index.
 solution: Target
 title: Om Förproduktion
-topic: Mellanlagring,Webbplatssökning och -försäljning
+topic: Staging,Site search and merchandising
 uuid: 2e5889a6-2e9c-4ac7-9d6e-d35e7cafda5b
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

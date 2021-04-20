@@ -2,7 +2,7 @@
 description: Du kan använda Historik för att granska en lista över alla ändringar som gjorts i en implementerad funktion, till exempel en fasett, en vägbeskrivning, en banderoll eller mall, för att nämna några.
 solution: Target
 title: Använda alternativet Historik
-topic: Använda historik, webbplatssökning och -försäljning
+topic: Using History,Site search and merchandising
 uuid: 48b9ee9d-cd61-41e7-b8c3-5f1665b9a9cb
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

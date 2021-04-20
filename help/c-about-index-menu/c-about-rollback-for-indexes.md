@@ -3,7 +3,7 @@ description: Du kan använda Återställning för att säkerhetskopiera och arki
 solution: Target
 subtopic: Rollback
 title: Om återställning för index
-topic: Index,Webbplatssökning och -försäljning
+topic: Index,Site search and merchandising
 uuid: abed878a-71b3-4122-9822-7410f4427a9a
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

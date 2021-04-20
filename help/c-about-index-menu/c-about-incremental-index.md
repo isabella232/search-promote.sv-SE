@@ -3,7 +3,7 @@ description: Du kan använda Inkrementellt index om du vill indexera"delar" av e
 solution: Target
 subtopic: Incremental Index
 title: Om inkrementellt index
-topic: Index,Webbplatssökning och -försäljning
+topic: Index,Site search and merchandising
 uuid: b1ee9b08-dcbe-4ffe-b0b4-d379daaac9b5
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

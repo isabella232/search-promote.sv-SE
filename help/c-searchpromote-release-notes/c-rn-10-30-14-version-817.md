@@ -2,7 +2,7 @@
 description: Sök&amp;Promote 8.17.0 versionsinformation.
 solution: Target
 title: Söka&amp;Promote 8.17.0 Versionsinformation (10/30/2014)
-topic: Versionsinformation,Webbplatssökning och -försäljning
+topic: Release Notes,Site search and merchandising
 uuid: ea1725df-778c-4875-a269-f33d0c367126
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

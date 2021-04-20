@@ -3,7 +3,7 @@ description: Använd menyn Kontoalternativ för att uppdatera kontoinställninga
 solution: Target
 subtopic: Account Options
 title: Om menyn Kontoalternativ
-topic: Inställningar,Webbplatssökning och -försäljning
+topic: Settings,Site search and merchandising
 uuid: 0f830033-de9e-4197-8d76-906c818662eb
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

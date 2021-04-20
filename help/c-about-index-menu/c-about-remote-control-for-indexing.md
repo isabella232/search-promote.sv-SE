@@ -2,7 +2,7 @@
 description: När webbplatsen ändras kan du köra ett skript eller program som begär att sökroboten ska köra ett index med hjälp av Fjärrstyrning.
 solution: Target
 title: Om Fjärrkontroll för indexering
-topic: Index,Webbplatssökning och -försäljning
+topic: Index,Site search and merchandising
 uuid: 20e230c6-5c1a-4bf4-bff3-b8236d14ab21
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

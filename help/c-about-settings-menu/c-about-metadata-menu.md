@@ -3,7 +3,7 @@ description: Använd menyn Metadata för att anpassa sökdefinitioner och indexi
 solution: Target
 subtopic: Metadata
 title: Om menyn Metadata
-topic: Inställningar,Webbplatssökning och -försäljning
+topic: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

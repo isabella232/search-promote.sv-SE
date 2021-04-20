@@ -2,7 +2,7 @@
 description: Använd regler före sökning för att analysera den inkommande frågan och avgöra vilken presentationsmall som ska användas. Regler före sökning körs i sekvens för varje fråga. Om du vill ändra ordningen på reglerna kan du dra och släppa. Den faktiska ordningen ändras inte förrän du sparar den.
 solution: Target
 title: Om regler för försökning
-topic: Regler,Webbplatssökning och -försäljning
+topic: Rules,Site search and merchandising
 uuid: e75f9d9e-e8ca-4184-bf79-b1fdadb5c0fe
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f

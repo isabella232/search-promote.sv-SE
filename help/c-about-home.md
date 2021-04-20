@@ -2,7 +2,7 @@
 description: Du kan använda Hem för att visa en mängd olika rapportwidgetar som ger dig en snabb översikt av ditt Search&amp;Promote-konto.
 solution: Target
 title: Om Hem
-topic: Hem,Webbplatssökning och -försäljning
+topic: Home,Site search and merchandising
 uuid: 5d4dbf5e-954d-46ae-a822-18a58af60de6
 translation-type: tm+mt
 source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
