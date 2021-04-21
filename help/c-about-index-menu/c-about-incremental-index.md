@@ -3,16 +3,16 @@ description: Du kan använda Inkrementellt index om du vill indexera"delar" av e
 solution: Target
 subtopic: Incremental Index
 title: Om inkrementellt index
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: b1ee9b08-dcbe-4ffe-b0b4-d379daaac9b5
+exl-id: 41943f84-23f0-434c-8eef-a9075dd5c03d
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1357'
+source-wordcount: '1352'
 ht-degree: 0%
 
 ---
-
 
 # Om inkrementellt index{#about-incremental-index}
 
@@ -254,4 +254,3 @@ Du kan inte exportera loggar eller spara dem. Loggen är fortfarande tillgängli
    * Använd navigeringsalternativen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** eller **[!UICONTROL Go to line]** för att gå igenom loggen.
 
    * Använd visningsalternativen **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** eller **[!UICONTROL Show]** för att förfina det du ser.
-
