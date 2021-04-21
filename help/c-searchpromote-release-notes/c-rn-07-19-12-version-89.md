@@ -2,16 +2,16 @@
 description: Sök&amp;Promote 8.9 versionsinformation.
 solution: Target
 title: Sökning&stämpel;amp;Promote 8.9 Versionsinformation (07/19/2012)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 3853c75d-19ed-4e36-9e81-dcbffe5f5b0c
+exl-id: d61bf0ee-60a9-4c89-8381-5514ba85cb99
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
-
 
 # Versionsinformation för Search &amp; Promote 8.9 (07/19/2012){#search-promote-release-notes}
 
@@ -39,4 +39,3 @@ ht-degree: 0%
 * Om du klickar på Redigera på vissa banderoller visas inte sidan Redigera.
 * Det kan ibland ta lång tid att rangordna uppdateringskoden.
 * Det gick inte att ta bort eller flytta ett ansiktsobjekt om ansiktsnamnet har blandat skiftläge.
-
