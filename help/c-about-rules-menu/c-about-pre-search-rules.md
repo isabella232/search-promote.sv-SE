@@ -2,16 +2,16 @@
 description: Använd regler före sökning för att analysera den inkommande frågan och avgöra vilken presentationsmall som ska användas. Regler före sökning körs i sekvens för varje fråga. Om du vill ändra ordningen på reglerna kan du dra och släppa. Den faktiska ordningen ändras inte förrän du sparar den.
 solution: Target
 title: Om regler för försökning
-topic: Rules,Site search and merchandising
+topic-legacy: Rules,Site search and merchandising
 uuid: e75f9d9e-e8ca-4184-bf79-b1fdadb5c0fe
+exl-id: 23e7feda-956a-48ce-8c61-fe0498c1bbda
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1661'
 ht-degree: 0%
 
 ---
-
 
 # Om regler för försökning{#about-pre-search-rules}
 
@@ -234,4 +234,3 @@ Regler för försökning körs i den ordning de definierats. Ju högre ordningsn
    * Klicka på **[!UICONTROL Push Live]**.
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-
