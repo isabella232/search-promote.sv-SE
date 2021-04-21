@@ -2,16 +2,16 @@
 description: Läs om hur du använder presentations- och malltaggar i Sök&amp;Promote.
 solution: Target
 title: Mallar
-topic: Appendices,Site search and merchandising
+topic-legacy: Appendices,Site search and merchandising
 uuid: 78299032-dc23-4dfe-b68f-cd57b2b6d7d8
+exl-id: f8cc4b5c-4e75-426b-8234-76af8bb0f4c5
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '15153'
+source-wordcount: '15148'
 ht-degree: 1%
 
 ---
-
 
 # Mallar{#templates}
 
@@ -56,7 +56,7 @@ Deklarationer är speciella guidade deklarationstaggar som du kan ange högst up
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-content-type-header content="content-type"&gt; </span> </p> </td> 
    <td colname="col2"> <p>Som standard skickas presentationsmallen tillbaka med mime-typen text/html. Du kan ändra vilken innehållstyp som används med den här taggen. </p> <p>Deklarera taggen så hög som möjligt i presentationsmallen. Lägg inte till annan text på samma rad med den här taggen. </p> </td> 
   </tr> 
@@ -605,7 +605,7 @@ Se [Om vägbeskrivningar](../c-about-design-menu/c-about-breadcrumbs.md#concept_
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-breadcrumb&gt; breadcrumbname  </span>"]&gt;&lt;/guided-breadcrumb&gt; </span><span class="varname"> </span></p> </td> 
    <td colname="col2"> <p>Looptaggen för vägbeskrivningen. Allt innehåll mellan den inledande och avslutande taggen itereras för varje frågenummer i det aktuella läget. </p> <p>Om <span class="codeph"> <span class="varname"> gsname </span> </span> utelämnas används det synliga kolumnnamnet "default". </p> </td> 
   </tr> 
@@ -620,7 +620,7 @@ Se [Om vägbeskrivningar](../c-about-design-menu/c-about-breadcrumbs.md#concept_
       &lt;/guided-breadcrumb&gt; </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Updated to search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-breadcrumb-value /&gt; </span> </p> </td> 
    <td colname="col2"> <p>Taggen value skriver ut det omformade värdet för den aktuella urklippsalternationen. Den används endast i kontexten för ett <span class="codeph">-block av typen guided-bar.</span> </p> <p> <code class="syntax html"> &lt;guided-breadcrumb&gt; 
@@ -757,7 +757,7 @@ Sidnavigeringstaggarna kan användas för att skapa en uppsättning länkar som 
    <td colname="col2"> <p>Skapar en länk i sidnavigeringen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Matched search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-page-link gsname="first|prev|next|last|viewall|viewpages"&gt;&lt;/guided-page-link&gt; </span> </p> </td> 
    <td colname="col2"> <p>Skapar en länk till den första, föregående, nästa eller sista sidan. Den kan också skapa en länk för att visa alla sidor på en sida. </p> </td> 
@@ -900,7 +900,7 @@ Se [Konfigurera senaste sökningar](../c-about-design-menu/t-configuring-recent-
    <td colname="col2"> <p>Gör att du kan skapa en länk till en nyligen utförd sökning. Det har stöd för att skicka HTML-attribut direkt till ankartaggen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-recent-searches-path /&gt; </span> </p> </td> 
    <td colname="col2"> <p>Gör att du kan hämta den relativa URL-sökvägen för en nyligen utförd sökning, inom en <span class="codeph">-slinga med guidade sökningar </span>. Vanligtvis använder du <span class="codeph"> guided-recent-search-link </span>. Men om du vill skapa en egen länk kan du använda den här taggen. Följande är ett exempel: </p> <p> <code class="syntax html"> &lt;guided-lt/&gt;a&amp;nbsp;href="&lt;guided_recent_searches_path&gt;"&gt;&lt;guided-recent-searches-value&gt;&lt;/a&gt; </code> </p> </td> 
   </tr> 
@@ -954,7 +954,7 @@ Se [Om Menade du](../c-about-linguistics-menu/c-about-did-you-mean.md#concept_7D
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> 
      <!--Matches search-eng version, 2/1/2013--> <span class="codeph"> &lt;guided-suggestions&gt;&lt;/guided-suggestions&gt; </span> </p> </td> 
    <td colname="col2"> <p>Det här är loopkoden för att repetera förslagen. </p> </td> 
@@ -1040,7 +1040,7 @@ Se [Om Komplettera automatiskt](../c-about-auto-complete.md#concept_093A9CD75486
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-if-autocomplete&gt; &lt;guided-else-autocomplete&gt; &lt;/guided-if-autocomplete&gt; </span> </p> </td> 
    <td colname="col2"> <p>Identifierar om funktionen Komplettera automatiskt är aktiverad. Du kan använda taggarna för att alternativt hämta huvud- och formulärinnehåll som krävs för automatisk ifyllning. Detta gör att du kan aktivera och inaktivera funktionen och inte behöver ändra presentationsmallarna. </p> </td> 
   </tr> 
@@ -1050,7 +1050,7 @@ Se [Om Komplettera automatiskt](../c-about-auto-complete.md#concept_093A9CD75486
    <td colname="col2"> <p>Används i huvudet på presentationsmallen och ersätts av lämpligt CSS-skript för automatisk komplettering. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-ac-form-content /&gt; </span> </p> </td> 
    <td colname="col2"> <p>Används i sökformuläret (mellan taggarna <span class="codeph"> &lt;form&gt; </span> och <span class="codeph"> &lt;/form&gt; </span>) i presentationsmallen i stället för att de automatiska kompletta taggarna i formuläret kodas automatiskt. Taggarna ersätts med lämplig HTML som krävs för att automatisk komplettering ska fungera. </p> </td> 
   </tr> 
@@ -1086,7 +1086,7 @@ Använd följande taggar för att testa och visa butiken där en användare befi
    <td colname="col2"> <p>Identifierar om användaren finns i en butik. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;guided-if-store gsname="store"&gt; &lt;guided-else-store&gt; &lt;/guided-if-store&gt; </span> </p> </td> 
    <td colname="col2"> <p>Identifierar om användaren finns i arkivet som anges av parametern <span class="codeph"> gsname </span>. </p> </td> 
   </tr> 
@@ -1137,7 +1137,7 @@ Du kan använda var och en av följande slingindikatorer i något av dessa sling
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Updated to match search-eng version, 2/1/2013--> <code> &lt;guided-if[-not]-first&gt;&lt;guided-else[-not]-first&gt; 
       &lt;/guided-if[-not]-first&gt; </code> </p> </td> 
@@ -1208,7 +1208,7 @@ Följande taggar är tillgängliga så att du kan göra mer avancerade saker med
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> 
      <!--Updated to match search-eng, 2/1/2013--> <span class="codeph"> &lt;guided-current-path&gt; </span> </p> </td> 
    <td colname="col2"> <p>Ger dig den aktuella sökvägen som används. Vanligtvis används den för att skapa en länk som lägger till en ny parameter i den befintliga sökningen. Som standard är sökvägen URL escape. Du kan ange vilket läge du vill använda för escape-parametern. </p> <p>Exempel: </p> <p> <code class="syntax html"> &lt;a&nbsp;href="&lt;guided-current-path&nbsp;/&gt;&amp;lang=fr"&gt; 
@@ -1586,7 +1586,7 @@ Se [Om resultatlooptaggar](../c-appendices/c-templates.md#section_D4DC7B45601446
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-index&gt; </span> </p> </td> 
    <td colname="col2"> <p>Returnerar det numeriska indexvärdet för det aktuella resultatet. </p> </td> 
   </tr> 
@@ -1596,7 +1596,7 @@ Se [Om resultatlooptaggar](../c-appendices/c-templates.md#section_D4DC7B45601446
    <td colname="col2"> <p>Returnerar sidrubriken för det aktuella resultatet. Attributet för valfri längd används för att begränsa längden på de strängar som visas, med standardvärdet 80 tecken. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-bodytext length="XX" encoding="html/javascript/json/perl/url/none"&gt; </span> </p> </td> 
    <td colname="col2"> <p>Returnerar brödtexten från sidans överkant. Relevanta termer visas i fet stil. Attributet för valfri längd används för att begränsa längden på de strängar som visas, med standardvärdet 80 tecken. Kodningsattributet är valfritt och kan koda utdatatecken med HTML-kodning (standard), JavaScript-kodning, Perl-kodning eller ingen. </p> </td> 
   </tr> 
@@ -1705,7 +1705,7 @@ Se [Om resultatlooptaggar](../c-appendices/c-templates.md#section_D4DC7B45601446
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-title&gt; ...  &lt;/search-if-title&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-title&gt; ...  &lt;/search-if-not-title&gt; </span> </p> </td> 
    <td colname="col2"> <p>Dessa taggar inkluderar HTML mellan dem om nästa anrop till <span class="codeph"> &lt;search-title&gt; </span> returnerar (eller inte returnerar) text från dokumenttiteln. </p> </td> 
   </tr> 
@@ -1715,7 +1715,7 @@ Se [Om resultatlooptaggar](../c-appendices/c-templates.md#section_D4DC7B45601446
    <td colname="col2"> <p> Dessa taggar innehåller HTML mellan dem om nästa anrop till <span class="codeph"> &lt;search-description&gt; </span> returnerar (eller inte returnerar) text från dokumentbeskrivningen. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-bodytext&gt; ...  &lt;/search-if-bodytext&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-bodytext&gt; ...  &lt;/search-if-not-bodytext&gt; </span> </p> </td> 
    <td colname="col2"> <p>Dessa taggar inkluderar HTML mellan dem om nästa anrop till <span class="codeph"> &lt;search-bodytext&gt; </span> returnerar (eller inte returnerar) text från dokumentets brödtext. </p> </td> 
   </tr> 
@@ -1756,7 +1756,7 @@ Se [Om resultatlooptaggar](../c-appendices/c-templates.md#section_D4DC7B45601446
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-link target="frame-name" hbx-enable="yes/no" hbx-linkid-name="field-name" hbx-linkid-none="text" hbx-linkid-length="XX"&gt; ...  &lt;/search-link&gt; </span> </p> </td> 
    <td colname="col2"> <p>Det här taggparet skapar en ankarlänk runt HTML-koden mellan dem. När någon klickar på länken visas resultatsidan. Ett valfritt målattribut anger det namngivna fönster i vilket webbläsare som stöder bildrutor ska visa resultatsidan. </p> <p>Ställ in attributet hbx-enable på"yes" för att dra nytta av de analyser som är tillgängliga via HBX. Ange hbx-line-child-name till namnet på ett metadatafält som du vill spåra. Om du till exempel vill spåra sökresultat efter SKU-nummer anger du hbx-line-child-name till namnet på fältet Meta-data som innehåller SKU-information. </p> <p>Datumtypsfält stöds för närvarande inte. Värdet för hbx-line-child-name läggs till i länk-ID:t i det genererade ankaret. Värdet för attributet hbx-line-none läggs till i länk-ID:t när det namngivna metadatafältet är tomt. Värdet för hbx-line-length begränsar antalet tecken som hämtas och visas från meta-taggen. Standardantalet tecken är 12. </p> </td> 
   </tr> 
@@ -1803,7 +1803,7 @@ Se [Om resultatlooptaggar](../c-appendices/c-templates.md#section_D4DC7B45601446
       &lt;/search-results&gt; </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-inner&gt; ...  &lt;/search-if-inner&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-inner&gt; ...  &lt;/search-if-not-inner&gt; </span> </p> </td> 
    <td colname="col2"> <p>Dessa taggar innehåller texten mellan dem om det aktuella resultatet inte är det första eller sista resultatet på sidan (när det används i <span class="codeph"> &lt;search-results&gt; </span>) eller inte är det första eller sista fältvärdet (när det används i <span class="codeph"> &lt;search-field-values&gt; </span>). Om taggen inte är en version av testas om resultatet är antingen det första eller det sista. </p> </td> 
   </tr> 
@@ -1837,7 +1837,7 @@ Se [Om resultatlooptaggar](../c-appendices/c-templates.md#section_D4DC7B45601446
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>1 </p> </td> 
+   <td colname="col1"> <p>3 </p> </td> 
    <td colname="col2"> <p>Första resultatet </p> </td> 
    <td colname="col3"> <p>Nej </p> </td> 
    <td colname="col4"> <p>Nej </p> </td> 
@@ -1849,7 +1849,7 @@ Se [Om resultatlooptaggar](../c-appendices/c-templates.md#section_D4DC7B45601446
    <td colname="col4"> <p>Ja </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>1 </p> </td> 
+   <td colname="col1"> <p>3 </p> </td> 
    <td colname="col2"> <p>Tredje resultatet </p> </td> 
    <td colname="col3"> <p>Nej </p> </td> 
    <td colname="col4"> <p>Nej </p> </td> 
@@ -1940,7 +1940,7 @@ Följande avancerade taggar genererar fältvärden och relaterade data från hel
    <td colname="col2"> <p>Den här taggen visar räkningsinformation för en viss sökfält-värde-lista. Det finns tre olika användningsområden för den här taggen. Om endast attributet "name" anges returnerar taggen antalet unika värden för det namngivna fältet i hela resultatuppsättningen. Om attributen "name" och "value" båda anges returnerar taggen antingen det totala antalet för det givna värdet i hela resultatmängden (for results="no") eller det totala antalet resultat som innehåller det givna värdet i hela resultatmängden (for results="yes"). Standardvärdet för "results" är "no". Obs! För fält som inte är av listtyp är results="yes" och results="no" likvärdiga. Värdet för "results" ignoreras om attributet "value" inte anges. Den här taggen ger bara utdata för fält som anges av CGI-parametrarna <span class="codeph"> sp-sfvl-field </span> i sökfrågan. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-field-value-list-count name="field-name" value="field-value"&gt; ...  &lt;/search-if-field-value-list-count&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-field-value-list-count name="field-name" value="field-value"&gt; ...  &lt;/search-if-not-field-value-list-count&gt; </span> </p> </td> 
    <td colname="col2"> <p>Dessa taggar visar HTML mellan dem om det motsvarande anropet till <span class="codeph"> &lt;search-field-value-list-count name="field-name" value="field-value"&gt; </span> med de angivna attributen skulle (eller inte skulle) returnera ett värde som är större än noll. </p> </td> 
   </tr> 
@@ -1966,7 +1966,7 @@ Följande avancerade taggar räknar upp och returnerar fältvärden och relatera
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-field-values name="field-name" sortby="none/values/counts/results" max-items="XX"&gt; ...  &lt;/search-field-values&gt; </span> </p> </td> 
    <td colname="col2"> <p>Den här taggen skapar en slinga för att räkna upp fältvärden och relaterade data för ett visst fält i hela resultatuppsättningen. Kapsla inte den här taggen inuti en annan <span class="codeph"> &lt;search-field-values&gt; </span>-tagg. Attributet name anger namnet på fältet som innehåller de värden som ska räknas upp. Det valfria attributet "sortby" styr uppräkningsordningen: "none" betyder ingen speciell ordning, "values" betyder sortering efter fältvärden (i stigande eller fallande ordning enligt fältets Sorting-egenskap), sortby="counts" betyder sortering i fallande ordning efter fältvärdesantal och sortby="results" betyder sortering i fallande ordning efter antalet resultat som innehåller varje värde. </p> <p>Observera att sortby="counts" och sortby="results" motsvarar icke-listtypsfält. . Det valfria attributet "max-items" begränsar antalet iterationer till det angivna värdet. Standardvärdet för "max-items" är -1, vilket betyder "enumerate all values". </p> </td> 
   </tr> 
@@ -1976,7 +1976,7 @@ Följande avancerade taggar räknar upp och returnerar fältvärden och relatera
    <td colname="col2"> <p>Den här taggen matar ut fältvärdet för den aktuella upprepningen av &lt;search-field-values&gt;-loop. Den här taggen är bara giltig inuti en <span class="codeph"> &lt;search-field-values&gt; </span>-slinga. Attributen "date-format", "gmt" och "language" är bara relevanta om innehållstypen för fältnamnet som anges i den omslutande &lt;search-field-values&gt;-taggen är "date". Attributet "date-format" har en datumformatsträng i UNIX-format, t.ex. "%A, %B %d, %Y" (för "Måndag, 25 juli 2020"). </p> <p>Se <a href="../c-appendices/c-templates.md#section_4BBDBBEF2B96414497617CD4B52D96E4" type="section" format="dita" scope="local"> Datumformatsträngar</a>. </p> <p>Det valfria attributet "encoding" kontrollerar om utdatasträngstecknen är HTML-kodade, JavaScript-kodade, Perl-kodade, URL-kodade eller inte kodade, för utdata på resultatsidan. Standardvärdet för "encoding" är "none". Normalt behöver du inte ange kodningsattributet. "gmt" är som standard "yes" och kontrollerar om tidsdelen i datumsträngen ska skrivas ut i GMT ("yes") eller kontots tidszon ("no"). Attributet"language" styr språk- och språkkonventionerna för utdatadatumsträngen. "0" (standard) betyder "Använd kontospråk". Alla andra"language"-värden tolkas som en specifik språkidentifierare, till exempel betyder"en_US" "English (USA)". </p> <p>Se <a href="../c-appendices/c-templates.md#section_0490DECC00E34691ADE5A9ED90A6D911" type="section" format="dita" scope="local"> Språkidentifierare</a>. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>1 </p> </td> 
+   <td colname="col01"> <p>3 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-field-value-count results="yes/no"&gt; </span> </p> </td> 
    <td colname="col2"> <p>Den här taggen returnerar det antal som är associerat med den aktuella <span class="codeph"> &lt;search-field-values&gt; </span>-loopitationen. Antal utdata är antingen antalet resultat i hela resultatuppsättningen som innehåller fältvärdet (results="yes") eller det totala antalet för fältvärdet i hela resultatuppsättningen. Standardvärdet för "results" är "no". </p> <p>För fält som inte är av listtyp är results="yes" och results="no" likvärdiga. Den här taggen är bara giltig inuti en <span class="codeph"> &lt;search-field-values&gt; </span>-slinga. </p> </td> 
   </tr> 
@@ -2006,7 +2006,7 @@ Föreslå innehåller ett användarvänligt&quot;Menade du?&quot; för att före
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-suggestions&gt; ...  &lt;/search-if-suggestions&gt; </span> </p> </td> 
    <td colname="col2"> <p>Omge dessa taggar med malltaggar som "Föreslå", t.ex. <span class="codeph"> &lt;sök-förslag&gt; </span>, <span class="codeph"> &lt;sök-förslag-länk&gt; </span> osv. Om sökningen genererar förslag genereras och bearbetas allt mellan den öppna och den avslutande taggen. Om sökningen inte genererar några förslag kommer inget av det kapslade innehållet att skapas. </p> </td> 
   </tr> 
@@ -2016,7 +2016,7 @@ Föreslå innehåller ett användarvänligt&quot;Menade du?&quot; för att före
    <td colname="col2"> <p>Med den här taggen genereras slingan "Föreslå", som innehåller en lista med föreslagna söktermer (till exempel "Föreslå", "Tänkt" och "Avsikt" för en fråga som ursprungligen angavs som "Avsikt"). När sökmotorn genererar en lista med termer upprepas alla kapslade HTML- och/eller malltaggar upp till fem gånger, vilket är det maximala antalet förslag. Använd attributet count för att ange antalet genererade förslag (mellan 0 och 5). </p> <p>Taggen <span class="codeph"> &lt;search-ideas&gt; </span> kan visas flera gånger på sidan för att upprepa listan med förslag. Flera förslag sorteras efter antalet resultat som varje resultat ger. </p> <p>Kapsla <span class="codeph"> &lt;search-ideas&gt; </span>-taggen mellan öppna och stäng <span class="codeph"> &lt;search-if-ideas&gt; </span>-taggar. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-suggestion-link&gt; ...  &lt;/search-suggestion-link&gt; </span> </p> </td> 
    <td colname="col2"> <p>Med det här märkordet skapas en länk till den ursprungliga sökfrågan med det valda föreslagna söktermen i stället för det ursprungliga. Taggen godkänner och skriver helt enkelt ut alla HTML-attribut som class, target och style. Taggen kan även acceptera ett URL-attribut, vars värde används som bas-URL för den genererade länken. Taggarna kan bara finnas inuti <span class="codeph"> &lt;search-recommendations&gt; </span>-slingan. </p> </td> 
   </tr> 
@@ -2072,7 +2072,7 @@ Med följande taggar skapas en sträng i HTML-koden vid den tidpunkten i mallen.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-body&gt; </span> </p> </td> 
    <td colname="col2"> <p>HTML-body-taggen med eventuella inställningar för söklänksfärg som anges av Basic Look Section under Template-länken. Lägg till ett bakgrundsattribut till den här taggen om du vill visa bakgrundsbilder på resultatsidan. Alla färgattribut som läggs till i den här taggen åsidosätter de inställningar för länkfärg som anges i avsnittet Grundläggande utseende. </p> </td> 
   </tr> 
@@ -2082,7 +2082,7 @@ Med följande taggar skapas en sträng i HTML-koden vid den tidpunkten i mallen.
    <td colname="col2"> <p>HTML-koden för sökresultatrubriken som angetts i avsnittet Grundläggande sökning under länken Mall. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-cdata&gt; ...  &lt;/search-cdata&gt; </span> </p> </td> 
    <td colname="col2"> <p>Sökning-cdata-taggarna ersätts med sina XML-motsvarigheter: <span class="codeph"> &lt;search-data&gt; </span> ersätts med <span class="codeph"> &lt;![CDATA[" och taggen &lt;/search-data&gt; </span> ersätts med " <span class="codeph"> ]]&gt; </span>". En XML-tolk tolkar inte någon information mellan taggen open och close. </p> </td> 
   </tr> 
@@ -2200,7 +2200,7 @@ Följande taggar gör att en ankarlänk omger HTML-koden mellan dem. När du kli
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-next URL="https://search.yourdomain.com/search/"&gt; ...  &lt;/search-next&gt; </span> </p> <p> <span class="codeph"> &lt;search-prev URL="https://search.yourdomain.com/search/"&gt; ...  &lt;/search-prev&gt; </span> </p> </td> 
    <td colname="col2"> <p>Visar nästa eller föregående sida med resultatet. </p> </td> 
   </tr> 
@@ -2231,7 +2231,7 @@ Taggar som gör att du kan inkludera HTML mellan dem om du vill.
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-results&gt; ...  &lt;/search-if-results&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-results&gt; ...&lt;/search-if-not-results&gt; </span> </p> </td> 
    <td colname="col2"> <p>Dessa taggar inkluderar HTML om den aktuella sidan innehåller några (eller inga) sökresultat. </p> </td> 
   </tr> 
@@ -2241,7 +2241,7 @@ Taggar som gör att du kan inkludera HTML mellan dem om du vill.
    <td colname="col2"> <p>Dessa taggar inkluderar HTML om föregående sida eller nästa sida har några (eller inga) resultat kopplade till sig. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col01"> <p>3 </p> </td> 
+   <td colname="col01"> <p>1 </p> </td> 
    <td colname="col1"> <p> <span class="codeph"> &lt;search-if-sort-by-score&gt; ...  &lt;/search-if-sort-by-score&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-sort-by-score&gt; ...  &lt;/search-if-not-sort-by-score&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-sort-by-date&gt; ...  &lt;/search-if-sort-by-date&gt; </span> </p> <p> <span class="codeph"> &lt;search-if-not-sort-by-date&gt; ...  &lt;/search-if-not-sort-by-date&gt; </span> </p> </td> 
    <td colname="col2"> <p>Dessa taggar inkluderar HTML om den aktuella sidan är, eller inte är, sorterad efter relevans eller efter datum. </p> </td> 
   </tr> 
