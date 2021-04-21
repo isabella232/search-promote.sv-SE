@@ -3,16 +3,16 @@ description: Bläddringar är en navigeringskontroll som du kan lägga till på 
 solution: Target
 subtopic: Navigation
 title: Om Breadcrumbs
-topic: Design,Site search and merchandising
+topic-legacy: Design,Site search and merchandising
 uuid: 3e630a72-a631-4f4f-8aa5-adf2882cdf1c
+exl-id: e668d706-6899-4db9-968b-d98df9090ad9
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '750'
 ht-degree: 1%
 
 ---
-
 
 # Om vägbeskrivningar{#about-breadcrumbs}
 
@@ -183,4 +183,3 @@ t_deleting_a_breadcrumb.xml
    * Klicka på **[!UICONTROL Push Live]**.
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-
