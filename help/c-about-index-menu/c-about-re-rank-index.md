@@ -3,16 +3,16 @@ description: Du kan använda Re-Rank Index för att uppdatera din webbplats rank
 solution: Target
 subtopic: Re-Rank Index
 title: Om Re-Rank-index
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: 5c2a4c12-5e06-4fcc-897c-c12fcc5d7aa8
+exl-id: c4ddaec9-43ba-42ec-89dc-04d42306b9b6
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '343'
 ht-degree: 1%
 
 ---
-
 
 # Om rangordningsindex{#about-re-rank-index}
 
@@ -67,4 +67,3 @@ Du kan inte exportera loggar eller spara dem. Loggen är dock fortfarande tillg�
    * Använd navigeringsalternativen **[!UICONTROL First]**, **[!UICONTROL Prev]**, **[!UICONTROL Next]**, **[!UICONTROL Last]** eller **[!UICONTROL Go to line]** för att gå igenom loggen.
 
    * Använd visningsalternativen **[!UICONTROL Errors only]**, **[!UICONTROL Wrap line]** eller **[!UICONTROL Show]** för att förfina det du ser.
-
