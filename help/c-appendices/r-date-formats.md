@@ -2,16 +2,16 @@
 description: Du kan definiera de datumformat som ska användas när fält med datatypen"date" tolkas och indexeras.
 solution: Target
 title: Datumformat
-topic: Appendices,Site search and merchandising
+topic-legacy: Appendices,Site search and merchandising
 uuid: 148914b5-33ef-41db-8404-67c03f6f0832
+exl-id: d3b4561b-6359-4b12-b0ff-40ca342a2faa
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
-
 
 # Datumformat{#date-formats}
 
@@ -192,4 +192,3 @@ Följande standardformatsträngar används av mallar. Du kan lägga till eller r
   </tr> 
  </tbody> 
 </table>
-
