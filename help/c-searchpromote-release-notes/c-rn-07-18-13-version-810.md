@@ -2,16 +2,16 @@
 description: Sök&amp;Promote 8.10.1 versionsinformation.
 solution: Target
 title: Sök&stämpel;amp;Promote 8.10.1 Versionsinformation (07/18/2013)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 161d678a-6393-4adb-a47a-e28e108acc31
+exl-id: b42dcb03-8673-433d-aabc-de70fd32d6d3
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
-
 
 # Versionsinformation om Search &amp; Promote 8.10.1 (07/18/2013){#search-promote-release-notes}
 
@@ -51,4 +51,3 @@ ht-degree: 0%
 * **Fasett**  räl - Stöd för flera fasettrattar har lagts till.
 
    Se [Om Fasett Rail](../c-about-design-menu/c-about-facet-rails.md#concept_1FDC8BCDFFC84A0889DA670F63D5F6DB).
-
