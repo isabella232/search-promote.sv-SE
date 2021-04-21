@@ -3,16 +3,16 @@ description: Använd menyn Sökning för att ange uteslutna ord, samlingar, begr
 solution: Target
 subtopic: Searching
 title: Om menyn Söka
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: 072111fc-a32b-4acb-8337-cb21bcdb5542
+exl-id: 4cb70240-051b-4bf3-ae2a-b151acc7cba1
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '11170'
+source-wordcount: '11165'
 ht-degree: 0%
 
 ---
-
 
 # Om menyn Söka{#about-the-searching-menu}
 
@@ -1069,7 +1069,7 @@ t_creating_a_feed.xml
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>Feednamn </p> </td> 
       <td colname="col3"> <p>Anger feed-namnet. </p> </td> 
       </tr> 
@@ -1141,7 +1141,7 @@ t_creating_a_feed.xml
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>Feednamn </p> </td> 
       <td colname="col3"> <p>Anger feed-namnet. </p> </td> 
       </tr> 
@@ -1199,7 +1199,7 @@ t_creating_a_feed.xml
     </thead>
     <tbody> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>Feednamn </p> </td> 
       <td colname="col3"> <p>Anger feed-namnet. </p> </td> 
       </tr> 
@@ -1274,7 +1274,7 @@ t_creating_a_feed.xml
       <td colname="col3"> <p>Gör att du kan mappa leverantörsspecifika matningsfält till webbplatssöknings-/försäljningsmetadatafält. Det här mappningssteget i guiden är viktigt eftersom det gör att feeds kan korrelera informationen mellan fälten i indexet och fälten i feed-data. I de flesta fall, med undantag för <span class="wintitle"> generiska feeds </span>, sparas korrelationerna i en dynamiskt genererad sökmall. </p> <p>Varje rad i tabellen Fältkartor representerar en fältkoppling. Klicka på <span class="uicontrol"> + </span> i kolumnen Lägg till/ta bort för att lägga till en ny fältmappningsrad. klicka på <span class="uicontrol"> - </span> för att ta bort den markerade fältmappningsraden från tabellen. Om du vill associera ett matningsfält med ett metadatafält använder du respektive listruta för att välja önskade fält. </p> <p> <b>Avancerad användning</b> </p> <p>Du kan skapa egna anpassade fält. I listrutan <span class="wintitle"> Feed Fields </span> klickar du på <span class="uicontrol"> Custom </span>. Ange ett eget taggnamn för fältet i det tillhörande textfältet. Det här anpassade alternativet är användbart om en feed behöver speciella leverantörsspecifika fält. </p> <p>Du kan också skapa ett anpassat metadatafält. I listrutan <span class="wintitle"> Metadatafält </span> klickar du på <span class="uicontrol"> Anpassad </span>. I det associerade textfältet anger du ett anpassat metadatafältvärde. Värdet infogas i den förgenererade mallen och kan även användas för att mata in egna sökmallstaggar. </p> <p>Se <a href="../c-appendices/c-templates.md#reference_F7AA3FF602314E42842BBC740D2CA1A4" type="reference" format="dita" scope="local"> Sökmallstaggar </a>. </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p>3 </p> </td> 
+      <td colname="col1"> <p>1 </p> </td> 
       <td colname="col2"> <p>Sökvillkor </p> </td> 
       <td colname="col3"> <p>När matningsfilerna genereras används en sökfråga för att filtrera data. Du definierar de filter som används för sökfrågan på den här panelen. </p> 
         <ul id="ul_994585E89A044BD3A89A99D30F277432"> 
