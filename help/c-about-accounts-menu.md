@@ -2,16 +2,16 @@
 description: Använd konton på produktmenyn för att välja ett konto som du vill få tillgång till och använda.
 solution: Target
 title: Om menyn Konton
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: 7cfc1b68-5126-484a-8a1d-54995a8fd19b
+exl-id: f3f43b71-cbcb-4325-88de-72db1c049700
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
-
 
 # Om menyn Konton{#about-the-accounts-menu}
 
@@ -40,4 +40,3 @@ När du har valt ett konto visas kontots hemsida för webbplatssökning/försäl
 
    * I tabellen, under kolumnrubriken [!DNL Name], klickar du på ett kontonamn som du vill börja använda och hantera.
    * I tabellen, under kolumnrubriken [!DNL Number], klickar du på ett kontonummer som du vill börja använda och hantera.
-
