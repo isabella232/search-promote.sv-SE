@@ -2,16 +2,16 @@
 title: Adobe Search&amp;Befordra teknisk dokumentation
 description: Teknisk dokumentation och självhjälpsmaterial för Adobe Search&amp;Promote
 solution: Target
-topic: Site search and merchandising
+topic-legacy: Site search and merchandising
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
+exl-id: 6920dbf0-beeb-4723-8178-4da37f0b03ed
 translation-type: tm+mt
-source-git-commit: 1914d67d2634cb13368ab72d54da7da5988de13f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
-
 
 # Handbok för Adobe Search &amp; Promote {#search-promote-documentation}
 
