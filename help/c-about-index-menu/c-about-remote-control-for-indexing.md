@@ -2,16 +2,16 @@
 description: När webbplatsen ändras kan du köra ett skript eller program som begär att sökroboten ska köra ett index med hjälp av Fjärrstyrning.
 solution: Target
 title: Om Fjärrkontroll för indexering
-topic: Index,Site search and merchandising
+topic-legacy: Index,Site search and merchandising
 uuid: 20e230c6-5c1a-4bf4-bff3-b8236d14ab21
+exl-id: 1a7689f9-1e3f-48c8-a5f1-abe0efdb7768
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1037'
 ht-degree: 0%
 
 ---
-
 
 # Om Fjärrkontroll för indexering{#about-remote-control-for-indexing}
 
@@ -244,7 +244,7 @@ När webbplatsen ändras kan du använda Fjärrstyrning för att köra ett skrip
     </tr> 
     <tr> 
     <td colname="col1"> <p>Prioritetssvarssträng </p> </td> 
-    <td colname="col2"> <p>Om en annan indexeringsåtgärd pågår när fjärrbegäran görs kan sökroboten inte utföra det begärda indexet. I sådana fall returneras textsträngen Priority-svar till servern. </p> </td> 
+    <td colname="col2"> <p>Om en annan indexeringsåtgärd pågår när fjärrbegäran görs, kan sökroboten inte utföra det begärda indexet. I sådana fall returneras textsträngen Priority-svar till servern. </p> </td> 
     </tr> 
     <tr> 
     <td colname="col1"> <p>Felsvarssträng </p> </td> 
