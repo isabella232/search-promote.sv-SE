@@ -2,16 +2,16 @@
 description: Du kan använda Hem för att visa en mängd olika rapportwidgetar som ger dig en snabb översikt av ditt Search&amp;Promote-konto.
 solution: Target
 title: Om Hem
-topic: Home,Site search and merchandising
+topic-legacy: Home,Site search and merchandising
 uuid: 5d4dbf5e-954d-46ae-a822-18a58af60de6
+exl-id: b9249033-dd3e-40a0-a666-e73aa09f11f9
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
-
 
 # Om Hem{#about-home}
 
@@ -59,4 +59,3 @@ I följande tabell beskrivs de rapportwidgetar som är tillgängliga från Hem:
   </tr> 
  </tbody> 
 </table>
-
