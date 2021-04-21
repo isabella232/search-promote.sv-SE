@@ -2,16 +2,16 @@
 description: Sök&amp;Promote 8.11.0 versionsinformation.
 solution: Target
 title: Sökning&stämpel;amp;Promote 8.11.0 Versionsinformation (10/29/2013)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 973f9608-a5c7-4571-ae2b-6f1fa05bc862
+exl-id: b417b275-7b04-4855-9e2a-9de0faa262cc
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '295'
 ht-degree: 0%
 
 ---
-
 
 # Versionsinformation om Search &amp; Promote 8.11.0 (2013-10-29){#search-promote-release-notes}
 
@@ -69,4 +69,3 @@ ht-degree: 0%
    Se [Om ord och språk](../c-about-linguistics-menu/c-about-words-and-language.md#concept_CEB4B9576F3C4E2EB87B352EEC738D79).
 
 * Funktionen Komplettera ordlista automatiskt fungerar nu på ett stort antal sidor.
-
