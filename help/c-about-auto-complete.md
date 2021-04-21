@@ -3,16 +3,16 @@ description: Du kan konfigurera olika områden i Komplettera automatiskt för at
 solution: Target
 subtopic: Auto-Complete
 title: Om Komplettera automatiskt
-topic: Design,Site search and merchandising
+topic-legacy: Design,Site search and merchandising
 uuid: 3dfdd14d-2044-4f01-a5bc-fcb2eb0d5068
+exl-id: a1d08c0a-6c68-4da2-88d2-fe953d333536
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1494'
 ht-degree: 1%
 
 ---
-
 
 # Om Komplettera automatiskt{#about-auto-complete}
 
