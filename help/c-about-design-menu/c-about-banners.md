@@ -2,16 +2,16 @@
 description: Du kan använda Banners för att hantera bannerannonserna på din webbplats.
 solution: Target
 title: Om Banners
-topic: Design,Site search and merchandising
+topic-legacy: Design,Site search and merchandising
 uuid: 653b567d-5cf3-41a0-a260-a6912d0fd20d
+exl-id: 2c1de213-e6fc-425b-9971-43a09c07d07c
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '4801'
+source-wordcount: '4796'
 ht-degree: 0%
 
 ---
-
 
 # Om banners {#about-banners}
 
