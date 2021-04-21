@@ -3,16 +3,16 @@ description: Du kan använda Ansikten för att anpassa presentationslagret och g
 solution: Target
 subtopic: Navigation
 title: Om ansikten
-topic: Design,Site search and merchandising
+topic-legacy: Design,Site search and merchandising
 uuid: 28bc4d4d-a84c-4a77-befb-b0fb3bbdb966
+exl-id: 10cdc599-79fe-44e1-8f90-f08b819f6dda
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '3832'
+source-wordcount: '3827'
 ht-degree: 0%
 
 ---
-
 
 # Om ansikten{#about-facets}
 
@@ -707,4 +707,3 @@ t_deleting_a_facet.xml
    * Klicka på **[!UICONTROL Push Live]**.
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-
