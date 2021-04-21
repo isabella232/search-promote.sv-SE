@@ -2,16 +2,16 @@
 description: Du kan använda affärsregler för att sälja sökningen.
 solution: Target
 title: Om affärsregler
-topic: Rules,Site search and merchandising
+topic-legacy: Rules,Site search and merchandising
 uuid: f2186f54-7a39-4f46-bb29-5115d5a17f07
+exl-id: 6a52e0f5-29c2-4a48-b996-d217eeb52011
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '3120'
+source-wordcount: '3115'
 ht-degree: 0%
 
 ---
-
 
 # Om affärsregler{#about-business-rules}
 
