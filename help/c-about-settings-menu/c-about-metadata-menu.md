@@ -3,16 +3,16 @@ description: Använd menyn Metadata för att anpassa sökdefinitioner och indexi
 solution: Target
 subtopic: Metadata
 title: Om menyn Metadata
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
+exl-id: 53d62da9-c5bd-4c4a-bb89-743704f66f7f
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '8029'
+source-wordcount: '8024'
 ht-degree: 0%
 
 ---
-
 
 # Om menyn Metadata{#about-the-metadata-menu}
 
@@ -156,7 +156,7 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       </tr> 
       <tr> 
       <td colname="col1"> <p>Språk </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> rangordning </span>, <span class="uicontrol"> tal </span> eller <span class="uicontrol"> datum </span> har valts. </p> <p>Styr de språk- och språkkonventioner som tillämpas när värden för datum, nummer och rangordning för det här fältet indexeras. </p> <p>Du kan välja att använda kontospråket (Språk &gt; Ord och språk). Du kan också använda det språk som är associerat med dokumentet som innehåller varje tal- eller datumvärde, eller ett visst språk. </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> rangordning </span>, <span class="uicontrol"> tal </span> eller <span class="uicontrol"> datum </span> har valts. </p> <p>Styr de språk- och språkkonventioner som används vid indexering av datum-, nummer- och rangvärden för det här fältet. </p> <p>Du kan välja att använda kontospråket (Språk &gt; Ord och språk). Du kan också använda det språk som är associerat med dokumentet som innehåller varje tal- eller datumvärde, eller ett visst språk. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Datumformat </p> </td> 
@@ -513,7 +513,7 @@ Se även [Om hur du använder Förhandsgranska när du lägger till ett attribut
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>3 </p> </td> 
+   <td colname="col1"> <p>1 </p> </td> 
    <td colname="col2"> <p>Hämta datakällan. </p> </td> 
    <td colname="col3"> <p>För konfigurationer av text och feed är det en enkel filhämtning. </p> </td> 
   </tr> 
@@ -531,7 +531,7 @@ Se även [Om hur du använder Förhandsgranska när du lägger till ett attribut
       .... </code> </p> <p>Konfigurationens mappning måste ha ett fält som identifieras som primärnyckel. Den här mappningen utgör nyckeln som används när data hämtas från cachen. </p> <p>Crawlningen känner igen URL:en <span class="codeph">-index: </span>-schemaprefix, som sedan kan komma åt lokalt cachelagrade data. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>3 </p> </td> 
+   <td colname="col1"> <p>1 </p> </td> 
    <td colname="col2"> <p>Crawla den cachelagrade dokumentuppsättningen. </p> </td> 
    <td colname="col3"> <p>Indexvärdet <span class="codeph">: </span>-länkar läggs till i crawlerns väntande lista och bearbetas i den normala crawlningssekvensen. </p> </td> 
   </tr> 
@@ -570,7 +570,7 @@ När du lägger till en attributinläsare kan du använda funktionen **[!UICONTR
 
 >[!NOTE]
 >
->Funktionen Setup Maps fungerar kanske inte för stora XML-datauppsättningar eftersom filparsern försöker läsa hela filen i minnet. Det kan leda till att minnet tar slut. Men när samma dokument bearbetas vid indexeringen läses det inte in i minnet. I stället bearbetas stora dokument &quot;i farten&quot; och läses inte in helt i minnet först.
+>Funktionen Setup Maps fungerar kanske inte för stora XML-datauppsättningar eftersom filparsern försöker läsa hela filen i minnet. Det kan leda till att minnet tar slut. Men när samma dokument bearbetas vid indexeringen läses det inte in i minnet. I stället bearbetas stora dokument &quot;i farten&quot; och läses inte helt in i minnet först.
 
 ## Om hur du använder Förhandsgranska när du lägger till en attributinläsare {#section_E9CAB000A94C4D9189786C1EDB1CDB46}
 
