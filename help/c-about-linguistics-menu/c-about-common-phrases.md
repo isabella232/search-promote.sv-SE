@@ -2,16 +2,16 @@
 description: Du kan definiera vanliga fraser som används på webbplatsen så att när en kund skriver in en sökfråga behöver han/hon inte skriva citattecken runt någon av de fraser som du har definierat.
 solution: Target
 title: Om vanliga fraser
-topic: Linguistics,Site search and merchandising
+topic-legacy: Linguistics,Site search and merchandising
 uuid: 0f980a22-d826-4476-97de-0e9c14549bc8
+exl-id: 72305fcd-8f9a-4ce2-b416-aa1b58486312
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1178'
 ht-degree: 0%
 
 ---
-
 
 # Om vanliga fraser{#about-common-phrases}
 
@@ -211,4 +211,3 @@ Se [Använda alternativet Historik](../t-using-the-history-option.md#task_70DD3F
    * Klicka på **[!UICONTROL Push Live]**.
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-
