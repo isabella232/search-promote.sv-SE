@@ -2,16 +2,16 @@
 description: Sök&amp;Promote 8.7.1 versionsinformation.
 solution: Target
 title: Sökning&stämpel;amp;Promote 8.7.1 Versionsinformation (2012-02-23)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 3fabf7b2-4a27-4f0a-862a-52f701a0631d
+exl-id: b10f0081-ed69-4c6b-86c9-816326b647f0
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
-
 
 # Versionsinformation om Search &amp; Promote 8.7.1 (2012-02-23){#search-promote-release-notes}
 
@@ -38,4 +38,3 @@ Förbättrad söktidsprestanda tack vare stöd för cachelagring av HTML-present
 * Bevara tidsstämplar så att mallcacher inte ogiltigförklaras.
 * Vissa fält för ändringsparametrar stängdes av när rullningslisten visades i banderolldialogrutan i Dynamic Media Classic.
 * Alla ändringar av affärsregler som du har gjort i bannerparametrar för Dynamic Media Classic fungerade i mellanlagringsområdet, men trädde inte i kraft när du publicerade.
-
