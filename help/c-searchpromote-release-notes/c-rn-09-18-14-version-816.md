@@ -2,16 +2,16 @@
 description: Sök&amp;Promote 8.16.0 versionsinformation.
 solution: Target
 title: Sökning&stämpel;amp;Promote 8.16.0 Versionsinformation (9/18/2014)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: 0a59858b-213b-40d6-aea1-d085c4d6d2fa
+exl-id: 929d6f97-4939-4e37-aded-6a746757b960
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
-
 
 # Versionsinformation för Search &amp; Promote 8.16.0 (9/18/2014){#search-promote-release-notes}
 
@@ -52,4 +52,3 @@ ht-degree: 0%
 * Inkonsekventa sökresultat har uppnåtts med funktionen **[!UICONTROL Common Phrases]**.
 * Visning av attributnamn trunkerades i sammanfattningar av regellistan.
 * Att publicera en regel för enskilda företag innebar att alla affärsregler blev verklighet.
-
