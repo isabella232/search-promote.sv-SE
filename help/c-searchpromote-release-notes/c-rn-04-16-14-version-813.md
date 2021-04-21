@@ -2,16 +2,16 @@
 description: Sök&amp;Promote 8.13.0 versionsinformation.
 solution: Target
 title: Sökning&stämpel;amp;Promote 8.13.0 versionsinformation (04/16/2014)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: b3524992-ff00-4a7c-a404-078242456734
+exl-id: cba582ad-d388-4317-af06-b8b12b300f02
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
-
 
 # Versionsinformation om Search &amp; Promote 8.13.0 (04/16/2014){#search-promote-release-notes}
 
@@ -49,4 +49,3 @@ ht-degree: 0%
 * SPIN XPath-valideringsfunktionen returnerade ett falskt positivt fel.
 
 * Efter en SPIN-aktiverings-/inaktiveringsåtgärd omdirigerades användaren till inloggningssidan för medlemscentret.
-
