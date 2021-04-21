@@ -2,16 +2,16 @@
 description: På sidan Varningar finns en central plats där du kan visa och hantera alla varningar som har att göra med ditt konto.
 solution: Target
 title: Om varningar
-topic: Reports,Site search and merchandising
+topic-legacy: Reports,Site search and merchandising
 uuid: 94524563-f9a6-40cf-89f3-e80b1d0113c7
+exl-id: b6d637c9-2a2c-49b3-828b-3ae272bf28aa
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
-
 
 # Om varningar{#about-alerts}
 
@@ -50,4 +50,3 @@ På sidan Varningar finns en central plats där du kan visa och hantera alla var
    * Om du vill markera alla varningsmeddelanden som visas markerar du kryssrutan längst upp i den vänstra kolumnen.
 
       Om du vill välja alla matchande aviseringar i stället för en enda sida av dem väljer du **[!UICONTROL All Alerts]** i listrutan till höger och markerar sedan kryssrutan överst i kolumnen.
-
