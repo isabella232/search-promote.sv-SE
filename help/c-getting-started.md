@@ -2,16 +2,16 @@
 description: Om du inte är van vid Search & Promote och dynamisk navigering kan du börja här för att komma igång med ditt konto. Du får bland annat lära dig hur du indexerar webbplatsen och anpassar utseendet på sökresultaten.
 solution: Target
 title: Komma igång
-topic: Getting Started,Site search and merchandising
+topic-legacy: Getting Started,Site search and merchandising
 uuid: 816ad003-15c9-4e44-b09d-cab284518634
+exl-id: f2772d7a-b558-403e-9e77-8c87302e2b02
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
-
 
 # Komma igång{#getting-started}
 
@@ -142,4 +142,3 @@ Det finns många andra alternativ som gör att ni kan anpassa och styra kundens 
 * Konfigurera ordlistor så att du kan ange grupper med relaterade ord (till exempel köp, köp och inköp). Dessa relaterade ord hjälper till att returnera relevanta resultat även när kundens sökfråga inte exakt matchar den terminologi som används på dina webbsidor. Med synonymen som används i exemplet ovan returnerar en kunds sökfråga &quot;purchase&quot; sidor som innehåller ordet &quot;buy&quot;.
 
    Se [Om ordlistor](c-about-linguistics-menu/c-about-dictionaries.md#concept_B8028B71EC8144669614C64578EDB034).
-
