@@ -3,16 +3,16 @@ description: Använd Crawling-menyn för att ange datum och URL-masker, lösenor
 solution: Target
 subtopic: Crawling
 title: Om Crawling-menyn
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
+exl-id: 22dbbc30-bf1c-4d51-8fb0-708115ba844b
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '11016'
+source-wordcount: '11011'
 ht-degree: 0%
 
 ---
-
 
 # Om Crawling-menyn{#about-the-crawling-menu}
 
@@ -1002,7 +1002,7 @@ Se även [Om Index Connector](../c-about-settings-menu/c-about-crawling-menu.md#
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>3 </p> </td> 
+   <td colname="col1"> <p>1 </p> </td> 
    <td colname="col2"> <p>Hämta datakällan. </p> </td> 
    <td colname="col3"> <p>För konfigurationer av text och feed är det en enkel filhämtning. </p> </td> 
   </tr> 
@@ -1020,7 +1020,7 @@ Se även [Om Index Connector](../c-about-settings-menu/c-about-crawling-menu.md#
       .... </code> </p> <p>Konfigurationens mappning måste ha ett fält som identifieras som primärnyckel. Den här mappningen utgör nyckeln som används när data hämtas från cachen. </p> <p>Crawlningen känner igen URL:en <span class="codeph">-index: </span>-schemaprefix, som sedan kan komma åt lokalt cachelagrade data. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>3 </p> </td> 
+   <td colname="col1"> <p>1 </p> </td> 
    <td colname="col2"> <p>Crawla den cachelagrade dokumentuppsättningen. </p> </td> 
    <td colname="col3"> <p>Indexvärdet <span class="codeph">: </span>-länkar läggs till i crawlerns väntande lista och bearbetas i den normala crawlningssekvensen. </p> </td> 
   </tr> 
