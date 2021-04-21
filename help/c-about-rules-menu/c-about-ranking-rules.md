@@ -3,16 +3,16 @@ description: Du kan använda Rankningsregler för att styra den relativa placeri
 solution: Target
 subtopic: Ranking Rules
 title: Om rankningsregler
-topic: Rules,Site search and merchandising
+topic-legacy: Rules,Site search and merchandising
 uuid: 21962f9a-1d9c-442f-a6c4-5f452436c640
+exl-id: 7f66c4f6-7659-4faf-9f05-b650cf8c7d47
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '4621'
+source-wordcount: '4616'
 ht-degree: 0%
 
 ---
-
 
 # Om rankningsregler{#about-ranking-rules}
 
