@@ -2,16 +2,16 @@
 description: Med direktträffar kan du omdirigera en kund till en angiven URL när kunden söker efter en matchande term. Med den här typen av funktioner kan du förbättra navigeringen i sökningen på webbplatsen.
 solution: Target
 title: Om direktträffar
-topic: Rules,Site search and merchandising
+topic-legacy: Rules,Site search and merchandising
 uuid: 374d63c8-2b82-4165-b543-05b587757baa
+exl-id: 251dfa47-f55a-469c-8fca-e187877b7759
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '395'
 ht-degree: 1%
 
 ---
-
 
 # Om direktträffar{#about-direct-hits}
 
@@ -95,4 +95,3 @@ Om du testar en term som inte omfattas av en regel för direktträffning visas e
    * Klicka på **[!UICONTROL Push Live]**.
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
-
