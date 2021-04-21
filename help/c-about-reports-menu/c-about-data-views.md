@@ -2,16 +2,16 @@
 description: Datavyer visar sökresultaten med metafälten. Varje kolumn är ett metafält och varje rad är ett resultat av en sökfråga. Anpassa datavyer genom att välja och ordna om kolumner. Datavyer kan också ha anpassade rubriker och beskrivningar.
 solution: Target
 title: Om datavyer
-topic: Reports,Site search and merchandising
+topic-legacy: Reports,Site search and merchandising
 uuid: 18930551-960d-40c2-b5b7-0807a2e11134
+exl-id: 9ef5eaef-85d6-41e9-af44-b4775755e5bf
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1018'
 ht-degree: 0%
 
 ---
-
 
 # Om datavyer{#about-data-views}
 
@@ -185,4 +185,3 @@ Datavyn som du väljer öppnas i ett separat webbläsarfönster.
    * På sidan [!DNL Data Views] i kolumnen [!DNL Title] i tabellen klickar du på namnet på den datavy som du vill öppna.
 
    * På sidan [!DNL Data Views] i kolumnen [!DNL Actions] i tabellen klickar du på **[!UICONTROL View]** i raden med datavyn som du vill öppna.
-
