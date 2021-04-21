@@ -2,16 +2,16 @@
 description: Lär dig hur du använder olika CGI-parametrar.
 solution: Target
 title: CGI-parametrar
-topic: Appendices,Site search and merchandising
+topic-legacy: Appendices,Site search and merchandising
 uuid: a5f43547-bc15-44aa-ba23-6b8b573e09d2
+exl-id: 9f24aebf-5fa3-433e-b66d-4129bdd3f7f6
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '1943'
+source-wordcount: '1938'
 ht-degree: 0%
 
 ---
-
 
 # CGI-parametrar{#cgi-parameters}
 
@@ -29,7 +29,7 @@ Se [CGI-parametrar för backend-sökning](../c-appendices/c-cgiparameters.md#ref
 
 Sökbegäranden består av en bas-URL. Bas-URL:en anger vilket konto kunden söker och en uppsättning CGI-parametrar (nyckel-värde-par) som anger hur det önskade sökresultatet för det associerade kontot ska returneras.
 
-Bas-URL:en är kopplad till ett specifikt konto och en staged- eller live-miljö. Du kan begära flera alias för bas-URL:en från din kontohanterare. Ett företag med namnet Megacorp kan till exempel ha två bas-URL:er kopplade till sitt konto: `https://search.megacorp.com` och `https://stage.megacorp.com`. Den tidigare URL:en söker i sitt liveindex och den senare URL:en söker i sitt mellanlagrade index.
+Bas-URL:en är kopplad till ett specifikt konto och en staged- eller live-miljö. Du kan begära flera alias för bas-URL:en från din kontohanterare. Ett företag som heter Megacorp kan till exempel ha två bas-URL:er kopplade till sitt konto: `https://search.megacorp.com` och `https://stage.megacorp.com`. Den tidigare URL:en söker i sitt liveindex och den senare URL:en söker i sitt mellanlagrade index.
 
 Tre format för CGI-parametrar stöds. Som standard är ditt konto konfigurerat att avgränsa CGI-parametrar med ett semikolon, som i följande exempel:
 
@@ -226,4 +226,3 @@ Följande formulärfrågor visar `25`-resultat med början vid `10`. Sammanfattn
 <input type=hidden name=sp_date_range value=30> 
 </form>
 ```
-
