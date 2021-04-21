@@ -2,16 +2,16 @@
 description: Sök&amp;Befordra versionsinformation för 15.3.1.
 solution: Target
 title: Sök&stämpel;amp;Promote 15.3.1 Versionsinformation (03/24/2015)
-topic: Release Notes,Site search and merchandising
+topic-legacy: Release Notes,Site search and merchandising
 uuid: f02da5a4-2207-4603-aa05-5cff7be16dd5
+exl-id: 2d254275-f777-45e5-a838-b6a35365a6dd
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
-
 
 # Versionsinformation om Search &amp; Promote 15.3.1 (03/24/2015){#search-promote-release-notes}
 
@@ -43,4 +43,3 @@ ht-degree: 0%
 * MDI-fält kan fyllas i utan att använda skriptbaserad filtrering.
 * Fel kodning i förslag.
 * utlösaren &quot;other facet selected&quot; fungerar nu korrekt med komplexa affärsregler.
-
