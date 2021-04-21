@@ -3,16 +3,16 @@ description: Använd Adobe Analytics-menyn för att konfigurera Adobe Analytics 
 solution: Target
 subtopic: Adobe Analytics
 title: Om Adobe Analytics-menyn
-topic: Settings,Site search and merchandising
+topic-legacy: Settings,Site search and merchandising
 uuid: 5536edf1-d3a4-47af-a307-6e46f385f738
+exl-id: e1f7b8f0-45d4-457a-a9d3-a8cb4b785059
 translation-type: tm+mt
-source-git-commit: d015154efdccbb4c6a39a56907c0c337ec065c9f
+source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
 workflow-type: tm+mt
-source-wordcount: '3412'
+source-wordcount: '3407'
 ht-degree: 0%
 
 ---
-
 
 # Om Adobe Analytics-menyn{#about-the-adobe-analytics-menu}
 
