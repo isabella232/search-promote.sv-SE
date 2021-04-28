@@ -5,14 +5,14 @@ feature: null
 role: Administrator,Business Practitioner,Data Engineer,Developer
 hide: true
 hidefromtoc: true
+exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
 translation-type: tm+mt
-source-git-commit: 681e3e6768f214759598482526ce7ffba27e860e
+source-git-commit: 1562d46d096206f21228cb8ca9cbd8cec406e8dc
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Search &amp; Promote meddelande om att tjänsten upphör
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ### **_På vilket datum upphör Search &amp; Promote med sin verksamhet?_**
 
-Tjänsten upphör den 1 augusti 2022. På den tiden kommer det administrativa användargränssnittet för Search &amp; Promote inte längre att vara tillgängligt och förfrågningar till API:er för Search &amp; Promote kommer inte längre att ge resultat. Före detta datum kommer tjänsten att vara helt tillgänglig och fungera.
+Tjänsten upphör den 1 september 2022 **.** På den tiden kommer det administrativa användargränssnittet för Search &amp; Promote inte längre att vara tillgängligt och förfrågningar till API:er för Search &amp; Promote kommer inte längre att ge resultat. Före detta datum kommer tjänsten att vara helt tillgänglig och fungera.
 
 ### **_Vad händer om en sökning eller annan API-begäran görs till Search &amp; Promote?_**
 
@@ -42,4 +42,4 @@ Kontakta din Customer Success Manager (CSM) om du har frågor eller kontakta Ado
 
 ### **_Kan jag fortfarande förnya min tillämpliga Search &amp; Promote-licens innan den upphör?_**
 
-Ja. Samarbeta med din Adobe-representant för att förnya din licens med ett slutdatum för avtalet senast den 1 augusti 2022.
+Ja. Samarbeta med din Adobe-representant för att förnya din licens med ett slutdatum för avtalet senast den **1 september 2022**.
