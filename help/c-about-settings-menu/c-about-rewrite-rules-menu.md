@@ -7,9 +7,9 @@ topic-legacy: Settings,Site search and merchandising
 uuid: 77ee84dd-fdba-4d34-ae8e-2fe786599800
 exl-id: cff17ead-6997-4ff6-a995-7ca020b06d50
 translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: aa095add9eb656913792b3f14001dda66cdd7d67
 workflow-type: tm+mt
-source-wordcount: '10197'
+source-wordcount: '10178'
 ht-degree: 0%
 
 ---
@@ -281,14 +281,14 @@ t_adding_a_crawl_list_store_url_rule.xml
 
  -->
 
-**Lägga till URL-regler för crawllistans arkiv**
+**Så här lägger du till URL-regler för crawllistearkiv:**
 
 1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Store URL Rules]** på produktmenyn.
 1. I fältet [!DNL Crawl List Store URL Rules] anger du de regler du vill använda.
 
    Tomma rader och kommentarsrader som börjar med tecknet &#39;#&#39; (hash) tillåts.
-1. (Valfritt) På sidan [!DNL Crawl List Store URL Rules] anger du en test-URL vars crawlningsregler du vill testa i fältet [!DNL Test Crawl List Store URL Rules] och klickar sedan på **Testa**.
-1. Klicka på **Spara ändringar**.
+1. (Valfritt) På sidan [!DNL Crawl List Store URL Rules] anger du en test-URL vars crawlningsregler du vill testa i fältet [!DNL Test Crawl List Store URL Rules] och klickar sedan på **[!UICONTROL Test]**.
+1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Återskapa indexet för den mellanlagrade platsen om du vill förhandsgranska resultatet.
 
    Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -566,14 +566,14 @@ t_adding_crawl_list_retrieve_url_rules.xml
 
  -->
 
-**Hämta URL-regler för att lägga till crawlningslista**
+**Så här lägger du till crawlningslista: Hämta URL-regler:**
 
 1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl List Retrieve URL Rules]** på produktmenyn.
 1. I fältet [!DNL Crawl List Retrieve URL Rules] anger du de regler du vill använda.
 
    Tomma rader och kommentarsrader som börjar med tecknet &#39;#&#39; (hash) tillåts.
-1. (Valfritt) På sidan [!DNL Crawl List Retrieve URL Rules] anger du en test-URL vars crawlningsregler du vill testa i fältet [!DNL Test Crawl List Retrieve URL Rules] och klickar sedan på **Testa**.
-1. Klicka på **Spara ändringar**.
+1. (Valfritt) På sidan [!DNL Crawl List Retrieve URL Rules] anger du en test-URL vars crawlningsregler du vill testa i fältet [!DNL Test Crawl List Retrieve URL Rules] och klickar sedan på **[!UICONTROL Test]**.
+1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Återskapa indexet för den mellanlagrade platsen om du vill förhandsgranska resultatet.
 
    Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -637,22 +637,21 @@ RewriteRule Pattern Substitution [Flags]
 
 Se [Reguljära uttryck](../c-appendices/r-regular-expressions.md#reference_B5BA7D61D82E4109A01D2A2D964E3A6A).
 
-Du kan använda&quot;inte&quot;-tecknet (&#39;!&#39;) för att prefix till mönstret. Tecknet&quot;inte&quot; gör att du kan negera ett mönster, d.v.s. bara vara sant om den aktuella titeln INTE matchar mönstret. Tecknet&quot;inte&quot; kan användas när det är bättre att matcha ett negativt mönster eller som en slutlig standardregel. Obs! Du kan inte använda både&quot;inte&quot;-tecknet och grupperade jokertecken i ett mönster. Du kan inte heller använda ett negerat mönster när ersättningssträngen innehåller $N.
+Du kan använda&quot;inte&quot;-tecknet (&#39;!&#39;) för att prefix till mönstret. Tecknet&quot;inte&quot; gör att du kan negera ett mönster, d.v.s. bara vara sant om den aktuella titeln INTE matchar mönstret. Tecknet&quot;inte&quot; kan användas när det är bättre att matcha ett negativt mönster eller som en slutlig standardregel. Obs! Du kan inte använda både&quot;inte&quot;-tecknet och grupperade jokertecken i ett mönster. Du kan inte heller använda ett negerat mönster när ersättningssträngen innehåller `$N`.
 
 Du kan använda parenteser för att skapa en bakåtreferens som kan refereras av Substitution och CondPattern.
 
-**** ErsättningTiteln ersätts av ersättningssträngen. Strängen kan innehålla följande:
+Ersättning - Titeln ersätts med ersättningssträngen. Strängen kan innehålla följande:
 
 Oformaterad text - Text som skickas oförändrad.
 
 Med bakåtreferenser får du tillgång till de grupperade delarna (inom parentes) av mönstret eller CondPattern. Följande är två typer av bakåtreferenser:
 
-* Backreferences för RewriteRule
+* RewriteRule Backreferences - Dessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0 &lt;= N &lt;= 9).
 
-   Dessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0 &lt;= N &lt;= 9). Exempel: `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
-* RewriteCond Backreferences
+   Exempel: `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
 
-   Dessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0 &lt;= N &lt;= 9).
+* RewriteCond Backreferences - Dessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0 &lt;= N &lt;= 9).
 
 Variabler Det här är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE kan vara en sträng för namnet på en definierad variabel. Mer information om hur du anger miljövariabler finns i `[E]`-flaggan.
 
@@ -720,8 +719,11 @@ Oformaterad text - Text som skickas oförändrad.
 
 Med bakåtreferenser får du tillgång till de grupperade delarna (inom parentes) av mönstret eller CondPattern. Det finns två typer av bakåtreferenser:
 
-* RewriteRule Backreferences Dessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0 &lt;= N &lt;= 9). Exempel: `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
-* RewriteCond Backreferences Dessa matchar bakåtreferenser i det senast matchade RewriteCond CondPattern och har formatet %N (0 &lt;= N &lt;= 9).
+* RewriteRule Backreferences - Dessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0 &lt;= N &lt;= 9).
+
+   Exempel: `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+
+* RewriteCond Backreferences - Dessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0 &lt;= N &lt;= 9).
 
 Variabler Det här är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE kan vara en sträng för namnet på en definierad variabel. Mer information om hur du anger miljövariabler finns i `[E]`-flaggan.
 
@@ -797,7 +799,15 @@ RewriteRule  ^My[[:blank:]]Company[[:blank:]]-[[:blank:]]
 <b>$1</b>}
 ```
 
-Regelns mönster `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` innehåller en bakåtreferens `(.*)` som matchar titelinnehållet som följer &quot;Mitt företag-&quot;. Tänk på att om du omger en del av ett mönster med parentes ( ) skapas en bakåtreferens som kan refereras av Ersättning. I det här exemplet skriver Ersättning (${toupper:**$1**}) om den bakåtreferensen (**$1**) med hjälp av pekarfunktionen.
+Regelmönstret
+
+`(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))`
+
+innehåller en bakåtreferens `(.*)` som matchar titelinnehållet som följer &quot;Mitt företag-&quot;. Tänk på att om du omger en del av ett mönster med parentes ( ) skapas en bakåtreferens som kan refereras av Ersättning. I det här exemplet är Ersättning
+
+`(${toupper:**$1**})`
+
+skriver om den bakåtreferensen (`**$1**`) med hjälp av pekarfunktionen.
 
 Därför skrivs texten&quot;My Company - Welcome&quot; om till&quot;WELCOME&quot;.
 
@@ -815,14 +825,14 @@ t_adding_crawl_title_rules.xml
 
  -->
 
-**Lägga till regler för crawlningsrubrik**
+**Så här lägger du till regler för crawlningsrubrik:**
 
 1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Crawl Title Rules]** på produktmenyn.
 1. I fältet [!DNL Crawl Title Rules] anger du de regler du vill använda.
 
    Tomma rader och kommentarsrader som börjar med tecknet &#39;#&#39; (hash) tillåts.
-1. (Valfritt) På sidan [!DNL Crawl Title Rules] anger du en test-URL vars sökregler du vill testa i fältet [!DNL Test Crawl Title Rules] och klickar sedan på **Testa**.
-1. Klicka på **Spara ändringar**.
+1. (Valfritt) På sidan [!DNL Crawl Title Rules] anger du en test-URL vars sökregler du vill testa i fältet [!DNL Test Crawl Title Rules] och klickar sedan på **[!UICONTROL Test]**.
+1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Återskapa indexet för den mellanlagrade platsen om du vill förhandsgranska resultatet.
 
    Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -983,9 +993,11 @@ Oformaterad text: Text som skickas oförändrad.
 
 Med bakåtreferenser får du tillgång till de grupperade delarna (inom parentes) av mönstret eller CondPattern. Det finns två typer av bakåtreferenser:
 
-* ** RewriteRule Backreferences** Dessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0 &lt;= N &lt;= 9). Exempel: `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* RewriteRule Backreferences - Dessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0 &lt;= N &lt;= 9).
 
-* **RewriteCond** BackreferencesDessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0)  &lt;>
+   Exempel: `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+
+* RewriteCond Backreferences - Dessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0 &lt;= N &lt;= 9).
 
 Variabler Det här är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE kan vara en sträng för namnet på en definierad variabel. Mer information om hur du anger variabler finns i RewriteRule-flaggan *`[E]`*.
 
@@ -1070,14 +1082,15 @@ t_adding_search_url_rules.xml
 
  -->
 
-**Lägga till sök-URL-regler**
+**Så här lägger du till URL-regler för sökning:**
 
 1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Search URL Rules]** på produktmenyn.
 1. I fältet [!DNL Search URL Rules] anger du de regler du vill använda.
 
    Tomma rader och kommentarsrader som börjar med tecknet &#39;#&#39; (hash) tillåts.
-1. (Valfritt) På sidan [!DNL Search URL Rules] anger du en test-URL vars crawlningsregler du vill testa i fältet [!DNL Test Search URL Rules] och klickar sedan på **Testa**.
-1. Klicka på **Spara ändringar**.
+
+1. (Valfritt) På sidan [!DNL Search URL Rules] anger du en test-URL vars crawlningsregler du vill testa i fältet [!DNL Test Search URL Rules] och klickar sedan på **[!UICONTROL Test]**.
+1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Återskapa indexet för den mellanlagrade platsen om du vill förhandsgranska resultatet.
 
    Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
@@ -1143,9 +1156,11 @@ Du kan använda parenteser för att skapa en bakåtreferens som kan refereras av
 
 Oformaterad text - Text som skickas oförändrad.
 
-**** BakåtreferenserGe åtkomst till de grupperade delarna (inom parentes) av mönstret eller CondPattern. Följande är två typer av bakåtreferenser:
+* Bakåtreferenser - Ger åtkomst till de grupperade delarna (inom parentes) av mönstret eller CondPattern. Följande är två typer av bakåtreferenser:
 
-* **RewriteRule** BackreferencesDessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0)  &lt;> Exempel: `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* RewriteRule Backreferences - Dessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0 &lt;= N &lt;= 9).
+
+   Exempel: `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
 
 * ** RewriteCond Backreferences** Dessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0 &lt;= N &lt;= 9).
 
@@ -1213,9 +1228,11 @@ Oformaterad text - Text som skickas oförändrad.
 
 Med bakåtreferenser får du tillgång till de grupperade delarna (inom parentes) av mönstret eller CondPattern. Det finns två typer av bakåtreferenser:
 
-* **RewriteRule** BackreferencesDessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0)  &lt;> Exempel: `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+* RewriteRule Backreferences - Dessa matchar bakåtreferenser i motsvarande RewriteRule-mönster och har formatet $N (0 &lt;= N &lt;= 9).
 
-* **RewriteCond** BackreferencesDessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0)  &lt;>
+   Exempel: `RewriteRule ^My[[:blank:]] (.*)$ ${toupper: $1}`
+
+* RewriteCond Backreferences - Dessa matchar bakåtreferenser i det senast matchade RewriteCond Cond CondPattern och har formatet %N (0 &lt;= N &lt;= 9).
 
 **** VariablerDetta är variabler i formatet %{NAME_OF_VARIABLE} där NAME_OF_VARIABLE kan vara en sträng för namnet på en definierad variabel. Mer information om hur du anger miljövariabler finns i `[E]`-flaggan. Variabler kan också definieras i det sökformulär som genererade sökresultaten.
 
@@ -1291,7 +1308,11 @@ RewriteRule  ^My[[:blank:]]Company[[:blank:]]-[[:blank:]]
 <b>$1</b>} 
 ```
 
-Regelns mönster `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` innehåller en bakåtreferens **`(.*)`** som matchar titelinnehållet som följer &quot;Mitt företag-&quot;. Tänk på att om du omger en del av ett mönster med parentes ( ) skapas en bakåtreferens som kan refereras av Ersättning. I det här exemplet skriver Ersättning (${toupper:**$1**}) om den bakåtreferensen (**$1**) med hjälp av pekarfunktionen.
+Regelns mönster `(^My[[:blank:]]Company[[:blank:]]-[[:blank:]] (.*))` innehåller en bakåtreferens **`(.*)`** som matchar titelinnehållet som följer &quot;Mitt företag-&quot;. Tänk på att om du omger en del av ett mönster med parentes ( ) skapas en bakåtreferens som kan refereras av Ersättning. I det här exemplet är Ersättning
+
+`(${toupper:**$1**})`
+
+skriver om den bakåtreferensen (**$1**) med hjälp av pekarfunktionen.
 
 Därför skrivs texten&quot;My Company - Welcome&quot; om till&quot;WELCOME&quot;.
 
@@ -1309,14 +1330,14 @@ t_adding_search_title_rules.xml
 
  -->
 
-**Lägga till regler för sökrubrik**
+**Så här lägger du till regler för sökrubrik:**
 
 1. Klicka på **[!UICONTROL Settings]** > **[!UICONTROL Rewrite Rules]** > **[!UICONTROL Search Title Rules]** på produktmenyn.
 1. I fältet [!DNL Search Title Rules] anger du de regler du vill använda.
 
    Tomma rader och kommentarsrader som börjar med tecknet &#39;#&#39; (hash) tillåts.
-1. (Valfritt) På sidan [!DNL Search Title Rules] anger du en testtitel i fältet [!DNL Test Search Title Rules] och klickar sedan på **Testa**.
-1. Klicka på **Spara ändringar**.
+1. (Valfritt) På sidan [!DNL Search Title Rules] anger du en testtitel i fältet [!DNL Test Search Title Rules] och klickar sedan på **[!UICONTROL Test]**.
+1. Klicka på **[!UICONTROL Save Changes]**.
 1. (Valfritt) Återskapa indexet för den mellanlagrade platsen om du vill förhandsgranska resultatet.
 
    Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-about-index-menu/c-about-incremental-index.md#task_46A367B0786C4C90BFFA5D3F95FD86C0).
