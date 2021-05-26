@@ -5,8 +5,7 @@ solution: Target
 topic-legacy: Site search and merchandising
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
 exl-id: 6920dbf0-beeb-4723-8178-4da37f0b03ed
-translation-type: tm+mt
-source-git-commit: c52719f476a61592b11bf1182a1bfe3525488817
+source-git-commit: bd8341e6bd955dbf5496351594938b65e1bd2948
 workflow-type: tm+mt
 source-wordcount: '141'
 ht-degree: 0%
@@ -15,19 +14,19 @@ ht-degree: 0%
 
 # Handbok för Adobe Search &amp; Promote {#search-promote-documentation}
 
-## Nyheter och meddelanden {#topic_02625547D07F411DBAC9593FCBD4741B}
+## Nyheter och notiser {#topic_02625547D07F411DBAC9593FCBD4741B}
 
-* **OBS**  -  [Adobe-meddelande om att tjänsten upphör](/help/sp-eol.md).
+* **VIKTIGT:** [Adobe Search &amp; Promote meddelande om att tjänsten upphör](/help/sp-eol.md).
 
-* Adobe Marketing Cloud Release Notes - Innehåller nya funktioner, korrigeringar och kända fel i alla lösningar för Marketing Cloud. Funktionsreleaser inträffar under våren och hösten, där underhållsreleaser sker månadsvis.
+* Adobe Marketing Cloud Release Notes - Innehåller nya funktioner, korrigeringar och kända fel i alla Marketing Cloud-lösningar. Funktionsreleaser inträffar under våren och hösten, där underhållsreleaser sker månadsvis.
 
    Tidig åtkomst: Registrera dig för produktuppdateringen [Adobe Priority](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) om du vill få versionsinformation från Adobe Marketing Cloud en vecka före varje release.
 
 * Den senaste versionsinformationen för Adobe Search &amp; Promote:
 
-   [Versionsinformation](/help/c-searchpromote-release-notes/c-rn-02-13-18-version-1811.md)
+[Versionsinformation](/help/c-searchpromote-release-notes/c-rn-02-13-18-version-1811.md)
 
-## Informationsdokument {#topic_EED10B7F7E8D4A9A8F759FE24C461937}
+## Whitepaper {#topic_EED10B7F7E8D4A9A8F759FE24C461937}
 
 [Förstå och utforma indexanslutningsflöden i Adobe Search &amp; Promote](https://marketing.adobe.com/resources/help/en_US/snp/index_connector_feeds.pdf)
 
@@ -35,4 +34,4 @@ ht-degree: 0%
 
 [Adobe Search &amp; Promote webbplats](https://www.adobe.com/solutions/testing-targeting/search-driven-merchandising.html)
 
-[Branschinsikter](https://blogs.adobe.com/digitalmarketing/)  - Bloggen Adobe för digital marknadsföring.
+[Branschinsikter](https://blog.adobe.com/en/topics/digital-transformation.html)  - Bloggen Adobe för digital marknadsföring.
