@@ -4,10 +4,9 @@ description: Läs mer om Adobe Search & Promote meddelande om att tjänsten upph
 feature: null
 role: Administrator,Business Practitioner,Data Engineer,Developer
 exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
-translation-type: tm+mt
-source-git-commit: 99d23647ba5d30ed90d9e8ac377d627f6266c618
+source-git-commit: 27dca9caf3e59d5ed20fdea3d5ef279bd5aac097
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,7 +17,7 @@ ht-degree: 0%
 
 ### **_På vilket datum upphör Search &amp; Promote med sin verksamhet?_**
 
-Tjänsten upphör för Adobe Search &amp; Promote den 1 september 2022 **.** På den tiden kommer det administrativa användargränssnittet för Search &amp; Promote inte längre att vara tillgängligt och förfrågningar till API:er för Search &amp; Promote kommer inte längre att ge resultat. Före detta datum kommer tjänsten att vara helt tillgänglig och fungera.
+Tjänsten upphör för Adobe Search &amp; Promote den 1 september 2022 **.** På den tiden kommer det administrativa användargränssnittet för Search &amp; Promote inte längre att vara tillgängligt och förfrågningar till API:er för Search &amp; Promote kommer inte längre att ge resultat. Före detta datum kommer tjänsten att vara helt tillgänglig och fungera. I avvaktan på den 1 september 2022 kommer avtalsrätter till Search &amp; Promote inte att tillåtas efter den 31 augusti 2022.
 
 ### **_Vad händer om en sökning eller annan API-begäran görs till Search &amp; Promote?_**
 
