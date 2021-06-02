@@ -4,9 +4,9 @@ description: Läs mer om Adobe Search & Promote meddelande om att tjänsten upph
 feature: null
 role: Administrator,Business Practitioner,Data Engineer,Developer
 exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
-source-git-commit: 27dca9caf3e59d5ed20fdea3d5ef279bd5aac097
+source-git-commit: cffbd6a62e1ffe1f5fe1f2f6123e8bc5199b55dc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -39,4 +39,4 @@ Kontakta din Customer Success Manager (CSM) om du har frågor eller kontakta Ado
 
 ### **_Kan jag fortfarande förnya min tillämpliga Search &amp; Promote-licens innan den upphör?_**
 
-Ja. Samarbeta med din Adobe-representant för att förnya din licens med ett slutdatum för avtalet senast den **1 september 2022**.
+Ja. Samarbeta med din Adobe-representant för att förnya din licens med ett slutdatum för avtalet senast den **31 augusti 2022**.
