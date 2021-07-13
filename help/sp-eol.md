@@ -4,9 +4,9 @@ description: Läs mer om Adobe Search & Promote meddelande om att tjänsten upph
 feature: null
 role: Admin,User,Data Engineer,Developer
 exl-id: 1e062554-090b-4275-8595-8ae4233c58d7
-source-git-commit: dd301b1be029f8f9e4e0a0738d61c19f0e6ba2be
+source-git-commit: 2465f73573d96f96be3cc39d0ba9962af8c2b990
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ Sökningar och andra API-begäranden som görs till Search &amp; Promote returne
 
 Ja. För produkt- och e-handelssökningar är [Live Search från Magento Commerce](https://blog.adobe.com/en/publish/2020/11/23/new-ai-capabilities-for-magento-commerce-improve-retail.html) Adobe&#39;s search application progress. Live Search från Magento Commerce ska startas under första halvåret 2021.
 
-### **_Kan Adobe rekommendera alla ramverk eller plattformar som har funktioner som liknar Search &amp; Promote?_**
+<!-- ### **_Can Adobe recommend any frameworks or platforms that offer features similar to Search&Promote?_**
 
-Ja. Om funktionen Search &amp; Promote är viktig för er marknadsföringsstrategi bör du fundera på de många ramverk med öppen källkod som finns för att göra sökningar, inklusive [Apache Solr](https://solr.apache.org/) och [Elastic Free och Open](https://www.elastic.co/about/free-and-open).
+  Yes. If the Search&Promote feature is critical to your marketing strategy, consider the many open-source frameworks that exist to power search, including [Apache Solr](https://solr.apache.org/) and [Elastic Free and Open](https://www.elastic.co/about/free-and-open).  
 
-Både [AWS](https://aws.amazon.com/cloudsearch/) och [Microsoft® Azure](https://azure.microsoft.com/en-us/services/search/) har dessutom inbyggda sökfunktioner i molnet på sina respektive molnplattformar. Du kan integrera båda alternativen i Adobe Experience Manager Sites för att underlätta webbplatssökningar och mycket mer.
+  Also, both [AWS](https://aws.amazon.com/cloudsearch/) and [Microsoft® Azure](https://azure.microsoft.com/en-us/services/search/) provide cloud-native search capabilities on their respective cloud platforms. You can integrate both options into Adobe Experience Manager Sites to power site search and more. -->
 
 ### **_Vem kan jag kontakta för att få veta mer?_**
 
