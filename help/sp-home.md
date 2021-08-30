@@ -5,9 +5,9 @@ solution: Target
 topic-legacy: Site search and merchandising
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
 exl-id: 6920dbf0-beeb-4723-8178-4da37f0b03ed
-source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
+source-git-commit: ba49913e94156329f7ebf10ed14893270ce95d42
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## Whitepaper {#topic_EED10B7F7E8D4A9A8F759FE24C461937}
 
-[Förstå och utforma indexanslutningsflöden i Adobe Search &amp; Promote](https://marketing.adobe.com/resources/help/en_US/snp/index_connector_feeds.pdf)
+[Förstå och utforma indexanslutningsflöden i Adobe Search &amp; Promote](/help/assets/index_connector_feeds.pdf)
 
 ## Annan information {#topic_34A00195904D4AE7AE982D3746F693AA}
 
