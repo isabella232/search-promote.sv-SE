@@ -6,10 +6,9 @@ title: Om menyn Metadata
 topic-legacy: Settings,Site search and merchandising
 uuid: f12fc863-a140-45e8-b219-3dbfdef099cd
 exl-id: 53d62da9-c5bd-4c4a-bb89-743704f66f7f
-translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '8024'
+source-wordcount: '8028'
 ht-degree: 0%
 
 ---
@@ -156,7 +155,7 @@ Innan effekterna av den nya metataggsdefinitionen syns för kunderna måste du �
       </tr> 
       <tr> 
       <td colname="col1"> <p>Språk </p> </td> 
-      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> rangordning </span>, <span class="uicontrol"> tal </span> eller <span class="uicontrol"> datum </span> har valts. </p> <p>Styr de språk- och språkkonventioner som används vid indexering av datum-, nummer- och rangvärden för det här fältet. </p> <p>Du kan välja att använda kontospråket (Språk &gt; Ord och språk). Du kan också använda det språk som är associerat med dokumentet som innehåller varje tal- eller datumvärde, eller ett visst språk. </p> </td> 
+      <td colname="col2"> <p>Endast tillgängligt om datatypen <span class="uicontrol"> rangordning </span>, <span class="uicontrol"> tal </span> eller <span class="uicontrol"> datum </span> har valts. </p> <p>Styr de språk- och språkkonventioner som tillämpas när värden för datum, nummer och rangordning för det här fältet indexeras. </p> <p>Du kan välja att använda kontospråket (Språk &gt; Ord och språk). Du kan också använda det språk som är associerat med dokumentet som innehåller varje tal- eller datumvärde, eller ett visst språk. </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> <p>Datumformat </p> </td> 
@@ -472,7 +471,7 @@ Du kan också använda **[!UICONTROL Test]** på sidan [!DNL Injections]. Du ang
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Om Inläsare för attribut {#concept_9EF38E98811B42CDA41996432B9AD209}
+## Om attributinläsare {#concept_9EF38E98811B42CDA41996432B9AD209}
 
 Använd [!DNL Attribute Loader] för att definiera ytterligare indatakällor för att förstärka data som crawlas från en webbplats.
 
@@ -582,7 +581,7 @@ Förhandsgranskning bearbetar bara standardvärdena för fem dokument enligt **A
 
 Förhandsgranskningen stöder inte XML-konfigurationer eftersom sådana dokument bearbetas direkt och inte hämtas till cachen.
 
-## Lägga till en attributinläsardefinition {#task_A735E5EF763343A9B675E1A3B09AFDBC}
+## Lägga till en Loader-definition för attribut {#task_A735E5EF763343A9B675E1A3B09AFDBC}
 
 Varje konfiguration för Loader-attribut definierar en datakälla och mappningar som relaterar dataobjekten som definierats för den källan till metadatafälten i indexet.
 
@@ -770,7 +769,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
         <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code class="syntax xml"> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns inuti ett <span class="codeph"> metadata </span>-element, som finns inuti en <span class="codeph">-post </span>-element, vars namnattribut är <span class="codeph"> title </span>, mappar till metadatafältet <span class="codeph"> title </span>. </p> </li> 
         <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns i ett <span class="codeph"> metadata </span>-element, som finns inuti <span class="codeph">-posten </span>-element, vars name-attribut är <span class="codeph"> description </span>, mappar till metadatafältet <span class="codeph"> desc &lt;a1 1/&gt;.</span> </p> </li> 
         <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code class="syntax xml"> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns i ett <span class="codeph"> metadata </span>-element, som finns i <span class="codeph">-elementet </span>, vars namnattribut är <span class="codeph"> description </span>, mappas till metadatafältet <span class="codeph"> body </span>. </p> </li> 
-        </ul> </p> <p>XPath är en relativt komplicerad notation. Mer information finns på följande plats: </p> <p>Se <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
+        </ul> </p> <p>XPath är en relativt komplicerad notation. Mer information finns på följande plats: </p> <p>Se <a href="https://www.w3schools.com/xml/xpath_intro.asp" scope="external" format="html"> https://www.w3schools.com/xml/xpath_intro.asp </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Fält  </span> <p>Definierar det name-attributvärde som används för varje genererad <span class="codeph"> &lt;meta&gt; </span>-tagg. </p> </li> 
       <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadata?  </span> <p>Gör att <span class="uicontrol">-fältet </span> blir en listruta där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Värdet för <span class="uicontrol">-fältet </span> kan vid behov vara ett odefinierat metadatafält. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtreringsskript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Om att filtrera skript </a>. </p> <p>När Loader-attribut bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle">-fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributuppsättningen <span class="wintitle"> Tillåtelselista </span>. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Primärnyckel?  </span> <p>Endast ett fält identifieras som primärnyckel. Det här fältet används som "sekundärnyckel" för att matcha attributets inläsardata med motsvarande dokument i indexet. </p> </li> 
@@ -798,7 +797,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Redigera en attributinläsardefinition {#task_AA2D1B2BCAFA44A6A0C59A0318274E80}
+## Redigera en Loader-definition för attribut {#task_AA2D1B2BCAFA44A6A0C59A0318274E80}
 
 Du kan redigera en befintlig attributinläsare som du har definierat.
 
@@ -891,7 +890,7 @@ Du kan ändra namnet på en befintlig Loader-definition för attribut.
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Läser in inläsningsdata för attribut {#task_2F3C55189B0A4049AB2113F2291CC181}
+## Läser in attributinläsardata {#task_2F3C55189B0A4049AB2113F2291CC181}
 
 Du kan hämta konfigurerade attributinläsardata till webbplatssökning/försäljning.
 
@@ -934,7 +933,7 @@ På sidan [!DNL Data Load] visas följande information om statusen för den sena
 
 1. Klicka på **[!UICONTROL Close]** för att återgå till sidan [!DNL Attribute Loader Definitions].
 
-## Förhandsgranska inläsningsdata för attribut {#task_735CDCC1D8174B7B9F5B8E0AFA5F0CA0}
+## Förhandsgranska attributinläsardata {#task_735CDCC1D8174B7B9F5B8E0AFA5F0CA0}
 
 Du kan använda Förhandsgranska för att visa dina senast inlästa attributinläsardata.
 
@@ -986,7 +985,7 @@ Se [Inläsning av attributinläsardata](../c-about-settings-menu/c-about-metadat
 1. På sidan [!DNL Attribute Loader Data Log] använder du navigerings- och visningsalternativen längst upp och längst ned på sidan för att visa logginformationen.
 1. När du är klar stänger du sidan för att återgå till sidan [!DNL Attribute Loader Definitions].
 
-## Tar bort en attributinläsardefinition {#task_E8980F66888B476E98C228C1D307EDF8}
+## Ta bort en Loader-definition för attribut {#task_E8980F66888B476E98C228C1D307EDF8}
 
 Du kan ta bort en befintlig attributinläsardefinition som du inte längre behöver eller använder.
 

@@ -5,10 +5,9 @@ title: Sök i formulär
 topic-legacy: Appendices,Site search and merchandising
 uuid: 91153e3a-c437-47f3-8c2a-d9ac02965b8c
 exl-id: 9771a19d-86a8-41db-9c80-d734fbd10ab7
-translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '2926'
+source-wordcount: '2899'
 ht-degree: 0%
 
 ---
@@ -103,9 +102,9 @@ Taggen `<search-input>` returnerar taggen `<input>` och innehåller attributet `
 
 Du kan konfigurera ramuppsättningarna så att de fungerar med webbplatssökningar och -marknadsföring.
 
-Mer information om HTML-ramar och HTML-ramuppsättningselementet finns i följande URL:
+<!-- 404 DEAD LINK To learn more about HTML frames and the HTML frameset element, see the following URL:
 
-[https://www.w3schools.com/html/html_frames.asp](https://www.w3schools.com/html/html_frames.asp)
+[https://www.w3schools.com/html/html_frames.asp](https://www.w3schools.com/html/html_frames.asp) -->
 
 Om ramar används på webbplatsen kan du ange en målram för sökresultatlänkar. Standardmålet är _self, som öppnar länkar i den aktuella ramen eller webbläsarfönstret. Du kan i stället ange webbplatsspecifika eller webbläsarreserverade mål:
 
@@ -179,7 +178,7 @@ Så här konfigurerar du ramuppsättningar:
 
    ![](assets/frames1.gif)
 
-## Ange målbildrutan för sökresultatsidan {#section_532CACB90888467093D95EACB64FDFA1}
+## Ange målramen för sökresultatsidan {#section_532CACB90888467093D95EACB64FDFA1}
 
 Om du placerade din sökformulärkod i den lodräta navigeringsramen som ovan kan du visa sökresultaten i den större, huvudsakliga ramen. I det här exemplet anropar du huvudbildrutan &quot;body&quot; och anger den som målbildruta.
 
@@ -633,7 +632,7 @@ Sound-alike matching
 </form>
 ```
 
-## Avancerad kod för sökformulärsmall {#reference_D762C22E754E462DBEECD88D2C3FA579}
+## Avancerad kod för formulärmall för sökning {#reference_D762C22E754E462DBEECD88D2C3FA579}
 
 Du kan lägga till HTML-koden för det avancerade sökformuläret i mallen på ett sådant sätt att standardalternativet för alla parametrar är detsamma som för föregående sökning.
 

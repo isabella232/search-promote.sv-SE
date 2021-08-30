@@ -6,10 +6,9 @@ title: Om Crawling-menyn
 topic-legacy: Settings,Site search and merchandising
 uuid: a58c03bf-90f7-4b5b-91ff-988b95c246b0
 exl-id: 22dbbc30-bf1c-4d51-8fb0-708115ba844b
-translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '11011'
+source-wordcount: '11015'
 ht-degree: 0%
 
 ---
@@ -518,7 +517,7 @@ Ett komma är inte giltigt som avgränsare mellan masken och nyckelordet. Du kan
  </tbody> 
 </table>
 
-## Lägga till datummasker i index eller inte indexera delar av webbplatsen {#task_0010543C55F648D2B5DEFEFAD60FAF04}
+## Lägga till datummasker till index eller inte indexera delar av webbplatsen {#task_0010543C55F648D2B5DEFEFAD60FAF04}
 
 Du kan använda Datummasker för att inkludera eller exkludera filer från kundsökresultat baserat på filernas ålder.
 
@@ -676,7 +675,7 @@ Om du bara vill förhindra indexering av vissa MP3-filer på webbplatsen kan du 
 
    Se [Om URL-masker](../c-about-settings-menu/c-about-crawling-menu.md#concept_8039DFC53FF3410AA494D602F71BA164).
 
-## Välja innehållstyper som ska crawlas och indexeras {#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8}
+## Markera innehållstyper som ska crawlas och indexeras {#task_CCAC5C67C8BF4AB7B79D34A1495D5EE8}
 
 Du kan använda [!DNL Content Types] för att välja vilka typer av filer som du vill crawla och indexera för det här kontot.
 
@@ -939,7 +938,7 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Tar bort en formulärdefinition {#task_C350FC0CDE344F2786215D544C048B5E}
+## Ta bort en formulärdefinition {#task_C350FC0CDE344F2786215D544C048B5E}
 
 Du kan ta bort en befintlig formulärdefinition om formuläret inte längre finns på webbplatsen eller om du inte längre vill bearbeta och indexera ett visst formulär.
 
@@ -966,7 +965,7 @@ Se [Konfigurera ett inkrementellt index för en mellanlagrad webbplats](../c-abo
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Om Indexanslutning {#concept_CA6921E2FBF641F9B4F60C92B32AFA84}
+## Om Index Connector {#concept_CA6921E2FBF641F9B4F60C92B32AFA84}
 
 Använd [!DNL Index Connector] för att definiera ytterligare indatakällor för indexering av XML-sidor eller andra typer av flöden.
 
@@ -990,7 +989,7 @@ På sidan [!DNL Index Connector] visas följande information:
 
 Se även [Om Index Connector](../c-about-settings-menu/c-about-crawling-menu.md#concept_CA6921E2FBF641F9B4F60C92B32AFA84)
 
-## Så här fungerar indexeringsprocessen för konfigurationer av text och feed i Index Connector {#section_E059A33D61EE4DB0972A37B8A35E9E16}
+## Så här fungerar indexeringsprocessen för text- och flödeskonfigurationer i Index Connector {#section_E059A33D61EE4DB0972A37B8A35E9E16}
 
 <table> 
  <thead> 
@@ -1020,7 +1019,7 @@ Se även [Om Index Connector](../c-about-settings-menu/c-about-crawling-menu.md#
       .... </code> </p> <p>Konfigurationens mappning måste ha ett fält som identifieras som primärnyckel. Den här mappningen utgör nyckeln som används när data hämtas från cachen. </p> <p>Crawlningen känner igen URL:en <span class="codeph">-index: </span>-schemaprefix, som sedan kan komma åt lokalt cachelagrade data. </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>1 </p> </td> 
+   <td colname="col1"> <p>3 </p> </td> 
    <td colname="col2"> <p>Crawla den cachelagrade dokumentuppsättningen. </p> </td> 
    <td colname="col3"> <p>Indexvärdet <span class="codeph">: </span>-länkar läggs till i crawlerns väntande lista och bearbetas i den normala crawlningssekvensen. </p> </td> 
   </tr> 
@@ -1032,7 +1031,7 @@ Se även [Om Index Connector](../c-about-settings-menu/c-about-crawling-menu.md#
  </tbody> 
 </table>
 
-## Så här fungerar indexeringsprocessen för XML-konfigurationer i Index Connector {#section_7F1551EA51854C5C99F284CE260526EB}
+## Hur indexeringsprocessen fungerar för XML-konfigurationer i Index Connector {#section_7F1551EA51854C5C99F284CE260526EB}
 
 Indexeringsprocessen för XML-konfigurationen liknar processen för text- och flödeskonfigurationer med följande mindre ändringar och undantag.
 
@@ -1063,7 +1062,7 @@ RewriteRule (^http.*[.]xml$) index:Adobe?key=$1
 
 Den här regeln översätter alla URL:er som slutar med `.xml` till en indexkopplingslänk. Crawlningen känner igen och skriver om URL-schemat `index:`. Hämtningsprocessen dirigeras om via Index Connector Apache-servern på den primära servern. Varje nedladdat dokument granskas med samma mönster för reguljära uttryck som används med Feeds. I det här fallet sparas dock inte det tillverkade HTML-dokumentet i cachen. I stället skickas den direkt till crawlern för indexbearbetning.
 
-## Konfigurera flera indexanslutningar {#section_C2B14C0F06354A57AEF6238FF3814E5D}
+## Konfigurera flera Index Connectors {#section_C2B14C0F06354A57AEF6238FF3814E5D}
 
 Du kan definiera flera Index Connector-konfigurationer för vilket konto som helst. Konfigurationerna läggs automatiskt till i listrutan i **[!UICONTROL Settings]** > **[!UICONTROL Crawl]** > **[!UICONTROL URL Entrypoints]** enligt följande bild:
 
@@ -1114,7 +1113,7 @@ När du lägger till en Index Connector kan du välja att använda funktionen **
  </tbody> 
 </table>
 
-**Viktigt**: Funktionen Setup Maps fungerar kanske inte för stora XML-datauppsättningar eftersom filparsern försöker läsa hela filen i minnet. Det kan leda till att minnet tar slut. Men när samma dokument bearbetas vid indexeringen läses det inte in i minnet. I stället bearbetas stora dokument &quot;i farten&quot; och läses inte in helt i minnet först.
+**Viktigt**: Funktionen Setup Maps fungerar kanske inte för stora XML-datauppsättningar eftersom filparsern försöker läsa hela filen i minnet. Det kan leda till att minnet tar slut. Men när samma dokument bearbetas vid indexeringen läses det inte in i minnet. I stället bearbetas stora dokument &quot;i farten&quot; och läses inte helt in i minnet först.
 
 **Användning av Förhandsgranska när du lägger till en indexkoppling**
 
@@ -1326,7 +1325,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       <li id="li_759013EA02CD48BE971A55B0A6A11424"> <code> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns inuti ett <span class="codeph"> metadata </span>-element, som finns inuti en <span class="codeph">-post </span>-element, vars namnattribut är <span class="codeph"> title </span>, mappar till metadatafältet <span class="codeph"> title </span>. </p> </li> 
       <li id="li_E741CA59197D462EB2946EDE874AFDC8"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns i ett <span class="codeph"> metadata </span>-element, som finns inuti <span class="codeph">-posten </span>-element, vars name-attribut är <span class="codeph"> description </span>, mappar till metadatafältet <span class="codeph"> desc &lt;a1 1/&gt;.</span> </p> </li> 
       <li id="li_E35EAE3D284D46D485D9064D7BB6AB13"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns i ett <span class="codeph"> metadata </span>-element, som finns i <span class="codeph">-elementet </span>, vars namnattribut är <span class="codeph"> description </span>, mappas till metadatafältet <span class="codeph"> body </span>. </p> </li> 
-      </ul> </p> <p>XPath är en relativt komplicerad notation. Mer information finns på följande plats: </p> <p>Se <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
+      </ul> </p> <p>XPath är en relativt komplicerad notation. Mer information finns på följande plats: </p> <p>Se <a href="https://www.w3schools.com/xml/xpath_intro.asp" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_8147075D7ACD4811A7ED335F23FE62A6"> <span class="uicontrol"> Fält  </span> <p>Definierar det name-attributvärde som används för varje genererad <span class="codeph"> &lt;meta&gt; </span>-tagg. </p> </li> 
       <li id="li_2380199D63BF425A919606D8232FA6E2"> <span class="uicontrol"> Metadata?  </span> <p>Gör att <span class="uicontrol">-fältet </span> blir en listruta där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Värdet för <span class="uicontrol">-fältet </span> kan vid behov vara ett odefinierat metadatafält. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtreringsskript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Om att filtrera skript </a>. </p> <p>När Index Connector bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle">-fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributuppsättningen <span class="wintitle"> Tillåtelselista </span>. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
       <li id="li_DEA24003E97E406DA2510C43CCFDC70E"> <span class="uicontrol"> Primärnyckel?  </span> <p>Endast en kartdefinition identifieras som primärnyckel. Det här fältet blir den unika referens som visas när dokumentet läggs till i indexet. Det här värdet används i dokumentets URL i indexet. </p> <p>Värdena <span class="uicontrol"> för primärnyckeln </span> måste vara unika för alla dokument som representeras av konfigurationen för indexkoppling. Eventuella dubbletter som påträffas ignoreras. Om källdokumenten inte innehåller ett enda unikt värde att använda som <span class="uicontrol"> primärnyckel </span>, men två eller flera fält tillsammans <i>kan</i> vara en unik identifierare, kan du definiera primärnyckeln <span class="uicontrol"> </span> genom att kombinera flera <span class="uicontrol">-taggdefinitioner </span> med ett lodrätt fält ("|") som avgränsar värdena. </p> </li> 
@@ -1382,7 +1381,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
       <li id="li_FA7DF3D1942248B98660F3D0C82F4563"> <code> /record/metadata/meta[@name='title']/@content&amp;nbsp;-&gt;&amp;nbsp;title </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns inuti ett <span class="codeph"> metadata </span>-element, som finns inuti en <span class="codeph">-post </span>-element, vars namnattribut är <span class="codeph"> title </span>, mappar till metadatafältet <span class="codeph"> title </span>. </p> </li> 
       <li id="li_D8000A116FF84DE59ED19C656DDD3BC1"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;desc </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns i ett <span class="codeph"> metadata </span>-element, som finns inuti <span class="codeph">-posten </span>-element, vars name-attribut är <span class="codeph"> description </span>, mappar till metadatafältet <span class="codeph"> desc &lt;a1 1/&gt;.</span> </p> </li> 
       <li id="li_7FA6A53DFD3D42A98B7BA17CC29DDB81"> <code> /record/metadata/meta[@name='description']/@content&amp;nbsp;-&gt;&amp;nbsp;body </code> <p><span class="codeph"> content </span>-attributet för alla <span class="codeph">-metaelement </span> som finns i ett <span class="codeph"> metadata </span>-element, som finns i <span class="codeph">-elementet </span>, vars namnattribut är <span class="codeph"> description </span>, mappas till metadatafältet <span class="codeph"> body </span>. </p> </li> 
-      </ul> </p> <p>XPath är en relativt komplicerad notation. Mer information finns på följande plats: </p> <p>Se <a href="https://www.w3schools.com/xpath/" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
+      </ul> </p> <p>XPath är en relativt komplicerad notation. Mer information finns på följande plats: </p> <p>Se <a href="https://www.w3schools.com/xml/xpath_intro.asp" scope="external" format="html"> https://www.w3schools.com/xpath/ </a> </p> </li> 
       <li id="li_84999D07E0AE4265BC7928BBB49957B9"> <span class="uicontrol"> Fält  </span> <p>Definierar det name-attributvärde som används för varje genererad &lt;meta&gt;-tagg. </p> </li> 
       <li id="li_E125788D0F5242958BD790E26A675C20"> <span class="uicontrol"> Metadata?  </span> <p>Gör att <span class="uicontrol">-fältet </span> blir en listruta där du kan välja definierade metadatafält för det aktuella kontot. </p> <p>Värdet för <span class="uicontrol">-fältet </span> kan vid behov vara ett odefinierat metadatafält. Ett odefinierat metadatafält är ibland användbart för att skapa innehåll som används av <span class="wintitle"> Filtreringsskript </span>. </p> <p>Se <a href="../c-about-settings-menu/c-about-filtering-menu.md#concept_E56B73D625854AB2A899EF2D56CFCB47" type="concept" format="dita" scope="local"> Om att filtrera skript </a>. </p> <p>När Index Connector bearbetar XML-dokument med flera träffar i ett kartfält sammanfogas de olika värdena till ett enda värde i det cachelagrade dokumentet. Som standard kombineras dessa värden med en kommaavgränsare. Anta dock att motsvarande <span class="wintitle">-fältvärde </span> är ett definierat metadatafält. Dessutom har fältet attributuppsättningen <span class="wintitle"> Tillåtelselista </span>. I det här fallet används fältets listavgränsarvärde, som är den första avgränsaren som definieras, i sammanfogningen. </p> </li> 
       <li id="li_9F435EFB3EC74B409EC82A851824609F"> <span class="uicontrol"> Primärnyckel?  </span> <p>Endast en kartdefinition identifieras som primärnyckel. Det här fältet blir den unika referens som visas när dokumentet läggs till i indexet. Det här värdet används i dokumentets URL i indexet. </p> <p>Värdena <span class="uicontrol"> för primärnyckeln </span> måste vara unika för alla dokument som representeras av konfigurationen för indexkoppling. Eventuella dubbletter som påträffas ignoreras. Om källdokumenten inte innehåller ett enda unikt värde att använda som <span class="uicontrol"> primärnyckel </span>, men två eller flera fält tillsammans <i>kan</i> vara en unik identifierare, kan du definiera primärnyckeln <span class="uicontrol"> </span> genom att kombinera flera <span class="uicontrol">-taggdefinitioner </span> med ett lodrätt fält ("|") som avgränsar värdena. </p> </li> 
@@ -1413,7 +1412,7 @@ Innan effekterna av den nya och aktiverade definitionen är synliga för kundern
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Redigera en indexanslutningsdefinition {#task_DCFC9C6A9964421DB5AB6C25DEE98DE9}
+## Redigera en definition för indexkoppling {#task_DCFC9C6A9964421DB5AB6C25DEE98DE9}
 
 Du kan redigera en befintlig Index Connector som du har definierat.
 
@@ -1483,7 +1482,7 @@ Se [Redigera en indexanslutningsdefinition](../c-about-settings-menu/c-about-cra
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Byta namn på en indexanslutningsdefinition {#task_5132118FC21B47D99881E0ED425225D7}
+## Byta namn på en definition för indexkoppling {#task_5132118FC21B47D99881E0ED425225D7}
 
 Du kan ändra namnet på en befintlig Index Connector-definition.
 
@@ -1513,7 +1512,7 @@ Se [Lägga till flera URL-startpunkter som du vill indexera](../c-about-settings
 
       Se [Publicera sceninställningar live](../c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Tar bort en indexanslutningsdefinition {#task_6B0BD5D0C09F4597A401B0F3AC7C7EA7}
+## Ta bort en definition för indexkoppling {#task_6B0BD5D0C09F4597A401B0F3AC7C7EA7}
 
 Du kan ta bort en befintlig Index Connector-definition som du inte längre behöver eller använder.
 

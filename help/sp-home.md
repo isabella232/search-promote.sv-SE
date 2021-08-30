@@ -5,22 +5,22 @@ solution: Target
 topic-legacy: Site search and merchandising
 uuid: bb1c49be-7cfd-485a-a848-c5dc8733b009
 exl-id: 6920dbf0-beeb-4723-8178-4da37f0b03ed
-source-git-commit: bd8341e6bd955dbf5496351594938b65e1bd2948
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '106'
 ht-degree: 0%
 
 ---
 
-# Handbok för Adobe Search &amp; Promote {#search-promote-documentation}
+# Adobe Search &amp; Promote Guide {#search-promote-documentation}
 
 ## Nyheter och notiser {#topic_02625547D07F411DBAC9593FCBD4741B}
 
 * **VIKTIGT:** [Adobe Search &amp; Promote meddelande om att tjänsten upphör](/help/sp-eol.md).
 
-* Adobe Marketing Cloud Release Notes - Innehåller nya funktioner, korrigeringar och kända fel i alla Marketing Cloud-lösningar. Funktionsreleaser inträffar under våren och hösten, där underhållsreleaser sker månadsvis.
+* Adobe Experience Cloud Release Notes - Innehåller nya funktioner, korrigeringar och kända fel i alla Experience Cloud-lösningar. Funktionsreleaser inträffar under våren och hösten, där underhållsreleaser sker månadsvis.
 
-   Tidig åtkomst: Registrera dig för produktuppdateringen [Adobe Priority](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) om du vill få versionsinformation från Adobe Marketing Cloud en vecka före varje release.
+<!--   Early Access: Sign up for the [Adobe Priority Product Update](https://campaign.adobe.com/webApp/adbePriorityProductSubscribe) to receive Adobe Marketing Cloud release notes one week before each release. -->
 
 * Den senaste versionsinformationen för Adobe Search &amp; Promote:
 
@@ -32,6 +32,6 @@ ht-degree: 0%
 
 ## Annan information {#topic_34A00195904D4AE7AE982D3746F693AA}
 
-[Adobe Search &amp; Promote webbplats](https://www.adobe.com/solutions/testing-targeting/search-driven-merchandising.html)
+<!-- [Adobe Search&amp;Promote website](https://www.adobe.com/solutions/testing-targeting/search-driven-merchandising.html) -->
 
 [Branschinsikter](https://blog.adobe.com/en/topics/digital-transformation.html)  - Bloggen Adobe för digital marknadsföring.

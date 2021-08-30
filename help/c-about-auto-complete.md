@@ -6,10 +6,9 @@ title: Om Komplettera automatiskt
 topic-legacy: Design,Site search and merchandising
 uuid: 3dfdd14d-2044-4f01-a5bc-fcb2eb0d5068
 exl-id: a1d08c0a-6c68-4da2-88d2-fe953d333536
-translation-type: tm+mt
-source-git-commit: 7559f5f7437d46e3510d4659772308666425ec96
+source-git-commit: 95bf92df17d7832df72e8d883a22f9063e53a18d
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1486'
 ht-degree: 1%
 
 ---
@@ -22,9 +21,9 @@ Du kan konfigurera olika områden i Komplettera automatiskt för att styra gener
 
 Filen [!DNL autocomplete_data.js] genereras om och publiceras i sökinnehållsnätverket varje gång det finns ändringar som har sparats på sidan Komplettera automatiskt.
 
-## Konfigurerar Komplettera automatiskt {#task_F491F2BFC4D24A61BBDC48B9059C11BB}
+## Konfigurera Komplettera automatiskt {#task_F491F2BFC4D24A61BBDC48B9059C11BB}
 
-Du kan konfigurera och konfigurera alternativ som styr genereringen av det automatiskt ifyllda sökformuläret och filen.
+Du kan konfigurera och ställa in alternativ som styr genereringen av det automatiskt ifyllda sökformuläret och filen.
 
 <!-- 
 
@@ -109,7 +108,7 @@ Se [Konfigurera Komplettera CSS automatiskt](c-about-auto-complete.md#task_EECE3
 
       Se [Publicera sceninställningar live](c-about-staging.md#task_44306783B4C0408AAA58B471DAF2D9A4).
 
-## Konfigurerar automatisk komplettering av ordlista {#task_1F8E0F346263443383F8CFD2C7AB35D4}
+## Konfigurera automatisk komplettering av ordlista {#task_1F8E0F346263443383F8CFD2C7AB35D4}
 
 Konfigurera listan med ord och fraser som Komplettera automatiskt visar för en kund som förslag.
 
@@ -174,7 +173,7 @@ Se [Konfigurera Komplettera CSS automatiskt](c-about-auto-complete.md#task_EECE3
       </tr> 
       <tr> 
       <td colname="col1"> <p>Uppdatera vid omindexering </p> </td> 
-      <td colname="col2"> <p>Den automatiska kompletteringen av ordlistan genereras automatiskt om efter att varje lyckat kontoomindexering har gjorts. </p> </td> 
+      <td colname="col2"> <p>Den automatiska kompletteringen av ordlistan genereras automatiskt om efter att varje konto har indexerats om. </p> </td> 
       </tr> 
     </tbody> 
    </table>
@@ -207,7 +206,7 @@ t_configuring_auto-complete_css.xml
 
 Komplettera automatiskt CSS styr innehållet i [!DNL autocomplete_styles.css], som ingår i det automatiskt ifyllda sökformuläret. Den CSS som du anger här styr den visuella presentationen av listan med automatiska förslag. Ett exempel på visuella presentationsidéer som är möjliga finns i följande:
 
-[https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html](https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html).
+<!-- 404 DEAD LINK [https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html](https://developer.yahoo.com/yui/examples/autocomplete/ac_skinning.html). -->
 
 [Konfigurerar automatisk komplettering av ordlista](c-about-auto-complete.md#task_1F8E0F346263443383F8CFD2C7AB35D4).
 
@@ -217,7 +216,7 @@ När du är klar med konfigurationen av Komplettera automatiskt CSS kan du förh
 
 Se [Förhandsgranska sökformuläret som det skulle se ut på din dator..](c-about-auto-complete.md#task_437B35EFA5424603A08AF8E79E6B4714).
 
-**Viktigt**: Om du vill använda din anpassade CSS-kod för automatisk komplettering måste du ta bort kommentartaggarna från den andra raden som visas i HTML-koden. Sedan flyttar du samma rad till i huvudsektionen på sidan där sökformuläret finns.
+**Viktigt**: Om du vill använda din egen CSS-kod för automatisk komplettering måste du ta bort kommentartaggarna från den andra raden som visas i HTML-koden. Sedan flyttar du samma rad till i huvudsektionen på sidan där sökformuläret finns.
 
 Se [Kopiera HTML-koden för sökformuläret till ...](c-about-auto-complete.md#task_A3A01EA800F24C0AA33902387E0362C7).
 
