@@ -7,10 +7,10 @@ getting-started-title: Getting Started
 getting-started-url: https://helpx.adobe.com/target/get-started.html
 tutorials-url: https://helpx.adobe.com/target/kt/index/target-videos.html
 git-repo: https://github.com/AdobeDocs/search-promote.sv-SE
-index: y
-source-git-commit: 5ecb1d79057b166887c37c1c54905a93e2a87835
+index: false
+source-git-commit: 8884e7d100e6a9feddcd8e205f5f3652d79e152c
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
